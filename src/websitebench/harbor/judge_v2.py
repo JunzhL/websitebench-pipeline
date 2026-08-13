@@ -28,9 +28,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, BinaryIO, Iterable, Mapping, Sequence
+from typing import Any, Iterable, Mapping, Sequence
 
 try:  # pragma: no cover - unavailable on Windows authoring hosts
     import pwd
@@ -988,11 +988,9 @@ class CandidateProcess:
     storage_limit_mb: int | None = None
     isolation_uid: int | None = None
     allowed_connect_ports: tuple[int, ...] = ()
-    capture_stderr: bool = False
     process: subprocess.Popen[bytes] | None = None
     _sentinel_initialized: bool = False
     _audit_failed: bool = False
-    _stderr: BinaryIO | None = field(default=None, init=False, repr=False)
 
     def start(self) -> None:
         deploy = self.root / "deploy.sh"
@@ -1129,44 +1127,16 @@ class CandidateProcess:
                 "--trace=%file,%memory,%network,%ipc,ftruncate",
                 *command,
             ]
-        stderr: int | BinaryIO = subprocess.DEVNULL
-        if self.capture_stderr:
-            if self._stderr is not None:
-                self._stderr.close()
-            self._stderr = tempfile.TemporaryFile(
-                prefix="websitebench-candidate-stderr-"
-            )
-            stderr = self._stderr
-        try:
-            self.process = subprocess.Popen(
-                command,
-                cwd=self.root,
-                env=environment,
-                stdin=subprocess.DEVNULL,
-                stdout=subprocess.DEVNULL,
-                stderr=stderr,
-                start_new_session=True,
-                preexec_fn=preexec,
-            )
-        except BaseException:
-            if self._stderr is not None:
-                self._stderr.close()
-                self._stderr = None
-            raise
-
-    def stderr_tail(self, limit: int = 2000) -> str:
-        """Return a bounded diagnostic tail when stderr capture was requested."""
-
-        if self._stderr is None:
-            return "candidate stderr capture is disabled"
-        try:
-            descriptor = self._stderr.fileno()
-            size = os.fstat(descriptor).st_size
-            length = min(size, max(limit * 4, 4096))
-            raw = os.pread(descriptor, length, max(0, size - length))
-            return raw.decode("utf-8", "replace")[-limit:]
-        except OSError as exc:
-            return f"candidate stderr is unavailable: {exc}"
+        self.process = subprocess.Popen(
+            command,
+            cwd=self.root,
+            env=environment,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
+            preexec_fn=preexec,
+        )
 
     def ready(self, path: str = "/healthz", timeout: float = 30.0) -> bool:
         deadline = time.monotonic() + timeout

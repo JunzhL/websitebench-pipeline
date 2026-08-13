@@ -1226,28 +1226,8 @@ def test_one_worker_isolation_violation_invalidates_the_whole_task_suite(
 
 def test_real_reference_observations_and_four_worker_evaluation_are_deterministic(
     tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     _allow_opaque_uid_traversal(tmp_path)
-
-    class DiagnosticCandidateProcess(CandidateProcess):
-        def __init__(self, *args: object, **kwargs: object) -> None:
-            kwargs["capture_stderr"] = True
-            super().__init__(*args, **kwargs)  # type: ignore[arg-type]
-
-        def ready(self, path: str = "/healthz", timeout: float = 30.0) -> bool:
-            ready = super().ready(path, timeout)
-            if not ready:
-                print(
-                    f"candidate deploy diagnostic: {self.stderr_tail()}",
-                    file=sys.stderr,
-                )
-            return ready
-
-    monkeypatch.setattr(
-        "websitebench.harbor.evaluate.CandidateProcess",
-        DiagnosticCandidateProcess,
-    )
     try:
         from playwright.sync_api import sync_playwright
 
@@ -1343,7 +1323,9 @@ ThreadingHTTPServer(("127.0.0.1", int(os.environ["PORT"])), Handler).serve_forev
         server_source, encoding="utf-8"
     )
     candidate_root = instance_path.parent / "public"
-    (candidate_root / "server.py").write_text(server_source, encoding="utf-8")
+    candidate_server = candidate_root / "server.py"
+    candidate_server.write_text(server_source, encoding="utf-8")
+    candidate_server.chmod(0o644)
     deploy = candidate_root / "deploy.sh"
     deploy.write_text(
         "#!/usr/bin/env bash\nset -Eeuo pipefail\nexec python server.py\n",
@@ -2105,20 +2087,13 @@ def test_kernel_sandbox_blocks_file_network_and_ipc_before_exec(
         encoding="utf-8",
     )
     deploy.chmod(0o755)
-    process = CandidateProcess(
-        root,
-        31337,
-        tmp_path / "data",
-        "sandbox-probe",
-        capture_stderr=True,
-    )
+    process = CandidateProcess(root, 31337, tmp_path / "data", "sandbox-probe")
     try:
         process.start()
         deadline = time.monotonic() + 10
         result = process.data_dir / "result.json"
         while not result.exists() and time.monotonic() < deadline:
             time.sleep(0.02)
-        assert result.exists(), process.stderr_tail()
         assert json.loads(result.read_text(encoding="utf-8")) == {
             "file": True,
             "flock": True,
