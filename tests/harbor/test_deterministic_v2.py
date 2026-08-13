@@ -1226,8 +1226,28 @@ def test_one_worker_isolation_violation_invalidates_the_whole_task_suite(
 
 def test_real_reference_observations_and_four_worker_evaluation_are_deterministic(
     tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     _allow_opaque_uid_traversal(tmp_path)
+
+    class DiagnosticCandidateProcess(CandidateProcess):
+        def __init__(self, *args: object, **kwargs: object) -> None:
+            kwargs["capture_stderr"] = True
+            super().__init__(*args, **kwargs)  # type: ignore[arg-type]
+
+        def ready(self, path: str = "/healthz", timeout: float = 30.0) -> bool:
+            ready = super().ready(path, timeout)
+            if not ready:
+                print(
+                    f"candidate deploy diagnostic: {self.stderr_tail()}",
+                    file=sys.stderr,
+                )
+            return ready
+
+    monkeypatch.setattr(
+        "websitebench.harbor.evaluate.CandidateProcess",
+        DiagnosticCandidateProcess,
+    )
     try:
         from playwright.sync_api import sync_playwright
 
