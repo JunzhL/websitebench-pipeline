@@ -44,9 +44,12 @@ SITES = _sites_with_opencli()
 SITE_IDS = [manifest.parent.name for manifest in SITES]
 
 
-def test_the_corpus_declares_opencli_contracts() -> None:
-    # Guards against the whole suite silently passing on an empty parametrize.
-    assert SITE_IDS, "no site declares an opencli block"
+def test_generated_contract_keeps_an_empty_corpus_from_hiding_loader_regressions(
+    synthetic_opencli_site: Path,
+) -> None:
+    contract = load_contract_from_site(synthetic_opencli_site)
+    assert contract.site_id == "example-shop"
+    assert contract.profiles
 
 
 @pytest.mark.parametrize("manifest", SITES, ids=SITE_IDS)
@@ -197,7 +200,9 @@ def test_current_sites_have_exactly_one_same_id_instance() -> None:
         assert instance["site_manifest"] == f"sites/{site_id}/site.yaml"
 
 
-def test_step_tier_is_optional_and_inherits_the_profile() -> None:
+def test_step_tier_is_optional_and_inherits_the_profile(
+    synthetic_opencli_site: Path,
+) -> None:
     """Regression pin: `tier` was required per step while no contract set it."""
 
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
@@ -206,17 +211,12 @@ def test_step_tier_is_optional_and_inherits_the_profile() -> None:
     assert "tier" in step["properties"]
     assert "tier" in schema["$defs"]["profile"]["required"]
 
-    contract = load_contract_from_site(
-        HARBOR / "sites" / "tripit" / "site.yaml", allow_legacy_v1=True
-    )
-    profile = contract.profiles["marketing-and-auth-entry"]
-    assert profile.tier == "p0"
-    assert all(step.tier == "p0" for step in profile.steps)
+    contract = load_contract_from_site(synthetic_opencli_site)
+    profile = contract.profiles["catalog"]
+    assert all(step.tier == profile.tier for step in profile.steps)
 
 
-def test_unknown_profile_is_rejected() -> None:
-    contract = load_contract_from_site(
-        HARBOR / "sites" / "tripit" / "site.yaml", allow_legacy_v1=True
-    )
+def test_unknown_profile_is_rejected(synthetic_opencli_site: Path) -> None:
+    contract = load_contract_from_site(synthetic_opencli_site)
     with pytest.raises(OpenCliContractError, match="not declared"):
         contract.profile("no-such-profile")

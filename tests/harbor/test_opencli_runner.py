@@ -37,7 +37,6 @@ from websitebench.harbor.opencli.runner import (
 )
 
 ROOT = Path(__file__).resolve().parents[2]
-GOLDEN_SITE = ROOT / "harbor" / "sites" / "tripit" / "site.yaml"
 
 DOWN = DoctorReport(
     binary_present=True,
@@ -495,8 +494,10 @@ def test_submit_fields_are_only_passed_for_submit_steps() -> None:
 # --------------------------------------------------------------------------
 
 
-def test_golden_sample_profiles_expose_only_executable_verbs() -> None:
-    contract = load_contract_from_site(GOLDEN_SITE, allow_legacy_v1=True)
+def test_generated_sample_profiles_expose_only_executable_verbs(
+    synthetic_opencli_site: Path,
+) -> None:
+    contract = load_contract_from_site(synthetic_opencli_site)
     commands = {
         step.command for profile in contract.profiles.values() for step in profile.steps
     }

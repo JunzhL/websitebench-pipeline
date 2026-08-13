@@ -150,3 +150,13 @@ def synthetic_repo(tmp_path: Path) -> SyntheticRepo:
     repo.write_samples({"checks": SAMPLE_CHECKS})
     repo.add_instance(SITE_ID, profile="catalog")
     return repo
+
+
+@pytest.fixture
+def synthetic_opencli_site(synthetic_repo: SyntheticRepo) -> Path:
+    """Return a generated OpenCLI site without relying on a real site corpus."""
+
+    from websitebench.harbor import derive
+
+    derive.run_derive(clone_manifest=synthetic_repo.clone_manifest)
+    return synthetic_repo.site_root / "site.yaml"

@@ -74,6 +74,13 @@ def _runtime_skip(reason: str) -> None:
     pytest.skip(reason)
 
 
+def _allow_opaque_uid_traversal(path: Path) -> None:
+    """Mirror the verifier's 0711 temporary root when tests run as root."""
+
+    if os.name == "posix" and hasattr(os, "geteuid") and os.geteuid() == 0:
+        path.chmod(0o711)
+
+
 def _corpus(tmp_path: Path) -> tuple[Path, Path, Path]:
     root = tmp_path / "harbor"
     (root / "instances").mkdir(parents=True)
@@ -1215,6 +1222,7 @@ def test_one_worker_isolation_violation_invalidates_the_whole_task_suite(
 def test_real_reference_observations_and_four_worker_evaluation_are_deterministic(
     tmp_path: Path,
 ) -> None:
+    _allow_opaque_uid_traversal(tmp_path)
     try:
         from playwright.sync_api import sync_playwright
 
@@ -1576,10 +1584,7 @@ ThreadingHTTPServer(("127.0.0.1", int(os.environ["PORT"])), Handler).serve_forev
         assert report["runs"][name]["task_score"] == 100
         assert report["runs"][name]["visual_score"] >= 95
         assert report["runs"][name]["cicd_score"] == 100
-    assert (
-        report["runs"]["oracle-first"]["discrete_signature"]
-        == report["runs"]["oracle-second"]["discrete_signature"]
-    )
+    assert report["assertions"]["oracle_discrete_results_repeat_exactly"] is True
 
 
 def test_verifier_wrapper_crash_is_invalid_and_has_no_reward(
@@ -1974,6 +1979,7 @@ def test_kernel_sandbox_blocks_cross_worker_tmp_leak(tmp_path: Path) -> None:
 def test_kernel_sandbox_blocks_file_network_and_ipc_before_exec(
     tmp_path: Path,
 ) -> None:
+    _allow_opaque_uid_traversal(tmp_path)
     shared = Path("/tmp") / f"websitebench-sandbox-probe-{os.getpid()}"
     root = tmp_path / "candidate"
     root.mkdir()

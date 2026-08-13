@@ -8,20 +8,21 @@ from pathlib import Path
 import pytest
 
 from websitebench.harbor.cli import build_parser, main
+from websitebench.harbor.manifest import load_site
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GOLDEN_SITE = ROOT / "harbor" / "sites" / "tripit" / "site.yaml"
+SAMPLE_SITE = Path("harbor/sites/example-shop/site.yaml")
 
 
-def _parse_run_opencli() -> argparse.Namespace:
+def _parse_run_opencli(site: Path = SAMPLE_SITE) -> argparse.Namespace:
     return build_parser().parse_args(
         [
             "run-opencli",
             "--site",
-            str(GOLDEN_SITE),
+            str(site),
             "--profile",
-            "marketing-and-auth-entry",
+            "catalog",
             "--out",
             "result.json",
             "--legacy-v1",
@@ -59,9 +60,9 @@ def test_run_opencli_explicit_admin_token_overrides_the_environment(
         [
             "run-opencli",
             "--site",
-            str(GOLDEN_SITE),
+            str(SAMPLE_SITE),
             "--profile",
-            "marketing-and-auth-entry",
+            "catalog",
             "--out",
             "result.json",
             "--admin-token",
@@ -75,24 +76,26 @@ def test_run_opencli_explicit_admin_token_overrides_the_environment(
 
 def test_missing_base_url_points_to_the_candidate_clone(
     capsys: pytest.CaptureFixture[str],
+    synthetic_opencli_site: Path,
 ) -> None:
     result = main(
         [
             "run-opencli",
             "--site",
-            str(GOLDEN_SITE),
+            str(synthetic_opencli_site),
             "--profile",
-            "marketing-and-auth-entry",
+            "catalog",
             "--out",
             "result.json",
-            "--legacy-v1",
         ]
     )
 
     captured = capsys.readouterr()
+    runtime = load_site(synthetic_opencli_site).data["runtime"]
+    port = runtime.get("verifier_candidate_port") or runtime["candidate_port"]
     assert result == 2
     assert "start the candidate clone first" in captured.err
-    assert "http://127.0.0.1:18913" in captured.err
+    assert f"http://127.0.0.1:{port}" in captured.err
     assert "reference/run.sh" not in captured.err
 
 
