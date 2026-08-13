@@ -66,7 +66,7 @@ from websitebench.harbor.mailbox import (
     redact_log_file,
 )
 from websitebench.harbor.scaffold import initialize_instance, initialize_site
-from websitebench.harbor.sandbox_v2 import sandbox_preflight
+from websitebench.harbor.sandbox_v2 import _root_relative_command, sandbox_preflight
 
 
 def _runtime_skip(reason: str) -> None:
@@ -1908,6 +1908,26 @@ def test_audited_candidate_keeps_tracer_privileged_and_drops_only_tracee(
         str(deploy),
     ]
     assert captured["preexec_fn"] is None
+
+
+def test_sandbox_rewrites_candidate_paths_relative_to_its_preopened_cwd(
+    tmp_path: Path,
+) -> None:
+    root = tmp_path / "candidate"
+    root.mkdir()
+    script = root / "nested" / "server.py"
+    script.parent.mkdir()
+    script.write_text("pass\n", encoding="utf-8")
+
+    command = _root_relative_command(
+        [sys.executable, str(script), "/not-a-candidate-path"], root
+    )
+
+    assert command == [
+        sys.executable,
+        "./nested/server.py",
+        "/not-a-candidate-path",
+    ]
 
 
 def test_kernel_sandbox_blocks_cross_worker_tmp_leak(tmp_path: Path) -> None:

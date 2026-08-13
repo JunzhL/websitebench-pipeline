@@ -246,6 +246,25 @@ def sandbox_preflight() -> dict[str, object]:
     return fingerprint
 
 
+def _root_relative_command(command: Sequence[str], root: Path) -> list[str]:
+    """Avoid re-traversing root-only ancestors after the credential drop."""
+
+    root = root.resolve(strict=True)
+    rewritten: list[str] = []
+    for argument in command:
+        candidate = Path(argument)
+        if not candidate.is_absolute():
+            rewritten.append(argument)
+            continue
+        try:
+            relative = candidate.resolve(strict=True).relative_to(root)
+        except (OSError, ValueError):
+            rewritten.append(argument)
+            continue
+        rewritten.append("." if relative == Path(".") else f"./{relative.as_posix()}")
+    return rewritten
+
+
 def _landlock(
     root: Path,
     data: Path,
@@ -650,12 +669,17 @@ def sandbox_exec(
 ) -> None:
     root = root.resolve(strict=True)
     data = data.resolve(strict=True)
+    command = _root_relative_command(command, root)
     parent_channel, child_channel = socket.socketpair()
     child_pid = os.fork()
     if child_pid == 0:
         parent_channel.close()
-        stage = "landlock"
+        stage = "candidate cwd"
         try:
+            # Enter the already-validated candidate root while still privileged.
+            # Landlock and the opaque UID remain responsible for all later access.
+            os.chdir(root)
+            stage = "landlock"
             _landlock(root, data, bind_port, connect_ports, read_paths)
             stage = "resource limits"
             if file_size_limit_bytes is not None:
@@ -678,8 +702,6 @@ def sandbox_exec(
             _send_fd(child_channel, listener)
             os.close(listener)
             child_channel.close()
-            stage = "candidate cwd"
-            os.chdir(root)
             stage = "candidate exec"
             os.execv(command[0], list(command))
         except BaseException as exc:
