@@ -1502,7 +1502,7 @@ ThreadingHTTPServer(("127.0.0.1", int(os.environ["PORT"])), Handler).serve_forev
     )
     parallel = json.loads((output / "task-results.json").read_text(encoding="utf-8"))
     assert serial == parallel
-    assert parallel["summary"] == {"passed": 8, "total": 8}
+    assert parallel["summary"] == {"passed": 8, "total": 8}, parallel["tasks"]
     assert (output / "reward.txt").read_text(encoding="utf-8") == "1.00000000\n"
     scorecard = json.loads((output / "scorecard.json").read_text(encoding="utf-8"))
     assert scorecard["task_score"] == 100
@@ -2022,12 +2022,12 @@ def test_kernel_sandbox_blocks_file_network_and_ipc_before_exec(
         "try:\n"
         "    open('/proc/1/cmdline', 'rb').read()\n"
         "    blocked['proc'] = False\n"
-        "except PermissionError:\n"
+        "except (PermissionError, FileNotFoundError):\n"
         "    blocked['proc'] = True\n"
         "try:\n"
         "    open('/sys/fs/cgroup/memory.current', 'rb').read()\n"
         "    blocked['sys'] = False\n"
-        "except PermissionError:\n"
+        "except (PermissionError, FileNotFoundError):\n"
         "    blocked['sys'] = True\n"
         "try:\n"
         "    os.setsid()\n"
