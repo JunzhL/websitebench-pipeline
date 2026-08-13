@@ -1,0 +1,41 @@
+{
+  "schema_version": "websitebench.harbor.policy-baselines.v1",
+  "instances": {
+    "capterra-public-authenticated-reconstruction": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Pre-policy verifier retained after the OpenCLI profile was added."
+    },
+    "petfinder-v2-815-dog-favorite": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Pre-policy local-calibration verifier retained after the OpenCLI profile was added."
+    },
+    "petfinder-v2-816-cat-favorite-remove": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Pre-policy local-calibration verifier retained after the OpenCLI profile was added."
+    },
+    "petfinder-v2-817-adopter-profile": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Pre-policy local-calibration verifier retained after the OpenCLI profile was added."
+    },
+    "imdb-v2-901-watchlist-dark-knight": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Historical IMDb task 901 predates the checkout policy; its plan explicitly disables payment while retaining local auth."
+    },
+    "imdb-v2-902-rate-interstellar-nine": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Historical IMDb task 902 predates the checkout policy; its plan explicitly disables payment while retaining local auth."
+    },
+    "imdb-v2-903-remove-interstellar-rating": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Historical IMDb task 903 predates the checkout policy; its plan explicitly disables payment while retaining local auth."
+    },
+    "imdb-v2-904-create-private-title-list": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Historical IMDb task 904 predates the checkout policy; its plan explicitly disables payment while retaining local auth."
+    },
+    "imdb-v2-905-add-pulp-fiction-to-list": {
+      "policy": "legacy-pre-auth-checkout-v1",
+      "reason": "Historical IMDb task 905 predates the checkout policy; its plan explicitly disables payment while retaining local auth."
+    }
+  }
+}
