@@ -927,6 +927,11 @@ def materialize_instance(
     temporary = Path(
         tempfile.mkdtemp(prefix=f".{output.name}.", dir=str(output.parent))
     ).resolve()
+    if os.name == "posix":
+        # The formal verifier drops each candidate to an opaque UID. Candidate
+        # processes may resolve cwd-relative files to absolute paths, so they
+        # must be able to traverse the bundle root without being able to list it.
+        temporary.chmod(0o711)
     try:
         if instance.data.get("schema_version") == "websitebench.harbor.instance.v2":
             _populate_v2(temporary, instance)

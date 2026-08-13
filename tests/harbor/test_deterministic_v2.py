@@ -167,6 +167,8 @@ def test_v2_bundle_is_structured_hidden_and_model_free(tmp_path: Path) -> None:
     report = validate_bundle(output)
 
     assert report["status"] == "valid"
+    if os.name == "posix":
+        assert stat.S_IMODE(output.stat().st_mode) == 0o711
     assert report["model_runtime"] is False
     assert (output / "environment/seed/deploy.sh").is_file()
     assert not (output / "environment/seed/fixtures/hidden/task-suite.json").exists()
