@@ -8,6 +8,7 @@ import shutil
 import socket
 import smtplib
 import ssl
+import stat
 import struct
 import subprocess
 import sys
@@ -78,7 +79,11 @@ def _allow_opaque_uid_traversal(path: Path) -> None:
     """Mirror the verifier's 0711 temporary root when tests run as root."""
 
     if os.name == "posix" and hasattr(os, "geteuid") and os.geteuid() == 0:
-        path.chmod(0o711)
+        for candidate in (path, *path.parents):
+            if candidate == Path("/tmp"):
+                break
+            mode = stat.S_IMODE(candidate.stat().st_mode)
+            candidate.chmod(mode | stat.S_IXGRP | stat.S_IXOTH)
 
 
 def _corpus(tmp_path: Path) -> tuple[Path, Path, Path]:
