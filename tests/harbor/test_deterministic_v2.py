@@ -2085,13 +2085,20 @@ def test_kernel_sandbox_blocks_file_network_and_ipc_before_exec(
         encoding="utf-8",
     )
     deploy.chmod(0o755)
-    process = CandidateProcess(root, 31337, tmp_path / "data", "sandbox-probe")
+    process = CandidateProcess(
+        root,
+        31337,
+        tmp_path / "data",
+        "sandbox-probe",
+        capture_stderr=True,
+    )
     try:
         process.start()
         deadline = time.monotonic() + 10
         result = process.data_dir / "result.json"
         while not result.exists() and time.monotonic() < deadline:
             time.sleep(0.02)
+        assert result.exists(), process.stderr_tail()
         assert json.loads(result.read_text(encoding="utf-8")) == {
             "file": True,
             "flock": True,
