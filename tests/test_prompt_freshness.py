@@ -178,3 +178,35 @@ def test_entry_prompt_stays_small_enough_to_stay_resident() -> None:
         f"entry prompt is {size} bytes; move phase detail into references/ "
         "rather than growing the always-resident file"
     )
+
+
+def test_harbor_phase_tracks_the_current_compile_case_protocol() -> None:
+    phase = (REFERENCES / "06-ledger-harbor.md").read_text(encoding="utf-8")
+    build = (PROMPT_DIR / "build.md").read_text(encoding="utf-8")
+    combined = phase + "\n" + build
+
+    for requirement in (
+        "websitebench-harbor init-site",
+        "websitebench-harbor init-instance",
+        "status: draft",
+        "scorable: false",
+        "compile.sh -> executable",
+        "HOST",
+        "PORT",
+        "DATA_DIR",
+        "SEED",
+        "TZ",
+        "/__websitebench/health",
+        "playwright",
+        "browser-use",
+        "T1=20",
+        "T2=165",
+        "T3=15",
+        "L1=35",
+        "L2=50",
+        "L3=80",
+    ):
+        assert requirement in combined
+
+    assert "do not copy another site's test content" in combined.lower()
+    assert "must not consume any of the 200 site cases" in phase

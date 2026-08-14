@@ -18,6 +18,9 @@ instance，以及站点专属部署配置未包含在公开导出中：该样本
 
 Agent 在创建站点材料前，先读 `AGENTS.md` 与
 `docs/source-evidence-access-policy.md`。
+新站的 Harbor v2 authoring 必须通过 `websitebench-harbor init-site` 与
+`init-instance` 建立严格同 ID 的 pair。新骨架是 compile-executable v2 空白
+draft；完成 case、oracle 与校准证据前不可 capture、materialize、calibrate 或评分。
 
 ```bash
 # Python >= 3.11
@@ -82,6 +85,9 @@ clone 与测试；`src/websitebench/` 和 `tools/offline_clone/` 提供所有站
 5. 实现时以 `prompts/offline-clone/build.md` 为顺序，以 `ACCEPTANCE.md` 为人类
    验收视角。更完整的代码库导览见
    [`docs/codebase-offline-site-clone-workflow-zh.md`](docs/codebase-offline-site-clone-workflow-zh.md)。
+
+历史 v1 site/instance 只承担兼容身份，不能作为新站的 Harbor 布局、测试内容或
+评分协议模板；新站以当前 prompt 和 CLI 生成的 compile-executable v2 draft 为准。
 
 ### 人与 agent 的协作契约
 
