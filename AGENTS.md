@@ -62,6 +62,25 @@ decision, and
 the runner exits `0` even when steps fail so it cannot become one. Never wire
 replay into a scoring verifier or a merge condition.
 
+## No new hash or gate infrastructure for clone work
+
+Offline-clone tasks reconstruct the scoped site experience. Reuse the
+repository's existing CLIs, schemas and integration seams; do not introduce,
+modify or extend SHA-256/content-addressing implementations, integrity-hash
+frameworks, scope freeze/unfreeze state machines, approval systems, or merge,
+release and acceptance gates unless the user separately and explicitly scopes
+that infrastructure change.
+
+Agents may read existing digest fields and run the commands that already
+produce or validate them. When an existing contract requires a hash or frozen
+artifact, use its supported command or library rather than reimplementing the
+mechanism in site code. Do not promote a diagnostic-only result into a hard
+gate, and do not weaken or bypass an existing protection.
+
+If completing a clone would require changing this infrastructure, continue any
+independent clone work, report the dependency as a blocker and wait for a
+separately authorized task instead of implementing a new defensive framework.
+
 ## Backend and payment safety
 
 Before implementing or changing persistent accounts, password recovery,
