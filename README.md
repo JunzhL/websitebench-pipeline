@@ -2,7 +2,7 @@
 
 本仓库包含 WebsiteBench 的配置驱动生产流水线，覆盖范围定义、源证据采集、
 离线网站 clone、机器诊断、Harbor interaction contract 与评测 instance。诊断
-结果是维护者判断的输入，不自动构成验收、合并、部署或发布许可。
+结果是维护者判断的输入。
 
 ## 公开导出范围
 
