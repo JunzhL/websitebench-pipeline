@@ -1,0 +1,200 @@
+{
+  "schema_version": "offline-clone.journeys.v1",
+  "status": "draft",
+  "journeys": [
+    {
+      "id": "register-upgrade-elite-annual",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-02", "ht-23"],
+      "steps": [
+        "Open public entry and reach /signup (Sign up link on the Log In panel or footer).",
+        "Complete the onboarding questionnaire and create the free account.",
+        "From the member area open the Upgrade to Elite plan modal (sidebar card or settings upgrade card).",
+        "Choose Elite Annual 'Buy plan' -> /elite/checkout?isMyJefit=true&sub=yearly (clone-local checkout continuation).",
+        "Complete payment with the local-sandbox approved scenario.",
+        "Land back on /my-jefit/settings Account tab and verify Account Type shows the Elite annual membership."
+      ],
+      "failure_variant": "sandbox-declined scenario surfaces a decline and creates no order/membership",
+      "recovery_variant": "sandbox-retry scenario succeeds on retry",
+      "note": "Source post-payment state unavailable (payment never performed on source); post-payment destination-view content is clone-local behavior built on the frozen Account-tab structure and disclosed as such."
+    },
+    {
+      "id": "sign-in-dashboard",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-03", "ht-16"],
+      "steps": [
+        "Open /login (H1 'Log In'; username-or-email + password; Google/Apple/Facebook IdP buttons rendered).",
+        "Submit seeded member credentials.",
+        "Land on /my-jefit dashboard with sidebar and Discover feed."
+      ],
+      "failure_variant": "wrong credentials -> inline error, no session",
+      "recovery_variant": "Forgot Password? -> /login/forgot-password reset flow"
+    },
+    {
+      "id": "password-recovery-view",
+      "actor": "visitor",
+      "kind": "recovery",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-18"],
+      "steps": [
+        "From /login click 'Forgot Password?'.",
+        "Verify /login/forgot-password: H1 'Reset Password', email field, 'Send reset link' button, 'Log in' return link.",
+        "Return to sign-in without sending a reset message."
+      ]
+    },
+    {
+      "id": "browse-exercises-filter",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-04", "ht-05"],
+      "steps": [
+        "Open /exercises (1295 EXERCISES FOUND, muscle + equipment chips).",
+        "Apply muscle filter 'Abs' (client-side; count drops, FILTERS/CLEAR FILTERS chips).",
+        "Open /exercises/2/barbell-bench-press and inspect target muscles, equipment, difficulty, type, log type, instructions."
+      ],
+      "failure_variant": "impossible filter combo -> '0 EXERCISES FOUND' empty grid",
+      "recovery_variant": "CLEAR FILTERS restores the full list",
+      "note": "Source detail pages have no ratings section; ht-05's 'community ratings' has no source equivalent and is disclosed as a gap against the trace text."
+    },
+    {
+      "id": "browse-routines-detail",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-04", "ht-05"],
+      "steps": [
+        "Open /routines (quick categories, Sort by Most Downloaded/Most Viewed/Latest).",
+        "Open /routines/19113/6-weeks-to-six-pack-abs: tag pills, Share/Download, Plan Details, day cards with Sets x Reps rows, Featured plans carousel."
+      ]
+    },
+    {
+      "id": "create-routine-edit-sets",
+      "actor": "member",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-06", "ht-07"],
+      "steps": [
+        "Open /my-jefit/workouts (My Plans).",
+        "Click 'Create Plan' (server-side create) -> /my-jefit/workouts/edit?id=<id> Routine Builder.",
+        "Set routine name; add exercises from the library (default 3 sets, 10 lbs x 8, 60s rest).",
+        "Edit a set's weight/reps/rest; builder autosaves.",
+        "Save (return to plans list) and verify the named routine appears with its day/focus/level metadata."
+      ],
+      "failure_variant": "empty routine name is silently ignored on source (no validation error) — reproduced as-is",
+      "recovery_variant": "plan card menu: Edit Plan / Set as current plan / Delete"
+    },
+    {
+      "id": "log-workout-session",
+      "actor": "member",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-08", "ht-09", "ht-19"],
+      "steps": [
+        "Open /my-jefit/progress/history (calendar + day panel, 'No logs' empty state).",
+        "Click '+ Add session' -> Workout Log modal (Start/End time, exercise library).",
+        "Add an exercise (logs a default set; Training Summary updates: timers, Complete, Volume, records).",
+        "Close the modal; day panel shows the persisted Training Summary with per-set rows and record badge."
+      ],
+      "failure_variant": "day with no session shows 'No logs — You don't have any logs for this day.'",
+      "recovery_variant": "session row links to per-exercise progress view"
+    },
+    {
+      "id": "goals-and-preferences",
+      "actor": "member",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-10", "ht-12", "ht-14"],
+      "steps": [
+        "Open /my-jefit/settings Profile tab: unit system Imperial/Metric, workout level, top goal (Maintaining/Bulking/Cutting/Strength).",
+        "Open Privacy tab: visibility selects and Email Preferences switches (Training Reports, Promotional Emails, Product Tips).",
+        "Open /my-jefit/progress/body-stats and set a stat goal via 'Edit stat'.",
+        "Verify changed values persist and display."
+      ]
+    },
+    {
+      "id": "community-views",
+      "actor": "member",
+      "kind": "success",
+      "priority": "p2",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-11"],
+      "steps": [
+        "Open /my-jefit Q&A and Popular feeds (post cards, likes/comments counts).",
+        "Open the 'Create Post +' dialog and dismiss without posting."
+      ],
+      "note": "Publishing is out of scope (no third-party-visible effects); clone-local posting is real local behavior against seeded feed data."
+    },
+    {
+      "id": "support-and-help",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-21"],
+      "steps": [
+        "Open /support (Contact us, Subscription support, Technical support) and /support/faq (categorized numbered Q&A)."
+      ]
+    },
+    {
+      "id": "no-results-and-recovery",
+      "actor": "visitor",
+      "kind": "failure",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-15", "ht-22", "ht-20"],
+      "steps": [
+        "Search /exercises for 'zzzz-no-match-websitebench' or apply an impossible filter combo -> '0 EXERCISES FOUND'; CLEAR FILTERS recovers.",
+        "Open a non-existent deep link -> source-faithful unbranded server 404 ('Not Found', title '404 Not Found').",
+        "Open a protected member route signed out -> client redirect to /login?redirect=<path>."
+      ],
+      "note": "ht-22 expects a branded not-found; the source's real behavior is an unbranded server 404 and the clone reproduces the source. Disclosed as a trace-text/source divergence."
+    },
+    {
+      "id": "entry-nav-primary",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-01"],
+      "steps": [
+        "Open the public entry and use primary navigation (Products/Workouts/Exercises/More) to reach the workout-tracking sections; verify destination heading and canonical path."
+      ]
+    },
+    {
+      "id": "registration-entry-view",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-17"],
+      "steps": [
+        "Open /signup and verify the questionnaire entry, progress bar, back control, and (at the account-creation step) identity fields, terms links, and verification guidance without creating an account."
+      ]
+    },
+    {
+      "id": "elite-plan-review",
+      "actor": "member",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-13"],
+      "steps": [
+        "Open the Upgrade to Elite plan modal (Basic Included / Elite $12.99 / Elite Annual $52.49-then-$69.99).",
+        "Open /elite public pricing and /support subscription-management links (upgrade/payment/cancel options)."
+      ]
+    }
+  ]
+}

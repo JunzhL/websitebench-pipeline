@@ -1,0 +1,42 @@
+{
+  "checkpoint": "press-media",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/press-media",
+  "final_url": "https://www.jefit.com/press-media",
+  "http_status": 200,
+  "title": "Press & Media - JEFIT",
+  "body_text_len": 1179,
+  "frames": 3,
+  "frame_sha256": [
+    "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+    "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+    "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611"
+  ],
+  "frames_identical": true,
+  "link_count": 29,
+  "resource_count": 121,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1220,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 1741
+  }
+}

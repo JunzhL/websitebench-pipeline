@@ -1,0 +1,49 @@
+{
+  "checkpoint": "exercises-filter-abs",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/exercises",
+  "http_status": null,
+  "title": "Exercise Database - JEFIT",
+  "body_text_len": 19805,
+  "frames": 3,
+  "frame_sha256": [
+    "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+    "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+    "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 6866,
+      "width": 1440,
+      "height": 521
+    },
+    "form": {
+      "selector": "form",
+      "x": 8,
+      "y": 798,
+      "width": 384,
+      "height": 44
+    },
+    "document_height": 7387
+  },
+  "interaction": "clicked muscle filter 'Abs'; count drops, 'FILTERS n / CLEAR FILTERS' chips appear"
+}

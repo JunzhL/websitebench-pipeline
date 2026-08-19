@@ -1,0 +1,42 @@
+{
+  "checkpoint": "elite",
+  "family": "membership",
+  "priority": "P0",
+  "viewport": "mobile",
+  "requested_url": "https://www.jefit.com/elite",
+  "final_url": "https://www.jefit.com/elite",
+  "http_status": 200,
+  "title": "Elite Membership Plans - JEFIT",
+  "body_text_len": 1828,
+  "frames": 3,
+  "frame_sha256": [
+    "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+    "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+    "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0"
+  ],
+  "frames_identical": true,
+  "link_count": 31,
+  "resource_count": 90,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 2202,
+      "width": 390,
+      "height": 897
+    },
+    "form": null,
+    "document_height": 3099
+  }
+}

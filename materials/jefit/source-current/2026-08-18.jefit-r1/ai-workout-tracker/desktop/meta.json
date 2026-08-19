@@ -1,0 +1,42 @@
+{
+  "checkpoint": "ai-workout-tracker",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/ai-workout-tracker",
+  "final_url": "https://www.jefit.com/ai-workout-tracker",
+  "http_status": 200,
+  "title": "AI Workout Tracker & Progressive Overload System - JEFIT",
+  "body_text_len": 3433,
+  "frames": 3,
+  "frame_sha256": [
+    "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+    "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+    "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a"
+  ],
+  "frames_identical": true,
+  "link_count": 34,
+  "resource_count": 83,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 4590,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 5111
+  }
+}

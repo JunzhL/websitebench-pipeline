@@ -1,0 +1,43 @@
+{
+  "checkpoint": "signup-account-create",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/signup/register",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 571,
+  "frames": 3,
+  "frame_sha256": [
+    "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+    "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+    "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 548,
+      "y": 132,
+      "width": 344,
+      "height": 192
+    },
+    "document_height": 900
+  },
+  "interaction": "clicked Continue on the results view and captured the account-creation entry (identity fields, terms links, verification guidance) WITHOUT filling or submitting anything"
+}

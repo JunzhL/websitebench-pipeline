@@ -1,0 +1,267 @@
+{
+ "schema_version": "jefit.interaction-ledger.v1",
+ "recorded_from": "live clone (TestClient walk)",
+ "entries": [
+  {
+   "url": "/",
+   "control": "Accept",
+   "selector": "div[aria-label=\"Cookie consent\"] button",
+   "visible_text_proof": "<div role=\"region\" aria-label=\"Cookie consent\" class=\"fixed bottom-0 z-60 w-full bg-bg-primary text-white py-4 px-6 sm:py-5 sm:px-10 shadow-2xl shadow-jefit-blue flex flex-col gap-4 sm:flex-row sm:jus",
+   "raw_markup_proof": "<!--/$--><div role=\"region\" aria-label=\"Cookie consent\" class=\"fixed bottom-0 z-60 w-full bg-bg-primary text-white py-4 px-6 sm:py-5 sm:px-10 shadow-2xl shadow-jefit-blue flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center transition-transform d",
+   "form_action": null,
+   "note": "consent banner; Accept persists clone-local consent"
+  },
+  {
+   "url": "/",
+   "control": "Products",
+   "selector": "header button",
+   "visible_text_proof": "hite text-text-primary hover:underline\">Products  <path fill-rule=\"evenodd\" d=\"M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.",
+   "raw_markup_proof": "hite text-text-primary hover:underline\">Products</p><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\" data-slot=\"icon\" class=\"text-text-primary h-5 w-5 flex-none text-gray-400\"><path fill-rule=\"evenodd\" d=\"M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.",
+   "form_action": null,
+   "note": "nav dropdown injected from the captured open state"
+  },
+  {
+   "url": "/exercises",
+   "control": "Abs",
+   "selector": "button",
+   "visible_text_proof": "nt-semibold text-jefit-blue text-center\">Abs  <button class=\"border-2! border-transparent! flex shrink-0 flex-col justify-start! w-28 p-2! rounded-xl gap-2 relative isolate inline-flex items-center ju",
+   "raw_markup_proof": "nt-semibold text-jefit-blue text-center\">Abs</p></button><button class=\"border-2! border-transparent! flex shrink-0 flex-col justify-start! w-28 p-2! rounded-xl gap-2 relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/",
+   "form_action": null,
+   "note": "client-side muscle filter over the embedded catalog"
+  },
+  {
+   "url": "/exercises",
+   "control": "CLEAR FILTERS",
+   "selector": "button",
+   "visible_text_proof": "se hidden sm:block text-secondary-gray\">CLEAR FILTERS      53 &nbsp;</sp",
+   "raw_markup_proof": "se hidden sm:block text-secondary-gray\">CLEAR FILTERS </span></button></div><p data-slot=\"text\" class=\"text-xs/[1.4] font-bold text-text-primary uppercase mt-4\"><span data-slot=\"text\" class=\"text-base/[1.4] font-semibold text-text-primary\">53<!-- -->&nbsp;</sp",
+   "form_action": null,
+   "note": ""
+  },
+  {
+   "url": "/exercises",
+   "control": "Next",
+   "selector": "a[aria-label=\"Next page\"]",
+   "visible_text_proof": "lass=\"flex grow basis-0 justify-end\"><a aria-label=\"Next page\" class=\"relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.",
+   "raw_markup_proof": "lass=\"flex grow basis-0 justify-end\"><a aria-label=\"Next page\" class=\"relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing",
+   "form_action": null,
+   "note": ""
+  },
+  {
+   "url": "/login",
+   "control": "Log In",
+   "selector": "form[action=\"/login\"] button",
+   "visible_text_proof": "\"> <div class=\"[&amp;&gt;[data-slot=label]+[data-slot=control]]:mt-3 [&amp;&gt;[data-slot=label]+[data-slot=description]]:mt-1 [&amp;&gt;[data-slot=description]+[data-slot=control]]:mt-3 [&amp;&gt;[da",
+   "raw_markup_proof": "\"><form class=\"space-y-4\" method=\"post\" action=\"/login\"><div class=\"[&amp;&gt;[data-slot=label]+[data-slot=control]]:mt-3 [&amp;&gt;[data-slot=label]+[data-slot=description]]:mt-1 [&amp;&gt;[data-slot=description]+[data-slot=control]]:mt-3 [&amp;&gt;[data-slot",
+   "form_action": "/login",
+   "note": ""
+  },
+  {
+   "url": "/login/forgot-password",
+   "control": "Send reset link",
+   "selector": "form[action=\"/login/forgot-password\"] button",
+   "visible_text_proof": "ur password.   <div class=\"[&amp;&gt;[data-slot=label]+[data-slot=control]]:mt-3 [&amp;&gt;[data-slot=label]+[data-slot=descrip",
+   "raw_markup_proof": "ur password.</p><form class=\"space-y-4\" action=\"/login/forgot-password\" method=\"post\"><input type=\"hidden\" name=\"do\" value=\"resetpassword\" style=\"\"><div class=\"[&amp;&gt;[data-slot=label]+[data-slot=control]]:mt-3 [&amp;&gt;[data-slot=label]+[data-slot=descrip",
+   "form_action": "/login/forgot-password",
+   "note": ""
+  },
+  {
+   "url": "/signup",
+   "control": "Continue",
+   "selector": "button",
+   "visible_text_proof": "t-semibold text-text-primary  w-full \\\">Continue        <div class=\\\"opacity-0 transition-opacity duration",
+   "raw_markup_proof": "t-semibold text-text-primary  w-full \\\">Continue<\\/button><\\/form><\\/div><\\/div><div class=\\\"opacity-0 transition-opacity duration-1000\\\"><\\/div><div class=\\\"opacity-0 transition-opacity duration-1000\\\"><\\/div><div class=\\\"opacity-0 transition-opacity duration",
+   "form_action": null,
+   "note": "questionnaire stepper (17 captured panels, client-side)"
+  },
+  {
+   "url": "/signup/register",
+   "control": "Continue",
+   "selector": "form[action=\"/signup/register\"] button",
+   "visible_text_proof": "l to get started    <input id=\"email\" autocomplete=\"email\" required=\"\" class=\"  ring-border-primary block w-full h-12 px-4 rounded-md border-0 py-1.5 text-gray-900",
+   "raw_markup_proof": "l to get started</p><form method=\"post\" action=\"/signup/register\" class=\"space-y-3\"><div><div class=\"mt-1 relative\"><input id=\"email\" autocomplete=\"email\" required=\"\" class=\"  ring-border-primary block w-full h-12 px-4 rounded-md border-0 py-1.5 text-gray-900 ",
+   "form_action": "/signup/register",
+   "note": ""
+  },
+  {
+   "url": "/build-routine?code=XBzXxuzCsXBe",
+   "control": "Save",
+   "selector": "button",
+   "visible_text_proof": "0 0 0-5.25 1.533v16.103Z\">  Save      <div class=\"flex flex-col gap-2 overflow-y-hidden",
+   "raw_markup_proof": " 0 0 0-5.25 1.533v16.103Z\"></path></svg>Save</button></div></div></div><div class=\"flex flex-col gap-2 mt-4\"><div class=\"mt-5 flex flex-col gap-4 bg-bg-primary py-4 px-4 transition-all duration-200 ease-in-out\"><div class=\"flex flex-col gap-2 overflow-y-hidden",
+   "form_action": "/api/build-routine/save",
+   "note": "anonymous draft save -> public /routines/<id>/new-routine"
+  },
+  {
+   "url": "/my-jefit",
+   "control": "Create Post +",
+   "selector": "button",
+   "visible_text_proof": "-fine:hidden\" aria-hidden=\"true\"> Create Post +     <img class=\"w-24 h-auto\" alt=\"Empty feed\" src=\"/my-j",
+   "raw_markup_proof": "-fine:hidden\" aria-hidden=\"true\"></span>Create Post +</button></span></nav><div class=\"flex flex-col gap-10 min-h-screen mx-auto max-w-3xl\"><div class=\"pt-24 flex flex-col items-center justify-center gap-4 \"><img class=\"w-24 h-auto\" alt=\"Empty feed\" src=\"/my-j",
+   "form_action": "/api/posts",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit",
+   "control": "Upgrade to Elite",
+   "selector": "button",
+   "visible_text_proof": "text-sm/[1.4] font-semibold text-white\">Upgrade to Elite  Elite users are 1.9x more likely to reach goals!       <div class=\"max-lg:hidden flex flex-col",
+   "raw_markup_proof": "text-sm/[1.4] font-semibold text-white\">Upgrade to Elite</p><p data-slot=\"text\" class=\"text-sm/[1.4] font-normal text-slate-100\">Elite users are 1.9x more likely to reach goals!</p></div></div></button></span></div></div><div class=\"max-lg:hidden flex flex-col",
+   "form_action": null,
+   "note": "opens the captured plan modal (Buy plan links to checkout)"
+  },
+  {
+   "url": "/my-jefit/workouts",
+   "control": "Create Plan",
+   "selector": "button",
+   "visible_text_proof": "75 0 0 0 0-1.5h-4.5v-4.5Z\">  Create Plan     Current Plan  <div c",
+   "raw_markup_proof": "75 0 0 0 0-1.5h-4.5v-4.5Z\"></path></svg>Create Plan</button></nav><div class=\"min-h-screen flex flex-col\"><div class=\"mb-10\"><p data-slot=\"text\" class=\"text-[1.25rem] font-semibold text-text-primary\">Current Plan</p><div class=\"gap-4 mt-4 flex flex-col\"><div c",
+   "form_action": "/api/plans",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/workouts",
+   "control": "plan card menu",
+   "selector": "button[id^='plan-menu-']",
+   "visible_text_proof": ">Beginner    <button id=\"plan-menu-101\" type=\"button\" aria-haspopup=\"menu\" aria-expanded=\"false\" data-headlessui-state=\"\" class=\"lg:mb-2.5 text-secondary-gray! !dark:text-d-secondary-gray relative iso",
+   "raw_markup_proof": ">Beginner</span></p></div></div><button id=\"plan-menu-101\" type=\"button\" aria-haspopup=\"menu\" aria-expanded=\"false\" data-headlessui-state=\"\" class=\"lg:mb-2.5 text-secondary-gray! !dark:text-d-secondary-gray relative isolate inline-flex items-center justify-cen",
+   "form_action": null,
+   "note": "Edit Plan / Set as current plan / Printable / Delete"
+  },
+  {
+   "url": "/my-jefit/workouts/edit?id=113",
+   "control": "routine name input",
+   "selector": "input[value]",
+   "visible_text_proof": "_\" data-headlessui-state=\"\" type=\"text\" value=\"New Routine\">   More settings <button class=\"p-0! h-6 w-6 shadow-lg relative isolate i",
+   "raw_markup_proof": "_\" data-headlessui-state=\"\" type=\"text\" value=\"New Routine\"></span><div class=\"flex gap-1.5 items-center\"><p data-slot=\"text\" class=\"text-sm/[1.4] font-semibold text-text-primary py-1.5\">More settings</p><button class=\"p-0! h-6 w-6 shadow-lg relative isolate i",
+   "form_action": "/api/plans/<id>/name",
+   "note": "autosaves; empty name silently keeps the prior name"
+  },
+  {
+   "url": "/my-jefit/workouts/edit?id=113",
+   "control": "Add <exercise>",
+   "selector": "button[data-exercise-id]",
+   "visible_text_proof": "el=\"Add Cable Lat Pulldown (Wide Grip)\" data-exercise-id=\"86\" class=\"rounded-lg h-8 w-10 z-10 transition-all duration-200 relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg bo",
+   "raw_markup_proof": "el=\"Add Cable Lat Pulldown (Wide Grip)\" data-exercise-id=\"86\" class=\"rounded-lg h-8 w-10 z-10 transition-all duration-200 relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)]",
+   "form_action": "/api/days/<day_id>/exercises",
+   "note": "defaults 3 sets 10 lbs x 8, 60s rest"
+  },
+  {
+   "url": "/my-jefit/workouts/edit?id=113",
+   "control": "Add Day",
+   "selector": "button",
+   "visible_text_proof": "/[1.4] font-semibold text-text-primary\">Add Day        <div class",
+   "raw_markup_proof": "/[1.4] font-semibold text-text-primary\">Add Day</p></button></div><div class=\"flex gap-2 w-full\"><div data-rfd-droppable-id=\"day-7\" data-rfd-droppable-context-id=\"_r_11_\" class=\"flex flex-col gap-5 w-full\" style=\"padding-top: 0px;\"></div></div></div><div class",
+   "form_action": "/api/plans/<id>/days",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/progress/history",
+   "control": "+ Add session",
+   "selector": "button",
+   "visible_text_proof": "-fine:hidden\" aria-hidden=\"true\"> + Add session   <div class=\"p-4 border-b-2 border-deco-gray bg-jefit-blue-100 flex justify-between items-cen",
+   "raw_markup_proof": "-fine:hidden\" aria-hidden=\"true\"></span>+ Add session</button><div class=\"flex flex-col gap-4\"><div class=\"rounded-lg border-2 border-deco-gray w-full overflow-hidden\"><div class=\"p-4 border-b-2 border-deco-gray bg-jefit-blue-100 flex justify-between items-cen",
+   "form_action": "/api/sessions",
+   "note": "opens the captured Workout Log modal"
+  },
+  {
+   "url": "/my-jefit/progress/history",
+   "control": "Add <exercise> (log modal)",
+   "selector": "[data-clone-modal='workout-log'] button[data-exercise-id]",
+   "visible_text_proof": "script>  <button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; heig",
+   "raw_markup_proof": "script><div id=\"headlessui-portal-root\" data-clone-modal=\"workout-log\" style=\"display:none\"><div data-headlessui-portal=\"\"><button type=\"button\" data-headlessui-focus-guard=\"true\" aria-hidden=\"true\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; heig",
+   "form_action": "/api/sessions/<id>/sets",
+   "note": "logs the default set 25 lbs x 8"
+  },
+  {
+   "url": "/my-jefit/progress/body-stats",
+   "control": "Edit stat",
+   "selector": "a[href^='/my-jefit/progress/body-stats/']",
+   "visible_text_proof": "-[#C7C7C7]\" src=\"/shared/icon/edit.svg\">Edit stat    <p data-slot=\"text\" class=\"te",
+   "raw_markup_proof": "-[#C7C7C7]\" src=\"/shared/icon/edit.svg\">Edit stat</div></button><div class=\"w-full h-full border-2 border-deco-gray rounded-lg overflow-auto\"><div class=\"grid grid-cols-2 items-center p-4 bg-alice-blue border-b-2 border-deco-gray\"><p data-slot=\"text\" class=\"te",
+   "form_action": "/my-jefit/progress/body-stats/<slug>",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/settings",
+   "control": "Profile (tab)",
+   "selector": "nav button",
+   "visible_text_proof": "<div class=\"grow p-6 lg:rounded-lg lg:p-10 bg-bg-primary lg:shadow-sm lg:",
+   "raw_markup_proof": "</span></button></span></div></nav><div data-settings-panel=\"account\"></div></header><main class=\"flex flex-1 flex-col lg:min-w-0 lg:pl-64 print:pl-0! \"><!--$--><div class=\"min-h-screen\"><div class=\"grow p-6 lg:rounded-lg lg:p-10 bg-bg-primary lg:shadow-sm lg:",
+   "form_action": null,
+   "note": "client-side tabs; URL stays /my-jefit/settings"
+  },
+  {
+   "url": "/my-jefit/settings",
+   "control": "Resend Verification Link",
+   "selector": "button",
+   "visible_text_proof": "-fine:hidden\" aria-hidden=\"true\"> Resend Verification Link    <dt class=\"col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:borde",
+   "raw_markup_proof": "-fine:hidden\" aria-hidden=\"true\"></span>Resend Verification Link</button></div></div></dd><dt class=\"col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:",
+   "form_action": "/api/settings/resend-verification",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/settings",
+   "control": "Delete Data",
+   "selector": "button",
+   "visible_text_proof": "-fine:hidden\" aria-hidden=\"true\"> Delete Data <span hidden=\"\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0",
+   "raw_markup_proof": "-fine:hidden\" aria-hidden=\"true\"></span>Delete Data</button><span hidden=\"\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0",
+   "form_action": "/api/settings/delete-data",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/settings",
+   "control": "Delete Account",
+   "selector": "button",
+   "visible_text_proof": "-fine:hidden\" aria-hidden=\"true\"> Delete Account <span hidden=\"\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px",
+   "raw_markup_proof": "-fine:hidden\" aria-hidden=\"true\"></span>Delete Account</button><span hidden=\"\" style=\"position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width",
+   "form_action": "/api/settings/delete-account",
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/settings",
+   "control": "Yearly upgrade card",
+   "selector": "a[href*='/elite/checkout']",
+   "visible_text_proof": "x-w-2xl\" data-headlessui-state=\"\" href=\"/elite/checkout?sub=monthly&amp;isMyJefit\">  Monthly<span data-slot=\"text\" class=\"ml-2 bg-[#E9A800] inline-flex items-center gap-x-1.5",
+   "raw_markup_proof": "x-w-2xl\" data-headlessui-state=\"\" href=\"/elite/checkout?sub=monthly&amp;isMyJefit\"><div class=\"\"><p data-slot=\"text\" class=\"text-sm/[1.4] font-semibold text-text-primary\">Monthly<span data-slot=\"text\" class=\"ml-2 bg-[#E9A800] inline-flex items-center gap-x-1.5",
+   "form_action": null,
+   "note": ""
+  },
+  {
+   "url": "/my-jefit/exercises",
+   "control": "Create custom exercise",
+   "selector": "button",
+   "visible_text_proof": "75 0 0 0 0-1.5h-4.5v-4.5Z\">  Create custom exercise (0/3)    <span data-slot=\"control\" class=\" *:data-[slot=icon]:top-3! *:data-[slot=icon]:sm:top-3.5! relative isolate block has-[[data-slot=ic",
+   "raw_markup_proof": "75 0 0 0 0-1.5h-4.5v-4.5Z\"></path></svg>Create custom exercise (0/3)</button></nav><div class=\"min-h-screen\"><form class=\"w-96\"><span data-slot=\"control\" class=\" *:data-[slot=icon]:top-3! *:data-[slot=icon]:sm:top-3.5! relative isolate block has-[[data-slot=ic",
+   "form_action": "/api/custom-exercises",
+   "note": "free-tier limit (n/3)"
+  },
+  {
+   "url": "/elite/checkout?isMyJefit=true&sub=yearly",
+   "control": "Subscribe",
+   "selector": "form[action=\"/elite/checkout\"] button[type=\"submit\"]",
+   "visible_text_proof": "ent method \n     \n       \n       \n         Sandbox payment method &mdash; this offline clone never accepts card",
+   "raw_markup_proof": "ent method</h2>\n    <form method=\"post\" action=\"/elite/checkout\">\n      <input type=\"hidden\" name=\"sub\" value=\"yearly\">\n      <div class=\"co-sandbox\">\n        <p class=\"co-sandbox-note\">Sandbox payment method &mdash; this offline clone never accepts card\n     ",
+   "form_action": "/elite/checkout",
+   "note": "consumes an opaque sandbox scenario id; card fields refused"
+  },
+  {
+   "url": "/elite/checkout?isMyJefit=true&sub=yearly",
+   "control": "Simulated approval",
+   "selector": "input[name=\"scenario_id\"]",
+   "visible_text_proof": "class=\"co-scenario\">  Simulated approval \n           Simulated decline \n        <label",
+   "raw_markup_proof": "class=\"co-scenario\"><input type=\"radio\" name=\"scenario_id\" value=\"sandbox-approved\" checked> Simulated approval</label>\n        <label class=\"co-scenario\"><input type=\"radio\" name=\"scenario_id\" value=\"sandbox-declined\"> Simulated decline</label>\n        <label",
+   "form_action": null,
+   "note": ""
+  },
+  {
+   "url": "/my-jefit",
+   "control": "Sign out",
+   "selector": "[data-clone-overlay='account-menu']",
+   "visible_text_proof": "static/site/app.js\" defer>   <div class=\"min-w-64 [--anchor-gap:--spacing(2)] [--anchor-padding:--spacing(1)] data-[anchor~=end]:[--anchor-offset:6px] data-[anchor",
+   "raw_markup_proof": "static/site/app.js\" defer></script><div data-clone-overlay=\"account-menu\" style=\"display:none\"><div data-headlessui-portal=\"\"><div class=\"min-w-64 [--anchor-gap:--spacing(2)] [--anchor-padding:--spacing(1)] data-[anchor~=end]:[--anchor-offset:6px] data-[anchor",
+   "form_action": "/logout",
+   "note": ""
+  }
+ ]
+}

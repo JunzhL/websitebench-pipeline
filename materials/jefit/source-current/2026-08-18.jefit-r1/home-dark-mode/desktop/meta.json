@@ -1,0 +1,43 @@
+{
+  "checkpoint": "home-dark-mode",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 3873,
+  "frames": 3,
+  "frame_sha256": [
+    "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+    "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+    "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 5710,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 6089,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 6610
+  },
+  "interaction": "toggled footer Dark Mode switch on /"
+}

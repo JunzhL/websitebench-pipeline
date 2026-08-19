@@ -1,0 +1,109 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/jefit/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 0.430242,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": false,
+    "contract_version": "1.8.6",
+    "doctor_green": false,
+    "extension_connected": false,
+    "notes": [
+      "opencli-unavailable: Browser Bridge extension not connected",
+      "opencli-unavailable: browser connectivity check failed"
+    ],
+    "version": "0.1.0",
+    "version_matches": false
+  },
+  "profile_id": "login",
+  "profile_label": "jefit login (derived draft)",
+  "profile_tier": "p0",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "jefit",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "login",
+      "duration_seconds": 0.149203,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "jefit_login",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Log In",
+          "key": "visible",
+          "observed": "Log In",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "login",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "login",
+      "duration_seconds": 0.053201,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "jefit_login_recovery-link",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Forgot Password?",
+          "key": "visible",
+          "observed": "Forgot Password?",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "login-recovery-link",
+      "tier": "p0"
+    },
+    {
+      "command": "submit",
+      "declared_route": "login",
+      "duration_seconds": 0.163342,
+      "error": null,
+      "http_status": 302,
+      "observation_id": "jefit_login_submit",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "My Circle",
+          "key": "visible",
+          "observed": "My Circle",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "login-submit",
+      "tier": "p0"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 3,
+    "steps_total": 3,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:8811",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

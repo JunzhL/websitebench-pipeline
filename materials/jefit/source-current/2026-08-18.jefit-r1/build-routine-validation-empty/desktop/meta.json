@@ -1,0 +1,43 @@
+{
+  "checkpoint": "build-routine-validation-empty",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/routines/1797163/new-routine",
+  "http_status": null,
+  "title": "New Routine - JEFIT",
+  "body_text_len": 1365,
+  "frames": 3,
+  "frame_sha256": [
+    "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+    "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+    "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1160,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 1681
+  },
+  "interaction": "clicked Save with empty routine name (non-GET aborted); records client-side validation"
+}

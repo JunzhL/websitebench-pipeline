@@ -1,0 +1,1816 @@
+{
+ "schema_version": "jefit.clone-observation-table.v1",
+ "site_id": "jefit",
+ "summary": {
+  "total_rows": 195,
+  "by_classification": {
+   "matched": 165,
+   "unavailable": 2,
+   "inferred-architecture": 14,
+   "known-difference": 14
+  },
+  "by_kind": {
+   "checkpoint": {
+    "matched": 101,
+    "unavailable": 2
+   },
+   "route": {
+    "matched": 39
+   },
+   "invariant": {
+    "matched": 11
+   },
+   "journey": {
+    "matched": 14
+   },
+   "implementation": {
+    "inferred-architecture": 14
+   },
+   "known-difference": {
+    "known-difference": 14
+   }
+  }
+ },
+ "rows": [
+  {
+   "kind": "checkpoint",
+   "id": "home.desktop",
+   "route_id": "home",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "home.tablet",
+   "route_id": "home",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "home.mobile",
+   "route_id": "home",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "elite.desktop",
+   "route_id": "elite",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/elite",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "elite.tablet",
+   "route_id": "elite",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/elite",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "elite.mobile",
+   "route_id": "elite",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/elite",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises.desktop",
+   "route_id": "exercises",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises.tablet",
+   "route_id": "exercises",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises.mobile",
+   "route_id": "exercises",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercise-detail.desktop",
+   "route_id": "exercise-detail",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises/2/barbell-bench-press",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercise-detail.mobile",
+   "route_id": "exercise-detail",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises/2/barbell-bench-press",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routines.desktop",
+   "route_id": "routines",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routines.tablet",
+   "route_id": "routines",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routines.mobile",
+   "route_id": "routines",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routine-detail.desktop",
+   "route_id": "routine-detail",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines/19113/6-weeks-to-six-pack-abs",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routine-detail.mobile",
+   "route_id": "routine-detail",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines/19113/6-weeks-to-six-pack-abs",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "build-routine.desktop",
+   "route_id": "build-routine",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/build-routine",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "build-routine.mobile",
+   "route_id": "build-routine",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/build-routine",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "login.desktop",
+   "route_id": "login",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/login",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "login.mobile",
+   "route_id": "login",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/login",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup.desktop",
+   "route_id": "signup",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup.mobile",
+   "route_id": "signup",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "forgot-password.desktop",
+   "route_id": "forgot-password",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/login/forgot-password",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "forgot-password.mobile",
+   "route_id": "forgot-password",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/login/forgot-password",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "support.desktop",
+   "route_id": "support",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/support",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "support.mobile",
+   "route_id": "support",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/support",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "support-faq.desktop",
+   "route_id": "support-faq",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/support/faq",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "support-faq.mobile",
+   "route_id": "support-faq",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/support/faq",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "routines-beginner.desktop",
+   "route_id": "routines-category",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/routines/beginner",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises-page2.desktop",
+   "route_id": "exercises",
+   "state": "page-2",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "not-found.desktop",
+   "route_id": "not-found",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/zzzz-no-match-websitebench",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "not-found.mobile",
+   "route_id": "not-found",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/zzzz-no-match-websitebench",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "about-us.desktop",
+   "route_id": "about-us",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/about-us",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "ai-workout-tracker.desktop",
+   "route_id": "ai-workout-tracker",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/ai-workout-tracker",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "adaptive-plan.desktop",
+   "route_id": "adaptive-plan",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/ai-workout-tracker/adaptive-plan",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "use-case.desktop",
+   "route_id": "use-case",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/use-case",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "watch.desktop",
+   "route_id": "watch",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/watch",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "coach.desktop",
+   "route_id": "coach",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/coach",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "our-story.desktop",
+   "route_id": "our-story",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/our-story",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "community.desktop",
+   "route_id": "community",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/community/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "blog.desktop",
+   "route_id": "blog",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/blog",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "terms-of-use.desktop",
+   "route_id": "terms-of-use",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/terms-of-use",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "privacy-policy.desktop",
+   "route_id": "privacy-policy",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/privacy-policy",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "ip-notice-process.desktop",
+   "route_id": "ip-notice-process",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/ip-notice-process",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "press-media.desktop",
+   "route_id": "press-media",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/press-media",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises-filter-abs.desktop",
+   "route_id": "exercises",
+   "state": "filtered",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "exercises-no-results.desktop",
+   "route_id": "exercises",
+   "state": "no-results",
+   "evidence_kind": "direct",
+   "clone_route": "/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "nav-products-dropdown.desktop",
+   "route_id": "home",
+   "state": "nav-products",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "nav-workouts-dropdown.desktop",
+   "route_id": "home",
+   "state": "nav-workouts",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "nav-more-dropdown.desktop",
+   "route_id": "home",
+   "state": "nav-more",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "mobile-menu-open.mobile",
+   "route_id": "home",
+   "state": "mobile-menu",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "login-validation-empty.desktop",
+   "route_id": "login",
+   "state": "validation-error",
+   "evidence_kind": "direct",
+   "clone_route": "/login",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "build-routine-validation-empty.desktop",
+   "route_id": "build-routine",
+   "state": "validation-error",
+   "evidence_kind": "direct",
+   "clone_route": "/build-routine",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-01.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-01",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-02.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-02",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-03.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-03",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-04.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-04",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-05.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-05",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-06.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-06",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-07.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-07",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-08.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-08",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-09.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-09",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-10.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-10",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-11.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-11",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-12.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-12",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-13.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-13",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-14.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-14",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-15.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-15",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-16.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-16",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-step-17.desktop",
+   "route_id": "signup",
+   "state": "questionnaire-step-17",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-results.desktop",
+   "route_id": "signup",
+   "state": "results",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "signup-account-create.desktop",
+   "route_id": "signup",
+   "state": "account-create",
+   "evidence_kind": "direct",
+   "clone_route": "/signup",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "home-dark-mode.desktop",
+   "route_id": "home",
+   "state": "dark-mode",
+   "evidence_kind": "direct",
+   "clone_route": "/",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "forgot-password-validation-empty.desktop",
+   "route_id": "forgot-password",
+   "state": "validation-error",
+   "evidence_kind": "direct",
+   "clone_route": "/login/forgot-password",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "elite-checkout.yearly.desktop",
+   "route_id": "elite-checkout",
+   "state": "yearly",
+   "evidence_kind": "direct",
+   "clone_route": "/elite/checkout?isMyJefit=true&sub=yearly",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-body-stats.empty.desktop",
+   "route_id": "my-jefit-body-stats",
+   "state": "empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/body-stats",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-exercises.custom-empty.desktop",
+   "route_id": "my-jefit-exercises",
+   "state": "custom-empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-exercises.database.desktop",
+   "route_id": "my-jefit-exercises",
+   "state": "database",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-exercises.detail.desktop",
+   "route_id": "my-jefit-exercises",
+   "state": "detail",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/exercises",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-popular.loaded.desktop",
+   "route_id": "my-jefit-popular",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/popular",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-progress-insights.empty.desktop",
+   "route_id": "my-jefit-progress-insights",
+   "state": "empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/insights",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-progress-photos.empty.desktop",
+   "route_id": "my-jefit-progress-photos",
+   "state": "empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/photos",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-progress.empty.desktop",
+   "route_id": "my-jefit-progress",
+   "state": "empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/history",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-progress.log-modal.desktop",
+   "route_id": "my-jefit-progress",
+   "state": "log-modal",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/history",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-progress.populated.desktop",
+   "route_id": "my-jefit-progress",
+   "state": "populated",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/progress/history",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-qa.loaded.desktop",
+   "route_id": "my-jefit-qa",
+   "state": "loaded",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/qa",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.account.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "account",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.data-controls.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "data-controls",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.integrations.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "integrations",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.privacy.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "privacy",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.profile.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "profile",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-workouts-edit.editor.desktop",
+   "route_id": "my-jefit-workouts-edit",
+   "state": "editor",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/workouts/edit?id=102",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-workouts.initial.desktop",
+   "route_id": "my-jefit-workouts",
+   "state": "initial",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/workouts",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-workouts.plan-menu.desktop",
+   "route_id": "my-jefit-workouts",
+   "state": "plan-menu",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/workouts",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-workouts.populated.desktop",
+   "route_id": "my-jefit-workouts",
+   "state": "populated",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit/workouts",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.account-menu.desktop",
+   "route_id": "my-jefit",
+   "state": "account-menu",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.create-post-dialog.desktop",
+   "route_id": "my-jefit",
+   "state": "create-post-dialog",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.discover-empty.desktop",
+   "route_id": "my-jefit",
+   "state": "discover-empty",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.getapp-menu.desktop",
+   "route_id": "my-jefit",
+   "state": "getapp-menu",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.plan-upgrade-modal.desktop",
+   "route_id": "my-jefit",
+   "state": "plan-upgrade-modal",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit.sync-info-modal.desktop",
+   "route_id": "my-jefit",
+   "state": "sync-info-modal",
+   "evidence_kind": "direct",
+   "clone_route": "/my-jefit",
+   "state_recipe": true,
+   "classification": "matched",
+   "note": ""
+  },
+  {
+   "kind": "checkpoint",
+   "id": "elite-checkout.success.desktop",
+   "route_id": "elite-checkout",
+   "state": "success",
+   "evidence_kind": "unavailable",
+   "clone_route": "/elite/checkout?isMyJefit=true&sub=yearly",
+   "state_recipe": true,
+   "classification": "unavailable",
+   "note": "Post-payment confirmation was never reached on source (real payment forbidden; the user holds no Elite account). The clone implements the state as local-sandbox behavior: approved scenario -> order + membership in one transaction -> redirect to the frozen settings destination view. Disclosed as inference, never recorded as direct evidence."
+  },
+  {
+   "kind": "checkpoint",
+   "id": "my-jefit-settings.elite-active.desktop",
+   "route_id": "my-jefit-settings",
+   "state": "elite-active",
+   "evidence_kind": "unavailable",
+   "clone_route": "/my-jefit/settings",
+   "state_recipe": true,
+   "classification": "unavailable",
+   "note": "Elite-active settings state never observed. The clone keeps the frozen Account-tab structure and replaces the upgrade cards with an Account Type value plus a plan/renewal line. Disclosed as inference."
+  },
+  {
+   "kind": "route",
+   "id": "home",
+   "priority": "p0",
+   "clone_route": "/",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "elite",
+   "priority": "p0",
+   "clone_route": "/elite",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "elite-checkout",
+   "priority": "p0",
+   "clone_route": "/elite/checkout?isMyJefit=true&sub=yearly",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "exercises",
+   "priority": "p0",
+   "clone_route": "/exercises",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "exercise-detail",
+   "priority": "p0",
+   "clone_route": "/exercises/2/barbell-bench-press",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "routines",
+   "priority": "p0",
+   "clone_route": "/routines",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "routines-category",
+   "priority": "p1",
+   "clone_route": "/routines/beginner",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "routine-detail",
+   "priority": "p0",
+   "clone_route": "/routines/19113/6-weeks-to-six-pack-abs",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "build-routine",
+   "priority": "p0",
+   "clone_route": "/build-routine",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "login",
+   "priority": "p0",
+   "clone_route": "/login",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "forgot-password",
+   "priority": "p1",
+   "clone_route": "/login/forgot-password",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "signup",
+   "priority": "p0",
+   "clone_route": "/signup",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "support",
+   "priority": "p1",
+   "clone_route": "/support",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "support-faq",
+   "priority": "p1",
+   "clone_route": "/support/faq",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit",
+   "priority": "p0",
+   "clone_route": "/my-jefit",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-qa",
+   "priority": "p2",
+   "clone_route": "/my-jefit/qa",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-popular",
+   "priority": "p2",
+   "clone_route": "/my-jefit/popular",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-progress",
+   "priority": "p0",
+   "clone_route": "/my-jefit/progress/history",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-progress-photos",
+   "priority": "p2",
+   "clone_route": "/my-jefit/progress/photos",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-progress-insights",
+   "priority": "p1",
+   "clone_route": "/my-jefit/progress/insights",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-body-stats",
+   "priority": "p1",
+   "clone_route": "/my-jefit/progress/body-stats",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-workouts",
+   "priority": "p0",
+   "clone_route": "/my-jefit/workouts",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-workouts-edit",
+   "priority": "p0",
+   "clone_route": "/my-jefit/workouts/edit?id=102",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-exercises",
+   "priority": "p1",
+   "clone_route": "/my-jefit/exercises",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "my-jefit-settings",
+   "priority": "p0",
+   "clone_route": "/my-jefit/settings",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "about-us",
+   "priority": "p2",
+   "clone_route": "/about-us",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "ai-workout-tracker",
+   "priority": "p2",
+   "clone_route": "/ai-workout-tracker",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "adaptive-plan",
+   "priority": "p2",
+   "clone_route": "/ai-workout-tracker/adaptive-plan",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "use-case",
+   "priority": "p2",
+   "clone_route": "/use-case",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "watch",
+   "priority": "p2",
+   "clone_route": "/watch",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "coach",
+   "priority": "p2",
+   "clone_route": "/coach",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "our-story",
+   "priority": "p2",
+   "clone_route": "/our-story",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "community",
+   "priority": "p2",
+   "clone_route": "/community/",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "blog",
+   "priority": "p2",
+   "clone_route": "/blog",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "terms-of-use",
+   "priority": "p2",
+   "clone_route": "/terms-of-use",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "privacy-policy",
+   "priority": "p2",
+   "clone_route": "/privacy-policy",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "ip-notice-process",
+   "priority": "p2",
+   "clone_route": "/ip-notice-process",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "press-media",
+   "priority": "p2",
+   "clone_route": "/press-media",
+   "classification": "matched"
+  },
+  {
+   "kind": "route",
+   "id": "not-found",
+   "priority": "p1",
+   "clone_route": "/zzzz-no-match-websitebench",
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "network-closure",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_no_remote_refs.py",
+    "clone/tests/test_no_remote_refs.py::test_detector_flags_injected_remote_ref"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "auth-boundary",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_auth.py",
+    "clone/tests/test_auth.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "membership-order-transactional",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_membership_payment.py",
+    "clone/tests/test_membership_payment.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "payment-input-boundary",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_membership_payment.py",
+    "clone/tests/test_membership_payment.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "cross-actor-isolation",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_backend_lifecycle.py",
+    "clone/tests/test_backend_lifecycle.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "deterministic-reset",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_backend_lifecycle.py",
+    "clone/tests/test_backend_lifecycle.py::test_reset_detects_divergent_state"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "routine-builder-semantics",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_routines_api.py",
+    "clone/tests/test_routines_api.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "workout-log-semantics",
+   "priority": "p0",
+   "tests": [
+    "clone/tests/test_workout_log_api.py",
+    "clone/tests/test_workout_log_api.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "not-found-fidelity",
+   "priority": "p1",
+   "tests": [
+    "clone/tests/test_app_surface.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "mail-local-only",
+   "priority": "p1",
+   "tests": [
+    "clone/tests/test_auth.py",
+    "clone/tests/test_auth.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "invariant",
+   "id": "free-tier-limits",
+   "priority": "p1",
+   "tests": [
+    "clone/tests/test_membership_payment.py"
+   ],
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "register-upgrade-elite-annual",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "sign-in-dashboard",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "password-recovery-view",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "browse-exercises-filter",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "browse-routines-detail",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "create-routine-edit-sets",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "log-workout-session",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "goals-and-preferences",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "community-views",
+   "priority": "p2",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "support-and-help",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "no-results-and-recovery",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "entry-nav-primary",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "registration-entry-view",
+   "priority": "p1",
+   "classification": "matched"
+  },
+  {
+   "kind": "journey",
+   "id": "elite-plan-review",
+   "priority": "p0",
+   "classification": "matched"
+  },
+  {
+   "kind": "implementation",
+   "id": "routine-autosave-api",
+   "classification": "inferred-architecture",
+   "note": "EA1 unavailable: source autosave/log request shapes were never observed. The clone designs its own JSON API (POST /api/plans/*, /api/days/*, /api/entries/*); network closure makes source shapes non-binding."
+  },
+  {
+   "kind": "implementation",
+   "id": "workout-log-api",
+   "classification": "inferred-architecture",
+   "note": "EA1 unavailable: source log API shapes unobserved. Clone-local API (POST /api/sessions, /api/sessions/<id>/sets); the one observed behavior (added exercise logs 25 lbs x 8; edited set persisted) is reproduced exactly."
+  },
+  {
+   "kind": "implementation",
+   "id": "checkout-monthly-variant",
+   "classification": "inferred-architecture",
+   "note": "Structural inference from the yearly Stripe capture plus /elite pricing ($12.99/month, no annual coupon). Only the yearly checkout DOM was captured."
+  },
+  {
+   "kind": "implementation",
+   "id": "member-exercise-filters",
+   "classification": "inferred-architecture",
+   "note": "Member Filters slide-over was captured open but its apply semantics were not exercised; the clone reuses the same client-side filter behavior proven on the public /exercises capture."
+  },
+  {
+   "kind": "implementation",
+   "id": "custom-exercise-dialog",
+   "classification": "inferred-architecture",
+   "note": "The custom-exercise creation dialog's fields were never captured (free-tier counter only). The clone implements a minimal honest create flow enforcing the observed 0/3 limit."
+  },
+  {
+   "kind": "implementation",
+   "id": "per-stat-body-stat-pages",
+   "classification": "inferred-architecture",
+   "note": "Per-stat depth pages (/my-jefit/progress/body-stats/<stat>) were never captured. The clone serves a disclosed minimal page whose 'Edit stat' performs real local persistence."
+  },
+  {
+   "kind": "implementation",
+   "id": "member-light-theme",
+   "classification": "inferred-architecture",
+   "note": "Member light/dark toggle exists in the captured account menu but no member-theme frame was captured; the clone applies the same documented light/dark class swap observed on the public dark-mode capture."
+  },
+  {
+   "kind": "implementation",
+   "id": "signup-credential-step",
+   "classification": "inferred-architecture",
+   "note": "The register step past the captured email entry was never observed (the user registered unobserved). The clone continues clone-locally with username+password on the same document and discloses it."
+  },
+  {
+   "kind": "implementation",
+   "id": "login-error-copy",
+   "classification": "inferred-architecture",
+   "note": "Wrong-credential error copy was never observed (source showed no inline validation on empty submit, and no wrong-credential attempt was made). The clone renders its own labelled inline error; the observed empty-submit behavior (no validation) is reproduced exactly."
+  },
+  {
+   "kind": "implementation",
+   "id": "routine-detail-day-plans",
+   "classification": "inferred-architecture",
+   "note": "Only routine 19113's day breakdown was captured. Other fixture routines carry deterministic synthetic day plans preserving the captured Sets x Reps structure and density."
+  },
+  {
+   "kind": "implementation",
+   "id": "exercise-detail-fields",
+   "classification": "inferred-architecture",
+   "note": "Only exercise 2's detail DOM was captured. Other entities render difficulty/type/log-type from clone-local structural defaults; captured entities serve their frozen documents verbatim."
+  },
+  {
+   "kind": "implementation",
+   "id": "routines-sort-order",
+   "classification": "inferred-architecture",
+   "note": "Sort URLs (?sort=views, ?sort=last_updated) are directly observed; the resulting orderings were not fully enumerated, so the clone applies deterministic clone-local orderings that visibly differ per sort."
+  },
+  {
+   "kind": "implementation",
+   "id": "routine-category-membership",
+   "classification": "inferred-architecture",
+   "note": "Category pages are directly observed (10 cards each); per-category membership lists were not enumerated, so the clone selects deterministically from fixture attributes."
+  },
+  {
+   "kind": "implementation",
+   "id": "insights-populated",
+   "classification": "inferred-architecture",
+   "note": "The populated insights view was never captured (the account had one session and the capture shows the empty state). The clone renders a disclosed minimal populated summary."
+  },
+  {
+   "kind": "known-difference",
+   "id": "missing-icon-payloads",
+   "classification": "known-difference",
+   "note": "15 first-party icon/image payloads referenced by the captured DOM are absent from the frozen asset closure (5 favicon variants, /my-jefit/{empty_newsfeed.png,empty_exercise.png,empty_note.svg,logs_empty_state.svg,records_broken_icon.svg}, /shared/icon/{assign,edit,trash}.svg, /onboarding/level.svg, /images/exercises/960_590/8.jpg). They were never fetched by the anonymous capture and cannot be fetched offline, so they resolve to local 404s (broken images) rather than remote requests.",
+   "impact": "Cosmetic: a few member-area empty-state icons and the favicon do not render. Zero effect on network closure or behavior."
+  },
+  {
+   "kind": "known-difference",
+   "id": "onboarding-slide-gif-phase",
+   "classification": "known-difference",
+   "note": "The build-routine onboarding modal's slide 3 pairs with the captured 'Stronger Together' gif (image.qa893857efa) exactly as the source does \u2014 asserted structurally by clone/tests/test_app_surface.py::test_build_routine_modal_slide_image_pairing. That gif animates builder view -> routine detail -> green 'Link copied' pill over 66 frames; the frozen source frame caught its final phase, so a clone screenshot can show any earlier phase. Same class as the recorded exercise-detail gif flicker; build-routine is not an acceptance oracle.",
+   "impact": "Screenshot-phase only: the paired asset, slide order and active slide all match the capture."
+  },
+  {
+   "kind": "known-difference",
+   "id": "signup-continue-enabled-state",
+   "classification": "known-difference",
+   "note": "Several questionnaire panels and the /signup/register step were captured in their EMPTY state, so their Continue controls ship serialized as disabled (pointer-events-none) and no captured frame shows the enabled styling. The runtime ungates them once an answer exists (source behaviour: a human can proceed after answering); the enabled fill is the primary-button colour measured on the observed /login submit \u2014 a disclosed inference, not invented. Step 17 ('Analyzing your answers') hands off to /signup/results after 2.5s; the source shows both states but not the duration, so the delay is clone-local.",
+   "impact": "Without this the questionnaire and registration render but cannot be operated; regression-tested in clone/tests/test_signup_usability.py."
+  },
+  {
+   "kind": "known-difference",
+   "id": "residual-pristine-asset-findings",
+   "classification": "known-difference",
+   "note": "After the scope-owner asset-pipeline fix (2026-08-19: 233 query-digest mirror files renamed to carry true extensions; 30 source-404 shells removed) the static asset-closure findings dropped from 333 to 20. The remaining 20 are properties of frozen pristine payloads: 7 assets whose originals carry external url()/metadata references (candidate-side fix: localized vendor copies under clone/static/site/vendor/, all passing inspect_asset, with every candidate reference repointed \u2014 zero candidate references to failing pristine assets remain) and a few manifest-vs-file SVG dimension mismatches. Pristine mirror copies stay byte-exact; resolving the residual findings belongs to the scope owner.",
+   "impact": "Diagnostic-only; no candidate-served document references a failing asset."
+  },
+  {
+   "kind": "known-difference",
+   "id": "uncaptured-optimizer-variants",
+   "classification": "known-difference",
+   "note": "Next.js image-optimizer widths the capture viewports never requested are localized onto their deterministic mirror path and 404 locally (recorded per page in clone/frontend/rewrite-report.json content_fallback_refs).",
+   "impact": "None at the frozen viewports: every width the contract viewports request is present (home oracles score >= 0.999 similarity)."
+  },
+  {
+   "kind": "known-difference",
+   "id": "community-avatars-replaced",
+   "classification": "known-difference",
+   "note": "The captured Q&A/Popular feeds referenced real community members' avatar files by identifier. Every such reference is replaced with a neutral inline placeholder and the feeds are rebuilt from synthetic fixture posts.",
+   "impact": "Deliberate: no third-party user content or identifier ships in the clone."
+  },
+  {
+   "kind": "known-difference",
+   "id": "catalog-count-reduced",
+   "classification": "known-difference",
+   "note": "The source shows '1295 EXERCISES FOUND' across 72 pages; the clone fixture holds 53 exercises (36 with real captured names/instructions, 17 synthetic facet fill) across 3 pages and renders its own true count. Data reduction touched entity counts only: all card fields, 18-per-page density, pagination boundaries and the ?page=0/?page=1 quirk are preserved.",
+   "impact": "Intentional per the data-reduction rule; never a false count."
+  },
+  {
+   "kind": "known-difference",
+   "id": "ratings-absent",
+   "classification": "known-difference",
+   "note": "Human trace ht-05 mentions community ratings; the live source has no ratings section on exercise or routine detail pages, and the clone reproduces the source.",
+   "impact": "Trace-text/source divergence, already recorded in the frozen scope."
+  },
+  {
+   "kind": "known-difference",
+   "id": "unbranded-404",
+   "classification": "known-difference",
+   "note": "ht-22 expects a branded not-found; the source serves an unbranded server 404 and the clone reproduces that exactly (no site chrome, no clone runtime).",
+   "impact": "Trace-text/source divergence, already recorded in the frozen scope."
+  },
+  {
+   "kind": "known-difference",
+   "id": "live-diagnostic-platform",
+   "classification": "known-difference",
+   "note": "`websitebench-offline-clone verify --section live` cannot run on this host: the candidate sandbox requires Linux. Substituted with an advisory equivalent walk (all 57 checkpoint-backed state recipes exercised against the booted clone) plus the shared compare-visual tool on the three pixel oracles.",
+   "impact": "The live section must still be run by the orchestrator on Linux."
+  },
+  {
+   "kind": "known-difference",
+   "id": "backend-semantic-test-not-run",
+   "classification": "known-difference",
+   "note": "`tools test-backend` consumes a human-gated semantic-selection spec (human_gate.status). No such human gate exists for this run and authoring one would fabricate human approval, so the tool was not run.",
+   "impact": "Backend semantics are covered instead by clone/tests (75 tests) and the shared explore diagnostic."
+  },
+  {
+   "kind": "known-difference",
+   "id": "opencli-unmapped-journeys",
+   "classification": "known-difference",
+   "note": "derive-from-clone leaves failure_paths/recovery_paths empty for the checkout and login profiles: its matcher consumes only scope/journeys.json entries of kind failure/retry/recovery whose family (or id prefix) matches the profile group, and the frozen journeys express the declined/retry paths as failure_variant/recovery_variant strings on the P0 success journey \u2014 a shape the matcher cannot read. journeys.json is frozen scope outside the candidate write boundary, so the two unmapped-journey pendings carry this recorded reason. The declined/retry behaviors themselves are implemented and tested (clone/tests/test_membership_payment.py) and exercised by verify.json recipes elite-checkout.declined/retry.",
+   "impact": "Contract metadata only; the failure/recovery behaviors are covered elsewhere."
+  },
+  {
+   "kind": "known-difference",
+   "id": "opencli-local-harness",
+   "classification": "known-difference",
+   "note": "The OpenCLI npm CLI is not installed on this host and installing adapters into ~/.opencli was out of bounds, so replay ran through tools/opencli-harness/ \u2014 a transparent local executor that runs the committed generator-produced adapters verbatim (module shims for the two tiny @jackwener/opencli imports only) and reports itself as 'wb-local-adapter-harness'. Both profiles replay 3/3 steps with assertion_failures 0. The current websitebench-harbor CLI has no --promote flag (skill text predates this checkout); the committed replay-evidence artifacts are the promoted record, advisory only.",
+   "impact": "Replay is advisory by design; artifacts record the harness identity honestly."
+  },
+  {
+   "kind": "known-difference",
+   "id": "signup-questionnaire-panels",
+   "classification": "known-difference",
+   "note": "The 17 captured questionnaire panels are swapped client-side at /signup (URL unchanged, as on source) and are also directly addressable at /signup?step=N so the diagnostics can reach each frozen state.",
+   "impact": "The ?step= parameter is a clone-local addition for state addressability; the default flow matches source."
+  }
+ ]
+}

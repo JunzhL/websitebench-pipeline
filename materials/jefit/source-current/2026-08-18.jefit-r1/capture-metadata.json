@@ -1,0 +1,1156 @@
+{
+  "schema_version": "jefit.capture-metadata.v1",
+  "status": "captured",
+  "capture_id": "2026-08-18.jefit-r1",
+  "captured_at_utc": "2026-08-18",
+  "source_origins": [
+    "https://www.jefit.com/"
+  ],
+  "engine": {
+    "primary": "local-playwright",
+    "browser": "Chromium 149 headless via Python Playwright",
+    "notes": "jefit.com serves local Playwright directly (no WAF); one browser context spans the whole matrix so consent and experiment state stay constant. Interaction states ran with non-GET requests aborted at the network layer. Authenticated member states were captured separately in the user-provided local Chrome session (chrome-devtools MCP) and retained only under git-ignored source-auth-scratch/."
+  },
+  "baseline": {
+    "locale": "en-US",
+    "timezone": "Etc/UTC",
+    "consent": "banner-accept-once-per-context"
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "roles_captured": [
+    "anonymous",
+    "member (out-of-repo retention)"
+  ],
+  "roles_unavailable": {
+    "elite-member": "post-payment states unavailable: real payment prohibited and the user holds no Elite account"
+  },
+  "frames_per_checkpoint": 3,
+  "captures": [
+    {
+      "checkpoint": "home",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0",
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0",
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "home",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323",
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323",
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "home",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "33ab9b28740046b7c1938648368d146ce25779bacf8bdc7b36cd2372a8e292da",
+        "434067de19addb8ba690822d5ae2e02de1fd8cd099e520ba696b09530b635185",
+        "434067de19addb8ba690822d5ae2e02de1fd8cd099e520ba696b09530b635185"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "elite",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "title": "Elite Membership Plans - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264",
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264",
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "elite",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "title": "Elite Membership Plans - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180",
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180",
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "elite",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "title": "Elite Membership Plans - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "title": "Exercise Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b",
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b",
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "title": "Exercise Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "title": "Exercise Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4",
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4",
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercise-detail",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "final_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "title": "Barbell Bench Press - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "3583e151697f1aededcf034b70cdcd52bf8264ffa070a289a07c8f5445de5d4a",
+        "7f065d6b52df86a67871b39adc37fe7e3b5d2593d229ef88135f942f53daf780",
+        "46d3e76e0cbe6f6fa551f73ce9e6b6f47cb6bcca59ef9b7d248c5b57836dcf28"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercise-detail",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "final_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "title": "Barbell Bench Press - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "da7aa63e813bb76c6b86208b987d59764e777c59498e0aaa12b4a57121eb76e1",
+        "dc1ab6bcde3435fc7d7ed35430798b8cc5f4a2e9ce24a864448ed0bcfeb9a80c",
+        "da7aa63e813bb76c6b86208b987d59764e777c59498e0aaa12b4a57121eb76e1"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routines",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "title": "Workout Routine Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe",
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe",
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routines",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "title": "Workout Routine Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb",
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb",
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routines",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "title": "Workout Routine Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routine-detail",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "final_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "title": "6-Weeks to Six-Pack Abs - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routine-detail",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "final_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "title": "6-Weeks to Six-Pack Abs - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8",
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8",
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "build-routine",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/build-routine",
+      "final_url": "https://www.jefit.com/build-routine?code=2YI2PS",
+      "title": "Jefit Routine Builder - The Best Workout Planner Online to Create & Track",
+      "frames": 3,
+      "frame_sha256": [
+        "e92f125ff76fc8f999cea8461ca311b3d4ba756711056522b0fabe3053164372",
+        "4db4547f424e8d1b45aa50984326eb8749fe16089908c31fcf91093b2da97d8a",
+        "a557235ded770d5372f4611578ab54d18c171325b93528c2e020a5a006d13a25"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "build-routine",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/build-routine",
+      "final_url": "https://www.jefit.com/build-routine?code=Z8F209",
+      "title": "Jefit Routine Builder - The Best Workout Planner Online to Create & Track",
+      "frames": 3,
+      "frame_sha256": [
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d",
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d",
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "login",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/login",
+      "final_url": "https://www.jefit.com/login",
+      "title": "Login to Jefit Dashboard - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "login",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/login",
+      "final_url": "https://www.jefit.com/login",
+      "title": "Login to Jefit Dashboard - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b",
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b",
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/signup",
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/signup",
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe",
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe",
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "forgot-password",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/login/forgot-password",
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "title": "Reset Your Password - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718",
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718",
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "forgot-password",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/login/forgot-password",
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "title": "Reset Your Password - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "support",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/support",
+      "final_url": "https://www.jefit.com/support",
+      "title": "Support - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5",
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5",
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "support",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/support",
+      "final_url": "https://www.jefit.com/support",
+      "title": "Support - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9",
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9",
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "support-faq",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/support/faq",
+      "final_url": "https://www.jefit.com/support/faq",
+      "title": "FAQ - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "support-faq",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/support/faq",
+      "final_url": "https://www.jefit.com/support/faq",
+      "title": "FAQ - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066",
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066",
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "routines-beginner",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines/beginner",
+      "final_url": "https://www.jefit.com/routines/beginner",
+      "title": "Workout Plans for Beginner - Simple & Effective Routines to Get Started!",
+      "frames": 3,
+      "frame_sha256": [
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises-page2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises?page=2",
+      "final_url": "https://www.jefit.com/exercises?page=2",
+      "title": "Exercise Database - Page 2 - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e",
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e",
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "not-found",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "title": "404 Not Found",
+      "frames": 3,
+      "frame_sha256": [
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246",
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246",
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "not-found",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "title": "404 Not Found",
+      "frames": 3,
+      "frame_sha256": [
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "about-us",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/about-us",
+      "final_url": "https://www.jefit.com/about-us",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "ai-workout-tracker",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ai-workout-tracker",
+      "final_url": "https://www.jefit.com/ai-workout-tracker",
+      "title": "AI Workout Tracker & Progressive Overload System - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "adaptive-plan",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+      "final_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+      "title": "Adaptive Plan \u2014 AI-Powered Training That Evolves With You | JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "use-case",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/use-case",
+      "final_url": "https://www.jefit.com/use-case",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b",
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b",
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "watch",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/watch",
+      "final_url": "https://www.jefit.com/watch",
+      "title": "Watch Fitness App: Track Workouts & Sync - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "coach",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/coach",
+      "final_url": "https://www.jefit.com/coach",
+      "title": "Personal Coach - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "65951e1d4804deb1dbb42a5cb9f74d2b852b5051daf61af0fc309742d8d0d391",
+        "c81b52561b78d9850bb8d66a3651c80d55be3b61e2d53de4366cde83a8feb516",
+        "95c25579da4f6bbf2b8fd1724650b947c1f5202c59fc9d63f083c187f168ed23"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "our-story",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/our-story",
+      "final_url": "https://www.jefit.com/our-story",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca",
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca",
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "community",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/community",
+      "final_url": "https://www.jefit.com/community/",
+      "title": "Jefit Community | Jefit - Best Android and iPhone Workout, Fitness, Exercise and Bodybuilding App | Best Workout Tracking Software",
+      "frames": 3,
+      "frame_sha256": [
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "blog",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/blog",
+      "final_url": "https://www.jefit.com/blog",
+      "title": "Blog - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "terms-of-use",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/terms-of-use",
+      "final_url": "https://www.jefit.com/terms-of-use",
+      "title": "Terms of Use - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f",
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f",
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "privacy-policy",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/privacy-policy",
+      "final_url": "https://www.jefit.com/privacy-policy",
+      "title": "Privacy Policy - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee",
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee",
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "ip-notice-process",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ip-notice-process",
+      "final_url": "https://www.jefit.com/ip-notice-process",
+      "title": "IP / DMCA Notices - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "press-media",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/press-media",
+      "final_url": "https://www.jefit.com/press-media",
+      "title": "Press & Media - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises-filter-abs",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/exercises",
+      "title": "Exercise Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "exercises-no-results",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/exercises",
+      "title": "Exercise Database - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "nav-products-dropdown",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba",
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba",
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "nav-workouts-dropdown",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca",
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca",
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "nav-more-dropdown",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db",
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db",
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "mobile-menu-open",
+      "viewport": "mobile",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "d8a600c066635ae59e1ef2cab4ea8408c2474115ffbbe7625e80768c5065fee2",
+        "fee10ad2870fea34bbb2d99e41a6a110837bf2aee625ae50eb4cbadf84742fe8",
+        "fee10ad2870fea34bbb2d99e41a6a110837bf2aee625ae50eb4cbadf84742fe8"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "login-validation-empty",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/my-jefit",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+        "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+        "3b2b8db63d3187f966d76b04255dd2099cc13db2271c3b08c50bf0b48fd2c645"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "build-routine-validation-empty",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/routines/1797163/new-routine",
+      "title": "New Routine - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-01",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-02",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed",
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed",
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-03",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6",
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6",
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-04",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-05",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04",
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04",
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-06",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2",
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2",
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-07",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-08",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1",
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1",
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-09",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7",
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7",
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-10",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878",
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878",
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-11",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8",
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8",
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-12",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd",
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd",
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-13",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52",
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52",
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-14",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010",
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010",
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-15",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88",
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88",
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-16",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38",
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38",
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-step-17",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/results",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "b428ea5a7b571146bf77b9a4497ddd0acbab958273a487b2221d3dc914d1b576",
+        "eb126b0709383b77cde8fc472a8496b8b772f4136e37b70a6db528d80bc93243",
+        "d96c1153c3b42fde147d1f5554b8b0ae31362836223449ba1bd8134c2829458f"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-results",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/results",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517",
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517",
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "signup-account-create",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/register",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "home-dark-mode",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    },
+    {
+      "checkpoint": "forgot-password-validation-empty",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "title": "Reset Your Password - JEFIT",
+      "frames": 3,
+      "frame_sha256": [
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright"
+    }
+  ]
+}

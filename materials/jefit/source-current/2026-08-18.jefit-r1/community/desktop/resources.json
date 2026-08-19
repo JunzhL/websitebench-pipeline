@@ -1,0 +1,432 @@
+[
+  {
+    "url": "https://www.jefit.com/css/style.css",
+    "initiator": "link",
+    "transfer_size": 41474
+  },
+  {
+    "url": "https://www.jefit.com/community/styles.css",
+    "initiator": "link",
+    "transfer_size": 685
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/astra/astra.css",
+    "initiator": "link",
+    "transfer_size": 3051
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/astra/astra-inline.css",
+    "initiator": "link",
+    "transfer_size": 3454
+  },
+  {
+    "url": "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css",
+    "initiator": "link",
+    "transfer_size": 22310
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/bootstrap.css",
+    "initiator": "link",
+    "transfer_size": 70873
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/style.css",
+    "initiator": "link",
+    "transfer_size": 7632
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-wp.css",
+    "initiator": "link",
+    "transfer_size": 6292
+  },
+  {
+    "url": "https://www.jefit.com/assets/plugins/line-icons/line-icons.css",
+    "initiator": "link",
+    "transfer_size": 2635
+  },
+  {
+    "url": "https://www.jefit.com/assets/plugins/font-awesome/css/font-awesome.css",
+    "initiator": "link",
+    "transfer_size": 5637
+  },
+  {
+    "url": "https://cdn.jefit.com/js/jquery-1.9.1.min.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/1786427309/style",
+    "initiator": "link",
+    "transfer_size": 41474
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/uploads/custom-css-js/22725.js",
+    "initiator": "script",
+    "transfer_size": 759
+  },
+  {
+    "url": "https://www.jefit.com/assets/plugins/cookie-banner/cookiealert-standalone.js",
+    "initiator": "script",
+    "transfer_size": 3273
+  },
+  {
+    "url": "https://cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/js/frontend.min.js?ver=3.5.6",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/uploads/2017/07/cropped-logo_155_40_white-120x31.webp",
+    "initiator": "img",
+    "transfer_size": 794
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=71371191-43a9-4a2f-a9b0-86c07cd90f40",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=767d5772-a8f7-4583-a126-f744d9aa52d7",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=6a4ff8ef-80a7-41e4-b94a-5ba887f0e9d6",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=0e9e22c6-00df-4800-a84a-b6c743fc7706",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=1e09cf93-ff8c-40e5-a5f5-22be319d34ce",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=6fe04073-6d0a-4d06-a3e3-2f4affb719d0",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/forum/attachment.php?attachmentid=3ff194dd-2879-4756-8ceb-db671294841b",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/app.css",
+    "initiator": "css",
+    "transfer_size": 10764
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/ie8.css",
+    "initiator": "css",
+    "transfer_size": 1032
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/blocks.css",
+    "initiator": "css",
+    "transfer_size": 3503
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/plugins.css",
+    "initiator": "css",
+    "transfer_size": 4429
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/plugins/animate.css",
+    "initiator": "css",
+    "transfer_size": 4643
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/plugins/box-shadows.css",
+    "initiator": "css",
+    "transfer_size": 829
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/plugins/style-switcher.css",
+    "initiator": "css",
+    "transfer_size": 1399
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-default.css",
+    "initiator": "css",
+    "transfer_size": 2915
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-v1.css",
+    "initiator": "css",
+    "transfer_size": 3664
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-v2.css",
+    "initiator": "css",
+    "transfer_size": 3764
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-v3.css",
+    "initiator": "css",
+    "transfer_size": 3383
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/headers/header-v4.css",
+    "initiator": "css",
+    "transfer_size": 3905
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-default.css",
+    "initiator": "css",
+    "transfer_size": 818
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v1.css",
+    "initiator": "css",
+    "transfer_size": 700
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v2.css",
+    "initiator": "css",
+    "transfer_size": 614
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v3.css",
+    "initiator": "css",
+    "transfer_size": 637
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v4.css",
+    "initiator": "css",
+    "transfer_size": 792
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v5.css",
+    "initiator": "css",
+    "transfer_size": 1147
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v6.css",
+    "initiator": "css",
+    "transfer_size": 1106
+  },
+  {
+    "url": "https://www.jefit.com/assets/css/footers/footer-v7.css",
+    "initiator": "css",
+    "transfer_size": 983
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,400",
+    "initiator": "css",
+    "transfer_size": 1960
+  },
+  {
+    "url": "https://www.jefit.com/images/unknown.gif",
+    "initiator": "css",
+    "transfer_size": 2802
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/themes/astra/assets/fonts/astra.woff",
+    "initiator": "css",
+    "transfer_size": 3604
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-288Z33GYQ7",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.amplitude.com/libs/amplitude-4.0.0-min.gz.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/show_ads.js",
+    "initiator": "script",
+    "transfer_size": 20020
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    "initiator": "script",
+    "transfer_size": 66797
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202608140101/show_ads_impl.js?bust=122880491",
+    "initiator": "script",
+    "transfer_size": 185878
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/html/r20260818/r20190131/zrt_lookup.html",
+    "initiator": "iframe",
+    "transfer_size": 4561
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2835681754103896&output=html&h=600&slotname=8830191561&adk=2413471514&adf=3176192457&pi=t.ma~as.8830191561&w=160&lmt=1787063496&url=https%3A%2F%2Fwww.jefit.com%2Fcommunity%2F&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJtYWNPUyIsIjE1LjcuNSIsImFybSIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1787063496694&bpp=108&bdt=672&idt=163&shv=r20260818&mjsv=m202608140101&ptt=5&saldr=sd&abxe=1&cookie_enabled=1&eoidce=1&correlator=7445007106918&frm=20&pv=2&u_tz=0&u_his=25&u_h=900&u_w=1440&u_ah=900&u_aw=1440&u_cd=24&u_sd=1&dmc=16&adx=58&ady=127&biw=1440&bih=900&scr_x=0&scr_y=0&eid=95397679%2C122880398%2C122880491&oid=2&pvsid=7817504142162546&tmod=922889285&uas=0&nvt=1&fc=896&brdim=0%2C0%2C0%2C0%2C1440%2C0%2C1440%2C900%2C1440%2C900&vis=1&rsz=d%7C%7CeE%7Cp&abl=XS&pfx=0&fu=0&bc=31&bz=1&ifi=1&uci=a!1&fsb=1&dtd=172",
+    "initiator": "iframe",
+    "transfer_size": 1354
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2835681754103896&output=html&adk=1812271804&adf=3025194257&abgtt=9&lmt=1787063496&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C8%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fwww.jefit.com%2Fcommunity%2F&pra=7&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJtYWNPUyIsIjE1LjcuNSIsImFybSIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1787063496803&bpp=1&bdt=782&idt=65&shv=r20260818&mjsv=m202608140101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&prev_slotnames=8830191561&nras=1&correlator=7445007106918&frm=20&pv=1&u_tz=0&u_his=25&u_h=900&u_w=1440&u_ah=900&u_aw=1440&u_cd=24&u_sd=1&dmc=16&adx=-12245933&ady=-12245933&biw=1440&bih=900&scr_x=0&scr_y=0&eid=95397679%2C122880398%2C122880491&oid=2&pvsid=7817504142162546&tmod=922889285&uas=0&nvt=1&fsapi=1&fc=896&brdim=0%2C0%2C0%2C0%2C1440%2C0%2C1440%2C900%2C1440%2C900&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&ifi=2&uci=a!2&fsb=1&dtd=68",
+    "initiator": "iframe",
+    "transfer_size": 1341
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/i/ca-pub-2835681754103896?href=https%3A%2F%2Fwww.jefit.com%2Fcommunity&ers=2",
+    "initiator": "script",
+    "transfer_size": 70552
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_exclusion_zone&typ=noex&cor=663349885996367&num=0&dvc=0&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_exclusion_zone&typ=noex&cor=663349885996367&num=1&dvc=0&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_exclusion_zone&typ=noex&cor=663349885996367&num=2&dvc=0&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_exclusion_zone&typ=noex&cor=663349885996367&num=3&dvc=0&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_exclusion_zone&typ=noex&cor=663349885996367&num=4&dvc=0&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_success&c=1&wpc=ca-pub-2835681754103896&warn=13&w=1440&h=900&pp=0&ppp=0&eatf=false&eatfAbg=true&reatf=true&a=6%2C1%2C5%2C7&apv=20260816_115412&sat=1787013623222&afm=2%2C0&as_count=1&d_count=0&ng_count=0&am_count=1&atf_count=1&mdns=0.279&alldns=0.409&allp=40&fd=(0%2C9%2C5)%2C(1%2C0%2C0)%2C(2%2C0%2C0)&pgh=2154&abl=false&rr=n&su=www.jefit.com&pvc=7817504142162546&r=0.1&eid=95397679%2C122880398%2C122880491",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+    "initiator": "fetch",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUssTJjFpij_6Y8FR9nLc3FnPEpdeUSeEMOToFyCDoenR8PFEReaklIBeUH2UXueu7xT5i8vJdHjSeo6voSeFU8OiwSop100LuwYLQcsjZvUDqn89Mfv1qcQ_D6MBPn_S1XQ5A7VA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzg3MDYzNDk3LDE5MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cuamVmaXQuY29tL2NvbW11bml0eS8iLG51bGwsW1s4LCIwV05HUGlWa2VlRSJdLFs5LCJlbi1VUyJdLFsxOCwiW1tbbnVsbCwxNTMxXV1dIl0sWzIzLCIxNzg3MDYzNDk2Il0sWzM1LCIxNzg3MDYzNDk3Il0sWzE5LCIyIl0sWzE3LCJbMF0iXSxbMjQsIiJdLFsyOSwiZmFsc2UiXV1d",
+    "initiator": "script",
+    "transfer_size": 1379
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&client=ca-pub-2835681754103896&output=html&h=280&adk=2767623100&adf=1730821504&pi=t.aa~a.697687507~rp.1&abgtt=9&w=1200&fwrn=4&fwrnh=100&lmt=1787063497&rafmt=1&to=qs&pwprc=3991718464&format=1200x280&url=https%3A%2F%2Fwww.jefit.com%2Fcommunity%2F&fwr=0&pra=3&rpe=1&resp_fmts=3&asro=0&aimartd=4&aieuf=1&aicrs=1&fa=40&uach=WyJtYWNPUyIsIjE1LjcuNSIsImFybSIsIiIsIjE0OS4wLjc4MjcuNTUiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNDkuMC43ODI3LjU1Il0sWyJDaHJvbWl1bSIsIjE0OS4wLjc4MjcuNTUiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&dt=1787063497033&bpp=2&bdt=1012&idt=2&shv=r20260818&mjsv=m202608140101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D355ffdaf6f435de9%3AT%3D1787063496%3ART%3D1787063496%3AS%3DALNI_MbNJZF5Jg5T_fkbm_wTvOu9gHUSbQ&gpic=UID%3D000014befbd9fa76%3AT%3D1787063496%3ART%3D1787063496%3AS%3DALNI_MaLOvy4POv8s3KjMIZLAr3dmFwdPg&eo_id_str=ID%3D49a14c6de5c55b94%3AT%3D1787063496%3ART%3D1787063496%3AS%3DAA-AfjZUBVuc2EQnRU0hqYAsnl4l&prev_fmts=0x0&prev_slotnames=8830191561&nras=2&correlator=7445007106918&frm=20&pv=1&u_tz=0&u_his=25&u_h=900&u_w=1440&u_ah=900&u_aw=1440&u_cd=24&u_sd=1&dmc=16&adx=120&ady=1483&biw=1440&bih=900&scr_x=0&scr_y=0&eid=95397679%2C122880398%2C122880491&oid=2&pvsid=7817504142162546&tmod=922889285&uas=0&nvt=1&fc=896&brdim=0%2C0%2C0%2C0%2C1440%2C0%2C1440%2C900%2C1440%2C900&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=128&bc=31&bz=1&ifi=3&uci=a!3&btvi=1&fsb=1&dtd=161",
+    "initiator": "iframe",
+    "transfer_size": 1146
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVNz1AmpbdQv_OWeuOkq_AM5uHVDrJESePS515ZDL2nT8RFdf8uhSSXUw4HF9H_XSXxJ5bE89uB1RxODKNX1FwC89DeEojRRkXv82npxYC_M3W5_PbPZ7_b9b9ifwJ57YnUifLnLw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/f/AGSKWxVnssZTdKXNJ_6B7bBRqqZCKcpPSy4XPWljKBEmfC5ufqSDST9xwgd81PsbDYJcXHpFkZqmsyp08onj81zzBTVB5IQEkShVOcdh7SsPf0j3i60uiGDR2KLg0Mhst2dFoCIP5vUEcg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzg3MDYzNDk3LDI0MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vd3d3LmplZml0LmNvbS9jb21tdW5pdHkvIixudWxsLFtbOCwiMFdOR1BpVmtlZUUiXSxbOSwiZW4tVVMiXSxbMTgsIltbW251bGwsMTUzMV1dXSJdLFsyMywiMTc4NzA2MzQ5NiJdLFszNSwiMTc4NzA2MzQ5NyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+    "initiator": "script",
+    "transfer_size": 4338
+  },
+  {
+    "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20260818&st=env&sjk=7817504142162546",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 13634
+  },
+  {
+    "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+    "initiator": "fetch",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://ep2.adtrafficquality.google/sodar/sodar2/255/runner.html",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/recaptcha/api2/aframe",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUb73zBulFvuvTEPBM8hL9RlSKLK4FHK2DN7YExYBcCKNSFSt3POIc8-nxMUtThMWooHLqVisljUVtH3BkpMmEQVCNeeAQD4IMdJ2A66dwgGQ-yc1c0X7MJZdw-2bwINyRI-femInKiWVly_KPkEW_fD9yiFmv8oyYXmiMmEJUPRtE_R0W3Si4YITVt/_=adcenter&/bannerpump.-ad5./ad/common_/virtuagirlhd.",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js?fcd=true",
+    "initiator": "script",
+    "transfer_size": 12268
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWVD_zx6UQBNOUDOGOX8FezEvBHw81wMqd3-6y35spI_6az0cXKx5MJIW-AWfiMyh_z3Tr0m4KdOewpHt0vH4j1pS91d6Y4EPIMVaCzjFnEtjcrPz7kKrls3a6L6UJLsd_aA81TPw==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzg3MDYzNDk4LDE5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw5LDZdLG51bGwsMixudWxsLCJlbiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL3d3dy5qZWZpdC5jb20vY29tbXVuaXR5LyIsbnVsbCxbWzgsIjBXTkdQaVZrZWVFIl0sWzksImVuLVVTIl0sWzE4LCJbW1tudWxsLDE1MzFdXV0iXSxbMjMsIjE3ODcwNjM0OTYiXSxbMzUsIjE3ODcwNjM0OTciXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+    "initiator": "script",
+    "transfer_size": 1871
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVP0e5KADuaNqhH5SznXB_G15VnJU9N6rGG3T1KiimuPEbdkqynkz0z-KaUphux4QTYQN2v_56tIiesOHWvRjIpXO80ZOERQO9jJgBN9pjmRjIAUyDD6TD_I4TZ2IUC2EuH0J24iA==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fundingchoicesmessages.google.com/el/AGSKWxXfsM7hoCljp5Du8CLpHfy-VZ44Uvb2Ant2bgnVGPXn8s80B3wTt5u-6R1yIRYu-3icMPE3Golx9dZ-Bosjooh8DfnvM-z4E3019gFKtvFAc3pwW8dnKmwncKxMaaaiB1G95TQQGw==",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=255&t=2&li=gda_r20260818&jk=7817504142162546&bg=!x8SlxKbNAAYssmaFDLI7AEcBe5WfODymYo0hYSz31EpmUtdLxejG69NDOzkeOenHQw6lzWcUtx7UbmSD0bP1gnRFwUhuCiI7kFDUm4THb5YbdrnMXfW2LAIAAACzUgAAAARoAQd-ADYnSQcRkFsicjxm0R0tUXIxLM9rJpe8XyyDBYgx36Jm42Ao9ql507UqD-6DGGdCtbkHwNrAw7iZApD5ZPdHaUNgkPIMfzcnuYPfyGUC7bGm1bfOtyQF9h4VrlTnbe2hL39SnfdkCY2MsrAW56VGeC9Dn0BjFc3xq2QAsD2Khs0ShvnExmYh-q2ZFlOTmTIKD3zhsOOSVuDfPmOlhqMIgC7avih01eR9jCiZYttLLzK4mC1JQlDY8mq-d4e1u-Pke-pjabUcJOptl2HJ2UMI8dzP60kD4N52_RkMxx2X46TY5ceeYFYO445URT7P5tgMFXDZbqRUuoGrQRZwyiaPVDb0av-qzIRAYYWbM-dEukHqqiWYYugT3uGA--85YTHk6vILY5q5oqQc0uKmqt0_x_ygl64Am9uok--wWOhwJiZHh53H7eN7i53S_MccSi8eimJHx89vVF8yyNqyw9Tmt-xEjDaQ2lDPmDYjeAXcdxScOpuSLFh1Gty_pfh8XAFUABU5Hfps0FML0IegB42Rl0fKIsMrlalXO8cfM6og5yPV4gKQhw9sVd2USz8Ojhv-C9G12aWbLEOzClMZ3iEX6RpO8lf4a_at9_88alvj4zhPEep7pXj8JC1L9dWoX6nZcuahBCoiMqivI_NLeUXfvwA0mDQdCUHs4nj1UhiyGA7vhhYt-zK307Sb5DHFsOpt13BSzFww3R6VA6jgLstW-9L7QXlmj7iywaaddQPwlUTflR673atR2N0Xl5QdzTT8TQht3oDP48znhEj3yU4YaE0kHC3nCEiaLQVG8JYzWD59lNk1xTW1Kyaa6JB_fQ2DlibmrpWagrdVOGD2ZK4SDLJZMzcuslecPq_vXvS3AtBriOaIXELWnPkjI1d3plDdN_jhxeN1sQfOZ8bMxhFdP_3aiTZEIUBT6fh5xTjLAgd29VUWk8u6UorPQg",
+    "initiator": "img",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025za200zd892535025&_p=1787063496593&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACQC&are=1&cid=1222361631.1787061813&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=8&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~119367802~119367810~120385423&sid=1787061812&sct=1&seg=1&dl=https%3A%2F%2Fwww.jefit.com%2Fcommunity%2F&dt=Jefit%20Community%20%7C%20Jefit%20-%20Best%20Android%20and%20iPhone%20Workout%2C%20Fitness%2C%20Exercise%20and%20Bodybuilding%20App%20%7C%20Best%20Workout%20Tracking%20Software&en=page_view&_ee=1&tfd=6301",
+    "initiator": "fetch",
+    "transfer_size": 0
+  }
+]
