@@ -1,0 +1,406 @@
+{
+  "schema_version": "offline-clone.unresolved-references.v1",
+  "snapshot_id": "2026-08-19.ipvanish-r1",
+  "created_at": "2026-08-19T22:20:01Z",
+  "note": "URLs referenced by source markup, stylesheets or the recorded per-page network evidence that the asset-closure pass could not download (request-context GET and in-page fetch both failed). Logged query-stripped.",
+  "unresolved": [
+    {
+      "url": "https://support.ipvanish.com/hc/theming_assets/1779748/7040407/script.js",
+      "referenced_by": [
+        "capture:support-home:desktop"
+      ],
+      "failure": "http-status: 403",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://support.ipvanish.com/hc/theming_assets/1779748/7040407/style.css",
+      "referenced_by": [
+        "capture:support-home:desktop"
+      ],
+      "failure": "http-status: 403",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:home:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:home:tablet"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:home:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:blog:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:cloud-storage:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:coupons:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:money-back-guarantee:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:money-back-guarantee:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:no-log-vpn-policy:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:partners:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:press:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing:tablet"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:privacy-policy:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:resources:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:reviews:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:secure-browser:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:servers:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:servers:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:setup-guides:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:tos:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:trust:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:vpn-features:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:vpn-features:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:threat-protection:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:vpn-for-streaming:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:vpn-locations:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:vpn-setup-windows:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:what-is-a-vpn:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:what-is-a-vpn:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:what-is-my-ip-address:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:why-vpn:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:why-vpn:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:checkout-chooser-advanced-annual:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:checkout-chooser-essential-annual:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:checkout-chooser-essential-monthly:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:nav-product:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:nav-apps:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:nav-resources:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:mobile-menu-open:mobile"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:not-found:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing-2year:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing-yearly:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:pricing-monthly:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://tk.leadlabs.tv/tr/71u2cr.gif",
+      "referenced_by": [
+        "capture:checkout-card-form-essential-annual:desktop"
+      ],
+      "failure": "http-status: 201",
+      "in_page_fetch_status": -1
+    },
+    {
+      "url": "https://checkout.ipvanish.com/assets/img/cc-logo.svg",
+      "referenced_by": [
+        "capture:css-crawl:any"
+      ],
+      "failure": "source answered with an HTML response shell instead of the asset; the shell was discarded, not retained as an asset"
+    },
+    {
+      "url": "https://checkout.ipvanish.com/assets/img/down-chevron.svg",
+      "referenced_by": [
+        "capture:css-crawl:any"
+      ],
+      "failure": "source answered with an HTML response shell instead of the asset; the shell was discarded, not retained as an asset"
+    }
+  ]
+}

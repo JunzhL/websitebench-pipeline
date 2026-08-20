@@ -1,0 +1,55 @@
+{
+  "checkpoint": "tos",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/tos/",
+  "final_url": "https://www.ipvanish.com/tos/",
+  "http_status": 200,
+  "title": "Terms of Service | IPVanish",
+  "body_text_len": 29194,
+  "frames": 3,
+  "frame_sha256": [
+    "8696fae567c210164960009e4bfd3c488966b2acfd82c3a2bcb0fcf8dc33c421",
+    "d313b0ecc5f0f772b57b01516ffd7760c0aca9057a039158ddad65edf9a52218",
+    "42005f659d5b4012a83f2cf5f7f44fec6f83aac501c773017e28bf340e216300"
+  ],
+  "frames_identical": false,
+  "link_count": 45,
+  "resource_count": 119,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 67
+    },
+    "nav": {
+      "selector": "[role=navigation]",
+      "x": 1085,
+      "y": 0,
+      "width": 235,
+      "height": 30
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 96,
+      "width": 1200,
+      "height": 9609
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 9706,
+      "width": 1440,
+      "height": 100
+    },
+    "form": null,
+    "document_height": 9806
+  }
+}

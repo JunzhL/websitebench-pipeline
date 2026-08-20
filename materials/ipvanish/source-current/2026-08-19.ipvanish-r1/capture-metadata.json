@@ -1,0 +1,882 @@
+{
+  "schema_version": "ipvanish.capture-metadata.v1",
+  "status": "captured",
+  "capture_id": "2026-08-19.ipvanish-r1",
+  "captured_at_utc": "2026-08-19",
+  "source_origins": [
+    "https://www.ipvanish.com/",
+    "https://checkout.ipvanish.com/",
+    "https://sso.ipvanish.com/",
+    "https://support.ipvanish.com/"
+  ],
+  "engine": {
+    "primary": "local-playwright",
+    "browser": "Chromium headless via Python Playwright with an ordinary Chrome 151 user agent",
+    "notes": "The www tree serves UA-dependent markup and support.ipvanish.com answers the default headless UA with a Cloudflare 403 interstitial, so an ordinary Chrome UA is a rendering-fidelity requirement rather than an access-control bypass (scope/implement-notes.md); anything still gated is recorded unavailable instead of fought. One browser context spans the whole matrix so consent and Visual Website Optimizer experiment allocation stay constant. The client-rendered subdomains (sso Next.js, checkout Angular) get an explicit settle before frames are taken. Interaction states never submitted a form and no non-GET request was ever issued."
+  },
+  "baseline": {
+    "locale": "en-US",
+    "timezone": "UTC",
+    "device_pixel_ratio": 1,
+    "consent": "no consent interaction required"
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "roles_captured": [
+    "anonymous"
+  ],
+  "roles_unavailable": {
+    "subscriber": "no free tier, no web trial and no account-only signup: the role requires a real purchase, which is prohibited and which the user declined"
+  },
+  "frames_per_checkpoint": 3,
+  "captures": [
+    {
+      "checkpoint": "home",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "4a6574638b6a054c0624cbdc31f6ed48de7cf7fd6ae7740999c45c82a305c501",
+        "4c95fb128fdea858d986da54f88572d9cad752ec7c972a7e54178cdd99fa6c16",
+        "4c95fb128fdea858d986da54f88572d9cad752ec7c972a7e54178cdd99fa6c16"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "home",
+      "viewport": "tablet",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056",
+        "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056",
+        "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "home",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "e3ec9f65da847bb557849b08908938a0eb95a72a94b61ca1276a4c014f36e3d9",
+        "e3ec9f65da847bb557849b08908938a0eb95a72a94b61ca1276a4c014f36e3d9",
+        "e3ec9f65da847bb557849b08908938a0eb95a72a94b61ca1276a4c014f36e3d9"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "pricing",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "a93076f082604762d3d882da888994af247b5bf5f0f2fe2d9f9c3401ca3cdb9e",
+        "2db4c5b24228ef7eff7ff920a4e34a1d72d3f80f2a8237c4e4120eb1f00b98c2",
+        "fe6696e6c1c904256b502c167b4cc62b813e206fa02c8db50c53c5ccebe9141e"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "pricing",
+      "viewport": "tablet",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "5066b7807bfebeccfdb054dc50d6201c0e3d2c310a19df07056580e56a42be02",
+        "209f0295f57fa5ad768e3b210dfebc3efc2165ea7a4eedc6a904fb94a80462b8",
+        "2442c39fd00b48779507a49205bad3d6705fb40f4ad43db17bbe037065740e1d"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "pricing",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "36eed390bf9288f75a535a5475001f0314546a0443bfe77554ee233787f122d4",
+        "36eed390bf9288f75a535a5475001f0314546a0443bfe77554ee233787f122d4",
+        "36eed390bf9288f75a535a5475001f0314546a0443bfe77554ee233787f122d4"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "why-vpn",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/why-vpn/",
+      "final_url": "https://www.ipvanish.com/why-vpn/",
+      "title": "Why Do I Need a VPN? | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "659af25600f78eb5e7ed613db4fca51a916a15d0fe74e29a20199d2c88aef8bb",
+        "9be4b76f8e4e51fb125c47b348399be4af5a0e24036f041ef3f574e96c0e707f",
+        "c4c8698927ca213ef7e50f8a958a5bdef3565e263601b7aa43fd51bb77fbcf5d"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "why-vpn",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/why-vpn/",
+      "final_url": "https://www.ipvanish.com/why-vpn/",
+      "title": "Why Do I Need a VPN? | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757",
+        "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757",
+        "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "what-is-a-vpn",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/what-is-a-vpn/",
+      "final_url": "https://www.ipvanish.com/what-is-a-vpn/",
+      "title": "What is a VPN? Virtual Private Network Explained | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "ce63910e330b16a100a22fd9c6d1e53d72af7946958d7eab0c62687366066793",
+        "916380535369c71a0e1ebcc11e56d0e1af93174920234046e1d5eb248be559b1",
+        "30050711ffd93605dc3de273a820575ae3eb3508585e5055aed3f6c93a9be37e"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "what-is-a-vpn",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/what-is-a-vpn/",
+      "final_url": "https://www.ipvanish.com/what-is-a-vpn/",
+      "title": "What is a VPN? Virtual Private Network Explained | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "abf6050a61c54665a7d9a12703c285da69b71608a26dba348767f31aa48a9de5",
+        "646515fa386db4e4c1d0ff2cb0c5741ecb7d32aff73b9f7e823da8e835a01abf",
+        "646515fa386db4e4c1d0ff2cb0c5741ecb7d32aff73b9f7e823da8e835a01abf"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "servers",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/servers/",
+      "final_url": "https://www.ipvanish.com/servers/",
+      "title": "VPN Server Locations | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "1ad8941b6b439fa12f0c8f2fd0a9ea1f0341f731ab82bbc411a4ea0751801a31",
+        "bd235843bbf47ac60df953f33a70b837a2a923c7c9fb98b49ac41bdd4a2d4795",
+        "7a84d4112f45846cf653d18314750f5fa40b88daf7b021eddd4b0c16a1ea5309"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "servers",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/servers/",
+      "final_url": "https://www.ipvanish.com/servers/",
+      "title": "VPN Server Locations | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "b5d58b626980a85b163838c609956566b629eb950e7676b28d7f1a914c42aa1e",
+        "a9b172e398bd3545fc6b88814303ebbeabae6122e25488871cac78bef0e44f85",
+        "a9b172e398bd3545fc6b88814303ebbeabae6122e25488871cac78bef0e44f85"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "vpn-features",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/vpn-features/",
+      "final_url": "https://www.ipvanish.com/vpn-features/",
+      "title": "The Best VPN Features | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "bb3bb1df23cf2e3937a2139ed153cb981817f20fbc59096ee7b1e2084b6c616e",
+        "d8a257a128d46bd8d9e2ff4c54a8b86a668ba30ae2c71c487ed6684a2345018b",
+        "1cfcdb40b72b3a972666d23405dfe863071bcef1b462bab96059d48a0e4390ed"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "vpn-features",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/vpn-features/",
+      "final_url": "https://www.ipvanish.com/vpn-features/",
+      "title": "The Best VPN Features | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7",
+        "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7",
+        "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "money-back-guarantee",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/money-back-guarantee/",
+      "final_url": "https://www.ipvanish.com/money-back-guarantee/",
+      "title": "Money-Back Guarantee | IPVanish VPN",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "d8d77afe6126926d6e4c04670c988c91f578f86531d3427fd66c0a3d904ca023",
+        "0ba3db78427b337978e2907d2cd5ec60daab827757acfb31714775603800e761",
+        "0ba3db78427b337978e2907d2cd5ec60daab827757acfb31714775603800e761"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "money-back-guarantee",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/money-back-guarantee/",
+      "final_url": "https://www.ipvanish.com/money-back-guarantee/",
+      "title": "Money-Back Guarantee | IPVanish VPN",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "385a194e5f8a72bbe6b47b1ed97d92ec241ce1bb92693748a639831a141a8235",
+        "385a194e5f8a72bbe6b47b1ed97d92ec241ce1bb92693748a639831a141a8235",
+        "385a194e5f8a72bbe6b47b1ed97d92ec241ce1bb92693748a639831a141a8235"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "coupons",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/coupons/",
+      "final_url": "https://www.ipvanish.com/coupons/",
+      "title": "Coupons | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "91517401ea74a40d07a96de03c6b3cd216676c98e6be713296d2ab0b922bb91f",
+        "45a0d7d966d5002002f3a3c24bac20ee342b8ecf567b9a80105ffa78279dc172",
+        "4ed3cb71d617f24a529f9e57506e5a48f392cf304205cdbda702d8e5d906542f"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "reviews",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/reviews/",
+      "final_url": "https://www.ipvanish.com/reviews/",
+      "title": "IPVanish Reviews | IPVanish VPN",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "3cbf9a302337f965d26c2ebd09ab1a97fcea1f38728300ab312b685c1c666de8",
+        "04c4282b09d2f627bf4fde13edd816dc26c6a03541ce86cfc64b695d1c99089c",
+        "af7400e7b126b28d01d14ee0ea1bed381b68d1beea34e6293f0b9276a5a161c6"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "trust",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/trust/",
+      "final_url": "https://www.ipvanish.com/trust/",
+      "title": "IPVanish Trust Center | No-Log Audits & Transparency Reports",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "11465b4fbd4f09af037ca05d1122463c23f1da65d1d82f73b919cd68d47ca68a",
+        "1c6ba255105d26a6712d84592a962a267445a9a88f0ed5e21c780c1b2adbcb76",
+        "9d6f8f4bc2c496638b8156d8c7348a74bd6a1b40543218f840c2c3fcd024a425"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "no-log-vpn-policy",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/no-log-vpn-policy/",
+      "final_url": "https://www.ipvanish.com/no-log-vpn-policy/",
+      "title": "The Best No Log VPN Protection - IPVanish VPN",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "dc471d85d322c7bc5f58a0602be999659d49c9ebf8fd25afa4d1a0b836f3e41a",
+        "157700c9ca4438d38fb888fc65cd384f4f79de0dd03f65db2aefae95daa9aae3",
+        "64389fe0ef1485327bf0153a2933a25723026cc4441620efb037fdde462c41bf"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "threat-protection",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/vpn-features/threat-protection/",
+      "final_url": "https://www.ipvanish.com/vpn-features/threat-protection/",
+      "title": "Threat Protection Pro | Real-Time Malware & Phishing Security - IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "47e618490acd95695b772ead11dcc92391ea485f918b27fb8c8ba7bb67a4e4aa",
+        "9cd7e2776c9c6f5c3161831b0166a0d71b56fc8691fbfd5a2f3a1ae9e7654580",
+        "9cd7e2776c9c6f5c3161831b0166a0d71b56fc8691fbfd5a2f3a1ae9e7654580"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "secure-browser",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/secure-browser/",
+      "final_url": "https://www.ipvanish.com/secure-browser/",
+      "title": "Secure Browser | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "57830411917ca62e0571b548daf8fbe658e99d99785b5efa0ee1b5afc531844f",
+        "cd621376926e1931fff46fb1542b7b19c73d476ccd92565d20148b8b59990ba2",
+        "f4a918a4c8dc7947279f22954b9dec930975a07190e0ab5ee354a03b16449fb8"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "cloud-storage",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/cloud-storage/",
+      "final_url": "https://www.ipvanish.com/cloud-storage/",
+      "title": "Livedrive Cloud Storage | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "cab29d2b45ba2be72221b05255a8c4d818c59d9fcda6656af8319a80a693051f",
+        "421aebd28e9bfe8a1677f582b052bd790938e857399e3aba6cf18c980a645266",
+        "c2dc013a4500961af901ca9664c0c121472a30c6e2f0fc440c48304e7b8b011e"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "vpn-setup-windows",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/vpn-setup/windows/",
+      "final_url": "https://www.ipvanish.com/vpn-setup/windows/",
+      "title": "Best VPN for PC | IPVanish Windows VPN",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "3fb677604d359e48ce1a1f4f5e67d4b983d2e08a71f2402bbcd4a3e401b9c442",
+        "27a7bfef13089b7fbf6d8999bc91c43c0b285a7611db58af7276453c04534c72",
+        "7de72aeb9f8a117140f361cad91d8001f4c3df2413d62d3589e179ddfe28a029"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "vpn-locations",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/vpn-locations/",
+      "final_url": "https://www.ipvanish.com/vpn-locations/",
+      "title": "Change VPN Location | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "b6017f7d4d9e8d2fae54b823a88cff7c5e94d870e326542e808be0ec4b71766c",
+        "db4898bc32e189540a273fdec948cf396930f2360fd0042b8300f25f2e25cccc",
+        "0afbfe6bd589e7f2588d87924740a0304563badd48d5515e0aa8fafce5f5dc01"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "vpn-for-streaming",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/vpn-for-streaming/",
+      "final_url": "https://www.ipvanish.com/vpn-for-streaming/",
+      "title": "Best VPN for Streaming | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "c1215ba0b656bcef902038f940f94acfd61160a83453bab5aceedb3690b508d6",
+        "164fc121d5feda8497a3f51b6c2540d6ba28c5dc2453dc195f7f0b68ffc5f44e",
+        "3aa00d1a9ca3c86793d623bd2d4bad10a11f568766b78ad0933435be9aa9b9a4"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "resources",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/resources/",
+      "final_url": "https://www.ipvanish.com/resources/",
+      "title": "Resources - Privacy Guides, VPN Uses, and More | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "6959ce8aef187e3a817bc3c93fea54d9c992af0878294a522e960f8a7e463ce1",
+        "b954f989f097d97c1a5f944bc0de612d5249532ef3f3e99cb806c98e4460d507",
+        "1531cb9bf712cbd2eb0291226645173ff5b3f442e907fe7be8b540cb3097f2a7"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "setup-guides",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/setup-guides/",
+      "final_url": "https://www.ipvanish.com/setup-guides/",
+      "title": "VPN Software Setup - IPVanish VPN App | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "a4ac9d038e446133ec1b912df4caad7603dde7e840264aa4ba48552bd2fc2727",
+        "de49c99ab50fcaffe171b55d88fa478ba0d26ae0eabfa2b9afb991df3509c325",
+        "09f5881951691c1d0c662ca46b89e8496216fe3ded51941e54ff7208ede6918f"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "what-is-my-ip-address",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/what-is-my-ip-address/",
+      "final_url": "https://www.ipvanish.com/what-is-my-ip-address/",
+      "title": "What Is My IP Address? - Check IP Status | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "930a91ea8d513b7b40d1ed1390d60bca3f37d6e8f4715e6e9af2a87b39eae792",
+        "440f7a685020b5998dd13eebef545c4d66e501adcfab210113981bd75b08f939",
+        "a4d91b6dd2c90381f8471abd9a560ccdc7e4acb806152eac752870c38e184e00"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "blog",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/blog/",
+      "final_url": "https://www.ipvanish.com/blog/",
+      "title": "IPVanish | Protect Your Online Identity",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f",
+        "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f",
+        "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "tos",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/tos/",
+      "final_url": "https://www.ipvanish.com/tos/",
+      "title": "Terms of Service | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "8696fae567c210164960009e4bfd3c488966b2acfd82c3a2bcb0fcf8dc33c421",
+        "d313b0ecc5f0f772b57b01516ffd7760c0aca9057a039158ddad65edf9a52218",
+        "42005f659d5b4012a83f2cf5f7f44fec6f83aac501c773017e28bf340e216300"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "privacy-policy",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/privacy-policy/",
+      "final_url": "https://www.ipvanish.com/privacy-policy/",
+      "title": "Privacy Policy for IPVanish Site & Services | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "4e82984773db21584118589a635c030cdcc1dd78a6a1b16fca79fac219ccad0f",
+        "a0d1bc5d026cec6535c06fd3926380e29260016c69d7445f6f07a5f76905be6f",
+        "4ad250e628a3700d9c1a81276a3d9d32389d3fbd93608ac5041091b635a0ce44"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "partners",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/partners/",
+      "final_url": "https://www.ipvanish.com/partners/",
+      "title": "VPN Affiliate Program - Partner With IPVanish Today",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "1078b6be07ae3d0053bf2a229f0e6f9fec194e0455de67e9c34f7235bbdaad60",
+        "c146ebbb3128632ef1a14a7999ba04f5ef8899005c65cf217d5b3a351d312335",
+        "1078b6be07ae3d0053bf2a229f0e6f9fec194e0455de67e9c34f7235bbdaad60"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "press",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/press/",
+      "final_url": "https://www.ipvanish.com/press/",
+      "title": "Press & Media Kit | IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "271e6f2006635304dd5e23290c01615ada884fb18628e7117fd297887f1d3825",
+        "d7a5bbbc9561cb329cbde50314b485ade75aaee93d64d70d88d731771c658ea9",
+        "a3d45b050ce050955e34a8428ad6ee5e3bfd516d2af4bb67b7ad835952126cf7"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": null
+    },
+    {
+      "checkpoint": "pricing-2year",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "a93076f082604762d3d882da888994af247b5bf5f0f2fe2d9f9c3401ca3cdb9e",
+        "2db4c5b24228ef7eff7ff920a4e34a1d72d3f80f2a8237c4e4120eb1f00b98c2",
+        "5bd516e7cb7e60460f4577db0911310ac63c80c7c1d48a835d822240cdc32bb2"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "clicked billing-period tab '2-Year Plan' via p.has-text-align-center.biennial-link.plan-type-link.active.has-ast-global-color-0-color.has-text-color.has-link-color.wp-elements-142e0646c61d6f58b00f41973d241265.wp-block-paragraph.pricing_skusel_2yr; prices unchanged (default tab)"
+    },
+    {
+      "checkpoint": "pricing-yearly",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "6340745ae05d9060de809b5d4ac13f4e26ecd35edfbcad56994b764cdb2c771e",
+        "544a12bfb75089af8906e7708a5a319bd1931bf507f27f8c709c21a334a2edaf",
+        "6340745ae05d9060de809b5d4ac13f4e26ecd35edfbcad56994b764cdb2c771e"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "clicked billing-period tab 'Yearly Plan' via p.has-text-align-center.annual-link.plan-type-link.has-ast-global-color-0-color.has-text-color.has-link-color.wp-elements-e794185ec04359b3739ad0365bd45cdd.wp-block-paragraph.pricing_skusel_1yr.active; prices changed"
+    },
+    {
+      "checkpoint": "pricing-monthly",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "a9ec3cfd809910dcadb3b2d0987af5f700e9fcd04df60f5455aee5539e96cc42",
+        "b70623199d3b999470a1866872c5c06a322e507030aab01cd4c37f01c714ec31",
+        "1449cbbcf93d6ee97c23cce50bd91401b059975ca9baf91481fea3f08245813c"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "clicked billing-period tab 'Monthly Plan' via p.has-text-align-center.ticss-bb7d0943.monthly-link.plan-type-link.has-ast-global-color-0-color.has-text-color.wp-block-paragraph.pricing_skusel_monthly.active; prices changed"
+    },
+    {
+      "checkpoint": "nav-product",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "ff839889ffbe797b3427c483582dac0182ae94b402998a49beab25f52677ce11",
+        "915c02b52d54b78bf9d6675ed969606b14c99a5c90ee0a29959187bf041a256e",
+        "cc2ddc39571d636952881ad18bfa4cf279a008c197e6f11b3f6246962751ce22"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "opened the 'Product' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "nav-apps",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "ce0262d0de1e0ee46e59271a150dedaf6ae919146a5a4a214dd4db8737657afa",
+        "938651aae9596a7e1d671765cd1ecb362604485f5abb2d000cc9ed747987e7e9",
+        "996bf54ad1d3dd6733c2c44dc19390b97ac6e28cb6f181ac94f39854a271d399"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "opened the 'Apps' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "nav-resources",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "3a665ec8c7ca73d0720f4019e623cc5bfdb39358f5d82d68533460537badf0e5",
+        "33e5a8d0e3c86ec0c793be34881a668f11e667a8113607271272448e8869835b",
+        "95e8e876f7b1cc9820c050e98caa8515407d13478220daa49cd9b5854da22f09"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "opened the 'Resources' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "mobile-menu-open",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "d2e4c1a2c5892feddbb27d332bcc482b53a8d4b8539f22996986ce39506662db",
+        "1a1785c0f7cd10cf9e63cfe355bf667e1c4fec90d084ff725d1145d6a5a7fab8",
+        "1a1785c0f7cd10cf9e63cfe355bf667e1c4fec90d084ff725d1145d6a5a7fab8"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "opened the hamburger menu at 390x844 via button.menu-toggle.main-header-menu-toggle.ast-mobile-menu-trigger-minimal.toggled"
+    },
+    {
+      "checkpoint": "sso-signin",
+      "viewport": "desktop",
+      "requested_url": "https://sso.ipvanish.com/",
+      "final_url": "https://sso.ipvanish.com/",
+      "title": "IPVanish - Sign in",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "loaded the client-rendered sign-in app and waited for input[name=email] to exist; no field filled, nothing submitted"
+    },
+    {
+      "checkpoint": "sso-recovery",
+      "viewport": "desktop",
+      "requested_url": "https://sso.ipvanish.com/reset-password/",
+      "final_url": "https://sso.ipvanish.com/reset-password/",
+      "title": "IPVanish - Reset password",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "clicked 'Forgot password?'; recovery view reached at https://sso.ipvanish.com/reset-password/ (the route requires the trailing slash -- /reset-password without it 403s)"
+    },
+    {
+      "checkpoint": "checkout-chooser-essential-annual",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89",
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89",
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "loaded the checkout payment-method chooser for flow=essential-annual and waited for 'Order Summary'; no field filled, nothing submitted"
+    },
+    {
+      "checkpoint": "checkout-chooser-essential-monthly",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "loaded the checkout payment-method chooser for flow=essential-monthly and waited for 'Order Summary'; no field filled, nothing submitted"
+    },
+    {
+      "checkpoint": "checkout-chooser-advanced-annual",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN",
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878",
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878",
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "loaded the checkout payment-method chooser for flow=advanced-annual and waited for 'Order Summary'; no field filled, nothing submitted"
+    },
+    {
+      "checkpoint": "support-home",
+      "viewport": "desktop",
+      "requested_url": "https://support.ipvanish.com/hc/en-us",
+      "final_url": "https://support.ipvanish.com/hc/en-us",
+      "title": "IPVanish",
+      "http_status": 200,
+      "frames": 3,
+      "frame_sha256": [
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "loaded the Zendesk help centre with the ordinary Chrome UA (the headless UA gets a Cloudflare 403 interstitial here)"
+    },
+    {
+      "checkpoint": "not-found",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.ipvanish.com/",
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "http_status": 404,
+      "frames": 3,
+      "frame_sha256": [
+        "e6cb3facad24d664b64cf59b2d0146e09fcbe0aa33dac2d19e13effddf60dbb4",
+        "d3815a62afdc18a1447f172190113207317fdf31d10fd3a6e1d1997bb87871c4",
+        "1d0ac5573639779f5ef5becf6e4b74ac78dcffc31efb1fe314155c70950c426b"
+      ],
+      "frames_identical": false,
+      "engine": "local-playwright",
+      "interaction": "requested a deliberately unmatched path; HTTP status 404"
+    },
+    {
+      "checkpoint": "checkout-card-form-essential-annual",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "http_status": null,
+      "frames": 3,
+      "frame_sha256": [
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8",
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8",
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8"
+      ],
+      "frames_identical": true,
+      "engine": "local-playwright",
+      "interaction": "activated the Credit card row on flow=essential-annual via clicked LI.c-payment-method-type-select-card c-paym; the hosted-payment (Zuora) iframe fields exist. NOTHING was typed and no order-placing control was clicked. iframes and field names observed (names/ids only, no values; iframe URLs query-stripped because they carry signature tokens): [{\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html\"}, {\"fields\": [], \"iframe_url\": \"https://pay.google.com/gp/p/ui/payframe\"}, {\"fields\": [{\"id\": \"input-creditCardNumber\", \"name\": \"field_creditCardNumber\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardHolderName\", \"name\": \"field_creditCardHolderName\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardExpirationMonth\", \"name\": \"field_creditCardExpirationMonth\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-creditCardExpirationYear\", \"name\": \"field_creditCardExpirationYear\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-cardSecurityCode\", \"name\": \"field_cardSecurityCode\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardCountry\", \"name\": \"field_creditCardCountry\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-creditCardPostalCode\", \"name\": \"field_creditCardPostalCode\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-email\", \"name\": \"field_email\", \"type\": \"text\", \"visible\": true}, {\"id\": \"_dateFormat\", \"name\": null, \"type\": \"hidden\", \"visible\": false}, {\"id\": \"method\", \"name\": \"method\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"id\", \"name\": \"id\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"tenantId\", \"name\": \"tenantId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"token\", \"name\": \"token\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"signature\", \"name\": \"signature\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGateway\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_authorizationAmount\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_screeningAmount\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_currency\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_key\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"locale\", \"name\": \"locale\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_style\", \"name\": \"field_style\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"jsVersion\", \"name\": \"jsVersion\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"submitEnabled\", \"name\": \"field_submitEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"callbackFunctionEnabled\", \"name\": \"field_callbackFunctionEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_signatureType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"host\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"encrypted_fields\", \"name\": \"encrypted_fields\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"encrypted_values\", \"name\": \"encrypted_values\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"customizeErrorRequired\", \"name\": \"customizeErrorRequired\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"fromHostedPage\", \"name\": \"fromHostedPage\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"isGScriptLoaded\", \"name\": \"isGScriptLoaded\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"is3DSEnabled\", \"name\": \"is3DSEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"checkDuplicated\", \"name\": \"checkDuplicated\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"captchaRequired\", \"name\": \"captchaRequired\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"captchaSiteKey\", \"name\": \"captchaSiteKey\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitConsentAgreementSrc\", \"name\": \"field_mitConsentAgreementSrc\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitConsentAgreementRef\", \"name\": \"field_mitConsentAgreementRef\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitCredentialProfileType\", \"name\": \"field_mitCredentialProfileType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_agreementSupportedBrands\", \"name\": \"field_agreementSupportedBrands\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGatewayType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGatewayVersion\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"is3DS2Enabled\", \"name\": \"is3DS2Enabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"cardMandateEnabled\", \"name\": \"cardMandateEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"zThreeDs2TxId\", \"name\": \"zThreeDs2TxId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2token\", \"name\": \"threeDs2token\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2Sig\", \"name\": \"threeDs2Sig\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2Ts\", \"name\": \"threeDs2Ts\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2OnStep\", \"name\": \"threeDs2OnStep\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2GwData\", \"name\": \"threeDs2GwData\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"doPayment\", \"name\": \"doPayment\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"storePaymentMethod\", \"name\": \"storePaymentMethod\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"documents\", \"name\": \"documents\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"xjd28s_6sk\", \"name\": \"xjd28s_6sk\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"pmId\", \"name\": \"pmId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"button_outside_force_redirect\", \"name\": \"button_outside_force_redirect\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"browserScreenHeight\", \"name\": \"browserScreenHeight\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"browserScreenWidth\", \"name\": \"browserScreenWidth\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"param_gwOptions_purchaseTotals_currency\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough1\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough2\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough3\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough4\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough5\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough6\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough7\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough8\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough9\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough10\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough11\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough12\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough13\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough14\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough15\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"stripePublishableKey\", \"name\": \"stripePublishableKey\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"isRSIEnabled\", \"name\": \"isRSIEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"radarSessionId\", \"name\": \"radarSessionId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-accountId\", \"name\": \"field_accountId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-gatewayName\", \"name\": \"field_gatewayName\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-deviceSessionId\", \"name\": \"field_deviceSessionId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-ipAddress\", \"name\": \"field_ipAddress\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-useDefaultRetryRule\", \"name\": \"field_useDefaultRetryRule\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-paymentRetryWindow\", \"name\": \"field_paymentRetryWindow\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-maxConsecutivePaymentFailures\", \"name\": \"field_maxConsecutivePaymentFailures\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-creditCardType\", \"name\": \"field_creditCardType\", \"type\": \"hidden\", \"visible\": false}], \"iframe_url\": \"https://zuora.com/apps/PublicHostedPageLite.do\"}]"
+    }
+  ]
+}

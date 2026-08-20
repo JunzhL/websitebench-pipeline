@@ -1,0 +1,1574 @@
+{
+  "schema_version": "offline-clone.visual-stability-calibration-spec.v1",
+  "site_id": "ipvanish",
+  "rows": [
+    {
+      "id": "home.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.tablet.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/home/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.tablet.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "why-vpn.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "why-vpn.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "why-vpn.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "why-vpn.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/why-vpn/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-a-vpn.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-a-vpn.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-a-vpn.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-a-vpn.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-a-vpn/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "servers.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "servers.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "servers.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "servers.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/servers/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-features.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-features.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-features.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-features.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-features/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "money-back-guarantee.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "money-back-guarantee.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "money-back-guarantee.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "money-back-guarantee.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/money-back-guarantee/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "coupons.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "coupons.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "coupons.desktop.footer",
+      "region": "footer",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/coupons/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "reviews.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "reviews.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/reviews/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "trust.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "trust.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/trust/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "no-log-vpn-policy.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "no-log-vpn-policy.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/no-log-vpn-policy/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "threat-protection.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "threat-protection.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/threat-protection/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "secure-browser.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "secure-browser.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/secure-browser/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "cloud-storage.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "cloud-storage.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/cloud-storage/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-setup-windows.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-setup-windows.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-setup-windows/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-locations.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-locations.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-locations/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-for-streaming.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "vpn-for-streaming.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/vpn-for-streaming/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "resources.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "resources.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/resources/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "setup-guides.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "setup-guides.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/setup-guides/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-my-ip-address.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "what-is-my-ip-address.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/what-is-my-ip-address/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "blog.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "blog.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/blog/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "tos.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "tos.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/tos/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "privacy-policy.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "privacy-policy.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/privacy-policy/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "partners.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "partners.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/partners/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "press.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "press.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/press/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-2year.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-2year.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-2year/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-yearly.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-yearly.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-yearly/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-monthly.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "pricing-monthly.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/pricing-monthly/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-product.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-product.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-product.desktop.overlay",
+      "region": "overlay",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-product/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-apps.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-apps.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-apps.desktop.overlay",
+      "region": "overlay",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-apps/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-resources.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-resources.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-resources.desktop.overlay",
+      "region": "overlay",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/nav-resources/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "mobile-menu-open.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "mobile-menu-open.mobile.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "mobile-menu-open.mobile.overlay",
+      "region": "overlay",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/mobile-menu-open/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "sso-signin.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-signin/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-signin/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-signin/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "sso-recovery.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-recovery/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-recovery/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/sso-recovery/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "checkout-chooser-essential-annual.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-annual/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-annual/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-annual/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "checkout-chooser-essential-monthly.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-monthly/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-monthly/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-essential-monthly/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "checkout-chooser-advanced-annual.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-advanced-annual/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-advanced-annual/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-chooser-advanced-annual/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support-home.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support-home.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support-home.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/support-home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "not-found.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "not-found.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/not-found/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "checkout-card-form-essential-annual.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-card-form-essential-annual/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-card-form-essential-annual/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/ipvanish/source-current/2026-08-19.ipvanish-r1/checkout-card-form-essential-annual/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    }
+  ]
+}

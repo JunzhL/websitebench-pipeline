@@ -1,0 +1,55 @@
+{
+  "checkpoint": "pricing",
+  "family": "pricing",
+  "priority": "P0",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/pricing/",
+  "final_url": "https://www.ipvanish.com/pricing/",
+  "http_status": 200,
+  "title": "Pricing Information - View All VPN Plans | IPVanish",
+  "body_text_len": 4083,
+  "frames": 3,
+  "frame_sha256": [
+    "a93076f082604762d3d882da888994af247b5bf5f0f2fe2d9f9c3401ca3cdb9e",
+    "2db4c5b24228ef7eff7ff920a4e34a1d72d3f80f2a8237c4e4120eb1f00b98c2",
+    "fe6696e6c1c904256b502c167b4cc62b813e206fa02c8db50c53c5ccebe9141e"
+  ],
+  "frames_identical": false,
+  "link_count": 215,
+  "resource_count": 139,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 5428
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 5529,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 6252
+  }
+}

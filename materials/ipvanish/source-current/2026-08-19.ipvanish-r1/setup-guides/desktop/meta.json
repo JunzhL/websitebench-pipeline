@@ -1,0 +1,55 @@
+{
+  "checkpoint": "setup-guides",
+  "family": "support",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/setup-guides/",
+  "final_url": "https://www.ipvanish.com/setup-guides/",
+  "http_status": 200,
+  "title": "VPN Software Setup - IPVanish VPN App | IPVanish",
+  "body_text_len": 2636,
+  "frames": 3,
+  "frame_sha256": [
+    "a4ac9d038e446133ec1b912df4caad7603dde7e840264aa4ba48552bd2fc2727",
+    "de49c99ab50fcaffe171b55d88fa478ba0d26ae0eabfa2b9afb991df3509c325",
+    "09f5881951691c1d0c662ca46b89e8496216fe3ded51941e54ff7208ede6918f"
+  ],
+  "frames_identical": false,
+  "link_count": 230,
+  "resource_count": 114,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 4850
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 4921,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 5644
+  }
+}

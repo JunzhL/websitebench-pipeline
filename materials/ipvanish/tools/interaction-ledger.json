@@ -1,0 +1,278 @@
+{
+ "capture_id": "2026-08-19.ipvanish-r1",
+ "entries": [
+  {
+   "control": "Get Started (header)",
+   "form_action": null,
+   "raw_markup_proof": "der-button-1\" data-section=\"section-hb-button-1\">\n\t\t\t<div class=\"ast-builder-button-wrap ast-builder-button-size-sm\"><a class=\"ast-custom-button-link home_tnav_gs\" href=\"#ipvanish-plans\" target=\"_self\" role=\"button\" aria-label=\"Get Started\">\n\t\t\t\t<div class=\"ast-custom-button home_tnav_gs\">Get Started</div>\n\t\t\t</a><a cl",
+   "requires_session": false,
+   "selector": ".ast-header-button-1 a.ast-custom-button-link",
+   "url": "/",
+   "visible_text_proof": "Get Started"
+  },
+  {
+   "control": "Pricing (primary nav)",
+   "form_action": null,
+   "raw_markup_proof": ".5-2.5l-10,10l-10-10L57.5,38.193z\"></path>\n                </svg></span><span class=\"menu-text\">Help</span></a></li><li id=\"menu-item-179047\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-179047\"><a href=\"/pricing/\" class=\"menu-link\"><span class=\"ast-icon icon-arrow\"><svg class=\"ast-arrow-sv",
+   "requires_session": false,
+   "selector": "#menu-item-179047 a.menu-link",
+   "url": "/",
+   "visible_text_proof": "Pricing"
+  },
+  {
+   "control": "Product (mega-menu trigger)",
+   "form_action": null,
+   "raw_markup_proof": "\"main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border stack-on-mobile ast-mega-menu-enabled\"><li id=\"menu-item-139281\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-139281 astra-megamenu-li full-width-mega\" data-megamenu-trigger=\"hover\"><a aria-ex",
+   "requires_session": false,
+   "selector": "#menu-item-139281 .dropdown-menu-toggle",
+   "url": "/",
+   "visible_text_proof": "Product"
+  },
+  {
+   "control": "Apps (mega-menu trigger)",
+   "form_action": null,
+   "raw_markup_proof": "v class=\"uagb-button__link\">Get in touch</div></a></div></div>\n</div></div>\n</div></li>\t</ul>\n</li></ul>\n</div></li><li id=\"menu-item-139449\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-139449 astra-megamenu-li full-width-mega\" data-megamenu-trigger=\"hover\"><a aria-ex",
+   "requires_session": false,
+   "selector": "#menu-item-139449 .dropdown-menu-toggle",
+   "url": "/",
+   "visible_text_proof": "Apps"
+  },
+  {
+   "control": "Resources (mega-menu trigger)",
+   "form_action": null,
+   "raw_markup_proof": "v class=\"uagb-button__link\">Get in touch</div></a></div></div>\n</div></div>\n</div></li>\t</ul>\n</li></ul>\n</div></li><li id=\"menu-item-139506\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-139506 astra-megamenu-li full-width-mega\" data-megamenu-trigger=\"hover\"><a aria-ex",
+   "requires_session": false,
+   "selector": "#menu-item-139506 .dropdown-menu-toggle",
+   "url": "/",
+   "visible_text_proof": "Resources"
+  },
+  {
+   "control": "Mobile menu toggle",
+   "form_action": null,
+   "raw_markup_proof": "focus-item\" data-section=\"section-header-mobile-trigger\">\n\t\t\t\t\t\t<div class=\"ast-button-wrap\">\n\t\t\t\t<button type=\"button\" class=\"menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-minimal\" aria-expanded=\"false\" aria-label=\"Main menu toggle\" data-index=\"0\">\n\t\t\t\t\t<span class=\"mobile-menu-toggle-icon\">\n\t\t\t\t\t\t<span ",
+   "requires_session": false,
+   "selector": "button.menu-toggle.main-header-menu-toggle",
+   "url": "/",
+   "visible_text_proof": "aria-label=Main menu toggle"
+  },
+  {
+   "control": "What is a VPN? (Product panel)",
+   "form_action": null,
+   "raw_markup_proof": "menu\">\n\t\t<li id=\"menu-item-139286\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-139286\"><a href=\"/what-is-a-vpn/\" class=\"menu-link\"><span class=\"ast-icon icon-arrow\"><svg class=\"ast-arrow-svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" x=\"0px",
+   "requires_session": false,
+   "selector": "#menu-item-139281 a[href='/what-is-a-vpn/']",
+   "url": "/?nav=product",
+   "visible_text_proof": "What is a VPN?"
+  },
+  {
+   "control": "2-Year Plan tab",
+   "form_action": null,
+   "raw_markup_proof": "-left:0px\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-text-align-center biennial-link plan-type-link active has-ast-global-color-0-color has-text-color has-link-color wp-elements-142e0646c61d6f58b00f41973d241265 wp-block-paragraph pricing_skusel_2yr\" style=\"margin-bottom:",
+   "requires_session": false,
+   "selector": ".plan-type-link.biennial-link",
+   "url": "/pricing/",
+   "visible_text_proof": "2-Year Plan"
+  },
+  {
+   "control": "Yearly Plan tab",
+   "form_action": null,
+   "raw_markup_proof": ">\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-text-align-center annual-link plan-type-link has-ast-global-color-0-color has-text-color has-link-color wp-elements-e794185ec04359b3739ad0365bd45cdd wp-block-paragraph pricing_skusel_1yr\" style=\"margin-bottom:0;padding",
+   "requires_session": false,
+   "selector": ".plan-type-link.annual-link",
+   "url": "/pricing/",
+   "visible_text_proof": "Yearly Plan"
+  },
+  {
+   "control": "Monthly Plan tab",
+   "form_action": null,
+   "raw_markup_proof": "v class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"has-text-align-center ticss-bb7d0943 monthly-link plan-type-link has-ast-global-color-0-color has-text-color wp-block-paragraph pricing_skusel_monthly\" style=\"margin-bottom:0;padding-top:10px;padding-right:20px;padding-bottom:10px;paddin",
+   "requires_session": false,
+   "selector": ".plan-type-link.monthly-link",
+   "url": "/pricing/",
+   "visible_text_proof": "Monthly Plan"
+  },
+  {
+   "control": "Get Essential (2-Year card)",
+   "form_action": null,
+   "raw_markup_proof": "><a class=\"uagb-buttons-repeater wp-block-button__link pricing_top_ess-biennial\" href=\"/checkout/address-payment-method?flow=essential-biennial&amp;currency=USD&amp;lang=EN\" onclick=\"return true;\" rel=\"follow noopener\" target=\"_self\"><div class=\"uagb-button__link pricing_top_ess-biennial\">Get Essential</div></a></div><",
+   "requires_session": false,
+   "selector": ".pricing-pg-biennial-tab a[href*='flow=essential-biennial']",
+   "url": "/pricing/",
+   "visible_text_proof": "Get Essential"
+  },
+  {
+   "control": "Get Essential (Yearly card)",
+   "form_action": null,
+   "raw_markup_proof": "><a class=\"uagb-buttons-repeater wp-block-button__link pricing_top_ess-biennial\" href=\"/checkout/address-payment-method?flow=essential-annual&amp;currency=USD&amp;lang=EN\" onclick=\"return true;\" rel=\"follow noopener\" target=\"_self\"><div class=\"uagb-button__link pricing_top_ess-biennial\">Get Essential</div></a></div></d",
+   "requires_session": false,
+   "selector": ".pricing-pg-yearly-tab a[href*='flow=essential-annual']",
+   "url": "/pricing/?period=yearly",
+   "visible_text_proof": "Get Essential"
+  },
+  {
+   "control": "Get Advanced (Monthly card)",
+   "form_action": null,
+   "raw_markup_proof": "><a class=\"uagb-buttons-repeater wp-block-button__link pricing_top_adv-biennial\" href=\"/checkout/address-payment-method?flow=advanced-monthly&amp;currency=USD&amp;lang=EN\" onclick=\"return true;\" rel=\"follow noopener\" target=\"_self\"><div class=\"uagb-button__link pricing_top_adv-biennial\">Get Advanced</div></a></div></di",
+   "requires_session": false,
+   "selector": ".pricing-pg-monthly-tab a[href*='flow=advanced-monthly']",
+   "url": "/pricing/?period=monthly",
+   "visible_text_proof": "Get Advanced"
+  },
+  {
+   "control": "Credit card row",
+   "form_action": null,
+   "raw_markup_proof": "e-select-card c-payment-method-type-select-card--first ng-star-inserted\"><div class=\"c-payment-method-type-select__item c-payment-method-type-select__item--cc\"><span prefix=\"lbl\" class=\"payment-method-type-select__title\">Credit card</span><img src=\"/static/assets/2026-08-19.ipvanish-r1/checkout.ipvanish.com/assets/img/",
+   "requires_session": false,
+   "selector": "li.c-payment-method-type-select-card .c-payment-method-type-select__item--cc",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "visible_text_proof": "Credit card"
+  },
+  {
+   "control": "PayPal row",
+   "form_action": null,
+   "raw_markup_proof": "--><!----><li class=\"c-payment-method-type-select-card ng-star-inserted\"><div class=\"c-payment-method-type-select__item c-payment-method-type-select__item--paypal\"><span prefix=\"lbl\" class=\"payment-method-type-select__title\">PayPal</span><img src=\"/static/assets/2026-08-19.ipvanish-r1/checkout.ipvanish.com/assets/img/p",
+   "requires_session": false,
+   "selector": "li.c-payment-method-type-select-card .c-payment-method-type-select__item--paypal",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "visible_text_proof": "PayPal"
+  },
+  {
+   "control": "Account email field",
+   "form_action": "/checkout/subscribe",
+   "raw_markup_proof": "s this machine.</p>\n  <div class=\"ipvanish-sandbox__row\">\n    <label for=\"input-email\">Email address</label>\n    <input id=\"input-email\" name=\"account_email\" type=\"email\" autocomplete=\"email\" required value=\"\">\n  </div>\n  <div class=\"ipvanish-sandbox__row\">\n    <label for=\"input-billing-country\">Country</label>\n    <se",
+   "requires_session": false,
+   "selector": "#input-email",
+   "url": "/checkout/address-payment-method?flow=essential-annual&method=card",
+   "visible_text_proof": "Email address"
+  },
+  {
+   "control": "Local-sandbox outcome selector",
+   "form_action": "/checkout/subscribe",
+   "raw_markup_proof": "ostal\" name=\"billing_postal_code\" type=\"text\" autocomplete=\"postal-code\" required value=\"\">\n  </div>\n  <fieldset class=\"ipvanish-sandbox__scenarios\">\n    <legend>Simulated payment outcome (local sandbox)</legend><label class=\"ipvanish-sandbox__scenario\"><input type=\"radio\" name=\"scenario_id\" value=\"sandbox-approved\" ch",
+   "requires_session": false,
+   "selector": "input[name='scenario_id']",
+   "url": "/checkout/address-payment-method?flow=essential-annual&method=card",
+   "visible_text_proof": "Simulated approval"
+  },
+  {
+   "control": "Subscribe now",
+   "form_action": "/checkout/subscribe",
+   "raw_markup_proof": "=\"c-button--primary\"><button tabindex=\"0\" type=\"submit\" form=\"ipvanish-sandbox-form\" class=\"c-button c-button--primary\" data-clone-action=\"subscribe\"><span class=\"ng-star-inserted\">Subscribe now</span><!----><!----><!----><!----></button></suite-button></div></div></div><!----><!----><!----><!----><suite-box-spinner _n",
+   "requires_session": false,
+   "selector": "button[data-clone-action='subscribe']",
+   "url": "/checkout/address-payment-method?flow=essential-annual&method=card",
+   "visible_text_proof": "Subscribe now"
+  },
+  {
+   "control": "Email address field",
+   "form_action": "/login",
+   "raw_markup_proof": "d__X0dIH\"><div class=\"input-field_label__Wdhg7\">Email address</div><input class=\"input-field_input__B6JgH\" type=\"email\" name=\"email\" required=\"\" autocomplete=\"email\" tabindex=\"1\" value=\"\" style=\"\"></label></div><div class=\"login-form_field__TNa8A\"><label class=\"input-field_inputField__X0dIH\"><div class=\"input-field_lab",
+   "requires_session": false,
+   "selector": "form[action='/login'] input[name='email']",
+   "url": "/login",
+   "visible_text_proof": "Email address"
+  },
+  {
+   "control": "Sign in",
+   "form_action": "/login",
+   "raw_markup_proof": "ogin-form_actionsField__mJ0rx\"><div><a tabindex=\"4\" href=\"/login/reset-password\">Forgot password?</a></div><div><button class=\"button_btn__fotrB\" tabindex=\"3\">Sign in</button></div></div></form></div></div></div></div><!--/$--></div><iframe height=\"1\" width=\"1\" style=\"position: absolute; top: 0px; left: 0px; border-wid",
+   "requires_session": false,
+   "selector": "form[action='/login'] button",
+   "url": "/login",
+   "visible_text_proof": "Sign in"
+  },
+  {
+   "control": "Forgot password?",
+   "form_action": null,
+   "raw_markup_proof": "rd\" tabindex=\"2\" value=\"\" style=\"\"></label></div></div><div class=\"login-form_actionsField__mJ0rx\"><div><a tabindex=\"4\" href=\"/login/reset-password\">Forgot password?</a></div><div><button class=\"button_btn__fotrB\" tabindex=\"3\">Sign in</button></div></div></form></div></div></div></div><!--/$--></div><iframe height=\"1\" ",
+   "requires_session": false,
+   "selector": "a[href='/login/reset-password']",
+   "url": "/login",
+   "visible_text_proof": "Forgot password?"
+  },
+  {
+   "control": "Sign up now!",
+   "form_action": null,
+   "raw_markup_proof": "e privacy</div> today</div></div><div class=\"guest-layout_signUpBlock__Bd8sc\"><span>Not a member?</span><a tabindex=\"0\" href=\"/pricing/\">Sign up now!</a></div></div><div class=\"guest-layout_content__P1Nku\"><div class=\"guest-layout_form__oO4Pz\"><div class=\"login-form_wrapper__leg13\"><div><h2>Welcome back!</h2><p class=\"",
+   "requires_session": false,
+   "selector": "a[href='/pricing/']",
+   "url": "/login",
+   "visible_text_proof": "Sign up now!"
+  },
+  {
+   "control": "Reset address field",
+   "form_action": "/login/reset-password",
+   "raw_markup_proof": "d__X0dIH\"><div class=\"input-field_label__Wdhg7\">Email address</div><input class=\"input-field_input__B6JgH\" type=\"email\" name=\"username\" required=\"\" autocomplete=\"email\" tabindex=\"1\" value=\"\" style=\"\"></label></div><div class=\"views_actions__X6hiC\"><a class=\"views_cancelReset__HM3nC\" tabindex=\"3\" href=\"/login\">Back to s",
+   "requires_session": false,
+   "selector": "input[name='username']",
+   "url": "/login/reset-password",
+   "visible_text_proof": "Email address"
+  },
+  {
+   "control": "Send code",
+   "form_action": "/login/reset-password",
+   "raw_markup_proof": ">Enter you account email, you will receive a reset password code</p></div><form class=\"views_form__Gddbz\" method=\"post\" action=\"/login/reset-password\"><div class=\"views_fields__LHxi_\"><label class=\"input-field_inputField__X0dIH\"><div class=\"input-field_label__Wdhg7\">Email address</div><input class=\"input-field_input__B",
+   "requires_session": false,
+   "selector": "form[action='/login/reset-password'] button",
+   "url": "/login/reset-password",
+   "visible_text_proof": "Send code"
+  },
+  {
+   "control": "Support search",
+   "form_action": "/support/search",
+   "raw_markup_proof": "et\"><input type=\"hidden\" name=\"utf8\" value=\"\u2713\" autocomplete=\"off\" style=\"\"><input type=\"search\" name=\"query\" id=\"query\" placeholder=\"How can we help you?\" autocomplete=\"off\" aria-label=\"How can we help you?\" style=\"\"></form>\n  </div>\n</section>\n\n<section class=\"section status-bar under_maintenance\">\n  <a href=\"/externa",
+   "requires_session": false,
+   "selector": "form[role='search'] input[name='query']",
+   "url": "/support",
+   "visible_text_proof": "aria-label=How can we help you?"
+  },
+  {
+   "control": "Back to plans (no-results)",
+   "form_action": null,
+   "raw_markup_proof": "/div>\n  </a>\n</section>\n\n\n\n\n\n\n  \n    \n      \n        \n          <section class=\"section faq\"><div class=\"faq-inner\"><h2>No results for \u201czzzz-no-match-websitebench\u201d</h2><p>Your search did not match any article in this offline clone's support index.</p><ul><li><a href=\"/pricing/\">See IPVanish plans &amp; pricing</a></li>",
+   "requires_session": false,
+   "selector": ".faq-inner a[href='/pricing/']",
+   "url": "/support/search?query=zzzz-no-match-websitebench",
+   "visible_text_proof": "See IPVanish plans &amp; pricing"
+  },
+  {
+   "control": "Pause subscription",
+   "form_action": "/account/subscription/sub_primary_annual/pause",
+   "raw_markup_proof": "thod=\"post\" class=\"ipvanish-clone-inline\" action=\"/account/subscription/sub_primary_annual/pause\"><button type=\"submit\" data-clone-action=\"pause\">Pause subscription</button></form><form method=\"post\" class=\"ipvanish-clone-inline\" action=\"/account/subscription/sub_primary_annual/cancel\"><button type=\"submit\" data-clone-",
+   "requires_session": true,
+   "selector": "button[data-clone-action='pause']",
+   "url": "/account/",
+   "visible_text_proof": "Pause subscription"
+  },
+  {
+   "control": "Cancel subscription",
+   "form_action": "/account/subscription/sub_primary_annual/cancel",
+   "raw_markup_proof": "hod=\"post\" class=\"ipvanish-clone-inline\" action=\"/account/subscription/sub_primary_annual/cancel\"><button type=\"submit\" data-clone-action=\"cancel\">Cancel subscription</button></form></div></section><section class=\"ipvanish-clone-card\" data-subscription-status=\"canceled\"><h3>IPVanish Essential \u2014 monthly</h3><p class=\"ip",
+   "requires_session": true,
+   "selector": "button[data-clone-action='cancel']",
+   "url": "/account/",
+   "visible_text_proof": "Cancel subscription"
+  },
+  {
+   "control": "Change plan",
+   "form_action": "/account/plan",
+   "raw_markup_proof": "ard is taken.</strong> A plan change is charged through the same local sandbox as checkout.</p>\n  <button type=\"submit\" data-clone-action=\"change-plan\">Change plan</button>\n</form>\n<form method=\"post\" action=\"/logout\" class=\"ipvanish-clone-inline\"><button type=\"submit\" data-clone-action=\"sign-out\">Sign out</button></fo",
+   "requires_session": true,
+   "selector": "button[data-clone-action='change-plan']",
+   "url": "/account/plan",
+   "visible_text_proof": "Change plan"
+  },
+  {
+   "control": "Save billing contact",
+   "form_action": "/account/billing-contact",
+   "raw_markup_proof": "\n    <input id=\"contact-postal\" name=\"postal_code\" type=\"text\" required value=\"78701\">\n  </div>\n  <button type=\"submit\" data-clone-action=\"save-contact\">Save billing contact</button>\n</form>\n<form method=\"post\" action=\"/logout\" class=\"ipvanish-clone-inline\"><button type=\"submit\" data-clone-action=\"sign-out\">Sign out</b",
+   "requires_session": true,
+   "selector": "button[data-clone-action='save-contact']",
+   "url": "/account/billing-contact",
+   "visible_text_proof": "Save billing contact"
+  }
+ ],
+ "note": "Selectors are Playwright-style and are the ones clone/tests/test_operability.py drives in Chromium. Rows whose url is under /account or /checkout/confirmation describe clone-local inference: the source gates those surfaces behind a purchase, so no captured state exists for them.",
+ "recorded_from": "live clone (TestClient walk of clone/app.py)",
+ "schema_version": "ipvanish.interaction-ledger.v1"
+}

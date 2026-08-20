@@ -1,0 +1,55 @@
+{
+  "checkpoint": "cloud-storage",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/cloud-storage/",
+  "final_url": "https://www.ipvanish.com/cloud-storage/",
+  "http_status": 200,
+  "title": "Livedrive Cloud Storage | IPVanish",
+  "body_text_len": 7739,
+  "frames": 3,
+  "frame_sha256": [
+    "cab29d2b45ba2be72221b05255a8c4d818c59d9fcda6656af8319a80a693051f",
+    "421aebd28e9bfe8a1677f582b052bd790938e857399e3aba6cf18c980a645266",
+    "c2dc013a4500961af901ca9664c0c121472a30c6e2f0fc440c48304e7b8b011e"
+  ],
+  "frames_identical": false,
+  "link_count": 197,
+  "resource_count": 135,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 6608
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 6708,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 7432
+  }
+}

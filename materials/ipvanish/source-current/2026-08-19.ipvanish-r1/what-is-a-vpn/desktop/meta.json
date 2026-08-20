@@ -1,0 +1,55 @@
+{
+  "checkpoint": "what-is-a-vpn",
+  "family": "marketing",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/what-is-a-vpn/",
+  "final_url": "https://www.ipvanish.com/what-is-a-vpn/",
+  "http_status": 200,
+  "title": "What is a VPN? Virtual Private Network Explained | IPVanish",
+  "body_text_len": 11679,
+  "frames": 3,
+  "frame_sha256": [
+    "ce63910e330b16a100a22fd9c6d1e53d72af7946958d7eab0c62687366066793",
+    "916380535369c71a0e1ebcc11e56d0e1af93174920234046e1d5eb248be559b1",
+    "30050711ffd93605dc3de273a820575ae3eb3508585e5055aed3f6c93a9be37e"
+  ],
+  "frames_identical": false,
+  "link_count": 230,
+  "resource_count": 132,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 11332
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 11433,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 12156
+  }
+}

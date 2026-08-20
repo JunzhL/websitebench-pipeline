@@ -1,0 +1,321 @@
+{
+ "schema_version": "ipvanish.frontend-gate-samples.v1",
+ "app_file": "clone/app.py",
+ "app_attr": "app",
+ "module_name": "ipvanish_clone_app",
+ "note": "The home check uses /?index=1 rather than a bare / because `url: \"/\"` cannot become a contract step; app.py ignores unrecognised query parameters and serves the home document, so the alias is the same page. Subscriber checks (session: true) reach clone-local inference surfaces: IPVanish gates account creation behind a purchase, so no subscriber state was ever observed on the source. Credentials are deterministic synthetic seed fixtures on @example.invalid. The anonymous auth-boundary redirect is asserted in clone/tests/test_auth.py rather than here, because a gate runner that shares one client across checks is signed in by the time it would run. Each check carries at most one expect_contains value and at most one expect_not_contains value, because a contract step holds at most two assertions and a second value of the same kind would be dropped rather than asserted. Every POST check targets a route that also answers GET and whose form action is declared by exactly one template under clone/frontend/fragments/, so a submit step resolves a real form instead of a guessed selector.",
+ "session_setup": {
+  "url": "/login",
+  "method": "post",
+  "data": {
+   "email": "avery.sandoval@example.invalid",
+   "password": "Vanish-Demo-2026!"
+  }
+ },
+ "checks": [
+  {
+   "id": "healthz",
+   "url": "/healthz",
+   "expect_status": 200,
+   "expect_contains": ["\"site_id\":\"ipvanish\""],
+   "session": false
+  },
+  {
+   "id": "home",
+   "url": "/?index=1",
+   "expect_status": 200,
+   "expect_contains": ["Security Beyond Your VPN"],
+   "expect_not_contains": ["Page not found"],
+   "session": false
+  },
+  {
+   "id": "home.wpml-banner",
+   "url": "/?index=1",
+   "expect_status": 200,
+   "expect_contains": ["as a development site."],
+   "session": false
+  },
+  {
+   "id": "home.nav-product",
+   "url": "/?nav=product",
+   "expect_status": 200,
+   "expect_contains": ["What is a VPN?"],
+   "session": false
+  },
+  {
+   "id": "pricing",
+   "url": "/pricing/",
+   "expect_status": 200,
+   "expect_contains": ["Best Protection"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "pricing.yearly",
+   "url": "/pricing/?period=yearly",
+   "expect_status": 200,
+   "expect_contains": ["$46.68 for the first year."],
+   "session": false
+  },
+  {
+   "id": "pricing.monthly",
+   "url": "/pricing/?period=monthly",
+   "expect_status": 200,
+   "expect_contains": ["Renews Monthly at $14.99."],
+   "session": false
+  },
+  {
+   "id": "checkout.chooser",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "expect_status": 200,
+   "expect_contains": ["Select a payment method"],
+   "expect_not_contains": ["Simulated approval"],
+   "session": false
+  },
+  {
+   "id": "checkout.order-summary",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "expect_status": 200,
+   "expect_contains": ["Order Summary"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "checkout.summary-tax",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "expect_status": 200,
+   "expect_contains": ["Estimated tax"],
+   "expect_not_contains": ["$0.00"],
+   "session": false
+  },
+  {
+   "id": "checkout.summary-total",
+   "url": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+   "expect_status": 200,
+   "expect_contains": ["Total due"],
+   "expect_not_contains": ["Cardholder name"],
+   "session": false
+  },
+  {
+   "id": "checkout.card-form",
+   "url": "/checkout/address-payment-method?flow=essential-annual&method=card",
+   "expect_status": 200,
+   "expect_contains": ["Subscribe now"],
+   "expect_not_contains": ["Security code"],
+   "session": false
+  },
+  {
+   "id": "checkout.subscribe-form",
+   "url": "/checkout/subscribe",
+   "expect_status": 200,
+   "expect_contains": ["Simulated approval"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "checkout.submit",
+   "url": "/checkout/subscribe",
+   "method": "post",
+   "data": {
+    "flow": "essential-annual",
+    "account_email": "gate-buyer@example.invalid",
+    "billing_country": "US",
+    "billing_postal_code": "78701",
+    "scenario_id": "sandbox-approved"
+   },
+   "expect_status": 303,
+   "expect_contains": ["Your IPVanish subscription is active"],
+   "expect_not_contains": ["Simulated decline"],
+   "session": false
+  },
+  {
+   "id": "checkout.submit-declined",
+   "url": "/checkout/subscribe",
+   "method": "post",
+   "data": {
+    "flow": "advanced-monthly",
+    "account_email": "gate-declined@example.invalid",
+    "billing_country": "CA",
+    "billing_postal_code": "M5V 2T6",
+    "scenario_id": "sandbox-declined"
+   },
+   "expect_status": 200,
+   "expect_contains": ["Simulated decline"],
+   "expect_not_contains": ["Your IPVanish subscription is active"],
+   "session": false
+  },
+  {
+   "id": "checkout.submit-card-field-rejected",
+   "url": "/checkout/subscribe",
+   "method": "post",
+   "data": {
+    "flow": "essential-annual",
+    "account_email": "gate-reject@example.invalid",
+    "billing_country": "US",
+    "billing_postal_code": "78701",
+    "scenario_id": "sandbox-approved",
+    "card_number": "not-a-card"
+   },
+   "expect_status": 422,
+   "expect_contains": ["is not accepted"],
+   "expect_not_contains": ["Your IPVanish subscription is active"],
+   "session": false
+  },
+  {
+   "id": "login",
+   "url": "/login",
+   "expect_status": 200,
+   "expect_contains": ["Welcome back!"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "login.recovery",
+   "url": "/login/reset-password",
+   "expect_status": 200,
+   "expect_contains": ["Enter you account email"],
+   "session": false
+  },
+  {
+   "id": "login.submit",
+   "url": "/login",
+   "method": "post",
+   "data": {
+    "email": "avery.sandoval@example.invalid",
+    "password": "Vanish-Demo-2026!"
+   },
+   "expect_status": 303,
+   "session": false
+  },
+  {
+   "id": "login.submit-invalid",
+   "url": "/login",
+   "method": "post",
+   "data": {
+    "email": "avery.sandoval@example.invalid",
+    "password": "not-the-password"
+   },
+   "expect_status": 422,
+   "expect_contains": ["do not match"],
+   "session": false
+  },
+  {
+   "id": "recovery.submit",
+   "url": "/login/reset-password",
+   "method": "post",
+   "data": {
+    "username": "avery.sandoval@example.invalid"
+   },
+   "expect_status": 200,
+   "expect_contains": ["local outbox"],
+   "session": false
+  },
+  {
+   "id": "support",
+   "url": "/support",
+   "expect_status": 200,
+   "expect_contains": ["Support Categories"],
+   "session": false
+  },
+  {
+   "id": "support.no-results",
+   "url": "/support/search?query=zzzz-no-match-websitebench",
+   "expect_status": 200,
+   "expect_contains": ["No results for"],
+   "expect_not_contains": ["Support Categories"],
+   "session": false
+  },
+  {
+   "id": "not-found",
+   "url": "/zzzz-no-match-websitebench",
+   "expect_status": 404,
+   "expect_contains": ["Security Beyond Your VPN"],
+   "expect_not_contains": ["Page not found"],
+   "session": false
+  },
+  {
+   "id": "external-boundary",
+   "url": "/external/wpml-org-66aa20c0",
+   "expect_status": 200,
+   "expect_contains": ["This link leaves the captured site"],
+   "session": false
+  },
+  {
+   "id": "account.overview",
+   "url": "/account/",
+   "expect_status": 200,
+   "expect_contains": ["My Account"],
+   "expect_not_contains": ["Sign in to continue"],
+   "session": true
+  },
+  {
+   "id": "account.overview-disclosure",
+   "url": "/account/",
+   "expect_status": 200,
+   "expect_contains": ["Clone-local view."],
+   "expect_not_contains": ["Simulated approval"],
+   "session": true
+  },
+  {
+   "id": "account.billing",
+   "url": "/account/billing",
+   "expect_status": 200,
+   "expect_contains": ["Billing history"],
+   "expect_not_contains": ["Card number"],
+   "session": true
+  },
+  {
+   "id": "account.plan",
+   "url": "/account/plan",
+   "expect_status": 200,
+   "expect_contains": ["Change plan"],
+   "expect_not_contains": ["Card number"],
+   "session": true
+  },
+  {
+   "id": "account.plan-scenarios",
+   "url": "/account/plan",
+   "expect_status": 200,
+   "expect_contains": ["Simulated approval"],
+   "expect_not_contains": ["Security code"],
+   "session": true
+  },
+  {
+   "id": "account.billing-contact",
+   "url": "/account/billing-contact",
+   "expect_status": 200,
+   "expect_contains": ["Billing contact"],
+   "expect_not_contains": ["Card number"],
+   "session": true
+  },
+  {
+   "id": "account.plan-submit",
+   "url": "/account/plan",
+   "method": "post",
+   "data": {
+    "subscription_id": "sub_primary_annual",
+    "plan_id": "advanced-annual",
+    "scenario_id": "sandbox-approved"
+   },
+   "expect_status": 303,
+   "expect_contains": ["IPVanish Advanced"],
+   "expect_not_contains": ["Simulated decline"],
+   "session": true
+  },
+  {
+   "id": "account.billing-contact-submit",
+   "url": "/account/billing-contact",
+   "method": "post",
+   "data": {
+    "full_name": "Avery Sandoval",
+    "email": "avery.sandoval@example.invalid",
+    "country": "CA",
+    "postal_code": "M5V 2T6"
+   },
+   "expect_status": 303,
+   "expect_contains": ["Billing contact"],
+   "expect_not_contains": ["Card number"],
+   "session": true
+  }
+ ]
+}

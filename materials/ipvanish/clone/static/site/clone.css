@@ -1,0 +1,304 @@
+/* Styling for the clone-local surfaces only.
+ *
+ * Every captured page keeps the source's own stylesheets untouched. What is
+ * styled here is what the source never served: the local-sandbox checkout
+ * replacement, the disclosed subscriber pages, the external-link boundary and
+ * the support search results. Nothing in this file restyles captured markup.
+ */
+
+/* --- clone-local correction: responsive-image containment ---------------
+ *
+ * The one place the candidate diverged from the source's *layout* rather than
+ * its content. The home page's "available on" OS-icon rows are Spectra/UAG
+ * image blocks whose <img> carries an intrinsic `width="288"` (mobile row) or
+ * `width="395"` (tablet row) while its column is 163px / 312px wide. UAG's own
+ * stylesheet caps the image at `max-width: 100%`, but that percentage resolves
+ * against the image's parent <a>, which is a blockified column-flex item sized
+ * to its content -- so nothing actually constrained it, and the document grew
+ * to 433px at a 390px viewport and 1046px at a 1024px viewport.
+ *
+ * The source does not do this: the frozen full-page capture
+ * `source-current/2026-08-19.ipvanish-r1/home/mobile/frame-1.png` is exactly
+ * 390px wide, and the tablet frame exactly 1024px. The mechanism that
+ * constrains them there could not be established offline -- these particular
+ * SVGs are among the payloads the capture never fetched, so they render as
+ * broken images still occupying their declared width. Rather than clip the
+ * overhang out of sight, the constraint is restored at its cause: cap the
+ * anchor at its column, which lets UAG's existing `max-width: 100%` on the
+ * image take effect.
+ *
+ * Deliberately non-binding wherever the column is already wider than the
+ * image, which is every case at 1440px -- the desktop pixel oracle is
+ * unchanged by this rule.
+ */
+.wp-block-uagb-image__figure > a {
+  max-width: 100%;
+}
+
+.wp-block-uagb-image__figure > a > img,
+.wp-block-uagb-image__figure > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ipvanish-clone-note {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid #70bb43;
+  background: #f4f8f0;
+  color: #1d2b12;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+
+.ipvanish-clone-note--error {
+  border-left-color: #c0392b;
+  background: #fdf1ef;
+  color: #4a1610;
+}
+
+.ipvanish-clone-note--ok {
+  border-left-color: #2d7ff9;
+  background: #eff5fe;
+  color: #10233d;
+}
+
+.ipvanish-clone-note code {
+  word-break: break-all;
+  font-size: 0.82em;
+}
+
+.ipvanish-clone-page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ipvanish-clone-page h1 {
+  font-size: 2rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.ipvanish-clone-page h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.ipvanish-clone-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.ipvanish-clone-subnav a {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #2f6f1f;
+  font-size: 0.9rem;
+}
+
+.ipvanish-clone-subnav a[aria-current="page"] {
+  background: #70bb43;
+  border-color: #70bb43;
+  color: #fff;
+}
+
+.ipvanish-clone-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.ipvanish-clone-card p {
+  margin: 0.2rem 0;
+  font-size: 0.92rem;
+}
+
+.ipvanish-clone-status strong {
+  text-transform: capitalize;
+}
+
+.ipvanish-clone-actions,
+.ipvanish-clone-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.ipvanish-clone-actions button,
+.ipvanish-clone-inline button,
+.ipvanish-sandbox button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #70bb43;
+  border-radius: 40px;
+  background: #70bb43;
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.ipvanish-clone-actions button:hover,
+.ipvanish-clone-inline button:hover,
+.ipvanish-sandbox button:hover {
+  background: #5da437;
+}
+
+.ipvanish-clone-cta {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  border-radius: 40px;
+  background: #ff8800;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
+}
+
+.ipvanish-clone-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.ipvanish-clone-table th,
+.ipvanish-clone-table td {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+}
+
+.ipvanish-clone-table thead th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* --- the local-sandbox checkout replacement ---------------------------- */
+
+.ipvanish-sandbox {
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem 1.25rem;
+  border: 1px dashed #9b9b9b;
+  border-radius: 6px;
+  background: #fbfbfb;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: none;
+}
+
+.ipvanish-sandbox__notice {
+  margin: 0 0 1rem;
+  font-size: 0.86rem;
+  color: #4a4a4a;
+}
+
+.ipvanish-sandbox__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.ipvanish-sandbox__row label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.ipvanish-sandbox__row input,
+.ipvanish-sandbox__row select {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.92rem;
+  background: #fff;
+  color: #18202a;
+}
+
+.ipvanish-sandbox__scenarios {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0.6rem 0.8rem 0.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.ipvanish-sandbox__scenarios legend {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 0.35rem;
+  color: #333;
+}
+
+.ipvanish-sandbox__scenario {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.15rem 0;
+}
+
+/* --- the in-frame external-embed boundary ------------------------------
+ *
+ * Served into a captured <iframe> whose geometry is the source's. Deliberately
+ * neutral: a quiet local panel, no third-party imagery, and no play affordance
+ * that would imply the embed works. It centres in whatever box the captured
+ * markup gives it, and stays legible in a 210x120 Trustpilot slot as well as a
+ * full-width 16:9 video slot.
+ */
+body.ipvanish-embed {
+  margin: 0;
+  /* The frame gives the document its height; 100% of an auto-height <html> is
+   * zero, which collapses the panel instead of centring it. */
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f5f6;
+  color: #46505a;
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+.ipvanish-embed__panel {
+  max-width: 34rem;
+  padding: 0.75rem 1rem;
+  border: 1px dashed #b8bfc6;
+  border-radius: 6px;
+  background: #fbfbfc;
+}
+
+.ipvanish-embed__title {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #2c343c;
+}
+
+.ipvanish-embed__host {
+  margin: 0 0 0.35rem;
+  font-size: 0.85em;
+  color: #6d757d;
+  word-break: break-all;
+}
+
+.ipvanish-embed__body {
+  margin: 0;
+  font-size: 0.85em;
+}
+
+/* Support search results reuse the captured help-centre section classes, so
+ * only the results-specific list needs anything here. */
+.faq-inner ul li a {
+  text-decoration: none;
+}

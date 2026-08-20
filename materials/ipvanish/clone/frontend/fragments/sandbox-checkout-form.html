@@ -1,0 +1,31 @@
+<!-- The clone-local replacement for the source's hosted card iframe.
+
+     The captured form's card number, cardholder name, expiry month, expiry year
+     and security code have no counterpart here by design: the candidate offers
+     no field capable of carrying card data. The account email and the billing
+     country and postal code are kept because they are real business inputs.
+
+     This markup lives in a template rather than in app.py so exactly one file
+     under clone/ declares `method="post" action="/checkout/subscribe"`, which
+     is what lets the Harbor derivation resolve a form-backed submit step.
+     Substituted with string.Template; every placeholder is pre-escaped. -->
+<form id="ipvanish-sandbox-form" class="ipvanish-sandbox" method="post" action="/checkout/subscribe" data-flow="$flow">
+  <input type="hidden" name="flow" value="$flow">
+  <input type="hidden" name="idempotency_key" value="$key">
+  <input type="hidden" name="attempt" value="$attempt">
+  <p class="ipvanish-sandbox__notice"><strong>Local sandbox &mdash; no card is taken.</strong> This offline clone offers no field capable of carrying a card number, cardholder name, expiry date or security code. The source site collects those in a hosted payment iframe; here you choose a simulated outcome instead, and nothing leaves this machine.</p>
+  <div class="ipvanish-sandbox__row">
+    <label for="input-email">Email address</label>
+    <input id="input-email" name="account_email" type="email" autocomplete="email" required value="$email">
+  </div>
+  <div class="ipvanish-sandbox__row">
+    <label for="input-billing-country">Country</label>
+    <select id="input-billing-country" name="billing_country" required>$countries</select>
+  </div>
+  <div class="ipvanish-sandbox__row">
+    <label for="input-billing-postal">ZIP / Postal code</label>
+    <input id="input-billing-postal" name="billing_postal_code" type="text" autocomplete="postal-code" required value="$postal">
+  </div>
+  <fieldset class="ipvanish-sandbox__scenarios">
+    <legend>Simulated payment outcome (local sandbox)</legend>$scenarios</fieldset>
+</form>

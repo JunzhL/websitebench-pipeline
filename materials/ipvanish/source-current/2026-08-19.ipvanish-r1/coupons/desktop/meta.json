@@ -1,0 +1,55 @@
+{
+  "checkpoint": "coupons",
+  "family": "pricing",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/coupons/",
+  "final_url": "https://www.ipvanish.com/coupons/",
+  "http_status": 200,
+  "title": "Coupons | IPVanish",
+  "body_text_len": 1364,
+  "frames": 3,
+  "frame_sha256": [
+    "91517401ea74a40d07a96de03c6b3cd216676c98e6be713296d2ab0b922bb91f",
+    "45a0d7d966d5002002f3a3c24bac20ee342b8ecf567b9a80105ffa78279dc172",
+    "4ed3cb71d617f24a529f9e57506e5a48f392cf304205cdbda702d8e5d906542f"
+  ],
+  "frames_identical": false,
+  "link_count": 178,
+  "resource_count": 113,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 484,
+      "y": 0,
+      "width": 688,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 670
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 741,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 1464
+  }
+}

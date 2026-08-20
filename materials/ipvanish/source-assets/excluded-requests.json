@@ -1,0 +1,159 @@
+{
+  "capture_id": "2026-08-19.ipvanish-r1",
+  "created_at": "2026-08-19T22:20:01Z",
+  "note": "Analytics/consent/ad/identity-provider/live-payment requests observed during capture; never fetched or mirrored (out-of-scope clone runtime per scope/purpose.json). Logged here, query-stripped, because offline-clone.assets.v1 forbids extra manifest keys.",
+  "excluded": [
+    {
+      "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-button.js",
+      "reason": "live payment provider (clone runtime is local)"
+    },
+    {
+      "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js",
+      "reason": "live payment provider (clone runtime is local)"
+    },
+    {
+      "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-wallet-sdk.js",
+      "reason": "live payment provider (clone runtime is local)"
+    },
+    {
+      "url": "https://cdn.siftscience.com/s.js",
+      "reason": "fraud-scoring / device fingerprinting"
+    },
+    {
+      "url": "https://cdn.ziffstatic.com/jst/otBannerSdk.202604.2.0.js",
+      "reason": "consent management (Ziff Davis CMP)"
+    },
+    {
+      "url": "https://cdn.ziffstatic.com/jst/otGPP.202604.2.0.js",
+      "reason": "consent management (Ziff Davis CMP)"
+    },
+    {
+      "url": "https://cdn.ziffstatic.com/jst/zdconsent.js",
+      "reason": "consent management (Ziff Davis CMP)"
+    },
+    {
+      "url": "https://dev.visualwebsiteoptimizer.com/apm",
+      "reason": "A/B-testing / experiment runtime"
+    },
+    {
+      "url": "https://dev.visualwebsiteoptimizer.com/cdn/apmLib-1e565fc690e7beb3d0bc2fcfcdfdf083.br.js",
+      "reason": "A/B-testing / experiment runtime"
+    },
+    {
+      "url": "https://dev.visualwebsiteoptimizer.com/collect/v.gif",
+      "reason": "A/B-testing / experiment runtime"
+    },
+    {
+      "url": "https://dev.visualwebsiteoptimizer.com/j.php",
+      "reason": "A/B-testing / experiment runtime"
+    },
+    {
+      "url": "https://p14.zdassets.com/hc/theme_assets/1779748/115000219647/bg_icons.svg",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://pay.google.com/gp/p/js/pay.js",
+      "reason": "live payment provider (clone runtime is local)"
+    },
+    {
+      "url": "https://static.zdassets.com/ekr/snippet.js",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/application-9dfad02370881fe3effa98d45c896d83.css",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/en-us.5b17782225c128b30f4a.js",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/hc_enduser-e93b894dfc0842708e6765806382e2dd.js",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/jquery-ed472032c65bb4295993684c673d706a.js",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/moment-3b62525bdab669b7b17d1a9d8b5d46b4.js",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css",
+      "reason": "third-party support widget runtime"
+    },
+    {
+      "url": "https://utt.impactcdn.com/A6297258-09df-4d28-9eb4-b2433b3fcbd91.js",
+      "reason": "affiliate-tracking beacon"
+    },
+    {
+      "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustbox-data/53aa8807dec7e10d38f59f32",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustbox-data/53aa8912dec7e10d38f59f36",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/main.js",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustboxes/53aa8912dec7e10d38f59f36/index.html",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://widget.trustpilot.com/trustboxes/53aa8912dec7e10d38f59f36/main.js",
+      "reason": "third-party review widget (live service)"
+    },
+    {
+      "url": "https://www.googletagmanager.com/a",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://applepay.cdn-apple.com/jsapi/1.latest/assets/1.2.0/fonts/en-US.woff",
+      "reason": "Apple Pay SDK asset; the clone reproduces no wallet payment path"
+    },
+    {
+      "url": "https://applepay.cdn-apple.com/jsapi/1.latest/assets/1.2.0/fonts/en-US.woff2",
+      "reason": "Apple Pay SDK asset; the clone reproduces no wallet payment path"
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/opt_in_out_icon.png",
+      "reason": "consent management (out-of-scope clone runtime)"
+    },
+    {
+      "url": "https://support.ipvanish.com/hc/theming_assets/1779748/7040407/style.qde8c6c42fb.css",
+      "reason": "source did not serve it at repair time"
+    },
+    {
+      "url": "https://support.ipvanish.com/hc/theming_assets/01HZPQG2AKZW7FM8MZMEGBH9QS",
+      "reason": "Zendesk support-centre theme asset; referenced relatively by the captured help-centre document and not served to a headless client (403). The support page therefore renders unstyled - a recorded known difference."
+    },
+    {
+      "url": "https://support.ipvanish.com/hc/theming_assets/01HZPQG2ETDHJF1RZRM0ARGJ00",
+      "reason": "Zendesk support-centre theme asset; see the sibling entry."
+    }
+  ]
+}

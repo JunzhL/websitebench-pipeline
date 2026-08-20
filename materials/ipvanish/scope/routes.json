@@ -1,0 +1,491 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {
+      "id": "home",
+      "route_pattern": "/",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "nav-product",
+        "nav-apps",
+        "nav-resources",
+        "mobile-menu"
+      ],
+      "note": "WordPress + Astra marketing entry. Rendered top-level nav is Product, Apps, Resources, Help, Pricing plus My Account and Get Started; 'Features' and 'Solutions' appear in served markup but never render. Ships a WPML 'registered on wpml.org as a development site' banner in production."
+    },
+    {
+      "id": "pricing",
+      "route_pattern": "/pricing/",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "2-year",
+        "yearly",
+        "monthly"
+      ],
+      "note": "The P0 comparison surface. Three billing-period tabs rendered as bare <strong> elements (2-Year Plan default / Yearly Plan / Monthly Plan), each with Essential and Advanced tiers; Advanced carries a 'Best Protection' ribbon. Monthly $14.99/$17.99; Yearly $3.89/$5.39 per month struck from $179.88/$215.88 with '$46.68/$64.68 for the first year'; 2-Year $2.49/$3.59 struck from $359.76/$431.76. 'View All Features \u2228' / 'Hide All Features \u2227' expanders exist in the mobile plan panels and render at viewports <=767px; an earlier desktop-only probe wrongly concluded they never render, and that claim is corrected here. The checkout quote is priced by a non-GET request, so a GET-only capture of the chooser shows $0.00 line items; the resolved figures ($179.88 struck, Save 74% -$133.20, Estimated tax $6.07, Total due $52.75 for essential-annual) come from an interactive probe and are corroborated by catalogue arithmetic."
+    },
+    {
+      "id": "checkout-chooser",
+      "route_pattern": "/checkout/address-payment-method",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "essential-annual",
+        "essential-monthly",
+        "advanced-annual",
+        "card-form",
+        "sandbox-approved",
+        "sandbox-declined",
+        "sandbox-retry"
+      ],
+      "note": "On the source this is an Angular SPA on the linked subdomain checkout.ipvanish.com, entered as ?flow={tier}-{period}&currency=USD&lang=EN. Step one is a payment-method chooser (Credit card / PayPal / Apple Pay / Google Pay) beside an Order Summary; for essential-annual: 12 months, IPVanish Essential $179.88, Save 74% - $133.20, Estimated tax $6.07, Total due $52.75. Activating the Credit card row expands the registration form. The clone serves this on its own origin under the same path; the sandbox-* states are clone-local payment behaviour."
+    },
+    {
+      "id": "sso-signin",
+      "route_pattern": "/login",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "validation-error"
+      ],
+      "note": "Source serves this from sso.ipvanish.com (Next.js SPA); www.ipvanish.com/login/ 301s there. Copy: 'RECLAIM YOUR ONLINE PRIVACY TODAY', 'Not a member? Sign up now!' linking to /pricing/, 'Welcome back! Sign in to continue to customer portal', Email address, Password, 'Forgot password?'. Inputs named email and password. No third-party identity-provider buttons were observed."
+    },
+    {
+      "id": "sso-recovery",
+      "route_pattern": "/login/reset-password",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "validation-error",
+        "sent"
+      ],
+      "note": "Reachable only by clicking 'Forgot password?'; the source's un-slashed /reset-password deep link answers 403 from its S3 origin while /reset-password/ works. Copy: 'Reset password', 'Enter you account email, you will receive a reset password code' (source typo, reproduced verbatim), Email address, 'Back to sign in', 'Send code'. Input named username."
+    },
+    {
+      "id": "support",
+      "route_pattern": "/support",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "no-results"
+      ],
+      "note": "Source serves a Zendesk Guide at support.ipvanish.com/hc/en-us, which only renders for an ordinary browser UA (the headless UA receives a Cloudflare 403 challenge). Carries a search box, Support Categories and FAQ entries plus a System Status banner."
+    },
+    {
+      "id": "why-vpn",
+      "route_pattern": "/why-vpn/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "what-is-a-vpn",
+      "route_pattern": "/what-is-a-vpn/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "servers",
+      "route_pattern": "/servers/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "vpn-features",
+      "route_pattern": "/vpn-features/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "money-back-guarantee",
+      "route_pattern": "/money-back-guarantee/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "30-day guarantee; monthly plans are explicitly ineligible."
+    },
+    {
+      "id": "coupons",
+      "route_pattern": "/coupons/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "vpn-locations",
+      "route_pattern": "/vpn-locations/",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Index of ~87 location pages; only the index is in frozen scope."
+    },
+    {
+      "id": "reviews",
+      "route_pattern": "/reviews/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "trust",
+      "route_pattern": "/trust/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "no-log-vpn-policy",
+      "route_pattern": "/no-log-vpn-policy/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "threat-protection",
+      "route_pattern": "/vpn-features/threat-protection/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "secure-browser",
+      "route_pattern": "/secure-browser/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "cloud-storage",
+      "route_pattern": "/cloud-storage/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "vpn-setup-windows",
+      "route_pattern": "/vpn-setup/windows/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "One representative of the 15-page /vpn-setup/ family; the rest are declared omissions."
+    },
+    {
+      "id": "vpn-for-streaming",
+      "route_pattern": "/vpn-for-streaming/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "resources",
+      "route_pattern": "/resources/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "setup-guides",
+      "route_pattern": "/setup-guides/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "what-is-my-ip-address",
+      "route_pattern": "/what-is-my-ip-address/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Free tool page; the clone reports a deterministic seeded address rather than a real client IP."
+    },
+    {
+      "id": "blog",
+      "route_pattern": "/blog/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Index only; individual posts and category/author pages are declared omissions."
+    },
+    {
+      "id": "tos",
+      "route_pattern": "/tos/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "privacy-policy",
+      "route_pattern": "/privacy-policy/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "partners",
+      "route_pattern": "/partners/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "press",
+      "route_pattern": "/press/",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "subscriber-dashboard",
+      "route_pattern": "unavailable-pending-paid-subscription:my.ipvanish.com",
+      "priority": "p1",
+      "purpose_edge": "primary",
+      "evidence_kind": "unavailable",
+      "local_destination": true,
+      "roles": [
+        "subscriber"
+      ],
+      "states": [
+        "overview",
+        "billing-history",
+        "plan-change",
+        "paused",
+        "canceled",
+        "reactivated"
+      ],
+      "note": "UNAVAILABLE on the source: reaching a subscriber session requires a real purchase, which is prohibited and which the user declined. Route names were read from the my.ipvanish.com build manifest (/, /vpn, /antivirus, /cloud-storage, /secure_browser, /proxy, /wireguard, /reports, /refer-and-earn) but no rendered subscriber state was ever observed. The clone implements a local dashboard whose every element is disclosed as inference."
+    },
+    {
+      "id": "not-found",
+      "route_pattern": "/__any-unmatched-path",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "The source answers an unknown path with HTTP 404 whose body is the home page: title and markup are byte-near-identical to / (1,127,728 vs 1,127,732 bytes) and no '404' string appears. There is no branded not-found view. The clone reproduces 404-status-with-home-body; trace ht-22's expectation of a branded not-found is a recorded divergence."
+    }
+  ]
+}

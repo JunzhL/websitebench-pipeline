@@ -1,0 +1,55 @@
+{
+  "checkpoint": "vpn-for-streaming",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/vpn-for-streaming/",
+  "final_url": "https://www.ipvanish.com/vpn-for-streaming/",
+  "http_status": 200,
+  "title": "Best VPN for Streaming | IPVanish",
+  "body_text_len": 8606,
+  "frames": 3,
+  "frame_sha256": [
+    "c1215ba0b656bcef902038f940f94acfd61160a83453bab5aceedb3690b508d6",
+    "164fc121d5feda8497a3f51b6c2540d6ba28c5dc2453dc195f7f0b68ffc5f44e",
+    "3aa00d1a9ca3c86793d623bd2d4bad10a11f568766b78ad0933435be9aa9b9a4"
+  ],
+  "frames_identical": false,
+  "link_count": 182,
+  "resource_count": 116,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 9471
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 9542,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 10265
+  }
+}

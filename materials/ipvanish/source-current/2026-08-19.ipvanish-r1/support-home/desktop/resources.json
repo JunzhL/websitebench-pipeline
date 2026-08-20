@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://static.zdassets.com/hc/assets/application-9dfad02370881fe3effa98d45c896d83.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://support.ipvanish.com/hc/theming_assets/1779748/7040407/style.css?digest=49139099732251",
+    "initiator": "link",
+    "transfer_size": 12184
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/jquery-ed472032c65bb4295993684c673d706a.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://support.ipvanish.com/hc/theming_assets/1779748/7040407/script.js?digest=49139099732251",
+    "initiator": "script",
+    "transfer_size": 2311
+  },
+  {
+    "url": "https://support.ipvanish.com/hc/theming_assets/01HZPQG2AKZW7FM8MZMEGBH9QS",
+    "initiator": "img",
+    "transfer_size": 13858
+  },
+  {
+    "url": "https://static.zdassets.com/ekr/snippet.js?key=7dcfa772-1f05-4844-9e53-6f5dc0df8801",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+    "initiator": "link",
+    "transfer_size": 7288
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/en-us.5b17782225c128b30f4a.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/moment-3b62525bdab669b7b17d1a9d8b5d46b4.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/hc_enduser-e93b894dfc0842708e6765806382e2dd.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://ekr.zdassets.com/compose/7dcfa772-1f05-4844-9e53-6f5dc0df8801",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://support.ipvanish.com/hc/theming_assets/01HZPQG2N80T13R2RQ26BRW9WX",
+    "initiator": "css",
+    "transfer_size": 118232
+  },
+  {
+    "url": "https://p14.zdassets.com/hc/theme_assets/1779748/115000219647/bg_icons.svg",
+    "initiator": "css",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://support.ipvanish.com/hc/activity",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://ipvanish.statuspage.io/api/v2/components.json",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  }
+]

@@ -1,0 +1,762 @@
+[
+  {
+    "url": "https://cdn.ziffstatic.com/jst/zdconsent.js",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/astra-local-fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+    "initiator": "link",
+    "transfer_size": 48620
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/astra-local-fonts/raleway/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrE.woff2",
+    "initiator": "link",
+    "transfer_size": 23116
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/themes/astra/assets/css/minified/main.min.css",
+    "initiator": "link",
+    "transfer_size": 10464
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/genesis-blocks/dist/style-blocks.build.css",
+    "initiator": "link",
+    "transfer_size": 7723
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ipvanish-link-checker/assets/css/ipvanish-link-checker.css",
+    "initiator": "link",
+    "transfer_size": 4392
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/font-awesome/v6.5.2/css/svg-with-js.css",
+    "initiator": "link",
+    "transfer_size": 3112
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/astra-local-fonts/astra-local-fonts.css",
+    "initiator": "link",
+    "transfer_size": 2981
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/dark-web-monitoring/assets/css/style.css",
+    "initiator": "link",
+    "transfer_size": 2669
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/astra/astra-theme-dynamic-css-post-2.css",
+    "initiator": "link",
+    "transfer_size": 10001
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.min.css",
+    "initiator": "link",
+    "transfer_size": 873
+  },
+  {
+    "url": "https://utt.impactcdn.com/A6297258-09df-4d28-9eb4-b2433b3fcbd91.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KZJF7V",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/uag-plugin/custom-style-blocks.css",
+    "initiator": "link",
+    "transfer_size": 26272
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/astra-addon/astra-addon-6a551f2d307914-27745391.css",
+    "initiator": "link",
+    "transfer_size": 9024
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%2C600italic%2C400italic&subset=latin&display=fallback",
+    "initiator": "link",
+    "transfer_size": 2249
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/astra-addon/astra-addon-dynamic-css-post-2.css",
+    "initiator": "link",
+    "transfer_size": 4712
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A600%2C600italic&subset=latin&display=fallback",
+    "initiator": "link",
+    "transfer_size": 2105
+  },
+  {
+    "url": "https://use.fontawesome.com/releases/v6.5.2/css/all.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/themes/astra-child/style.css",
+    "initiator": "link",
+    "transfer_size": 9428
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=636b10df",
+    "initiator": "link",
+    "transfer_size": 4926
+  },
+  {
+    "url": "https://use.fontawesome.com/releases/v6.5.2/css/v4-shims.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/n2.min.js?ver=636b10df",
+    "initiator": "script",
+    "transfer_size": 13972
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Slider/SliderType/Simple/Assets/dist/ss-simple.min.js?ver=636b10df",
+    "initiator": "script",
+    "transfer_size": 3847
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider-frontend.min.js?ver=636b10df",
+    "initiator": "script",
+    "transfer_size": 30855
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Widget/Arrow/ArrowImage/Assets/dist/w-arrow-image.min.js?ver=636b10df",
+    "initiator": "script",
+    "transfer_size": 985
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-includes/js/jquery/jquery-migrate.min.js",
+    "initiator": "script",
+    "transfer_size": 5458
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.min.js",
+    "initiator": "script",
+    "transfer_size": 921
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/wp-security-hardening/modules/js/front.js",
+    "initiator": "script",
+    "transfer_size": 379
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-includes/js/jquery/jquery.min.js",
+    "initiator": "script",
+    "transfer_size": 33770
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app.js",
+    "initiator": "script",
+    "transfer_size": 55825
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js",
+    "initiator": "script",
+    "transfer_size": 490
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Widget/Thumbnail/Basic/Assets/dist/w-thumbnail-horizontal.min.js?ver=636b10df",
+    "initiator": "script",
+    "transfer_size": 1941
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2",
+    "initiator": "link",
+    "transfer_size": 43368
+  },
+  {
+    "url": "https://use.fontawesome.com/releases/v6.5.2/webfonts/fa-solid-900.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+    "initiator": "script",
+    "transfer_size": 891
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/wp-security-hardening/modules/inc/assets/css/tw-bs4.css",
+    "initiator": "link",
+    "transfer_size": 31222
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/wp-security-hardening/modules/inc/fa/css/font-awesome.min.css",
+    "initiator": "link",
+    "transfer_size": 5461
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/astra-addon/addons/nav-menu/assets/css/minified/magamenu-frontend.min.css",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/wp-security-hardening/modules/css/front.css",
+    "initiator": "link",
+    "transfer_size": 415
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/widgets-1783963394.css",
+    "initiator": "link",
+    "transfer_size": 822
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-169299-1783963482.css",
+    "initiator": "link",
+    "transfer_size": 2596
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/css/all.min.css",
+    "initiator": "link",
+    "transfer_size": 14576
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/css/v4-shims.min.css",
+    "initiator": "link",
+    "transfer_size": 4933
+  },
+  {
+    "url": "https://cdn.cookielaw.org/consent/893b8ea0-f7aa-47b7-a3b9-7af914ae849b/893b8ea0-f7aa-47b7-a3b9-7af914ae849b.json",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=665881&u=https%3A%2F%2Fwww.ipvanish.com%2F&vn=2.2&ph=1&st=125.59999999403954&x=true",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 4975
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/dark-web-monitoring/assets/js/script.js",
+    "initiator": "script",
+    "transfer_size": 2799
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ipvanish-link-checker/assets/js/constants.js",
+    "initiator": "script",
+    "transfer_size": 5181
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/themes/astra/assets/js/minified/frontend.min.js",
+    "initiator": "script",
+    "transfer_size": 6959
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ipvanish-link-checker/assets/js/ipvanish-link-checker-utils.js",
+    "initiator": "script",
+    "transfer_size": 3360
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ipvanish-link-checker/assets/js/ipvanish-link-checker.js",
+    "initiator": "script",
+    "transfer_size": 3534
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js",
+    "initiator": "script",
+    "transfer_size": 7118
+  },
+  {
+    "url": "https://seal.vpntrust.net/verify.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js",
+    "initiator": "script",
+    "transfer_size": 783
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/uagb-button-child.min.js",
+    "initiator": "script",
+    "transfer_size": 557
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/faq.min.js",
+    "initiator": "script",
+    "transfer_size": 1417
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/astra-addon/assets/js/minified/purify.min.js",
+    "initiator": "script",
+    "transfer_size": 11473
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/astra-addon/astra-addon-6a551f2d3326d6-02606554.js",
+    "initiator": "script",
+    "transfer_size": 10581
+  },
+  {
+    "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://dev.visualwebsiteoptimizer.com/collect/v.gif?cd=0&a=665881&d=ipvanish.com&u=DC2A27837E1E965075CEBEDA6AEC21318&h=31614773c04f7903f235d33708ad991b&t=false",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.ziffstatic.com/jst/otBannerSdk.202604.2.0.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/digital-map-8.svg",
+    "initiator": "css",
+    "transfer_size": 34472
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/webfonts/fa-solid-900.woff2",
+    "initiator": "css",
+    "transfer_size": 78568
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-includes/js/wp-emoji-release.min.js",
+    "initiator": "script",
+    "transfer_size": 6275
+  },
+  {
+    "url": "https://widget.trustpilot.com/trustboxes/53aa8912dec7e10d38f59f36/index.html?templateId=53aa8912dec7e10d38f59f36&businessunitId=5079581d00006400051d2aca#locale=en-US&styleHeight=140px&styleWidth=100%25&theme=light&stars=5&reviewLanguages=en",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&businessunitId=5079581d00006400051d2aca#locale=en-US&styleHeight=120px&styleWidth=210px&theme=dark&textColor=%23ffffff",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&businessunitId=5079581d00006400051d2aca#locale=en-US&styleHeight=120px&styleWidth=210px&theme=dark&textColor=%23ffffff",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/usa-flag.png",
+    "initiator": "img",
+    "transfer_size": 628
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2021/10/ipvanish-text-logo-148x23.png",
+    "initiator": "img",
+    "transfer_size": 3042
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/07/hero-desktop-os-icons.svg",
+    "initiator": "img",
+    "transfer_size": 10351
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2026/03/threat-protection-pro-home-hero-1-768x553.webp",
+    "initiator": "img",
+    "transfer_size": 24138
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/bloomberg-business.svg",
+    "initiator": "img",
+    "transfer_size": 2375
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/digital-trends.svg",
+    "initiator": "img",
+    "transfer_size": 1516
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/ars-technica.svg",
+    "initiator": "img",
+    "transfer_size": 2751
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/zdnet.svg",
+    "initiator": "img",
+    "transfer_size": 1441
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/fast-company.svg",
+    "initiator": "img",
+    "transfer_size": 2108
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/07/business-insider.svg",
+    "initiator": "img",
+    "transfer_size": 3425
+  },
+  {
+    "url": "https://fast.ssqt.io/squatch-js@2",
+    "initiator": "script",
+    "transfer_size": 13834
+  },
+  {
+    "url": "https://cdn.cookielaw.org/consent/893b8ea0-f7aa-47b7-a3b9-7af914ae849b/019e0d47-f69f-7edf-a3dc-8672458308c9/en.json",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://seal.vpntrust.net/v1/verify?token=vti-ipvanish-5l2n8d",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/bat.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/destination?id=AW-1022345770&cx=c&gtm=4e68i1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.ads-twitter.com/uwt.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://js.audiohook.com/analytics.js?audiohookId=b6a36026-290c-4dac-62a4-5787288aeff9",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pixel.byspotify.com/ping.min.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.studentbeans.com/third-party/all.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/tr/pmpixel.js?t=1787184000000",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=1595502023.1787176984&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&en=page_view&dl=https%3A%2F%2Fwww.ipvanish.com%2F&scrsrc=www.googletagmanager.com&rnd=2009451246.1787177195&navt=n&npa=0&us_privacy=1YNY&ep.ads_data_redaction=0&gtm=45He68i1v71386749za200zd71386749xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~117776795~118897920~118897930~120385422&tft=1787177195235&tfd=353&gap.plf=5&fmt=8",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1595502023.1787176984&gtm=45He68i1v71386749za200zd71386749xea&fmt=8",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-TSS8E51Y4G&cx=c&gtm=4e68i1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=1595502023.1787176984&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&en=page_view&dl=https%3A%2F%2Fwww.ipvanish.com%2F&scrsrc=www.googletagmanager.com&rnd=2009451246.1787177195&navt=n&npa=0&us_privacy=1YNY&ep.ads_data_redaction=0&gtm=45He68i1v71386749za200zd71386749xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~117776795~118897920~118897930~120385422&tft=1787177195235&tfd=353&gap.plf=5&fmt=3",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.ziffstatic.com/jst/otGPP.202604.2.0.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=3&event=%7B%7D&event_id=2e3509b8-dbde-469c-b6e9-e14694549d88&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=40f59aa3-5892-4e5c-b78e-f67d267b26ba&pt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tw_document_href=https%3A%2F%2Fwww.ipvanish.com%2F&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787176983836.703464586183839778&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=3&event=%7B%7D&event_id=2e3509b8-dbde-469c-b6e9-e14694549d88&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=40f59aa3-5892-4e5c-b78e-f67d267b26ba&pt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tw_document_href=https%3A%2F%2Fwww.ipvanish.com%2F&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787176983836.703464586183839778&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pixels.spotify.com/v1/config/ab67571a1c85470b8342011104f433aa",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.studentbeans.com/third-party/beansid-connect-loader.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pixels.spotify.com/v1/ingest",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/p/action/5256207.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.cookielaw.org/scripttemplates/202604.2.0/assets/otCommonStyles.css",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.clarity.ms/tag/uet/5256207",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=614447c5-b01f-4ca8-8e69-e8bad58f9162&bo=1&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=614447c5-b01f-4ca8-8e69-e8bad58f9162&bo=2&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=614447c5-b01f-4ca8-8e69-e8bad58f9162&bo=3&evt=consent&src=default&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/action/0?ti=5256207&tm=gtm002&Ver=2&mid=614447c5-b01f-4ca8-8e69-e8bad58f9162&bo=4&sid=c04499609c1911f1a041f58c14eab970&vid=c044b1109c1911f18f66b78b934b984c&vids=0&msclkid=N&pi=0&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&p=https%3A%2F%2Fwww.ipvanish.com%2F&r=&lt=251&evt=pageLoad&sv=2&asc=G&cdb=AQET&rn=835509",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=614447c5-b01f-4ca8-8e69-e8bad58f9162&bo=5&sid=c04499609c1911f1a041f58c14eab970&vid=c044b1109c1911f18f66b78b934b984c&vids=0&msclkid=N&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api.promedia.com/lead-revenue/?property_id=ID-%2067962467",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/api/custom-tags/?id=ID-67962467",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/tr/71u2cr.gif?id=ID-%2067962467&uid=1.8-kmdet1f3-mt0n16dt&sid=1.8-k1bgomu7-mt0n16dt&ev=pageload&ed=&v=1.8&dl=https%3A%2F%2Fwww.ipvanish.com%2F&rl=&ts=1787177195233&de=UTF-8&sr=1440x900&vp=1440x900&cd=24&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&bn=Chrome%20151&md=false&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F151.0.0.0%20Safari%2F537.36&tz=0&lng=en-US&utm_source=&utm_medium=&utm_term=&utm_content=&utm_campaign=",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1022345770/?random=1787177195389&cv=11&fst=1787177195389&bg=ffffff&guid=ON&async=1&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.ipvanish.com%2F&rcb=5&frm=0&tiba=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=1595502023.1787176984&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=4",
+    "initiator": "script",
+    "transfer_size": 3010
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/1022345770/?random=1787177195389&cv=11&fst=1787177195389&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.ipvanish.com%2F&rcb=5&frm=0&tiba=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=1595502023.1787176984&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=68&gcp=5",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=1595502023.1787176984&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tid=AW-1022345770&dl=https%3A%2F%2Fwww.ipvanish.com%2F&scrsrc=www.googletagmanager.com&rnd=2009451246.1787177195&navt=n&npa=0&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcs=G111&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&tft=1787177195393&tfd=511&tids=AW-1022345770&fmt=8",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/1022345770/?random=1787177195389&cv=11&fst=1787177195389&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.ipvanish.com%2F&rcb=5&frm=0&tiba=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=1595502023.1787176984&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=68&gcp=5",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=1595502023.1787176984&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tid=AW-1022345770&dl=https%3A%2F%2Fwww.ipvanish.com%2F&scrsrc=www.googletagmanager.com&rnd=2009451246.1787177195&navt=n&npa=0&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcs=G111&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&tft=1787177195393&tfd=511&tids=AW-1022345770&fmt=3",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://scripts.clarity.ms/0.8.69/clarity.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/05/ipvanish-app-collage-768x405.webp",
+    "initiator": "img",
+    "transfer_size": 13360
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2023/08/learn-how-img.png",
+    "initiator": "img",
+    "transfer_size": 22289
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/1022345770/?random=1787177195389&cv=11&fst=1787176800000&bg=ffffff&guid=ON&async=1&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.ipvanish.com%2F&rcb=5&frm=0&tiba=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=1595502023.1787176984&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4gEAEQoqgYhEwzRzHWXnh_PHiNbRSIN1FqUP5lE5bWiQj5pdrFfgEZyVewoRKQGy4lby7xVvCHqiXfpB_a9jINmzDK3uvx-zuZB26lFtHUfAi3mEg4tHzPv2lw72RgXYka9D976ME5Go4FkfdY2FigVbj4hhBe4gDLUVY6p4V_uksgLniUN9bTJlkuUmU8khI6Q1uXryDQfbRdJ5HJdwNackbAEd3_RmfYwcFAdTpnKDxvqlEH0-WI2SxvWyopCd25TE38fku-g5QA2OOIN5KzDIskfF8-ZkwjWvGQEoAr8i3cDm&random=3336057449&rmt_tld=0&ipr=y",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://www.google.ca/pagead/1p-user-list/1022345770/?random=1787177195389&cv=11&fst=1787176800000&bg=ffffff&guid=ON&async=1&gtm=45be68i1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938466~115938468~117776795~118897920~118897930~119367802~119367810~120213116~120385422&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.ipvanish.com%2F&rcb=5&frm=0&tiba=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=1595502023.1787176984&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4gEAEQoqgYhEwzRzHWXnh_PHiNbRSIN1FqUP5lE5bWiQj5pdrFfgEZyVewoRKQGy4lby7xVvCHqiXfpB_a9jINmzDK3uvx-zuZB26lFtHUfAi3mEg4tHzPv2lw72RgXYka9D976ME5Go4FkfdY2FigVbj4hhBe4gDLUVY6p4V_uksgLniUN9bTJlkuUmU8khI6Q1uXryDQfbRdJ5HJdwNackbAEd3_RmfYwcFAdTpnKDxvqlEH0-WI2SxvWyopCd25TE38fku-g5QA2OOIN5KzDIskfF8-ZkwjWvGQEoAr8i3cDm&random=3336057449&rmt_tld=1&ipr=y",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://cdn.siftscience.com/s.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.upsellit.com/active/ipvanish.jsp",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://j.clarity.ms/collect",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://j.clarity.ms/collect",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://j.clarity.ms/collect",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://j.clarity.ms/collect",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://hexagon-analytics.com/images/937790.gif?bk=ddc13b0529&r=532471041&v=121&cs=UTF-8&h=www.ipvanish.com&l=en-US&S=df072fd8f3e64d8127118e46abf6f172&uu=b6d2cb57-8f79-47d4-8630-d4471b58c6e0&t=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&u=https%3A%2F%2Fwww.ipvanish.com%2F&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F151.0.0.0%20Safari%2F537.36&nm=0&mh=d41d8cd98f00b204e9800998ecf8427e&np=0&ph=d41d8cd98f00b204e9800998ecf8427e&sh=900&sw=1440&cd=24&p=MacIntel&to=0&d=0&ce=true&tp=0&ol=true&pr=Gecko&ps=20030107&vd=Google%20Inc.&hc=10&je=false&ss=true&ls=true&in=true&db=false&tl=false&tr=false&ts=false&tb=false&ab=false&cf=a12f9623525ae5ecb9442e49e8673bc7&sri=0&pf=12&inc=true&bn=Chrome&ow=1440&oh=900&wd=true&npe=denied&fph=d41d8cd98f00b204e9800998ecf8427e&fsh=1440&fsw=900&fcd=24&fp=MacIntel&ftp=0&fhc=10&fss=true&fls=true&fin=true&fvch=ae955a0889b9e041ac6cf6ba00a5ae17&fad=124.04348155876505&fdm=16&fvf=&fcg=srgb&ffc=false&fm=0&fc=0&frm=false&fhdr=false&fmf=1b4539be02333d14ce0a07c372e6a7d4&fa=127&fte=false&fts=false&fce=true&fpdf=false&fl=cce16c45e622d9ceae4b626c9353ecec&ft=UTC&pfe=9&z=z",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/en-au-flag.png",
+    "initiator": "img",
+    "transfer_size": 1231
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/en-ca-flag.png",
+    "initiator": "img",
+    "transfer_size": 912
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-br.svg",
+    "initiator": "img",
+    "transfer_size": 1491
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fi.svg",
+    "initiator": "img",
+    "transfer_size": 480
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.svg",
+    "initiator": "img",
+    "transfer_size": 535
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.svg",
+    "initiator": "img",
+    "transfer_size": 531
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/eu-ie-flag.png",
+    "initiator": "img",
+    "transfer_size": 842
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/nl.svg",
+    "initiator": "img",
+    "transfer_size": 542
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/it.svg",
+    "initiator": "img",
+    "transfer_size": 536
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/pl.svg",
+    "initiator": "img",
+    "transfer_size": 518
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/no.svg",
+    "initiator": "img",
+    "transfer_size": 591
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/pt-flag.png",
+    "initiator": "img",
+    "transfer_size": 981
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.svg",
+    "initiator": "img",
+    "transfer_size": 677
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/en-gb.png",
+    "initiator": "img",
+    "transfer_size": 1013
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/flags/se-flag.png",
+    "initiator": "img",
+    "transfer_size": 887
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1v881310145z871386749za20gzb71386749zd71386749&_p=1787177194983&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&are=1&cid=1360887663.1787176984&frm=0&ir=1&pscdl=noapi&rcb=10&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120213116~120385422&dl=https%3A%2F%2Fwww.ipvanish.com%2F&sid=1787176983&sct=1&seg=1&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&en=page_view&gap.plf=5&ep.hostname=www.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fwww.ipvanish.com%2F&ep.container_id_and_version=GTM-KZJF7V%20-%20342&up.client_id=GA1.1.1360887663.1787176984&tfd=5490",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1v881310145z871386749za20gzb71386749zd71386749&_p=1787177194983&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&are=1&cid=1360887663.1787176984&frm=0&ir=1&pscdl=noapi&rcb=10&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=3&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120213116~120385422&dl=https%3A%2F%2Fwww.ipvanish.com%2F&sid=1787176983&sct=1&seg=1&dt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&en=page_view&gap.plf=5&ep.hostname=www.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fwww.ipvanish.com%2F&ep.container_id_and_version=GTM-KZJF7V%20-%20342&up.client_id=GA1.1.1360887663.1787176984&tfd=5490",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/02/featured-guide-icon-menu.svg",
+    "initiator": "img",
+    "transfer_size": 651
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/02/categories-icon-menu.svg",
+    "initiator": "img",
+    "transfer_size": 557
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/04/privacy-icon-menu.svg",
+    "initiator": "img",
+    "transfer_size": 729
+  },
+  {
+    "url": "https://www.ipvanish.com/wp-content/uploads/2024/02/contact-icon-menu.svg",
+    "initiator": "img",
+    "transfer_size": 817
+  },
+  {
+    "url": "https://t.co/i/adsct?bci=4&cv=86%261&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=2&event_id=c54f073f-4222-4ab6-9031-2e4a3263ae23&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=40f59aa3-5892-4e5c-b78e-f67d267b26ba&pt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tw_document_href=https%3A%2F%2Fwww.ipvanish.com%2F&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787176983836.703464586183839778&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.twitter.com/i/adsct?bci=4&cv=86%261&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=2&event_id=c54f073f-4222-4ab6-9031-2e4a3263ae23&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=40f59aa3-5892-4e5c-b78e-f67d267b26ba&pt=Best%20VPN%20-%20IP%20Address%20Changer%20for%20Online%20Privacy%20%7C%20IPVanish&tw_document_href=https%3A%2F%2Fwww.ipvanish.com%2F&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787176983836.703464586183839778&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  }
+]

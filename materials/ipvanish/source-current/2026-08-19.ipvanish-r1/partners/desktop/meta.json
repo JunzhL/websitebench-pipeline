@@ -1,0 +1,55 @@
+{
+  "checkpoint": "partners",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/partners/",
+  "final_url": "https://www.ipvanish.com/partners/",
+  "http_status": 200,
+  "title": "VPN Affiliate Program - Partner With IPVanish Today",
+  "body_text_len": 6823,
+  "frames": 3,
+  "frame_sha256": [
+    "1078b6be07ae3d0053bf2a229f0e6f9fec194e0455de67e9c34f7235bbdaad60",
+    "c146ebbb3128632ef1a14a7999ba04f5ef8899005c65cf217d5b3a351d312335",
+    "1078b6be07ae3d0053bf2a229f0e6f9fec194e0455de67e9c34f7235bbdaad60"
+  ],
+  "frames_identical": false,
+  "link_count": 187,
+  "resource_count": 120,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 127,
+      "width": 1200,
+      "height": 4976
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 5103,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 5826
+  }
+}

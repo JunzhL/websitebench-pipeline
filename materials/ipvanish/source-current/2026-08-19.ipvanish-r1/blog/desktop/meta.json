@@ -1,0 +1,61 @@
+{
+  "checkpoint": "blog",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/blog/",
+  "final_url": "https://www.ipvanish.com/blog/",
+  "http_status": 200,
+  "title": "IPVanish | Protect Your Online Identity",
+  "body_text_len": 4668,
+  "frames": 3,
+  "frame_sha256": [
+    "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f",
+    "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f",
+    "c03b46e2cf4b600552edcf0f35423155a28ee2e5112e7c71fff2451ef8dfa14f"
+  ],
+  "frames_identical": true,
+  "link_count": 204,
+  "resource_count": 116,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 140,
+      "y": 963,
+      "width": 751,
+      "height": 4440
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 5548,
+      "width": 1440,
+      "height": 723
+    },
+    "form": {
+      "selector": "form",
+      "x": 100,
+      "y": 111,
+      "width": 1240,
+      "height": 52
+    },
+    "document_height": 6271
+  }
+}

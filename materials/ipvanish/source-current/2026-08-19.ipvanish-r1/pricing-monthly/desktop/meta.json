@@ -1,0 +1,56 @@
+{
+  "checkpoint": "pricing-monthly",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/pricing/",
+  "final_url": "https://www.ipvanish.com/pricing/",
+  "http_status": null,
+  "title": "Pricing Information - View All VPN Plans | IPVanish",
+  "body_text_len": 3944,
+  "frames": 3,
+  "frame_sha256": [
+    "a9ec3cfd809910dcadb3b2d0987af5f700e9fcd04df60f5455aee5539e96cc42",
+    "b70623199d3b999470a1866872c5c06a322e507030aab01cd4c37f01c714ec31",
+    "1449cbbcf93d6ee97c23cce50bd91401b059975ca9baf91481fea3f08245813c"
+  ],
+  "frames_identical": false,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 5337
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 5438,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 6161
+  },
+  "interaction": "clicked billing-period tab 'Monthly Plan' via p.has-text-align-center.ticss-bb7d0943.monthly-link.plan-type-link.has-ast-global-color-0-color.has-text-color.wp-block-paragraph.pricing_skusel_monthly.active; prices changed"
+}

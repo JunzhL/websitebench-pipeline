@@ -1,0 +1,268 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/ipvanish/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 0.869439,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": false,
+    "contract_version": "1.8.6",
+    "doctor_green": false,
+    "extension_connected": false,
+    "notes": [
+      "opencli-unavailable: Browser Bridge extension not connected",
+      "opencli-unavailable: browser connectivity check failed"
+    ],
+    "version": "0.1.0",
+    "version_matches": false
+  },
+  "profile_id": "account",
+  "profile_label": "ipvanish account (derived draft)",
+  "profile_tier": "p1",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "ipvanish",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "account/",
+      "duration_seconds": 0.090094,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_overview",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Sign in to continue",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "My Account",
+          "key": "visible",
+          "observed": "My Account",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-overview",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/",
+      "duration_seconds": 0.089789,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_overview-disclosure",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Simulated approval",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Clone-local view.",
+          "key": "visible",
+          "observed": "Clone-local view.",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-overview-disclosure",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/billing",
+      "duration_seconds": 0.089276,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_billing",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Billing history",
+          "key": "visible",
+          "observed": "Billing history",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-billing",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/plan",
+      "duration_seconds": 0.089056,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_plan",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Change plan",
+          "key": "visible",
+          "observed": "Change plan",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-plan",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/plan",
+      "duration_seconds": 0.088318,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_plan-scenarios",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Security code",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Simulated approval",
+          "key": "visible",
+          "observed": "Simulated approval",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-plan-scenarios",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/billing-contact",
+      "duration_seconds": 0.090092,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_account_billing-contact",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Billing contact",
+          "key": "visible",
+          "observed": "Billing contact",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-billing-contact",
+      "tier": "p1"
+    },
+    {
+      "command": "submit",
+      "declared_route": "account/plan",
+      "duration_seconds": 0.088554,
+      "error": null,
+      "http_status": 303,
+      "observation_id": "ipvanish_account_plan-submit",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Simulated decline",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "IPVanish Advanced",
+          "key": "visible",
+          "observed": "IPVanish Advanced",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-plan-submit",
+      "tier": "p1"
+    },
+    {
+      "command": "submit",
+      "declared_route": "account/billing-contact",
+      "duration_seconds": 0.089602,
+      "error": null,
+      "http_status": 303,
+      "observation_id": "ipvanish_account_billing-contact-submit",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Billing contact",
+          "key": "visible",
+          "observed": "Billing contact",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "account-billing-contact-submit",
+      "tier": "p1"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 8,
+    "steps_total": 8,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:10089",
+    "reset_status": null,
+    "session_fields": [
+      "email",
+      "password"
+    ],
+    "session_status": 303
+  }
+}

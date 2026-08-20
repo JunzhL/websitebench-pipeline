@@ -1,0 +1,165 @@
+{
+  "schema_version": "offline-clone.verify-driver.v1",
+  "site_id": "ipvanish",
+  "note": "Driver data only. The clone serves one origin, so the source's www / checkout / sso / support / my subdomains map onto local paths: sso.ipvanish.com -> /login, sso.ipvanish.com/reset-password/ -> /login/reset-password, support.ipvanish.com/hc/en-us -> /support, checkout.ipvanish.com/checkout/address-payment-method -> the same path locally, my.ipvanish.com -> /account/. The checkout route needs a flow parameter, so its alias carries the essential-annual flow and the other flows are reached by their own state recipes. The not-found route is aliased to an unmatched path because its captured final_url is the home URL: the source answers 404 with the home document as its body, and the status map records that. The subscriber dashboard stays deferred and the post-payment confirmation is excluded from visual comparison, because neither was ever reachable on the source without a purchase; both are implemented clone-locally and every element of them is disclosed as inference. Credentials named below are deterministic synthetic seed fixtures on @example.invalid, never real.",
+  "boot": {
+    "argv": [
+      "{python}",
+      "-m",
+      "uvicorn",
+      "app:app",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--log-level",
+      "warning"
+    ],
+    "cwd": "clone",
+    "env": {
+      "DATA_DIR": "{data_dir}",
+      "SEED": "1",
+      "TZ": "Etc/UTC"
+    }
+  },
+  "routes": {
+    "home": "/",
+    "pricing": "/pricing/",
+    "why-vpn": "/why-vpn/",
+    "what-is-a-vpn": "/what-is-a-vpn/",
+    "servers": "/servers/",
+    "vpn-features": "/vpn-features/",
+    "threat-protection": "/vpn-features/threat-protection/",
+    "money-back-guarantee": "/money-back-guarantee/",
+    "coupons": "/coupons/",
+    "vpn-locations": "/vpn-locations/",
+    "reviews": "/reviews/",
+    "trust": "/trust/",
+    "no-log-vpn-policy": "/no-log-vpn-policy/",
+    "secure-browser": "/secure-browser/",
+    "cloud-storage": "/cloud-storage/",
+    "vpn-setup-windows": "/vpn-setup/windows/",
+    "vpn-for-streaming": "/vpn-for-streaming/",
+    "resources": "/resources/",
+    "setup-guides": "/setup-guides/",
+    "what-is-my-ip-address": "/what-is-my-ip-address/",
+    "blog": "/blog/",
+    "tos": "/tos/",
+    "privacy-policy": "/privacy-policy/",
+    "partners": "/partners/",
+    "press": "/press/",
+    "sso-signin": "/login",
+    "sso-recovery": "/login/reset-password",
+    "support": "/support",
+    "checkout-chooser": "/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+    "not-found": "/__any-unmatched-path"
+  },
+  "status": {
+    "not-found": 404
+  },
+  "prepare": [],
+  "states": {
+    "home.loaded": [],
+    "home.nav-product": [
+      { "click": "#menu-item-139281 .dropdown-menu-toggle", "timeout_ms": 8000 },
+      { "expect": "#menu-item-139281 a:has-text('What is a VPN?')", "timeout_ms": 8000 }
+    ],
+    "home.nav-apps": [
+      { "click": "#menu-item-139449 .dropdown-menu-toggle", "timeout_ms": 8000 },
+      { "expect": "#menu-item-139449 a:has-text('Chrome OS')", "timeout_ms": 8000 }
+    ],
+    "home.nav-resources": [
+      { "click": "#menu-item-139506 .dropdown-menu-toggle", "timeout_ms": 8000 },
+      { "expect": "#menu-item-139506 a:has-text('Dark Web Scanner')", "timeout_ms": 8000 }
+    ],
+    "home.mobile-menu": [
+      { "click": "button.menu-toggle", "timeout_ms": 8000 },
+      { "expect": "#ast-hf-mobile-menu", "timeout_ms": 8000 }
+    ],
+    "pricing.loaded": [],
+    "pricing.2-year": [
+      { "click": ".plan-type-link:has-text('2-Year Plan')", "timeout_ms": 8000 },
+      { "expect": "text=$59.76 for the first 2 years.", "timeout_ms": 8000 }
+    ],
+    "pricing.yearly": [
+      { "click": ".plan-type-link:has-text('Yearly Plan')", "timeout_ms": 8000 },
+      { "expect": "text=$46.68 for the first year.", "timeout_ms": 8000 }
+    ],
+    "pricing.monthly": [
+      { "click": ".plan-type-link:has-text('Monthly Plan')", "timeout_ms": 8000 },
+      { "expect": "text=Renews Monthly at $14.99.", "timeout_ms": 8000 }
+    ],
+    "checkout-chooser.essential-annual": [],
+    "checkout-chooser.essential-monthly": [
+      { "goto": "/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN" },
+      { "expect": "text=Live - Essential - Monthly - $14.99", "timeout_ms": 8000 }
+    ],
+    "checkout-chooser.advanced-annual": [
+      { "goto": "/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN" },
+      { "expect": "text=Live - Advanced - Annual - $64.68", "timeout_ms": 8000 }
+    ],
+    "checkout-chooser.card-form": [
+      { "click": "li.c-payment-method-type-select-card:has-text('Credit card')", "timeout_ms": 8000 },
+      { "expect": "#ipvanish-sandbox-form", "timeout_ms": 8000 }
+    ],
+    "checkout-chooser.sandbox-approved": [
+      { "goto": "/checkout/address-payment-method?flow=essential-annual&method=card" },
+      { "fill": "#input-email", "value": "driver-approved@example.invalid" },
+      { "fill": "#input-billing-postal", "value": "78701" },
+      { "click": "input[name='scenario_id'][value='sandbox-approved']" },
+      { "click": "button[data-clone-action='subscribe']", "timeout_ms": 12000 },
+      { "expect": "text=Your IPVanish subscription is active", "timeout_ms": 12000 }
+    ],
+    "checkout-chooser.sandbox-declined": [
+      { "goto": "/checkout/address-payment-method?flow=essential-annual&method=card" },
+      { "fill": "#input-email", "value": "driver-declined@example.invalid" },
+      { "fill": "#input-billing-postal", "value": "78701" },
+      { "click": "input[name='scenario_id'][value='sandbox-declined']" },
+      { "click": "button[data-clone-action='subscribe']", "timeout_ms": 12000 },
+      { "expect": "text=Simulated decline", "timeout_ms": 12000 }
+    ],
+    "checkout-chooser.sandbox-retry": [
+      { "goto": "/checkout/address-payment-method?flow=essential-annual&method=card" },
+      { "fill": "#input-email", "value": "driver-retry@example.invalid" },
+      { "fill": "#input-billing-postal", "value": "78701" },
+      { "click": "input[name='scenario_id'][value='sandbox-retry']" },
+      { "click": "button[data-clone-action='subscribe']", "timeout_ms": 12000 },
+      { "expect": "text=Simulated retry", "timeout_ms": 12000 }
+    ],
+    "checkout-chooser.success": [
+      { "goto": "/checkout/address-payment-method?flow=essential-annual&method=card" },
+      { "fill": "#input-email", "value": "driver-success@example.invalid" },
+      { "fill": "#input-billing-postal", "value": "78701" },
+      { "click": "input[name='scenario_id'][value='sandbox-approved']" },
+      { "click": "button[data-clone-action='subscribe']", "timeout_ms": 12000 },
+      { "expect": "text=Your IPVanish subscription is active", "timeout_ms": 12000 }
+    ],
+    "sso-signin.loaded": [],
+    "sso-signin.validation-error": [
+      { "click": "form[action='/login'] button:has-text('Sign in')", "timeout_ms": 8000 },
+      { "expect": "text=Enter your email address and password.", "timeout_ms": 8000 }
+    ],
+    "sso-recovery.loaded": [],
+    "sso-recovery.validation-error": [
+      { "click": "form[action='/login/reset-password'] button:has-text('Send code')", "timeout_ms": 8000 },
+      { "expect": "text=Enter you account email.", "timeout_ms": 8000 }
+    ],
+    "sso-recovery.sent": [
+      { "fill": "input[name='username']", "value": "avery.sandoval@example.invalid" },
+      { "click": "form[action='/login/reset-password'] button:has-text('Send code')", "timeout_ms": 8000 },
+      { "expect": "text=local outbox", "timeout_ms": 8000 }
+    ],
+    "support.loaded": [],
+    "support.no-results": [
+      { "goto": "/support/search?query=zzzz-no-match-websitebench" },
+      { "expect": "text=No results for", "timeout_ms": 8000 }
+    ],
+    "not-found.loaded": []
+  },
+  "deferred": {
+    "subscriber-dashboard": "Subscriber surfaces are outside the anonymous clone contract's reach on the source: IPVanish gates account creation behind a paid subscription (no free tier, no web trial, no account-only signup), so no rendered subscriber state was ever observed and these checkpoints carry no captured URL. The clone implements the dashboard locally at /account/, /account/billing, /account/plan and /account/billing-contact behind the seam's session cookie, exercised by clone/tests/test_operability.py and clone/tests/test_backend_lifecycle.py; every visual and copy decision in it is disclosed as inference rather than compared against a frozen frame."
+  },
+  "visual_excluded": {
+    "checkout-chooser.success.desktop": "The source's post-payment confirmation was never reached, because reaching it charges a real card, so this checkpoint has no frozen source frame to compare against. The clone-local confirmation is reachable and its state recipe drives it end to end, but the comparison would be against nothing."
+  }
+}
