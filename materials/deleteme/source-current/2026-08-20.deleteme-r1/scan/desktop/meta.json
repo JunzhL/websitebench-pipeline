@@ -1,0 +1,104 @@
+{
+  "unit": "scan",
+  "checkpoint": "scan.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/scan/",
+  "requested_url": "https://joindeleteme.com/scan/",
+  "final_url": "https://joindeleteme.com/scan/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:02:42Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Get Your Free Scan Now",
+  "h1": [
+    "Get Your Free Scan Now"
+  ],
+  "body_text_len": 9387,
+  "frames": 3,
+  "frame_sha256": [
+    "65e732302219d8ed9d4b4e23c1359592b59fb18ab5b20da344b8ecbfadc7a00a",
+    "30794aded457333d7730fd49e6f1276ae1a2f72eb9e7274c88ec0d12745fdcf8",
+    "30794aded457333d7730fd49e6f1276ae1a2f72eb9e7274c88ec0d12745fdcf8"
+  ],
+  "frames_identical": false,
+  "reference_count": 112,
+  "resource_count": 130,
+  "observations": {
+    "title": "Get Your Free Scan Now",
+    "h1": [
+      "Get Your Free Scan Now"
+    ],
+    "body_text_len": 9387,
+    "consent_layer": null,
+    "lazy_image_refs": 1,
+    "eager_image_refs": 76,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 6,
+    "form_count": 1,
+    "control_count": 10,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/scan/"
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "13 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture",
+    "1 element(s) advertise lazy image payloads via data-src/data-srcset that the browser never requested; the asset pass mirrors them from the markup",
+    "the three frames are not byte-identical: this surface animates"
+  ],
+  "route_id": "scan",
+  "state": "loaded",
+  "priority": "p1",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

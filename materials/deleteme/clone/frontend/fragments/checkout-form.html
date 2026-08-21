@@ -1,0 +1,102 @@
+<!--
+  The checkout form.
+
+  Every label, every section heading, every validation string and the submit
+  wording below are the source's own: they were read out of the frozen
+  application bundle mirrored at
+  source-assets/2026-08-20.deleteme-r1/app.joindeleteme.com/assets/CheckoutPage-BGTzsYLQ.js.
+  What was NOT observed is their rendered placement - the captured checkout
+  screen was an expired session, so this layout is the clone's own and the page
+  says so in its notice.
+
+  Section 2 replaces the source's Stripe-hosted card iframe with the named local
+  sandbox scenarios from backend/runtime.json. There is deliberately no card
+  field of any kind, and the server refuses any request that carries one.
+
+  This form lives in a file rather than in a Python literal so exactly one place
+  under clone/ declares the method="post" action="/checkout" pair, which is what
+  lets a contract resolve a form-backed submit step by reading templates on disk.
+-->
+<div class="dm-checkout">
+  $notice
+  <form class="dm-checkout__form" method="post" action="/checkout" data-checkout-form novalidate>
+    <input type="hidden" name="term" value="$term">
+    <input type="hidden" name="qty" value="$qty">
+    <input type="hidden" name="attempt" value="1" data-checkout-attempt>
+
+    <section class="dm-checkout__section" aria-labelledby="dm-section-1">
+      <h2 id="dm-section-1">1 - Customer Information</h2>
+      <div class="dm-checkout__row">
+        <p class="dm-field">
+          <label for="dm-first-name">First Name *</label>
+          <input id="dm-first-name" name="firstName" type="text" autocomplete="given-name" value="$first_name" required>
+        </p>
+        <p class="dm-field">
+          <label for="dm-last-name">Last Name *</label>
+          <input id="dm-last-name" name="lastName" type="text" autocomplete="family-name" value="$last_name" required>
+        </p>
+      </div>
+      <p class="dm-field">
+        <label for="dm-email">Email Address *</label>
+        <input id="dm-email" name="email" type="email" autocomplete="email" value="$email" required>
+      </p>
+      <p class="dm-field">
+        <label for="dm-address">Address *</label>
+        <input id="dm-address" name="address" type="text" autocomplete="street-address" placeholder="Enter your address" value="$address" required>
+      </p>
+      <p class="dm-field">
+        <label for="dm-source">How did you hear about us?</label>
+        <input id="dm-source" name="selfReportedSource" type="text" value="$source">
+      </p>
+      <p class="dm-checkout__pii-boundary">
+        The source's checkout asks for exactly these details. Age, telephone,
+        previous names, aliases and relatives belong to the removal profile,
+        which DeleteMe only opens after a purchase; this clone keeps them there
+        too.
+      </p>
+    </section>
+
+    <section class="dm-checkout__section" aria-labelledby="dm-section-2">
+      <h2 id="dm-section-2">2 - Payment Details</h2>
+      <fieldset class="dm-sandbox">
+        <legend>Simulated payment outcome</legend>
+        <p class="dm-sandbox__notice"><strong>Local sandbox — no card is taken.</strong>
+          This clone reproduces no card number, expiry or security-code field.
+          Pick the outcome you want the local adapter to return.</p>
+        $scenarios
+      </fieldset>
+    </section>
+
+    <section class="dm-checkout__section" aria-labelledby="dm-section-3">
+      <h2 id="dm-section-3">3 - Terms and Conditions</h2>
+      <p class="dm-check">
+        <input id="dm-agree-billing" name="agree_billing" type="checkbox" value="yes"$billing_checked>
+        <label for="dm-agree-billing">I agree to be charged now and upon each renewal until I cancel and I acknowledge my right to cancel.</label>
+      </p>
+      <p class="dm-check">
+        <input id="dm-agree-terms" name="agree_terms" type="checkbox" value="yes"$terms_checked>
+        <label for="dm-agree-terms">I agree to <a href="/policies?name=terms-of-service" rel="noopener">Abine's Terms &amp; Conditions</a> and <a href="/policies?name=privacy-policy" rel="noopener">Privacy Policy</a>.</label>
+      </p>
+      <p class="dm-checkout__legal">Your subscription to DeleteMe will begin when you click "Purchase &amp; Start Deleting". The cost of the service you selected appears above, and may be subject to one-time discounts depending on the details of a particular coupon or offer. At the end of the initial one-year or multi-year term, your Agreement will automatically renew for a successive term at either the current or full retail rate and you authorize DeleteMe to charge your credit card now and upon each renewal.</p>
+    </section>
+
+    <button class="dm-checkout__submit" type="submit" data-checkout-submit>Purchase &amp; Start Deleting</button>
+  </form>
+
+  <aside class="dm-summary" aria-label="Order Summary">
+    <h2>Order Summary</h2>
+    <p class="dm-summary__plan" data-plan-key="$plan_key">$plan_summary</p>
+    <p class="dm-summary__monthly"><span data-summary-monthly>$plan_monthly</span><span class="month">/mo</span></p>
+    <div class="dm-summary__promo">
+      <button type="button" class="dm-summary__promo-toggle" data-promo-toggle aria-expanded="false" aria-controls="dm-promo-panel">Have a promo code?</button>
+      <div class="dm-summary__promo-panel" id="dm-promo-panel" hidden data-promo-panel>
+        <label for="dm-promo">Promo or Referral Code</label>
+        <input id="dm-promo" name="coupon" form="" type="text" autocomplete="off">
+        <p class="dm-summary__promo-note">This clone applies no coupon: the source's promo panel renders only after a checkout session the capture never created.</p>
+      </div>
+    </div>
+    <p class="dm-summary__total"><span>Total</span><span data-summary-total>$plan_total</span></p>
+    <h3>Your plan includes</h3>
+    <ul class="dm-summary__includes">$includes</ul>
+  </aside>
+</div>

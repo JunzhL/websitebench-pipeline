@@ -1,0 +1,440 @@
+{
+  "capture_id": "2026-08-20.deleteme-r1",
+  "records": [
+    {
+      "unit": "plans.term-1y",
+      "checkpoint": "plans.term-1y.desktop",
+      "capture_id": "2026-08-20.deleteme-r1",
+      "url": "https://joindeleteme.com/privacy-protection-plans/",
+      "requested_url": "https://joindeleteme.com/privacy-protection-plans/",
+      "final_url": "https://joindeleteme.com/privacy-protection-plans/",
+      "http_status": 200,
+      "viewport": "desktop",
+      "viewport_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "locale": "en-US",
+      "timezone": "Etc/UTC",
+      "captured_at": "2026-08-20T22:11:15Z",
+      "engine": "local-headless-playwright-chromium",
+      "title": "Privacy Protection Plans - DeleteMe",
+      "h1": [
+        "Save More With Our Best Value Plans"
+      ],
+      "body_text_len": 4570,
+      "frames": 3,
+      "frame_sha256": [
+        "e7118f7c30da0fcda736a53a7e8b6efc3e679372870226b1e6bf9dec66f1b9d5",
+        "9b802b01b48a6815a1017fd126b795f4d363127823e10440801da24f00ad4f03",
+        "9b802b01b48a6815a1017fd126b795f4d363127823e10440801da24f00ad4f03"
+      ],
+      "frames_identical": false,
+      "reference_count": 72,
+      "resource_count": 118,
+      "observations": {
+        "title": "Privacy Protection Plans - DeleteMe",
+        "h1": [
+          "Save More With Our Best Value Plans"
+        ],
+        "body_text_len": 4570,
+        "consent_layer": null,
+        "lazy_image_refs": 0,
+        "eager_image_refs": 58,
+        "empty_price_nodes": 0,
+        "inline_visibility_hidden": 7,
+        "form_count": 0,
+        "control_count": 0,
+        "iframe_origins": [
+          "https://joindeleteme.com"
+        ],
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://joindeleteme.com/privacy-protection-plans/"
+      },
+      "non_get_aborted": {
+        "count": 15,
+        "by_method": {
+          "POST": 15
+        },
+        "urls": [
+          "https://ad.doubleclick.net/ccm/s/collect",
+          "https://px.ads.linkedin.com/wa/",
+          "https://www.facebook.com/tr/",
+          "https://www.google.com/ccm/collect",
+          "https://www.google.com/rmkt/collect/372693497/",
+          "https://www.google.com/rmkt/collect/860776849/",
+          "https://www.mczbf.com/253585498398/pageInfo",
+          "https://www.mczbf.com/253585498398/report"
+        ]
+      },
+      "safety": {
+        "methods_allowed": [
+          "GET",
+          "HEAD"
+        ],
+        "fields_filled": 0,
+        "forms_submitted": 0,
+        "consent_clicked": false,
+        "credentials_persisted": false
+      },
+      "quirks": [
+        "state reached by clicking the billing term control '1 Year' (li[uk-filter-control*=\"1-Year\"]); a UIkit client-side filter that issues no request and mutates nothing",
+        "16 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+        "GET-only guard aborted 15 non-GET request(s) ({'POST': 15}); anything the source renders from its own POST is therefore absent from this capture",
+        "the three frames are not byte-identical: this surface animates"
+      ],
+      "route_id": "plans",
+      "state": "term-1y",
+      "priority": "p0",
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "capture_pass": "interaction",
+      "interaction": {
+        "action": "click",
+        "selector": "li[uk-filter-control*=\"1-Year\"]",
+        "label": "1 Year",
+        "group": "billing term",
+        "performed": true,
+        "mutates_source": false
+      },
+      "filter_before": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "filter_after": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "1-Year"
+        ],
+        "active_controls": [
+          "1 Year",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 1 Year, 1 Person $10.75/mo Start Protection Billed at $129.00 annually.",
+          "BEST VALUE 2 People 1 Year, 2 People $19.08/mo $21.50/mo Start Protection Billed at $229.00 annually.",
+          "Family 1 Year, 4 People $27.42/mo $43.00/mo Start Protection Billed at $329.00 annually.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "console_errors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "unit": "plans.term-2y",
+      "checkpoint": "plans.term-2y.desktop",
+      "capture_id": "2026-08-20.deleteme-r1",
+      "url": "https://joindeleteme.com/privacy-protection-plans/",
+      "requested_url": "https://joindeleteme.com/privacy-protection-plans/",
+      "final_url": "https://joindeleteme.com/privacy-protection-plans/",
+      "http_status": 200,
+      "viewport": "desktop",
+      "viewport_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "locale": "en-US",
+      "timezone": "Etc/UTC",
+      "captured_at": "2026-08-20T22:11:16Z",
+      "engine": "local-headless-playwright-chromium",
+      "title": "Privacy Protection Plans - DeleteMe",
+      "h1": [
+        "Save More With Our Best Value Plans"
+      ],
+      "body_text_len": 4587,
+      "frames": 3,
+      "frame_sha256": [
+        "fcb92df722e0bab2205349e2aa0a7ff8ac7c05ff117686390c01ef66fbd77378",
+        "fcb92df722e0bab2205349e2aa0a7ff8ac7c05ff117686390c01ef66fbd77378",
+        "fcb92df722e0bab2205349e2aa0a7ff8ac7c05ff117686390c01ef66fbd77378"
+      ],
+      "frames_identical": true,
+      "reference_count": 72,
+      "resource_count": 118,
+      "observations": {
+        "title": "Privacy Protection Plans - DeleteMe",
+        "h1": [
+          "Save More With Our Best Value Plans"
+        ],
+        "body_text_len": 4587,
+        "consent_layer": null,
+        "lazy_image_refs": 0,
+        "eager_image_refs": 58,
+        "empty_price_nodes": 0,
+        "inline_visibility_hidden": 7,
+        "form_count": 0,
+        "control_count": 0,
+        "iframe_origins": [
+          "https://joindeleteme.com"
+        ],
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://joindeleteme.com/privacy-protection-plans/"
+      },
+      "non_get_aborted": {
+        "count": 15,
+        "by_method": {
+          "POST": 15
+        },
+        "urls": [
+          "https://ad.doubleclick.net/ccm/s/collect",
+          "https://px.ads.linkedin.com/wa/",
+          "https://www.facebook.com/tr/",
+          "https://www.google.com/ccm/collect",
+          "https://www.google.com/rmkt/collect/372693497/",
+          "https://www.google.com/rmkt/collect/860776849/",
+          "https://www.mczbf.com/253585498398/pageInfo",
+          "https://www.mczbf.com/253585498398/report"
+        ]
+      },
+      "safety": {
+        "methods_allowed": [
+          "GET",
+          "HEAD"
+        ],
+        "fields_filled": 0,
+        "forms_submitted": 0,
+        "consent_clicked": false,
+        "credentials_persisted": false
+      },
+      "quirks": [
+        "state reached by clicking the billing term control '2 Years' (li[uk-filter-control*=\"2-Years\"]); a UIkit client-side filter that issues no request and mutates nothing",
+        "16 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+        "GET-only guard aborted 15 non-GET request(s) ({'POST': 15}); anything the source renders from its own POST is therefore absent from this capture"
+      ],
+      "route_id": "plans",
+      "state": "term-2y",
+      "priority": "p0",
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "capture_pass": "interaction",
+      "interaction": {
+        "action": "click",
+        "selector": "li[uk-filter-control*=\"2-Years\"]",
+        "label": "2 Years",
+        "group": "billing term",
+        "performed": true,
+        "mutates_source": false
+      },
+      "filter_before": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "filter_after": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "console_errors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ]
+    },
+    {
+      "unit": "plans.size-single",
+      "checkpoint": "plans.size-single.desktop",
+      "viewport": "desktop",
+      "capture_pass": "interaction",
+      "state_reached": false,
+      "http_status": 200,
+      "control": "li[uk-filter-control*=\"Single\"]",
+      "control_label": "Single",
+      "reason": "1 element(s) match li[uk-filter-control*=\"Single\"] but none is visible to a visitor; the page's own script hides the grid that owns this control (hidden ancestor: div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical, inline style: z-index: 3; display: none;)",
+      "observed_before_click": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "control_detail": {
+        "found": true,
+        "hidden_ancestor": "div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical",
+        "hidden_ancestor_style": "z-index: 3; display: none;",
+        "match_count": 1
+      }
+    },
+    {
+      "unit": "plans.size-couple",
+      "checkpoint": "plans.size-couple.desktop",
+      "viewport": "desktop",
+      "capture_pass": "interaction",
+      "state_reached": false,
+      "http_status": 200,
+      "control": "li[uk-filter-control*=\"Couple\"]",
+      "control_label": "Couple",
+      "reason": "1 element(s) match li[uk-filter-control*=\"Couple\"] but none is visible to a visitor; the page's own script hides the grid that owns this control (hidden ancestor: div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical, inline style: z-index: 3; display: none;)",
+      "observed_before_click": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "control_detail": {
+        "found": true,
+        "hidden_ancestor": "div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical",
+        "hidden_ancestor_style": "z-index: 3; display: none;",
+        "match_count": 1
+      }
+    },
+    {
+      "unit": "plans.size-family",
+      "checkpoint": "plans.size-family.desktop",
+      "viewport": "desktop",
+      "capture_pass": "interaction",
+      "state_reached": false,
+      "http_status": 200,
+      "control": "li[uk-filter-control*=\"Family\"]",
+      "control_label": "Family",
+      "reason": "1 element(s) match li[uk-filter-control*=\"Family\"] but none is visible to a visitor; the page's own script hides the grid that owns this control (hidden ancestor: div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical, inline style: z-index: 3; display: none;)",
+      "observed_before_click": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "control_detail": {
+        "found": true,
+        "hidden_ancestor": "div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical",
+        "hidden_ancestor_style": "z-index: 3; display: none;",
+        "match_count": 1
+      }
+    },
+    {
+      "unit": "plans.size-single",
+      "checkpoint": "plans.size-single.mobile",
+      "viewport": "mobile",
+      "capture_pass": "interaction",
+      "state_reached": false,
+      "http_status": 200,
+      "control": "li[uk-filter-control*=\"Single\"]",
+      "control_label": "Single",
+      "reason": "1 element(s) match li[uk-filter-control*=\"Single\"] but none is visible to a visitor; the page's own script hides the grid that owns this control (hidden ancestor: div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical, inline style: z-index: 3; display: none;)",
+      "observed_before_click": {
+        "tagged_total": 11,
+        "visible_total": 4,
+        "visible_tags": [
+          "2-Years"
+        ],
+        "active_controls": [
+          "2 Years",
+          "Couple"
+        ],
+        "visible_card_text": [
+          "1 Person 2 Years, 1 Person $8.71/mo Start Protection Billed at $209.00 every 2 years.",
+          "BEST VALUE 2 People 2 Years, 2 People $14.54/mo $17.42/mo Start Protection Billed at $349.00 every 2 years.",
+          "Family 2 Years, 4 People $20.79/mo $34.83/mo Start Protection Billed at $499.00 every 2 years.",
+          "SCALABLE WITH YOUR BUSINESS Business Protect your executives, critical employees or your entire organization Contact sal"
+        ]
+      },
+      "control_detail": {
+        "found": true,
+        "hidden_ancestor": "div#fs-grid-filter-activation.fs-grid.international-price-toggle.uk-position-relative.uk-margin-remove-vertical",
+        "hidden_ancestor_style": "z-index: 3; display: none;",
+        "match_count": 1
+      }
+    }
+  ]
+}

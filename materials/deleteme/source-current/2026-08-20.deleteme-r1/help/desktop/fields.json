@@ -1,0 +1,30 @@
+{
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "method": "get",
+      "action_path": "/hc/en-us/search",
+      "control_count": 2
+    }
+  ],
+  "fields": [
+    {
+      "name": "utf8",
+      "id": null,
+      "type": "hidden",
+      "label": "",
+      "required": false
+    },
+    {
+      "name": "query",
+      "id": "query",
+      "type": "search",
+      "label": "Search",
+      "required": false
+    }
+  ],
+  "submits": [],
+  "embedded_frames": [],
+  "_note": "Structure only: name/id/type/label/required. No field was ever filled, typed into or submitted on the live source, and no control value was read."
+}

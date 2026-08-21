@@ -1,0 +1,1104 @@
+{
+  "schema_version": "offline-clone.visual-calibration.v1",
+  "metric": "pixel-mae-similarity-v1",
+  "stability_floor": 0.98,
+  "threshold_rule": "min(0.995, flicker_floor - 0.002)",
+  "ignore_regions": [],
+  "units_measured": 67,
+  "stable_units": 67,
+  "unstable_units": 0,
+  "oracle": {
+    "home.desktop": {
+      "unit": "home.desktop",
+      "flicker_floor": 0.995912,
+      "threshold": 0.993912,
+      "selected_because": "home cleared the stability floor"
+    },
+    "home.tablet": {
+      "unit": "home.tablet",
+      "flicker_floor": 0.998228,
+      "threshold": 0.995,
+      "selected_because": "home cleared the stability floor"
+    },
+    "home.mobile": {
+      "unit": "home.mobile",
+      "flicker_floor": 1.0,
+      "threshold": 0.995,
+      "selected_because": "home cleared the stability floor"
+    }
+  },
+  "rows": [
+    {
+      "unit": "home.desktop",
+      "state": "home",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 0.99694,
+        "f1_f3": 0.995912,
+        "f2_f3": 0.997005
+      },
+      "flicker_floor": 0.995912,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "home.tablet",
+      "state": "home",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 0.998233,
+        "f1_f3": 0.998228,
+        "f2_f3": 0.998361
+      },
+      "flicker_floor": 0.998228,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "pricing.tablet",
+      "state": "pricing",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 0.999882,
+        "f2_f3": 0.999882
+      },
+      "flicker_floor": 0.999882,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "plans.tablet",
+      "state": "plans",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 0.999911,
+        "f2_f3": 0.999911
+      },
+      "flicker_floor": 0.999911,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "plans.term-1y.desktop",
+      "state": "plans.term-1y",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 0.999948,
+        "f1_f3": 0.999948,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 0.999948,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "about.desktop",
+      "state": "about",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 0.999999,
+        "f1_f3": 1.0,
+        "f2_f3": 0.999999
+      },
+      "flicker_floor": 0.999999,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "scan.desktop",
+      "state": "scan",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 0.999999,
+        "f1_f3": 0.999999,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 0.999999,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "about.mobile",
+      "state": "about",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "about.tablet",
+      "state": "about",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "ai-privacy-settings.desktop",
+      "state": "ai-privacy-settings",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "app-not-found.not-found.desktop",
+      "state": "app-not-found.not-found",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "blog.desktop",
+      "state": "blog",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "blog.mobile",
+      "state": "blog",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "blog.tablet",
+      "state": "blog",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "careers.desktop",
+      "state": "careers",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "checkout.desktop",
+      "state": "checkout",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "checkout.mobile",
+      "state": "checkout",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "checkout.tablet",
+      "state": "checkout",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "checkout-complete.desktop",
+      "state": "checkout-complete",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "checkout-complete.mobile",
+      "state": "checkout-complete",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "data-breaches.desktop",
+      "state": "data-breaches",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "delete-your-account.desktop",
+      "state": "delete-your-account",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "do-not-call-list.desktop",
+      "state": "do-not-call-list",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "doxxing.desktop",
+      "state": "doxxing",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "glossary.desktop",
+      "state": "glossary",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "help.desktop",
+      "state": "help",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "help.mobile",
+      "state": "help",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "help.tablet",
+      "state": "help",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "home.mobile",
+      "state": "home",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "how-public-record.desktop",
+      "state": "how-public-record",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "how-we-work.desktop",
+      "state": "how-we-work",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "how-we-work.mobile",
+      "state": "how-we-work",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "how-we-work.tablet",
+      "state": "how-we-work",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "international.desktop",
+      "state": "international",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "is-it-scam.desktop",
+      "state": "is-it-scam",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "is-site-safe.desktop",
+      "state": "is-site-safe",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "login.desktop",
+      "state": "login",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "login.mobile",
+      "state": "login",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "login.tablet",
+      "state": "login",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "not-found.not-found.desktop",
+      "state": "not-found.not-found",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "not-found.not-found.mobile",
+      "state": "not-found.not-found",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "not-found.not-found.tablet",
+      "state": "not-found.not-found",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "opt-out-guides.desktop",
+      "state": "opt-out-guides",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "opt-out-guides.mobile",
+      "state": "opt-out-guides",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "opt-out-guides.tablet",
+      "state": "opt-out-guides",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "password-forgot.desktop",
+      "state": "password-forgot",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "permission-slip.desktop",
+      "state": "permission-slip",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "permission-slip-faq.desktop",
+      "state": "permission-slip-faq",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "plans.desktop",
+      "state": "plans",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "plans.mobile",
+      "state": "plans",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "plans.term-2y.desktop",
+      "state": "plans.term-2y",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "podcast.desktop",
+      "state": "podcast",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "policies.desktop",
+      "state": "policies",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "press.desktop",
+      "state": "press",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "pricing.desktop",
+      "state": "pricing",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "pricing.mobile",
+      "state": "pricing",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "reviews.desktop",
+      "state": "reviews",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "reviews.mobile",
+      "state": "reviews",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "reviews.tablet",
+      "state": "reviews",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "search.no-results.desktop",
+      "state": "search.no-results",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "security.desktop",
+      "state": "security",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "security.mobile",
+      "state": "security",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "security.tablet",
+      "state": "security",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    },
+    {
+      "unit": "signup-grid.desktop",
+      "state": "signup-grid",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "sites-we-remove-from.desktop",
+      "state": "sites-we-remove-from",
+      "viewport": "desktop",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    {
+      "unit": "sites-we-remove-from.mobile",
+      "state": "sites-we-remove-from",
+      "viewport": "mobile",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "unit": "sites-we-remove-from.tablet",
+      "state": "sites-we-remove-from",
+      "viewport": "tablet",
+      "frame_pairs": {
+        "f1_f2": 1.0,
+        "f1_f3": 1.0,
+        "f2_f3": 1.0
+      },
+      "flicker_floor": 1.0,
+      "stable": true,
+      "size": [
+        1024,
+        768
+      ]
+    }
+  ]
+}

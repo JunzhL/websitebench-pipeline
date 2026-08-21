@@ -1,0 +1,410 @@
+{
+  "schema_version": "offline-clone.excluded-requests.v1",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "created_at": "2026-08-20T22:28:33Z",
+  "note": "Third-party runtime origins observed during capture that are deliberately NOT mirrored: consent management, analytics and tag managers, ad and affiliate networks, HubSpot, Klaviyo, live payment (Stripe), live Google Maps Places, podcast/CTV attribution, live chat, and tags that cannot be attributed to a vendor from public assets alone. None was fetched. Google Fonts and Adobe Fonts are deliberately absent from this list: they ARE mirrored, because the clone may make no font request offsite. Logged query-stripped, in this sidecar rather than the manifest, because offline-clone.assets.v1 forbids extra keys.",
+  "excluded_origins": [
+    {
+      "origin": "bat.bing.com",
+      "reason": "ad network / conversion pixel (Microsoft UET)",
+      "urls_observed": 2
+    },
+    {
+      "origin": "connect.facebook.net",
+      "reason": "ad pixel / live identity provider",
+      "urls_observed": 1
+    },
+    {
+      "origin": "d34r8q7sht0t9k.cloudfront.net",
+      "reason": "unattributed third-party tag (tag.js on an anonymous CloudFront distribution); declared by origin rather than guessing a vendor",
+      "urls_observed": 1
+    },
+    {
+      "origin": "js.hs-analytics.net",
+      "reason": "HubSpot analytics beacon",
+      "urls_observed": 3
+    },
+    {
+      "origin": "js.hs-banner.com",
+      "reason": "HubSpot consent banner runtime",
+      "urls_observed": 1
+    },
+    {
+      "origin": "js.hs-scripts.com",
+      "reason": "HubSpot loader",
+      "urls_observed": 1
+    },
+    {
+      "origin": "js.hsadspixel.net",
+      "reason": "HubSpot ad pixel",
+      "urls_observed": 1
+    },
+    {
+      "origin": "js.hubspot.com",
+      "reason": "HubSpot marketing/CRM runtime",
+      "urls_observed": 1
+    },
+    {
+      "origin": "js.stripe.com",
+      "reason": "live payment provider (clone runtime is local)",
+      "urls_observed": 1
+    },
+    {
+      "origin": "maps.googleapis.com",
+      "reason": "live Google Maps Places runtime (address autocomplete)",
+      "urls_observed": 6
+    },
+    {
+      "origin": "maps.gstatic.com",
+      "reason": "live Google Maps sprite host",
+      "urls_observed": 4
+    },
+    {
+      "origin": "misc-assets-transcend-io.s3.amazonaws.com",
+      "reason": "consent management platform (Transcend CMP)",
+      "urls_observed": 1
+    },
+    {
+      "origin": "prod-backend-company-uploads-transcend-io.s3.amazonaws.com",
+      "reason": "consent management platform (Transcend CMP)",
+      "urls_observed": 3
+    },
+    {
+      "origin": "perf-na1.hsforms.com",
+      "reason": "HubSpot forms runtime",
+      "urls_observed": 1
+    },
+    {
+      "origin": "px.ads.linkedin.com",
+      "reason": "ad network / conversion pixel (LinkedIn)",
+      "urls_observed": 1
+    },
+    {
+      "origin": "snap.licdn.com",
+      "reason": "ad network / conversion pixel (LinkedIn)",
+      "urls_observed": 2
+    },
+    {
+      "origin": "static-tracking.klaviyo.com",
+      "reason": "marketing-automation / email tracking runtime",
+      "urls_observed": 4
+    },
+    {
+      "origin": "static.klaviyo.com",
+      "reason": "marketing-automation / email tracking runtime",
+      "urls_observed": 17
+    },
+    {
+      "origin": "static.zdassets.com",
+      "reason": "live chat widget runtime (Zendesk Web Widget); the help centre's own presentation bundle is mirrored, the chat runtime is not",
+      "urls_observed": 1
+    },
+    {
+      "origin": "tagging.joindeleteme.com",
+      "reason": "server-side tag manager endpoint (analytics collection, not content)",
+      "urls_observed": 2
+    },
+    {
+      "origin": "track.hubspot.com",
+      "reason": "HubSpot marketing/CRM runtime",
+      "urls_observed": 2
+    },
+    {
+      "origin": "transcend-cdn.com",
+      "reason": "consent management platform (Transcend CMP)",
+      "urls_observed": 3
+    },
+    {
+      "origin": "tvspix.com",
+      "reason": "CTV attribution beacon",
+      "urls_observed": 1
+    },
+    {
+      "origin": "verifi.podscribe.com",
+      "reason": "podcast attribution beacon",
+      "urls_observed": 1
+    },
+    {
+      "origin": "www.de33watrk.com",
+      "reason": "affiliate-tracking beacon",
+      "urls_observed": 1
+    },
+    {
+      "origin": "www.googletagmanager.com",
+      "reason": "tag manager / analytics loader",
+      "urls_observed": 1
+    },
+    {
+      "origin": "www.mczbf.com",
+      "reason": "affiliate-tracking beacon",
+      "urls_observed": 1
+    },
+    {
+      "origin": "www.podtrac.com",
+      "reason": "podcast attribution redirect",
+      "urls_observed": 1
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://bat.bing.com/bat.js",
+      "reason": "ad network / conversion pixel (Microsoft UET)"
+    },
+    {
+      "url": "https://bat.bing.com/p/action/17259519.js",
+      "reason": "ad network / conversion pixel (Microsoft UET)"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "reason": "ad pixel / live identity provider"
+    },
+    {
+      "url": "https://d34r8q7sht0t9k.cloudfront.net/tag.js",
+      "reason": "unattributed third-party tag (tag.js on an anonymous CloudFront distribution); declared by origin rather than guessing a vendor"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1787262900000/43947920.js",
+      "reason": "HubSpot analytics beacon"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1787263200000/43947920.js",
+      "reason": "HubSpot analytics beacon"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1787263800000/43947920.js",
+      "reason": "HubSpot analytics beacon"
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/43947920/banner.js",
+      "reason": "HubSpot consent banner runtime"
+    },
+    {
+      "url": "https://js.hs-scripts.com/43947920.js",
+      "reason": "HubSpot loader"
+    },
+    {
+      "url": "https://js.hsadspixel.net/pixels.js",
+      "reason": "HubSpot ad pixel"
+    },
+    {
+      "url": "https://js.hubspot.com/web-interactives-embed.js",
+      "reason": "HubSpot marketing/CRM runtime"
+    },
+    {
+      "url": "https://js.stripe.com/clover/stripe.js",
+      "reason": "live payment provider (clone runtime is local)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/common.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/controls.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/main.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/places.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/places_impl.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/1a/util.js",
+      "reason": "live Google Maps Places runtime (address autocomplete)"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png",
+      "reason": "live Google Maps sprite host"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png",
+      "reason": "live Google Maps sprite host"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png",
+      "reason": "live Google Maps sprite host"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png",
+      "reason": "live Google Maps sprite host"
+    },
+    {
+      "url": "https://misc-assets-transcend-io.s3.amazonaws.com/hero-default.svg",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/960ba738-2c04-4ba4-8e01-38f7dd3c008d/5c9c1024-6c26-4229-b47a-f94e6a6446b6",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/960ba738-2c04-4ba4-8e01-38f7dd3c008d/717bccd3-9069-42e3-a4c4-af1f62cb314a",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/960ba738-2c04-4ba4-8e01-38f7dd3c008d/eaa40a19-c895-40e2-b9ea-8976984d641d",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif",
+      "reason": "HubSpot forms runtime"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/insight_tag_errors.gif",
+      "reason": "ad network / conversion pixel (LinkedIn)"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "reason": "ad network / conversion pixel (LinkedIn)"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+      "reason": "ad network / conversion pixel (LinkedIn)"
+    },
+    {
+      "url": "https://static-tracking.klaviyo.com/onsite/js/fender_analytics.7db1ff1fe0783.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static-tracking.klaviyo.com/onsite/js/post_identification_sync.c24f1a19e213a.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static-tracking.klaviyo.com/onsite/js/static.2ec7158a674ab.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static-tracking.klaviyo.com/onsite/js/telemetry.a7ab30aed9e7b.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/5684.bd1b9054fc8a1.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/ClientStore.d04cc9adefd8c.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/default~Render~ClientStore~.ded51e972ac4a.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/default~Render~ClientStore~~onsite-back-in-stock.5965c71706ed1.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/default~Render~back-in-stock-dynamic-button-handler~ClientStore~.a3aa8293ecd5a.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/default~in_app_forms~signup_forms.a03c775416f04.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/event_adapter.a8b6cc8b3fcd8.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/klaviyo.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/onsite-triggering-v2.0b38d0f119f9d.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/runtime.392fcafa19e2a.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/sharedUtils.041038423f505.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/signup_forms.1f8336a320367.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/vendors~Render~ClientStore~~~onsite-back-in-stock.210539c58f3d1.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/vendors~in_app_forms~signup_forms.dcf7d11f6b2cf.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/vendors~in_app_forms~signup_forms~client_identity~telemetry~onsite-triggering-v2~.67b58633b3238.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/vendors~in_app_forms~signup_forms~reviews~atlas~product_recommendations.8ab9a4ef82ae0.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.klaviyo.com/onsite/js/vendors~static~in_app_forms~signup_forms~post_identification_sync~web_personalization~client_identity~server_side_cookies~reviews~telemetry~customerHubRoot~contentBlocks~embeddedIntegrationBlocks~favorites~faq~.8d6c8876258ae.js",
+      "reason": "marketing-automation / email tracking runtime"
+    },
+    {
+      "url": "https://static.zdassets.com/ekr/snippet.js",
+      "reason": "live chat widget runtime (Zendesk Web Widget); the help centre's own presentation bundle is mirrored, the chat runtime is not"
+    },
+    {
+      "url": "https://tagging.joindeleteme.com/gtag/js",
+      "reason": "server-side tag manager endpoint (analytics collection, not content)"
+    },
+    {
+      "url": "https://tagging.joindeleteme.com/gtm.js",
+      "reason": "server-side tag manager endpoint (analytics collection, not content)"
+    },
+    {
+      "url": "https://track.hubspot.com/__ptc.gif",
+      "reason": "HubSpot marketing/CRM runtime"
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif",
+      "reason": "HubSpot marketing/CRM runtime"
+    },
+    {
+      "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/airgap.js",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/cm.css",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/ui.js",
+      "reason": "consent management platform (Transcend CMP)"
+    },
+    {
+      "url": "https://tvspix.com/t.png",
+      "reason": "CTV attribution beacon"
+    },
+    {
+      "url": "https://verifi.podscribe.com/tag",
+      "reason": "podcast attribution beacon"
+    },
+    {
+      "url": "https://www.de33watrk.com/scripts/sdk/everflow.js",
+      "reason": "affiliate-tracking beacon"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js",
+      "reason": "tag manager / analytics loader"
+    },
+    {
+      "url": "https://www.mczbf.com/tags/253585498398/tag.js",
+      "reason": "affiliate-tracking beacon"
+    },
+    {
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/tcQd6Q6C0RUUlOHq1Ytj/mgln.ai/e/51/pscrb.fm/rss/p/traffic.megaphone.fm/TPG8595686810.mp3",
+      "reason": "podcast attribution redirect"
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "routes": [
+    {
+      "id": "home",
+      "local_destination": true,
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "route_pattern": "/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "plans",
+      "local_destination": true,
+      "note": "Canonical, indexable plan grid and the header Join Now destination. The ONLY filter is billing term (1 Year / 2 Years) via uk-filter-control on data-tag; the 1-Year group carries display:none so 2 Years is the visible default. Plan SIZE is not a control: all four cards (1 Person, 2 People, Family, Business) render side by side inside each term group, and a size is chosen by activating that card's own Start Protection link, whose href carries qty=1|2|4. A size-filter container (#fs-grid-filter-activation) exists in the markup but the page ships it display:none, so it is never operable for a visitor.",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "route_pattern": "/privacy-protection-plans/",
+      "states": [
+        "loaded",
+        "term-1y",
+        "term-2y"
+      ]
+    },
+    {
+      "id": "pricing",
+      "local_destination": true,
+      "note": "Near-duplicate of the plan grid carrying robots follow,noindex, no canonical tag, and absent from the sitemap. Unlike /privacy-protection-plans/, this captured page exposes two visible filter strips: billing term and plan size. Both are operable in the clone.",
+      "priority": "p1",
+      "purpose_edge": "primary",
+      "route_pattern": "/pricing/",
+      "states": [
+        "loaded",
+        "term-1y",
+        "term-2y",
+        "size-couple",
+        "size-family",
+        "size-single"
+      ]
+    },
+    {
+      "id": "signup-grid",
+      "local_destination": true,
+      "note": "A third copy of the grid with older markup whose CTAs still point at the legacy /delete-me/ slugs.",
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/signup/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "checkout",
+      "local_destination": true,
+      "note": "Single-origin mapping of app.joindeleteme.com/checkout. Source is a React-Router SPA shell whose form exists only after JS; the clone serves the rendered form server-side. Query plan/term/qty select the plan.",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "route_pattern": "/checkout",
+      "states": [
+        "loaded",
+        "filled",
+        "validation-empty",
+        "payment-declined",
+        "payment-retry",
+        "promo-open"
+      ]
+    },
+    {
+      "id": "checkout-complete",
+      "local_destination": true,
+      "note": "Post-purchase confirmation. Source copy states payment succeeded and an email will carry a link to set a password. Reached in the clone only after a sandbox approval.",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "route_pattern": "/checkout/complete",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "login",
+      "local_destination": true,
+      "note": "Single-origin mapping of app.joindeleteme.com/login. H1 'Welcome back'; Email + Password; only 'Continue with Google' renders; no remember-me control exists.",
+      "priority": "p1",
+      "purpose_edge": "primary",
+      "route_pattern": "/login",
+      "states": [
+        "loaded",
+        "validation-empty",
+        "credentials-rejected"
+      ]
+    },
+    {
+      "id": "password-forgot",
+      "local_destination": true,
+      "note": "H1 'Reset your password'; one email field; submit 'Send reset link'; return link 'Back to sign in'.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/password/forgot",
+      "states": [
+        "loaded",
+        "validation-empty",
+        "submitted"
+      ]
+    },
+    {
+      "id": "scan",
+      "local_destination": true,
+      "note": "Free-scan intake. Asks for real personal data on the source; the clone accepts synthetic input only and never contacts a broker.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/scan/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "how-we-work",
+      "local_destination": true,
+      "priority": "p1",
+      "purpose_edge": "primary",
+      "route_pattern": "/how-we-work/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "sites-we-remove-from",
+      "local_destination": true,
+      "note": "Renders a live broker count in its H1 ('We Remove Private Information from 986 Data Brokers'), frozen at capture time.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/sites-we-remove-from/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "reviews",
+      "local_destination": true,
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/reviews/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "about",
+      "local_destination": true,
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/about-us/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "security",
+      "local_destination": true,
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/security/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "international",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/international/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "how-public-record",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/how-public-record-information-works/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "search",
+      "local_destination": true,
+      "note": "WordPress /?s= query. A no-match query answers HTTP 200 with heading 'Search', an H2 echoing the term in curly quotes, and an EMPTY results region carrying no message at all. The home page exposes no search form; the form lives on blog and archive pages.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/",
+      "states": [
+        "no-results",
+        "results"
+      ]
+    },
+    {
+      "id": "help",
+      "local_destination": true,
+      "note": "Source 301s /help to the Zendesk help centre on help.joindeleteme.com. The clone serves a single-origin local help surface reproducing the reachable hub: search box, the three real category names, promoted articles and recent activity.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/help",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "blog",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/blog/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "opt-out-guides",
+      "local_destination": true,
+      "note": "The 'DIY Opt-Out Guides' nav item points at this blog category archive, not a page.",
+      "priority": "p1",
+      "purpose_edge": "primary",
+      "route_pattern": "/blog/opt-out-guides/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "delete-your-account",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/delete-your-account/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "doxxing",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/doxxing/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "is-site-safe",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/is-site-safe/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "is-it-scam",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/is-it-scam/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "glossary",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/glossary/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "do-not-call-list",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/do-not-call-list/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "ai-privacy-settings",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/ai-privacy-settings/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "data-breaches",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/data-breaches/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "podcast",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/podcast/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "permission-slip",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/permission-slip/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "permission-slip-faq",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/permission-slip/faq/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "press",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/press/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "careers",
+      "local_destination": true,
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/careers/",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "policies",
+      "local_destination": true,
+      "note": "Single-origin mapping of privacy.joindeleteme.com/policies, reached from the checkout agreements via ?name=terms-of-service and ?name=privacy-policy.",
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/policies",
+      "states": [
+        "loaded"
+      ]
+    },
+    {
+      "id": "account-dashboard",
+      "local_destination": true,
+      "note": "Clone-local only. The subscriber dashboard, removal profile, reports, billing history, plan change, pause/skip, cancel and reactivate were never observable: DeleteMe issues an account only after a purchase this run may not make. Every such page carries a clone-local banner.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/account",
+      "states": [
+        "unavailable"
+      ]
+    },
+    {
+      "id": "not-found",
+      "local_destination": true,
+      "note": "Marketing host: an extensionless unknown path 301s to the trailing-slash form and then answers HTTP 404 with full chrome, headings 'Oops!' and \u201cThat page can\u2019t be found.\u201d, body 'It looks like nothing was found at this location.', and Back plus 'Go to the homepage'.",
+      "priority": "p1",
+      "purpose_edge": "secondary",
+      "route_pattern": "/*",
+      "states": [
+        "not-found"
+      ]
+    },
+    {
+      "id": "app-not-found",
+      "local_destination": true,
+      "note": "The application host answers unknown routes with HTTP 200 (SPA shell) and H1 'Page not found'. The two hosts disagree on status; the clone reproduces both behaviours on their mapped paths rather than normalising them.",
+      "priority": "p2",
+      "purpose_edge": "secondary",
+      "route_pattern": "/account/*",
+      "states": [
+        "not-found"
+      ]
+    }
+  ],
+  "schema_version": "offline-clone.routes.v1"
+}

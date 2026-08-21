@@ -1,0 +1,422 @@
+[
+  {
+    "url": "https://use.typekit.net/xab4bxw.css",
+    "initiator": "link",
+    "transfer_size": 1029
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-lodash.c9b82ea1485a8ca87986.js",
+    "initiator": "script",
+    "transfer_size": 13364
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-transcend-io-penumbra.111556221f20b5574eda.js",
+    "initiator": "script",
+    "transfer_size": 55428
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-classnames.9a609f8a09fefd498d3b.js",
+    "initiator": "script",
+    "transfer_size": 941
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-bootstrap.754e1a787db04967b602.js",
+    "initiator": "script",
+    "transfer_size": 10661
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-core-js.9d4fb2539bca1c8aa809.js",
+    "initiator": "script",
+    "transfer_size": 73636
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-highlight.js.8c982138e3fcc5057c66.js",
+    "initiator": "script",
+    "transfer_size": 305938
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-moment.d11a901ad5a8da1f6f43.js",
+    "initiator": "script",
+    "transfer_size": 78141
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-apollo-client.823b0cb513ddbef8e1d6.js",
+    "initiator": "script",
+    "transfer_size": 44494
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-datadog-browser-core.1a4fca9ca0b4a9c34fd4.js",
+    "initiator": "script",
+    "transfer_size": 15547
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-popperjs-core.972716f66fd22716a07c.js",
+    "initiator": "script",
+    "transfer_size": 8176
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-babel-runtime.c24a91d03a6427dc8a9d.js",
+    "initiator": "script",
+    "transfer_size": 2547
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-colorjs.io.8add4016fbeb11d5d853.js",
+    "initiator": "script",
+    "transfer_size": 17165
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-fp-ts.47c7a4a63315439f03ab.js",
+    "initiator": "script",
+    "transfer_size": 9161
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-readable-stream.d7fb2c9390094b41b4f1.js",
+    "initiator": "script",
+    "transfer_size": 19071
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-handlebars.2ecec16f79795cb8ef27.js",
+    "initiator": "script",
+    "transfer_size": 23052
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-postcss.cd99779f522eaaa140f3.js",
+    "initiator": "script",
+    "transfer_size": 17839
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-redux.2d623b32c36d5be5bc6d.js",
+    "initiator": "script",
+    "transfer_size": 5131
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-transcend-io-type-utils.9b60ec666a285dc81a66.js",
+    "initiator": "script",
+    "transfer_size": 4724
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-graphql.5b8a1aa5d5d73a19300a.js",
+    "initiator": "script",
+    "transfer_size": 12163
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-dom-helpers.4a10ecb98976a015f7b1.js",
+    "initiator": "script",
+    "transfer_size": 2059
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-browserify-aes.831921d8c5800ff7e856.js",
+    "initiator": "script",
+    "transfer_size": 4550
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-restart-hooks.6af7630d61c7b60c1581.js",
+    "initiator": "script",
+    "transfer_size": 1126
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-elliptic.7768bf4b0eebc2b975c3.js",
+    "initiator": "script",
+    "transfer_size": 29457
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-datadog-browser-logs.084314d3cdab240fe577.js",
+    "initiator": "script",
+    "transfer_size": 4716
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-entities.622acdd895fb7e7a3a03.js",
+    "initiator": "script",
+    "transfer_size": 53239
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-restart-ui.2744ddaf679b8ec2cf00.js",
+    "initiator": "script",
+    "transfer_size": 5292
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-asn1.js.472d808e04c67abc8241.js",
+    "initiator": "script",
+    "transfer_size": 7601
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-redux-persist.d9c67d144dcbcf77e066.js",
+    "initiator": "script",
+    "transfer_size": 4213
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-hash.js.ad255e0bd379b83c3f84.js",
+    "initiator": "script",
+    "transfer_size": 5995
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-select.ac6405ee06efeae88f0a.js",
+    "initiator": "script",
+    "transfer_size": 19458
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-redux.48b57805ff40840ab1a6.js",
+    "initiator": "script",
+    "transfer_size": 1791
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-tldts.0e8f315e16dffab8b56f.js",
+    "initiator": "script",
+    "transfer_size": 1101
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-bn.js.eb7b3727b65825201acf.js",
+    "initiator": "script",
+    "transfer_size": 22726
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-router-dom.0e118f03dae184590b89.js",
+    "initiator": "script",
+    "transfer_size": 2552
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-reduxjs-toolkit.972fad09061f43821e12.js",
+    "initiator": "script",
+    "transfer_size": 4867
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-io-ts.8bb2b6f27b31008769e7.js",
+    "initiator": "script",
+    "transfer_size": 7153
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-dom.e6c483e1ba45545efea9.js",
+    "initiator": "script",
+    "transfer_size": 41915
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-pako.701d8002da05357346fa.js",
+    "initiator": "script",
+    "transfer_size": 14673
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-transcend-io-privacy-types.1daa0f1bc25642754cd3.js",
+    "initiator": "script",
+    "transfer_size": 98473
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-hook-form.3cc6e707757460eb4767.js",
+    "initiator": "script",
+    "transfer_size": 7922
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-spring-core.d2b370254ba9f762c4c4.js",
+    "initiator": "script",
+    "transfer_size": 8973
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-polished.4dbd2126f805f27925bc.js",
+    "initiator": "script",
+    "transfer_size": 3531
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-launchdarkly-js-client-sdk.e1c6e7ba3edfef31cf35.js",
+    "initiator": "script",
+    "transfer_size": 20134
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-json2csv.835ee96e9922b81ab0ff.js",
+    "initiator": "script",
+    "transfer_size": 24567
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-buffer.7f58677e8c2ec968d6bc.js",
+    "initiator": "script",
+    "transfer_size": 7546
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-router.c9d0f4f266a2ee2fa643.js",
+    "initiator": "script",
+    "transfer_size": 3837
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-remix-run-router.ecc8a0f36cf2dccf6678.js",
+    "initiator": "script",
+    "transfer_size": 4428
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/main.369f18b7e1027d442122.js",
+    "initiator": "script",
+    "transfer_size": 1070742
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-libphonenumber-js.9dc8aae018e817e9b97e.chunk.js",
+    "initiator": "script",
+    "transfer_size": 36442
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-phone-number-input.97dbd47b8b156a883909.chunk.js",
+    "initiator": "script",
+    "transfer_size": 13733
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-luxon.ec6a4b18c6a888b2638d.chunk.js",
+    "initiator": "script",
+    "transfer_size": 22051
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-fast-compare.28752e791a9f89f5b987.chunk.js",
+    "initiator": "script",
+    "transfer_size": 1047
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-input-format.46304c6830e52ebe8e31.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2769
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-jsonpath.1fe768ee941cafe40918.chunk.js",
+    "initiator": "script",
+    "transfer_size": 27345
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-body-scroll-lock.cecc644dd6d4918a4f59.chunk.js",
+    "initiator": "script",
+    "transfer_size": 1516
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-side-effect.a919835ede0d164e4e0b.chunk.js",
+    "initiator": "script",
+    "transfer_size": 1167
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-moment.48141c91edc53cbefb0c.chunk.js",
+    "initiator": "script",
+    "transfer_size": 6358
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-json-view.301870ed75c276f3c20a.chunk.js",
+    "initiator": "script",
+    "transfer_size": 32979
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/vendor-react-helmet.35ec0678ddc9561ec611.chunk.js",
+    "initiator": "script",
+    "transfer_size": 4659
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/683.aa25f86297c21053b90b.chunk.js",
+    "initiator": "script",
+    "transfer_size": 4374
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/6946.5512f661323ddcb0ab28.chunk.js",
+    "initiator": "script",
+    "transfer_size": 90486
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenter.json",
+    "initiator": "fetch",
+    "transfer_size": 5094
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenterMessages-en.json",
+    "initiator": "fetch",
+    "transfer_size": 28444
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/-",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/2711d70cf34e9b9147b5.json",
+    "initiator": "fetch",
+    "transfer_size": 18656
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/9556.f2409e32e5a707f3de6a.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2746
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/786.96c014274c018049e903.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2473
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/4552.215992bf88a0718691ab.chunk.js",
+    "initiator": "script",
+    "transfer_size": 3969
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/9124.d8beb4d065ceceb7534c.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2595
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/4282.d472388429389b2ac838.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2480
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/3366.6e4dc9adc638e6109a79.chunk.js",
+    "initiator": "script",
+    "transfer_size": 2407
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/3400.a835f42b3344e0d77631.chunk.js",
+    "initiator": "script",
+    "transfer_size": 3029
+  },
+  {
+    "url": "https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/960ba738-2c04-4ba4-8e01-38f7dd3c008d/717bccd3-9069-42e3-a4c4-af1f62cb314a",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://misc-assets-transcend-io.s3.amazonaws.com/hero-default.svg",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://prod-backend-company-uploads-transcend-io.s3.amazonaws.com/960ba738-2c04-4ba4-8e01-38f7dd3c008d/eaa40a19-c895-40e2-b9ea-8976984d641d",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenterPolicies-en.json",
+    "initiator": "fetch",
+    "transfer_size": 35933
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenterSubjects.json",
+    "initiator": "fetch",
+    "transfer_size": 1739
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenterWorkflowConfigs.json",
+    "initiator": "fetch",
+    "transfer_size": 357
+  },
+  {
+    "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/airgap.js",
+    "initiator": "script",
+    "transfer_size": 46176
+  },
+  {
+    "url": "https://privacy.joindeleteme.com/static/privacy.joindeleteme.com/privacyCenterWorkflowConfigs.json",
+    "initiator": "fetch",
+    "transfer_size": 357
+  },
+  {
+    "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/ui.js",
+    "initiator": "script",
+    "transfer_size": 88266
+  },
+  {
+    "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/cm.css",
+    "initiator": "link",
+    "transfer_size": 4167
+  },
+  {
+    "url": "https://transcend-cdn.com/cm/c139bb6f-7a72-4d39-85e1-e960f82dbfe7/translations/en.json",
+    "initiator": "fetch",
+    "transfer_size": 2540
+  }
+]

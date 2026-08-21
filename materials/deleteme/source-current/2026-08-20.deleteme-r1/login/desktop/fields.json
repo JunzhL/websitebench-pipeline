@@ -1,0 +1,39 @@
+{
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "method": null,
+      "action_path": "/login",
+      "control_count": 2
+    }
+  ],
+  "fields": [
+    {
+      "name": null,
+      "id": "\u00abr1\u00bb",
+      "type": "email",
+      "label": "Email *",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": "\u00abr2\u00bb",
+      "type": "password",
+      "label": "Password *",
+      "required": true
+    }
+  ],
+  "submits": [
+    {
+      "type": "button",
+      "label": "Continue with Google"
+    },
+    {
+      "type": "submit",
+      "label": "Log In"
+    }
+  ],
+  "embedded_frames": [],
+  "_note": "Structure only: name/id/type/label/required. No field was ever filled, typed into or submitted on the live source, and no control value was read."
+}

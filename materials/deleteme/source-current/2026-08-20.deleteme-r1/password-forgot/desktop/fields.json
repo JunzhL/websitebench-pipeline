@@ -1,0 +1,28 @@
+{
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "method": null,
+      "action_path": "/password/forgot",
+      "control_count": 1
+    }
+  ],
+  "fields": [
+    {
+      "name": "email",
+      "id": "email",
+      "type": "email",
+      "label": "Email Address *",
+      "required": true
+    }
+  ],
+  "submits": [
+    {
+      "type": "submit",
+      "label": "Send reset link"
+    }
+  ],
+  "embedded_frames": [],
+  "_note": "Structure only: name/id/type/label/required. No field was ever filled, typed into or submitted on the live source, and no control value was read."
+}

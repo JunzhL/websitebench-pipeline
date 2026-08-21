@@ -1,0 +1,170 @@
+{
+ "capture_id": "2026-08-20.deleteme-r1",
+ "entries": [
+  {
+   "control": "Join Now",
+   "form_action": null,
+   "raw_markup_proof": "div class=\"el-item\">\n        \n        \n<a class=\"el-content uk-width-1-1 uk-button uk-button-secondary uk-button-small\" href=\"/privacy-protection-plans/\">\n    \n        Join Now    \n    \n</a>\n\n\n                </div>\n        \n    \n        </div>    \n</div>\n\n                \n            \n        \n    \n</div>\n    \n</div>\n",
+   "requires_session": false,
+   "selector": "a[href='/privacy-protection-plans/']",
+   "url": "/?index=1",
+   "visible_text_proof": "Join Now"
+  },
+  {
+   "control": "1 Year",
+   "form_action": null,
+   "raw_markup_proof": "2 Years</a>\n    </li>\n        <li uk-filter-control=\"{&quot;filter&quot;:&quot;[data-tag~=\\&quot;1-Year\\&quot;]&quot;}\" data-term-tab=\"1y\">\n        <a href=\"\" role=\"button\">1 Year</a>\n    </li>\n    \n</ul>\n\n        \n            <div class=\"uk-grid js-filter uk-child-width-1-1 uk-child-width-1-4@m uk-grid-collapse uk-gri",
+   "requires_session": false,
+   "selector": "[data-term-tab='1y']",
+   "url": "/privacy-protection-plans/",
+   "visible_text_proof": "1 Year"
+  },
+  {
+   "control": "2 Years",
+   "form_action": null,
+   "raw_markup_proof": "lass=\"uk-active uk-first-column\" uk-filter-control=\"{&quot;filter&quot;:&quot;[data-tag~=\\&quot;2-Years\\&quot;]&quot;}\" data-term-tab=\"2y\">\n        <a href=\"\" role=\"button\">2 Years</a>\n    </li>\n        <li uk-filter-control=\"{&quot;filter&quot;:&quot;[data-tag~=\\&quot;1-Year\\&quot;]&quot;}\" data-term-tab=\"1y\">\n       ",
+   "requires_session": false,
+   "selector": "[data-term-tab='2y']",
+   "url": "/privacy-protection-plans/",
+   "visible_text_proof": "2 Years"
+  },
+  {
+   "control": "Start Protection \u2014 1 Person",
+   "form_action": null,
+   "raw_markup_proof": "1\" data-plan-type=\"price2Years1Person\" class=\"uk-button uk-button-secondary uk-width-1-1 jdm-button-secondarycontained\" data-start-protection=\"2-1\">\n  Start Protection <span uk-icon=\"arrow-right\" class=\"uk-icon\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><line fill=\"none\" stroke=\"#000\" x1=\"3.47\"",
+   "requires_session": false,
+   "selector": "[data-term-group='2y'] a[data-start-protection='2-1']",
+   "url": "/privacy-protection-plans/",
+   "visible_text_proof": "Start Protection"
+  },
+  {
+   "control": "Single size filter",
+   "form_action": null,
+   "raw_markup_proof": "mily']; group: plan\">\n            <a href=\"#\" role=\"button\">Family</a>\n          </li>\n          <li uk-filter-control=\"filter: [data-plan='single']; group: plan\">\n            <a href=\"#\" role=\"button\">Single</a>\n          </li>\n        </ul>\n      </div>\n\n    </div>\n  </div>\n\n  <ul class=\"dm-pricing__stage\">\n\n    <li ",
+   "requires_session": false,
+   "selector": "[uk-filter-control=\"filter: [data-plan='single']; group: plan\"]",
+   "url": "/pricing/",
+   "visible_text_proof": "Single"
+  },
+  {
+   "control": "First name",
+   "form_action": "/checkout",
+   "raw_markup_proof": "checkout__row\">\n        <p class=\"dm-field\">\n          <label for=\"dm-first-name\">First Name *</label>\n          <input id=\"dm-first-name\" name=\"firstName\" type=\"text\" autocomplete=\"given-name\" value=\"\" required>\n        </p>\n        <p class=\"dm-field\">\n          <label for=\"dm-last-name\">Last Name *</label>\n         ",
+   "requires_session": false,
+   "selector": "#dm-first-name",
+   "url": "/checkout?plan=standard&term=1&qty=1",
+   "visible_text_proof": "First Name"
+  },
+  {
+   "control": "Sandbox outcome",
+   "form_action": "/checkout",
+   "raw_markup_proof": "k the outcome you want the local adapter to return.</p>\n        <label class=\"dm-sandbox__scenario\"><input type=\"radio\" name=\"scenario\" value=\"sandbox-approved\" checked><span>Simulated approval</span><code>sandbox-approved</code></label><label class=\"dm-sandbox__scenario\"><input type=\"radio\" name=\"scenario\" value=\"sand",
+   "requires_session": false,
+   "selector": "input[name='scenario']",
+   "url": "/checkout?plan=standard&term=1&qty=1",
+   "visible_text_proof": "Simulated approval"
+  },
+  {
+   "control": "Purchase and start deleting",
+   "form_action": "/checkout",
+   "raw_markup_proof": "e your credit card now and upon each renewal.</p>\n    </section>\n\n    <button class=\"dm-checkout__submit\" type=\"submit\" data-checkout-submit>Purchase &amp; Start Deleting</button>\n  </form>\n\n  <aside class=\"dm-summary\" aria-label=\"Order Summary\">\n    <h2>Order Summary</h2>\n    <p class=\"dm-summary__plan\" data-plan-key=",
+   "requires_session": false,
+   "selector": "[data-checkout-submit]",
+   "url": "/checkout?plan=standard&term=1&qty=1",
+   "visible_text_proof": "Purchase & Start Deleting"
+  },
+  {
+   "control": "Email",
+   "form_action": "/login",
+   "raw_markup_proof": "-fullWidth MuiInputBase-formControl css-1i0eqo7\"><input aria-invalid=\"false\" autocomplete=\"email\" id=\"\u00abr1\u00bb\" required=\"\" name=\"email\" spellcheck=\"false\" autocapitalize=\"off\" autocorrect=\"off\" class=\"MuiInputBase-input MuiOutlinedInput-input css-qfbs4g\" type=\"email\" value=\"\" style=\"\"><fieldset aria-hidden=\"true\" class=\"M",
+   "requires_session": false,
+   "selector": "form[action='/login'] input[name='email']",
+   "url": "/login",
+   "visible_text_proof": "Email"
+  },
+  {
+   "control": "Password",
+   "form_action": "/login",
+   "raw_markup_proof": "l MuiInputBase-adornedEnd css-bqhld4\"><input aria-invalid=\"false\" autocomplete=\"current-password\" id=\"\u00abr2\u00bb\" required=\"\" name=\"password\" class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1lrhk4n\" type=\"password\" value=\"\" style=\"\"><div class=\"MuiInputAdornment-root MuiInputAdornment-positi",
+   "requires_session": false,
+   "selector": "form[action='/login'] input[name='password']",
+   "url": "/login",
+   "visible_text_proof": "Password"
+  },
+  {
+   "control": "Continue with Google",
+   "form_action": null,
+   "raw_markup_proof": "l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z\"></path></svg></span>Continue with Google</button></div></div></div><div class=\"MuiBox-root css-19i0w84\"><hr class=\"MuiDivider-root MuiDivider-fullWidth css-1r2q8zw\"><p class=\"MuiTypography-root MuiTypography-body2 css-1f",
+   "requires_session": false,
+   "selector": "button:has-text('Continue with Google')",
+   "url": "/login",
+   "visible_text_proof": "Continue with Google"
+  },
+  {
+   "control": "Forgot Password",
+   "form_action": null,
+   "raw_markup_proof": "-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-uqslzf\" tabindex=\"0\" href=\"/password/forgot\" data-discover=\"true\">Forgot Password?</a></div></div></div></div></div><!--deleteme-clone-body--><script src=\"/static/site/clone.js\" defer></script></body></html>",
+   "requires_session": false,
+   "selector": "a[href='/password/forgot']",
+   "url": "/login",
+   "visible_text_proof": "Forgot Password?"
+  },
+  {
+   "control": "Reset address",
+   "form_action": "/password/forgot",
+   "raw_markup_proof": "tocapitalize=\"off\" autocorrect=\"off\" class=\"MuiInputBase-input MuiOutlinedInput-input css-qfbs4g\" type=\"email\" value=\"\" name=\"email\" style=\"\"><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-5v2ak0\"><legend class=\"css-81qg8w\"><span>Email Address\u2009*</span></legend></fieldset></div></div><button cla",
+   "requires_session": false,
+   "selector": "form[action='/password/forgot'] input[name='email']",
+   "url": "/password/forgot",
+   "visible_text_proof": "Email Address"
+  },
+  {
+   "control": "Back to sign in",
+   "form_action": null,
+   "raw_markup_proof": "-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-uqslzf\" tabindex=\"0\" href=\"/login\" data-discover=\"true\">Back to sign in</a></div></form></div></div></div><!--deleteme-clone-body--><script src=\"/static/site/clone.js\" defer></script></body></html>",
+   "requires_session": false,
+   "selector": "a[href='/login']",
+   "url": "/password/forgot",
+   "visible_text_proof": "Back to sign in"
+  },
+  {
+   "control": "Pause subscription",
+   "form_action": "/account/subscription/sub-primary-0001/pause",
+   "raw_markup_proof": "count__actions\">\n  <form method=\"post\" action=\"/account/subscription/sub-primary-0001/pause\">\n    <button type=\"submit\" data-subscription-action=\"pause\">Pause</button>\n  </form>\n  <form method=\"post\" action=\"/account/subscription/sub-primary-0001/cancel\">\n    <button type=\"submit\" data-subscription-action=\"cancel\">Canc",
+   "requires_session": true,
+   "selector": "button[data-subscription-action='pause']",
+   "url": "/account",
+   "visible_text_proof": "Pause"
+  },
+  {
+   "control": "Cancel subscription",
+   "form_action": "/account/subscription/sub-primary-0001/cancel",
+   "raw_markup_proof": "tton>\n  </form>\n  <form method=\"post\" action=\"/account/subscription/sub-primary-0001/cancel\">\n    <button type=\"submit\" data-subscription-action=\"cancel\">Cancel</button>\n  </form>\n  <form method=\"post\" action=\"/account/subscription/sub-primary-0001/reactivate\">\n    <button type=\"submit\" data-subscription-action=\"reacti",
+   "requires_session": true,
+   "selector": "button[data-subscription-action='cancel']",
+   "url": "/account",
+   "visible_text_proof": "Cancel"
+  },
+  {
+   "control": "Save removal profile",
+   "form_action": "/account/profile",
+   "raw_markup_proof": "ses\" name=\"other_addresses\" type=\"text\" value=\"12 Former Street, Springfield, EX 00001\">\n  </p>\n  <button type=\"submit\" data-removal-profile-submit>Save removal profile</button>\n</form>\n</main></div><!--deleteme-clone-body--><script src=\"/static/site/clone.js\" defer></script></body></html>",
+   "requires_session": true,
+   "selector": "[data-removal-profile-submit]",
+   "url": "/account/profile",
+   "visible_text_proof": "Save removal profile"
+  },
+  {
+   "control": "Change plan",
+   "form_action": "/account/plan",
+   "raw_markup_proof": "o)</option><option value=\"2-4\">2 Years, 4 People \u2014 $499.00 ($20.79/mo)</option></select>\n  </p>\n  <button type=\"submit\" data-plan-change-submit>Change plan</button>\n</form>\n</main></div><!--deleteme-clone-body--><script src=\"/static/site/clone.js\" defer></script></body></html>",
+   "requires_session": true,
+   "selector": "[data-plan-change-submit]",
+   "url": "/account/plan",
+   "visible_text_proof": "Change plan"
+  }
+ ],
+ "note": "Account controls are clearly labelled clone-local inference because authenticated source states were unavailable. Browser-backed selectors are also exercised by clone/tests/test_operability.py.",
+ "recorded_from": "live clone (TestClient walk of clone/app.py)",
+ "schema_version": "deleteme.interaction-ledger.v1"
+}

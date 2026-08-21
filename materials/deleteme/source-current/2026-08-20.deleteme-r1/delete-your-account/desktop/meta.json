@@ -1,0 +1,102 @@
+{
+  "unit": "delete-your-account",
+  "checkpoint": "delete-your-account.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/delete-your-account/",
+  "requested_url": "https://joindeleteme.com/delete-your-account/",
+  "final_url": "https://joindeleteme.com/delete-your-account/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:02:47Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Delete Your Account Guides | DeleteMe",
+  "h1": [
+    "Keep Your Personal Information Safe"
+  ],
+  "body_text_len": 3362,
+  "frames": 3,
+  "frame_sha256": [
+    "d6dca1a0c6a37b90a9b5471cdbf4f24791cd405a6c9acd0e10ae01c5f558f96b",
+    "d6dca1a0c6a37b90a9b5471cdbf4f24791cd405a6c9acd0e10ae01c5f558f96b",
+    "d6dca1a0c6a37b90a9b5471cdbf4f24791cd405a6c9acd0e10ae01c5f558f96b"
+  ],
+  "frames_identical": true,
+  "reference_count": 80,
+  "resource_count": 117,
+  "observations": {
+    "title": "Delete Your Account Guides | DeleteMe",
+    "h1": [
+      "Keep Your Personal Information Safe"
+    ],
+    "body_text_len": 3362,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 74,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 1,
+    "control_count": 1,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index",
+    "canonical": "https://joindeleteme.com/delete-your-account/"
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "13 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "delete-your-account",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

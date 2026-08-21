@@ -1,0 +1,113 @@
+{
+  "forms": [
+    {
+      "id": "free-scan-form",
+      "name": "scan-form",
+      "method": null,
+      "action_path": "/scan/",
+      "control_count": 10
+    }
+  ],
+  "fields": [
+    {
+      "name": "utm_source",
+      "id": "utm_source",
+      "type": "hidden",
+      "label": "",
+      "required": false
+    },
+    {
+      "name": "utm_medium",
+      "id": "utm_medium",
+      "type": "hidden",
+      "label": "",
+      "required": false
+    },
+    {
+      "name": "utm_campaign",
+      "id": "utm_campaign",
+      "type": "hidden",
+      "label": "",
+      "required": false
+    },
+    {
+      "name": "coupon",
+      "id": "coupon",
+      "type": "hidden",
+      "label": "",
+      "required": false
+    },
+    {
+      "name": "email",
+      "id": "free-scan-email",
+      "type": "email",
+      "label": "EMAIL ADDRESS",
+      "required": true
+    },
+    {
+      "name": "first-name",
+      "id": "free-scan-first-name",
+      "type": "text",
+      "label": "First Name",
+      "required": true
+    },
+    {
+      "name": "last-name",
+      "id": "free-scan-last-name",
+      "type": "text",
+      "label": "Last Name",
+      "required": true
+    },
+    {
+      "name": "location",
+      "id": "free-scan-location",
+      "type": "text",
+      "label": "City, State",
+      "required": true
+    },
+    {
+      "name": "age",
+      "id": "free-scan-age",
+      "type": "number",
+      "label": "Age",
+      "required": true
+    },
+    {
+      "name": "terms",
+      "id": "free-scan-terms",
+      "type": "checkbox",
+      "label": "I have read and agree to the Terms of Service and Privacy Policy.",
+      "required": true
+    }
+  ],
+  "submits": [
+    {
+      "type": "button",
+      "label": "Continue"
+    },
+    {
+      "type": "button",
+      "label": "Previous"
+    },
+    {
+      "type": "button",
+      "label": "Next Step"
+    },
+    {
+      "type": "button",
+      "label": "Get FREE Report"
+    },
+    {
+      "type": null,
+      "label": "Chat"
+    },
+    {
+      "type": null,
+      "label": "Chat"
+    }
+  ],
+  "embedded_frames": [
+    "https://joindeleteme.com/scan/"
+  ],
+  "_note": "Structure only: name/id/type/label/required. No field was ever filled, typed into or submitted on the live source, and no control value was read."
+}

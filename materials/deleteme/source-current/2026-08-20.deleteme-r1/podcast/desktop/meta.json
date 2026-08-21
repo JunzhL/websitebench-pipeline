@@ -1,0 +1,100 @@
+{
+  "unit": "podcast",
+  "checkpoint": "podcast.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/podcast/",
+  "requested_url": "https://joindeleteme.com/podcast/",
+  "final_url": "https://joindeleteme.com/podcast/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:03:22Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "What the Hack Podcast - DeleteMe",
+  "h1": [
+    "This Week on What the Hack: Anna Nasset on Stalking Prevention",
+    "Last week"
+  ],
+  "body_text_len": 3058,
+  "frames": 3,
+  "frame_sha256": [
+    "1a8b4904b78dcab2e7bc99d1c70bf252550c914dbf5827fb11a1866c0f01c8b9",
+    "1a8b4904b78dcab2e7bc99d1c70bf252550c914dbf5827fb11a1866c0f01c8b9",
+    "1a8b4904b78dcab2e7bc99d1c70bf252550c914dbf5827fb11a1866c0f01c8b9"
+  ],
+  "frames_identical": true,
+  "reference_count": 70,
+  "resource_count": 103,
+  "observations": {
+    "title": "What the Hack Podcast - DeleteMe",
+    "h1": [
+      "This Week on What the Hack: Anna Nasset on Stalking Prevention",
+      "Last week"
+    ],
+    "body_text_len": 3058,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 48,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 1,
+    "control_count": 2,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/podcast/"
+  },
+  "non_get_aborted": {
+    "count": 10,
+    "by_method": {
+      "POST": 10
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "11 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 10 non-GET request(s) ({'POST': 10}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "podcast",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

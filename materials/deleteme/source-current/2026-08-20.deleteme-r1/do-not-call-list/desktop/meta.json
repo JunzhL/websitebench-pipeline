@@ -1,0 +1,102 @@
+{
+  "unit": "do-not-call-list",
+  "checkpoint": "do-not-call-list.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/do-not-call-list/",
+  "requested_url": "https://joindeleteme.com/do-not-call-list/",
+  "final_url": "https://joindeleteme.com/do-not-call-list/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:03:07Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Do Not Call List Guides | DeleteMe",
+  "h1": [
+    "Do Not Call List Guides"
+  ],
+  "body_text_len": 2313,
+  "frames": 3,
+  "frame_sha256": [
+    "18493cd9b7c50acf597f3dc223eb5fa45c6adf5ead6c97dd0dd71a7009d18ed7",
+    "18493cd9b7c50acf597f3dc223eb5fa45c6adf5ead6c97dd0dd71a7009d18ed7",
+    "18493cd9b7c50acf597f3dc223eb5fa45c6adf5ead6c97dd0dd71a7009d18ed7"
+  ],
+  "frames_identical": true,
+  "reference_count": 76,
+  "resource_count": 118,
+  "observations": {
+    "title": "Do Not Call List Guides | DeleteMe",
+    "h1": [
+      "Do Not Call List Guides"
+    ],
+    "body_text_len": 2313,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 74,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 1,
+    "control_count": 1,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index",
+    "canonical": "https://joindeleteme.com/do-not-call-list/"
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "13 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "do-not-call-list",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

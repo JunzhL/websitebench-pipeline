@@ -1,0 +1,89 @@
+{
+  "unit": "policies",
+  "checkpoint": "policies.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://privacy.joindeleteme.com/policies?name=terms-of-service",
+  "requested_url": "https://privacy.joindeleteme.com/policies?name=terms-of-service",
+  "final_url": "https://privacy.joindeleteme.com/policies?name=terms-of-service",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:03:39Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "DeleteMe Privacy Center",
+  "h1": [
+    "",
+    "Terms of Service",
+    "DeleteMe Users",
+    "Using DeleteMe \u2013 All DeleteMe Users",
+    "Your Privacy",
+    "Individual Users",
+    "Business Users"
+  ],
+  "body_text_len": 15319,
+  "frames": 3,
+  "frame_sha256": [
+    "6c7c703e952f28c8aab8cbd969b404b07971bc651a8fb9bb8e2cb7023fc52ea3",
+    "6c7c703e952f28c8aab8cbd969b404b07971bc651a8fb9bb8e2cb7023fc52ea3",
+    "6c7c703e952f28c8aab8cbd969b404b07971bc651a8fb9bb8e2cb7023fc52ea3"
+  ],
+  "frames_identical": true,
+  "reference_count": 55,
+  "resource_count": 84,
+  "observations": {
+    "title": "DeleteMe Privacy Center",
+    "h1": [
+      "",
+      "Terms of Service",
+      "DeleteMe Users",
+      "Using DeleteMe \u2013 All DeleteMe Users",
+      "Your Privacy",
+      "Individual Users",
+      "Business Users"
+    ],
+    "body_text_len": 15319,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 3,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 0,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [],
+    "meta_robots": null,
+    "canonical": null
+  },
+  "non_get_aborted": {
+    "count": 0,
+    "by_method": {},
+    "urls": []
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "1 console error(s) during load; first: Refused to apply style from 'https://privacy.joindeleteme.com/-' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME ch"
+  ],
+  "route_id": "policies",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Refused to apply style from 'https://privacy.joindeleteme.com/-' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME ch"
+  ]
+}

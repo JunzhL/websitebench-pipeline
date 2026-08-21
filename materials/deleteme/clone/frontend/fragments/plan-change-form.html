@@ -1,0 +1,14 @@
+<!--
+  Plan and cadence change. Clone-local inference: the source exposes this only
+  inside an account, which requires a purchase this run may not make. The option
+  list is generated from backend/catalogue.py, so every figure shown is derived
+  from the same integer minor units the plan grid uses.
+-->
+<form class="dm-account__form" method="post" action="/account/plan" data-plan-change-form>
+  <input type="hidden" name="subscription_id" value="$subscription_id">
+  <p class="dm-field">
+    <label for="dm-plan-selection">Plan</label>
+    <select id="dm-plan-selection" name="selection">$options</select>
+  </p>
+  <button type="submit" data-plan-change-submit>Change plan</button>
+</form>

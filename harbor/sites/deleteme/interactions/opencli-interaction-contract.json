@@ -1,0 +1,214 @@
+{
+  "generated_from": "materials/deleteme/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "checkout": {
+      "failure_paths": [
+        "checkout-validation"
+      ],
+      "label": "deleteme checkout (derived draft)",
+      "local_semantics": [
+        "The clone never accepts card data. The source collects card details in a Stripe-hosted iframe; the clone offers only a named sandbox scenario, and any request…",
+        "Checkout collects exactly the identity the source collects - first name, last name, email address and one postal address - and no age, phone, previous names…",
+        "Every seeded person, address, phone and relative in the candidate is synthetic and non-resolvable (example.invalid domains, fictional names, placeholder…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "steps": [
+        {
+          "command": "state",
+          "id": "checkout",
+          "intent": "Exercise clone check checkout (GET /checkout).",
+          "observation_id": "deleteme_checkout",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Purchase & Start Deleting"
+          },
+          "route": "checkout"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "qty": "1",
+            "term": "1"
+          },
+          "id": "checkout-validation",
+          "intent": "Exercise clone check checkout.validation (POST /checkout).",
+          "observation_id": "deleteme_checkout_validation",
+          "required_state": {
+            "text_absent": "Payment Successful!",
+            "visible": "Please enter your first name"
+          },
+          "route": "checkout",
+          "selector": "form[action=\"/checkout\"]"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "address": "9 Placeholder Court, Springfield, EX 00003",
+            "agree_billing": "yes",
+            "agree_terms": "yes",
+            "attempt": "harbor-declined",
+            "email": "harbor-declined@example.invalid",
+            "firstName": "Robin",
+            "lastName": "Vale",
+            "qty": "1",
+            "scenario": "sandbox-declined",
+            "term": "1"
+          },
+          "id": "checkout-declined",
+          "intent": "Exercise clone check checkout.declined (POST /checkout).",
+          "observation_id": "deleteme_checkout_declined",
+          "required_state": {
+            "text_absent": "Payment Successful!",
+            "visible": "Your bank declined this card"
+          },
+          "route": "checkout",
+          "selector": "form[action=\"/checkout\"]"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "address": "9 Placeholder Court, Springfield, EX 00003",
+            "agree_billing": "yes",
+            "agree_terms": "yes",
+            "attempt": "harbor-approved",
+            "email": "harbor-buyer@example.invalid",
+            "firstName": "Robin",
+            "lastName": "Vale",
+            "qty": "1",
+            "scenario": "sandbox-approved",
+            "term": "2"
+          },
+          "id": "checkout-approved",
+          "intent": "Exercise clone check checkout.approved (POST /checkout).",
+          "observation_id": "deleteme_checkout_approved",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Payment Successful!"
+          },
+          "route": "checkout",
+          "selector": "form[action=\"/checkout\"]"
+        },
+        {
+          "command": "state",
+          "id": "checkout-complete",
+          "intent": "Exercise clone check checkout.complete (GET /checkout/complete).",
+          "observation_id": "deleteme_checkout_complete",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Payment Successful!"
+          },
+          "route": "checkout/complete"
+        }
+      ],
+      "tier": "p0"
+    },
+    "subscription-management": {
+      "failure_paths": [],
+      "label": "deleteme subscription management (derived draft)",
+      "local_semantics": [
+        "The clone never accepts card data. The source collects card details in a Stripe-hosted iframe; the clone offers only a named sandbox scenario, and any request…",
+        "Checkout collects exactly the identity the source collects - first name, last name, email address and one postal address - and no age, phone, previous names…",
+        "Every seeded person, address, phone and relative in the candidate is synthetic and non-resolvable (example.invalid domains, fictional names, placeholder…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "session": {
+        "fields": {
+          "email": "avery.quill@example.invalid",
+          "password": "OfflineClone!2026"
+        },
+        "method": "POST",
+        "notes": "Derived from tools/frontend_samples.json session_setup. These are public local fixture values, not credentials.",
+        "route": "login"
+      },
+      "steps": [
+        {
+          "command": "state",
+          "id": "subscription-management-dashboard",
+          "intent": "Exercise clone check subscription-management.dashboard (GET /account).",
+          "observation_id": "deleteme_subscription-management_dashboard",
+          "required_state": {
+            "text_absent": "Page not found",
+            "visible": "Removal activity"
+          },
+          "route": "account"
+        },
+        {
+          "command": "state",
+          "id": "subscription-management-profile",
+          "intent": "Exercise clone check subscription-management.profile (GET /account/profile).",
+          "observation_id": "deleteme_subscription-management_profile",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Save removal profile"
+          },
+          "route": "account/profile"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "aliases": "A. Quill",
+            "birth_year": "1988",
+            "other_addresses": "10 Placeholder Road",
+            "phone": "202-555-0142",
+            "previous_names": "Avery Example",
+            "relatives": "Rowan Example"
+          },
+          "id": "subscription-management-profile-save",
+          "intent": "Exercise clone check subscription-management.profile-save (POST /account/profile).",
+          "observation_id": "deleteme_subscription-management_profile-save",
+          "required_state": {
+            "body_contains": "value=\"Avery Example\"",
+            "text_absent": "Page not found"
+          },
+          "route": "account/profile",
+          "selector": "form[action=\"/account/profile\"]"
+        },
+        {
+          "command": "state",
+          "id": "subscription-management-plan",
+          "intent": "Exercise clone check subscription-management.plan (GET /account/plan).",
+          "observation_id": "deleteme_subscription-management_plan",
+          "required_state": {
+            "text_absent": "No subscription.",
+            "visible": "Change plan"
+          },
+          "route": "account/plan"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "selection": "2-1",
+            "subscription_id": "sub-primary-0001"
+          },
+          "id": "subscription-management-plan-change",
+          "intent": "Exercise clone check subscription-management.plan-change (POST /account/plan).",
+          "observation_id": "deleteme_subscription-management_plan-change",
+          "required_state": {
+            "text_absent": "unknown-selection",
+            "visible": "$209.00"
+          },
+          "route": "account/plan",
+          "selector": "form[action=\"/account/plan\"]"
+        }
+      ],
+      "tier": "p1"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "deleteme"
+}

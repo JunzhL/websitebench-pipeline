@@ -1,0 +1,22 @@
+name: diagnostics (deleteme)
+on:
+  pull_request:
+    paths:
+      - materials/deleteme/**
+      - .github/workflows/tests-deleteme.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/deleteme/**
+      - .github/workflows/tests-deleteme.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-deleteme-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: deleteme

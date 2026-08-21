@@ -1,0 +1,50 @@
+{
+  "backend_profile": "full",
+  "capabilities": [
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "structural-only",
+      "id": "accounts",
+      "rationale": "The source creates an account after purchase from an emailed password-set link; the clone must own subscriber identity to serve the dashboard the traces describe."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "directly-observed",
+      "id": "password-recovery",
+      "rationale": "app.joindeleteme.com/password/forgot is a real, observed surface with its own copy and its own return path (trace ht-18)."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "structural-only",
+      "id": "transactional-mail",
+      "rationale": "The observed confirmation copy promises an email carrying a link to set a password; the clone renders that mail into its local outbox only and never sends."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "directly-observed",
+      "id": "orders",
+      "rationale": "Checkout creates a subscription order whose amount, term and quantity must persist for the confirmation and history surfaces."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "directly-observed",
+      "id": "checkout",
+      "rationale": "The P0 journey is the paid checkout for the Single plan (traces ht-02, ht-23)."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "directly-observed",
+      "id": "payments",
+      "rationale": "Payment is required to complete the P0 journey. The source uses Stripe-hosted iframes; the clone uses the local-sandbox adapter only, and reproduces no card field."
+    },
+    {
+      "applicability": "in-scope",
+      "evidence_kind": "structural-only",
+      "id": "database",
+      "rationale": "Subscriptions, removal records, reports and billing history must persist deterministically across a reset."
+    }
+  ],
+  "runtime_required": true,
+  "schema_version": "offline-clone.contribution-backend-scope.v1",
+  "site_id": "deleteme"
+}

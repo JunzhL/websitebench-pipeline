@@ -1,0 +1,102 @@
+{
+  "unit": "security",
+  "checkpoint": "security.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/security/",
+  "requested_url": "https://joindeleteme.com/security/",
+  "final_url": "https://joindeleteme.com/security/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:01:07Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Security - DeleteMe",
+  "h1": [
+    "Privacy is at our core, with a comprehensive, holistic approach to cybersecurity and individual privacy"
+  ],
+  "body_text_len": 6306,
+  "frames": 3,
+  "frame_sha256": [
+    "4810180ce3e33594289ed7a5499186da1aa078c92756db6ba68eb32f68782564",
+    "4810180ce3e33594289ed7a5499186da1aa078c92756db6ba68eb32f68782564",
+    "4810180ce3e33594289ed7a5499186da1aa078c92756db6ba68eb32f68782564"
+  ],
+  "frames_identical": true,
+  "reference_count": 64,
+  "resource_count": 103,
+  "observations": {
+    "title": "Security - DeleteMe",
+    "h1": [
+      "Privacy is at our core, with a comprehensive, holistic approach to cybersecurity and individual privacy"
+    ],
+    "body_text_len": 6306,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 41,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/security/"
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "13 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "security",
+  "state": "loaded",
+  "priority": "p1",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}
