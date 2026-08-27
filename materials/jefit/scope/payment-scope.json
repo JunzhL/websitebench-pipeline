@@ -1,0 +1,108 @@
+{
+  "schema_version": "websitebench.payment-scope.v2",
+  "proposal_id": "jefit-payment-scope-1",
+  "site_id": "jefit",
+  "display_name": "JEFIT",
+  "current_inputs": [
+    {
+      "path": "materials/jefit/clone.yaml",
+      "sha256": "4104252e7ca008b19b02139fe3ce0b5c6a96dc86a24aed687bde0597585389e9"
+    },
+    {
+      "path": "materials/jefit/scope/purpose.json",
+      "sha256": "900584fc420ff0ead790ba8e9fa6cd0549946aa730fbadec94beace572c91a2a"
+    },
+    {
+      "path": "materials/jefit/scope/invariants.json",
+      "sha256": "a2fa9aa5faa625a8da24ab4f45187425a2169dcafad3ea19770ab84eb83db4a4"
+    },
+    {
+      "path": "materials/jefit/backend/runtime.json",
+      "sha256": "9c944c628bcf3503bc74ac51a4818cbcfdc3323592e1878aa32dde9a38d7579a"
+    },
+    {
+      "path": "materials/jefit/backend/model.json",
+      "sha256": "f0ea6631d7d631a13148c5da3b56081a69410a20d13a2b8d66c2d598c90cbfd4"
+    },
+    {
+      "path": "websitebench/capability-packs/payment/pack.json",
+      "sha256": "2ef2f60b52cf4088709efb4053c5d545b79cf2ffd165c0f5db4e4fdfcf72b986"
+    }
+  ],
+  "profile_change": {
+    "audit_mode": "manifest-native-audit",
+    "overlay_pack_id": "payment",
+    "candidate_blocker_id": null,
+    "retained_blocker_ids": []
+  },
+  "frozen_journeys": [
+    {
+      "id": "membership.payment.local-sandbox.success",
+      "description": "An authenticated free member opens the Elite upgrade, picks the monthly or annual plan, and submits one opaque approved sandbox scenario. The server derives the amount from its plan table, consumes the approval, inserts one subscription order, and flips the member's membership state to Elite in a single site-bound SQLite transaction; the new state is visible in the settings Account view. No credential field is collected."
+    },
+    {
+      "id": "membership.payment.local-sandbox.retry",
+      "description": "A declined or retryable sandbox scenario creates a durable payment attempt but no subscription order and no membership change; a later approved scenario for the same member and plan converges to exactly one order and one Elite membership state. Duplicate and concurrent submissions with the same idempotency key converge to the same single order."
+    }
+  ],
+  "frozen_entities": [
+    "member-account",
+    "subscription-order",
+    "membership-state",
+    "routine",
+    "workout-session",
+    "sandbox-approval"
+  ],
+  "payment_contract": {
+    "default_adapter": "local-sandbox",
+    "optional_adapter": null,
+    "live_payments_allowed": false,
+    "accepted_client_payment_input": "opaque-scenario-id-only",
+    "credential_fields_allowed": false,
+    "currency": "USD",
+    "amount_source": "Server-side integer USD minor units from the backend ELITE_PLANS table: Elite monthly 1299; Elite Annual first-year 5249 (25%OffFirstYear coupon applied to the 6999 renewal list price). The client cannot supply or influence amount, currency, or coupon.",
+    "owner": "The authenticated member's site-bound auth subject id; every payment flow, attempt, approval consumption, subscription order and membership change stays bound to that member.",
+    "fingerprint": "SHA-256 over the canonical site-and-plan subject string 'jefit-elite-<plan>'; the payments seam re-verifies this fingerprint together with the owner, server-derived amount and USD currency at intent creation, attempt and consumption, so a stale fingerprint or foreign owner cannot consume an approval.",
+    "final_commit": "purchase_membership() runs create_intent, attempt, consume_approval, INSERT jefit_orders and the jefit_users membership-state UPDATE on one SiteBackend SQLite connection and transaction; declined and retryable attempts write no order and no membership change, and rollback leaves the approval unconsumed with no order or membership state."
+  },
+  "mail_brand": {
+    "shared_bare_sender_domain_allowed": true,
+    "sender_display_name": "JEFIT",
+    "purposes": [
+      "registration",
+      "password-reset"
+    ],
+    "must_differ_from": [
+      {
+        "site_id": "aspca-pet-insurance",
+        "fields": [
+          "sender_display_name",
+          "subject",
+          "lead",
+          "body",
+          "footer"
+        ]
+      }
+    ]
+  },
+  "site_isolation": {
+    "database_scope": "site-exclusive",
+    "site_binding_required": true,
+    "session_cookie_name": "__Host-websitebench-jefit-session",
+    "redis_namespace": "site/jefit",
+    "webhook_secret_scope": "site-exclusive",
+    "cross_site_account_sharing": false
+  },
+  "proof_obligations": [
+    "Only the opaque configured sandbox scenario ids (sandbox-approved, sandbox-declined, sandbox-retry) are accepted; card, CVC, expiry, bank and every other credential-shaped field, plus client-supplied amounts, currency, owner, fingerprint, flow ids and provider tokens, are rejected and never stored or logged.",
+    "Amounts use integer USD minor units derived on the server from the ELITE_PLANS table (monthly 1299; annual first-year 5249 against the 6999 renewal list price).",
+    "Duplicate and concurrent approved submissions with the same idempotency key converge to one consumed attempt, one subscription order, and one Elite membership state.",
+    "Declined and retryable attempts create no subscription order and no membership change, while a later approved attempt converges to the single valid order.",
+    "A stale fingerprint or foreign owner cannot consume an approval, create an order, or change membership state.",
+    "Approval consumption, the jefit_orders insert, and the membership-state update roll back together after any final-state failure.",
+    "Reset and reseed reproduce byte-stable site-local business state; backup and restart preserve orders and membership state with their site binding.",
+    "The only adapter is local-sandbox across every deployment profile; stripe_test, live payments, SMTP and production mail requests remain unavailable.",
+    "Cross-site databases, accounts, sessions, payment flows, attempts, orders and mail jobs cannot be shared or replayed against another site."
+  ],
+  "scope_subject_sha256": "fcd902320b394aba1c0216ca6ce123dfc52b1cd4c38a48fcda9ac564c2515701"
+}

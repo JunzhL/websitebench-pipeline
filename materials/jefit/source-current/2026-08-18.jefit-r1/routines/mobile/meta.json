@@ -1,0 +1,48 @@
+{
+  "checkpoint": "routines",
+  "family": "discovery",
+  "priority": "P0",
+  "viewport": "mobile",
+  "requested_url": "https://www.jefit.com/routines",
+  "final_url": "https://www.jefit.com/routines",
+  "http_status": 200,
+  "title": "Workout Routine Database - JEFIT",
+  "body_text_len": 7193,
+  "frames": 3,
+  "frame_sha256": [
+    "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+    "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+    "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989"
+  ],
+  "frames_identical": true,
+  "link_count": 61,
+  "resource_count": 117,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 7135,
+      "width": 390,
+      "height": 897
+    },
+    "form": {
+      "selector": "form",
+      "x": 24,
+      "y": 1041,
+      "width": 272,
+      "height": 48
+    },
+    "document_height": 8032
+  }
+}

@@ -1,0 +1,22 @@
+name: diagnostics (jefit)
+on:
+  pull_request:
+    paths:
+      - materials/jefit/**
+      - .github/workflows/tests-jefit.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/jefit/**
+      - .github/workflows/tests-jefit.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-jefit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: jefit

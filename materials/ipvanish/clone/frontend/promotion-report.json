@@ -1,0 +1,267 @@
+{
+ "left_pristine": [
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/checkout.ipvanish.com/assets/img/ipvanish-favicon.ico"
+  },
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.q1793f04d41.svg"
+  },
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/webfonts/fa-brands-400.svg"
+  },
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/webfonts/fa-regular-400.svg"
+  },
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/otter-blocks/assets/fontawesome/webfonts/fa-solid-900.svg"
+  },
+  {
+   "note": "already satisfies inspect_asset and holds no root-relative reference; evidence-only in the manifest and referenced by no captured stylesheet",
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/wp-security-hardening/modules/inc/fa/fonts/fontawesome-webfont.qac4398a373.svg"
+  }
+ ],
+ "promoted": [
+  {
+   "bytes": 366710,
+   "inspect": "passed",
+   "promotion_reason": "41 root-relative reference(s) that resolve against the clone origin rather than the mirror",
+   "references_localized": 50,
+   "references_uncaptured": 4,
+   "root_relative_references": 41,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/checkout.ipvanish.com/styles.6a615e5503713db2.css",
+   "vendor": "/static/site/vendor/localized-79ce63d532141b0a.css"
+  },
+  {
+   "bytes": 25694,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 40,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css.q1f200bcf43.css",
+   "vendor": "/static/site/vendor/localized-6de55f31e4fc6eeb.css"
+  },
+  {
+   "bytes": 25694,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 40,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css.q96adf0668c.css",
+   "vendor": "/static/site/vendor/localized-6de55f31e4fc6eeb.css"
+  },
+  {
+   "bytes": 38541,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 60,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css.qb784f7e403.css",
+   "vendor": "/static/site/vendor/localized-fa361fdfbb09ae3e.css"
+  },
+  {
+   "bytes": 38541,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 60,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css.qd99c356a6f.css",
+   "vendor": "/static/site/vendor/localized-fa361fdfbb09ae3e.css"
+  },
+  {
+   "bytes": 13247,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 20,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css.qf88b18c8aa.css",
+   "vendor": "/static/site/vendor/localized-1da3e49994cbea52.css"
+  },
+  {
+   "bytes": 2116,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 5,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/fonts.googleapis.com/css2.qefe58494cb.css",
+   "vendor": "/static/site/vendor/localized-a35930d9a0f4770b.css"
+  },
+  {
+   "bytes": 6869,
+   "inspect": "passed",
+   "promotion_reason": "2 root-relative reference(s) that resolve against the clone origin rather than the mirror",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 2,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/sso.ipvanish.com/_next/static/css/8896a484847c63b4.css",
+   "vendor": "/static/site/vendor/localized-46d8615c635f184c.css"
+  },
+  {
+   "bytes": 9344,
+   "inspect": "passed",
+   "promotion_reason": "2 root-relative reference(s) that resolve against the clone origin rather than the mirror",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 2,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/sso.ipvanish.com/_next/static/css/99c492df700bf3b9.css",
+   "vendor": "/static/site/vendor/localized-e92f50ab7f0f7fda.css"
+  },
+  {
+   "bytes": 4824,
+   "inspect": "passed",
+   "promotion_reason": "2 root-relative reference(s) that resolve against the clone origin rather than the mirror",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 2,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/sso.ipvanish.com/_next/static/css/d8c9111271540f2f.css",
+   "vendor": "/static/site/vendor/localized-6d47a86e7297c48d.css"
+  },
+  {
+   "bytes": 41650,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 65,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/astra-local-fonts/astra-local-fonts.css",
+   "vendor": "/static/site/vendor/localized-758b575daa33eb53.css"
+  },
+  {
+   "bytes": 8441,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 1,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/dark-web-monitoring/assets/css/style.css",
+   "vendor": "/static/site/vendor/localized-453990c1ef840507.css"
+  },
+  {
+   "bytes": 213291,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 6,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/plugins/formidable/css/formidableforms.css",
+   "vendor": "/static/site/vendor/localized-d7a8205e7d3e4671.css"
+  },
+  {
+   "bytes": 34894,
+   "inspect": "passed",
+   "promotion_reason": "7 root-relative reference(s) that resolve against the clone origin rather than the mirror",
+   "references_localized": 7,
+   "references_uncaptured": 0,
+   "root_relative_references": 7,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/themes/astra-child/style.css",
+   "vendor": "/static/site/vendor/localized-4d80ea733414edd5.css"
+  },
+  {
+   "bytes": 125974,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-10692-1784239524.css",
+   "vendor": "/static/site/vendor/localized-a2649492ad94d81a.css"
+  },
+  {
+   "bytes": 47401,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-111461-1786062685.css",
+   "vendor": "/static/site/vendor/localized-6a067d35b4843b88.css"
+  },
+  {
+   "bytes": 42443,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 2,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-145113-1784302009.css",
+   "vendor": "/static/site/vendor/localized-9fef713501a62d72.css"
+  },
+  {
+   "bytes": 63363,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 1,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-163333-1783968694.css",
+   "vendor": "/static/site/vendor/localized-0c3ded91d6aa843c.css"
+  },
+  {
+   "bytes": 24075,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 3,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-164144-1783968695.css",
+   "vendor": "/static/site/vendor/localized-3137ee2c43075936.css"
+  },
+  {
+   "bytes": 62637,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 1,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-199245-1786197370.css",
+   "vendor": "/static/site/vendor/localized-965b2a9bea37e0d4.css"
+  },
+  {
+   "bytes": 88770,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 1,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-2021-1786212371.css",
+   "vendor": "/static/site/vendor/localized-0b9865613ac8fcff.css"
+  },
+  {
+   "bytes": 95833,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 4,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-2854-1783968696.css",
+   "vendor": "/static/site/vendor/localized-223052b9fc61847e.css"
+  },
+  {
+   "bytes": 19647,
+   "inspect": "passed",
+   "promotion_reason": "CSS asset contains an external runtime reference",
+   "references_localized": 1,
+   "references_uncaptured": 0,
+   "root_relative_references": 0,
+   "runtime_path": "clone/static/assets/2026-08-19.ipvanish-r1/www.ipvanish.com/wp-content/uploads/themeisle-gutenberg/post-v2-608-1783968668.css",
+   "vendor": "/static/site/vendor/localized-0f0131ea9804772a.css"
+  }
+ ],
+ "rewritten_files": 40,
+ "uncaptured_reference_keys": [
+  "checkout.ipvanish.com/assets/fonts/OpenSans-Bold/OpenSans-Bold.eot",
+  "checkout.ipvanish.com/assets/fonts/OpenSans-Regular/OpenSans-Regular.eot",
+  "checkout.ipvanish.com/assets/img/cc-logo.svg",
+  "checkout.ipvanish.com/assets/img/down-chevron.svg"
+ ]
+}

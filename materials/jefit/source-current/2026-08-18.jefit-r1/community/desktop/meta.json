@@ -1,0 +1,42 @@
+{
+  "checkpoint": "community",
+  "family": "community-legacy",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/community",
+  "final_url": "https://www.jefit.com/community/",
+  "http_status": 200,
+  "title": "Jefit Community | Jefit - Best Android and iPhone Workout, Fitness, Exercise and Bodybuilding App | Best Workout Tracking Software",
+  "body_text_len": 1322,
+  "frames": 3,
+  "frame_sha256": [
+    "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+    "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+    "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f"
+  ],
+  "frames_identical": true,
+  "link_count": 60,
+  "resource_count": 86,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 75
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1513,
+      "width": 1440,
+      "height": 360
+    },
+    "form": null,
+    "document_height": 1874
+  }
+}

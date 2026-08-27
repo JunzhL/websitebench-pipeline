@@ -1,0 +1,23 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "draft",
+  "purpose_id": "ipvanish-vpn-subscription",
+  "statement": "Help privacy-seeking consumers compare IPVanish VPN plans across billing periods and tiers, choose one, and reach an activated subscription — reproduced offline as the marketing and pricing tree, the checkout funnel through its account registration form with a clone-local sandbox payment, the sign-in and password-recovery entries, public support, and a disclosed clone-local subscriber dashboard.",
+  "primary_actor_ids": ["visitor", "subscriber"],
+  "mainline_journey_ids": [
+    "compare-plans-select-annual-register",
+    "browse-compare-plans",
+    "plan-tier-and-options",
+    "signin-entry"
+  ],
+  "out_of_scope": [
+    "localized country trees (/au, /ca, /de, /es, /fi, /fr, /gb, /ie, /it, /nl, /no, /pl, /pt, /pt-br, /se), which duplicate the frozen en-US tree at roughly 16-19 pages each",
+    "individual blog posts, blog category and author pages (the index alone is in scope)",
+    "the ~87 individual /vpn-locations/* pages and 14 of the 15 /vpn-setup/* pages (one representative each is frozen)",
+    "real payment execution and any live purchase: the candidate accepts only opaque local-sandbox scenario identifiers and never a card, wallet or bank credential",
+    "third-party services at runtime — Zuora and Checkout.com hosted payment pages, PayPal / Apple Pay / Google Pay / Amazon Pay wallets, Zendesk support and chat, Trustpilot, the Ziff Davis consent manager, Google Tag Manager, Impact.com, Visual Website Optimizer and Sift — which are rendered per captured source markup but perform no remote request",
+    "the free security tools' live behaviour (dark-web scan, link and QR checkers, speed test), which query remote services; the clone renders their pages with deterministic seeded results",
+    "native mobile, router, TV and Vision Pro applications, and any app-store purchase path",
+    "affiliate, press and partner portals beyond their linked marketing pages"
+  ]
+}

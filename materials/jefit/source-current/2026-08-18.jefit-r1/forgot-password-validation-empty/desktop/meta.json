@@ -1,0 +1,43 @@
+{
+  "checkpoint": "forgot-password-validation-empty",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/login/forgot-password",
+  "http_status": null,
+  "title": "Reset Your Password - JEFIT",
+  "body_text_len": 538,
+  "frames": 3,
+  "frame_sha256": [
+    "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+    "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+    "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 560,
+      "y": 264,
+      "width": 320,
+      "height": 125
+    },
+    "document_height": 900
+  },
+  "interaction": "clicked 'Send reset link' with empty email (non-GET aborted); records client-side validation"
+}

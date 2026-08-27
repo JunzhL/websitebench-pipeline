@@ -1,0 +1,38 @@
+{
+  "checkpoint": "sso-recovery",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://sso.ipvanish.com/reset-password/",
+  "final_url": "https://sso.ipvanish.com/reset-password/",
+  "http_status": null,
+  "title": "IPVanish - Reset password",
+  "body_text_len": 211,
+  "frames": 3,
+  "frame_sha256": [
+    "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+    "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+    "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": null,
+    "nav": null,
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 681,
+      "y": 403,
+      "width": 400,
+      "height": 137
+    },
+    "document_height": 900
+  },
+  "interaction": "clicked 'Forgot password?'; recovery view reached at https://sso.ipvanish.com/reset-password/ (the route requires the trailing slash -- /reset-password without it 403s)"
+}

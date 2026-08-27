@@ -1,0 +1,19 @@
+<!-- Clone-local plan change. A plan change is charged through the same local
+     sandbox as checkout, so no card-capable field exists here either.
+
+     In a template rather than in app.py so exactly one file under clone/
+     declares `method="post" action="/account/plan"`, which lets the Harbor
+     derivation resolve a form-backed submit step. The form posts to the route
+     that renders it. Substituted with string.Template; placeholders are
+     pre-escaped. -->
+<form class="ipvanish-sandbox" method="post" action="/account/plan">
+  <input type="hidden" name="subscription_id" value="$subscription_id">
+  <div class="ipvanish-sandbox__row">
+    <label for="plan-choice">Plan</label>
+    <select id="plan-choice" name="plan_id">$options</select>
+  </div>
+  <fieldset class="ipvanish-sandbox__scenarios">
+    <legend>Simulated payment outcome (local sandbox)</legend>$scenarios</fieldset>
+  <p class="ipvanish-sandbox__notice"><strong>No card is taken.</strong> A plan change is charged through the same local sandbox as checkout.</p>
+  <button type="submit" data-clone-action="change-plan">Change plan</button>
+</form>

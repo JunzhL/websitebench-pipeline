@@ -1,0 +1,42 @@
+{
+  "checkpoint": "login",
+  "family": "auth",
+  "priority": "P0",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/login",
+  "final_url": "https://www.jefit.com/login",
+  "http_status": 200,
+  "title": "Login to Jefit Dashboard - JEFIT",
+  "body_text_len": 518,
+  "frames": 3,
+  "frame_sha256": [
+    "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+    "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+    "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e"
+  ],
+  "frames_identical": true,
+  "link_count": 4,
+  "resource_count": 82,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 560,
+      "y": 196,
+      "width": 320,
+      "height": 294
+    },
+    "document_height": 900
+  }
+}

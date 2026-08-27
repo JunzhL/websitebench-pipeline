@@ -1,0 +1,43 @@
+{
+  "backend_profile": "full",
+  "capabilities": [
+    {
+      "applicability": "in-scope",
+      "id": "accounts",
+      "rationale": "Human trace texts ht-02/ht-03/ht-16/ht-17/ht-23 require registration, sign-in, and a persistent member identity. Directly observed: /login panel (username-or-email + password + Google/Apple IdP), /signup onboarding questionnaire ending in account creation, and the authenticated /my-jefit member area. Clone accounts persist in this site's own SQLite via the websitebench.site_backend seam."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "password-recovery",
+      "rationale": "ht-18 requires the Forgot Password recovery view (reset-address field, validation guidance, return-to-sign-in) without sending a reset message. Directly observed 'Forgot Password?' link on the login panel. Clone implements the recovery flow against the seam with mail confined to the local outbox."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "transactional-mail",
+      "rationale": "Directly observed: settings Account tab shows 'Unverified' email state with 'Resend Verification Link'; recovery flow implies reset mail. Clone models verification and recovery mail via seam purposes; real delivery stays disabled (REAL_EMAIL_AUTHORIZED=false), local outbox only in offline profiles."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "orders",
+      "rationale": "Task 539 (ht-02/ht-23) creates an Elite Annual subscription order. Directly observed: in-app plan modal, /elite/checkout?sub={monthly,yearly} routes, Stripe-hosted checkout with coupon 25%OffFirstYear, and the /my-jefit/settings Account destination view where membership state must appear. The clone records the subscription order in its own SQLite in the same transaction as payment consumption."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "checkout",
+      "rationale": "The Elite upgrade checkout flow (plan selection -> checkout page -> confirmation -> settings destination view, plus cancel/back returning to /my-jefit/settings) is the P0 journey. The clone serves a clone-local checkout continuation; source evidence for the page comes from the captured Stripe-hosted checkout states."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "payments",
+      "rationale": "Payment uses the local-sandbox adapter exclusively with deterministic approved/declined/retryable scenarios accepted as opaque scenario IDs only. Card numbers, CVV, expiry, bank or wallet credentials are never accepted or stored; stripe-test is not requested (STRIPE_TEST_AUTHORIZED=false) and live payment is prohibited."
+    },
+    {
+      "applicability": "in-scope",
+      "id": "database",
+      "rationale": "Member business entities require persistence: custom routines with exercises/sets/reps/rest/order, workout session logs, progress/body metrics, goals and training preferences, notification settings, membership state, and the public exercise/routine catalog fixtures. All live in this site's exclusive SQLite reached through the generated integration seam."
+    }
+  ],
+  "runtime_required": true,
+  "schema_version": "offline-clone.contribution-backend-scope.v1",
+  "site_id": "jefit"
+}

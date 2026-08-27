@@ -1,0 +1,43 @@
+{
+  "checkpoint": "signup-step-07",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/signup",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 568,
+  "frames": 3,
+  "frame_sha256": [
+    "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+    "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+    "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 400,
+      "y": 172,
+      "width": 640,
+      "height": 368
+    },
+    "document_height": 900
+  },
+  "interaction": "advanced questionnaire by choosing 'New to fitness\nNo experience in structur+Continue'"
+}

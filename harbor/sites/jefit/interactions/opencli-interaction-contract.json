@@ -1,0 +1,127 @@
+{
+  "generated_from": "materials/jefit/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "checkout": {
+      "failure_paths": [],
+      "label": "jefit checkout (derived draft)",
+      "local_semantics": [
+        "Every clone page renders with zero runtime requests to non-local origins; all assets are vendored under clone/static/.",
+        "Protected /my-jefit routes redirect anonymous browsers to /login?redirect=<path>; authenticated visits to /login redirect to /my-jefit; sessions are __Host-…",
+        "The Elite upgrade consumes a local-sandbox payment approval and writes the subscription order and membership state in one SQLite transaction; declined creates…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "session": {
+        "fields": {
+          "password": "Demo-Pass-2026!",
+          "username": "jefitdemo"
+        },
+        "method": "POST",
+        "notes": "Derived from tools/frontend_samples.json session_setup. These are public local fixture values, not credentials.",
+        "route": "login"
+      },
+      "steps": [
+        {
+          "command": "state",
+          "id": "checkout",
+          "intent": "Exercise clone check checkout (GET /elite/checkout).",
+          "observation_id": "jefit_checkout",
+          "required_state": {
+            "visible": "Simulated approval"
+          },
+          "route": "elite/checkout"
+        },
+        {
+          "command": "state",
+          "id": "checkout-review",
+          "intent": "Exercise clone check checkout.review (GET /elite/checkout).",
+          "observation_id": "jefit_checkout_review",
+          "required_state": {
+            "visible": "Subscribe"
+          },
+          "route": "elite/checkout"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "scenario_id": "sandbox-approved",
+            "sub": "yearly"
+          },
+          "id": "checkout-submit",
+          "intent": "Exercise clone check checkout.submit (POST /elite/checkout).",
+          "observation_id": "jefit_checkout_submit",
+          "required_state": {
+            "visible": "Account Type"
+          },
+          "route": "elite/checkout",
+          "selector": "form[action=\"/elite/checkout\"]"
+        }
+      ],
+      "tier": "p1"
+    },
+    "login": {
+      "failure_paths": [],
+      "label": "jefit login (derived draft)",
+      "local_semantics": [
+        "Every clone page renders with zero runtime requests to non-local origins; all assets are vendored under clone/static/.",
+        "Protected /my-jefit routes redirect anonymous browsers to /login?redirect=<path>; authenticated visits to /login redirect to /my-jefit; sessions are __Host-…",
+        "The Elite upgrade consumes a local-sandbox payment approval and writes the subscription order and membership state in one SQLite transaction; declined creates…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "steps": [
+        {
+          "command": "state",
+          "id": "login",
+          "intent": "Exercise clone check login (GET /login).",
+          "observation_id": "jefit_login",
+          "required_state": {
+            "visible": "Log In"
+          },
+          "route": "login"
+        },
+        {
+          "command": "state",
+          "id": "login-recovery-link",
+          "intent": "Exercise clone check login.recovery-link (GET /login).",
+          "observation_id": "jefit_login_recovery-link",
+          "required_state": {
+            "visible": "Forgot Password?"
+          },
+          "route": "login"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "password": "Demo-Pass-2026!",
+            "username": "jefitdemo"
+          },
+          "id": "login-submit",
+          "intent": "Exercise clone check login.submit (POST /login).",
+          "observation_id": "jefit_login_submit",
+          "required_state": {
+            "visible": "My Circle"
+          },
+          "route": "login",
+          "selector": "form[action=\"/login\"]"
+        }
+      ],
+      "tier": "p0"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "jefit"
+}

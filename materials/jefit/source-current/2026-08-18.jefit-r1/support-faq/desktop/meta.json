@@ -1,0 +1,42 @@
+{
+  "checkpoint": "support-faq",
+  "family": "support",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/support/faq",
+  "final_url": "https://www.jefit.com/support/faq",
+  "http_status": 200,
+  "title": "FAQ - JEFIT",
+  "body_text_len": 12742,
+  "frames": 3,
+  "frame_sha256": [
+    "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+    "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+    "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb"
+  ],
+  "frames_identical": true,
+  "link_count": 37,
+  "resource_count": 82,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 9419,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 9940
+  }
+}

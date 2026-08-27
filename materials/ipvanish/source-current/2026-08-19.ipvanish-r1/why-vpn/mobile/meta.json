@@ -1,0 +1,49 @@
+{
+  "checkpoint": "why-vpn",
+  "family": "marketing",
+  "priority": "P1",
+  "viewport": "mobile",
+  "requested_url": "https://www.ipvanish.com/why-vpn/",
+  "final_url": "https://www.ipvanish.com/why-vpn/",
+  "http_status": 200,
+  "title": "Why Do I Need a VPN? | IPVanish",
+  "body_text_len": 3452,
+  "frames": 3,
+  "frame_sha256": [
+    "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757",
+    "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757",
+    "d7f2a81f72d7fe0c8bd4ee9e8b41ec26f611a69e068c82ede3576c4e4abc9757"
+  ],
+  "frames_identical": true,
+  "link_count": 181,
+  "resource_count": 116,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 54
+    },
+    "nav": null,
+    "main": {
+      "selector": "main",
+      "x": 20,
+      "y": 54,
+      "width": 350,
+      "height": 7034
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 7088,
+      "width": 390,
+      "height": 1123
+    },
+    "form": null,
+    "document_height": 8211
+  }
+}

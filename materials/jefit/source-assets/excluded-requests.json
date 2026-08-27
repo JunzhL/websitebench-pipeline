@@ -1,0 +1,147 @@
+{
+  "capture_id": "2026-08-18.jefit-r1",
+  "created_at": "2026-08-18T15:24:20Z",
+  "note": "Analytics/consent/ad/identity-provider requests observed during capture; never fetched or mirrored (out-of-scope clone runtime per scope/purpose.json). Logged here, query-stripped, because offline-clone.assets.v1 forbids extra manifest keys.",
+  "excluded": [
+    {
+      "url": "https://accounts.google.com/gsi/button",
+      "reason": "live identity provider (clone runtime is local)"
+    },
+    {
+      "url": "https://accounts.google.com/gsi/client",
+      "reason": "live identity provider (clone runtime is local)"
+    },
+    {
+      "url": "https://accounts.google.com/gsi/style",
+      "reason": "live identity provider (clone runtime is local)"
+    },
+    {
+      "url": "https://alb.reddit.com/rp.gif",
+      "reason": "ad pixel"
+    },
+    {
+      "url": "https://api2.amplitude.com/2/httpapi",
+      "reason": "product-analytics beacon"
+    },
+    {
+      "url": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js",
+      "reason": "live identity provider (clone runtime is local)"
+    },
+    {
+      "url": "https://cdn.amplitude.com/libs/amplitude-4.0.0-min.gz.js",
+      "reason": "product-analytics beacon"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/bundle/sdk.js/",
+      "reason": "ad pixel / live identity provider"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "reason": "ad pixel / live identity provider"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/sdk.js",
+      "reason": "ad pixel / live identity provider"
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/3682827325320152",
+      "reason": "ad pixel / live identity provider"
+    },
+    {
+      "url": "https://ep1.adtrafficquality.google/getconfig/sodar",
+      "reason": "ad verification beacon"
+    },
+    {
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "reason": "ad verification beacon"
+    },
+    {
+      "url": "https://ep2.adtrafficquality.google/sodar/sodar2/255/runner.html",
+      "reason": "ad verification beacon"
+    },
+    {
+      "url": "https://fundingchoicesmessages.google.com/f/AGSKWxU6hBlEmqWSc_MtF1oe7BoHif3E3Lx90HJya8UTS909zai8Pgu3UVmtuCVxpk6EyeGa0GHeP5YwyiqtricU6-0jUuspOqwbasgbXgUYzVAihMachZStPgBse52JHQt1IY7_TMde1w==",
+      "reason": "consent management"
+    },
+    {
+      "url": "https://fundingchoicesmessages.google.com/f/AGSKWxVbaPnb5DsBGuYTppHZJ71A6E3R_pzHlDI0vvsXMVplEPC3Kn0a90Jben7L_gge_uuv4YDHPzgWh1IGTpyD2DgCtbygAZFwr57gI0csdO1K0VxG4EKnbfFieZzX90Xz0vBjHjfrTw==",
+      "reason": "consent management"
+    },
+    {
+      "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXFZkJ-PnYM6lNH8I-WsFb0KIO6TUHAO4XjcLzdYnbu_uM6U5THldgGI0Ok_hpOvTusLWPvTKjYP3l4T4ixsE6vXIf88q1tQpNfKVkdFaRMAPUFK6pC_XfP98UaOLlJ6iqI_3kH_bhFuJ9cTJMyZLnb75WnjqtYFOHcajHe2RGz-ZTJKIGJBbJiycqC/_/doubleclicktag./eporner-banner-/cashad2./ad-choices./adng.html",
+      "reason": "consent management"
+    },
+    {
+      "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXKfsP7NXL5YIfOQMXFd7YyL5DcGsUTlIyQZ8GuZ0ldGXaCVEiX60x1Udrionk5xICCehqi1QWoc0ch0d7xwcuUiaUMTQuN4RG8qD-oOrhAeWyzOVxPzPnj2kmDg7KHtGzBEMZiaQ==",
+      "reason": "consent management"
+    },
+    {
+      "url": "https://fundingchoicesmessages.google.com/i/ca-pub-2835681754103896",
+      "reason": "consent management"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/ads",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/html/r20260817/r20190131/zrt_lookup.html",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/bg/gc00flWitZZjz8qe1_LZ6jEKqKTgyg0GJmZtTMLaTnA.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202608130101/show_ads_impl.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202608140101/show_ads_impl.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/show_ads.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js",
+      "reason": "ad delivery"
+    },
+    {
+      "url": "https://pixel-config.reddit.com/pixels/a2_h5bl8fel22n0/config",
+      "reason": "ad pixel"
+    },
+    {
+      "url": "https://sr-client-cfg.amplitude.com/config",
+      "reason": "product-analytics beacon"
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-5088890.js",
+      "reason": "session-recording analytics"
+    },
+    {
+      "url": "https://www.google.com/recaptcha/api2/aframe",
+      "reason": "ad / captcha service"
+    },
+    {
+      "url": "https://www.googletagmanager.com/a",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js",
+      "reason": "tag-manager / analytics loader"
+    },
+    {
+      "url": "https://www.redditstatic.com/ads/pixel.js",
+      "reason": "ad pixel"
+    }
+  ]
+}

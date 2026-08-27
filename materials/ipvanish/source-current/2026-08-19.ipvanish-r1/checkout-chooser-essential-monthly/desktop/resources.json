@@ -1,0 +1,532 @@
+[
+  {
+    "url": "https://cdn.ziffstatic.com/jst/zdconsent.js",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://checkout.ipvanish.com/styles.6a615e5503713db2.css",
+    "initiator": "link",
+    "transfer_size": 53385
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/js/sift/eventListener.js",
+    "initiator": "script",
+    "transfer_size": 935
+  },
+  {
+    "url": "https://checkout.ipvanish.com/runtime.a0ebe032a3a0c7c9.js",
+    "initiator": "script",
+    "transfer_size": 2273
+  },
+  {
+    "url": "https://checkout.ipvanish.com/polyfills.4376692a876937e5.js",
+    "initiator": "script",
+    "transfer_size": 12309
+  },
+  {
+    "url": "https://checkout.ipvanish.com/main.70016aa248dcf63a.js",
+    "initiator": "script",
+    "transfer_size": 408901
+  },
+  {
+    "url": "https://utt.impactcdn.com/A6297258-09df-4d28-9eb4-b2433b3fcbd91.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-wallet-sdk.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-button.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KZJF7V",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.cookielaw.org/consent/893b8ea0-f7aa-47b7-a3b9-7af914ae849b/893b8ea0-f7aa-47b7-a3b9-7af914ae849b.json",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.ziffstatic.com/jst/otBannerSdk.202604.2.0.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/config",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/style",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://fast.ssqt.io/squatch-js@2",
+    "initiator": "script",
+    "transfer_size": 13834
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/translation?lang=EN",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://checkout.ipvanish.com/494.ef5eaf57d81781a5.js",
+    "initiator": "script",
+    "transfer_size": 70804
+  },
+  {
+    "url": "https://checkout.ipvanish.com/138.277971de96402cdb.js",
+    "initiator": "script",
+    "transfer_size": 85842
+  },
+  {
+    "url": "https://checkout.ipvanish.com/489.59183d578cee2538.js",
+    "initiator": "script",
+    "transfer_size": 17579
+  },
+  {
+    "url": "https://checkout.ipvanish.com/310.153a9724b041c435.js",
+    "initiator": "script",
+    "transfer_size": 301713
+  },
+  {
+    "url": "https://checkout.ipvanish.com/882.709bddd89062ab44.js",
+    "initiator": "script",
+    "transfer_size": 35111
+  },
+  {
+    "url": "https://checkout.ipvanish.com/common.2788d3999d112a5d.js",
+    "initiator": "script",
+    "transfer_size": 1639
+  },
+  {
+    "url": "https://checkout.ipvanish.com/525.b774d1966924b1e6.js",
+    "initiator": "script",
+    "transfer_size": 3274
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/fonts/OpenSans-Regular/OpenSans-Regular.woff2",
+    "initiator": "css",
+    "transfer_size": 50464
+  },
+  {
+    "url": "https://bat.bing.com/bat.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/destination?id=AW-1022345770&cx=c&gtm=4e68i1h1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.ads-twitter.com/uwt.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://js.audiohook.com/analytics.js?audiohookId=b6a36026-290c-4dac-62a4-5787288aeff9",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://dev.visualwebsiteoptimizer.com/j.php?a=665881&u=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&vn=2.1&x=true",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 5010
+  },
+  {
+    "url": "https://pixel.byspotify.com/ping.min.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.studentbeans.com/third-party/all.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/tr/pmpixel.js?t=1787270400000",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/destination?id=G-TSS8E51Y4G&cx=c&gtm=4e68i1h1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=1&ae=g&auid=937487522.1787237898&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=page_view&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&scrsrc=www.googletagmanager.com&rnd=566164079.1787237935&navt=n&npa=0&us_privacy=1YNY&ep.ads_data_redaction=0&gtm=45He68i1h1v71386749za200zd71386749xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385423&tft=1787237935298&tfd=797&fmt=8",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-TSS8E51Y4G&cx=c&gtm=4e68i1h1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.cookielaw.org/consent/893b8ea0-f7aa-47b7-a3b9-7af914ae849b/019e0d47-f69f-7edf-a3dc-8672458308c9/en.json",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=1&ae=g&auid=937487522.1787237898&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=page_view&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&scrsrc=www.googletagmanager.com&rnd=566164079.1787237935&navt=n&npa=0&us_privacy=1YNY&ep.ads_data_redaction=0&gtm=45He68i1h1v71386749za200zd71386749xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385423&tft=1787237935298&tfd=797&fmt=3",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.studentbeans.com/third-party/beansid-connect-loader.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pixels.spotify.com/v1/config/ab67571a1c85470b8342011104f433aa",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pixels.spotify.com/v1/ingest",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=3&event=%7B%7D&event_id=9c9fdea2-6bce-4131-a760-9a78f3da481a&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=08e80e14-ad9b-4ea0-96c9-61e4ca990870&pt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tw_document_href=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787237898264.400193583602427803&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=3&event=%7B%7D&event_id=9c9fdea2-6bce-4131-a760-9a78f3da481a&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=08e80e14-ad9b-4ea0-96c9-61e4ca990870&pt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tw_document_href=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787237898264.400193583602427803&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/p/action/5256207.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.ziffstatic.com/jst/otGPP.202604.2.0.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://dev.visualwebsiteoptimizer.com/collect/v.gif?cd=0&a=665881&d=checkout.ipvanish.com&u=DF7E7417A68041FBA633CA1516C6EE3D9&h=b462a7aedec7613de33c20f2b259974b&t=false",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://cdn.cookielaw.org/scripttemplates/202604.2.0/assets/otCommonStyles.css",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api.promedia.com/lead-revenue/?property_id=ID-%2067962467",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/api/custom-tags/?id=ID-67962467",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://tk.leadlabs.tv/tr/71u2cr.gif?id=ID-%2067962467&uid=1.8-guxllg8j-mt1nas3q&sid=1.8-hqqzttmz-mt1nas3r&ev=pageload&ed=&v=1.8&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rl=&ts=1787237935295&de=UTF-8&sr=1440x900&vp=1440x900&cd=24&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&bn=Chrome%20151&md=false&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F151.0.0.0%20Safari%2F537.36&tz=0&lng=en-US&utm_source=&utm_medium=&utm_term=&utm_content=&utm_campaign=",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.clarity.ms/tag/uet/5256207",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=a24dc4f8-810b-4e42-b8ed-a7ec042cb560&bo=1&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=a24dc4f8-810b-4e42-b8ed-a7ec042cb560&bo=2&evt=consent&src=default&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/action/0?ti=5256207&tm=gtm002&Ver=2&mid=a24dc4f8-810b-4e42-b8ed-a7ec042cb560&bo=3&sid=942163c09ca711f1a202bdfd53f30672&vid=9421a3209ca711f1b8204b3d8ad2cde0&vids=0&msclkid=N&pi=0&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=IPVanish%20VPN%20%E2%80%93%20Fast,%20Secure,%20and%20Private%20Browsing%20Anytime,%20Anywhere&p=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&r=&lt=575&evt=pageLoad&sv=2&asc=G&cdb=AQET&rn=12338",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=a24dc4f8-810b-4e42-b8ed-a7ec042cb560&bo=4&sid=942163c09ca711f1a202bdfd53f30672&vid=9421a3209ca711f1b8204b3d8ad2cde0&vids=0&msclkid=N&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://bat.bing.com/actionp/0?ti=5256207&tm=gtm002&Ver=2&mid=a24dc4f8-810b-4e42-b8ed-a7ec042cb560&bo=5&sid=942163c09ca711f1a202bdfd53f30672&vid=9421a3209ca711f1b8204b3d8ad2cde0&vids=0&msclkid=N&evt=consent&src=update&cdb=AQET&asc=G",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/fonts/OpenSans-Bold/OpenSans-Bold.woff2",
+    "initiator": "css",
+    "transfer_size": 52188
+  },
+  {
+    "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&businessunitId=5079581d00006400051d2aca#locale=en-US&styleHeight=110px&styleWidth=100%25&theme=light",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/page/essential-monthly/USD",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/account/payment-method",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/geo-ip",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/en.svg",
+    "initiator": "img",
+    "transfer_size": 2356
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/us.svg",
+    "initiator": "img",
+    "transfer_size": 2356
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/down_arrow.svg",
+    "initiator": "css",
+    "transfer_size": 523
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/logo/3645076a-cdcf-449d-9d85-19c928348fd6.webp",
+    "initiator": "css",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1022345770/?random=1787237935620&cv=11&fst=1787237935620&bg=ffffff&guid=ON&async=1&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rcb=4&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=4",
+    "initiator": "script",
+    "transfer_size": 3111
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/1022345770/?random=1787237935620&cv=11&fst=1787237935620&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rcb=4&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=68&gcp=5",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=0&ae=g&auid=937487522.1787237898&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tid=AW-1022345770&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&scrsrc=www.googletagmanager.com&rnd=566164079.1787237935&navt=n&npa=0&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcs=G111&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&tft=1787237935629&tfd=1128&tids=AW-1022345770&fmt=8",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/1022345770/?random=1787237935620&cv=11&fst=1787237935620&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rcb=4&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=68&gcp=5",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/available-add-ons/429/USD",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=0&ae=g&auid=937487522.1787237898&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tid=AW-1022345770&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&scrsrc=www.googletagmanager.com&rnd=566164079.1787237935&navt=n&npa=0&us_privacy=1YNY&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcs=G111&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&tft=1787237935629&tfd=1128&tids=AW-1022345770&fmt=3",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/measurement/conversion?random=1787237935666&cv=11&tid=G-TSS8E51Y4G&fst=1787237935666&fmt=8&en=begin_checkout&gtm=45je68i1h1v881310145z871386749za20gzb71386749zd71386749xec&gcs=G111&gcd=13v3v3v3v5l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&gacid=427214103.1787237898&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&rcb=5",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145z871386749za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&_prs=ok&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&sid=1787237898&sct=1&seg=1&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=begin_checkout&_c=1&ep.gtm_tag_name=GA4%20-%20Begin%20Checkout&ep.hit_timestamp=2026-08-20T14%3A58%3A55.292%2B00%3A00&ep.checkout_step=1&tfd=1174",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/payment-method/available?currency=USD&country=CA",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145z871386749za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=2&_s=2&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&sid=1787237898&sct=1&seg=1&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=page_view&ep.hostname=checkout.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&ep.container_id_and_version=GTM-KZJF7V%20-%20342&ep.flow=essential-monthly&ep.cur=USD&ep.lang=EN&_et=2&up.client_id=GA1.1.427214103.1787237898&tfd=1184",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145z871386749za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&_prs=ok&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=3&_s=1&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&sid=1787237898&sct=1&seg=1&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=begin_checkout&_c=1&ep.gtm_tag_name=GA4%20-%20Begin%20Checkout&ep.hit_timestamp=2026-08-20T14%3A58%3A55.292%2B00%3A00&ep.checkout_step=1&tfd=1174",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145z871386749za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v5l1&npa=0&dma=0&_eu=EAAAAGQC&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=3&_s=2&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&sid=1787237898&sct=1&seg=1&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&en=page_view&ep.hostname=checkout.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&ep.container_id_and_version=GTM-KZJF7V%20-%20342&ep.flow=essential-monthly&ep.cur=USD&ep.lang=EN&_et=2&up.client_id=GA1.1.427214103.1787237898&tfd=1184",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/translation/product-catalog?lang=EN",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/translation/product-catalog?lang=EN",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://scripts.clarity.ms/0.8.69/clarity.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/1022345770/?random=1787237935620&cv=11&fst=1787234400000&bg=ffffff&guid=ON&async=1&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rcb=4&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgXwJ6xJzSHXlQuZm5s8i8bJNjvSR5mcuZMrkvbtqqwqwk2l378Zk585l02fL1Y9wNcOUu-VQEfruhVJzMOQsxIMzo7tu_tqaeRC9O5_YGyOR0GOZeMi6xr-og71_-V8RgZ6AWqToi5-kvdBdpX9SWwj4ZlGq7Ywtrf1HDCYNUCOHB-WTaBjtweVkMQaGMl0NCAPcBlxCi6PP3vryMvnWckELl98JsGSiJeCmUoLArkxssn4_wK4gWWtvmAs0-ZLp6uIlkaBJsaS8uS0HhUzM3YUONQ1f0zsOeIAJSR1F1HmAATpIGJ-1R3OMnchtF7b5OFOpmSbe&random=1329893630&rmt_tld=0&ipr=y",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://www.google.ca/pagead/1p-user-list/1022345770/?random=1787237935620&cv=11&fst=1787234400000&bg=ffffff&guid=ON&async=1&gtm=45be68i1h1v890074008z871386749za20gzb71386749zd71386749xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119367802~119367810~120213116~120385423&u_w=1440&u_h=900&url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&rcb=4&frm=0&tiba=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&hn=www.googleadservices.com&npa=0&us_privacy=1YNY&pscdl=noapi&auid=937487522.1787237898&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&gpp=DBABLA~BVQqAAAAAACA.QA&gpp_sid=7&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgXwJ6xJzSHXlQuZm5s8i8bJNjvSR5mcuZMrkvbtqqwqwk2l378Zk585l02fL1Y9wNcOUu-VQEfruhVJzMOQsxIMzo7tu_tqaeRC9O5_YGyOR0GOZeMi6xr-og71_-V8RgZ6AWqToi5-kvdBdpX9SWwj4ZlGq7Ywtrf1HDCYNUCOHB-WTaBjtweVkMQaGMl0NCAPcBlxCi6PP3vryMvnWckELl98JsGSiJeCmUoLArkxssn4_wK4gWWtvmAs0-ZLp6uIlkaBJsaS8uS0HhUzM3YUONQ1f0zsOeIAJSR1F1HmAATpIGJ-1R3OMnchtF7b5OFOpmSbe&random=1329893630&rmt_tld=1&ipr=y",
+    "initiator": "img",
+    "transfer_size": 342
+  },
+  {
+    "url": "https://cdn.sift.com/s.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.upsellit.com/active/ipvanish.jsp",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://l.clarity.ms/collect",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pay.google.com/gp/p/js/pay.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/payment-method-caret.svg",
+    "initiator": "img",
+    "transfer_size": 479
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/cc-bundle.svg",
+    "initiator": "css",
+    "transfer_size": 8877
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/paypal-logo.svg",
+    "initiator": "css",
+    "transfer_size": 1754
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/apple-pay-logo.svg",
+    "initiator": "css",
+    "transfer_size": 1279
+  },
+  {
+    "url": "https://checkout.ipvanish.com/assets/img/google-pay-logo.svg",
+    "initiator": "css",
+    "transfer_size": 1199
+  },
+  {
+    "url": "https://l.clarity.ms/collect",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://l.clarity.ms/collect",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://l.clarity.ms/collect",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://hexagon-analytics.com/images/679763.gif?bk=ddc13b0529&r=420698061&v=121&cs=UTF-8&h=checkout.ipvanish.com&l=en-US&S=275d9ee0777fbd62de581c40a50faf84&uu=3f78761f-8157-4b8e-b64e-ffbb642c64de&t=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&u=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F151.0.0.0%20Safari%2F537.36&nm=0&mh=d41d8cd98f00b204e9800998ecf8427e&np=0&ph=d41d8cd98f00b204e9800998ecf8427e&sh=900&sw=1440&cd=24&p=MacIntel&to=0&d=0&ce=true&tp=0&ol=true&pr=Gecko&ps=20030107&vd=Google%20Inc.&hc=10&je=false&ss=true&ls=true&in=true&db=false&tl=false&tr=false&ts=false&tb=false&ab=false&cf=a12f9623525ae5ecb9442e49e8673bc7&sri=0&pf=20&inc=true&bn=Chrome&ow=1440&oh=900&wd=true&npe=denied&fph=d41d8cd98f00b204e9800998ecf8427e&fsh=1440&fsw=900&fcd=24&fp=MacIntel&ftp=0&fhc=10&fss=true&fls=true&fin=true&fvch=ae955a0889b9e041ac6cf6ba00a5ae17&fad=124.04348155876505&fdm=16&fvf=&fcg=srgb&ffc=false&fm=0&fc=0&frm=false&fhdr=false&fmf=1b4539be02333d14ce0a07c372e6a7d4&fa=127&fte=false&fts=false&fce=true&fpdf=false&fl=cce16c45e622d9ceae4b626c9353ecec&ft=UTC&pfe=5&z=z",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://pay.google.com/gp/p/ui/payframe?origin=https%3A%2F%2Fcheckout.ipvanish.com&mid=",
+    "initiator": "iframe",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://vipre-prod-api.prod.mercurylab.io/api/subscription/preview",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://listen.audiohook.com/b6a36026-290c-4dac-62a4-5787288aeff9/pixel.png",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v6l1&npa=0&dma=0&_eu=EEAAAGQC&ae=a&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=2&_s=3&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&sid=1787237898&sct=1&seg=1&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&_tu=AAg&en=scroll&ep.hostname=checkout.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&ep.container_id_and_version=GTM-KZJF7V%20-%20342&ep.flow=essential-monthly&ep.cur=USD&ep.lang=EN&epn.percent_scrolled=90&_et=5&tfd=6186",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-TSS8E51Y4G&gtm=45je68i1h1v881310145za20gzb71386749zd71386749&_p=1787237934912&gcs=G111&gcd=13v3v3v3v6l1&npa=0&dma=0&_eu=EEAAAGQC&ae=a&are=1&cid=427214103.1787237898&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1440x900&tt=external&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=en-us&gaf=3&_s=3&tag_exp=115938465~115938469~118897920~118897930~119367802~119367810~120213116~120315470~120385423&dl=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&sid=1787237898&sct=1&seg=1&dt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&_tu=AAg&en=scroll&ep.hostname=checkout.ipvanish.com&ep.gtm_settings=GTM-KZJF7V%20%7C%20342%20%7C%20&ep.full_page_url=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&ep.container_id_and_version=GTM-KZJF7V%20-%20342&ep.flow=essential-monthly&ep.cur=USD&ep.lang=EN&epn.percent_scrolled=90&_et=5&tfd=6186",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://t.co/i/adsct?bci=4&cv=54%260&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=2&event_id=0f2abe62-3d86-42b2-8a7a-6b163ae9578a&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=08e80e14-ad9b-4ea0-96c9-61e4ca990870&pt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tw_document_href=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787237898264.400193583602427803&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.twitter.com/i/adsct?bci=4&cv=54%260&dv=UTC%26en-US%26Google%20Inc.%26MacIntel%26127%261440%26900%2610%2624%261440%26900%260%26na&eci=2&event_id=0f2abe62-3d86-42b2-8a7a-6b163ae9578a&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=08e80e14-ad9b-4ea0-96c9-61e4ca990870&pt=IPVanish%20VPN%20%E2%80%93%20Fast%2C%20Secure%2C%20and%20Private%20Browsing%20Anytime%2C%20Anywhere&tw_document_href=https%3A%2F%2Fcheckout.ipvanish.com%2Fcheckout%2Faddress-payment-method%3Fflow%3Dessential-monthly%26currency%3DUSD%26lang%3DEN&tw_iframe_status=0&tw_pid_src=2&twpid=tw.1787237898264.400193583602427803&txn_id=nvkvu&type=javascript&version=2.4.1",
+    "initiator": "img",
+    "transfer_size": 0
+  }
+]

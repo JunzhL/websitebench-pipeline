@@ -1,0 +1,42 @@
+{
+  "checkpoint": "build-routine",
+  "family": "creation",
+  "priority": "P0",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/build-routine",
+  "final_url": "https://www.jefit.com/build-routine?code=2YI2PS",
+  "http_status": 200,
+  "title": "Jefit Routine Builder - The Best Workout Planner Online to Create & Track",
+  "body_text_len": 3033,
+  "frames": 3,
+  "frame_sha256": [
+    "e92f125ff76fc8f999cea8461ca311b3d4ba756711056522b0fabe3053164372",
+    "4db4547f424e8d1b45aa50984326eb8749fe16089908c31fcf91093b2da97d8a",
+    "a557235ded770d5372f4611578ab54d18c171325b93528c2e020a5a006d13a25"
+  ],
+  "frames_identical": false,
+  "link_count": 74,
+  "resource_count": 125,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 136,
+      "y": 0,
+      "width": 904,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 136,
+      "y": 1248,
+      "width": 904,
+      "height": 545
+    },
+    "form": null,
+    "document_height": 1793
+  }
+}

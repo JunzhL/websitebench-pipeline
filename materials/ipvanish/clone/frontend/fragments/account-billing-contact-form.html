@@ -1,0 +1,28 @@
+<!-- Clone-local billing contact. This is the billing-address equivalent the
+     shipping-address traces are answered with; a VPN subscription has no
+     shipping address.
+
+     In a template rather than in app.py so exactly one file under clone/
+     declares `method="post" action="/account/billing-contact"`, which lets the
+     Harbor derivation resolve a form-backed submit step. The form posts to the
+     route that renders it. Substituted with string.Template; placeholders are
+     pre-escaped. -->
+<form class="ipvanish-sandbox" method="post" action="/account/billing-contact">
+  <div class="ipvanish-sandbox__row">
+    <label for="contact-name">Full name</label>
+    <input id="contact-name" name="full_name" type="text" required value="$full_name">
+  </div>
+  <div class="ipvanish-sandbox__row">
+    <label for="contact-email">Email address</label>
+    <input id="contact-email" name="email" type="email" required value="$email">
+  </div>
+  <div class="ipvanish-sandbox__row">
+    <label for="contact-country">Country</label>
+    <select id="contact-country" name="country">$countries</select>
+  </div>
+  <div class="ipvanish-sandbox__row">
+    <label for="contact-postal">ZIP / Postal code</label>
+    <input id="contact-postal" name="postal_code" type="text" required value="$postal">
+  </div>
+  <button type="submit" data-clone-action="save-contact">Save billing contact</button>
+</form>

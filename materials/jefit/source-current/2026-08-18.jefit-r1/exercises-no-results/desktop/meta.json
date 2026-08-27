@@ -1,0 +1,49 @@
+{
+  "checkpoint": "exercises-no-results",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/exercises",
+  "http_status": null,
+  "title": "Exercise Database - JEFIT",
+  "body_text_len": 6805,
+  "frames": 3,
+  "frame_sha256": [
+    "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+    "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+    "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 4259,
+      "width": 1440,
+      "height": 521
+    },
+    "form": {
+      "selector": "form",
+      "x": 8,
+      "y": 798,
+      "width": 384,
+      "height": 44
+    },
+    "document_height": 4780
+  },
+  "interaction": "muscle 'Abs' + equipment 'EZ Curl Bar' => '0 EXERCISES FOUND' empty grid"
+}

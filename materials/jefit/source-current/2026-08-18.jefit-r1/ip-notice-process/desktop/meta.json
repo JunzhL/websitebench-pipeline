@@ -1,0 +1,42 @@
+{
+  "checkpoint": "ip-notice-process",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/ip-notice-process",
+  "final_url": "https://www.jefit.com/ip-notice-process",
+  "http_status": 200,
+  "title": "IP / DMCA Notices - JEFIT",
+  "body_text_len": 2255,
+  "frames": 3,
+  "frame_sha256": [
+    "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+    "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+    "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe"
+  ],
+  "frames_identical": true,
+  "link_count": 27,
+  "resource_count": 78,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1008,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 1529
+  }
+}

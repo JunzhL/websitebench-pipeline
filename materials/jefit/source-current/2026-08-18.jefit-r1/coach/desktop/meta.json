@@ -1,0 +1,42 @@
+{
+  "checkpoint": "coach",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/coach",
+  "final_url": "https://www.jefit.com/coach",
+  "http_status": 200,
+  "title": "Personal Coach - JEFIT",
+  "body_text_len": 1738,
+  "frames": 3,
+  "frame_sha256": [
+    "65951e1d4804deb1dbb42a5cb9f74d2b852b5051daf61af0fc309742d8d0d391",
+    "c81b52561b78d9850bb8d66a3651c80d55be3b61e2d53de4366cde83a8feb516",
+    "95c25579da4f6bbf2b8fd1724650b947c1f5202c59fc9d63f083c187f168ed23"
+  ],
+  "frames_identical": false,
+  "link_count": 27,
+  "resource_count": 82,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1200,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 1721
+  }
+}

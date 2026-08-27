@@ -1,0 +1,2 @@
+#!/bin/sh
+exec node "/Users/junzhang/Documents/websitebench-pipeline/materials/jefit/tools/opencli-harness/runner.mjs" "$@"

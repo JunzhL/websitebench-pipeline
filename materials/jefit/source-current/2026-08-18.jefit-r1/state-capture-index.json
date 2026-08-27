@@ -1,0 +1,1184 @@
+{
+  "schema_version": "jefit.state-capture-index.v1",
+  "capture_id": "2026-08-18.jefit-r1",
+  "captures": [
+    {
+      "checkpoint": "exercises-filter-abs",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/exercises",
+      "http_status": null,
+      "title": "Exercise Database - JEFIT",
+      "body_text_len": 19805,
+      "frames": 3,
+      "frame_sha256": [
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac",
+        "98de45a7119cc7047d970bf4ae1f0cedcd80075d92b2e42f46c9c8c831296aac"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6866,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 798,
+          "width": 384,
+          "height": 44
+        },
+        "document_height": 7387
+      },
+      "interaction": "clicked muscle filter 'Abs'; count drops, 'FILTERS n / CLEAR FILTERS' chips appear"
+    },
+    {
+      "checkpoint": "exercises-no-results",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/exercises",
+      "http_status": null,
+      "title": "Exercise Database - JEFIT",
+      "body_text_len": 6805,
+      "frames": 3,
+      "frame_sha256": [
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46",
+        "0d9cbbfa07be81ae15dc1b3950e6b25a7e3cd2b3f7b4bb5196e6480ba77fab46"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 4259,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 798,
+          "width": 384,
+          "height": 44
+        },
+        "document_height": 4780
+      },
+      "interaction": "muscle 'Abs' + equipment 'EZ Curl Bar' => '0 EXERCISES FOUND' empty grid"
+    },
+    {
+      "checkpoint": "nav-products-dropdown",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3938,
+      "frames": 3,
+      "frame_sha256": [
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba",
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba",
+        "f645f3c597b175845070fc9467e11332bd219ab5dba087bce37b1961a9126aba"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 6610
+      },
+      "interaction": "opened 'Products' primary-nav dropdown"
+    },
+    {
+      "checkpoint": "nav-workouts-dropdown",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3906,
+      "frames": 3,
+      "frame_sha256": [
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca",
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca",
+        "6aeceaa62ccd3073fa0668c7e49dcf92cb62183a5677807ea4314892d898b7ca"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 6610
+      },
+      "interaction": "opened 'Workouts' primary-nav dropdown"
+    },
+    {
+      "checkpoint": "nav-more-dropdown",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3912,
+      "frames": 3,
+      "frame_sha256": [
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db",
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db",
+        "078eb421b07a737c53eee418d6062a0ca6a7359f4b968b3554b5be99e8a148db"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 6610
+      },
+      "interaction": "opened 'More' primary-nav dropdown"
+    },
+    {
+      "checkpoint": "mobile-menu-open",
+      "engine": "local-playwright",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_label(\"Open main menu\").first\n"
+    },
+    {
+      "checkpoint": "login-validation-empty",
+      "engine": "local-playwright",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Log In\").first\n    3 \u00d7 locator resolved to <button type=\"submit\" data-headlessui-state=\"\" class=\"w-full r"
+    },
+    {
+      "checkpoint": "build-routine-validation-empty",
+      "engine": "local-playwright",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Save\").first\n"
+    },
+    {
+      "checkpoint": "mobile-menu-open",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3909,
+      "frames": 3,
+      "frame_sha256": [
+        "d8a600c066635ae59e1ef2cab4ea8408c2474115ffbbe7625e80768c5065fee2",
+        "fee10ad2870fea34bbb2d99e41a6a110837bf2aee625ae50eb4cbadf84742fe8",
+        "fee10ad2870fea34bbb2d99e41a6a110837bf2aee625ae50eb4cbadf84742fe8"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 11747,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 12644
+      },
+      "interaction": "opened hamburger menu at 390x844"
+    },
+    {
+      "checkpoint": "login-validation-empty",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/my-jefit",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 363,
+      "frames": 3,
+      "frame_sha256": [
+        "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+        "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+        "3b2b8db63d3187f966d76b04255dd2099cc13db2271c3b08c50bf0b48fd2c645"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "clicked Log In with both fields empty (non-GET requests aborted); records client-side validation"
+    },
+    {
+      "checkpoint": "build-routine-validation-empty",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/routines/1797163/new-routine",
+      "http_status": null,
+      "title": "New Routine - JEFIT",
+      "body_text_len": 1365,
+      "frames": 3,
+      "frame_sha256": [
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44",
+        "a32c2cc391bdc9604d5e23bf7808a8dd03a4b3b0871e7eb2a61b98a12184da44"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1160,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1681
+      },
+      "interaction": "clicked Save with empty routine name (non-GET aborted); records client-side validation"
+    },
+    {
+      "checkpoint": "signup-step-01",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 479,
+      "frames": 3,
+      "frame_sha256": [
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "initial /signup render"
+    },
+    {
+      "checkpoint": "signup-step-02",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 603,
+      "frames": 3,
+      "frame_sha256": [
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed",
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed",
+        "92d099fae5179e8555177c7c812d43a011dbcf86b3f50e76c1fe93d0075ba3ed"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Male'"
+    },
+    {
+      "checkpoint": "signup-step-03",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 440,
+      "frames": 3,
+      "frame_sha256": [
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6",
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6",
+        "9d232d6efdaa7c8b2ef7763b2a4382c3506903dd4fe5e9a663c8d533d96b70d6"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Bulking\nBuilding muscle mass and size'"
+    },
+    {
+      "checkpoint": "signup-step-04",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 424,
+      "frames": 3,
+      "frame_sha256": [
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+        "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Skinny'"
+    },
+    {
+      "checkpoint": "signup-step-05",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 433,
+      "frames": 3,
+      "frame_sha256": [
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04",
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04",
+        "1a405e48bd4bad1386a74e8ad757186fe5dcd31fd2029f6aab3e15eb71cf5d04"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Shredded+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-06",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 628,
+      "frames": 3,
+      "frame_sha256": [
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2",
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2",
+        "7d6f64d2097f1f3dd0cae48336bd9c33ba2ca9731966016a00f2b59847f27bb2"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Arm+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-07",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 568,
+      "frames": 3,
+      "frame_sha256": [
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b",
+        "943cd550b814a0dd72fbc592260e1139838fc9f8b4a18cf7824c92cb6e58348b"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 400,
+          "y": 172,
+          "width": 640,
+          "height": 368
+        },
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'New to fitness\nNo experience in structur+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-08",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 415,
+      "frames": 3,
+      "frame_sha256": [
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1",
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1",
+        "3c354dfacc48199a77118082963b3eaa1a3c6317a0b555795abff6d629ac83f1"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 400,
+          "y": 172,
+          "width": 640,
+          "height": 176
+        },
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'numeric[5,6]+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-09",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 412,
+      "frames": 3,
+      "frame_sha256": [
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7",
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7",
+        "2b9c89ec2fd1c588a817a79a170432f13b3474f0df87d5efa5da2dfff02d00e7"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 400,
+          "y": 172,
+          "width": 640,
+          "height": 176
+        },
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'numeric[359]+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-10",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 410,
+      "frames": 3,
+      "frame_sha256": [
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878",
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878",
+        "fa40e1f635f9615ed60ada7a66b70f11035ffb06748996a105a79bcf499e0878"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 400,
+          "y": 172,
+          "width": 640,
+          "height": 204
+        },
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'numeric[359]+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-11",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 422,
+      "frames": 3,
+      "frame_sha256": [
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8",
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8",
+        "a470c47d200a87ac44c094381987d2161b889ab38492ddaab95705514617ada8"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'numeric[70]+Continue'"
+    },
+    {
+      "checkpoint": "signup-step-12",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 566,
+      "frames": 3,
+      "frame_sha256": [
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd",
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd",
+        "5b19c4c669556f00e24ef4b6b56af13d1b0d3cd932eba0fb652194c692e45cdd"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Home'"
+    },
+    {
+      "checkpoint": "signup-step-13",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 484,
+      "frames": 3,
+      "frame_sha256": [
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52",
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52",
+        "094d5133330a0ec2ddb5f12c6dbcba362b023df9a548474621b4a001f18a9a52"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Novice\nUnfamiliar with exercise equipmen'"
+    },
+    {
+      "checkpoint": "signup-step-14",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 474,
+      "frames": 3,
+      "frame_sha256": [
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010",
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010",
+        "87e4d7a92b5256bf844fa9f420edfcf0364592c36c94ec7543fc5966fa94c010"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing '1 to 2 times per week'"
+    },
+    {
+      "checkpoint": "signup-step-15",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 633,
+      "frames": 3,
+      "frame_sha256": [
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88",
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88",
+        "d251289b3eb28dd70b4bb16f9ffde9f9362a3f069242779a9909bd6420fadb88"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing '15 min'"
+    },
+    {
+      "checkpoint": "signup-step-16",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 477,
+      "frames": 3,
+      "frame_sha256": [
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38",
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38",
+        "e57cd83df72bb4ec27002bc555f2295fef4af803e0daaa110f036cf315dd4c38"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Tracker Mode\nIt's a personal log and tra'"
+    },
+    {
+      "checkpoint": "signup-step-17",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/results",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 1093,
+      "frames": 3,
+      "frame_sha256": [
+        "b428ea5a7b571146bf77b9a4497ddd0acbab958273a487b2221d3dc914d1b576",
+        "eb126b0709383b77cde8fc472a8496b8b772f4136e37b70a6db528d80bc93243",
+        "d96c1153c3b42fde147d1f5554b8b0ae31362836223449ba1bd8134c2829458f"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "advanced questionnaire by choosing 'Sensitive back'"
+    },
+    {
+      "checkpoint": "signup-results",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/results",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 610,
+      "frames": 3,
+      "frame_sha256": [
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517",
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517",
+        "441026c3e564ade6e9bbc4a5d59e917c083e16980e3f143d1ed84f230e911517"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "waited out the 'Analyzing your answers' animation on /signup/results; captured the resolved view without entering any data"
+    },
+    {
+      "checkpoint": "signup-account-create",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/signup/register",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 571,
+      "frames": 3,
+      "frame_sha256": [
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b",
+        "b76d2538f1dd63ea979f726a16c6700449ed6846dcd7576bd43b6528deda9d7b"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 548,
+          "y": 132,
+          "width": 344,
+          "height": 192
+        },
+        "document_height": 900
+      },
+      "interaction": "clicked Continue on the results view and captured the account-creation entry (identity fields, terms links, verification guidance) WITHOUT filling or submitting anything"
+    },
+    {
+      "checkpoint": "home-dark-mode",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/",
+      "http_status": null,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3873,
+      "frames": 3,
+      "frame_sha256": [
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f",
+        "fb52cfd3f20bfc33e02f024446cf77439f4aac13967bb88f30a5a97d8743366f"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 5710,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 6610
+      },
+      "interaction": "toggled footer Dark Mode switch on /"
+    },
+    {
+      "checkpoint": "forgot-password-validation-empty",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": null,
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "http_status": null,
+      "title": "Reset Your Password - JEFIT",
+      "body_text_len": 538,
+      "frames": 3,
+      "frame_sha256": [
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31",
+        "f6c644fee3dff9c48032bbd010664993dec6390d50d9bf4879c9d49b85b84b31"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 560,
+          "y": 264,
+          "width": 320,
+          "height": 125
+        },
+        "document_height": 900
+      },
+      "interaction": "clicked 'Send reset link' with empty email (non-GET aborted); records client-side validation"
+    }
+  ]
+}

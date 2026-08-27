@@ -1,0 +1,13 @@
+{
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+  "platform": "MacIntel",
+  "languages": [
+    "en-US"
+  ],
+  "timezone": "UTC",
+  "device_pixel_ratio": 1,
+  "inner": {
+    "width": 1440,
+    "height": 900
+  }
+}

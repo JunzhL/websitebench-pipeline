@@ -1,0 +1,497 @@
+[
+  {
+    "url": "https://www.jefit.com/_next/static/media/0595f7052377a1a2-s.p.2lpos000q_nzo.woff2",
+    "initiator": "link",
+    "transfer_size": 16044
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/490cbca7f386131e-s.p.1zrwl0c4yv3pr.woff2",
+    "initiator": "link",
+    "transfer_size": 16084
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/520c929efec0b33f-s.p.3arxh35s5-kc0.woff2",
+    "initiator": "link",
+    "transfer_size": 16260
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2",
+    "initiator": "link",
+    "transfer_size": 15940
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2",
+    "initiator": "link",
+    "transfer_size": 48732
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/03p9j-v622itm.css",
+    "initiator": "link",
+    "transfer_size": 44896
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/25bmyc5k5ft9e.css",
+    "initiator": "link",
+    "transfer_size": 1534
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ycd5by80-dnr.js",
+    "initiator": "link",
+    "transfer_size": 2628
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1rezwj7oofhqs.js",
+    "initiator": "script",
+    "transfer_size": 9062
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3nc6x0_y5iwnk.js",
+    "initiator": "script",
+    "transfer_size": 9574
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3cm2469uyxc4s.js",
+    "initiator": "script",
+    "transfer_size": 37958
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/329j824l1odqw.js",
+    "initiator": "script",
+    "transfer_size": 71075
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/turbopack-272vsha71_qq_.js",
+    "initiator": "script",
+    "transfer_size": 4473
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3j9nrot904k3_.js",
+    "initiator": "script",
+    "transfer_size": 6859
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/38oeoil1659pc.js",
+    "initiator": "script",
+    "transfer_size": 15812
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_w1fz0ss0qsy.js",
+    "initiator": "script",
+    "transfer_size": 7974
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ntn7efqc-iiw.js",
+    "initiator": "script",
+    "transfer_size": 13226
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2yztgni4slg8i.js",
+    "initiator": "script",
+    "transfer_size": 178931
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/02ynhhfvtdz_k.js",
+    "initiator": "script",
+    "transfer_size": 20574
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_24wthpt9k42.js",
+    "initiator": "script",
+    "transfer_size": 10902
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ft6jm11gda5_.js",
+    "initiator": "script",
+    "transfer_size": 8749
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/male-gender.png",
+    "initiator": "img",
+    "transfer_size": 295461
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/female-gender.png",
+    "initiator": "img",
+    "transfer_size": 210860
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=CnS1fQ4cBrkKy5Lu",
+    "initiator": "fetch",
+    "transfer_size": 799
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=CnS1fQ4cBrkKy5Lu",
+    "initiator": "fetch",
+    "transfer_size": 701
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1j_vldtdm5ldl.css",
+    "initiator": "link",
+    "transfer_size": 2139
+  },
+  {
+    "url": "https://www.jefit.com/home_page/app_button.svg",
+    "initiator": "link",
+    "transfer_size": 7718
+  },
+  {
+    "url": "https://www.jefit.com/home_page/play_button.svg",
+    "initiator": "link",
+    "transfer_size": 10628
+  },
+  {
+    "url": "https://www.jefit.com/home_page/leftbranch.png",
+    "initiator": "link",
+    "transfer_size": 7871
+  },
+  {
+    "url": "https://www.jefit.com/home_page/rightbranch.png",
+    "initiator": "link",
+    "transfer_size": 7907
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature5.png",
+    "initiator": "link",
+    "transfer_size": 243635
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature6.png",
+    "initiator": "link",
+    "transfer_size": 379681
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature7.png",
+    "initiator": "link",
+    "transfer_size": 249244
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature8.png",
+    "initiator": "link",
+    "transfer_size": 409633
+  },
+  {
+    "url": "https://www.jefit.com/home_page/forbes.png",
+    "initiator": "link",
+    "transfer_size": 55559
+  },
+  {
+    "url": "https://www.jefit.com/home_page/pcmag.png",
+    "initiator": "link",
+    "transfer_size": 16463
+  },
+  {
+    "url": "https://www.jefit.com/home_page/usatoday.png",
+    "initiator": "link",
+    "transfer_size": 10223
+  },
+  {
+    "url": "https://www.jefit.com/home_page/parade.png",
+    "initiator": "link",
+    "transfer_size": 24823
+  },
+  {
+    "url": "https://www.jefit.com/home_page/pix.png",
+    "initiator": "link",
+    "transfer_size": 10001
+  },
+  {
+    "url": "https://www.jefit.com/home_page/digitaltrends.png",
+    "initiator": "link",
+    "transfer_size": 30120
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=aYcccs1zsWib0nwZ",
+    "initiator": "fetch",
+    "transfer_size": 1122
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=rkmk4FMq-oWMtcJq",
+    "initiator": "fetch",
+    "transfer_size": 2259
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=Nv_aS3TUxgCEQBD-",
+    "initiator": "fetch",
+    "transfer_size": 4950
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=tf_GbE8v31eKBPBM",
+    "initiator": "fetch",
+    "transfer_size": 5886
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=aYcccs1zsWib0nwZ",
+    "initiator": "fetch",
+    "transfer_size": 1110
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2ialm92wo9v3w.js",
+    "initiator": "script",
+    "transfer_size": 1136
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_6vscv8y6fo3.js",
+    "initiator": "script",
+    "transfer_size": 9073
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3i-aibpp09chs.js",
+    "initiator": "script",
+    "transfer_size": 6420
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/25xfqqp6tp95j.js",
+    "initiator": "script",
+    "transfer_size": 11671
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/26h4k4hzu57ax.js",
+    "initiator": "script",
+    "transfer_size": 8383
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/38t2pjbo8qkmv.js",
+    "initiator": "script",
+    "transfer_size": 27186
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=EBGuQlOzOY9PcbEd",
+    "initiator": "fetch",
+    "transfer_size": 1494
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=1QtPd85Vbb8OR4di",
+    "initiator": "fetch",
+    "transfer_size": 628
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=sjLDVwJD3nR1fjSt",
+    "initiator": "fetch",
+    "transfer_size": 21061
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5P4QND4",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://sr-client-cfg.amplitude.com/config?api_key=b9d2bc03885acd82f7a3b95918a0c2b6&config_keys=analyticsSDK",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-288Z33GYQ7&cx=c&gtm=4e68e1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.hotjar.com/c/hotjar-5088890.js?sv=7",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.redditstatic.com/ads/pixel.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://connect.facebook.net/en_US/fbevents.js",
+    "initiator": "script",
+    "transfer_size": 107685
+  },
+  {
+    "url": "https://pixel-config.reddit.com/pixels/a2_h5bl8fel22n0/config",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://alb.reddit.com/rp.gif?ts=1787065376808&id=a2_h5bl8fel22n0&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=6ab6c389-e30e-4aa1-a573-1f97ad2cfccc&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.1&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fwww.jefit.com%2Fsignup&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-0.src_pid-0",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025z878490806za20gzb78490806zd78490806&_p=1787065375730&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&are=1&cid=1578865037.1787065377&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120385423&sid=1787065376&sct=1&seg=0&dl=https%3A%2F%2Fwww.jefit.com%2Fsignup&dt=Your%20Ultimate%20Workout%20Planner%20%26%20Tracking%20App%20for%20Progress%20-%20JEFIT&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=7537",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-288Z33GYQ7&cid=1578865037.1787065377&gtm=45je68e1v892535025z878490806za20gzb78490806zd78490806&rcb=5&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120385423",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025z878490806za20gzb78490806zd78490806&_p=1787065375730&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&are=1&cid=1578865037.1787065377&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120385423&sid=1787065376&sct=1&seg=0&dl=https%3A%2F%2Fwww.jefit.com%2Fsignup&dt=Your%20Ultimate%20Workout%20Planner%20%26%20Tracking%20App%20for%20Progress%20-%20JEFIT&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=7537&gaf=1",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://connect.facebook.net/signals/config/3682827325320152?v=2.9.380&r=stable&domain=www.jefit.com&hme=c50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88&ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C291%2C292%2C290%2C305%2C327%2C225%2C214%2C66%2C215%2C213%2C330%2C321%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180",
+    "initiator": "script",
+    "transfer_size": 68368
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/gain-icon.svg",
+    "initiator": "img",
+    "transfer_size": 1816
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/endurance-icon.svg",
+    "initiator": "img",
+    "transfer_size": 1165
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/lean-icon.svg",
+    "initiator": "img",
+    "transfer_size": 3507
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/flexible-icon.svg",
+    "initiator": "img",
+    "transfer_size": 1714
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://metrics.hotjar.io/?v=6&site_id=5088890",
+    "initiator": "beacon",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025za20gzb78490806zd78490806&_p=1787065375730&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAACQC&ae=a&are=1&cid=1578865037.1787065377&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=2&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120385423&sid=1787065376&sct=1&seg=0&dl=https%3A%2F%2Fwww.jefit.com%2Fsignup&dt=Your%20Ultimate%20Workout%20Planner%20%26%20Tracking%20App%20for%20Progress%20-%20JEFIT&en=scroll&epn.percent_scrolled=90&_et=3&tfd=12543",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025za20gzb78490806zd78490806&_p=1787065375730&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAACQC&ae=a&are=1&cid=1578865037.1787065377&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=5&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=2&tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120385423&sid=1787065376&sct=1&seg=0&dl=https%3A%2F%2Fwww.jefit.com%2Fsignup&dt=Your%20Ultimate%20Workout%20Planner%20%26%20Tracking%20App%20for%20Progress%20-%20JEFIT&en=scroll&epn.percent_scrolled=90&_et=3&tfd=12543&gaf=1",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/average.png",
+    "initiator": "img",
+    "transfer_size": 51587
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/skinny.png",
+    "initiator": "img",
+    "transfer_size": 56845
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/overweight.png",
+    "initiator": "img",
+    "transfer_size": 45289
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/shredded.png",
+    "initiator": "img",
+    "transfer_size": 56019
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/bulk.png",
+    "initiator": "img",
+    "transfer_size": 54196
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/berserk.png",
+    "initiator": "img",
+    "transfer_size": 66217
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/target_zone_model.png",
+    "initiator": "img",
+    "transfer_size": 1289083
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/tipIcon.svg",
+    "initiator": "img",
+    "transfer_size": 1464
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/onboarding/tipIcon.svg",
+    "initiator": "img",
+    "transfer_size": 1464
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  }
+]

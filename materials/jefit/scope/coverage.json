@@ -1,0 +1,178 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {
+      "id": "source-direct-states",
+      "label": "Anonymous source-captured route states",
+      "unit": "route-state",
+      "category": "visual-fidelity",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "about-us.desktop",
+        "adaptive-plan.desktop",
+        "ai-workout-tracker.desktop",
+        "blog.desktop",
+        "build-routine-validation-empty.desktop",
+        "build-routine.desktop",
+        "build-routine.mobile",
+        "coach.desktop",
+        "community.desktop",
+        "elite.desktop",
+        "elite.mobile",
+        "elite.tablet",
+        "exercise-detail.desktop",
+        "exercise-detail.mobile",
+        "exercises-filter-abs.desktop",
+        "exercises-no-results.desktop",
+        "exercises-page2.desktop",
+        "exercises.desktop",
+        "exercises.mobile",
+        "exercises.tablet",
+        "forgot-password-validation-empty.desktop",
+        "forgot-password.desktop",
+        "forgot-password.mobile",
+        "home-dark-mode.desktop",
+        "home.desktop",
+        "home.mobile",
+        "home.tablet",
+        "ip-notice-process.desktop",
+        "login-validation-empty.desktop",
+        "login.desktop",
+        "login.mobile",
+        "mobile-menu-open.mobile",
+        "nav-more-dropdown.desktop",
+        "nav-products-dropdown.desktop",
+        "nav-workouts-dropdown.desktop",
+        "not-found.desktop",
+        "not-found.mobile",
+        "our-story.desktop",
+        "press-media.desktop",
+        "privacy-policy.desktop",
+        "routine-detail.desktop",
+        "routine-detail.mobile",
+        "routines-beginner.desktop",
+        "routines.desktop",
+        "routines.mobile",
+        "routines.tablet",
+        "signup-account-create.desktop",
+        "signup-results.desktop",
+        "signup-step-01.desktop",
+        "signup-step-02.desktop",
+        "signup-step-03.desktop",
+        "signup-step-04.desktop",
+        "signup-step-05.desktop",
+        "signup-step-06.desktop",
+        "signup-step-07.desktop",
+        "signup-step-08.desktop",
+        "signup-step-09.desktop",
+        "signup-step-10.desktop",
+        "signup-step-11.desktop",
+        "signup-step-12.desktop",
+        "signup-step-13.desktop",
+        "signup-step-14.desktop",
+        "signup-step-15.desktop",
+        "signup-step-16.desktop",
+        "signup-step-17.desktop",
+        "signup.desktop",
+        "signup.mobile",
+        "support-faq.desktop",
+        "support-faq.mobile",
+        "support.desktop",
+        "support.mobile",
+        "terms-of-use.desktop",
+        "use-case.desktop",
+        "watch.desktop"
+      ],
+      "satisfied_items": [],
+      "rationale": "Every anonymous state captured directly from the source in 2026-08-18.jefit-r1; each carries a frozen three-frame raster. The pixel oracle subset is home.{desktop,tablet,mobile}."
+    },
+    {
+      "id": "member-direct-states",
+      "label": "Authenticated member route states",
+      "unit": "route-state",
+      "category": "functional-fidelity",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "elite-checkout.yearly.desktop",
+        "my-jefit-body-stats.empty.desktop",
+        "my-jefit-exercises.custom-empty.desktop",
+        "my-jefit-exercises.database.desktop",
+        "my-jefit-exercises.detail.desktop",
+        "my-jefit-popular.loaded.desktop",
+        "my-jefit-progress-insights.empty.desktop",
+        "my-jefit-progress-photos.empty.desktop",
+        "my-jefit-progress.empty.desktop",
+        "my-jefit-progress.log-modal.desktop",
+        "my-jefit-progress.populated.desktop",
+        "my-jefit-qa.loaded.desktop",
+        "my-jefit-settings.account.desktop",
+        "my-jefit-settings.data-controls.desktop",
+        "my-jefit-settings.integrations.desktop",
+        "my-jefit-settings.privacy.desktop",
+        "my-jefit-settings.profile.desktop",
+        "my-jefit-workouts-edit.editor.desktop",
+        "my-jefit-workouts.initial.desktop",
+        "my-jefit-workouts.plan-menu.desktop",
+        "my-jefit-workouts.populated.desktop",
+        "my-jefit.account-menu.desktop",
+        "my-jefit.create-post-dialog.desktop",
+        "my-jefit.discover-empty.desktop",
+        "my-jefit.getapp-menu.desktop",
+        "my-jefit.plan-upgrade-modal.desktop",
+        "my-jefit.sync-info-modal.desktop"
+      ],
+      "satisfied_items": [],
+      "rationale": "Authenticated member states observed in the 2026-08-18.jefit-auth-r1 session; raw evidence retained out-of-repo (PII), clone behavior verified functionally and by local diagnostic comparison."
+    },
+    {
+      "id": "source-unavailable-states",
+      "label": "Recorded unavailable surfaces",
+      "unit": "route-state",
+      "category": "honest-gaps",
+      "required_evidence_kinds": [
+        "independent-audit"
+      ],
+      "required_items": [
+        "elite-checkout.success.desktop",
+        "my-jefit-settings.elite-active.desktop"
+      ],
+      "satisfied_items": [],
+      "rationale": "Post-payment surfaces unavailable by authorization policy; disclosed, never inferred as direct evidence."
+    },
+    {
+      "id": "p0-network-invariants",
+      "label": "Runtime network closure",
+      "unit": "invariant",
+      "category": "network-closure",
+      "required_evidence_kinds": [
+        "network"
+      ],
+      "required_items": [
+        "no-runtime-remote-requests"
+      ],
+      "satisfied_items": [],
+      "rationale": "The candidate must make zero runtime requests to non-local origins on every checkpoint."
+    },
+    {
+      "id": "deterministic-database-state",
+      "label": "Deterministic backend business state",
+      "unit": "behavior",
+      "category": "backend-semantics",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "seed-reset-deterministic",
+        "membership-order-transactional",
+        "cross-actor-isolation"
+      ],
+      "satisfied_items": [],
+      "rationale": "Seeded SQLite resets deterministically; the Elite order commits atomically with payment consumption; actors cannot read each other's data."
+    }
+  ]
+}

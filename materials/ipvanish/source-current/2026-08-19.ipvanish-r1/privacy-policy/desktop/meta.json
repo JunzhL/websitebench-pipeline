@@ -1,0 +1,55 @@
+{
+  "checkpoint": "privacy-policy",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/privacy-policy/",
+  "final_url": "https://www.ipvanish.com/privacy-policy/",
+  "http_status": 200,
+  "title": "Privacy Policy for IPVanish Site & Services | IPVanish",
+  "body_text_len": 30254,
+  "frames": 3,
+  "frame_sha256": [
+    "4e82984773db21584118589a635c030cdcc1dd78a6a1b16fca79fac219ccad0f",
+    "a0d1bc5d026cec6535c06fd3926380e29260016c69d7445f6f07a5f76905be6f",
+    "4ad250e628a3700d9c1a81276a3d9d32389d3fbd93608ac5041091b635a0ce44"
+  ],
+  "frames_identical": false,
+  "link_count": 55,
+  "resource_count": 116,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 67
+    },
+    "nav": {
+      "selector": "[role=navigation]",
+      "x": 1085,
+      "y": 0,
+      "width": 235,
+      "height": 30
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 96,
+      "width": 1200,
+      "height": 11004
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 11100,
+      "width": 1440,
+      "height": 100
+    },
+    "form": null,
+    "document_height": 11200
+  }
+}

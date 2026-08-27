@@ -1,0 +1,30 @@
+{
+  "checkpoint": "not-found",
+  "family": "error",
+  "priority": "P1",
+  "viewport": "mobile",
+  "requested_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+  "final_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+  "http_status": 404,
+  "title": "404 Not Found",
+  "body_text_len": 58,
+  "frames": 3,
+  "frame_sha256": [
+    "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+    "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+    "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868"
+  ],
+  "frames_identical": true,
+  "link_count": 0,
+  "resource_count": 0,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": null,
+    "main": null,
+    "footer": null,
+    "form": null,
+    "document_height": 844
+  }
+}

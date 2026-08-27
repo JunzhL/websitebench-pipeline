@@ -1,0 +1,147 @@
+[
+  {
+    "url": "https://sso.ipvanish.com/_next/static/css/3b4da8cf5c3f54b1.css",
+    "initiator": "link",
+    "transfer_size": 2095
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/css/8896a484847c63b4.css",
+    "initiator": "link",
+    "transfer_size": 2169
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/webpack-5d5d290f4f701331.js",
+    "initiator": "script",
+    "transfer_size": 2757
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/pages/index-562eb4f3f79434d8.js",
+    "initiator": "script",
+    "transfer_size": 3462
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/494-12abef8fdbfe41d9.js",
+    "initiator": "script",
+    "transfer_size": 4842
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/88e9c8040455a511ad50047e3006e8ee6359cf82/_buildManifest.js",
+    "initiator": "script",
+    "transfer_size": 743
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/framework-ecc4130bc7a58a64.js",
+    "initiator": "script",
+    "transfer_size": 45892
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/636-c0a0707bc818367f.js",
+    "initiator": "script",
+    "transfer_size": 9719
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/main-be7765ac4d8f6ecc.js",
+    "initiator": "script",
+    "transfer_size": 32781
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/pages/_app-a1af0c2efb9071f0.js",
+    "initiator": "script",
+    "transfer_size": 78218
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/88e9c8040455a511ad50047e3006e8ee6359cf82/_ssgManifest.js",
+    "initiator": "script",
+    "transfer_size": 351
+  },
+  {
+    "url": "https://sso.ipvanish.com/logo.svg",
+    "initiator": "css",
+    "transfer_size": 1329
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2",
+    "initiator": "css",
+    "transfer_size": 43420
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/css/d8c9111271540f2f.css",
+    "initiator": "link",
+    "transfer_size": 1533
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/201-1df6185b8a670d62.js",
+    "initiator": "script",
+    "transfer_size": 12853
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/520-aba1fc538acb6439.js",
+    "initiator": "script",
+    "transfer_size": 6800
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/844.03857b5dd5fad902.js",
+    "initiator": "script",
+    "transfer_size": 13048
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/509.4edcff404c596a9d.js",
+    "initiator": "script",
+    "transfer_size": 5711
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/fec483df-0e2b7b2ca2c1c8a8.js",
+    "initiator": "link",
+    "transfer_size": 88606
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/102d0109-075ea5e0853845c5.js",
+    "initiator": "link",
+    "transfer_size": 189576
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/pages/reset-password-c0edf68cb5a4a75e.js",
+    "initiator": "link",
+    "transfer_size": 7307
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/201-1df6185b8a670d62.js",
+    "initiator": "link",
+    "transfer_size": 12853
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/805-464c525e74c779e5.js",
+    "initiator": "link",
+    "transfer_size": 36915
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/102d0109-075ea5e0853845c5.js",
+    "initiator": "script",
+    "transfer_size": 189703
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/fec483df-0e2b7b2ca2c1c8a8.js",
+    "initiator": "script",
+    "transfer_size": 88385
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/201-1df6185b8a670d62.js",
+    "initiator": "script",
+    "transfer_size": 12853
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/pages/reset-password-c0edf68cb5a4a75e.js",
+    "initiator": "script",
+    "transfer_size": 7307
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/chunks/805-464c525e74c779e5.js",
+    "initiator": "script",
+    "transfer_size": 36831
+  },
+  {
+    "url": "https://sso.ipvanish.com/_next/static/css/99c492df700bf3b9.css",
+    "initiator": "fetch",
+    "transfer_size": 2776
+  }
+]

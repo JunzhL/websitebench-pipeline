@@ -1,0 +1,48 @@
+{
+  "checkpoint": "blog",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/blog",
+  "final_url": "https://www.jefit.com/blog",
+  "http_status": 200,
+  "title": "Blog - JEFIT",
+  "body_text_len": 2707,
+  "frames": 3,
+  "frame_sha256": [
+    "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+    "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+    "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b"
+  ],
+  "frames_identical": true,
+  "link_count": 65,
+  "resource_count": 133,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 2398,
+      "width": 1440,
+      "height": 521
+    },
+    "form": {
+      "selector": "form",
+      "x": 36,
+      "y": 214,
+      "width": 576,
+      "height": 36
+    },
+    "document_height": 2919
+  }
+}

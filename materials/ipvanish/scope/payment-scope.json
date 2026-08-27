@@ -1,0 +1,125 @@
+{
+  "schema_version": "websitebench.payment-scope.v2",
+  "proposal_id": "ipvanish-payment-scope-1",
+  "site_id": "ipvanish",
+  "display_name": "IPVanish",
+  "current_inputs": [
+    {
+      "path": "materials/ipvanish/clone.yaml",
+      "sha256": "7a5ade1178153cefdfc2389af80c27d4bfe1198c8e794847ab1f8f2a55d98be8"
+    },
+    {
+      "path": "materials/ipvanish/scope/purpose.json",
+      "sha256": "0c905db848215a5aa777583f08ad5974d732b5fa0871a0402f2b9466574cfec6"
+    },
+    {
+      "path": "materials/ipvanish/scope/invariants.json",
+      "sha256": "21ba78c6fef55d542521dba4b436545cef06b63580449045eb8a0091f9dfd6e2"
+    },
+    {
+      "path": "materials/ipvanish/backend/runtime.json",
+      "sha256": "b0aeb0e9c1a585fbe9334edf5e785ade2833b9c97edb34c2eaefcd9bae749c72"
+    },
+    {
+      "path": "materials/ipvanish/backend/model.json",
+      "sha256": "c6b128ed7e0bd6c39c4fa93ad34b7d37605a1765a888be7449f5bfdb6920d9c3"
+    },
+    {
+      "path": "websitebench/capability-packs/payment/pack.json",
+      "sha256": "2ef2f60b52cf4088709efb4053c5d545b79cf2ffd165c0f5db4e4fdfcf72b986"
+    }
+  ],
+  "profile_change": {
+    "audit_mode": "manifest-native-audit",
+    "overlay_pack_id": "payment",
+    "candidate_blocker_id": null,
+    "retained_blocker_ids": []
+  },
+  "frozen_journeys": [
+    {
+      "id": "checkout.essential-annual.local-sandbox.success",
+      "description": "A visitor picks the Yearly Essential plan on /pricing/, lands on /checkout/address-payment-method?flow=essential-annual, enters an account email plus billing country and postal code, selects the opaque sandbox-approved scenario, and posts /checkout/subscribe. plan_for_flow('essential-annual') resolves the catalogue row, db.purchase() derives 4668 charge + 607 estimated tax = 5275 total USD minor units server-side, consumes one sandbox approval, and inserts exactly one ipvanish_subscriptions row and one ipvanish_orders row inside a single site-bound SQLite transaction; ensure_checkout_account, update_billing_contact and record_receipt then bind the new account and the receipt to the placing session, and /checkout/confirmation renders that order. No card-capable field exists anywhere in the flow."
+    },
+    {
+      "id": "checkout.essential-annual.local-sandbox.retry",
+      "description": "The same annual checkout submitted with sandbox-declined or sandbox-retry returns a re-rendered checkout page carrying the sandbox notice and a fresh idempotency key, and writes no subscription, no order, no account row, no billing contact and no receipt; a subsequent sandbox-approved submission converges to exactly one subscription and one order. Duplicate or concurrent submissions reusing the same idempotency key return the first order via UNIQUE (subject_id, idempotency_key) rather than creating a second."
+    },
+    {
+      "id": "account.plan-change.local-sandbox.success",
+      "description": "An authenticated subscriber changes plan from the account area through the same local-sandbox selector: db.purchase() is called with kind='change' and the existing subscription id, so the amount is re-derived from the catalogue, the fingerprint is recomputed for the new plan, and the subscription update plus its order row commit together or not at all."
+    }
+  ],
+  "frozen_entities": [
+    "plan-catalogue-entry",
+    "checkout-account",
+    "subscription",
+    "subscription-order",
+    "billing-contact",
+    "checkout-receipt",
+    "sandbox-approval"
+  ],
+  "payment_contract": {
+    "default_adapter": "local-sandbox",
+    "optional_adapter": null,
+    "live_payments_allowed": false,
+    "accepted_client_payment_input": "opaque-scenario-id-only",
+    "credential_fields_allowed": false,
+    "currency": "USD",
+    "amount_source": "Server-derived integer USD minor units from clone/backend/catalogue.py PLANS, a frozen six-row table (Essential and Advanced x monthly, annual, biennial) keyed by plan_id and resolved from the request only through plan_for_flow(?flow=). Essential annual charge_minor 4668 first year against renewal_minor 9999; Advanced annual 6468 against 12999; Essential monthly 1499 and Advanced monthly 1799 (no discount, charge equals renewal); Essential biennial 5976 against 9999 and Advanced biennial 8616 against 12999. Plan.tax_minor is round(charge_minor * TAX_RATE_PERCENT / 100) with TAX_RATE_PERCENT = 13 (the rate that reconciles the captured $6.07 estimated tax on $46.68), and Plan.total_minor = charge_minor + tax_minor, so the annual Essential total is 5275. db.purchase() sets amount_minor = plan.total_minor and stores charge, tax and total separately on the order row. The client can supply neither amount, tax, currency, discount nor plan price - only the flow id.",
+    "owner": "The checkout-created account: db.purchase() is called with subject_id = 'ipvanish-checkout-' + sha256(account_email.casefold()).hexdigest()[:24], derived in app.checkout_subscribe from the account email typed into the checkout form. db.ensure_checkout_account() writes the ipvanish_accounts row only after the sandbox approves, and every intent, attempt, approval consumption, subscription, order, billing contact and receipt row stays bound to that subject_id; authenticated account routes re-resolve the owner from the __Host- session before reading or mutating anything.",
+    "fingerprint": "db._fingerprint(subject_id, plan.plan_id, kind) = SHA-256 over 'ipvanish|<subject_id>|<plan_id>|<kind>'. The same value is passed to site_backend.payments.create_intent(), site_backend.payments.attempt() and site_backend.payments.consume_approval() together with the owner, the server-derived amount_minor and USD, so the seam re-verifies owner, amount, currency and fingerprint at creation, attempt and consumption; a stale fingerprint (different plan or kind) or a foreign owner cannot consume an approval.",
+    "final_commit": "db.purchase() opens one site_backend.lifecycle.connection(transaction=True) and, on that single connection, checks ipvanish_orders for an existing (subject_id, idempotency_key) row, calls create_intent, attempt and consume_approval, then inserts ipvanish_subscriptions and ipvanish_orders. A non-APPROVED attempt status returns {'outcome': ..., 'order': None} before consume_approval, so declined and retryable scenarios write nothing; idempotency_key must match IDEMPOTENCY_RE ^[A-Za-z0-9_-]{8,64}$ or PaymentError is raised; UNIQUE (subject_id, idempotency_key) on ipvanish_orders plus the seam's attempt ledger make duplicates converge on the first order; and any failure after consumption rolls the whole transaction back, leaving the approval unconsumed with no subscription and no order."
+  },
+  "mail_brand": {
+    "shared_bare_sender_domain_allowed": true,
+    "sender_display_name": "IPVanish",
+    "purposes": [
+      "registration",
+      "password-reset"
+    ],
+    "must_differ_from": [
+      {
+        "site_id": "jefit",
+        "fields": [
+          "sender_display_name",
+          "subject",
+          "lead",
+          "body",
+          "expiry",
+          "footer"
+        ]
+      },
+      {
+        "site_id": "aspca-pet-insurance",
+        "fields": [
+          "sender_display_name",
+          "subject",
+          "lead",
+          "body",
+          "expiry",
+          "footer"
+        ]
+      }
+    ]
+  },
+  "site_isolation": {
+    "database_scope": "site-exclusive",
+    "site_binding_required": true,
+    "session_cookie_name": "__Host-websitebench-ipvanish-session",
+    "redis_namespace": "site/ipvanish",
+    "webhook_secret_scope": "site-exclusive",
+    "cross_site_account_sharing": false
+  },
+  "proof_obligations": [
+    "Only the three opaque configured sandbox scenario ids (sandbox-approved, sandbox-declined, sandbox-retry) are accepted as payment input; db.reject_payment_fields screens every submitted key and value, so card number, cardholder name, expiry month/year, security code, CVV/CVC, PAN, bank account, routing, IBAN and wallet fields - and card-shaped values in renamed fields - are rejected with HTTP 422 and never stored or logged, and no card-capable field is rendered anywhere in the candidate.",
+    "Amounts, estimated tax and totals are integer USD minor units derived server-side from catalogue.py (Essential annual 4668 charge + 607 tax = 5275 total against the 9999 renewal; Advanced annual 6468/12999; Essential monthly 1499; Advanced monthly 1799; Essential biennial 5976; Advanced biennial 8616); a client-supplied amount, tax, total, currency or discount is ignored and cannot change the order row.",
+    "Duplicate and concurrent approved submissions carrying the same idempotency key converge to one consumed approval, one ipvanish_subscriptions row and one ipvanish_orders row, enforced by UNIQUE (subject_id, idempotency_key) and the seam's attempt ledger.",
+    "A declined or retryable sandbox scenario creates no subscription, no order, no account row, no billing contact and no receipt, and a later approved submission converges to the single valid subscription and order.",
+    "A stale fingerprint (a fingerprint computed for another plan_id or kind) or a foreign owner cannot consume an approval, insert an order, or read or mutate another subject's subscription, orders, billing contact or receipt.",
+    "Approval consumption, the ipvanish_subscriptions write and the ipvanish_orders insert roll back together after any failure in the final state, leaving the approval unconsumed and no partial subscription or order behind.",
+    "Reset and reseed reproduce byte-stable site-local business state for a given SEED, and backup plus restart preserve subscriptions, orders and receipts with their site binding intact.",
+    "local-sandbox is the only payment adapter across every deployment profile (offline-harbor, cloudflare-review, docker-volume); stripe_test stays null in backend/runtime.json, live payments and real outbound mail remain unavailable, and migrations are re-runnable.",
+    "Cross-site databases, backups, volumes, accounts, sessions, Redis tickets, payment flows, attempts, approvals, orders and mail jobs cannot be shared with or replayed against another site, and IPVanish mail branding differs from every other site's on sender display name, subject, lead, expiry, footer and body."
+  ],
+  "scope_subject_sha256": "30b0ebaca44759345e368186f22854293ce0f76ebaf2de9ebdef79b6b35da4fe"
+}

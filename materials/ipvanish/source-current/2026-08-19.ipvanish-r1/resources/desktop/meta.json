@@ -1,0 +1,55 @@
+{
+  "checkpoint": "resources",
+  "family": "support",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/resources/",
+  "final_url": "https://www.ipvanish.com/resources/",
+  "http_status": 200,
+  "title": "Resources - Privacy Guides, VPN Uses, and More | IPVanish",
+  "body_text_len": 1952,
+  "frames": 3,
+  "frame_sha256": [
+    "6959ce8aef187e3a817bc3c93fea54d9c992af0878294a522e960f8a7e463ce1",
+    "b954f989f097d97c1a5f944bc0de612d5249532ef3f3e99cb806c98e4460d507",
+    "1531cb9bf712cbd2eb0291226645173ff5b3f442e907fe7be8b540cb3097f2a7"
+  ],
+  "frames_identical": false,
+  "link_count": 195,
+  "resource_count": 121,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 2166
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 2237,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 2960
+  }
+}

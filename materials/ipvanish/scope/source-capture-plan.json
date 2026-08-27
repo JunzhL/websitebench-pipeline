@@ -1,0 +1,38 @@
+{
+  "schema_version": "ipvanish.source-capture-plan.v1",
+  "capture_id": "2026-08-19.ipvanish-r1",
+  "source_origin": "https://www.ipvanish.com",
+  "note": "Anonymous GET-only capture plan for the IPVanish offline clone, executed by tools/capture_source.py over a local Playwright chromium carrying an ordinary Chrome UA. The UA is a rendering-fidelity requirement, not an access-control bypass: the source serves UA-dependent markup and its Cloudflare edge returns a 403 challenge to the headless UA on support.ipvanish.com. No login, registration, form submission, payment or source mutation occurs anywhere in this plan; IPVanish has no free tier or web trial, so authenticated surfaces are unobtainable and are recorded unavailable rather than inferred. Interaction-dependent states (the three billing-period tabs, the feature expander, nav dropdowns, the mobile menu, the SSO sign-in and recovery views, the checkout payment-method chooser and its card/registration form, the support centre, and the not-found view) belong to capture_states.py, which additionally aborts every non-GET request at the network layer and refuses to fill or submit anything on the checkout origin. Localized country trees (/au, /ca, /de, /es, /fi, /fr, /gb, /ie, /it, /nl, /no, /pl, /pt, /pt-br, /se) duplicate this English tree and are declared omissions. Expect a WPML 'registered on wpml.org as a development site' banner in production markup — a source property to reproduce, not tidy away.",
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900, "frames": 3 },
+    { "name": "tablet", "width": 1024, "height": 768, "frames": 3 },
+    { "name": "mobile", "width": 390, "height": 844, "frames": 3 }
+  ],
+  "checkpoints": [
+    { "id": "home", "url": "https://www.ipvanish.com/", "family": "marketing", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "pricing", "url": "https://www.ipvanish.com/pricing/", "family": "pricing", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "why-vpn", "url": "https://www.ipvanish.com/why-vpn/", "family": "marketing", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "what-is-a-vpn", "url": "https://www.ipvanish.com/what-is-a-vpn/", "family": "marketing", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "servers", "url": "https://www.ipvanish.com/servers/", "family": "marketing", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "vpn-features", "url": "https://www.ipvanish.com/vpn-features/", "family": "marketing", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "money-back-guarantee", "url": "https://www.ipvanish.com/money-back-guarantee/", "family": "pricing", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "coupons", "url": "https://www.ipvanish.com/coupons/", "family": "pricing", "priority": "p1", "viewports": ["desktop"] },
+    { "id": "reviews", "url": "https://www.ipvanish.com/reviews/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "trust", "url": "https://www.ipvanish.com/trust/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "no-log-vpn-policy", "url": "https://www.ipvanish.com/no-log-vpn-policy/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "threat-protection", "url": "https://www.ipvanish.com/vpn-features/threat-protection/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "secure-browser", "url": "https://www.ipvanish.com/secure-browser/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "cloud-storage", "url": "https://www.ipvanish.com/cloud-storage/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "vpn-setup-windows", "url": "https://www.ipvanish.com/vpn-setup/windows/", "family": "apps", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "vpn-locations", "url": "https://www.ipvanish.com/vpn-locations/", "family": "discovery", "priority": "p1", "viewports": ["desktop"] },
+    { "id": "vpn-for-streaming", "url": "https://www.ipvanish.com/vpn-for-streaming/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "resources", "url": "https://www.ipvanish.com/resources/", "family": "support", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "setup-guides", "url": "https://www.ipvanish.com/setup-guides/", "family": "support", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "what-is-my-ip-address", "url": "https://www.ipvanish.com/what-is-my-ip-address/", "family": "tools", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "blog", "url": "https://www.ipvanish.com/blog/", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "tos", "url": "https://www.ipvanish.com/tos/", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "privacy-policy", "url": "https://www.ipvanish.com/privacy-policy/", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "partners", "url": "https://www.ipvanish.com/partners/", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "press", "url": "https://www.ipvanish.com/press/", "family": "legal", "priority": "p2", "viewports": ["desktop"] }
+  ]
+}

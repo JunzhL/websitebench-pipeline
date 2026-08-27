@@ -1,0 +1,170 @@
+{
+ "account-menu.html": {
+  "bytes": 287951,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "create-post-dialog.html": {
+  "bytes": 290783,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "dashboard.html": {
+  "bytes": 57666,
+  "remaining_remote": [],
+  "scripts_dropped": 105,
+  "username_scrubbed": true
+ },
+ "elite-plan-modal.html": {
+  "bytes": 73030,
+  "remaining_remote": [],
+  "scripts_dropped": 106,
+  "username_scrubbed": true
+ },
+ "exercise-detail.html": {
+  "bytes": 49468,
+  "remaining_remote": [],
+  "scripts_dropped": 56,
+  "username_scrubbed": true
+ },
+ "exercises-custom.html": {
+  "bytes": 45988,
+  "remaining_remote": [],
+  "scripts_dropped": 51,
+  "username_scrubbed": true
+ },
+ "exercises-database.html": {
+  "bytes": 131100,
+  "remaining_remote": [],
+  "scripts_dropped": 222,
+  "username_scrubbed": true
+ },
+ "exercises-filters.html": {
+  "bytes": 146139,
+  "remaining_remote": [],
+  "scripts_dropped": 222,
+  "username_scrubbed": true
+ },
+ "getapp-menu.html": {
+  "bytes": 287302,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "popular.html": {
+  "bytes": 280765,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "progress-body-stats.html": {
+  "bytes": 90073,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "progress-history.html": {
+  "bytes": 69356,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "progress-insights.html": {
+  "bytes": 49654,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "progress-notes.html": {
+  "bytes": 69447,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "progress-photos.html": {
+  "bytes": 42155,
+  "remaining_remote": [],
+  "scripts_dropped": 64,
+  "username_scrubbed": true
+ },
+ "qa.html": {
+  "bytes": 247379,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "settings-account.html": {
+  "bytes": 52426,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "settings-datacontrols.html": {
+  "bytes": 49509,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "settings-integrations.html": {
+  "bytes": 44911,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "settings-privacy.html": {
+  "bytes": 84301,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "settings-profile.html": {
+  "bytes": 91660,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "sync-info.html": {
+  "bytes": 285101,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ },
+ "workout-log-active.html": {
+  "bytes": 307701,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "workout-log-done.html": {
+  "bytes": 76949,
+  "remaining_remote": [],
+  "scripts_dropped": 63,
+  "username_scrubbed": true
+ },
+ "workouts-edit.html": {
+  "bytes": 384028,
+  "remaining_remote": [],
+  "scripts_dropped": 64,
+  "username_scrubbed": true
+ },
+ "workouts-plan-menu.html": {
+  "bytes": 61100,
+  "remaining_remote": [],
+  "scripts_dropped": 64,
+  "username_scrubbed": true
+ },
+ "workouts-populated.html": {
+  "bytes": 52954,
+  "remaining_remote": [],
+  "scripts_dropped": 64,
+  "username_scrubbed": true
+ },
+ "workouts.html": {
+  "bytes": 44743,
+  "remaining_remote": [],
+  "scripts_dropped": 57,
+  "username_scrubbed": true
+ }
+}

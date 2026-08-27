@@ -1,0 +1,412 @@
+[
+  {
+    "url": "https://www.jefit.com/_next/static/media/0595f7052377a1a2-s.p.2lpos000q_nzo.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/490cbca7f386131e-s.p.1zrwl0c4yv3pr.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/520c929efec0b33f-s.p.3arxh35s5-kc0.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/media/a083361d37caf3d1-s.p.0s4utfvp8prsy.woff2",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/home_page/app_button.svg",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/play_button.svg",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/03p9j-v622itm.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/25bmyc5k5ft9e.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ycd5by80-dnr.js",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1rezwj7oofhqs.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/329j824l1odqw.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3cm2469uyxc4s.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3nc6x0_y5iwnk.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/turbopack-272vsha71_qq_.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3j9nrot904k3_.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/38oeoil1659pc.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_w1fz0ss0qsy.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2yztgni4slg8i.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ntn7efqc-iiw.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/02ynhhfvtdz_k.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2ialm92wo9v3w.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_6vscv8y6fo3.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/3i-aibpp09chs.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/25xfqqp6tp95j.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/uploads/2020/10/1.mov",
+    "initiator": "video",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5P4QND4",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://sr-client-cfg.amplitude.com/config?api_key=b9d2bc03885acd82f7a3b95918a0c2b6&config_keys=analyticsSDK&session_id=1787061812123",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-288Z33GYQ7&cx=c&gtm=4e68e1",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.hotjar.com/c/hotjar-5088890.js?sv=7",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.redditstatic.com/ads/pixel.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://connect.facebook.net/en_US/fbevents.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/api/v2/auth/account",
+    "initiator": "fetch",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 701
+  },
+  {
+    "url": "https://sr-client-cfg.amplitude.com/config?api_key=b9d2bc03885acd82f7a3b95918a0c2b6&config_keys=analyticsSDK&session_id=1787061812123",
+    "initiator": "other",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 799
+  },
+  {
+    "url": "https://www.jefit.com/exercises?_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 466
+  },
+  {
+    "url": "https://pixel-config.reddit.com/pixels/a2_h5bl8fel22n0/config",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://alb.reddit.com/rp.gif?ts=1787063417400&id=a2_h5bl8fel22n0&event=PageVisit&m.value=&m.transactionId=&m.customEventName=&m.products=&m.conversionId=&uuid=ec92aa7d-3f9c-4023-9a67-14bf24ba4a70&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.1&opt_out=0&sh=1440&sw=900&v=rdt_97246b06&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fwww.jefit.com%2Fcoach&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-0.src_pid-0",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://connect.facebook.net/signals/config/3682827325320152?v=2.9.380&r=stable&domain=www.jefit.com&hme=c50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88&ex_m=113%2C218%2C164%2C25%2C78%2C79%2C156%2C74%2C73%2C11%2C174%2C98%2C19%2C148%2C136%2C43%2C81%2C86%2C144%2C169%2C176%2C29%2C17%2C30%2C31%2C32%2C34%2C52%2C157%2C83%2C121%2C21%2C23%2C48%2C44%2C46%2C45%2C91%2C100%2C104%2C119%2C155%2C158%2C50%2C120%2C27%2C24%2C128%2C75%2C40%2C160%2C159%2C161%2C152%2C150%2C28%2C39%2C63%2C118%2C171%2C76%2C20%2C123%2C89%2C72%2C22%2C93%2C94%2C125%2C92%2C146%2C145%2C149%2C105%2C170%2C173%2C38%2C53%2C122%2C51%2C8%2C4%2C5%2C7%2C6%2C3%2C99%2C110%2C177%2C185%2C232%2C80%2C245%2C244%2C243%2C14%2C26%2C37%2C59%2C112%2C65%2C10%2C69%2C106%2C107%2C108%2C114%2C139%2C35%2C33%2C141%2C142%2C143%2C138%2C137%2C165%2C82%2C168%2C166%2C167%2C54%2C64%2C132%2C18%2C172%2C49%2C291%2C292%2C290%2C305%2C327%2C225%2C214%2C66%2C215%2C213%2C330%2C321%2C56%2C226%2C116%2C140%2C88%2C130%2C58%2C129%2C135%2C134%2C62%2C70%2C68%2C162%2C84%2C85%2C124%2C41%2C36%2C57%2C60%2C109%2C175%2C1%2C133%2C16%2C131%2C12%2C2%2C61%2C101%2C15%2C71%2C67%2C127%2C97%2C96%2C178%2C179%2C102%2C103%2C9%2C111%2C55%2C153%2C95%2C87%2C77%2C126%2C115%2C47%2C154%2C0%2C90%2C147%2C151%2C163%2C42%2C117%2C13%2C180",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://connect.facebook.net//log/error?p=pixel&pn=SmartSetup&sl=1&v=2.9.380&e=Error%3A%20%5BSmartSetup%5D%20Rule%20processing%20issues&s=Error%3A%20%5BSmartSetup%5D%20Rule%20processing%20issues%0A%20%20%20%20at%20n%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F3682827325320152%3Fv%3D2.9.380%26r%3Dstable%26domain%3Dwww.jefit.com%26hme%3Dc50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88%26ex_m%3D113%252C218%252C164%252C25%252C78%252C79%252C156%252C74%252C73%252C11%252C174%252C98%252C19%252C148%252C136%252C43%252C81%252C86%252C144%252C169%252C176%252C29%252C17%252C30%252C31%252C32%252C34%252C52%252C157%252C83%252C121%252C21%252C23%252C48%252C44%252C46%252C45%252C91%252C100%252C104%252C119%252C155%252C158%252C50%252C120%252C27%252C24%252C128%252C75%252C40%252C160%252C159%252C161%252C152%252C150%252C28%252C39%252C63%252C118%252C171%252C76%252C20%252C123%252C89%252C72%252C22%252C93%252C94%252C125%252C92%252C146%252C145%252C149%252C105%252C170%252C173%252C38%252C53%252C122%252C51%252C8%252C4%252C5%252C7%252C6%252C3%252C99%252C110%252C177%252C185%252C232%252C80%252C245%252C244%252C243%252C14%252C26%252C37%252C59%252C112%252C65%252C10%252C69%252C106%252C107%252C108%252C114%252C139%252C35%252C33%252C141%252C142%252C143%252C138%252C137%252C165%252C82%252C168%252C166%252C167%252C54%252C64%252C132%252C18%252C172%252C49%252C291%252C292%252C290%252C305%252C327%252C225%252C214%252C66%252C215%252C213%252C330%252C321%252C56%252C226%252C116%252C140%252C88%252C130%252C58%252C129%252C135%252C134%252C62%252C70%252C68%252C162%252C84%252C85%252C124%252C41%252C36%252C57%252C60%252C109%252C175%252C1%252C133%252C16%252C131%252C12%252C2%252C61%252C101%252C15%252C71%252C67%252C127%252C97%252C96%252C178%252C179%252C102%252C103%252C9%252C111%252C55%252C153%252C95%252C87%252C77%252C126%252C115%252C47%252C154%252C0%252C90%252C147%252C151%252C163%252C42%252C117%252C13%252C180%3A170%3A219)%0A%20%20%20%20at%20pe%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F3682827325320152%3Fv%3D2.9.380%26r%3Dstable%26domain%3Dwww.jefit.com%26hme%3Dc50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88%26ex_m%3D113%252C218%252C164%252C25%252C78%252C79%252C156%252C74%252C73%252C11%252C174%252C98%252C19%252C148%252C136%252C43%252C81%252C86%252C144%252C169%252C176%252C29%252C17%252C30%252C31%252C32%252C34%252C52%252C157%252C83%252C121%252C21%252C23%252C48%252C44%252C46%252C45%252C91%252C100%252C104%252C119%252C155%252C158%252C50%252C120%252C27%252C24%252C128%252C75%252C40%252C160%252C159%252C161%252C152%252C150%252C28%252C39%252C63%252C118%252C171%252C76%252C20%252C123%252C89%252C72%252C22%252C93%252C94%252C125%252C92%252C146%252C145%252C149%252C105%252C170%252C173%252C38%252C53%252C122%252C51%252C8%252C4%252C5%252C7%252C6%252C3%252C99%252C110%252C177%252C185%252C232%252C80%252C245%252C244%252C243%252C14%252C26%252C37%252C59%252C112%252C65%252C10%252C69%252C106%252C107%252C108%252C114%252C139%252C35%252C33%252C141%252C142%252C143%252C138%252C137%252C165%252C82%252C168%252C166%252C167%252C54%252C64%252C132%252C18%252C172%252C49%252C291%252C292%252C290%252C305%252C327%252C225%252C214%252C66%252C215%252C213%252C330%252C321%252C56%252C226%252C116%252C140%252C88%252C130%252C58%252C129%252C135%252C134%252C62%252C70%252C68%252C162%252C84%252C85%252C124%252C41%252C36%252C57%252C60%252C109%252C175%252C1%252C133%252C16%252C131%252C12%252C2%252C61%252C101%252C15%252C71%252C67%252C127%252C97%252C96%252C178%252C179%252C102%252C103%252C9%252C111%252C55%252C153%252C95%252C87%252C77%252C126%252C115%252C47%252C154%252C0%252C90%252C147%252C151%252C163%252C42%252C117%252C13%252C180%3A172%3A13178)%0A%20%20%20%20at%20he%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F3682827325320152%3Fv%3D2.9.380%26r%3Dstable%26domain%3Dwww.jefit.com%26hme%3Dc50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88%26ex_m%3D113%252C218%252C164%252C25%252C78%252C79%252C156%252C74%252C73%252C11%252C174%252C98%252C19%252C148%252C136%252C43%252C81%252C86%252C144%252C169%252C176%252C29%252C17%252C30%252C31%252C32%252C34%252C52%252C157%252C83%252C121%252C21%252C23%252C48%252C44%252C46%252C45%252C91%252C100%252C104%252C119%252C155%252C158%252C50%252C120%252C27%252C24%252C128%252C75%252C40%252C160%252C159%252C161%252C152%252C150%252C28%252C39%252C63%252C118%252C171%252C76%252C20%252C123%252C89%252C72%252C22%252C93%252C94%252C125%252C92%252C146%252C145%252C149%252C105%252C170%252C173%252C38%252C53%252C122%252C51%252C8%252C4%252C5%252C7%252C6%252C3%252C99%252C110%252C177%252C185%252C232%252C80%252C245%252C244%252C243%252C14%252C26%252C37%252C59%252C112%252C65%252C10%252C69%252C106%252C107%252C108%252C114%252C139%252C35%252C33%252C141%252C142%252C143%252C138%252C137%252C165%252C82%252C168%252C166%252C167%252C54%252C64%252C132%252C18%252C172%252C49%252C291%252C292%252C290%252C305%252C327%252C225%252C214%252C66%252C215%252C213%252C330%252C321%252C56%252C226%252C116%252C140%252C88%252C130%252C58%252C129%252C135%252C134%252C62%252C70%252C68%252C162%252C84%252C85%252C124%252C41%252C36%252C57%252C60%252C109%252C175%252C1%252C133%252C16%252C131%252C12%252C2%252C61%252C101%252C15%252C71%252C67%252C127%252C97%252C96%252C178%252C179%252C102%252C103%252C9%252C111%252C55%252C153%252C95%252C87%252C77%252C126%252C115%252C47%252C154%252C0%252C90%252C147%252C151%252C163%252C42%252C117%252C13%252C180%3A172%3A13538)%0A%20%20%20%20at%20Object.%3Canonymous%3E%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F3682827325320152%3Fv%3D2.9.380%26r%3Dstable%26domain%3Dwww.jefit.com%26hme%3Dc50c23a73e1ec4606e74678f41b5d8ea0d42064a6916ad288a18c9a04f0ffe88%26ex_m%3D113%252C218%252C164%252C25%252C78%252C79%252C156%252C74%252C73%252C11%252C174%252C98%252C19%252C148%252C136%252C43%252C81%252C86%252C144%252C169%252C176%252C29%252C17%252C30%252C31%252C32%252C34%252C52%252C157%252C83%252C121%252C21%252C23%252C48%252C44%252C46%252C45%252C91%252C100%252C104%252C119%252C155%252C158%252C50%252C120%252C27%252C24%252C128%252C75%252C40%252C160%252C159%252C161%252C152%252C150%252C28%252C39%252C63%252C118%252C171%252C76%252C20%252C123%252C89%252C72%252C22%252C93%252C94%252C125%252C92%252C146%252C145%252C149%252C105%252C170%252C173%252C38%252C53%252C122%252C51%252C8%252C4%252C5%252C7%252C6%252C3%252C99%252C110%252C177%252C185%252C232%252C80%252C245%252C244%252C243%252C14%252C26%252C37%252C59%252C112%252C65%252C10%252C69%252C106%252C107%252C108%252C114%252C139%252C35%252C33%252C141%252C142%252C143%252C138%252C137%252C165%252C82%252C168%252C166%252C167%252C54%252C64%252C132%252C18%252C172%252C49%252C291%252C292%252C290%252C305%252C327%252C225%252C214%252C66%252C215%252C213%252C330%252C321%252C56%252C226%252C116%252C140%252C88%252C130%252C58%252C129%252C135%252C134%252C62%252C70%252C68%252C162%252C84%252C85%252C124%252C41%252C36%252C57%252C60%252C109%252C175%252C1%252C133%252C16%252C131%252C12%252C2%252C61%252C101%252C15%252C71%252C67%252C127%252C97%252C96%252C178%252C179%252C102%252C103%252C9%252C111%252C55%252C153%252C95%252C87%252C77%252C126%252C115%252C47%252C154%252C0%252C90%252C147%252C151%252C163%252C42%252C117%252C13%252C180%3A178%3A849)%0A%20%20%20%20at%20https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A64%3A803%0A%20%20%20%20at%20b%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A354%3A1706)%0A%20%20%20%20at%20e.value%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A64%3A677)%0A%20%20%20%20at%20Ye%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A455%3A12532)%0A%20%20%20%20at%20et%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A455%3A14129)%0A%20%20%20%20at%20b.fbq.b.fbq.ze%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A455%3A11307)&ue=0&rs=stable&ed=%5B%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%223456777277821277%22%5D%2C%22key%22%3A%22all_entity_images%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221954363121928689%22%5D%2C%22key%22%3A%22image_url%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221520118496062349%22%5D%2C%22key%22%3A%22media_primary_image_url%22%7D%2C%7B%22category%22%3A%22css_selector_error%22%2C%22ids%22%3A%5B%222693736154412512(.text-%5B2%5C%5C.5rem%5D%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.text-%5B2%5C%5C)%22%5D%2C%22key%22%3A%22page_title%22%2C%22message%22%3A%22.text-%5B2%5C%5C.5rem%5D%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.text-%5B2%5C%5C.5rem%5D%27%20is%20not%20a%20valid%20selector.%22%7D%2C%7B%22category%22%3A%22css_selector_error%22%2C%22ids%22%3A%5B%222066454814746669(.text-base%2F%5B1%5C%5C.4%5D%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.text-b)%22%5D%2C%22key%22%3A%22page_description%22%2C%22message%22%3A%22.text-base%2F%5B1%5C%5C.4%5D%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.text-base%2F%5B1%5C%5C.4%5D%27%20is%20not%20a%20valid%20selector.%22%7D%2C%7B%22category%22%3A%22css_selector_error%22%2C%22ids%22%3A%5B%2228817778144476449(.h-%5B50vh%5D%20.w-full%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.h-%5B50v)%22%5D%2C%22key%22%3A%22image_url%22%2C%22message%22%3A%22.h-%5B50vh%5D%20.w-full%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27.h-%5B50vh%5D%20.w-full%27%20is%20not%20a%20valid%20selector.%22%7D%5D&rqm=FGET",
+    "initiator": "img",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/signup?_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 696
+  },
+  {
+    "url": "https://www.jefit.com/login?redirect=%2Fcoach&_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 695
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/uploads/2020/10/1.mov",
+    "initiator": "video",
+    "transfer_size": 21467
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1j_vldtdm5ldl.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/home_page/leftbranch.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/rightbranch.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature5.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature6.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature7.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/feature8.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/pcmag.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/usatoday.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/forbes.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/parade.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/pix.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/home_page/digitaltrends.png",
+    "initiator": "link",
+    "transfer_size": 300
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=HGdrQT7v7BAdg_tw",
+    "initiator": "fetch",
+    "transfer_size": 1122
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=oqQ5KxtQiF3Du4oI",
+    "initiator": "fetch",
+    "transfer_size": 2259
+  },
+  {
+    "url": "https://www.jefit.com/signup?_rsc=HGdrQT7v7BAdg_tw",
+    "initiator": "fetch",
+    "transfer_size": 1094
+  },
+  {
+    "url": "https://www.jefit.com/signup?_rsc=yBpsR7DDRuYKv1em",
+    "initiator": "fetch",
+    "transfer_size": 1493
+  },
+  {
+    "url": "https://www.jefit.com/assets/wp-legacy/uploads/2020/10/1.mov",
+    "initiator": "video",
+    "transfer_size": 4908490
+  },
+  {
+    "url": "https://www.jefit.com/signup?_rsc=Q4pTY4tRdEOImzpr",
+    "initiator": "fetch",
+    "transfer_size": 1387
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/26h4k4hzu57ax.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/38t2pjbo8qkmv.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/signup?_rsc=h5ZYDjFMQus04xds",
+    "initiator": "fetch",
+    "transfer_size": 2228
+  },
+  {
+    "url": "https://www.jefit.com/login?redirect=%2Fcoach&_rsc=HGdrQT7v7BAdg_tw",
+    "initiator": "fetch",
+    "transfer_size": 1170
+  },
+  {
+    "url": "https://www.jefit.com/login?redirect=%2Fcoach&_rsc=izmF37k5pRzZrSlO",
+    "initiator": "fetch",
+    "transfer_size": 1507
+  },
+  {
+    "url": "https://www.jefit.com/login?redirect=%2Fcoach&_rsc=WpvaHrPJ7NZnmisv",
+    "initiator": "fetch",
+    "transfer_size": 628
+  },
+  {
+    "url": "https://www.jefit.com/login?redirect=%2Fcoach&_rsc=F7ZTEeOdyVZE5iwW",
+    "initiator": "fetch",
+    "transfer_size": 1582
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/2_24wthpt9k42.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/1ft6jm11gda5_.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/exercises?_rsc=DZszmJgfQMaQtSKH",
+    "initiator": "fetch",
+    "transfer_size": 1353
+  },
+  {
+    "url": "https://www.jefit.com/_next/static/chunks/196mgl4-18t3y.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=4NIOoemj0IBkO-8U",
+    "initiator": "fetch",
+    "transfer_size": 4950
+  },
+  {
+    "url": "https://www.jefit.com/?_rsc=4olUYOZrXii9vtw-",
+    "initiator": "fetch",
+    "transfer_size": 5886
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=HGdrQT7v7BAdg_tw",
+    "initiator": "fetch",
+    "transfer_size": 1110
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=Wenq6Dp4Q1YdL6ae",
+    "initiator": "fetch",
+    "transfer_size": 628
+  },
+  {
+    "url": "https://www.jefit.com/privacy-policy?_rsc=8VrrA8Qs-U8fGBAa",
+    "initiator": "fetch",
+    "transfer_size": 21061
+  },
+  {
+    "url": "https://www.jefit.com/login?_rsc=GSgtJ2Kd7PSu0yRZ",
+    "initiator": "fetch",
+    "transfer_size": 695
+  },
+  {
+    "url": "https://api2.amplitude.com/2/httpapi",
+    "initiator": "fetch",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-288Z33GYQ7&gtm=45je68e1v892535025z878490806za20gzb78490806zd78490806&_p=1787063417374&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACQC&are=1&cid=1222361631.1787061813&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=19&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=15.7.5&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~119367802~119367810~120385422&sid=1787061812&sct=1&seg=1&dl=https%3A%2F%2Fwww.jefit.com%2Fcoach&dt=Personal%20Coach%20-%20JEFIT&en=page_view&tfd=5272",
+    "initiator": "fetch",
+    "transfer_size": 0
+  }
+]
