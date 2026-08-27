@@ -1,0 +1,876 @@
+{
+  "schema_version": "prompt.websitebench-clone-task-brief.v1",
+  "observed_at": "2026-08-20T21:40:00Z",
+  "source": {
+    "input_url": "https://joindeleteme.com/",
+    "canonical_url": "https://joindeleteme.com/",
+    "canonical_origin": "https://joindeleteme.com",
+    "approved_discovery_origins": [
+      "https://joindeleteme.com",
+      "https://app.joindeleteme.com",
+      "https://privacy.joindeleteme.com",
+      "https://help.joindeleteme.com",
+      "https://static-asset.joindeleteme.com",
+      "https://tagging.joindeleteme.com"
+    ],
+    "proposed_additional_origins": [
+      "https://js.stripe.com",
+      "https://m.stripe.network",
+      "https://api.stripe.com",
+      "https://pay.google.com",
+      "https://hcaptcha.com",
+      "https://client.px-cloud.net",
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://transcend-cdn.com",
+      "https://static.klaviyo.com",
+      "https://js.hs-scripts.com"
+    ],
+    "observed_redirects": [
+      "/delete-me/login -> 301 -> https://app.joindeleteme.com/login",
+      "/delete-me/user/order/new-checkout/dmaa1/1 -> 301 -> https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1",
+      "/business/contact/ -> 301 -> /business/request-a-demo/",
+      "/comparisons/ -> 301 -> /",
+      "/faq/ -> 301 -> /permission-slip/faq/",
+      "/contact/ -> 301 -> /business/contact-sales/",
+      "/terms/ -> 301 -> /permission-slip/terms-of-service/",
+      "/privacy/ -> 301 -> /business/blog/privacy-at-work/",
+      "<extensionless-unknown> -> 301 -> <same-path-with-trailing-slash> -> 404"
+    ]
+  },
+  "site": {
+    "site_id": "deleteme",
+    "display_name": "DeleteMe",
+    "existing_site": false,
+    "site_dir": "materials/deleteme",
+    "target_origin": "https://deleteme.website-bench.com",
+    "worker_name": "websitebench-deleteme-demo",
+    "purpose": "Help individuals subscribe to a managed personal-data removal service and obtain ongoing removal of their personal information from data-broker sites."
+  },
+  "baseline": {
+    "locale": "en-US",
+    "timezone": "Etc/UTC",
+    "timezone_policy": "temporary deterministic default; the source exposes no account or entity timezone on public surfaces",
+    "viewports": [
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "tablet",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "viewport_note": "A tablet anchor is included because the plan grid ships a second, display:none yootheme variant at desktop width and the header carries separate desktop/mobile Join Now targets, so an intermediate breakpoint is likely material. Breakpoints will be re-frozen from measured source behaviour during capture."
+  },
+  "scope": {
+    "roles": [
+      {
+        "id": "anonymous",
+        "display_name": "Anonymous visitor",
+        "authentication_required": false,
+        "evidence_kind": "directly-observed",
+        "evidence_urls": [
+          "https://joindeleteme.com/",
+          "https://joindeleteme.com/privacy-protection-plans/",
+          "https://joindeleteme.com/pricing/",
+          "https://joindeleteme.com/how-we-work/",
+          "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+        ],
+        "changes": "Sees marketing pages, the plan grid, and the pre-purchase checkout form.",
+        "live_view_required": false,
+        "entitlement_required": false
+      },
+      {
+        "id": "subscriber",
+        "display_name": "Paying subscriber",
+        "authentication_required": true,
+        "evidence_kind": "unavailable",
+        "evidence_urls": [
+          "https://app.joindeleteme.com/login"
+        ],
+        "changes": "Would see the removal/privacy dashboard, scan and removal reports, the removal profile (age, phone, previous names, relatives), billing history, plan changes, pause/cancel and reactivation.",
+        "live_view_required": true,
+        "entitlement_required": true,
+        "unavailable_reason": "DeleteMe issues an account only after a completed purchase: checkout collects no password and the account is created from an emailed password-set link. A real purchase is forbidden (live_payment_authorized=false) and the user chose anonymous-only evidence for this run, so no authenticated surface was observed. GET /api/context/ returns 401 unauthenticated."
+      }
+    ],
+    "core_journeys": [
+      {
+        "id": "select-individual-plan-and-check-out",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Choose the Individual (1 person) plan and reach the paid checkout's confirmation state.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/",
+        "steps": [
+          "Follow the header Join Now call to action to the plan grid.",
+          "Select the plan-size tab labelled Single and a billing-term tab (1 Year or 2 Years).",
+          "Activate Start Protection for that combination.",
+          "On app.joindeleteme.com/checkout, complete Customer Information, payment, and both required agreements.",
+          "Submit Purchase & Start Deleting and reach the confirmation state."
+        ],
+        "expected_result": "A confirmation state that reports payment success and directs the buyer to an emailed link to set a password and complete account setup.",
+        "failure_variant": "A declined payment, or submission with required fields empty or the agreements unchecked.",
+        "recovery_variant": "Correct the field or retry the payment and resubmit.",
+        "source_mutation_required": true,
+        "evidence_kind": "structural-only",
+        "evidence_urls": [
+          "https://joindeleteme.com/privacy-protection-plans/",
+          "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+        ],
+        "confidence": "medium",
+        "note": "Form structure, plan wiring, price arithmetic and the confirmation copy strings are directly observed; the post-submit state itself is not, because submitting would be a real purchase."
+      },
+      {
+        "id": "compare-plans",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Compare the individual, couple and family plans across both billing terms.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/privacy-protection-plans/",
+        "steps": [
+          "Switch the billing-term tabs between 1 Year and 2 Years.",
+          "Switch the plan-size tabs between Single, Couple and Family.",
+          "Read the per-month price, the struck comparison price, and the billed-total line for each combination."
+        ],
+        "expected_result": "Six plan cards, each showing a per-month price, a billed-total disclaimer, and a Start Protection call to action.",
+        "failure_variant": "None on the source; the grid is client-side filtering with all six cards present in the DOM.",
+        "recovery_variant": "None required.",
+        "source_mutation_required": false,
+        "evidence_kind": "directly-observed",
+        "evidence_urls": [
+          "https://joindeleteme.com/privacy-protection-plans/",
+          "https://joindeleteme.com/pricing/"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "free-scan-entry",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Reach the free privacy-scan entry and its result states.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/scan/",
+        "steps": [
+          "Open the scan entry from the home page or footer.",
+          "Observe the intake form structure and the result templates."
+        ],
+        "expected_result": "A scan intake asking for name and state, with completed and empty result templates present in the markup.",
+        "failure_variant": "Unobserved.",
+        "recovery_variant": "Unobserved.",
+        "source_mutation_required": true,
+        "evidence_kind": "structural-only",
+        "evidence_urls": [
+          "https://joindeleteme.com/scan/"
+        ],
+        "confidence": "medium",
+        "note": "The scan intake asks for real personal data. Its structure and its hidden result templates were read as markup only; nothing was submitted, so the live scan result is unobserved."
+      },
+      {
+        "id": "sign-in-entry",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Reach the sign-in entry and see the available identity choices without submitting credentials.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/",
+        "steps": [
+          "Follow Login from the header.",
+          "Observe the redirect to the application host and the sign-in field set."
+        ],
+        "expected_result": "The sign-in surface on app.joindeleteme.com with its field set and recovery and registration affordances.",
+        "failure_variant": "Wrong credentials; unobserved because nothing was submitted.",
+        "recovery_variant": "Password recovery entry.",
+        "source_mutation_required": false,
+        "evidence_kind": "structural-only",
+        "evidence_urls": [
+          "https://app.joindeleteme.com/login"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "browse-removal-guidance",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Browse the data-deletion guidance families the primary navigation exposes.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/blog/opt-out-guides/",
+        "steps": [
+          "Open DIY Opt-Out Guides from the primary navigation.",
+          "Open the sites-we-remove-from index.",
+          "Open a delete-your-account guide family index."
+        ],
+        "expected_result": "Archive pages listing removal guidance, with the broker count rendered on the sites index.",
+        "failure_variant": "None.",
+        "recovery_variant": "None required.",
+        "source_mutation_required": false,
+        "evidence_kind": "directly-observed",
+        "evidence_urls": [
+          "https://joindeleteme.com/blog/opt-out-guides/",
+          "https://joindeleteme.com/sites-we-remove-from/",
+          "https://joindeleteme.com/delete-your-account/"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "not-found-recovery",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Reach a branded not-found view from a bad deep link and return to available content.",
+        "preconditions": "None.",
+        "starting_url": "https://joindeleteme.com/zzzz-no-match-websitebench",
+        "steps": [
+          "Request an unknown path.",
+          "Observe the trailing-slash redirect and then the branded 404.",
+          "Use the recovery actions."
+        ],
+        "expected_result": "HTTP 404 with full site chrome, the headings Oops! and That page can't be found., and Back plus Go to the homepage actions.",
+        "failure_variant": "None.",
+        "recovery_variant": "The two recovery actions.",
+        "source_mutation_required": false,
+        "evidence_kind": "directly-observed",
+        "evidence_urls": [
+          "https://joindeleteme.com/zzzz-no-match-websitebench/"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "subscription-management",
+        "priority": "p1",
+        "role": "subscriber",
+        "purpose": "Change plan, pause or skip, cancel and reactivate an existing subscription, and inspect removal reports and history.",
+        "preconditions": "A paid subscription.",
+        "starting_url": "https://app.joindeleteme.com/login",
+        "steps": [
+          "Unavailable."
+        ],
+        "expected_result": "Unavailable.",
+        "failure_variant": "Unavailable.",
+        "recovery_variant": "Unavailable.",
+        "source_mutation_required": true,
+        "evidence_kind": "unavailable",
+        "evidence_urls": [
+          "https://app.joindeleteme.com/login"
+        ],
+        "confidence": "low",
+        "note": "Fourteen of the supplied human traces describe this surface. It sits behind a purchase this run may not make, so the clone will implement locally coherent behaviour and label every such page as clone-local inference."
+      }
+    ],
+    "page_families": [
+      {
+        "id": "public-marketing",
+        "evidence_kind": "directly-observed",
+        "examples": [
+          "/",
+          "/how-we-work/",
+          "/about-us/",
+          "/security/",
+          "/international/",
+          "/reviews/",
+          "/press/",
+          "/careers/"
+        ]
+      },
+      {
+        "id": "plans-and-pricing",
+        "evidence_kind": "directly-observed",
+        "examples": [
+          "/privacy-protection-plans/",
+          "/pricing/",
+          "/signup/"
+        ]
+      },
+      {
+        "id": "checkout",
+        "evidence_kind": "structural-only",
+        "examples": [
+          "app.joindeleteme.com/checkout?plan=&term=&qty=",
+          "app.joindeleteme.com/checkout/complete?session_id="
+        ]
+      },
+      {
+        "id": "discovery-and-guidance",
+        "evidence_kind": "directly-observed",
+        "examples": [
+          "/blog/",
+          "/blog/opt-out-guides/",
+          "/sites-we-remove-from/",
+          "/delete-your-account/",
+          "/doxxing/",
+          "/is-site-safe/",
+          "/is-it-scam/",
+          "/glossary/",
+          "/do-not-call-list/",
+          "/ai-privacy-settings/",
+          "/data-breaches/"
+        ]
+      },
+      {
+        "id": "account-auth",
+        "evidence_kind": "structural-only",
+        "examples": [
+          "app.joindeleteme.com/login",
+          "/delete-me/login"
+        ]
+      },
+      {
+        "id": "subscriber-dashboard",
+        "evidence_kind": "unavailable",
+        "examples": [
+          "app.joindeleteme.com/* (authenticated)"
+        ]
+      },
+      {
+        "id": "error-recovery",
+        "evidence_kind": "directly-observed",
+        "examples": [
+          "/zzzz-no-match-websitebench/",
+          "/plans/",
+          "/join-now/"
+        ]
+      },
+      {
+        "id": "business-b2b",
+        "evidence_kind": "directly-observed",
+        "examples": [
+          "/business/",
+          "/business/pricing/",
+          "/business/request-a-demo/"
+        ],
+        "note": "Present and linked, but out of the consumer scope this run freezes; recorded so its omission is deliberate."
+      }
+    ],
+    "deterministic_seed_plan": {
+      "roles": [
+        "one seeded subscriber",
+        "one isolation subscriber"
+      ],
+      "entities": [
+        "subscription",
+        "plan catalogue (single/couple/family x 1y/2y)",
+        "removal profile",
+        "broker removal record",
+        "scan result",
+        "billing history entry",
+        "order"
+      ],
+      "states": [
+        "empty removal profile",
+        "populated removal report set",
+        "in-progress scan",
+        "declined payment",
+        "retryable payment",
+        "cancelled subscription",
+        "paused subscription"
+      ],
+      "synthetic_identity_policy": "All seeded personal data is synthetic and non-resolvable: example.invalid email domains, fictional names, and placeholder addresses. No real person's data is seeded, and no PII from the source is copied.",
+      "isolation_actor": "A second subscriber whose records must never be visible to the first.",
+      "probes": [
+        "reset determinism",
+        "duplicate submission",
+        "restart mid-checkout"
+      ]
+    },
+    "external_services": [
+      {
+        "service": "Stripe Elements / Payment Element",
+        "evidence_kind": "directly-observed",
+        "local_adapter_required": true,
+        "external_side_effect": true,
+        "user_authorization_required": true,
+        "zero_remote_dependency_required": true,
+        "note": "The source collects card data in a Stripe-hosted iframe. The clone reproduces no card field; it uses the local-sandbox adapter only."
+      },
+      {
+        "service": "hCaptcha",
+        "evidence_kind": "directly-observed",
+        "local_adapter_required": false,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "Bot-protection layer on checkout; not reproduced."
+      },
+      {
+        "service": "PerimeterX",
+        "evidence_kind": "directly-observed",
+        "local_adapter_required": false,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true
+      },
+      {
+        "service": "Zendesk help centre (help.joindeleteme.com)",
+        "evidence_kind": "unavailable",
+        "local_adapter_required": false,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "Returns 403 to our user agent, so the help-centre route family could not be inventoried."
+      },
+      {
+        "service": "Transcend consent manager",
+        "evidence_kind": "structural-only",
+        "local_adapter_required": false,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "airgap.js and ui.js load but no banner rendered in the capture session; post-consent origins were never observed because no consent control was clicked."
+      },
+      {
+        "service": "Google Fonts (Cairo, Poppins)",
+        "evidence_kind": "directly-observed",
+        "local_adapter_required": false,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "Must be mirrored locally; the clone makes no font request offsite."
+      },
+      {
+        "service": "Analytics and advertising (GA4, Google Ads, Meta, Bing, LinkedIn, HubSpot, Klaviyo, Everflow, Podscribe, tvScientific, server-side GTM on tagging.joindeleteme.com)",
+        "evidence_kind": "directly-observed",
+        "local_adapter_required": false,
+        "external_side_effect": true,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "Thirty-five distinct non-primary hosts on the marketing pages. All are out-of-scope runtime and are declared, never mirrored."
+      },
+      {
+        "service": "Address autocomplete and geocode (app.joindeleteme.com/api/addresses/*)",
+        "evidence_kind": "structural-only",
+        "local_adapter_required": true,
+        "external_side_effect": false,
+        "user_authorization_required": false,
+        "zero_remote_dependency_required": true,
+        "note": "POST-only; the suggestion provider is not identifiable from public assets and the dropdown cannot be triggered without typing, so its shape is unobserved."
+      }
+    ]
+  },
+  "authority": {
+    "authentication_access": "not-requested-anonymous-only",
+    "credentials_persisted": false,
+    "authorized_source_mutations": [],
+    "requested_source_mutations": [],
+    "real_email_authorized": false,
+    "stripe_test_authorized": false,
+    "live_payment_authorized": false,
+    "push_authorized": false,
+    "pr_authorized": false,
+    "public_deployment_authorized": false,
+    "rights_or_redistribution_status": "unknown",
+    "authority_note": "The user chose anonymous-only evidence and dry-run-only deployment for this run. No purchase, no account creation, no PII submission, and no email were performed. Because this source is a data-removal service, its own intake forms request real personal data; no personal data was entered on any live surface at any point."
+  },
+  "trace_acquisition": {
+    "mode": "adaptive",
+    "agent_must_initiate": true,
+    "text_ownership": "human-only",
+    "human_trace_texts": [
+      {
+        "id": "ht-01",
+        "text": "Open DeleteMe's public entry page and use its primary navigation to reach the section for data-deletion records and actions; verify the destination heading and canonical path are visible."
+      },
+      {
+        "id": "ht-02",
+        "text": "On DeleteMe's website, select the Individual (1 person) subscription plan, submit personal information for data removal, and complete checkout Confirm the removed or changed item is no longer active and the history reflects the change."
+      },
+      {
+        "id": "ht-03",
+        "text": "Browse deleteme's subscription offerings and compare the available plans or data-removal plan options."
+      },
+      {
+        "id": "ht-04",
+        "text": "Enter/edit the personal identity/contact details deleteme uses for data-removal searches."
+      },
+      {
+        "id": "ht-05",
+        "text": "Select a plan tier, quantity, delivery frequency, and relevant product options on deleteme."
+      },
+      {
+        "id": "ht-06",
+        "text": "Create a new deleteme account and complete the subscriber profile."
+      },
+      {
+        "id": "ht-07",
+        "text": "Sign in to an existing deleteme account and open the subscription/account dashboard."
+      },
+      {
+        "id": "ht-08",
+        "text": "Add or edit the shipping/contact address associated with a deleteme subscription."
+      },
+      {
+        "id": "ht-09",
+        "text": "Add or update a payment method and reach the subscription order-review/activation step on deleteme."
+      },
+      {
+        "id": "ht-10",
+        "text": "Activate or reach activation confirmation for a deleteme data-removal plan."
+      },
+      {
+        "id": "ht-11",
+        "text": "Change the plan, product preference, quantity, or delivery cadence for an existing deleteme subscription."
+      },
+      {
+        "id": "ht-12",
+        "text": "Pause the subscription or skip/reschedule an upcoming deleteme delivery."
+      },
+      {
+        "id": "ht-13",
+        "text": "Use deleteme's cancellation flow and, where supported, reactivate a canceled subscription."
+      },
+      {
+        "id": "ht-14",
+        "text": "Open deleteme's removal/privacy dashboard and inspect scan/removal status, reports, or profile settings."
+      },
+      {
+        "id": "ht-15",
+        "text": "Search DeleteMe for `zzzz-no-match-websitebench`, or apply an impossible public filter when discovery is browse-only, and verify a no-results message plus a route back to available data-deletion records and actions."
+      },
+      {
+        "id": "ht-16",
+        "text": "Open DeleteMe's sign-in entry, verify the username or email field and the available password or identity-provider choices, then return without submitting credentials."
+      },
+      {
+        "id": "ht-17",
+        "text": "Open DeleteMe's account-registration entry and verify the visible identity fields, terms links, and verification guidance without creating an account."
+      },
+      {
+        "id": "ht-18",
+        "text": "From DeleteMe's sign-in surface, open password recovery and verify the reset-address field, validation guidance, and return-to-sign-in link without sending a reset message."
+      },
+      {
+        "id": "ht-19",
+        "text": "With seeded offline data present, open DeleteMe's account history for data-deletion records and actions; verify the newest item exposes its status, detail, edit or cancellation options, and a route back to the relevant collection."
+      },
+      {
+        "id": "ht-20",
+        "text": "Open a DeleteMe action for data-deletion records and actions with required fields empty or while signed out and verify inline validation or a permission prompt identifies what must be corrected before continuation."
+      },
+      {
+        "id": "ht-21",
+        "text": "Open DeleteMe's public help, support, or contact entry and verify a user can reach guidance for data-deletion records and actions, account access, and failed actions without exposing private account data."
+      },
+      {
+        "id": "ht-22",
+        "text": "Open a non-existent DeleteMe deep link and verify a branded not-found or recovery view preserves primary navigation and provides a safe route back to data-deletion records and actions."
+      },
+      {
+        "id": "ht-23",
+        "text": "Starting at DeleteMe's public entry, complete task 700: On DeleteMe's website, select the Individual (1 person) subscription plan, submit personal information for data removal, and complete checkout Confirm the removed or changed item is no longer active and the history reflects the change."
+      }
+    ],
+    "human_trace_text_provenance": "All 23 items are verbatim from the user's message. The 11 Meetup lines that preceded them in the same paste are template leftovers from an unrelated site, as in the jefit and ipvanish runs of this session; they are excluded and not treated as DeleteMe scope.",
+    "trace_candidates": [],
+    "requested_traces": [],
+    "completed_traces": [],
+    "remaining_material_uncertainties": [
+      "The post-purchase removal profile, where age, phone, previous names and relatives are actually collected, is behind authentication and was never observed. ht-02, ht-04 and ht-23 all depend on it.",
+      "Every subscriber-side trace (ht-06 through ht-14, ht-19, ht-20) describes an authenticated surface this run may not reach.",
+      "Inline validation copy exists as strings in the public bundle but its placement and trigger are unobserved.",
+      "The address autocomplete provider and its parsed sub-fields are unobserved because the dropdown needs typed input.",
+      "The help centre returns 403 to our user agent, so ht-21's destination could not be inventoried."
+    ]
+  },
+  "trajectory_recording": {
+    "channel": "not-used",
+    "channel_note": "No human handoff was requested: the user chose anonymous-only evidence, so there is no login to demonstrate and no trajectory to record. Structural evidence comes from agent-driven read-only capture walks.",
+    "recordings": [],
+    "clone_side_recordings": [],
+    "two_sided_findings": []
+  },
+  "field_evidence": [
+    {
+      "field": "canonical_url",
+      "evidence_urls": [
+        "https://joindeleteme.com/"
+      ],
+      "observation": "Input URL is already canonical; 200 with no redirect.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "site.display_name",
+      "evidence_urls": [
+        "https://joindeleteme.com/"
+      ],
+      "observation": "Title reads 'DeleteMe: Remove Personal Data from Internet & Data Brokers'; the brand is DeleteMe, operated by Abine per the checkout agreement copy.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "plans.individual_label",
+      "evidence_urls": [
+        "https://joindeleteme.com/privacy-protection-plans/"
+      ],
+      "observation": "The plan-size tab for one person is labelled 'Single', while the card body reads '1 Person'. The word 'Individual' from the trace text does not appear as a control label.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "plans.prices",
+      "evidence_urls": [
+        "https://joindeleteme.com/privacy-protection-plans/",
+        "https://joindeleteme.com/pricing/"
+      ],
+      "observation": "Single: $10.75/mo billed $129.00 annually; $8.71/mo billed $209.00 every 2 years. Couple: $19.08/$229.00 and $14.54/$349.00. Family: $27.42/$329.00 and $20.79/$499.00. Prices are injected by the page's own script, so a plain GET returns empty price spans.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "plans.hidden_strikethrough",
+      "evidence_urls": [
+        "https://joindeleteme.com/privacy-protection-plans/"
+      ],
+      "observation": "The single-person card renders its comparison price but sets visibility:hidden, because quantity 1 earns no quantity discount. The element is present, not removed.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "plans.default_tabs",
+      "evidence_urls": [
+        "https://joindeleteme.com/pricing/",
+        "https://joindeleteme.com/privacy-protection-plans/"
+      ],
+      "observation": "Default selection is 2 Years and Couple, not Single. The two pricing pages order the term tabs differently.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "checkout.host_and_shape",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "Checkout is a separate React-Router SPA on app.joindeleteme.com served as a ~6 KB shell with no form markup; the form exists only after its JavaScript runs. Single page with three numbered sections, not a multi-step wizard.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "checkout.fields",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "First Name, Last Name, Email Address, Address (all required), a Stripe Payment Element iframe, an optional 'How did you hear about us?', two required agreement checkboxes, two optional upsell checkboxes, a promo-code panel, and a 'Purchase & Start Deleting' submit. Field names and types only were recorded; no values.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "checkout.no_removal_pii",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "Checkout collects no age, phone, previous names, aliases or relatives. The removal profile that collects those lives after purchase, behind the emailed password-set link. This directly contradicts the headline trace's assumption that removal details are submitted during checkout.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "checkout.no_password",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "No password field exists at checkout. The confirmation copy states an email is sent with a link to set a password and complete account setup, so account creation is post-purchase.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "checkout.total_requires_non_get",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "With every non-GET aborted, the entire Order Summary block renders null. The page creates its totals from POST /api/checkout/checkout/session. Observed totals on a normal load: $129.00 for 1y/qty1, $209.00 with 'You save $49.00' for 2y/qty1, $229.00 with 'You save $29.00' for 1y/qty2.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "payment.boundary",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1"
+      ],
+      "observation": "Card data is collected only inside Stripe-hosted iframes exposing number, expiry, cvc, country and postalCode. A live Stripe publishable key appears in the iframe URLs and was deliberately not recorded. Google Pay loads a payframe; Apple Pay is initialised never in this environment.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "not_found",
+      "evidence_urls": [
+        "https://joindeleteme.com/zzzz-no-match-websitebench/"
+      ],
+      "observation": "Extensionless unknown paths take a 301 to the trailing-slash form, then answer HTTP 404 with a fully branded page: title 'Page Not Found - DeleteMe', headings 'Oops!' and \"That page can't be found.\", body 'It looks like nothing was found at this location.', and Back plus 'Go to the homepage' actions.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "pricing_page_duality",
+      "evidence_urls": [
+        "https://joindeleteme.com/privacy-protection-plans/",
+        "https://joindeleteme.com/pricing/"
+      ],
+      "observation": "/privacy-protection-plans/ is canonical and indexable and is the header CTA destination; /pricing/ carries robots follow,noindex, has no canonical tag, and is absent from the sitemap. /signup/ carries the same grid with legacy /delete-me/ CTA slugs.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "support_entry",
+      "evidence_urls": [
+        "https://help.joindeleteme.com/hc/en-us",
+        "https://joindeleteme.com/help"
+      ],
+      "observation": "Support is a Zendesk Guide help centre on help.joindeleteme.com (joindeleteme.com/help 301s to it). The hub, categories and articles answer 200; only /hc/en-us/requests/new is blocked by a Cloudflare managed challenge. Categories are exactly 'Business Account Administration', 'Member Experience' and 'Frequently Asked Questions'. Documented contact routes are phone 833-335-3836 (Mon-Fri 9am-8pm Eastern), support@joindeleteme.com, and a chat widget. No private account data is exposed while signed out.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "login_entry",
+      "evidence_urls": [
+        "https://joindeleteme.com/delete-me/login",
+        "https://app.joindeleteme.com/login"
+      ],
+      "observation": "The header Login link 301s from the marketing host to app.joindeleteme.com/login.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "external_origins",
+      "evidence_urls": [
+        "https://joindeleteme.com/",
+        "https://joindeleteme.com/pricing/"
+      ],
+      "observation": "Thirty-five distinct non-primary hosts load on the marketing pages, spanning consent, server-side tagging, five ad networks, HubSpot, Klaviyo, affiliate and podcast/CTV attribution, and Google Fonts. No payment, chat or video origin appears on marketing pages.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "robots_search_directive",
+      "evidence_urls": [
+        "https://joindeleteme.com/robots.txt"
+      ],
+      "observation": "robots.txt allows ClaudeBot and named AI agents but disallows /*?s= for every agent, which is exactly the site-search path ht-15 targets. Bulk crawling of search URLs was therefore not performed.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": false
+    },
+    {
+      "field": "signin.shape",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/login"
+      ],
+      "observation": "H1 'Welcome back' with sub-copy 'Please log into your account in order to access the portal.' Fields are Email (type=email, required, autocomplete=email) and Password (required, autocomplete=current-password), both with MUI-generated ids and no name attribute. The only identity provider rendered is 'Continue with Google', divider text 'or'. There is NO remember-me control. Recovery link text is 'Forgot Password?'; registration link text is 'Create Account' and it points at /checkout.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "password_recovery.shape",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/password/forgot"
+      ],
+      "observation": "H1 'Reset your password'. Guidance: 'Enter your email address and we'll send you a link to reset your password.' One field, label 'Email Address *', name=email id=email required autocomplete=email. Submit label 'Send reset link'. Return link 'Back to sign in'. Nothing was submitted, so the rendered success state is unobserved.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "registration.is_paid_checkout",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/checkout"
+      ],
+      "observation": "'Create Account' leads to /checkout, not a free sign-up: app.joindeleteme.com/signup and /register do not exist. Registration is therefore a paid flow, and the agreement copy names Abine as the contracting party with terms at privacy.joindeleteme.com/policies/?name=terms-of-service and privacy-policy.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "search.no_results_is_silent",
+      "evidence_urls": [
+        "https://joindeleteme.com/?s=zzzz-no-match-websitebench"
+      ],
+      "observation": "Site search is the WordPress /?s= query. A no-match query answers HTTP 200 with title '<term> - DeleteMe', H1 'Search', H2 'Search results for \u2018<term>\u2019' using curly quotes, the input re-populated with the term, and an EMPTY results region. There is no 'no results' message of any kind; the empty state is silent. Full site chrome remains as the route back. The home page carries no search form at all - the form is exposed on blog and archive pages.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    },
+    {
+      "field": "app_host_soft_404",
+      "evidence_urls": [
+        "https://app.joindeleteme.com/no-such-route-websitebench-zzz9"
+      ],
+      "observation": "The application host answers unknown routes with HTTP 200 (SPA shell) rendering H1 'Page not found' and \"The page you're looking for doesn't exist or has been moved.\" plus 'Go to Dashboard' and 'Contact Support'. The marketing host answers a real 404. The two hosts therefore disagree on status for a bad deep link, which the clone must reproduce rather than normalise.",
+      "evidence_kind": "directly-observed",
+      "confidence": "high",
+      "refreeze_required": true
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "u-01",
+      "issue": "The headline trace (ht-02, ht-23) asks to submit personal information for data removal during checkout, but the source collects none there; the removal profile is post-purchase and behind authentication.",
+      "disposition": "Reproduce the source faithfully and implement the removal profile as a clearly labelled clone-local surface, disclosing that its structure is inference."
+    },
+    {
+      "id": "u-02",
+      "issue": "Traces ht-05, ht-08, ht-11 and ht-12 use e-commerce template vocabulary (quantity, delivery frequency, shipping address, skip a delivery) that a data-removal subscription does not have.",
+      "disposition": "Map each to its nearest real equivalent (plan size, billing term, billing address, pause) and disclose the divergence rather than inventing a shipping or delivery model."
+    },
+    {
+      "id": "u-03",
+      "issue": "The Order Summary needs a POST to render, so a GET-only capture freezes a checkout with no totals at all.",
+      "disposition": "Capture GET-only by default; take one bounded, documented probe that permits only the page's own session request to observe totals, and derive amounts server-side in the clone from the plan catalogue."
+    },
+    {
+      "id": "u-04",
+      "issue": "The desktop header Join Now target is the dead anchor #pricing, absent from both the static HTML and the post-JavaScript DOM of the home page.",
+      "disposition": "Reproduce the source behaviour exactly, including the dead anchor, and record it as a source property rather than repairing it."
+    },
+    {
+      "id": "u-05",
+      "issue": "No consent banner rendered in the capture session, so post-consent third-party origins were never observed and the banner state cannot be captured.",
+      "disposition": "Record as an evidence limit; do not click consent controls and do not invent a banner."
+    },
+    {
+      "id": "u-06",
+      "issue": "Two third-party tags could not be attributed to a vendor from public assets alone.",
+      "disposition": "Declare them by origin in the excluded-request record without guessing the vendor."
+    },
+    {
+      "id": "u-07",
+      "issue": "The Zendesk ticket form at /hc/en-us/requests/new answers a Cloudflare managed challenge (403), so its field inventory is unobserved. The help-centre hub, categories and articles are reachable.",
+      "disposition": "Freeze the reachable help-centre surface; mark the ticket form unavailable and do not invent its fields."
+    },
+    {
+      "id": "u-08",
+      "issue": "Site search is robots-disallowed for all agents, and ht-15 asks for a no-results state.",
+      "disposition": "Honour the directive for bulk crawling; observe the no-results view with a single user-equivalent page view and record that decision in the lifecycle notes."
+    },
+    {
+      "id": "u-09",
+      "issue": "ht-15 asks to verify a no-results message, but DeleteMe's search empty state carries no such message: it renders a heading, the echoed term, and nothing else.",
+      "disposition": "Reproduce the silent empty state exactly and disclose the divergence. Do not invent a 'no results found' string the source never shows."
+    },
+    {
+      "id": "u-10",
+      "issue": "ht-16 asks for the available password or identity-provider choices; only 'Continue with Google' renders on the generic sign-in, while the public bundle also contains SSO and organisation-join paths that need a real organisation identifier.",
+      "disposition": "Freeze only what renders anonymously; record the SSO variants as bundle-only strings, never as observed UI."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "mainline_journey_ids": [
+    "select-individual-plan-and-check-out",
+    "compare-plans"
+  ],
+  "out_of_scope": [
+    "The entire B2B tree (/business/*, ~110 pages including pricing, demo request, contact sales, B2B blog and resources); it is a separate product with its own pricing and lead-generation forms.",
+    "Individual articles inside the ~1,856-item post-type families; archive/index pages are in scope, but reproducing every leaf adds content volume without interaction semantics.",
+    "Non-US country variants (UK/CA/AU) reachable via ?country= or the country toggle; no non-US render was captured.",
+    "Premium single-person tiers (gold, diamond, platinum, vip) behind View Premium Plan; present in configuration but never rendered in a captured view.",
+    "The Permission Slip mobile app and store listings; only its web marketing pages are in scope.",
+    "Live third-party runtime including Stripe, hCaptcha, PerimeterX, consent, Zendesk, and analytics/advertising hosts; the clone uses local-sandbox payment and makes zero offsite requests.",
+    "The Zendesk ticket form at /hc/en-us/requests/new; it answered a managed challenge, so its fields were unavailable rather than inferred.",
+    "Affiliate, influencer, and careers application submissions; only their observed marketing pages are in scope."
+  ],
+  "primary_actor_ids": [
+    "anonymous",
+    "subscriber"
+  ],
+  "purpose_id": "deleteme-consumer-privacy-subscription",
+  "schema_version": "offline-clone.purpose.v1",
+  "statement": "Help an individual choose a DeleteMe personal-data-removal plan, complete the paid checkout for it, and reach the state where their removal service is active - reproducing the source's public marketing, plan comparison, checkout and recovery surfaces offline.",
+  "status": "frozen"
+}

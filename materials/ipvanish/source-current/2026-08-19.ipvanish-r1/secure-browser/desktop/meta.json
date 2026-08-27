@@ -1,0 +1,55 @@
+{
+  "checkpoint": "secure-browser",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/secure-browser/",
+  "final_url": "https://www.ipvanish.com/secure-browser/",
+  "http_status": 200,
+  "title": "Secure Browser | IPVanish",
+  "body_text_len": 9218,
+  "frames": 3,
+  "frame_sha256": [
+    "57830411917ca62e0571b548daf8fbe658e99d99785b5efa0ee1b5afc531844f",
+    "cd621376926e1931fff46fb1542b7b19c73d476ccd92565d20148b8b59990ba2",
+    "f4a918a4c8dc7947279f22954b9dec930975a07190e0ab5ee354a03b16449fb8"
+  ],
+  "frames_identical": false,
+  "link_count": 203,
+  "resource_count": 133,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 8987
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 9088,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 9811
+  }
+}

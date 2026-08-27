@@ -1,0 +1,42 @@
+{
+  "checkpoint": "routines-beginner",
+  "family": "discovery",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/routines/beginner",
+  "final_url": "https://www.jefit.com/routines/beginner",
+  "http_status": 200,
+  "title": "Workout Plans for Beginner - Simple & Effective Routines to Get Started!",
+  "body_text_len": 14167,
+  "frames": 3,
+  "frame_sha256": [
+    "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+    "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+    "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485"
+  ],
+  "frames_identical": true,
+  "link_count": 41,
+  "resource_count": 104,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 3282,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 3803
+  }
+}

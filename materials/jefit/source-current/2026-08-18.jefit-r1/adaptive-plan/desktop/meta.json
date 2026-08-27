@@ -1,0 +1,42 @@
+{
+  "checkpoint": "adaptive-plan",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+  "final_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+  "http_status": 200,
+  "title": "Adaptive Plan \u2014 AI-Powered Training That Evolves With You | JEFIT",
+  "body_text_len": 4234,
+  "frames": 3,
+  "frame_sha256": [
+    "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+    "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+    "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a"
+  ],
+  "frames_identical": true,
+  "link_count": 30,
+  "resource_count": 89,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 7348,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 7869
+  }
+}

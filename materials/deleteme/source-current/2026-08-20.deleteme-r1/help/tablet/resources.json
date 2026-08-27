@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://static.zdassets.com/hc/assets/application-9dfad02370881fe3effa98d45c896d83.css",
+    "initiator": "link",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/theming_assets/11850483/4412972952979/style.css?digest=51847487824147",
+    "initiator": "link",
+    "transfer_size": 14494
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/theming_assets/01HZKX87VTKQSNSRHKV761VHRA",
+    "initiator": "img",
+    "transfer_size": 9111
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/theming_assets/11850483/4412972952979/script.js?digest=51847487824147",
+    "initiator": "script",
+    "transfer_size": 5234
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/en-us.5b17782225c128b30f4a.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://static.zdassets.com/hc/assets/hc_enduser-4d222c1628d9d0216307852f253184c1.js",
+    "initiator": "script",
+    "transfer_size": 0
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/theming_assets/01HZKX884AE9407SZ2V0NJ67WW",
+    "initiator": "css",
+    "transfer_size": 13092
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/api/internal/recent_activities?locale=en-us&page=1&per_page=5&locale=en-us",
+    "initiator": "xmlhttprequest",
+    "transfer_size": 851
+  },
+  {
+    "url": "https://help.joindeleteme.com/hc/activity",
+    "initiator": "fetch",
+    "transfer_size": 0
+  }
+]

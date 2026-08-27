@@ -1,0 +1,982 @@
+/*
+ * Clone-local styling.
+ *
+ * Two jobs, kept apart:
+ *
+ * 1. Everything named `dm-clone-*` / `dm-*` is the clone's own furniture -
+ *    disclosure notices, the boundary pages, the checkout form and the
+ *    subscriber tree. It is deliberately namespaced so it can never be mistaken
+ *    for captured markup.
+ *
+ * 2. The `Mui*` rules restore the application host's appearance. This is a
+ *    declared evidence gap, not a design choice: `app.joindeleteme.com` styles
+ *    itself with Emotion, which injects its rules through the CSSOM at runtime.
+ *    Those rules are therefore absent from `outerHTML`, so the frozen capture
+ *    kept the class names and lost the declarations - the captured
+ *    `<style data-emotion>` elements are empty in every application unit. The
+ *    markup below is the source's; the appearance is reconstructed from the
+ *    frozen rasters and is the clone's own approximation. The marketing tree is
+ *    unaffected: its stylesheets were mirrored in full.
+ */
+
+/* ------------------------------------------------------------- disclosure */
+
+.dm-clone-note {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 0.25rem solid #f28d28;
+  border-radius: 0.25rem;
+  background: #fff8ef;
+  color: #3a3320;
+  font-family: Poppins, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.dm-clone-note strong {
+  font-weight: 600;
+}
+
+.dm-clone-note--error {
+  border-left-color: #c0392b;
+  background: #fdf1ef;
+  color: #4a1f19;
+}
+
+.dm-clone-note--info {
+  border-left-color: #273fd8;
+  background: #eff2ff;
+  color: #1b2350;
+}
+
+.dm-clone-note--mail,
+.dm-clone-note--sandbox {
+  border-left-color: #2e7d32;
+  background: #f0f7f0;
+  color: #1f3320;
+}
+
+.dm-clone-receipt {
+  font-size: 0.875rem;
+  color: #5d626f;
+}
+
+/* --------------------------------------------------------- boundary pages */
+
+.dm-clone-standalone-body,
+.dm-clone-embed-body {
+  margin: 0;
+  background: #f1f2f3;
+  color: #070a22;
+  font-family: Poppins, "Helvetica Neue", Arial, sans-serif;
+}
+
+.dm-clone-standalone {
+  max-width: 42rem;
+  margin: 12vh auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(7, 10, 34, 0.09);
+}
+
+.dm-clone-standalone h1 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+}
+
+.dm-clone-target code {
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+}
+
+.dm-clone-embed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dm-clone-embed__title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.dm-clone-embed__host code {
+  overflow-wrap: anywhere;
+  font-size: 0.75rem;
+  color: #5d626f;
+}
+
+/* ---------------------------------------------- application host (Emotion) */
+
+body.h-full {
+  margin: 0;
+  background: #f5f6f8;
+  color: #070a22;
+  font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.h-full a {
+  color: #19288a;
+}
+
+.MuiBox-root.css-100pjrr {
+  display: flex;
+  min-height: 100vh;
+}
+
+.MuiBox-root.css-p9yut4 {
+  display: none;
+  flex: 1 1 50%;
+  background: #fff;
+}
+
+.MuiBox-root.css-n536pe {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 900px) {
+  .MuiBox-root.css-p9yut4 {
+    display: block;
+  }
+
+  .MuiBox-root.css-n536pe {
+    flex: 1 1 50%;
+  }
+}
+
+.css-87rnhx {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 3rem;
+  background: #fff;
+  box-shadow: none !important;
+}
+
+.css-zf9gw9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 6rem);
+}
+
+.MuiTypography-h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.MuiTypography-h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.MuiTypography-h5 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.MuiTypography-body1 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #3f4453;
+}
+
+.MuiTypography-body2 {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #5d626f;
+}
+
+.css-13brihr {
+  margin-top: 1.5rem;
+  max-width: 34rem;
+}
+
+.css-81qsk5 {
+  margin-top: auto;
+}
+
+.css-2qi1s8,
+.css-1fzubk4,
+.css-bpag96 {
+  display: block;
+  height: auto;
+  max-width: 12rem;
+}
+
+.css-1fzubk4,
+.css-bpag96 {
+  margin: 0 auto 1.25rem;
+}
+
+.MuiContainer-root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.MuiContainer-maxWidthSm {
+  max-width: 34rem;
+}
+
+.MuiContainer-maxWidthLg {
+  max-width: 75rem;
+}
+
+.css-k622ai,
+.dm-app-panel {
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(7, 10, 34, 0.07);
+}
+
+.css-1x22vvj {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* buttons */
+
+.MuiButtonBase-root {
+  font-family: inherit;
+}
+
+.MuiButton-root {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.MuiButton-fullWidth {
+  width: 100%;
+}
+
+.MuiButton-contained {
+  background: #19288a;
+  color: #fff;
+}
+
+.MuiButton-contained:hover {
+  background: #142070;
+}
+
+.MuiButton-outlined {
+  background: #fff;
+  border: 0.0625rem solid #d7dae2;
+  color: #070a22;
+}
+
+.MuiButton-outlined:hover {
+  background: #f5f6f8;
+}
+
+.MuiButton-text {
+  padding: 0.4rem 0.2rem;
+  background: none;
+  color: #19288a;
+}
+
+.MuiButton-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.css-19i0w84 {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+
+.MuiDivider-root {
+  flex: 1;
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 0.0625rem solid #e3e5ea;
+}
+
+.css-lyicng {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+/* text fields */
+
+.MuiFormControl-root {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.MuiInputLabel-root {
+  position: absolute;
+  top: 1rem;
+  left: 0.95rem;
+  z-index: 1;
+  color: #5d626f;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: opacity 120ms;
+}
+
+.MuiFormControl-root:focus-within .MuiInputLabel-root,
+.MuiFormControl-root:has(input:not(:placeholder-shown)) .MuiInputLabel-root {
+  opacity: 0;
+}
+
+.MuiInputBase-root {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.5rem;
+}
+
+.MuiInputBase-root:focus-within {
+  border-color: #19288a;
+}
+
+.MuiInputBase-input {
+  width: 100%;
+  padding: 1rem 0.95rem;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #070a22;
+  outline: none;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  display: none;
+}
+
+.MuiInputAdornment-root button {
+  padding: 0 0.75rem;
+  background: none;
+  border: 0;
+  color: #5d626f;
+  cursor: pointer;
+}
+
+/* confirmation and alerts */
+
+.MuiBox-root.css-1wkjpkc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.MuiBox-root.css-wzshjd,
+.MuiStack-root.css-15zecap {
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(7, 10, 34, 0.07);
+  text-align: center;
+}
+
+.MuiAvatar-root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1rem;
+  background: #e8f5e9;
+  border-radius: 50%;
+  color: #2e7d32;
+}
+
+.MuiAvatar-root svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.MuiAlert-root {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  padding: 0.9rem 1rem;
+  background: #eff4ff;
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+.MuiAlert-icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #19288a;
+}
+
+/* ------------------------------------------------------------- checkout */
+
+/* ------------------------------------------------ home runtime freeze state
+ *
+ * UIkit supplied three viewport-dependent runtime states that cannot survive
+ * stripping its script bundle from the captured DOM. Restore the exact states
+ * visible in home/{desktop,tablet,mobile}/frame-1.viewport.png:
+ *
+ * - the overlaid mobile/tablet header uses its inverse white logo and icon;
+ * - the press carousel begins at Lifehacker on desktop and CNET on tablet;
+ * - the scroll-triggered phone footer is absent at the initial top-of-page
+ *   checkpoint (the desktop DOM happened to carry display:block inline).
+ */
+body.home .tm-header-mobile .uk-logo > img:not(.uk-logo-inverse) {
+  display: none;
+}
+
+body.home .tm-header-mobile .uk-logo > .uk-logo-inverse {
+  display: inline;
+}
+
+body.home .tm-header-mobile .uk-navbar-toggle {
+  color: #fff;
+}
+
+body.home #footer-cta {
+  display: none !important;
+}
+
+@media (min-width: 640px) {
+  /* The captured UIkit runtime resolved the desktop hero to a 675px box.
+     Freezing the pre-layout markup leaves it three pixels short and shifts the
+     complete press strip, so preserve that measured checkpoint geometry. */
+  body.home [data-srcset*="deletemehero-wrc"] {
+    height: 675px;
+  }
+
+  /* UIkit selected the 1600w source at the frozen 1024px tablet checkpoint.
+     The desktop DOM snapshot otherwise pins its 1920w inline selection. */
+  body.home [data-srcset*="deletemehero-wrc"] {
+    background-image: url("/static/assets/2026-08-20.deleteme-r1/joindeleteme.com/wp-content/uploads/yootheme/cache/6b/deletemehero-wrc-6b31f49e.webp") !important;
+  }
+
+  body.home #page\#11 .uk-slider-items {
+    transform: none !important;
+  }
+
+  body.home #page\#11 .uk-slider-items > :nth-child(7) { order: 1 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(8) { order: 2 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(1) { order: 3 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(2) { order: 4 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(3) { order: 5 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(4) { order: 6 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(5) { order: 7 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(6) { order: 8 !important; }
+}
+
+@media (min-width: 1150px) {
+  body.home [data-srcset*="deletemehero-wrc"] {
+    background-image: url("/static/assets/2026-08-20.deleteme-r1/joindeleteme.com/wp-content/uploads/yootheme/cache/e6/deletemehero-wrc-e6d8260f.webp") !important;
+  }
+}
+
+@media (max-width: 639px) {
+  /* UIkit adds `uk-grid-margin` after measuring the stacked mobile buttons. */
+  body.home #mobilehero .jdm-button-medium .el-item + .el-item {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1150px) {
+  body.home #page\#11 .uk-slider-items > :nth-child(6) { order: 1 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(7) { order: 2 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(8) { order: 3 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(1) { order: 4 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(2) { order: 5 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(3) { order: 6 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(4) { order: 7 !important; }
+  body.home #page\#11 .uk-slider-items > :nth-child(5) { order: 8 !important; }
+}
+
+/* The captured application styles use a global border-box reset injected by
+ * Emotion. That reset is absent from outerHTML, so restore it for clone-local
+ * application furniture explicitly. Without it, the Linux font/layout stack
+ * makes the 100%-wide checkout plus horizontal padding 421px at a 390px
+ * viewport even though the macOS browser happens to contain it. */
+.dm-checkout,
+.dm-checkout *,
+.dm-account,
+.dm-account * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.dm-checkout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+  max-width: 68rem;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (min-width: 900px) {
+  .dm-checkout {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  .dm-checkout > .dm-clone-note,
+  .dm-checkout > .dm-checkout__errors {
+    grid-column: 1 / -1;
+  }
+}
+
+.dm-checkout__form,
+.dm-summary {
+  padding: 1.75rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(7, 10, 34, 0.07);
+}
+
+.dm-checkout__section {
+  margin-bottom: 2rem;
+}
+
+.dm-checkout__section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.dm-checkout__row {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .dm-checkout__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.dm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+}
+
+.dm-field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #5d626f;
+}
+
+.dm-field input,
+.dm-field select {
+  padding: 0.8rem 0.85rem;
+  background: #fff;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #070a22;
+}
+
+.dm-field input:focus,
+.dm-field select:focus {
+  border-color: #19288a;
+  outline: none;
+}
+
+.dm-check {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #5d626f;
+}
+
+.dm-checkout__legal,
+.dm-checkout__pii-boundary {
+  margin: 1rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #6b7080;
+}
+
+.dm-sandbox {
+  margin: 0;
+  padding: 1rem;
+  border: 0.0625rem dashed #b7bcc9;
+  border-radius: 0.5rem;
+}
+
+.dm-sandbox legend {
+  padding: 0 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5d626f;
+}
+
+.dm-sandbox__notice {
+  margin: 0 0 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #3f4453;
+}
+
+.dm-sandbox__scenario {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.45rem 0;
+  font-size: 0.9rem;
+}
+
+.dm-sandbox__scenario code {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #6b7080;
+}
+
+.dm-checkout__submit {
+  width: 100%;
+  padding: 1rem;
+  background: #f28d28;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dm-checkout__submit:hover {
+  background: #d97a15;
+}
+
+.dm-checkout__errors {
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1rem;
+  background: #fdf1ef;
+  border-left: 0.25rem solid #c0392b;
+  border-radius: 0.25rem;
+  color: #4a1f19;
+  font-size: 0.875rem;
+}
+
+.dm-checkout__errors p {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.dm-checkout__errors ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.dm-summary h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.dm-summary h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.dm-summary__plan {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #5d626f;
+}
+
+.dm-summary__monthly {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dm-summary__monthly .month {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5d626f;
+}
+
+.dm-summary__total {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem 0 0;
+  padding-top: 1rem;
+  border-top: 0.0625rem solid #e3e5ea;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.dm-summary__promo-toggle {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: #f28d28;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dm-summary__promo-panel {
+  margin-top: 0.75rem;
+}
+
+.dm-summary__promo-panel input {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.dm-summary__promo-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: #6b7080;
+}
+
+.dm-summary__includes {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #3f4453;
+}
+
+/* ------------------------------------------------------------- subscriber */
+
+.dm-account {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  max-width: 68rem;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  font-family: Poppins, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (min-width: 900px) {
+  .dm-account {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+}
+
+.dm-account__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: start;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(7, 10, 34, 0.07);
+}
+
+.dm-account__nav a {
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.4rem;
+  color: #19288a;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.dm-account__nav a[aria-current="page"] {
+  background: #eff2ff;
+  font-weight: 600;
+}
+
+.dm-account__logout {
+  margin-top: 0.75rem;
+}
+
+.dm-account__logout button {
+  width: 100%;
+  padding: 0.55rem;
+  background: #fff;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dm-account__main {
+  padding: 1.75rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.75rem rgba(7, 10, 34, 0.07);
+}
+
+.dm-account__main h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.dm-account__main h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.dm-account__who {
+  font-size: 0.85rem;
+  color: #5d626f;
+}
+
+.dm-account__card {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0.0625rem solid #e3e5ea;
+  border-radius: 0.6rem;
+}
+
+.dm-account__card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.dm-account__status {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.15rem 0.6rem;
+  background: #eff2ff;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #19288a;
+}
+
+.dm-account__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.dm-account__actions button {
+  padding: 0.45rem 0.9rem;
+  background: #fff;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.dm-account__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.dm-account__table th,
+.dm-account__table td {
+  padding: 0.55rem 0.6rem;
+  border-bottom: 0.0625rem solid #e9eaee;
+  text-align: left;
+}
+
+.dm-account__table th {
+  color: #5d626f;
+  font-weight: 600;
+}
+
+.dm-account__form {
+  max-width: 34rem;
+  margin-top: 1rem;
+}
+
+.dm-account__form button,
+.dm-app-form button {
+  padding: 0.7rem 1.3rem;
+  background: #19288a;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dm-app-panel {
+  max-width: 34rem;
+  margin: 6vh auto;
+}
+
+.dm-app-panel h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.dm-app-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.dm-app-form input {
+  width: 100%;
+  padding: 0.8rem 0.85rem;
+  border: 0.0625rem solid #d7dae2;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}

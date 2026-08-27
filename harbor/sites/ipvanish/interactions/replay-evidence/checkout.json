@@ -1,0 +1,292 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/ipvanish/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 0.891831,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": false,
+    "contract_version": "1.8.6",
+    "doctor_green": false,
+    "extension_connected": false,
+    "notes": [
+      "opencli-unavailable: Browser Bridge extension not connected",
+      "opencli-unavailable: browser connectivity check failed"
+    ],
+    "version": "0.1.0",
+    "version_matches": false
+  },
+  "profile_id": "checkout",
+  "profile_label": "ipvanish checkout (derived draft)",
+  "profile_tier": "p0",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "ipvanish",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "duration_seconds": 0.149329,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_chooser",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Simulated approval",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Select a payment method",
+          "key": "visible",
+          "observed": "Select a payment method",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-chooser",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "duration_seconds": 0.060919,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_order-summary",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Order Summary",
+          "key": "visible",
+          "observed": "Order Summary",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-order-summary",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "duration_seconds": 0.061086,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_summary-tax",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "$0.00",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Estimated tax",
+          "key": "visible",
+          "observed": "Estimated tax",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-summary-tax",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "duration_seconds": 0.059527,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_summary-total",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Cardholder name",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Total due",
+          "key": "visible",
+          "observed": "Total due",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-summary-total",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "checkout/address-payment-method?flow=essential-annual&method=card",
+      "duration_seconds": 0.062068,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_card-form",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Security code",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Subscribe now",
+          "key": "visible",
+          "observed": "Subscribe now",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-card-form",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "checkout/subscribe",
+      "duration_seconds": 0.061246,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_subscribe-form",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Card number",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Simulated approval",
+          "key": "visible",
+          "observed": "Simulated approval",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-subscribe-form",
+      "tier": "p0"
+    },
+    {
+      "command": "submit",
+      "declared_route": "checkout/subscribe",
+      "duration_seconds": 0.143997,
+      "error": null,
+      "http_status": 303,
+      "observation_id": "ipvanish_checkout_submit",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Simulated decline",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Your IPVanish subscription is active",
+          "key": "visible",
+          "observed": "Your IPVanish subscription is active",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-submit",
+      "tier": "p0"
+    },
+    {
+      "command": "submit",
+      "declared_route": "checkout/subscribe",
+      "duration_seconds": 0.095597,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "ipvanish_checkout_submit-declined",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Your IPVanish subscription is active",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Simulated decline",
+          "key": "visible",
+          "observed": "Simulated decline",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-submit-declined",
+      "tier": "p0"
+    },
+    {
+      "command": "submit",
+      "declared_route": "checkout/subscribe",
+      "duration_seconds": 0.091393,
+      "error": null,
+      "http_status": 422,
+      "observation_id": "ipvanish_checkout_submit-card-field-rejected",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Your IPVanish subscription is active",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "is not accepted",
+          "key": "visible",
+          "observed": "is not accepted",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "checkout-submit-card-field-rejected",
+      "tier": "p0"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 9,
+    "steps_total": 9,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:10089",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "method": null,
+      "action_path": "/blog/opt-out-guides/",
+      "control_count": 6
+    },
+    {
+      "id": null,
+      "name": null,
+      "method": "get",
+      "action_path": "/",
+      "control_count": 1
+    }
+  ],
+  "fields": [
+    {
+      "name": null,
+      "id": null,
+      "type": "email",
+      "label": "",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": "text",
+      "label": "",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": "text",
+      "label": "",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": "text",
+      "label": "",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": "number",
+      "label": "",
+      "required": true
+    },
+    {
+      "name": null,
+      "id": "cta-terms-qsokeke3f",
+      "type": "checkbox",
+      "label": "I have read and agree to the Terms of Service and Privacy Policy.",
+      "required": true
+    },
+    {
+      "name": "s",
+      "id": null,
+      "type": "search",
+      "label": "Search",
+      "required": true
+    }
+  ],
+  "submits": [
+    {
+      "type": "submit",
+      "label": "Get FREE Report"
+    },
+    {
+      "type": null,
+      "label": "Chat"
+    },
+    {
+      "type": null,
+      "label": "Chat"
+    }
+  ],
+  "embedded_frames": [
+    "https://joindeleteme.com/blog/opt-out-guides/"
+  ],
+  "_note": "Structure only: name/id/type/label/required. No field was ever filled, typed into or submitted on the live source, and no control value was read."
+}

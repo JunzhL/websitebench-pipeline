@@ -1,0 +1,177 @@
+{
+  "schema_version": "offline-clone.journeys.v1",
+  "status": "draft",
+  "journeys": [
+    {
+      "id": "compare-plans-select-annual-register",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-02", "ht-23"],
+      "steps": [
+        "Open the public entry and reach /pricing/ through the primary navigation.",
+        "Activate the Monthly Plan tab and read its per-month prices ($14.99 Essential, $17.99 Advanced).",
+        "Activate the Yearly Plan tab and read its prices ($3.89 / $5.39 per month, struck from $179.88 / $215.88, '$46.68 / $64.68 for the first year').",
+        "Choose the annual plan's Get Essential CTA, arriving at /checkout/address-payment-method?flow=essential-annual.",
+        "Read the Order Summary (12 months, IPVanish Essential $179.88, Save 74% - $133.20, Estimated tax $6.07, Total due $52.75).",
+        "Activate the Credit card row to reveal the account registration form and fill its account and billing fields.",
+        "Complete the clone-local sandbox payment and confirm the resulting subscription detail view shows the annual plan and its renewal terms."
+      ],
+      "failure_variant": "submitting the registration form with required fields empty surfaces inline validation; the declined sandbox scenario creates no subscription",
+      "recovery_variant": "the retryable sandbox scenario succeeds on a second attempt; returning to the chooser or to /pricing/ preserves the selected flow",
+      "note": "On the source the journey necessarily stops at the filled form: submitting would create a real subscription and charge a real card. Steps beyond that point are clone-local behaviour, disclosed as inference. The candidate never accepts card-like input — the Zuora card iframe is replaced by an honestly labelled local-sandbox scenario selector."
+    },
+    {
+      "id": "browse-compare-plans",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-03"],
+      "steps": [
+        "Open /pricing/ and read the default 2-Year Plan tab.",
+        "Switch between all three billing periods and observe the prices, struck-through retail totals, promo and renewal copy change.",
+        "Compare the Essential and Advanced feature rows, including the eSIM data allowance and the Advanced-only rows."
+      ],
+      "failure_variant": "n/a",
+      "recovery_variant": "n/a"
+    },
+    {
+      "id": "plan-tier-and-options",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-05"],
+      "steps": [
+        "Choose a tier within a billing period and follow its CTA into the checkout flow.",
+        "Observe that the flow parameter encodes exactly the chosen tier and period and that the Order Summary matches.",
+        "Choose among the offered payment methods and read the auto-renewal disclosure."
+      ],
+      "failure_variant": "n/a",
+      "recovery_variant": "returning to /pricing/ and choosing another tier changes the flow parameter",
+      "note": "Quantity and delivery frequency from the trace text do not exist on this source: a VPN subscription has no quantity selector and no delivery cadence. Recorded as a trace-vs-source divergence rather than invented."
+    },
+    {
+      "id": "signin-entry",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p0",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-16"],
+      "steps": [
+        "Open the sign-in entry and verify the Email address and Password fields, the 'Forgot password?' link and 'Not a member? Sign up now!'.",
+        "Return without submitting credentials."
+      ],
+      "failure_variant": "submitting empty credentials surfaces validation",
+      "recovery_variant": "'Sign up now!' routes to /pricing/, which is the only registration path this source offers"
+    },
+    {
+      "id": "password-recovery",
+      "actor": "visitor",
+      "kind": "recovery",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-18"],
+      "steps": [
+        "From the sign-in surface click 'Forgot password?'.",
+        "Verify the reset-address field, the guidance copy 'Enter you account email, you will receive a reset password code', and the 'Back to sign in' link.",
+        "Return without sending a reset message."
+      ],
+      "failure_variant": "empty or malformed address surfaces validation",
+      "recovery_variant": "'Back to sign in' returns to the sign-in view",
+      "note": "Clone mail goes to the local outbox only; no message is ever sent."
+    },
+    {
+      "id": "registration-entry",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-17", "ht-06"],
+      "steps": [
+        "Reach the account-registration entry, which on this source exists only inside the checkout funnel.",
+        "Verify the visible identity field (account email), the billing fields, the terms and auto-renewal copy, and the money-back-guarantee badge — without creating an account."
+      ],
+      "failure_variant": "required-field validation",
+      "recovery_variant": "returning to the payment-method chooser",
+      "note": "There is no standalone signup route: 'Sign up now!' links to /pricing/, /account/ 404s, and the checkout bundle creates credentials inside the funnel. Traces ht-06 and ht-17 are answered by this surface, and the difference from a conventional registration page is disclosed."
+    },
+    {
+      "id": "support-help",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-21"],
+      "steps": [
+        "Open the public support entry and reach guidance for subscription questions, account access and failed actions.",
+        "Confirm no private account data is exposed anonymously."
+      ],
+      "failure_variant": "n/a",
+      "recovery_variant": "n/a"
+    },
+    {
+      "id": "no-results-and-recovery",
+      "actor": "visitor",
+      "kind": "failure",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-15", "ht-22"],
+      "steps": [
+        "Search support for 'zzzz-no-match-websitebench' and read the empty state, then follow the route back to available plans.",
+        "Open a non-existent deep link and observe the source-faithful response: HTTP 404 whose body is the home page, with primary navigation intact."
+      ],
+      "failure_variant": "n/a (this is the failure family)",
+      "recovery_variant": "primary navigation and the pricing CTA remain reachable",
+      "note": "The marketing tree has no product search — discovery is browse-only — so the no-results trace is answered by the support search. ht-22 expects a branded not-found view; this source has none, and the clone reproduces the source's 404-with-home-body instead. Both divergences are disclosed."
+    },
+    {
+      "id": "validation-and-permission",
+      "actor": "visitor",
+      "kind": "failure",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-20"],
+      "steps": [
+        "Submit the sign-in, recovery and registration forms with required fields empty and read the inline validation.",
+        "Open a subscriber route while signed out and observe the permission redirect to sign-in."
+      ],
+      "failure_variant": "n/a",
+      "recovery_variant": "corrected input proceeds; the redirect preserves the intended destination",
+      "note": "On the source the subscriber redirect was observed as my.ipvanish.com sending anonymous visitors to sso.ipvanish.com with TOKEN_EXPIRED."
+    },
+    {
+      "id": "entry-nav",
+      "actor": "visitor",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-01"],
+      "steps": [
+        "From the public entry open each rendered primary-nav dropdown (Product, Apps, Resources) and follow Pricing.",
+        "Verify the destination heading 'IPVanish plans & pricing' and the canonical path /pricing/."
+      ],
+      "failure_variant": "n/a",
+      "recovery_variant": "n/a"
+    },
+    {
+      "id": "subscription-management",
+      "actor": "subscriber",
+      "kind": "success",
+      "priority": "p1",
+      "status": "draft",
+      "human_trace_text_ids": ["ht-07", "ht-08", "ht-09", "ht-10", "ht-11", "ht-12", "ht-13", "ht-14", "ht-19"],
+      "steps": [
+        "Sign in and open the subscription dashboard.",
+        "Review the current plan, renewal date, order history and billing history.",
+        "Change the plan, update the billing contact and payment method, pause the subscription, cancel it, and reactivate it.",
+        "Verify the newest history item exposes its status, detail and cancellation options plus a route back to the collection."
+      ],
+      "failure_variant": "clone-local: declined sandbox payment on a plan change leaves the prior plan intact",
+      "recovery_variant": "clone-local: reactivation restores the canceled subscription",
+      "note": "UNAVAILABLE on the source — every step here needs a paid account, which requires a purchase this run is forbidden to make. The clone implements the dashboard, history, plan change, pause, cancel and reactivate as real local business behaviour, and every visual and copy decision in it is disclosed as inference rather than claimed as observed. Traces ht-08, ht-12 and ht-14 additionally reference shipping addresses, delivery skips and shipment status, which a VPN subscription does not have; the clone provides the billing-address, pause and billing-history equivalents and records the divergence."
+    }
+  ]
+}

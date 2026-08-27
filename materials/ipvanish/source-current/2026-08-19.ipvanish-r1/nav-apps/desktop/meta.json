@@ -1,0 +1,56 @@
+{
+  "checkpoint": "nav-apps",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/",
+  "final_url": "https://www.ipvanish.com/",
+  "http_status": null,
+  "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+  "body_text_len": 11035,
+  "frames": 3,
+  "frame_sha256": [
+    "ce0262d0de1e0ee46e59271a150dedaf6ae919146a5a4a214dd4db8737657afa",
+    "938651aae9596a7e1d671765cd1ecb362604485f5abb2d000cc9ed747987e7e9",
+    "996bf54ad1d3dd6733c2c44dc19390b97ac6e28cb6f181ac94f39854a271d399"
+  ],
+  "frames_identical": false,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 17472
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 17572,
+      "width": 1440,
+      "height": 749
+    },
+    "form": null,
+    "document_height": 18322
+  },
+  "interaction": "opened the 'Apps' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+}

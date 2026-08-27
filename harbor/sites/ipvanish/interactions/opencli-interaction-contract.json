@@ -1,0 +1,282 @@
+{
+  "generated_from": "materials/ipvanish/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "account": {
+      "failure_paths": [],
+      "label": "ipvanish account (derived draft)",
+      "local_semantics": [
+        "Every clone page renders with zero runtime requests to non-local origins; all assets are vendored under clone/static/ and the payment, wallet, support-chat…",
+        "The clone-local checkout accepts only an opaque local-sandbox scenario identifier. No card number, cardholder name, expiry, security code, bank or wallet…",
+        "Completing checkout consumes a sandbox approval and writes the subscription and its order row in one SQLite transaction; a declined scenario creates neither…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "session": {
+        "fields": {
+          "email": "avery.sandoval@example.invalid",
+          "password": "Vanish-Demo-2026!"
+        },
+        "method": "POST",
+        "notes": "Derived from tools/frontend_samples.json session_setup. These are public local fixture values, not credentials.",
+        "route": "login"
+      },
+      "steps": [
+        {
+          "command": "state",
+          "id": "account-overview",
+          "intent": "Exercise clone check account.overview (GET /account/).",
+          "observation_id": "ipvanish_account_overview",
+          "required_state": {
+            "text_absent": "Sign in to continue",
+            "visible": "My Account"
+          },
+          "route": "account/"
+        },
+        {
+          "command": "state",
+          "id": "account-overview-disclosure",
+          "intent": "Exercise clone check account.overview-disclosure (GET /account/).",
+          "observation_id": "ipvanish_account_overview-disclosure",
+          "required_state": {
+            "text_absent": "Simulated approval",
+            "visible": "Clone-local view."
+          },
+          "route": "account/"
+        },
+        {
+          "command": "state",
+          "id": "account-billing",
+          "intent": "Exercise clone check account.billing (GET /account/billing).",
+          "observation_id": "ipvanish_account_billing",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Billing history"
+          },
+          "route": "account/billing"
+        },
+        {
+          "command": "state",
+          "id": "account-plan",
+          "intent": "Exercise clone check account.plan (GET /account/plan).",
+          "observation_id": "ipvanish_account_plan",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Change plan"
+          },
+          "route": "account/plan"
+        },
+        {
+          "command": "state",
+          "id": "account-plan-scenarios",
+          "intent": "Exercise clone check account.plan-scenarios (GET /account/plan).",
+          "observation_id": "ipvanish_account_plan-scenarios",
+          "required_state": {
+            "text_absent": "Security code",
+            "visible": "Simulated approval"
+          },
+          "route": "account/plan"
+        },
+        {
+          "command": "state",
+          "id": "account-billing-contact",
+          "intent": "Exercise clone check account.billing-contact (GET /account/billing-contact).",
+          "observation_id": "ipvanish_account_billing-contact",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Billing contact"
+          },
+          "route": "account/billing-contact"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "plan_id": "advanced-annual",
+            "scenario_id": "sandbox-approved",
+            "subscription_id": "sub_primary_annual"
+          },
+          "id": "account-plan-submit",
+          "intent": "Exercise clone check account.plan-submit (POST /account/plan).",
+          "observation_id": "ipvanish_account_plan-submit",
+          "required_state": {
+            "text_absent": "Simulated decline",
+            "visible": "IPVanish Advanced"
+          },
+          "route": "account/plan",
+          "selector": "form[action=\"/account/plan\"]"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "country": "CA",
+            "email": "avery.sandoval@example.invalid",
+            "full_name": "Avery Sandoval",
+            "postal_code": "M5V 2T6"
+          },
+          "id": "account-billing-contact-submit",
+          "intent": "Exercise clone check account.billing-contact-submit (POST /account/billing-contact).",
+          "observation_id": "ipvanish_account_billing-contact-submit",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Billing contact"
+          },
+          "route": "account/billing-contact",
+          "selector": "form[action=\"/account/billing-contact\"]"
+        }
+      ],
+      "tier": "p1"
+    },
+    "checkout": {
+      "failure_paths": [],
+      "label": "ipvanish checkout (derived draft)",
+      "local_semantics": [
+        "Every clone page renders with zero runtime requests to non-local origins; all assets are vendored under clone/static/ and the payment, wallet, support-chat…",
+        "The clone-local checkout accepts only an opaque local-sandbox scenario identifier. No card number, cardholder name, expiry, security code, bank or wallet…",
+        "Completing checkout consumes a sandbox approval and writes the subscription and its order row in one SQLite transaction; a declined scenario creates neither…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [],
+      "steps": [
+        {
+          "command": "state",
+          "id": "checkout-chooser",
+          "intent": "Exercise clone check checkout.chooser (GET /checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN).",
+          "observation_id": "ipvanish_checkout_chooser",
+          "required_state": {
+            "text_absent": "Simulated approval",
+            "visible": "Select a payment method"
+          },
+          "route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"
+        },
+        {
+          "command": "state",
+          "id": "checkout-order-summary",
+          "intent": "Exercise clone check checkout.order-summary (GET /checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN).",
+          "observation_id": "ipvanish_checkout_order-summary",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Order Summary"
+          },
+          "route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"
+        },
+        {
+          "command": "state",
+          "id": "checkout-summary-tax",
+          "intent": "Exercise clone check checkout.summary-tax (GET /checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN).",
+          "observation_id": "ipvanish_checkout_summary-tax",
+          "required_state": {
+            "text_absent": "$0.00",
+            "visible": "Estimated tax"
+          },
+          "route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"
+        },
+        {
+          "command": "state",
+          "id": "checkout-summary-total",
+          "intent": "Exercise clone check checkout.summary-total (GET /checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN).",
+          "observation_id": "ipvanish_checkout_summary-total",
+          "required_state": {
+            "text_absent": "Cardholder name",
+            "visible": "Total due"
+          },
+          "route": "checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"
+        },
+        {
+          "command": "state",
+          "id": "checkout-card-form",
+          "intent": "Exercise clone check checkout.card-form (GET /checkout/address-payment-method?flow=essential-annual&method=card).",
+          "observation_id": "ipvanish_checkout_card-form",
+          "required_state": {
+            "text_absent": "Security code",
+            "visible": "Subscribe now"
+          },
+          "route": "checkout/address-payment-method?flow=essential-annual&method=card"
+        },
+        {
+          "command": "state",
+          "id": "checkout-subscribe-form",
+          "intent": "Exercise clone check checkout.subscribe-form (GET /checkout/subscribe).",
+          "observation_id": "ipvanish_checkout_subscribe-form",
+          "required_state": {
+            "text_absent": "Card number",
+            "visible": "Simulated approval"
+          },
+          "route": "checkout/subscribe"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "account_email": "gate-buyer@example.invalid",
+            "billing_country": "US",
+            "billing_postal_code": "78701",
+            "flow": "essential-annual",
+            "scenario_id": "sandbox-approved"
+          },
+          "id": "checkout-submit",
+          "intent": "Exercise clone check checkout.submit (POST /checkout/subscribe).",
+          "observation_id": "ipvanish_checkout_submit",
+          "required_state": {
+            "text_absent": "Simulated decline",
+            "visible": "Your IPVanish subscription is active"
+          },
+          "route": "checkout/subscribe",
+          "selector": "form[action=\"/checkout/subscribe\"]"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "account_email": "gate-declined@example.invalid",
+            "billing_country": "CA",
+            "billing_postal_code": "M5V 2T6",
+            "flow": "advanced-monthly",
+            "scenario_id": "sandbox-declined"
+          },
+          "id": "checkout-submit-declined",
+          "intent": "Exercise clone check checkout.submit-declined (POST /checkout/subscribe).",
+          "observation_id": "ipvanish_checkout_submit-declined",
+          "required_state": {
+            "text_absent": "Your IPVanish subscription is active",
+            "visible": "Simulated decline"
+          },
+          "route": "checkout/subscribe",
+          "selector": "form[action=\"/checkout/subscribe\"]"
+        },
+        {
+          "command": "submit",
+          "fields": {
+            "account_email": "gate-reject@example.invalid",
+            "billing_country": "US",
+            "billing_postal_code": "78701",
+            "card_number": "not-a-card",
+            "flow": "essential-annual",
+            "scenario_id": "sandbox-approved"
+          },
+          "id": "checkout-submit-card-field-rejected",
+          "intent": "Exercise clone check checkout.submit-card-field-rejected (POST /checkout/subscribe).",
+          "observation_id": "ipvanish_checkout_submit-card-field-rejected",
+          "required_state": {
+            "text_absent": "Your IPVanish subscription is active",
+            "visible": "is not accepted"
+          },
+          "route": "checkout/subscribe",
+          "selector": "form[action=\"/checkout/subscribe\"]"
+        }
+      ],
+      "tier": "p0"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "ipvanish"
+}

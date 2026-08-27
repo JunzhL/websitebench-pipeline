@@ -1,0 +1,282 @@
+{
+  "invariants": [
+    {
+      "acceptance_obligations": [
+        "A live payment key or a real card field anywhere in the candidate is an unconditional rejection."
+      ],
+      "coverage_dimension_ids": [
+        "checkout"
+      ],
+      "id": "payment-input-boundary",
+      "journey_ids": [
+        "select-individual-plan-and-check-out",
+        "payment-declined-and-retry"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_payment_boundary.py::test_card_field_names_are_rejected",
+        "clone/tests/test_payment_boundary.py::test_card_shaped_value_in_another_field_is_rejected"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_payment_boundary.py::test_sandbox_scenarios_are_the_only_payment_input"
+      ],
+      "priority": "p0",
+      "statement": "The clone never accepts card data. The source collects card details in a Stripe-hosted iframe; the clone offers only a named sandbox scenario, and any request carrying a card-shaped field name or a card-shaped value in another field is refused."
+    },
+    {
+      "acceptance_obligations": [
+        "Adding a removal-PII field to checkout would misrepresent the source's data collection for a privacy vendor. It must fail."
+      ],
+      "coverage_dimension_ids": [
+        "checkout"
+      ],
+      "id": "no-removal-pii-collected-at-checkout",
+      "journey_ids": [
+        "select-individual-plan-and-check-out"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_checkout.py::test_checkout_rejects_removal_profile_fields"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_checkout.py::test_checkout_field_set_matches_the_source"
+      ],
+      "priority": "p0",
+      "statement": "Checkout collects exactly the identity the source collects - first name, last name, email address and one postal address - and no age, phone, previous names, aliases or relatives. The removal profile that asks for those is a separate, clearly labelled clone-local surface."
+    },
+    {
+      "coverage_dimension_ids": [
+        "seed-data"
+      ],
+      "id": "synthetic-identity-only",
+      "journey_ids": [
+        "subscription-management",
+        "free-scan-entry"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_seed_identity.py::test_detects_a_planted_real_looking_identity"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_seed_identity.py::test_seeded_identities_are_synthetic"
+      ],
+      "priority": "p0",
+      "statement": "Every seeded person, address, phone and relative in the candidate is synthetic and non-resolvable (example.invalid domains, fictional names, placeholder addresses). No real person's data appears in any fixture, screenshot, log or asset."
+    },
+    {
+      "coverage_dimension_ids": [
+        "plans"
+      ],
+      "id": "plan-arithmetic-matches-source",
+      "journey_ids": [
+        "compare-plans",
+        "select-individual-plan-and-check-out"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_plans.py::test_detects_a_wrong_monthly_derivation"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_plans.py::test_every_card_matches_the_frozen_arithmetic"
+      ],
+      "priority": "p0",
+      "statement": "Each plan card shows the source's per-month figure and billed total, derived server-side from the plan catalogue: single 129.00/year and 209.00/2 years, couple 229.00 and 349.00, family 329.00 and 499.00, with the per-month value being the total divided by the number of months."
+    },
+    {
+      "coverage_dimension_ids": [
+        "plans"
+      ],
+      "id": "single-person-strikethrough-is-hidden-not-absent",
+      "journey_ids": [
+        "compare-plans"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_plans.py::test_detects_a_removed_comparison_price"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_plans.py::test_single_card_keeps_a_hidden_comparison_price"
+      ],
+      "priority": "p1",
+      "statement": "The single-person cards render their comparison price with visibility hidden rather than removing it, because quantity one earns no quantity discount. The element must exist in the DOM and be invisible."
+    },
+    {
+      "acceptance_obligations": [
+        "Carried forward from the jefit run, where three separate 'renders but is unusable' defects passed API tests, static closure and the pixel oracle. Browser-level operability with negative controls is mandatory, not optional."
+      ],
+      "coverage_dimension_ids": [
+        "operability"
+      ],
+      "id": "operable-controls",
+      "journey_ids": [
+        "compare-plans",
+        "select-individual-plan-and-check-out",
+        "checkout-validation"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_operability.py::test_detects_a_disabled_control"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_operability.py::test_plan_tabs_filter_by_real_click",
+        "clone/tests/test_operability.py::test_start_protection_carries_the_plan",
+        "clone/tests/test_operability.py::test_checkout_submits_by_real_click"
+      ],
+      "priority": "p0",
+      "statement": "Every control a frozen journey depends on is genuinely operable by a real click in a browser: the plans page billing-term tabs filter while its plan-size container stays hidden, the pricing page's visible term and size tabs both filter, Start Protection carries the selected card into checkout, and checkout submit is reachable."
+    },
+    {
+      "acceptance_obligations": [
+        "Carried forward from the jefit audit, where 36 advertised widths were missing and the images broke at device pixel ratio 2 and 3 while static verify, the live diagnostic, the pixel oracle and a blind review all passed at ratio 1."
+      ],
+      "coverage_dimension_ids": [
+        "reference-closure"
+      ],
+      "id": "every-image-has-a-renderable-source",
+      "journey_ids": [
+        "compare-plans",
+        "browse-removal-guidance"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_reference_closure.py::test_detects_a_stripped_srcset_with_a_dead_src"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_reference_closure.py::test_every_image_element_has_a_working_source",
+        "clone/tests/test_reference_closure.py::test_no_advertised_srcset_width_is_missing"
+      ],
+      "priority": "p0",
+      "statement": "No img element may be left with a src the clone cannot serve and no working srcset candidate. Advertised responsive widths must exist in the mirror at every device pixel ratio the contract measures."
+    },
+    {
+      "acceptance_obligations": [
+        "Carried forward from the ipvanish acceptance pass, where 291 references answered local 404s - lazy-loaded images never requested during capture - while the external-only closure check and the viewport-crop oracle both reported clean."
+      ],
+      "coverage_dimension_ids": [
+        "reference-closure"
+      ],
+      "id": "local-reference-closure",
+      "journey_ids": [
+        "compare-plans",
+        "select-individual-plan-and-check-out",
+        "browse-removal-guidance"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_reference_closure.py::test_declared_holes_are_still_real"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_reference_closure.py::test_no_undeclared_local_reference_fails"
+      ],
+      "priority": "p0",
+      "statement": "Every local sub-resource a served document references either resolves or is declared with a reason in source-assets/excluded-requests.json. Silent local 404s are defects."
+    },
+    {
+      "acceptance_obligations": [
+        "The source loads 35 non-primary hosts. None may be reachable from the candidate. Newly mirrored stylesheets must be run through the localisation pass, which is how the ipvanish rebuild briefly reintroduced offsite font requests."
+      ],
+      "coverage_dimension_ids": [
+        "network-closure"
+      ],
+      "id": "zero-offsite-requests",
+      "journey_ids": [
+        "compare-plans",
+        "select-individual-plan-and-check-out",
+        "browse-removal-guidance",
+        "public-support-entry"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_no_remote_refs.py::test_detects_an_injected_offsite_reference"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_no_remote_refs.py::test_no_page_in_a_frozen_journey_makes_an_offsite_request"
+      ],
+      "priority": "p0",
+      "statement": "A browser walking any frozen journey makes no request to any origin other than the clone's own, including fonts, and including references that live inside mirrored stylesheets."
+    },
+    {
+      "coverage_dimension_ids": [
+        "error-recovery"
+      ],
+      "id": "not-found-fidelity-per-host",
+      "journey_ids": [
+        "not-found-recovery"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_not_found.py::test_detects_a_normalised_status"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_not_found.py::test_marketing_unknown_path_is_a_branded_404",
+        "clone/tests/test_not_found.py::test_application_unknown_path_is_a_soft_200"
+      ],
+      "priority": "p1",
+      "statement": "The clone reproduces both not-found behaviours the source actually has: marketing paths answer HTTP 404 with full chrome and the source's own headings, while application paths answer HTTP 200 with a client-rendered 'Page not found'. The two are not normalised to one status."
+    },
+    {
+      "coverage_dimension_ids": [
+        "error-recovery"
+      ],
+      "id": "search-empty-state-is-silent",
+      "journey_ids": [
+        "search-no-results"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_search.py::test_detects_an_invented_no_results_message"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_search.py::test_no_match_query_renders_a_silent_empty_state"
+      ],
+      "priority": "p1",
+      "statement": "A no-match search answers HTTP 200 with the heading, the echoed term in curly quotes, and an empty results region carrying no message. The clone must not invent a 'no results found' string."
+    },
+    {
+      "acceptance_obligations": [
+        "Recording inferred or unavailable evidence as observed is an unconditional rejection."
+      ],
+      "coverage_dimension_ids": [
+        "disclosure"
+      ],
+      "id": "clone-local-surfaces-are-labelled",
+      "journey_ids": [
+        "subscription-management",
+        "password-recovery"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_disclosure.py::test_detects_an_unlabelled_inferred_surface"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_disclosure.py::test_every_unobserved_surface_carries_a_notice"
+      ],
+      "priority": "p0",
+      "statement": "Every page whose behaviour was never observable on the source - the subscriber dashboard, removal profile, reports, billing history, plan change, pause, cancel, reactivate, and the password-set and reset success states - carries a visible clone-local notice naming why."
+    },
+    {
+      "coverage_dimension_ids": [
+        "authorization"
+      ],
+      "id": "subscriber-isolation",
+      "journey_ids": [
+        "subscription-management"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_isolation.py::test_detects_a_cross_account_read"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_isolation.py::test_second_subscriber_records_are_invisible"
+      ],
+      "priority": "p0",
+      "statement": "A signed-in seeded subscriber never sees the other seeded subscriber's removal records, reports, addresses or billing history."
+    },
+    {
+      "coverage_dimension_ids": [
+        "safety"
+      ],
+      "id": "no-secret-material-anywhere",
+      "journey_ids": [
+        "select-individual-plan-and-check-out"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_no_secrets.py::test_detects_a_planted_key"
+      ],
+      "positive_test_refs": [
+        "clone/tests/test_no_secrets.py::test_candidate_and_evidence_carry_no_secret_material"
+      ],
+      "priority": "p0",
+      "statement": "No credential, cookie, authorization header, session token, live or test payment key, or signed URL appears in the repository, its evidence, its logs or its assets."
+    }
+  ],
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "frozen"
+}

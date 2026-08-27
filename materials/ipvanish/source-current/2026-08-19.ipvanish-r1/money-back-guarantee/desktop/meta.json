@@ -1,0 +1,55 @@
+{
+  "checkpoint": "money-back-guarantee",
+  "family": "pricing",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/money-back-guarantee/",
+  "final_url": "https://www.ipvanish.com/money-back-guarantee/",
+  "http_status": 200,
+  "title": "Money-Back Guarantee | IPVanish VPN",
+  "body_text_len": 2595,
+  "frames": 3,
+  "frame_sha256": [
+    "d8d77afe6126926d6e4c04670c988c91f578f86531d3427fd66c0a3d904ca023",
+    "0ba3db78427b337978e2907d2cd5ec60daab827757acfb31714775603800e761",
+    "0ba3db78427b337978e2907d2cd5ec60daab827757acfb31714775603800e761"
+  ],
+  "frames_identical": false,
+  "link_count": 190,
+  "resource_count": 128,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 1940
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 2041,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 2764
+  }
+}

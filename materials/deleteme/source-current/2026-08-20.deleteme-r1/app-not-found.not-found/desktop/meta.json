@@ -1,0 +1,73 @@
+{
+  "unit": "app-not-found.not-found",
+  "checkpoint": "app-not-found.not-found.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://app.joindeleteme.com/account/no-such-route-websitebench-zzz9",
+  "requested_url": "https://app.joindeleteme.com/account/no-such-route-websitebench-zzz9",
+  "final_url": "https://app.joindeleteme.com/account/no-such-route-websitebench-zzz9",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:03:44Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "DeleteMe",
+  "h1": [
+    "Page not found"
+  ],
+  "body_text_len": 109,
+  "frames": 3,
+  "frame_sha256": [
+    "0d78a7f1bd40ec34239adfa968a2ebfaf33ae38dcf55931225b9c40fb4eb72a9",
+    "0d78a7f1bd40ec34239adfa968a2ebfaf33ae38dcf55931225b9c40fb4eb72a9",
+    "0d78a7f1bd40ec34239adfa968a2ebfaf33ae38dcf55931225b9c40fb4eb72a9"
+  ],
+  "frames_identical": true,
+  "reference_count": 57,
+  "resource_count": 59,
+  "observations": {
+    "title": "DeleteMe",
+    "h1": [
+      "Page not found"
+    ],
+    "body_text_len": 109,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 1,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 0,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [],
+    "meta_robots": null,
+    "canonical": null
+  },
+  "non_get_aborted": {
+    "count": 0,
+    "by_method": {},
+    "urls": []
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [],
+  "route_id": "app-not-found",
+  "state": "not-found",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": []
+}

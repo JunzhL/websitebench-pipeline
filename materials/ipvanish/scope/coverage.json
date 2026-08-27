@@ -1,0 +1,143 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {
+      "id": "source-direct-states",
+      "label": "Anonymous source-captured route states",
+      "unit": "route-state",
+      "category": "visual-fidelity",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "blog.desktop",
+        "checkout-card-form-essential-annual.desktop",
+        "checkout-chooser-advanced-annual.desktop",
+        "checkout-chooser-essential-annual.desktop",
+        "checkout-chooser-essential-monthly.desktop",
+        "cloud-storage.desktop",
+        "coupons.desktop",
+        "home.desktop",
+        "home.mobile",
+        "home.tablet",
+        "mobile-menu-open.mobile",
+        "money-back-guarantee.desktop",
+        "money-back-guarantee.mobile",
+        "nav-apps.desktop",
+        "nav-product.desktop",
+        "nav-resources.desktop",
+        "no-log-vpn-policy.desktop",
+        "not-found.desktop",
+        "partners.desktop",
+        "press.desktop",
+        "pricing-2year.desktop",
+        "pricing-monthly.desktop",
+        "pricing-yearly.desktop",
+        "pricing.desktop",
+        "pricing.mobile",
+        "pricing.tablet",
+        "privacy-policy.desktop",
+        "resources.desktop",
+        "reviews.desktop",
+        "secure-browser.desktop",
+        "servers.desktop",
+        "servers.mobile",
+        "setup-guides.desktop",
+        "sso-recovery.desktop",
+        "sso-signin.desktop",
+        "support-home.desktop",
+        "threat-protection.desktop",
+        "tos.desktop",
+        "trust.desktop",
+        "vpn-features.desktop",
+        "vpn-features.mobile",
+        "vpn-for-streaming.desktop",
+        "vpn-locations.desktop",
+        "vpn-setup-windows.desktop",
+        "what-is-a-vpn.desktop",
+        "what-is-a-vpn.mobile",
+        "what-is-my-ip-address.desktop",
+        "why-vpn.desktop",
+        "why-vpn.mobile"
+      ],
+      "satisfied_items": [],
+      "source_evidence_kind": "direct",
+      "rationale": "Every anonymous state captured directly from the source in 2026-08-19.ipvanish-r1; each carries a frozen three-frame raster plus DOM, link and resource censuses. The pixel oracle subset is chosen by measured flicker floor: desktop=home.desktop, tablet=home.tablet, mobile=home.mobile."
+    },
+    {
+      "id": "source-unavailable-states",
+      "label": "Recorded unavailable surfaces",
+      "unit": "route-state",
+      "category": "honest-gaps",
+      "required_evidence_kinds": [
+        "independent-audit"
+      ],
+      "required_items": [
+        "checkout-chooser.success.desktop",
+        "subscriber-dashboard.billing-history.desktop",
+        "subscriber-dashboard.canceled.desktop",
+        "subscriber-dashboard.overview.desktop",
+        "subscriber-dashboard.paused.desktop",
+        "subscriber-dashboard.plan-change.desktop"
+      ],
+      "satisfied_items": [],
+      "source_evidence_kind": "unavailable",
+      "rationale": "Subscriber surfaces and the post-payment confirmation are unreachable without a real purchase; disclosed, never inferred as direct evidence."
+    },
+    {
+      "id": "clone-local-contracts",
+      "label": "Clone-local behavior with no source pixel oracle",
+      "unit": "behavior",
+      "category": "clone-local-behavior",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "checkout-chooser.sandbox-approved",
+        "checkout-chooser.sandbox-declined",
+        "checkout-chooser.sandbox-retry",
+        "sso-signin.validation-error",
+        "sso-recovery.sent",
+        "sso-recovery.validation-error",
+        "support.no-results",
+        "what-is-my-ip-address.seeded-address",
+        "subscriber-dashboard.reactivated"
+      ],
+      "satisfied_items": [],
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "inferred",
+      "rationale": "Behavior the clone must implement locally and disclose: the local-sandbox payment scenarios that replace the Zuora card iframe (payment-input-boundary invariant), validation and recovery states never rendered on the source, the seeded deterministic IP answer, and subscriber reactivation. Verified functionally by the clone's own suite, never by pixel comparison."
+    },
+    {
+      "id": "p0-network-invariants",
+      "label": "Runtime network closure",
+      "unit": "invariant",
+      "category": "network-closure",
+      "required_evidence_kinds": [
+        "network"
+      ],
+      "required_items": [
+        "no-runtime-remote-requests"
+      ],
+      "satisfied_items": [],
+      "rationale": "The candidate must make zero runtime requests to non-local origins on every checkpoint; the source's Trustpilot, Visual Website Optimizer and Zuora embeds must be vendored or removed, never proxied."
+    },
+    {
+      "id": "deterministic-database-state",
+      "label": "Deterministic backend business state",
+      "unit": "behavior",
+      "category": "backend-semantics",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "seed-reset-deterministic",
+        "subscription-order-transactional",
+        "cross-actor-isolation"
+      ],
+      "satisfied_items": [],
+      "rationale": "Reseeding yields byte-stable business state; completing a sandbox checkout writes the subscription and its order row in one SQLite transaction; a subscriber's subscription, orders and billing history are invisible to a second seeded actor."
+    }
+  ]
+}

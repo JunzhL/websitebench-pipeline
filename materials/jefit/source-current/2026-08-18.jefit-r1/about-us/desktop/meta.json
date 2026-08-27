@@ -1,0 +1,42 @@
+{
+  "checkpoint": "about-us",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/about-us",
+  "final_url": "https://www.jefit.com/about-us",
+  "http_status": 200,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 3257,
+  "frames": 3,
+  "frame_sha256": [
+    "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+    "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+    "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb"
+  ],
+  "frames_identical": true,
+  "link_count": 28,
+  "resource_count": 87,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 5152,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 5673
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "checkpoint": "what-is-my-ip-address",
+  "family": "tools",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/what-is-my-ip-address/",
+  "final_url": "https://www.ipvanish.com/what-is-my-ip-address/",
+  "http_status": 200,
+  "title": "What Is My IP Address? - Check IP Status | IPVanish",
+  "body_text_len": 6448,
+  "frames": 3,
+  "frame_sha256": [
+    "930a91ea8d513b7b40d1ed1390d60bca3f37d6e8f4715e6e9af2a87b39eae792",
+    "440f7a685020b5998dd13eebef545c4d66e501adcfab210113981bd75b08f939",
+    "a4d91b6dd2c90381f8471abd9a560ccdc7e4acb806152eac752870c38e184e00"
+  ],
+  "frames_identical": false,
+  "link_count": 177,
+  "resource_count": 114,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 5957
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 6028,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 6752
+  }
+}

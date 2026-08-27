@@ -1,0 +1,55 @@
+{
+  "checkpoint": "trust",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/trust/",
+  "final_url": "https://www.ipvanish.com/trust/",
+  "http_status": 200,
+  "title": "IPVanish Trust Center | No-Log Audits & Transparency Reports",
+  "body_text_len": 7775,
+  "frames": 3,
+  "frame_sha256": [
+    "11465b4fbd4f09af037ca05d1122463c23f1da65d1d82f73b919cd68d47ca68a",
+    "1c6ba255105d26a6712d84592a962a267445a9a88f0ed5e21c780c1b2adbcb76",
+    "9d6f8f4bc2c496638b8156d8c7348a74bd6a1b40543218f840c2c3fcd024a425"
+  ],
+  "frames_identical": false,
+  "link_count": 186,
+  "resource_count": 111,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 6916
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 6987,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 7710
+  }
+}

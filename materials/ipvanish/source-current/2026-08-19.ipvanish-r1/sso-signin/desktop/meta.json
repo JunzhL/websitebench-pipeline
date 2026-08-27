@@ -1,0 +1,38 @@
+{
+  "checkpoint": "sso-signin",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://sso.ipvanish.com/",
+  "final_url": "https://sso.ipvanish.com/",
+  "http_status": null,
+  "title": "IPVanish - Sign in",
+  "body_text_len": 166,
+  "frames": 3,
+  "frame_sha256": [
+    "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+    "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+    "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": null,
+    "nav": null,
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 681,
+      "y": 347,
+      "width": 400,
+      "height": 226
+    },
+    "document_height": 900
+  },
+  "interaction": "loaded the client-rendered sign-in app and waited for input[name=email] to exist; no field filled, nothing submitted"
+}

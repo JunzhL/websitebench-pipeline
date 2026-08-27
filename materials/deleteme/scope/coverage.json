@@ -1,0 +1,179 @@
+{
+  "dimensions": [
+    {
+      "category": "business-flow",
+      "id": "plans",
+      "label": "Plan comparison and selection",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "plans.desktop",
+        "plans.mobile",
+        "plans.tablet",
+        "plans.term-1y.desktop",
+        "plans.term-2y.desktop",
+        "pricing.desktop",
+        "pricing.mobile",
+        "pricing.tablet",
+        "signup-grid.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "route-state"
+    },
+    {
+      "category": "business-flow",
+      "id": "checkout",
+      "label": "Paid checkout and confirmation",
+      "required_evidence_kinds": [
+        "browser",
+        "full-suite"
+      ],
+      "required_items": [
+        "checkout-complete.desktop",
+        "checkout-complete.mobile",
+        "checkout.desktop",
+        "checkout.filled.desktop",
+        "checkout.mobile",
+        "checkout.payment-declined.desktop",
+        "checkout.payment-retry.desktop",
+        "checkout.promo-open.desktop",
+        "checkout.tablet",
+        "checkout.validation-empty.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "route-state"
+    },
+    {
+      "category": "interaction",
+      "id": "operability",
+      "label": "Controls are usable by real clicks",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "plans.term-1y.desktop",
+        "checkout.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "control"
+    },
+    {
+      "category": "asset-closure",
+      "id": "reference-closure",
+      "label": "Every local reference resolves or is declared",
+      "required_evidence_kinds": [
+        "full-suite",
+        "browser"
+      ],
+      "required_items": [
+        "home.desktop",
+        "plans.desktop",
+        "blog.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "reference"
+    },
+    {
+      "category": "asset-closure",
+      "id": "network-closure",
+      "label": "Zero offsite requests",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "home.desktop",
+        "plans.desktop",
+        "checkout.desktop",
+        "help.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "origin"
+    },
+    {
+      "category": "error-recovery",
+      "id": "error-recovery",
+      "label": "Not-found and empty states",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "app-not-found.not-found.desktop",
+        "not-found.not-found.desktop",
+        "not-found.not-found.mobile",
+        "not-found.not-found.tablet",
+        "search.no-results.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "route-state"
+    },
+    {
+      "category": "authorization",
+      "id": "authorization",
+      "label": "Account isolation",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "account-dashboard.dashboard.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "rule"
+    },
+    {
+      "category": "disclosure",
+      "id": "disclosure",
+      "label": "Unobserved surfaces are labelled",
+      "required_evidence_kinds": [
+        "browser"
+      ],
+      "required_items": [
+        "account-dashboard.billing-history.desktop",
+        "account-dashboard.cancel.desktop",
+        "account-dashboard.dashboard.desktop",
+        "account-dashboard.pause.desktop",
+        "account-dashboard.plan-change.desktop",
+        "account-dashboard.reactivate.desktop",
+        "account-dashboard.removal-profile.desktop",
+        "account-dashboard.reports.desktop",
+        "checkout.filled.desktop",
+        "checkout.payment-declined.desktop",
+        "checkout.payment-retry.desktop",
+        "checkout.validation-empty.desktop",
+        "login.credentials-rejected.desktop",
+        "login.validation-empty.desktop",
+        "password-forgot.submitted.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "route-state"
+    },
+    {
+      "category": "safety",
+      "id": "seed-data",
+      "label": "Synthetic identities only",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "account-dashboard.removal-profile.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "rule"
+    },
+    {
+      "category": "safety",
+      "id": "safety",
+      "label": "No secret material",
+      "required_evidence_kinds": [
+        "full-suite"
+      ],
+      "required_items": [
+        "checkout.desktop"
+      ],
+      "satisfied_items": [],
+      "unit": "rule"
+    }
+  ],
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen"
+}

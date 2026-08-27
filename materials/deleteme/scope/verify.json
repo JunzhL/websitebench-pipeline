@@ -1,0 +1,291 @@
+{
+  "boot": {
+    "argv": [
+      "{python}",
+      "-m",
+      "uvicorn",
+      "app:app",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--log-level",
+      "warning"
+    ],
+    "cwd": "clone",
+    "env": {
+      "SEED": "1",
+      "TZ": "Etc/UTC"
+    }
+  },
+  "deferred": {},
+  "prepare": [],
+  "routes": {
+    "about": "/about-us/",
+    "account-dashboard": "/account",
+    "ai-privacy-settings": "/ai-privacy-settings/",
+    "app-not-found": "/account/zzzz-no-such-route",
+    "blog": "/blog/",
+    "careers": "/careers/",
+    "checkout": "/checkout?plan=standard&term=1&qty=1",
+    "checkout-complete": "/checkout/complete",
+    "data-breaches": "/data-breaches/",
+    "delete-your-account": "/delete-your-account/",
+    "do-not-call-list": "/do-not-call-list/",
+    "doxxing": "/doxxing/",
+    "glossary": "/glossary/",
+    "help": "/help",
+    "home": "/",
+    "how-public-record": "/how-public-record-information-works/",
+    "how-we-work": "/how-we-work/",
+    "international": "/international/",
+    "is-it-scam": "/is-it-scam/",
+    "is-site-safe": "/is-site-safe/",
+    "login": "/login",
+    "not-found": "/zzzz-no-match-websitebench",
+    "opt-out-guides": "/blog/opt-out-guides/",
+    "password-forgot": "/password/forgot",
+    "permission-slip": "/permission-slip/",
+    "permission-slip-faq": "/permission-slip/faq/",
+    "plans": "/privacy-protection-plans/",
+    "podcast": "/podcast/",
+    "policies": "/policies",
+    "press": "/press/",
+    "pricing": "/pricing/",
+    "reviews": "/reviews/",
+    "scan": "/scan/",
+    "search": "/?s=zzzz-no-match-websitebench",
+    "security": "/security/",
+    "signup-grid": "/signup/",
+    "sites-we-remove-from": "/sites-we-remove-from/"
+  },
+  "schema_version": "offline-clone.verify-driver.v1",
+  "session": {
+    "post": "/login",
+    "accounts": {
+      "primary": {
+        "form": {
+          "email": "avery.quill@example.invalid",
+          "password": "OfflineClone!2026"
+        },
+        "routes": [
+          "account-dashboard"
+        ]
+      }
+    }
+  },
+  "site_id": "deleteme",
+  "states": {
+    "account-dashboard.billing-history": [
+      {
+        "goto": "/account/billing"
+      },
+      {
+        "expect": "text=Billing history"
+      }
+    ],
+    "account-dashboard.cancel": [
+      {
+        "click": "button[data-subscription-action='cancel']"
+      },
+      {
+        "expect": "text=cancelled"
+      }
+    ],
+    "account-dashboard.dashboard": [
+      {
+        "expect": "text=Removal activity"
+      }
+    ],
+    "account-dashboard.pause": [
+      {
+        "click": "button[data-subscription-action='pause']"
+      },
+      {
+        "expect": "text=paused"
+      }
+    ],
+    "account-dashboard.plan-change": [
+      {
+        "goto": "/account/plan"
+      },
+      {
+        "expect": "text=Change plan"
+      }
+    ],
+    "account-dashboard.reactivate": [
+      {
+        "click": "button[data-subscription-action='reactivate']"
+      },
+      {
+        "expect": "text=active"
+      }
+    ],
+    "account-dashboard.removal-profile": [
+      {
+        "goto": "/account/profile"
+      },
+      {
+        "expect": "text=Save removal profile"
+      }
+    ],
+    "account-dashboard.reports": [
+      {
+        "goto": "/account/reports"
+      },
+      {
+        "expect": "text=Removal reports"
+      }
+    ],
+    "app-not-found.not-found": [],
+    "checkout.filled": [
+      {
+        "fill": "#dm-first-name",
+        "value": "Robin"
+      },
+      {
+        "fill": "#dm-last-name",
+        "value": "Vale"
+      },
+      {
+        "fill": "#dm-email",
+        "value": "driver-filled@example.invalid"
+      },
+      {
+        "fill": "#dm-address",
+        "value": "9 Placeholder Court, Springfield, EX 00003"
+      }
+    ],
+    "checkout.payment-declined": [
+      {
+        "fill": "#dm-first-name",
+        "value": "Robin"
+      },
+      {
+        "fill": "#dm-last-name",
+        "value": "Vale"
+      },
+      {
+        "fill": "#dm-email",
+        "value": "driver-declined@example.invalid"
+      },
+      {
+        "fill": "#dm-address",
+        "value": "9 Placeholder Court, Springfield, EX 00003"
+      },
+      {
+        "click": "input[name='scenario'][value='sandbox-declined']"
+      },
+      {
+        "click": "#dm-agree-billing"
+      },
+      {
+        "click": "#dm-agree-terms"
+      },
+      {
+        "click": "[data-checkout-submit]"
+      },
+      {
+        "expect": "text=Your bank declined this card"
+      }
+    ],
+    "checkout.payment-retry": [
+      {
+        "fill": "#dm-first-name",
+        "value": "Robin"
+      },
+      {
+        "fill": "#dm-last-name",
+        "value": "Vale"
+      },
+      {
+        "fill": "#dm-email",
+        "value": "driver-retry@example.invalid"
+      },
+      {
+        "fill": "#dm-address",
+        "value": "9 Placeholder Court, Springfield, EX 00003"
+      },
+      {
+        "click": "input[name='scenario'][value='sandbox-retry']"
+      },
+      {
+        "click": "#dm-agree-billing"
+      },
+      {
+        "click": "#dm-agree-terms"
+      },
+      {
+        "click": "[data-checkout-submit]"
+      },
+      {
+        "expect": "text=Something went wrong processing your payment"
+      }
+    ],
+    "checkout.promo-open": [
+      {
+        "click": "[data-promo-toggle]"
+      }
+    ],
+    "checkout.validation-empty": [
+      {
+        "click": "[data-checkout-submit]"
+      }
+    ],
+    "login.credentials-rejected": [
+      {
+        "fill": "input[name='email']",
+        "value": "avery.quill@example.invalid"
+      },
+      {
+        "fill": "input[name='password']",
+        "value": "not-the-password"
+      },
+      {
+        "click": "form[action='/login'] button[type='submit']"
+      },
+      {
+        "expect": "text=That email address and password do not match."
+      }
+    ],
+    "login.validation-empty": [
+      {
+        "eval": "document.querySelector('form[action=\"/login\"]').noValidate = true"
+      },
+      {
+        "click": "form[action='/login'] button[type='submit']"
+      },
+      {
+        "expect": "text=Enter your email address and password."
+      }
+    ],
+    "not-found.not-found": [],
+    "plans.term-1y": [
+      {
+        "click": "[data-term-tab='1y']"
+      }
+    ],
+    "plans.term-2y": [
+      {
+        "click": "[data-term-tab='2y']"
+      }
+    ],
+    "password-forgot.submitted": [
+      {
+        "fill": "form[action='/password/forgot'] input[name='email']",
+        "value": "avery.quill@example.invalid"
+      },
+      {
+        "click": "form[action='/password/forgot'] button[type='submit']"
+      },
+      {
+        "expect": "text=Check your email"
+      }
+    ],
+    "search.no-results": []
+  },
+  "status": {
+    "app-not-found": 200,
+    "not-found": 404
+  }
+}

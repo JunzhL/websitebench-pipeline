@@ -1,0 +1,42 @@
+{
+  "checkpoint": "routine-detail",
+  "family": "discovery",
+  "priority": "P0",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+  "final_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+  "http_status": 200,
+  "title": "6-Weeks to Six-Pack Abs - JEFIT",
+  "body_text_len": 3724,
+  "frames": 3,
+  "frame_sha256": [
+    "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+    "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+    "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2"
+  ],
+  "frames_identical": true,
+  "link_count": 45,
+  "resource_count": 113,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 2089,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 2610
+  }
+}

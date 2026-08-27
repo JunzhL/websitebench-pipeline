@@ -1,0 +1,75 @@
+{
+  "unit": "checkout-complete",
+  "checkpoint": "checkout-complete.mobile",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://app.joindeleteme.com/checkout/complete",
+  "requested_url": "https://app.joindeleteme.com/checkout/complete",
+  "final_url": "https://app.joindeleteme.com/checkout/complete",
+  "http_status": 200,
+  "viewport": "mobile",
+  "viewport_size": {
+    "width": 390,
+    "height": 844
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:04:07Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Checkout Complete | DeleteMe",
+  "h1": [],
+  "body_text_len": 347,
+  "frames": 3,
+  "frame_sha256": [
+    "70f9e7031178e56a6335c137d0139dcefe88d26dfcb0a5654f04b251d25d786e",
+    "70f9e7031178e56a6335c137d0139dcefe88d26dfcb0a5654f04b251d25d786e",
+    "70f9e7031178e56a6335c137d0139dcefe88d26dfcb0a5654f04b251d25d786e"
+  ],
+  "frames_identical": true,
+  "reference_count": 4,
+  "resource_count": 68,
+  "observations": {
+    "title": "Checkout Complete | DeleteMe",
+    "h1": [],
+    "body_text_len": 347,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 1,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 1,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [],
+    "meta_robots": null,
+    "canonical": null
+  },
+  "non_get_aborted": {
+    "count": 0,
+    "by_method": {},
+    "urls": []
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "readiness selector never appeared: h1, main",
+    "2 console error(s) during load; first: Failed to load resource: the server responded with a status of 401 ()"
+  ],
+  "route_id": "checkout-complete",
+  "state": "loaded",
+  "priority": "p0",
+  "acceptance_eligible": false,
+  "evidence_kind": "structural-only",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 401 ()",
+    "API request failed: {error: Authentication required, status: 401}"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "checkpoint": "servers",
+  "family": "marketing",
+  "priority": "P1",
+  "viewport": "mobile",
+  "requested_url": "https://www.ipvanish.com/servers/",
+  "final_url": "https://www.ipvanish.com/servers/",
+  "http_status": 200,
+  "title": "VPN Server Locations | IPVanish",
+  "body_text_len": 11553,
+  "frames": 3,
+  "frame_sha256": [
+    "b5d58b626980a85b163838c609956566b629eb950e7676b28d7f1a914c42aa1e",
+    "a9b172e398bd3545fc6b88814303ebbeabae6122e25488871cac78bef0e44f85",
+    "a9b172e398bd3545fc6b88814303ebbeabae6122e25488871cac78bef0e44f85"
+  ],
+  "frames_identical": false,
+  "link_count": 231,
+  "resource_count": 141,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 54
+    },
+    "nav": null,
+    "main": {
+      "selector": "main",
+      "x": 20,
+      "y": 54,
+      "width": 350,
+      "height": 15675
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 15728,
+      "width": 390,
+      "height": 1123
+    },
+    "form": null,
+    "document_height": 16852
+  }
+}

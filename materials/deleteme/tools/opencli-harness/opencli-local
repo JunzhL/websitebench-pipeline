@@ -1,0 +1,5 @@
+#!/bin/sh
+# Transparent local stand-in for the unavailable OpenCLI binary. It executes
+# the committed generated wb-deleteme adapters and never claims to be OpenCLI.
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec node "$HERE/runner.mjs" "$@"

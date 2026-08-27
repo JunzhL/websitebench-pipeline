@@ -1,0 +1,370 @@
+{
+  "schema_version": "prompt.websitebench-clone-task-brief.v1",
+  "observed_at": "2026-08-19T00:00:00Z",
+  "source": {
+    "input_url": "https://www.ipvanish.com/",
+    "canonical_url": "https://www.ipvanish.com/",
+    "canonical_origin": "https://www.ipvanish.com",
+    "approved_discovery_origins": [
+      "https://ipvanish.com",
+      "https://www.ipvanish.com",
+      "https://checkout.ipvanish.com",
+      "https://sso.ipvanish.com",
+      "https://support.ipvanish.com",
+      "https://my.ipvanish.com"
+    ],
+    "proposed_additional_origins": [
+      { "origin": "https://zuora.com", "reason": "hosted payment page iframe embedded in the checkout registration step; its DOM was read to establish the form's field inventory, never filled" },
+      { "origin": "https://cdn.checkout.com", "reason": "Checkout.com hosted payment fields referenced by the checkout bundle" },
+      { "origin": "https://widget.trustpilot.com", "reason": "review widget embedded on checkout and marketing pages" },
+      { "origin": "https://status.ipvanish.com", "reason": "system-status surface linked from support; not in frozen scope" }
+    ]
+  },
+  "site": {
+    "site_id": "ipvanish",
+    "display_name": "IPVanish",
+    "existing_site": false,
+    "site_dir": "materials/ipvanish",
+    "target_origin": "https://ipvanish.website-bench.com",
+    "worker_name": "websitebench-ipvanish-demo",
+    "purpose": "Help privacy-seeking consumers choose a VPN subscription plan and obtain an activated IPVanish account."
+  },
+  "baseline": {
+    "locale": "en-US",
+    "timezone": "Etc/UTC",
+    "timezone_policy": "temporary deterministic default; re-freeze from capture evidence",
+    "viewports": [
+      { "id": "desktop", "width": 1440, "height": 900 },
+      { "id": "tablet", "width": 1024, "height": 768 },
+      { "id": "mobile", "width": 390, "height": 844 }
+    ]
+  },
+  "scope": {
+    "roles": [
+      {
+        "id": "anonymous",
+        "display_name": "Anonymous visitor",
+        "auth_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.ipvanish.com/", "https://www.ipvanish.com/pricing/", "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN", "https://sso.ipvanish.com/", "https://support.ipvanish.com/hc/en-us"],
+        "notes": "Every surface in frozen scope is reachable anonymously: marketing tree, pricing with its three billing-period tabs, the checkout funnel's payment-method chooser and registration form, the SSO sign-in and password-recovery views, and the support centre.",
+        "live_view_required": false,
+        "existing_entitlement_required": false
+      },
+      {
+        "id": "subscriber",
+        "display_name": "Paying subscriber",
+        "auth_required": true,
+        "evidence": "unavailable",
+        "evidence_urls": ["https://my.ipvanish.com/", "https://sso.ipvanish.com/"],
+        "notes": "IPVanish has no free tier, no web free trial and no account-only signup: 'Sign up now!' on the sign-in page links to /pricing/, and account credentials are created inside the purchase funnel. my.ipvanish.com redirects anonymous visitors to sso.ipvanish.com with TOKEN_EXPIRED. Obtaining this role requires a real payment, which is prohibited and which the user declined. All subscriber surfaces are recorded unavailable; the clone implements them locally and discloses them as inference.",
+        "live_view_required": true,
+        "existing_entitlement_required": true
+      }
+    ],
+    "core_journeys": [
+      {
+        "id": "j-687-compare-plans-select-annual-register",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Compare monthly and annual plans, select the annual plan, and fill in the account registration form",
+        "preconditions": "none",
+        "starting_url": "https://www.ipvanish.com/",
+        "steps": "entry -> /pricing/ -> activate the Monthly Plan tab and read its prices -> activate the Yearly Plan tab and read its prices -> choose a Yearly tier's Get Essential/Get Advanced CTA -> checkout/address-payment-method?flow=essential-annual -> activate the Credit card row -> the registration form (account email + billing/card fields) renders with the order summary and auto-renewal disclosure",
+        "expected_result": "the registration form is reachable and filled, with the order summary showing the annual plan's price, discount, estimated tax and total due",
+        "failure_variant": "required-field validation when the form is submitted incomplete",
+        "recovery_variant": "returning to the payment-method chooser or back to pricing preserves the chosen plan",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.ipvanish.com/pricing/", "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"],
+        "confidence": "high",
+        "note": "On the source, submitting this form would create a real subscription and charge a real card, so capture stops at the filled/rendered form. On the clone the same journey completes through a local-sandbox scenario selector instead of card fields."
+      },
+      {
+        "id": "j-browse-compare-plans",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Browse the subscription offerings and compare available plans and tiers",
+        "preconditions": "none",
+        "starting_url": "https://www.ipvanish.com/pricing/",
+        "steps": "read the three billing-period tabs (2-Year default / Yearly / Monthly), the Essential and Advanced tiers, their per-month prices, struck-through retail totals, promo and renewal copy, and the feature comparison table; expand 'View All Features'",
+        "expected_result": "prices and feature rows change with the active period; Advanced carries the 'Best Protection' ribbon",
+        "failure_variant": "n/a",
+        "recovery_variant": "n/a",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.ipvanish.com/pricing/"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-plan-tier-and-options",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Select a plan tier and the relevant product options",
+        "preconditions": "none",
+        "starting_url": "https://www.ipvanish.com/pricing/",
+        "steps": "choose Essential or Advanced within a billing period; follow the CTA into the checkout flow whose flow parameter encodes tier and period; choose a payment method; observe the auto-renew disclosure",
+        "expected_result": "the checkout order summary reflects exactly the chosen tier and period",
+        "failure_variant": "n/a",
+        "recovery_variant": "changing plan means returning to pricing (the flow param is the only selector)",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.ipvanish.com/pricing/", "https://checkout.ipvanish.com/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN"],
+        "confidence": "high",
+        "note": "Quantity and delivery frequency (from the trace text) do not exist on this source: a VPN subscription has no quantity selector and no delivery cadence. Recorded as a trace-vs-source divergence."
+      },
+      {
+        "id": "j-signin-entry",
+        "priority": "p0",
+        "role": "anonymous",
+        "purpose": "Open the sign-in entry and verify the identity field and available credential choices without submitting",
+        "preconditions": "none",
+        "starting_url": "https://sso.ipvanish.com/",
+        "steps": "observe 'Welcome back! Sign in to continue to customer portal', the Email address and Password fields, 'Forgot password?', and 'Not a member? Sign up now!' which links to /pricing/",
+        "expected_result": "fields and links are visible; no credentials submitted",
+        "failure_variant": "n/a",
+        "recovery_variant": "n/a",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://sso.ipvanish.com/"],
+        "confidence": "high",
+        "note": "No third-party identity-provider buttons were observed in the SSO page source (only fonts and GTM), so social sign-in appears absent — recorded rather than assumed."
+      },
+      {
+        "id": "j-password-recovery",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Open password recovery and verify the reset-address field and return link without sending a reset message",
+        "preconditions": "none",
+        "starting_url": "https://sso.ipvanish.com/",
+        "steps": "click 'Forgot password?' -> /reset-password/ -> observe 'Reset password', 'Enter you account email, you will receive a reset password code', the Email address field (input name 'username'), 'Back to sign in' and 'Send code'",
+        "expected_result": "recovery view renders with its field and return link; nothing sent",
+        "failure_variant": "validation on an empty or malformed address",
+        "recovery_variant": "'Back to sign in' returns to the sign-in view",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://sso.ipvanish.com/reset-password/"],
+        "confidence": "high",
+        "note": "Reachable only by clicking through; the un-slashed /reset-password deep link returns 403 from its S3 origin. The 'Enter you account email' typo is source copy and is reproduced verbatim."
+      },
+      {
+        "id": "j-support-help",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Reach public help, support and contact guidance without exposing private account data",
+        "preconditions": "none",
+        "starting_url": "https://support.ipvanish.com/hc/en-us",
+        "steps": "open the support centre, its categories and the FAQ; note the on-site pricing FAQ and the ticket entry",
+        "expected_result": "guidance reachable anonymously",
+        "failure_variant": "n/a",
+        "recovery_variant": "n/a",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://support.ipvanish.com/hc/en-us", "https://www.ipvanish.com/pricing/"],
+        "confidence": "medium",
+        "note": "The support centre is a Zendesk Guide on a subdomain; its internal taxonomy renders only with an ordinary browser UA."
+      },
+      {
+        "id": "j-entry-nav",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Use the primary navigation from the public entry to reach the subscription surface and verify the destination heading and canonical path",
+        "preconditions": "none",
+        "starting_url": "https://www.ipvanish.com/",
+        "steps": "open each primary-nav dropdown (Product, Features, Solutions, Apps, Resources) and follow Pricing to /pricing/; verify the 'IPVanish plans & pricing' heading and the canonical path",
+        "expected_result": "destination heading and canonical path visible",
+        "failure_variant": "n/a",
+        "recovery_variant": "n/a",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.ipvanish.com/", "https://www.ipvanish.com/pricing/"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-no-results-and-recovery",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Verify a no-results state and a not-found recovery route",
+        "preconditions": "none",
+        "starting_url": "https://www.ipvanish.com/",
+        "steps": "search the support centre for 'zzzz-no-match-websitebench' and read its empty state; open a non-existent deep link and read the not-found view",
+        "expected_result": "graceful recovery routes back to available plans and support",
+        "failure_variant": "n/a (this is the failure family)",
+        "recovery_variant": "primary navigation preserved",
+        "source_mutation_required": false,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.ipvanish.com/zzzz-no-match-websitebench"],
+        "confidence": "medium",
+        "note": "The marketing site has no product search; discovery is browse-only, so the no-results trace is answered by the support centre's search and by an impossible pricing/locale filter. Frozen from capture evidence."
+      },
+      {
+        "id": "j-validation-and-permission",
+        "priority": "p1",
+        "role": "anonymous",
+        "purpose": "Open a subscription action with required fields empty or while signed out and verify validation or a permission prompt",
+        "preconditions": "none",
+        "starting_url": "https://sso.ipvanish.com/",
+        "steps": "submit the sign-in and recovery forms empty; open my.ipvanish.com signed out and observe the redirect to SSO",
+        "expected_result": "inline validation or a permission redirect identifies what must be corrected",
+        "failure_variant": "n/a",
+        "recovery_variant": "return to sign-in",
+        "source_mutation_required": false,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://sso.ipvanish.com/", "https://my.ipvanish.com/"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-subscription-management",
+        "priority": "p1",
+        "role": "subscriber",
+        "purpose": "Open the account dashboard and manage the subscription: review orders and billing history, change plan, pause or cancel and reactivate, and edit the billing contact",
+        "preconditions": "an active paid subscription",
+        "starting_url": "https://my.ipvanish.com/",
+        "steps": "sign in; open the dashboard and its VPN/antivirus/cloud-storage/reports areas; review billing history; change plan; pause; cancel; reactivate",
+        "expected_result": "subscription state changes are reflected in the dashboard",
+        "failure_variant": "unavailable",
+        "recovery_variant": "unavailable",
+        "source_mutation_required": true,
+        "evidence": "unavailable",
+        "evidence_urls": [],
+        "confidence": "low",
+        "note": "UNAVAILABLE on the source: reaching this role requires a real purchase, which is prohibited. Route names were observed from the my.ipvanish.com build manifest (/, /vpn, /antivirus, /cloud-storage, /secure_browser, /proxy, /wireguard, /reports, /refer-and-earn, /ideas-portal) but no rendered subscriber state was ever seen. The clone implements a local dashboard and discloses every part of it as inference."
+      }
+    ],
+    "page_families": [
+      { "id": "marketing", "routes": ["/", "/why-vpn/", "/what-is-a-vpn/", "/servers/", "/vpn-features/", "/vpn-features/threat-protection/", "/secure-browser/", "/cloud-storage/", "/no-log-vpn-policy/", "/reviews/", "/trust/", "/vpn-for-streaming/", "/blog/"], "note": "WordPress + Astra theme; ships a WPML development-site banner in production" },
+      { "id": "pricing", "routes": ["/pricing/", "/money-back-guarantee/", "/coupons/"], "note": "three billing-period tabs x two tiers; the P0 comparison surface" },
+      { "id": "checkout", "routes": ["checkout.ipvanish.com/checkout/{address,address-payment-method,payment-method,confirm,done}"], "note": "Angular SPA on a linked subdomain; flow param encodes tier+period; account creation happens inside the funnel; Zuora hosted payment iframe" },
+      { "id": "auth", "routes": ["sso.ipvanish.com/", "sso.ipvanish.com/reset-password/"], "note": "Next.js SPA; no registration route outside checkout" },
+      { "id": "subscriber-app", "routes": ["my.ipvanish.com/{,vpn,antivirus,cloud-storage,secure_browser,proxy,wireguard,reports,refer-and-earn}"], "note": "unavailable: requires a paid account" },
+      { "id": "support", "routes": ["support.ipvanish.com/hc/en-us", "/resources/", "/setup-guides/"], "note": "Zendesk Guide; UA-gated" },
+      { "id": "tools", "routes": ["/what-is-my-ip-address/", "/free-dark-web-scan/", "/qr-code-checker/"], "note": "free utility pages" },
+      { "id": "legal", "routes": ["/tos/", "/privacy-policy/", "/export-policy/", "/dmca-policy/", "/accessibility/", "/press/", "/partners/"], "note": "" },
+      { "id": "error-recovery", "routes": ["not-found view"], "note": "frozen from capture evidence" }
+    ],
+    "deterministic_seed_plan": {
+      "test_roles": ["anonymous", "subscriber (clone-local, synthetic)", "isolation-actor (second synthetic subscriber)"],
+      "core_entities": {
+        "plans": "six catalogue entries: {Essential, Advanced} x {monthly, annual, biennial} with the observed prices, discounts, renewal terms and feature matrix",
+        "subscriptions": "one active annual subscription for the seeded subscriber plus one canceled subscription for reactivation",
+        "orders": "billing-history rows covering an initial charge and a renewal",
+        "accounts": "two synthetic accounts, never the capture identity",
+        "sandbox_payment": "approved / declined / retryable scenarios"
+      },
+      "states": ["empty (fresh account)", "populated", "validation-failure", "permission-redirect (signed out)", "payment declined/retry", "order confirmation", "canceled/reactivated"],
+      "isolation_actor": "second seeded subscriber proving cross-account isolation",
+      "density": "enough plan and order rows to render the comparison table and a scrollable billing history",
+      "note": "synthetic data only; no real subscriber data exists to copy because the subscriber role was never reached"
+    },
+    "external_services": [
+      { "service": "Zuora (subscription billing) + Checkout.com hosted payment fields", "evidence": "directly-observed (iframe field inventory)", "local_adapter_needed": true, "external_side_effect": true, "user_authorization_required": true, "runtime_zero_remote": true },
+      { "service": "PayPal / Apple Pay / Google Pay / Amazon Pay wallets", "evidence": "directly-observed (chooser rows and SDK hosts)", "local_adapter_needed": true, "external_side_effect": true, "user_authorization_required": true, "runtime_zero_remote": true },
+      { "service": "Zendesk (support centre + chat widget)", "evidence": "directly-observed", "local_adapter_needed": true, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true },
+      { "service": "Cloudflare edge (WAF/CDN, UA-sensitive)", "evidence": "directly-observed", "local_adapter_needed": false, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true },
+      { "service": "Ziff Davis consent manager, Google Tag Manager, Impact.com affiliate, Visual Website Optimizer, Sift, Trustpilot", "evidence": "directly-observed in page source", "local_adapter_needed": false, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true }
+    ]
+  },
+  "authority": {
+    "authentication_access": "not-requested: the subscriber role cannot be reached without a purchase, and the user declined to buy one; all authenticated surfaces are recorded unavailable",
+    "credentials_persisted": false,
+    "authorized_source_mutations": [],
+    "requested_source_mutations": [],
+    "real_email_authorized": false,
+    "stripe_test_authorized": false,
+    "live_payment_authorized": false,
+    "push_authorized": false,
+    "pr_authorized": false,
+    "public_deployment_authorized": false,
+    "rights_or_redistribution_status": "unknown",
+    "notes": "User confirmed 2026-08-19: anonymous-only evidence; deployment dry-run only; template-derived trace texts answered by reproducing the source and disclosing divergences. No card data is ever entered on the source, and the capture walker contains explicit guards refusing to fill any field or click any subscribe/pay control on the checkout origin."
+  },
+  "trace_acquisition": {
+    "mode": "adaptive",
+    "agent_must_initiate": true,
+    "text_ownership": "human-only",
+    "human_trace_texts": [
+      { "human_trace_text_id": "ht-01", "text": "Open IPVanish's public entry page and use its primary navigation to reach the section for vpn-subscription records and actions; verify the destination heading and canonical path are visible.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 13", "status": "confirmed" },
+      { "human_trace_text_id": "ht-02", "text": "On IPVanish, compare monthly and annual plans, select the annual plan, and fill in the account registration form Confirm the resulting list or detail view visibly matches every condition in the task.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 14", "status": "confirmed" },
+      { "human_trace_text_id": "ht-03", "text": "Browse ipvanish's subscription offerings and compare the available plans or VPN plan options.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 15", "status": "confirmed" },
+      { "human_trace_text_id": "ht-04", "text": "Complete any preference, taste, profile, or recommendation questionnaire used by ipvanish to personalize the subscription.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 16", "status": "confirmed" },
+      { "human_trace_text_id": "ht-05", "text": "Select a plan tier, quantity, delivery frequency, and relevant product options on ipvanish.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 17", "status": "confirmed" },
+      { "human_trace_text_id": "ht-06", "text": "Create a new ipvanish account and complete the subscriber profile.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 18", "status": "confirmed" },
+      { "human_trace_text_id": "ht-07", "text": "Sign in to an existing ipvanish account and open the subscription/account dashboard.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 19", "status": "confirmed" },
+      { "human_trace_text_id": "ht-08", "text": "Add or edit the shipping/contact address associated with a ipvanish subscription.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 20", "status": "confirmed" },
+      { "human_trace_text_id": "ht-09", "text": "Add or update a payment method and reach the subscription order-review/activation step on ipvanish.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 21", "status": "confirmed" },
+      { "human_trace_text_id": "ht-10", "text": "Start a new subscription on ipvanish and verify the initial order or delivery schedule.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 22", "status": "confirmed" },
+      { "human_trace_text_id": "ht-11", "text": "Change the plan, product preference, quantity, or delivery cadence for an existing ipvanish subscription.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 23", "status": "confirmed" },
+      { "human_trace_text_id": "ht-12", "text": "Pause the subscription or skip/reschedule an upcoming ipvanish delivery.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 24", "status": "confirmed" },
+      { "human_trace_text_id": "ht-13", "text": "Use ipvanish's cancellation flow and, where supported, reactivate a canceled subscription.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 25", "status": "confirmed" },
+      { "human_trace_text_id": "ht-14", "text": "Review past and upcoming ipvanish subscription orders, shipment status, and billing history.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 26", "status": "confirmed" },
+      { "human_trace_text_id": "ht-15", "text": "Search IPVanish for `zzzz-no-match-websitebench`, or apply an impossible public filter when discovery is browse-only, and verify a no-results message plus a route back to available vpn-subscription records and actions.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 27", "status": "confirmed" },
+      { "human_trace_text_id": "ht-16", "text": "Open IPVanish's sign-in entry, verify the username or email field and the available password or identity-provider choices, then return without submitting credentials.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 28", "status": "confirmed" },
+      { "human_trace_text_id": "ht-17", "text": "Open IPVanish's account-registration entry and verify the visible identity fields, terms links, and verification guidance without creating an account.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 29", "status": "confirmed" },
+      { "human_trace_text_id": "ht-18", "text": "From IPVanish's sign-in surface, open password recovery and verify the reset-address field, validation guidance, and return-to-sign-in link without sending a reset message.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 30", "status": "confirmed" },
+      { "human_trace_text_id": "ht-19", "text": "With seeded offline data present, open IPVanish's account history for vpn-subscription records and actions; verify the newest item exposes its status, detail, edit or cancellation options, and a route back to the relevant collection.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 31", "status": "confirmed" },
+      { "human_trace_text_id": "ht-20", "text": "Open a IPVanish action for vpn-subscription records and actions with required fields empty or while signed out and verify inline validation or a permission prompt identifies what must be corrected before continuation.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 32", "status": "confirmed" },
+      { "human_trace_text_id": "ht-21", "text": "Open IPVanish's public help, support, or contact entry and verify a user can reach guidance for vpn-subscription records and actions, account access, and failed actions without exposing private account data.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 33", "status": "confirmed" },
+      { "human_trace_text_id": "ht-22", "text": "Open a non-existent IPVanish deep link and verify a branded not-found or recovery view preserves primary navigation and provides a safe route back to vpn-subscription records and actions.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 34", "status": "confirmed" },
+      { "human_trace_text_id": "ht-23", "text": "Starting at IPVanish's public entry, complete task 687: On IPVanish, compare monthly and annual plans, select the annual plan, and fill in the account registration form Confirm the resulting list or detail view visibly matches every condition in the task.", "provided_at": "2026-08-19T00:00:00Z", "source": "initial-user-input", "source_ref": "invocation line 35; task 687", "status": "confirmed" }
+    ],
+    "trace_candidates": [
+      {
+        "candidate_id": "tc-subscriber-dashboard",
+        "agent_suggested_scope": "A logged-in subscriber session covering the account dashboard, billing history, plan change, pause, cancellation and reactivation.",
+        "role": "subscriber",
+        "why_needed": "ht-07, ht-08, ht-10 through ht-14 and ht-19 all describe subscriber surfaces that no anonymous visitor can reach",
+        "uncertainty_resolved": [],
+        "expected_coverage": ["ht-07", "ht-08", "ht-10", "ht-11", "ht-12", "ht-13", "ht-14", "ht-19"],
+        "requires_authentication": true,
+        "requires_source_mutation": true,
+        "evidence_priority": "P1",
+        "human_trace_text_id": "ht-07",
+        "text_status": "confirmed",
+        "resolution": "declined-by-user: reaching the role requires a real purchase. Recorded unavailable; the clone's dashboard is disclosed inference."
+      }
+    ],
+    "requested_traces": [
+      {
+        "request_id": "rq-1",
+        "requested_at": "2026-08-19",
+        "content": "asked how to obtain subscriber evidence given that IPVanish gates account creation behind payment, offering anonymous-only, an existing subscription, or a self-funded purchase",
+        "outcome": "user chose anonymous-only; subscriber surfaces recorded unavailable"
+      }
+    ],
+    "completed_traces": [],
+    "remaining_material_uncertainties": [
+      "every subscriber surface (dashboard, billing history, plan change, pause, cancel, reactivate) — unavailable without a purchase",
+      "checkout steps beyond the registration form (confirm, done) — reachable only by submitting a real payment",
+      "validation copy for the checkout registration form — would require submitting an incomplete real form",
+      "whether the app-store 7-day trial referenced by third parties exists (no first-party evidence found)"
+    ]
+  },
+  "trajectory_recording": {
+    "channel": "not-used",
+    "note": "No human demonstration occurs in an anonymous-only run, so there is no login segment to record and no two-sided trajectory diff. Structural evidence comes from the agent-driven capture walks.",
+    "recordings": [],
+    "clone_side_recordings": [],
+    "two_sided_findings": []
+  },
+  "field_evidence": [
+    { "field": "canonical_url", "value": "https://www.ipvanish.com/", "evidence_urls": ["https://ipvanish.com/", "https://www.ipvanish.com/"], "observation": "apex 301s to www; canonical link element and og:url both point at the www root", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "site_id", "value": "ipvanish", "evidence_urls": ["https://www.ipvanish.com/"], "observation": "brand component of the registrable domain; matches [a-z0-9][a-z0-9-]*; no collision in materials/, deploy descriptors, workflows, harbor or site-profiles", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "display_name", "value": "IPVanish", "evidence_urls": ["https://www.ipvanish.com/"], "observation": "og:site_name is 'IPVanish'", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "locale", "value": "en-US", "evidence_urls": ["https://www.ipvanish.com/"], "observation": "html lang='en-US'; USD pricing; a locale picker offers 15 other country trees which are declared omissions", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "timezone", "value": "Etc/UTC", "evidence_urls": [], "observation": "no account or regional timezone policy is observable anonymously", "kind": "inferred", "confidence": "low", "refreeze_in_capture": true },
+    { "field": "pricing-structure", "value": "three billing-period tabs (2-Year default / Yearly / Monthly) x two tiers (Essential / Advanced, 'Best Protection' ribbon)", "evidence_urls": ["https://www.ipvanish.com/pricing/"], "observation": "tab labels are bare <strong> elements; clicking one switches the visible prices (Monthly $14.99/$17.99; Yearly $3.89/$5.39 struck from $179.88/$215.88; 2-Year $2.49/$3.59 struck from $359.76/$431.76)", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "checkout-entry", "value": "checkout.ipvanish.com/checkout/address-payment-method?flow={tier}-{period}&currency=USD&lang=EN", "evidence_urls": ["https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"], "observation": "Angular SPA on a linked subdomain; step one is a payment-method chooser (Credit card / PayPal / Apple Pay / Google Pay) beside an Order Summary; for essential-annual: 12 months, $179.88, Save 74% - $133.20, Estimated tax $6.07, Total due $52.75", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "registration-form", "value": "Zuora hosted-payment iframe with field_email, field_creditCardHolderName, field_creditCardNumber, field_creditCardExpirationMonth, field_creditCardExpirationYear, field_cardSecurityCode, field_creditCardCountry, field_creditCardPostalCode; 'Subscribe now' in the main document", "evidence_urls": ["https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN"], "observation": "revealed by activating li.c-payment-method-type-select-card; disclosure copy reads 'By subscribing, you agree to be charged $52.75. Your plan will automatically renew annually at $99.99 until canceled'. Field names only were read; nothing was typed and nothing submitted", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "signin-entry", "value": "sso.ipvanish.com with Email address + Password, 'Forgot password?', 'Not a member? Sign up now!' -> /pricing/", "evidence_urls": ["https://sso.ipvanish.com/"], "observation": "Next.js SPA; inputs named email and password; no third-party IdP hosts in page source", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "password-recovery", "value": "sso.ipvanish.com/reset-password/ (trailing slash required)", "evidence_urls": ["https://sso.ipvanish.com/reset-password/"], "observation": "reachable by clicking 'Forgot password?'; the un-slashed deep link 403s from its S3 origin; copy 'Reset password', 'Enter you account email, you will receive a reset password code' (source typo), 'Email address', 'Back to sign in', 'Send code'; input name 'username'", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "no-free-account-path", "value": "account creation requires a purchase", "evidence_urls": ["https://sso.ipvanish.com/", "https://www.ipvanish.com/pricing/"], "observation": "'Sign up now!' links to /pricing/; no /signup or /register route exists in the page sitemap; /account/ 404s; the checkout bundle exposes /api/password/public-key, i.e. credentials are created inside the funnel; the word 'trial' appears zero times on /pricing/ and the only risk-reversal copy is a post-purchase 30-day money-back guarantee that excludes monthly plans", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "ua-sensitivity", "value": "Cloudflare edge serves UA-dependent markup and 403s the headless UA on support.ipvanish.com", "evidence_urls": ["https://support.ipvanish.com/hc/en-us"], "observation": "WebFetch/WebSearch are blocked for the domain entirely; capture uses a real browser with an ordinary Chrome UA", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "wpml-dev-banner", "value": "'This site is registered on wpml.org as a development site.'", "evidence_urls": ["https://www.ipvanish.com/"], "observation": "shipped in production markup; a source property to reproduce rather than tidy away", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true }
+  ],
+  "unresolved": [
+    "default active billing-period tab was observed as 2-Year on a fresh load; confirm from the formal capture in case an A/B allocation varies it (Visual Website Optimizer is present)",
+    "whether the checkout order summary's estimated tax varies by the billing country selected in the form (only the default US view was observed)",
+    "support-centre internal taxonomy beyond the landing categories",
+    "whether an app-store-only free trial exists (third-party claim, no first-party evidence)"
+  ]
+}

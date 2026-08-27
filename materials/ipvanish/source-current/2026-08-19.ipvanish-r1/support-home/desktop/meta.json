@@ -1,0 +1,62 @@
+{
+  "checkpoint": "support-home",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://support.ipvanish.com/hc/en-us",
+  "final_url": "https://support.ipvanish.com/hc/en-us",
+  "http_status": 200,
+  "title": "IPVanish",
+  "body_text_len": 1096,
+  "frames": 3,
+  "frame_sha256": [
+    "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+    "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+    "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 140,
+      "y": 0,
+      "width": 1160,
+      "height": 71
+    },
+    "nav": {
+      "selector": "nav",
+      "x": 685,
+      "y": 10,
+      "width": 615,
+      "height": 51
+    },
+    "main": {
+      "selector": "main",
+      "x": 0,
+      "y": 71,
+      "width": 1440,
+      "height": 1182
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1253,
+      "width": 1440,
+      "height": 133
+    },
+    "form": {
+      "selector": "form",
+      "x": 370,
+      "y": 229,
+      "width": 700,
+      "height": 40
+    },
+    "document_height": 1424
+  },
+  "interaction": "loaded the Zendesk help centre with the ordinary Chrome UA (the headless UA gets a Cloudflare 403 interstitial here)"
+}

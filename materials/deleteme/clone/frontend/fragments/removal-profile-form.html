@@ -1,0 +1,39 @@
+<!--
+  The removal profile.
+
+  This is the surface DeleteMe uses to collect the personal data it then asks
+  brokers to delete: birth year, telephone, previous names, aliases, relatives
+  and prior addresses. On the source it lives behind an account that only exists
+  after a purchase, so it was never observed and the page says so.
+
+  It exists here, separate from checkout, precisely because putting these fields
+  into checkout would misrepresent what a privacy vendor collects and when.
+  Nothing typed here leaves the machine and no data broker is ever contacted.
+-->
+<form class="dm-account__form" method="post" action="/account/profile" data-removal-profile-form>
+  <p class="dm-field">
+    <label for="dm-birth-year">Birth year</label>
+    <input id="dm-birth-year" name="birth_year" type="text" inputmode="numeric" value="$birth_year">
+  </p>
+  <p class="dm-field">
+    <label for="dm-phone">Telephone</label>
+    <input id="dm-phone" name="phone" type="tel" value="$phone">
+  </p>
+  <p class="dm-field">
+    <label for="dm-previous-names">Previous names</label>
+    <input id="dm-previous-names" name="previous_names" type="text" value="$previous_names">
+  </p>
+  <p class="dm-field">
+    <label for="dm-aliases">Aliases</label>
+    <input id="dm-aliases" name="aliases" type="text" value="$aliases">
+  </p>
+  <p class="dm-field">
+    <label for="dm-relatives">Relatives</label>
+    <input id="dm-relatives" name="relatives" type="text" value="$relatives">
+  </p>
+  <p class="dm-field">
+    <label for="dm-other-addresses">Previous addresses</label>
+    <input id="dm-other-addresses" name="other_addresses" type="text" value="$other_addresses">
+  </p>
+  <button type="submit" data-removal-profile-submit>Save removal profile</button>
+</form>

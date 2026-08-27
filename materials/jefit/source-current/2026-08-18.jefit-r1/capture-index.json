@@ -1,0 +1,1890 @@
+{
+  "schema_version": "jefit.capture-index.v1",
+  "capture_id": "2026-08-18.jefit-r1",
+  "captures": [
+    {
+      "checkpoint": "home",
+      "family": "marketing",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3873,
+      "frames": 3,
+      "frame_sha256": [
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0",
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0",
+        "42bc7d6d4c615587391f15cbaaf735d6cd87b3cbfcaacf0b6daf0bcb4d12f2a0"
+      ],
+      "frames_identical": true,
+      "link_count": 38,
+      "resource_count": 83,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": "button:has-text('Accept')",
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 6610
+      }
+    },
+    {
+      "checkpoint": "home",
+      "family": "marketing",
+      "priority": "P0",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3873,
+      "frames": 3,
+      "frame_sha256": [
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323",
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323",
+        "2b9b791845185b1838eedfc47f9e49c5b5d7825c60e3e00245add433cd6bf323"
+      ],
+      "frames_identical": true,
+      "link_count": 38,
+      "resource_count": 87,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6089,
+          "width": 1024,
+          "height": 729
+        },
+        "form": null,
+        "document_height": 6818
+      }
+    },
+    {
+      "checkpoint": "home",
+      "family": "marketing",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/",
+      "final_url": "https://www.jefit.com/",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3824,
+      "frames": 3,
+      "frame_sha256": [
+        "33ab9b28740046b7c1938648368d146ce25779bacf8bdc7b36cd2372a8e292da",
+        "434067de19addb8ba690822d5ae2e02de1fd8cd099e520ba696b09530b635185",
+        "434067de19addb8ba690822d5ae2e02de1fd8cd099e520ba696b09530b635185"
+      ],
+      "frames_identical": false,
+      "link_count": 38,
+      "resource_count": 85,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 11747,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 12644
+      }
+    },
+    {
+      "checkpoint": "elite",
+      "family": "membership",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "http_status": 200,
+      "title": "Elite Membership Plans - JEFIT",
+      "body_text_len": 1877,
+      "frames": 3,
+      "frame_sha256": [
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264",
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264",
+        "f185c1d47f44a235d9ef887790c0c3fa84f035d018b1864bc43e47e3d6cab264"
+      ],
+      "frames_identical": true,
+      "link_count": 31,
+      "resource_count": 88,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1548,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 2069
+      }
+    },
+    {
+      "checkpoint": "elite",
+      "family": "membership",
+      "priority": "P0",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "http_status": 200,
+      "title": "Elite Membership Plans - JEFIT",
+      "body_text_len": 1877,
+      "frames": 3,
+      "frame_sha256": [
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180",
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180",
+        "6999bfafd4af05832268d50311996f526340f303c7e58a4f32be875c1002f180"
+      ],
+      "frames_identical": true,
+      "link_count": 31,
+      "resource_count": 92,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1572,
+          "width": 1024,
+          "height": 729
+        },
+        "form": null,
+        "document_height": 2301
+      }
+    },
+    {
+      "checkpoint": "elite",
+      "family": "membership",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/elite",
+      "final_url": "https://www.jefit.com/elite",
+      "http_status": 200,
+      "title": "Elite Membership Plans - JEFIT",
+      "body_text_len": 1828,
+      "frames": 3,
+      "frame_sha256": [
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0",
+        "f41e595e35cdd163a74220c92ff09a6c503f2bb0df620326fcce5a9408e8f6e0"
+      ],
+      "frames_identical": true,
+      "link_count": 31,
+      "resource_count": 90,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 2202,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 3099
+      }
+    },
+    {
+      "checkpoint": "exercises",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "http_status": 200,
+      "title": "Exercise Database - JEFIT",
+      "body_text_len": 23749,
+      "frames": 3,
+      "frame_sha256": [
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b",
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b",
+        "cf6f82663cc325887e0c75d10c50eacae375e4bbf73b23ec9776321205903b6b"
+      ],
+      "frames_identical": true,
+      "link_count": 58,
+      "resource_count": 132,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6866,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 798,
+          "width": 384,
+          "height": 44
+        },
+        "document_height": 7387
+      }
+    },
+    {
+      "checkpoint": "exercises",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "http_status": 200,
+      "title": "Exercise Database - JEFIT",
+      "body_text_len": 23749,
+      "frames": 3,
+      "frame_sha256": [
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+        "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da"
+      ],
+      "frames_identical": true,
+      "link_count": 58,
+      "resource_count": 136,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 7807,
+          "width": 1024,
+          "height": 729
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 798,
+          "width": 384,
+          "height": 44
+        },
+        "document_height": 8536
+      }
+    },
+    {
+      "checkpoint": "exercises",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/exercises",
+      "final_url": "https://www.jefit.com/exercises",
+      "http_status": 200,
+      "title": "Exercise Database - JEFIT",
+      "body_text_len": 23251,
+      "frames": 3,
+      "frame_sha256": [
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4",
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4",
+        "381d971b046a69dadcd5b573150f3238d6d1a85e53267cac41614d32e793b7e4"
+      ],
+      "frames_identical": true,
+      "link_count": 57,
+      "resource_count": 131,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 13615,
+          "width": 390,
+          "height": 897
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 766,
+          "width": 242,
+          "height": 44
+        },
+        "document_height": 14512
+      }
+    },
+    {
+      "checkpoint": "exercise-detail",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "final_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "http_status": 200,
+      "title": "Barbell Bench Press - JEFIT",
+      "body_text_len": 3415,
+      "frames": 3,
+      "frame_sha256": [
+        "3583e151697f1aededcf034b70cdcd52bf8264ffa070a289a07c8f5445de5d4a",
+        "7f065d6b52df86a67871b39adc37fe7e3b5d2593d229ef88135f942f53daf780",
+        "46d3e76e0cbe6f6fa551f73ce9e6b6f47cb6bcca59ef9b7d248c5b57836dcf28"
+      ],
+      "frames_identical": false,
+      "link_count": 96,
+      "resource_count": 131,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1787,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 2308
+      }
+    },
+    {
+      "checkpoint": "exercise-detail",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "final_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+      "http_status": 200,
+      "title": "Barbell Bench Press - JEFIT",
+      "body_text_len": 3368,
+      "frames": 3,
+      "frame_sha256": [
+        "da7aa63e813bb76c6b86208b987d59764e777c59498e0aaa12b4a57121eb76e1",
+        "dc1ab6bcde3435fc7d7ed35430798b8cc5f4a2e9ce24a864448ed0bcfeb9a80c",
+        "da7aa63e813bb76c6b86208b987d59764e777c59498e0aaa12b4a57121eb76e1"
+      ],
+      "frames_identical": false,
+      "link_count": 97,
+      "resource_count": 135,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 3354,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 4251
+      }
+    },
+    {
+      "checkpoint": "routines",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "http_status": 200,
+      "title": "Workout Routine Database - JEFIT",
+      "body_text_len": 7713,
+      "frames": 3,
+      "frame_sha256": [
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe",
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe",
+        "ad9b72cda2a97f0650f88473d7365dc33d0df442d42c6bebcbdf8512e70af5fe"
+      ],
+      "frames_identical": true,
+      "link_count": 61,
+      "resource_count": 125,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6072,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 168,
+          "y": 1277,
+          "width": 448,
+          "height": 48
+        },
+        "document_height": 6593
+      }
+    },
+    {
+      "checkpoint": "routines",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "tablet",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "http_status": 200,
+      "title": "Workout Routine Database - JEFIT",
+      "body_text_len": 7713,
+      "frames": 3,
+      "frame_sha256": [
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb",
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb",
+        "35462ec29237668319f9bc47535873371ac8dc56c796633239d2a01dc688efbb"
+      ],
+      "frames_identical": true,
+      "link_count": 61,
+      "resource_count": 129,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6072,
+          "width": 1024,
+          "height": 729
+        },
+        "form": {
+          "selector": "form",
+          "x": 24,
+          "y": 1277,
+          "width": 448,
+          "height": 48
+        },
+        "document_height": 6801
+      }
+    },
+    {
+      "checkpoint": "routines",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/routines",
+      "final_url": "https://www.jefit.com/routines",
+      "http_status": 200,
+      "title": "Workout Routine Database - JEFIT",
+      "body_text_len": 7193,
+      "frames": 3,
+      "frame_sha256": [
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989",
+        "856af9ee53465515c40b05ff5ac163f763ddf0f40ec2c5c4be1c790b4a546989"
+      ],
+      "frames_identical": true,
+      "link_count": 61,
+      "resource_count": 117,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 7135,
+          "width": 390,
+          "height": 897
+        },
+        "form": {
+          "selector": "form",
+          "x": 24,
+          "y": 1041,
+          "width": 272,
+          "height": 48
+        },
+        "document_height": 8032
+      }
+    },
+    {
+      "checkpoint": "routine-detail",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "final_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "http_status": 200,
+      "title": "6-Weeks to Six-Pack Abs - JEFIT",
+      "body_text_len": 3724,
+      "frames": 3,
+      "frame_sha256": [
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2",
+        "00e8214e65a0cc0f6c54c596f1c296945b79d9cbd4758dfc75bc28a0f0e3b0a2"
+      ],
+      "frames_identical": true,
+      "link_count": 45,
+      "resource_count": 113,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 2089,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 2610
+      }
+    },
+    {
+      "checkpoint": "routine-detail",
+      "family": "discovery",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "final_url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs",
+      "http_status": 200,
+      "title": "6-Weeks to Six-Pack Abs - JEFIT",
+      "body_text_len": 3675,
+      "frames": 3,
+      "frame_sha256": [
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8",
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8",
+        "7c8f6195bd370dfa8cde692f8b7ec1c818fe90778d54248a0c1e3cea8db69ee8"
+      ],
+      "frames_identical": true,
+      "link_count": 45,
+      "resource_count": 117,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 2250,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 3147
+      }
+    },
+    {
+      "checkpoint": "build-routine",
+      "family": "creation",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/build-routine",
+      "final_url": "https://www.jefit.com/build-routine?code=2YI2PS",
+      "http_status": 200,
+      "title": "Jefit Routine Builder - The Best Workout Planner Online to Create & Track",
+      "body_text_len": 3033,
+      "frames": 3,
+      "frame_sha256": [
+        "e92f125ff76fc8f999cea8461ca311b3d4ba756711056522b0fabe3053164372",
+        "4db4547f424e8d1b45aa50984326eb8749fe16089908c31fcf91093b2da97d8a",
+        "a557235ded770d5372f4611578ab54d18c171325b93528c2e020a5a006d13a25"
+      ],
+      "frames_identical": false,
+      "link_count": 74,
+      "resource_count": 125,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 136,
+          "y": 0,
+          "width": 904,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 136,
+          "y": 1248,
+          "width": 904,
+          "height": 545
+        },
+        "form": null,
+        "document_height": 1793
+      }
+    },
+    {
+      "checkpoint": "build-routine",
+      "family": "creation",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/build-routine",
+      "final_url": "https://www.jefit.com/build-routine?code=Z8F209",
+      "http_status": 200,
+      "title": "Jefit Routine Builder - The Best Workout Planner Online to Create & Track",
+      "body_text_len": 1006,
+      "frames": 3,
+      "frame_sha256": [
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d",
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d",
+        "eea93a1eedce79a6446747118f76f026070d7141bc4c6cb720c8e650b11ec37d"
+      ],
+      "frames_identical": true,
+      "link_count": 74,
+      "resource_count": 111,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 8,
+          "y": 0,
+          "width": 374,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 8,
+          "y": 1225,
+          "width": 374,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 2122
+      }
+    },
+    {
+      "checkpoint": "login",
+      "family": "auth",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/login",
+      "final_url": "https://www.jefit.com/login",
+      "http_status": 200,
+      "title": "Login to Jefit Dashboard - JEFIT",
+      "body_text_len": 518,
+      "frames": 3,
+      "frame_sha256": [
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e",
+        "5993d9e8b92f860c87ae87a35fbaf0a2f875b30b078717cfcbb8c2f2ddfd894e"
+      ],
+      "frames_identical": true,
+      "link_count": 4,
+      "resource_count": 82,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 560,
+          "y": 196,
+          "width": 320,
+          "height": 294
+        },
+        "document_height": 900
+      }
+    },
+    {
+      "checkpoint": "login",
+      "family": "auth",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/login",
+      "final_url": "https://www.jefit.com/login",
+      "http_status": 200,
+      "title": "Login to Jefit Dashboard - JEFIT",
+      "body_text_len": 518,
+      "frames": 3,
+      "frame_sha256": [
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b",
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b",
+        "fa4aca8c1dd10cf7348be5453bf489fddec8c3870786e8f28a37a9adb35eb03b"
+      ],
+      "frames_identical": true,
+      "link_count": 4,
+      "resource_count": 86,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 35,
+          "y": 196,
+          "width": 320,
+          "height": 316
+        },
+        "document_height": 844
+      }
+    },
+    {
+      "checkpoint": "signup",
+      "family": "auth",
+      "priority": "P0",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/signup",
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 479,
+      "frames": 3,
+      "frame_sha256": [
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a",
+        "f507953082a892fbfd9c2e715ebe0384ab3db48b3aa6aa5a46306ef9e5e5424a"
+      ],
+      "frames_identical": true,
+      "link_count": 2,
+      "resource_count": 67,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      }
+    },
+    {
+      "checkpoint": "signup",
+      "family": "auth",
+      "priority": "P0",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/signup",
+      "final_url": "https://www.jefit.com/signup",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 479,
+      "frames": 3,
+      "frame_sha256": [
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe",
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe",
+        "612c2e01b21edca010b6487583df3be3a3713ea20eecd93dc33916ac01d9dafe"
+      ],
+      "frames_identical": true,
+      "link_count": 2,
+      "resource_count": 72,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 844
+      }
+    },
+    {
+      "checkpoint": "forgot-password",
+      "family": "auth",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/login/forgot-password",
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "http_status": 200,
+      "title": "Reset Your Password - JEFIT",
+      "body_text_len": 538,
+      "frames": 3,
+      "frame_sha256": [
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718",
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718",
+        "800fa612953ffc3c4138498f0500197ee068284120e7c602e78abce8a3c33718"
+      ],
+      "frames_identical": true,
+      "link_count": 3,
+      "resource_count": 72,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 560,
+          "y": 264,
+          "width": 320,
+          "height": 125
+        },
+        "document_height": 900
+      }
+    },
+    {
+      "checkpoint": "forgot-password",
+      "family": "auth",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/login/forgot-password",
+      "final_url": "https://www.jefit.com/login/forgot-password",
+      "http_status": 200,
+      "title": "Reset Your Password - JEFIT",
+      "body_text_len": 538,
+      "frames": 3,
+      "frame_sha256": [
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+        "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288"
+      ],
+      "frames_identical": true,
+      "link_count": 3,
+      "resource_count": 76,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 35,
+          "y": 264,
+          "width": 320,
+          "height": 140
+        },
+        "document_height": 844
+      }
+    },
+    {
+      "checkpoint": "support",
+      "family": "support",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/support",
+      "final_url": "https://www.jefit.com/support",
+      "http_status": 200,
+      "title": "Support - JEFIT",
+      "body_text_len": 1295,
+      "frames": 3,
+      "frame_sha256": [
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5",
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5",
+        "43af84238fd434f3dd7e6a3765c769fdb22baef54553edba6ac73e12f2d7f2b5"
+      ],
+      "frames_identical": true,
+      "link_count": 31,
+      "resource_count": 79,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 980,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1501
+      }
+    },
+    {
+      "checkpoint": "support",
+      "family": "support",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/support",
+      "final_url": "https://www.jefit.com/support",
+      "http_status": 200,
+      "title": "Support - JEFIT",
+      "body_text_len": 1246,
+      "frames": 3,
+      "frame_sha256": [
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9",
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9",
+        "a7af9173c1701c718297b1117f340b7cf1a948c7029ea4c8fb7cb7a6c591c4d9"
+      ],
+      "frames_identical": true,
+      "link_count": 31,
+      "resource_count": 80,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1064,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 1961
+      }
+    },
+    {
+      "checkpoint": "support-faq",
+      "family": "support",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/support/faq",
+      "final_url": "https://www.jefit.com/support/faq",
+      "http_status": 200,
+      "title": "FAQ - JEFIT",
+      "body_text_len": 12742,
+      "frames": 3,
+      "frame_sha256": [
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb",
+        "6932606036274053c9036d570ba9c36fbcfb072a7dcb17285a1d8ae97bdd30cb"
+      ],
+      "frames_identical": true,
+      "link_count": 37,
+      "resource_count": 82,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 9419,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 9940
+      }
+    },
+    {
+      "checkpoint": "support-faq",
+      "family": "support",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/support/faq",
+      "final_url": "https://www.jefit.com/support/faq",
+      "http_status": 200,
+      "title": "FAQ - JEFIT",
+      "body_text_len": 12693,
+      "frames": 3,
+      "frame_sha256": [
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066",
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066",
+        "df211354aeeed9623019f65301d05cc309281b1028d53813ea32d7d3a9ebd066"
+      ],
+      "frames_identical": true,
+      "link_count": 37,
+      "resource_count": 83,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 14898,
+          "width": 390,
+          "height": 897
+        },
+        "form": null,
+        "document_height": 15795
+      }
+    },
+    {
+      "checkpoint": "routines-beginner",
+      "family": "discovery",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/routines/beginner",
+      "final_url": "https://www.jefit.com/routines/beginner",
+      "http_status": 200,
+      "title": "Workout Plans for Beginner - Simple & Effective Routines to Get Started!",
+      "body_text_len": 14167,
+      "frames": 3,
+      "frame_sha256": [
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485",
+        "93f21ddd8f44daea1b109fd0291ae5ab414c02eeced131f12d98f7610997e485"
+      ],
+      "frames_identical": true,
+      "link_count": 41,
+      "resource_count": 104,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 3282,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 3803
+      }
+    },
+    {
+      "checkpoint": "exercises-page2",
+      "family": "discovery",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/exercises?page=2",
+      "final_url": "https://www.jefit.com/exercises?page=2",
+      "http_status": 200,
+      "title": "Exercise Database - Page 2 - JEFIT",
+      "body_text_len": 20110,
+      "frames": 3,
+      "frame_sha256": [
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e",
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e",
+        "a743000c804061e7b05e7526d8916a795c72aaf6a62298cd3ab5c4306b798e2e"
+      ],
+      "frames_identical": true,
+      "link_count": 57,
+      "resource_count": 137,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 6866,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 8,
+          "y": 798,
+          "width": 384,
+          "height": 44
+        },
+        "document_height": 7387
+      }
+    },
+    {
+      "checkpoint": "not-found",
+      "family": "error",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "http_status": 404,
+      "title": "404 Not Found",
+      "body_text_len": 58,
+      "frames": 3,
+      "frame_sha256": [
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246",
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246",
+        "f9afbcd306c080772830d4115ea66b36e3878cac4abf41cb6152144a5aa23246"
+      ],
+      "frames_identical": true,
+      "link_count": 0,
+      "resource_count": 0,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      }
+    },
+    {
+      "checkpoint": "not-found",
+      "family": "error",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.jefit.com/zzzz-no-match-websitebench",
+      "http_status": 404,
+      "title": "404 Not Found",
+      "body_text_len": 58,
+      "frames": 3,
+      "frame_sha256": [
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868",
+        "e02b39cf96b938864a4db0329d8c26c3fc445fe2d7efba1027335418bcb9c868"
+      ],
+      "frames_identical": true,
+      "link_count": 0,
+      "resource_count": 0,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 844
+      }
+    },
+    {
+      "checkpoint": "about-us",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/about-us",
+      "final_url": "https://www.jefit.com/about-us",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 3257,
+      "frames": 3,
+      "frame_sha256": [
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb",
+        "b7558e93c2ab8c231669649197cc1b53317952ec9e56c81227de9c461e6ed0fb"
+      ],
+      "frames_identical": true,
+      "link_count": 28,
+      "resource_count": 87,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 5152,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 5673
+      }
+    },
+    {
+      "checkpoint": "ai-workout-tracker",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ai-workout-tracker",
+      "final_url": "https://www.jefit.com/ai-workout-tracker",
+      "http_status": 200,
+      "title": "AI Workout Tracker & Progressive Overload System - JEFIT",
+      "body_text_len": 3433,
+      "frames": 3,
+      "frame_sha256": [
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a",
+        "c65664e0e58dd6f331cac135ed278e3fa9278d18bf6c2333946f4f957748825a"
+      ],
+      "frames_identical": true,
+      "link_count": 34,
+      "resource_count": 83,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 4590,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 5111
+      }
+    },
+    {
+      "checkpoint": "adaptive-plan",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+      "final_url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan",
+      "http_status": 200,
+      "title": "Adaptive Plan \u2014 AI-Powered Training That Evolves With You | JEFIT",
+      "body_text_len": 4234,
+      "frames": 3,
+      "frame_sha256": [
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a",
+        "f954ce010dac86054122213283a1fd75f7e6d5269ca53f8ca00288fb3664bc5a"
+      ],
+      "frames_identical": true,
+      "link_count": 30,
+      "resource_count": 89,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 7348,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 7869
+      }
+    },
+    {
+      "checkpoint": "use-case",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/use-case",
+      "final_url": "https://www.jefit.com/use-case",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 1951,
+      "frames": 3,
+      "frame_sha256": [
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b",
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b",
+        "365e437ea1fb2c816fa24d3ad162929dc6d1c20c108ecc30a67e588f956edb9b"
+      ],
+      "frames_identical": true,
+      "link_count": 35,
+      "resource_count": 94,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": {
+          "selector": "main",
+          "x": 20,
+          "y": 56,
+          "width": 1400,
+          "height": 880
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 936,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1457
+      }
+    },
+    {
+      "checkpoint": "watch",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/watch",
+      "final_url": "https://www.jefit.com/watch",
+      "http_status": 200,
+      "title": "Watch Fitness App: Track Workouts & Sync - JEFIT",
+      "body_text_len": 2882,
+      "frames": 3,
+      "frame_sha256": [
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+        "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f"
+      ],
+      "frames_identical": true,
+      "link_count": 29,
+      "resource_count": 94,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 3448,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 3969
+      }
+    },
+    {
+      "checkpoint": "coach",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/coach",
+      "final_url": "https://www.jefit.com/coach",
+      "http_status": 200,
+      "title": "Personal Coach - JEFIT",
+      "body_text_len": 1738,
+      "frames": 3,
+      "frame_sha256": [
+        "65951e1d4804deb1dbb42a5cb9f74d2b852b5051daf61af0fc309742d8d0d391",
+        "c81b52561b78d9850bb8d66a3651c80d55be3b61e2d53de4366cde83a8feb516",
+        "95c25579da4f6bbf2b8fd1724650b947c1f5202c59fc9d63f083c187f168ed23"
+      ],
+      "frames_identical": false,
+      "link_count": 27,
+      "resource_count": 82,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1200,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1721
+      }
+    },
+    {
+      "checkpoint": "our-story",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/our-story",
+      "final_url": "https://www.jefit.com/our-story",
+      "http_status": 200,
+      "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+      "body_text_len": 6925,
+      "frames": 3,
+      "frame_sha256": [
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca",
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca",
+        "0548446683bbbebb3a638d0d3878e2a4857b2eba6fb4926b220cc95837e400ca"
+      ],
+      "frames_identical": true,
+      "link_count": 27,
+      "resource_count": 86,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 7314,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 7835
+      }
+    },
+    {
+      "checkpoint": "community",
+      "family": "community-legacy",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/community",
+      "final_url": "https://www.jefit.com/community/",
+      "http_status": 200,
+      "title": "Jefit Community | Jefit - Best Android and iPhone Workout, Fitness, Exercise and Bodybuilding App | Best Workout Tracking Software",
+      "body_text_len": 1322,
+      "frames": 3,
+      "frame_sha256": [
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f",
+        "2da0a39e80e166bfe68e637f51b10e49b157271bbd9b994374280d1e2aa8057f"
+      ],
+      "frames_identical": true,
+      "link_count": 60,
+      "resource_count": 86,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 75
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1513,
+          "width": 1440,
+          "height": 360
+        },
+        "form": null,
+        "document_height": 1874
+      }
+    },
+    {
+      "checkpoint": "blog",
+      "family": "marketing",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/blog",
+      "final_url": "https://www.jefit.com/blog",
+      "http_status": 200,
+      "title": "Blog - JEFIT",
+      "body_text_len": 2707,
+      "frames": 3,
+      "frame_sha256": [
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b",
+        "061f4b5036a95918ff0b28774295365ec023406482a83cc944d2ad90c162712b"
+      ],
+      "frames_identical": true,
+      "link_count": 65,
+      "resource_count": 133,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 2398,
+          "width": 1440,
+          "height": 521
+        },
+        "form": {
+          "selector": "form",
+          "x": 36,
+          "y": 214,
+          "width": 576,
+          "height": 36
+        },
+        "document_height": 2919
+      }
+    },
+    {
+      "checkpoint": "terms-of-use",
+      "family": "legal",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/terms-of-use",
+      "final_url": "https://www.jefit.com/terms-of-use",
+      "http_status": 200,
+      "title": "Terms of Use - JEFIT",
+      "body_text_len": 59121,
+      "frames": 3,
+      "frame_sha256": [
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f",
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f",
+        "f92a272b338b22a88b3b3ea61c758d5b94519800bd4e0def5a90f0c19157ab2f"
+      ],
+      "frames_identical": true,
+      "link_count": 1,
+      "resource_count": 38,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 23344
+      }
+    },
+    {
+      "checkpoint": "privacy-policy",
+      "family": "legal",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/privacy-policy",
+      "final_url": "https://www.jefit.com/privacy-policy",
+      "http_status": 200,
+      "title": "Privacy Policy - JEFIT",
+      "body_text_len": 56131,
+      "frames": 3,
+      "frame_sha256": [
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee",
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee",
+        "312555dd04daa430a537e757d6590b10e90668fab7523c6ab1b56621cf8b2dee"
+      ],
+      "frames_identical": true,
+      "link_count": 1,
+      "resource_count": 37,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "main": null,
+        "footer": null,
+        "form": null,
+        "document_height": 25272
+      }
+    },
+    {
+      "checkpoint": "ip-notice-process",
+      "family": "legal",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/ip-notice-process",
+      "final_url": "https://www.jefit.com/ip-notice-process",
+      "http_status": 200,
+      "title": "IP / DMCA Notices - JEFIT",
+      "body_text_len": 2255,
+      "frames": 3,
+      "frame_sha256": [
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe",
+        "7a788730dfd241fada3d6da7e9b848ee84b6bade9d28fd17be154ac3f81e9afe"
+      ],
+      "frames_identical": true,
+      "link_count": 27,
+      "resource_count": 78,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1008,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1529
+      }
+    },
+    {
+      "checkpoint": "press-media",
+      "family": "legal",
+      "priority": "P2",
+      "viewport": "desktop",
+      "requested_url": "https://www.jefit.com/press-media",
+      "final_url": "https://www.jefit.com/press-media",
+      "http_status": 200,
+      "title": "Press & Media - JEFIT",
+      "body_text_len": 1179,
+      "frames": 3,
+      "frame_sha256": [
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611",
+        "0ee59cf42b8d8d12a1f79444144ec1bafd8c398f54746963b54b934704a48611"
+      ],
+      "frames_identical": true,
+      "link_count": 29,
+      "resource_count": 121,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 56
+        },
+        "main": null,
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1220,
+          "width": 1440,
+          "height": 521
+        },
+        "form": null,
+        "document_height": 1741
+      }
+    }
+  ]
+}

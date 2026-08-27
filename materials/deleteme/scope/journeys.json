@@ -1,0 +1,268 @@
+{
+  "journeys": [
+    {
+      "actor": "anonymous",
+      "evidence_kind": "structural-only",
+      "failure_variant": "Submitting with a required field empty, or with either agreement unchecked, or with a declining sandbox scenario.",
+      "human_trace_ids": [
+        "ht-02",
+        "ht-23",
+        "ht-05",
+        "ht-10"
+      ],
+      "id": "select-individual-plan-and-check-out",
+      "kind": "success",
+      "note": "The headline trace also asks to 'submit personal information for data removal' during checkout and to confirm history reflects the change. The source does neither at checkout: it collects only name, email and one address, and the removal profile plus history live behind a post-purchase account. Both halves are reproduced where the source has them and disclosed where it does not. A second correction from capture: there is no plan-size tab. 'Individual (1 person)' is the card labelled '1 Person', selected by its own Start Protection link.",
+      "priority": "p0",
+      "recovery_variant": "Correct the field or pick the approving scenario and resubmit.",
+      "status": "frozen",
+      "steps": [
+        "Open the public entry page.",
+        "Follow Join Now to the plan grid.",
+        "Select a billing-term tab (1 Year or 2 Years); 2 Years is the default.",
+        "Locate the card whose person label reads '1 Person'.",
+        "Activate that card's Start Protection link, which carries qty=1.",
+        "On the checkout, fill First Name, Last Name, Email Address and Address.",
+        "Choose a sandbox payment outcome and accept both required agreements.",
+        "Submit Purchase & Start Deleting.",
+        "Land on the confirmation state."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "None; the grid filters client-side over cards already present.",
+      "human_trace_ids": [
+        "ht-03",
+        "ht-05"
+      ],
+      "id": "compare-plans",
+      "kind": "success",
+      "note": "Plan size is not filterable. The fourth card, Business, carries no price and no checkout link; it is a sales-contact tier on the consumer grid.",
+      "priority": "p0",
+      "recovery_variant": "None required.",
+      "status": "frozen",
+      "steps": [
+        "Open the plan grid.",
+        "Toggle the billing term between 1 Year and 2 Years.",
+        "Read the four cards rendered side by side in the active term group: 1 Person, 2 People, Family and Business.",
+        "Read each priced card's per-month price, comparison price and billed-total line."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "structural-only",
+      "failure_variant": "Inline messages identify each missing field and the unaccepted agreements.",
+      "human_trace_ids": [
+        "ht-20"
+      ],
+      "id": "checkout-validation",
+      "kind": "failure",
+      "note": "The message strings exist verbatim in the source's public bundle, but their rendered placement was never observed; placement is the clone's own and is disclosed.",
+      "priority": "p1",
+      "recovery_variant": "Filling the fields and accepting both agreements clears the errors.",
+      "status": "frozen",
+      "steps": [
+        "Open the checkout.",
+        "Submit with required fields empty and the agreements unchecked.",
+        "Read the inline validation.",
+        "Correct the fields and resubmit."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "inferred",
+      "failure_variant": "The declining scenario leaves no subscription and no account behind.",
+      "human_trace_ids": [
+        "ht-09",
+        "ht-10"
+      ],
+      "id": "payment-declined-and-retry",
+      "kind": "success",
+      "note": "The source's decline path is behind a real Stripe payment and was never observed. The clone's behaviour is local and disclosed.",
+      "priority": "p1",
+      "recovery_variant": "Re-submitting with the approving scenario completes the purchase.",
+      "status": "frozen",
+      "steps": [
+        "Open the checkout with a valid plan.",
+        "Fill the customer fields and accept the agreements.",
+        "Choose the declining sandbox scenario and submit.",
+        "Read the decline notice.",
+        "Choose the approving scenario and submit again.",
+        "Reach the confirmation state."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "Wrong credentials are refused without revealing whether the address exists.",
+      "human_trace_ids": [
+        "ht-16"
+      ],
+      "id": "sign-in-entry",
+      "kind": "success",
+      "priority": "p1",
+      "recovery_variant": "The Forgot Password? entry.",
+      "status": "frozen",
+      "steps": [
+        "Follow Login from the header.",
+        "Read the email and password fields and the identity-provider choice.",
+        "Return without submitting credentials."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "An empty or malformed address is refused inline.",
+      "human_trace_ids": [
+        "ht-18"
+      ],
+      "id": "password-recovery",
+      "kind": "recovery",
+      "note": "Nothing was submitted on the source, so the rendered 'Check your email' success state is bundle-only and the clone's rendering of it is disclosed as inference.",
+      "priority": "p1",
+      "recovery_variant": "Back to sign in returns to the sign-in surface.",
+      "status": "frozen",
+      "steps": [
+        "From the sign-in surface, open Forgot Password?.",
+        "Read the reset-address field and its guidance.",
+        "Use Back to sign in to return."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "None at entry.",
+      "human_trace_ids": [
+        "ht-06",
+        "ht-17"
+      ],
+      "id": "registration-entry",
+      "kind": "success",
+      "note": "DeleteMe has no free registration: /signup and /register do not exist on the application host, and the password is set later from an emailed link. ht-06's 'create an account and complete the subscriber profile' therefore has no pre-purchase equivalent.",
+      "priority": "p1",
+      "recovery_variant": "None required.",
+      "status": "frozen",
+      "steps": [
+        "Follow Create Account from the sign-in surface.",
+        "Observe that registration is the paid checkout, with identity fields, both agreement links, and no password field."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "None.",
+      "human_trace_ids": [
+        "ht-01"
+      ],
+      "id": "browse-removal-guidance",
+      "kind": "success",
+      "priority": "p1",
+      "recovery_variant": "None required.",
+      "status": "frozen",
+      "steps": [
+        "Open DIY Opt-Out Guides from the primary navigation.",
+        "Open the sites-we-remove-from index.",
+        "Open a data-deletion guidance family index.",
+        "Verify the destination heading and path."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "The query matches nothing.",
+      "human_trace_ids": [
+        "ht-15"
+      ],
+      "id": "search-no-results",
+      "kind": "failure",
+      "note": "The source shows NO no-results message: the region is simply empty. ht-15 asks to verify such a message, so the divergence is disclosed rather than papered over with invented copy.",
+      "priority": "p1",
+      "recovery_variant": "Full site chrome and the search field itself remain.",
+      "status": "frozen",
+      "steps": [
+        "Open a blog or archive page that exposes the search form.",
+        "Search for zzzz-no-match-websitebench.",
+        "Observe the empty results region and the routes back."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "The path does not exist.",
+      "human_trace_ids": [
+        "ht-22"
+      ],
+      "id": "not-found-recovery",
+      "kind": "recovery",
+      "priority": "p1",
+      "recovery_variant": "Back and Go to the homepage both return to available content.",
+      "status": "frozen",
+      "steps": [
+        "Request an unknown marketing path.",
+        "Observe the trailing-slash redirect and the branded 404.",
+        "Use Go to the homepage."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "directly-observed",
+      "failure_variant": "None.",
+      "human_trace_ids": [
+        "ht-21"
+      ],
+      "id": "public-support-entry",
+      "kind": "success",
+      "note": "The reachable Zendesk hub was observed; its ticket form is behind a managed challenge and is recorded unavailable.",
+      "priority": "p1",
+      "recovery_variant": "None required.",
+      "status": "frozen",
+      "steps": [
+        "Open Support from the header.",
+        "Read the categories and the search box.",
+        "Confirm no private account data is exposed while signed out."
+      ]
+    },
+    {
+      "actor": "anonymous",
+      "evidence_kind": "structural-only",
+      "failure_variant": "Unobserved.",
+      "human_trace_ids": [],
+      "id": "free-scan-entry",
+      "kind": "success",
+      "note": "The source's scan submits real personal data to a live search. The clone accepts synthetic input only and returns a seeded result; no broker is ever contacted.",
+      "priority": "p2",
+      "recovery_variant": "Unobserved.",
+      "status": "frozen",
+      "steps": [
+        "Open the free-scan entry.",
+        "Read its intake structure."
+      ]
+    },
+    {
+      "actor": "subscriber",
+      "evidence_kind": "unavailable",
+      "failure_variant": "Unavailable.",
+      "human_trace_ids": [
+        "ht-04",
+        "ht-07",
+        "ht-08",
+        "ht-11",
+        "ht-12",
+        "ht-13",
+        "ht-14",
+        "ht-19"
+      ],
+      "id": "subscription-management",
+      "kind": "success",
+      "note": "Eight traces describe this surface: removal-profile editing, dashboard, billing address, plan/cadence change, pause or skip, cancel and reactivate, removal reports, and account history. DeleteMe grants an account only after a purchase, so none of it was observable. The clone implements coherent local behaviour on every one of these paths and labels each page as clone-local inference.",
+      "priority": "p1",
+      "recovery_variant": "Unavailable.",
+      "status": "frozen",
+      "steps": [
+        "Unavailable on the source."
+      ]
+    }
+  ],
+  "schema_version": "offline-clone.journeys.v1"
+}

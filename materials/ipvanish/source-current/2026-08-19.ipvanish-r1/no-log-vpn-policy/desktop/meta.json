@@ -1,0 +1,55 @@
+{
+  "checkpoint": "no-log-vpn-policy",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/no-log-vpn-policy/",
+  "final_url": "https://www.ipvanish.com/no-log-vpn-policy/",
+  "http_status": 200,
+  "title": "The Best No Log VPN Protection - IPVanish VPN",
+  "body_text_len": 5288,
+  "frames": 3,
+  "frame_sha256": [
+    "dc471d85d322c7bc5f58a0602be999659d49c9ebf8fd25afa4d1a0b836f3e41a",
+    "157700c9ca4438d38fb888fc65cd384f4f79de0dd03f65db2aefae95daa9aae3",
+    "64389fe0ef1485327bf0153a2933a25723026cc4441620efb037fdde462c41bf"
+  ],
+  "frames_identical": false,
+  "link_count": 188,
+  "resource_count": 117,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 4270
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 4341,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 5064
+  }
+}

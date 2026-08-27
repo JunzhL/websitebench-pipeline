@@ -1,0 +1,2675 @@
+{
+  "schema_version": "ipvanish.visual-calibration-report.v1",
+  "status": "frozen",
+  "site_id": "ipvanish",
+  "capture_id": "2026-08-19.ipvanish-r1",
+  "frames_per_checkpoint": 3,
+  "metric": "pixel-mae-similarity-v1",
+  "threshold_rule": "threshold = min(0.995, flicker_floor - 0.002) per region, where flicker_floor is the minimum pairwise pixel-mae-similarity-v1 across the three pre-candidate source frames normalized to the frozen viewport box. Derived before any candidate render existed.",
+  "stability_floor": 0.98,
+  "oracle_selection": {
+    "desktop": {
+      "outcome": "home-oracle",
+      "oracle": "home.desktop",
+      "home_floor": 0.999195
+    },
+    "tablet": {
+      "outcome": "home-oracle",
+      "oracle": "home.tablet",
+      "home_floor": 1.0
+    },
+    "mobile": {
+      "outcome": "home-oracle",
+      "oracle": "home.mobile",
+      "home_floor": 1.0
+    }
+  },
+  "rows": [
+    {
+      "id": "home.desktop.full",
+      "checkpoint_id": "home.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999195,
+        0.999195,
+        1.0
+      ],
+      "flicker_floor": 0.999195,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.desktop.header",
+      "checkpoint_id": "home.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.9898,
+        0.9898,
+        1.0
+      ],
+      "flicker_floor": 0.9898,
+      "derived_threshold": 0.9878
+    },
+    {
+      "id": "home.desktop.main",
+      "checkpoint_id": "home.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.tablet.full",
+      "checkpoint_id": "home.tablet",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.tablet.header",
+      "checkpoint_id": "home.tablet",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1024,
+        "height": 57
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.tablet.main",
+      "checkpoint_id": "home.tablet",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 87,
+        "width": 984,
+        "height": 681
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.mobile.full",
+      "checkpoint_id": "home.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.mobile.header",
+      "checkpoint_id": "home.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "home.mobile.main",
+      "checkpoint_id": "home.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing.desktop.full",
+      "checkpoint_id": "pricing.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999604,
+        0.998487,
+        0.998421
+      ],
+      "flicker_floor": 0.998421,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing.desktop.header",
+      "checkpoint_id": "pricing.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994978,
+        0.980825,
+        0.979989
+      ],
+      "flicker_floor": 0.979989,
+      "derived_threshold": 0.978
+    },
+    {
+      "id": "pricing.desktop.main",
+      "checkpoint_id": "pricing.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing.tablet.full",
+      "checkpoint_id": "pricing.tablet",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 768
+      },
+      "pairwise_similarity": [
+        0.988559,
+        0.999997,
+        0.988563
+      ],
+      "flicker_floor": 0.988559,
+      "derived_threshold": 0.9866
+    },
+    {
+      "id": "pricing.tablet.header",
+      "checkpoint_id": "pricing.tablet",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1024,
+        "height": 57
+      },
+      "pairwise_similarity": [
+        0.989012,
+        0.999959,
+        0.989053
+      ],
+      "flicker_floor": 0.989012,
+      "derived_threshold": 0.987
+    },
+    {
+      "id": "pricing.tablet.main",
+      "checkpoint_id": "pricing.tablet",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 87,
+        "width": 984,
+        "height": 681
+      },
+      "pairwise_similarity": [
+        0.987532,
+        1.0,
+        0.987532
+      ],
+      "flicker_floor": 0.987532,
+      "derived_threshold": 0.9855
+    },
+    {
+      "id": "pricing.mobile.full",
+      "checkpoint_id": "pricing.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing.mobile.header",
+      "checkpoint_id": "pricing.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing.mobile.main",
+      "checkpoint_id": "pricing.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "why-vpn.desktop.full",
+      "checkpoint_id": "why-vpn.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998649,
+        0.998951,
+        0.998862
+      ],
+      "flicker_floor": 0.998649,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "why-vpn.desktop.header",
+      "checkpoint_id": "why-vpn.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.984027,
+        0.9867,
+        0.986737
+      ],
+      "flicker_floor": 0.984027,
+      "derived_threshold": 0.982
+    },
+    {
+      "id": "why-vpn.desktop.main",
+      "checkpoint_id": "why-vpn.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.999881,
+        1.0,
+        0.999881
+      ],
+      "flicker_floor": 0.999881,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "why-vpn.mobile.full",
+      "checkpoint_id": "why-vpn.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "why-vpn.mobile.header",
+      "checkpoint_id": "why-vpn.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "why-vpn.mobile.main",
+      "checkpoint_id": "why-vpn.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 54,
+        "width": 350,
+        "height": 790
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "what-is-a-vpn.desktop.full",
+      "checkpoint_id": "what-is-a-vpn.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.912209,
+        0.911401,
+        0.990753
+      ],
+      "flicker_floor": 0.911401,
+      "derived_threshold": 0.9094
+    },
+    {
+      "id": "what-is-a-vpn.desktop.header",
+      "checkpoint_id": "what-is-a-vpn.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994978,
+        0.993882,
+        0.998863
+      ],
+      "flicker_floor": 0.993882,
+      "derived_threshold": 0.9919
+    },
+    {
+      "id": "what-is-a-vpn.desktop.main",
+      "checkpoint_id": "what-is-a-vpn.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.881869,
+        0.880894,
+        0.987622
+      ],
+      "flicker_floor": 0.880894,
+      "derived_threshold": 0.8789
+    },
+    {
+      "id": "what-is-a-vpn.mobile.full",
+      "checkpoint_id": "what-is-a-vpn.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "what-is-a-vpn.mobile.header",
+      "checkpoint_id": "what-is-a-vpn.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "what-is-a-vpn.mobile.main",
+      "checkpoint_id": "what-is-a-vpn.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "servers.desktop.full",
+      "checkpoint_id": "servers.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.920117,
+        0.920117,
+        1.0
+      ],
+      "flicker_floor": 0.920117,
+      "derived_threshold": 0.9181
+    },
+    {
+      "id": "servers.desktop.header",
+      "checkpoint_id": "servers.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.984612,
+        0.984612,
+        1.0
+      ],
+      "flicker_floor": 0.984612,
+      "derived_threshold": 0.9826
+    },
+    {
+      "id": "servers.desktop.main",
+      "checkpoint_id": "servers.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.91295,
+        0.91295,
+        1.0
+      ],
+      "flicker_floor": 0.91295,
+      "derived_threshold": 0.911
+    },
+    {
+      "id": "servers.mobile.full",
+      "checkpoint_id": "servers.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "servers.mobile.header",
+      "checkpoint_id": "servers.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "servers.mobile.main",
+      "checkpoint_id": "servers.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 54,
+        "width": 350,
+        "height": 790
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-features.desktop.full",
+      "checkpoint_id": "vpn-features.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999588,
+        0.969334,
+        0.969345
+      ],
+      "flicker_floor": 0.969334,
+      "derived_threshold": 0.9673
+    },
+    {
+      "id": "vpn-features.desktop.header",
+      "checkpoint_id": "vpn-features.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        1.0,
+        0.993882,
+        0.993882
+      ],
+      "flicker_floor": 0.993882,
+      "derived_threshold": 0.9919
+    },
+    {
+      "id": "vpn-features.desktop.main",
+      "checkpoint_id": "vpn-features.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.999443,
+        0.959332,
+        0.959347
+      ],
+      "flicker_floor": 0.959332,
+      "derived_threshold": 0.9573
+    },
+    {
+      "id": "vpn-features.mobile.full",
+      "checkpoint_id": "vpn-features.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-features.mobile.header",
+      "checkpoint_id": "vpn-features.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-features.mobile.main",
+      "checkpoint_id": "vpn-features.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "money-back-guarantee.desktop.full",
+      "checkpoint_id": "money-back-guarantee.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998407,
+        0.998407,
+        1.0
+      ],
+      "flicker_floor": 0.998407,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "money-back-guarantee.desktop.header",
+      "checkpoint_id": "money-back-guarantee.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979807,
+        0.979807,
+        1.0
+      ],
+      "flicker_floor": 0.979807,
+      "derived_threshold": 0.9778
+    },
+    {
+      "id": "money-back-guarantee.desktop.main",
+      "checkpoint_id": "money-back-guarantee.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "money-back-guarantee.mobile.full",
+      "checkpoint_id": "money-back-guarantee.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "money-back-guarantee.mobile.header",
+      "checkpoint_id": "money-back-guarantee.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "money-back-guarantee.mobile.main",
+      "checkpoint_id": "money-back-guarantee.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "coupons.desktop.full",
+      "checkpoint_id": "coupons.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998392,
+        0.998407,
+        0.999625
+      ],
+      "flicker_floor": 0.998392,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "coupons.desktop.header",
+      "checkpoint_id": "coupons.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979619,
+        0.979807,
+        0.995248
+      ],
+      "flicker_floor": 0.979619,
+      "derived_threshold": 0.9776
+    },
+    {
+      "id": "coupons.desktop.main",
+      "checkpoint_id": "coupons.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 670
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "coupons.desktop.footer",
+      "checkpoint_id": "coupons.desktop",
+      "region": "footer",
+      "region_box": {
+        "x": 0,
+        "y": 741,
+        "width": 1440,
+        "height": 159
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "reviews.desktop.full",
+      "checkpoint_id": "reviews.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.896506,
+        0.985481,
+        0.896685
+      ],
+      "flicker_floor": 0.896506,
+      "derived_threshold": 0.8945
+    },
+    {
+      "id": "reviews.desktop.header",
+      "checkpoint_id": "reviews.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.993708,
+        0.986722,
+        0.984824
+      ],
+      "flicker_floor": 0.984824,
+      "derived_threshold": 0.9828
+    },
+    {
+      "id": "reviews.desktop.main",
+      "checkpoint_id": "reviews.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.872409,
+        0.982482,
+        0.873522
+      ],
+      "flicker_floor": 0.872409,
+      "derived_threshold": 0.8704
+    },
+    {
+      "id": "trust.desktop.full",
+      "checkpoint_id": "trust.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.960887,
+        0.95727,
+        0.986091
+      ],
+      "flicker_floor": 0.95727,
+      "derived_threshold": 0.9553
+    },
+    {
+      "id": "trust.desktop.header",
+      "checkpoint_id": "trust.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994772,
+        0.993708,
+        0.998897
+      ],
+      "flicker_floor": 0.993708,
+      "derived_threshold": 0.9917
+    },
+    {
+      "id": "trust.desktop.main",
+      "checkpoint_id": "trust.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.950301,
+        0.945858,
+        0.982154
+      ],
+      "flicker_floor": 0.945858,
+      "derived_threshold": 0.9439
+    },
+    {
+      "id": "no-log-vpn-policy.desktop.full",
+      "checkpoint_id": "no-log-vpn-policy.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.997727,
+        0.998478,
+        0.998895
+      ],
+      "flicker_floor": 0.997727,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "no-log-vpn-policy.desktop.header",
+      "checkpoint_id": "no-log-vpn-policy.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979975,
+        0.980707,
+        0.994772
+      ],
+      "flicker_floor": 0.979975,
+      "derived_threshold": 0.978
+    },
+    {
+      "id": "no-log-vpn-policy.desktop.main",
+      "checkpoint_id": "no-log-vpn-policy.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.999097,
+        1.0,
+        0.999097
+      ],
+      "flicker_floor": 0.999097,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "threat-protection.desktop.full",
+      "checkpoint_id": "threat-protection.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.997447,
+        0.997447,
+        1.0
+      ],
+      "flicker_floor": 0.997447,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "threat-protection.desktop.header",
+      "checkpoint_id": "threat-protection.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994867,
+        0.994867,
+        1.0
+      ],
+      "flicker_floor": 0.994867,
+      "derived_threshold": 0.9929
+    },
+    {
+      "id": "threat-protection.desktop.main",
+      "checkpoint_id": "threat-protection.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.997202,
+        0.997202,
+        1.0
+      ],
+      "flicker_floor": 0.997202,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "secure-browser.desktop.full",
+      "checkpoint_id": "secure-browser.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999518,
+        0.958718,
+        0.959047
+      ],
+      "flicker_floor": 0.958718,
+      "derived_threshold": 0.9567
+    },
+    {
+      "id": "secure-browser.desktop.header",
+      "checkpoint_id": "secure-browser.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994866,
+        0.989739,
+        0.994108
+      ],
+      "flicker_floor": 0.989739,
+      "derived_threshold": 0.9877
+    },
+    {
+      "id": "secure-browser.desktop.main",
+      "checkpoint_id": "secure-browser.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.999896,
+        0.945294,
+        0.945272
+      ],
+      "flicker_floor": 0.945272,
+      "derived_threshold": 0.9433
+    },
+    {
+      "id": "cloud-storage.desktop.full",
+      "checkpoint_id": "cloud-storage.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.99821,
+        0.998115,
+        0.999893
+      ],
+      "flicker_floor": 0.998115,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "cloud-storage.desktop.header",
+      "checkpoint_id": "cloud-storage.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980825,
+        0.980825,
+        1.0
+      ],
+      "flicker_floor": 0.980825,
+      "derived_threshold": 0.9788
+    },
+    {
+      "id": "cloud-storage.desktop.main",
+      "checkpoint_id": "cloud-storage.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.999625,
+        0.999496,
+        0.999855
+      ],
+      "flicker_floor": 0.999496,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-setup-windows.desktop.full",
+      "checkpoint_id": "vpn-setup-windows.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998216,
+        0.958635,
+        0.957913
+      ],
+      "flicker_floor": 0.957913,
+      "derived_threshold": 0.9559
+    },
+    {
+      "id": "vpn-setup-windows.desktop.header",
+      "checkpoint_id": "vpn-setup-windows.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980707,
+        0.99076,
+        0.9817
+      ],
+      "flicker_floor": 0.980707,
+      "derived_threshold": 0.9787
+    },
+    {
+      "id": "vpn-setup-windows.desktop.main",
+      "checkpoint_id": "vpn-setup-windows.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 128,
+        "width": 1200,
+        "height": 772
+      },
+      "pairwise_similarity": [
+        0.99964,
+        0.944028,
+        0.944016
+      ],
+      "flicker_floor": 0.944016,
+      "derived_threshold": 0.942
+    },
+    {
+      "id": "vpn-locations.desktop.full",
+      "checkpoint_id": "vpn-locations.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998232,
+        0.998478,
+        0.999754
+      ],
+      "flicker_floor": 0.998232,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-locations.desktop.header",
+      "checkpoint_id": "vpn-locations.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980707,
+        0.980707,
+        1.0
+      ],
+      "flicker_floor": 0.980707,
+      "derived_threshold": 0.9787
+    },
+    {
+      "id": "vpn-locations.desktop.main",
+      "checkpoint_id": "vpn-locations.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.99968,
+        1.0,
+        0.99968
+      ],
+      "flicker_floor": 0.99968,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-for-streaming.desktop.full",
+      "checkpoint_id": "vpn-for-streaming.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998313,
+        0.99833,
+        0.999969
+      ],
+      "flicker_floor": 0.998313,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "vpn-for-streaming.desktop.header",
+      "checkpoint_id": "vpn-for-streaming.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980707,
+        0.980707,
+        1.0
+      ],
+      "flicker_floor": 0.980707,
+      "derived_threshold": 0.9787
+    },
+    {
+      "id": "vpn-for-streaming.desktop.main",
+      "checkpoint_id": "vpn-for-streaming.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.999804,
+        0.999826,
+        0.999961
+      ],
+      "flicker_floor": 0.999804,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "resources.desktop.full",
+      "checkpoint_id": "resources.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998478,
+        0.99842,
+        0.999588
+      ],
+      "flicker_floor": 0.99842,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "resources.desktop.header",
+      "checkpoint_id": "resources.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980707,
+        0.979975,
+        0.994772
+      ],
+      "flicker_floor": 0.979975,
+      "derived_threshold": 0.978
+    },
+    {
+      "id": "resources.desktop.main",
+      "checkpoint_id": "resources.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "setup-guides.desktop.full",
+      "checkpoint_id": "setup-guides.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998392,
+        0.998392,
+        1.0
+      ],
+      "flicker_floor": 0.998392,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "setup-guides.desktop.header",
+      "checkpoint_id": "setup-guides.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979619,
+        0.979619,
+        1.0
+      ],
+      "flicker_floor": 0.979619,
+      "derived_threshold": 0.9776
+    },
+    {
+      "id": "setup-guides.desktop.main",
+      "checkpoint_id": "setup-guides.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "what-is-my-ip-address.desktop.full",
+      "checkpoint_id": "what-is-my-ip-address.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.995527,
+        0.995527,
+        1.0
+      ],
+      "flicker_floor": 0.995527,
+      "derived_threshold": 0.9935
+    },
+    {
+      "id": "what-is-my-ip-address.desktop.header",
+      "checkpoint_id": "what-is-my-ip-address.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979619,
+        0.979619,
+        1.0
+      ],
+      "flicker_floor": 0.979619,
+      "derived_threshold": 0.9776
+    },
+    {
+      "id": "what-is-my-ip-address.desktop.main",
+      "checkpoint_id": "what-is-my-ip-address.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 71,
+        "width": 1200,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        0.9965,
+        0.9965,
+        1.0
+      ],
+      "flicker_floor": 0.9965,
+      "derived_threshold": 0.9945
+    },
+    {
+      "id": "blog.desktop.full",
+      "checkpoint_id": "blog.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "blog.desktop.header",
+      "checkpoint_id": "blog.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "blog.desktop.action",
+      "checkpoint_id": "blog.desktop",
+      "region": "action",
+      "region_box": {
+        "x": 100,
+        "y": 111,
+        "width": 1240,
+        "height": 52
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "tos.desktop.full",
+      "checkpoint_id": "tos.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.995455,
+        0.99173,
+        0.994662
+      ],
+      "flicker_floor": 0.99173,
+      "derived_threshold": 0.9897
+    },
+    {
+      "id": "tos.desktop.header",
+      "checkpoint_id": "tos.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 67
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "tos.desktop.main",
+      "checkpoint_id": "tos.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 96,
+        "width": 1200,
+        "height": 804
+      },
+      "pairwise_similarity": [
+        0.993894,
+        0.988891,
+        0.99283
+      ],
+      "flicker_floor": 0.988891,
+      "derived_threshold": 0.9869
+    },
+    {
+      "id": "privacy-policy.desktop.full",
+      "checkpoint_id": "privacy-policy.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.987874,
+        0.987183,
+        0.998937
+      ],
+      "flicker_floor": 0.987183,
+      "derived_threshold": 0.9852
+    },
+    {
+      "id": "privacy-policy.desktop.header",
+      "checkpoint_id": "privacy-policy.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 67
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "privacy-policy.desktop.main",
+      "checkpoint_id": "privacy-policy.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 96,
+        "width": 1200,
+        "height": 804
+      },
+      "pairwise_similarity": [
+        0.983711,
+        0.982784,
+        0.998573
+      ],
+      "flicker_floor": 0.982784,
+      "derived_threshold": 0.9808
+    },
+    {
+      "id": "partners.desktop.full",
+      "checkpoint_id": "partners.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.99555,
+        1.0,
+        0.99555
+      ],
+      "flicker_floor": 0.99555,
+      "derived_threshold": 0.9936
+    },
+    {
+      "id": "partners.desktop.header",
+      "checkpoint_id": "partners.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.980707,
+        1.0,
+        0.980707
+      ],
+      "flicker_floor": 0.980707,
+      "derived_threshold": 0.9787
+    },
+    {
+      "id": "partners.desktop.main",
+      "checkpoint_id": "partners.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 127,
+        "width": 1200,
+        "height": 773
+      },
+      "pairwise_similarity": [
+        0.995916,
+        1.0,
+        0.995916
+      ],
+      "flicker_floor": 0.995916,
+      "derived_threshold": 0.9939
+    },
+    {
+      "id": "press.desktop.full",
+      "checkpoint_id": "press.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998392,
+        0.998407,
+        0.999625
+      ],
+      "flicker_floor": 0.998392,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "press.desktop.header",
+      "checkpoint_id": "press.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.979619,
+        0.979807,
+        0.995248
+      ],
+      "flicker_floor": 0.979619,
+      "derived_threshold": 0.9776
+    },
+    {
+      "id": "press.desktop.main",
+      "checkpoint_id": "press.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 300,
+        "width": 1200,
+        "height": 600
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-2year.desktop.full",
+      "checkpoint_id": "pricing-2year.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999604,
+        0.999192,
+        0.999529
+      ],
+      "flicker_floor": 0.999192,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-2year.desktop.header",
+      "checkpoint_id": "pricing-2year.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.994978,
+        0.989755,
+        0.994035
+      ],
+      "flicker_floor": 0.989755,
+      "derived_threshold": 0.9878
+    },
+    {
+      "id": "pricing-2year.desktop.main",
+      "checkpoint_id": "pricing-2year.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-yearly.desktop.full",
+      "checkpoint_id": "pricing-yearly.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.999517,
+        1.0,
+        0.999517
+      ],
+      "flicker_floor": 0.999517,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-yearly.desktop.header",
+      "checkpoint_id": "pricing-yearly.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.993882,
+        1.0,
+        0.993882
+      ],
+      "flicker_floor": 0.993882,
+      "derived_threshold": 0.9919
+    },
+    {
+      "id": "pricing-yearly.desktop.main",
+      "checkpoint_id": "pricing-yearly.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-monthly.desktop.full",
+      "checkpoint_id": "pricing-monthly.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.998535,
+        0.999018,
+        0.998387
+      ],
+      "flicker_floor": 0.998387,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "pricing-monthly.desktop.header",
+      "checkpoint_id": "pricing-monthly.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.981431,
+        0.98755,
+        0.979556
+      ],
+      "flicker_floor": 0.979556,
+      "derived_threshold": 0.9776
+    },
+    {
+      "id": "pricing-monthly.desktop.main",
+      "checkpoint_id": "pricing-monthly.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "nav-product.desktop.full",
+      "checkpoint_id": "nav-product.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.989131,
+        0.988172,
+        0.98903
+      ],
+      "flicker_floor": 0.988172,
+      "derived_threshold": 0.9862
+    },
+    {
+      "id": "nav-product.desktop.header",
+      "checkpoint_id": "nav-product.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.985541,
+        0.984324,
+        0.989969
+      ],
+      "flicker_floor": 0.984324,
+      "derived_threshold": 0.9823
+    },
+    {
+      "id": "nav-product.desktop.main",
+      "checkpoint_id": "nav-product.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.987548,
+        0.987772,
+        0.987637
+      ],
+      "flicker_floor": 0.987548,
+      "derived_threshold": 0.9855
+    },
+    {
+      "id": "nav-product.desktop.overlay",
+      "checkpoint_id": "nav-product.desktop",
+      "region": "overlay",
+      "region_box": {
+        "x": 494,
+        "y": 30,
+        "width": 678,
+        "height": 70
+      },
+      "pairwise_similarity": [
+        0.968871,
+        0.966289,
+        0.978429
+      ],
+      "flicker_floor": 0.966289,
+      "derived_threshold": 0.9643
+    },
+    {
+      "id": "nav-apps.desktop.full",
+      "checkpoint_id": "nav-apps.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.991938,
+        0.995365,
+        0.995316
+      ],
+      "flicker_floor": 0.991938,
+      "derived_threshold": 0.9899
+    },
+    {
+      "id": "nav-apps.desktop.header",
+      "checkpoint_id": "nav-apps.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.990266,
+        0.994836,
+        0.994955
+      ],
+      "flicker_floor": 0.990266,
+      "derived_threshold": 0.9883
+    },
+    {
+      "id": "nav-apps.desktop.main",
+      "checkpoint_id": "nav-apps.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.990849,
+        0.994641,
+        0.994561
+      ],
+      "flicker_floor": 0.990849,
+      "derived_threshold": 0.9888
+    },
+    {
+      "id": "nav-apps.desktop.overlay",
+      "checkpoint_id": "nav-apps.desktop",
+      "region": "overlay",
+      "region_box": {
+        "x": 494,
+        "y": 30,
+        "width": 678,
+        "height": 70
+      },
+      "pairwise_similarity": [
+        0.979051,
+        0.988887,
+        0.989143
+      ],
+      "flicker_floor": 0.979051,
+      "derived_threshold": 0.9771
+    },
+    {
+      "id": "nav-resources.desktop.full",
+      "checkpoint_id": "nav-resources.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.992219,
+        1.0,
+        0.992219
+      ],
+      "flicker_floor": 0.992219,
+      "derived_threshold": 0.9902
+    },
+    {
+      "id": "nav-resources.desktop.header",
+      "checkpoint_id": "nav-resources.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.990434,
+        1.0,
+        0.990434
+      ],
+      "flicker_floor": 0.990434,
+      "derived_threshold": 0.9884
+    },
+    {
+      "id": "nav-resources.desktop.main",
+      "checkpoint_id": "nav-resources.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.990602,
+        1.0,
+        0.990602
+      ],
+      "flicker_floor": 0.990602,
+      "derived_threshold": 0.9886
+    },
+    {
+      "id": "nav-resources.desktop.overlay",
+      "checkpoint_id": "nav-resources.desktop",
+      "region": "overlay",
+      "region_box": {
+        "x": 494,
+        "y": 30,
+        "width": 678,
+        "height": 70
+      },
+      "pairwise_similarity": [
+        0.979403,
+        1.0,
+        0.979403
+      ],
+      "flicker_floor": 0.979403,
+      "derived_threshold": 0.9774
+    },
+    {
+      "id": "mobile-menu-open.mobile.full",
+      "checkpoint_id": "mobile-menu-open.mobile",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "mobile-menu-open.mobile.header",
+      "checkpoint_id": "mobile-menu-open.mobile",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 390,
+        "height": 54
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "mobile-menu-open.mobile.main",
+      "checkpoint_id": "mobile-menu-open.mobile",
+      "region": "main",
+      "region_box": {
+        "x": 20,
+        "y": 84,
+        "width": 350,
+        "height": 760
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "mobile-menu-open.mobile.overlay",
+      "checkpoint_id": "mobile-menu-open.mobile",
+      "region": "overlay",
+      "region_box": {
+        "x": 78,
+        "y": 0,
+        "width": 235,
+        "height": 30
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "sso-signin.desktop.full",
+      "checkpoint_id": "sso-signin.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "sso-signin.desktop.action",
+      "checkpoint_id": "sso-signin.desktop",
+      "region": "action",
+      "region_box": {
+        "x": 681,
+        "y": 347,
+        "width": 400,
+        "height": 226
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "sso-recovery.desktop.full",
+      "checkpoint_id": "sso-recovery.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "sso-recovery.desktop.action",
+      "checkpoint_id": "sso-recovery.desktop",
+      "region": "action",
+      "region_box": {
+        "x": 681,
+        "y": 403,
+        "width": 400,
+        "height": 137
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-essential-annual.desktop.full",
+      "checkpoint_id": "checkout-chooser-essential-annual.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-essential-annual.desktop.main",
+      "checkpoint_id": "checkout-chooser-essential-annual.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 0,
+        "y": 75,
+        "width": 1440,
+        "height": 699
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-essential-monthly.desktop.full",
+      "checkpoint_id": "checkout-chooser-essential-monthly.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-essential-monthly.desktop.main",
+      "checkpoint_id": "checkout-chooser-essential-monthly.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 0,
+        "y": 75,
+        "width": 1440,
+        "height": 676
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-advanced-annual.desktop.full",
+      "checkpoint_id": "checkout-chooser-advanced-annual.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-chooser-advanced-annual.desktop.main",
+      "checkpoint_id": "checkout-chooser-advanced-annual.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 0,
+        "y": 75,
+        "width": 1440,
+        "height": 699
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "support-home.desktop.full",
+      "checkpoint_id": "support-home.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "support-home.desktop.header",
+      "checkpoint_id": "support-home.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 140,
+        "y": 0,
+        "width": 1160,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "support-home.desktop.main",
+      "checkpoint_id": "support-home.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 0,
+        "y": 71,
+        "width": 1440,
+        "height": 829
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "support-home.desktop.action",
+      "checkpoint_id": "support-home.desktop",
+      "region": "action",
+      "region_box": {
+        "x": 370,
+        "y": 229,
+        "width": 700,
+        "height": 40
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "not-found.desktop.full",
+      "checkpoint_id": "not-found.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        0.987836,
+        0.993459,
+        0.990007
+      ],
+      "flicker_floor": 0.987836,
+      "derived_threshold": 0.9858
+    },
+    {
+      "id": "not-found.desktop.header",
+      "checkpoint_id": "not-found.desktop",
+      "region": "header",
+      "region_box": {
+        "x": 0,
+        "y": 30,
+        "width": 1440,
+        "height": 71
+      },
+      "pairwise_similarity": [
+        0.985943,
+        0.993177,
+        0.989122
+      ],
+      "flicker_floor": 0.985943,
+      "derived_threshold": 0.9839
+    },
+    {
+      "id": "not-found.desktop.main",
+      "checkpoint_id": "not-found.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 120,
+        "y": 101,
+        "width": 1200,
+        "height": 799
+      },
+      "pairwise_similarity": [
+        0.986877,
+        0.992909,
+        0.989152
+      ],
+      "flicker_floor": 0.986877,
+      "derived_threshold": 0.9849
+    },
+    {
+      "id": "checkout-card-form-essential-annual.desktop.full",
+      "checkpoint_id": "checkout-card-form-essential-annual.desktop",
+      "region": "full",
+      "region_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    },
+    {
+      "id": "checkout-card-form-essential-annual.desktop.main",
+      "checkpoint_id": "checkout-card-form-essential-annual.desktop",
+      "region": "main",
+      "region_box": {
+        "x": 0,
+        "y": 75,
+        "width": 1440,
+        "height": 825
+      },
+      "pairwise_similarity": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "flicker_floor": 1.0,
+      "derived_threshold": 0.995
+    }
+  ]
+}

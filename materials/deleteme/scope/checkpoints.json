@@ -1,0 +1,902 @@
+{
+  "checkpoints": [
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "home.desktop",
+      "priority": "p0",
+      "route_id": "home",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop",
+      "visual_contract": {
+        "source_artifact_path": "source-current/2026-08-20.deleteme-r1/home/desktop/frame-1.viewport.png",
+        "viewport": {"width": 1440, "height": 900},
+        "comparison_region": {"x": 0, "y": 0, "width": 1440, "height": 900},
+        "metric": "pixel-mae-similarity-v1",
+        "threshold": 0.993912
+      }
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "home.tablet",
+      "priority": "p0",
+      "route_id": "home",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet",
+      "visual_contract": {
+        "source_artifact_path": "source-current/2026-08-20.deleteme-r1/home/tablet/frame-1.viewport.png",
+        "viewport": {"width": 1024, "height": 768},
+        "comparison_region": {"x": 0, "y": 0, "width": 1024, "height": 768},
+        "metric": "pixel-mae-similarity-v1",
+        "threshold": 0.995
+      }
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "home.mobile",
+      "priority": "p0",
+      "route_id": "home",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile",
+      "visual_contract": {
+        "source_artifact_path": "source-current/2026-08-20.deleteme-r1/home/mobile/frame-1.viewport.png",
+        "viewport": {"width": 390, "height": 844},
+        "comparison_region": {"x": 0, "y": 0, "width": 390, "height": 844},
+        "metric": "pixel-mae-similarity-v1",
+        "threshold": 0.995
+      }
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "plans.desktop",
+      "priority": "p0",
+      "route_id": "plans",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "plans.tablet",
+      "priority": "p0",
+      "route_id": "plans",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "plans.mobile",
+      "priority": "p0",
+      "route_id": "plans",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "pricing.desktop",
+      "priority": "p1",
+      "route_id": "pricing",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "pricing.tablet",
+      "priority": "p1",
+      "route_id": "pricing",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "pricing.mobile",
+      "priority": "p1",
+      "route_id": "pricing",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "how-we-work.desktop",
+      "priority": "p1",
+      "route_id": "how-we-work",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "how-we-work.tablet",
+      "priority": "p1",
+      "route_id": "how-we-work",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "how-we-work.mobile",
+      "priority": "p1",
+      "route_id": "how-we-work",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "sites-we-remove-from.desktop",
+      "priority": "p1",
+      "route_id": "sites-we-remove-from",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "sites-we-remove-from.tablet",
+      "priority": "p1",
+      "route_id": "sites-we-remove-from",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "sites-we-remove-from.mobile",
+      "priority": "p1",
+      "route_id": "sites-we-remove-from",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "reviews.desktop",
+      "priority": "p1",
+      "route_id": "reviews",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "reviews.tablet",
+      "priority": "p1",
+      "route_id": "reviews",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "reviews.mobile",
+      "priority": "p1",
+      "route_id": "reviews",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "about.desktop",
+      "priority": "p1",
+      "route_id": "about",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "about.tablet",
+      "priority": "p1",
+      "route_id": "about",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "about.mobile",
+      "priority": "p1",
+      "route_id": "about",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "security.desktop",
+      "priority": "p1",
+      "route_id": "security",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "security.tablet",
+      "priority": "p1",
+      "route_id": "security",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "security.mobile",
+      "priority": "p1",
+      "route_id": "security",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "opt-out-guides.desktop",
+      "priority": "p1",
+      "route_id": "opt-out-guides",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "opt-out-guides.tablet",
+      "priority": "p1",
+      "route_id": "opt-out-guides",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "opt-out-guides.mobile",
+      "priority": "p1",
+      "route_id": "opt-out-guides",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "blog.desktop",
+      "priority": "p2",
+      "route_id": "blog",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "blog.tablet",
+      "priority": "p2",
+      "route_id": "blog",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "blog.mobile",
+      "priority": "p2",
+      "route_id": "blog",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "help.desktop",
+      "priority": "p1",
+      "route_id": "help",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "help.tablet",
+      "priority": "p1",
+      "route_id": "help",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "help.mobile",
+      "priority": "p1",
+      "route_id": "help",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "login.desktop",
+      "priority": "p1",
+      "route_id": "login",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "login.tablet",
+      "priority": "p1",
+      "route_id": "login",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "login.mobile",
+      "priority": "p1",
+      "route_id": "login",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "checkout.desktop",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "checkout.tablet",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "checkout.mobile",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "not-found.not-found.desktop",
+      "priority": "p1",
+      "route_id": "not-found",
+      "state": "not-found",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "not-found.not-found.tablet",
+      "priority": "p1",
+      "route_id": "not-found",
+      "state": "not-found",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "tablet"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "not-found.not-found.mobile",
+      "priority": "p1",
+      "route_id": "not-found",
+      "state": "not-found",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "signup-grid.desktop",
+      "priority": "p2",
+      "route_id": "signup-grid",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "scan.desktop",
+      "priority": "p1",
+      "route_id": "scan",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "international.desktop",
+      "priority": "p2",
+      "route_id": "international",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "how-public-record.desktop",
+      "priority": "p2",
+      "route_id": "how-public-record",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "delete-your-account.desktop",
+      "priority": "p2",
+      "route_id": "delete-your-account",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "doxxing.desktop",
+      "priority": "p2",
+      "route_id": "doxxing",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "is-site-safe.desktop",
+      "priority": "p2",
+      "route_id": "is-site-safe",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "is-it-scam.desktop",
+      "priority": "p2",
+      "route_id": "is-it-scam",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "glossary.desktop",
+      "priority": "p2",
+      "route_id": "glossary",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "do-not-call-list.desktop",
+      "priority": "p2",
+      "route_id": "do-not-call-list",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "ai-privacy-settings.desktop",
+      "priority": "p2",
+      "route_id": "ai-privacy-settings",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "data-breaches.desktop",
+      "priority": "p2",
+      "route_id": "data-breaches",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "podcast.desktop",
+      "priority": "p2",
+      "route_id": "podcast",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "permission-slip.desktop",
+      "priority": "p2",
+      "route_id": "permission-slip",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "permission-slip-faq.desktop",
+      "priority": "p2",
+      "route_id": "permission-slip-faq",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "press.desktop",
+      "priority": "p2",
+      "route_id": "press",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "careers.desktop",
+      "priority": "p2",
+      "route_id": "careers",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "policies.desktop",
+      "priority": "p2",
+      "route_id": "policies",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "password-forgot.desktop",
+      "priority": "p1",
+      "route_id": "password-forgot",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "checkout-complete.desktop",
+      "priority": "p0",
+      "route_id": "checkout-complete",
+      "state": "loaded",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "search.no-results.desktop",
+      "priority": "p1",
+      "route_id": "search",
+      "state": "no-results",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "app-not-found.not-found.desktop",
+      "priority": "p2",
+      "route_id": "app-not-found",
+      "state": "not-found",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "plans.term-1y.desktop",
+      "priority": "p0",
+      "route_id": "plans",
+      "state": "term-1y",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": true,
+      "evidence_kind": "current-direct",
+      "id": "plans.term-2y.desktop",
+      "priority": "p0",
+      "route_id": "plans",
+      "state": "term-2y",
+      "verification_kind": "frozen-source-comparison",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "checkout.promo-open.desktop",
+      "note": "Not capturable. The promo panel lives inside the Order Summary, which renders only after the page's own POST /api/checkout/checkout/session. A GET-only capture shows no panel at all, and a bounded probe that allowed just that one request still rendered neither the panel nor any amount - the Stripe and bot-protection chain the page also needs stays refused by policy. The probe's DOM additionally carried a live Stripe publishable key, so it was deleted rather than kept as evidence. Two attempts, no progress: recorded unavailable per the stopping rules.",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "promo-open",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "checkout.filled.desktop",
+      "note": "Field-filled state is the clone's own; the source was never filled.",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "filled",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "checkout.validation-empty.desktop",
+      "note": "Message strings are verbatim from the source bundle; placement is the clone's.",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "validation-empty",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "checkout.payment-declined.desktop",
+      "note": "No observable source state: the source's decline is behind a real Stripe payment.",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "payment-declined",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "checkout.payment-retry.desktop",
+      "note": "No observable source state.",
+      "priority": "p0",
+      "route_id": "checkout",
+      "state": "payment-retry",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "structural-only",
+      "id": "checkout-complete.mobile",
+      "note": "Confirmation copy strings are directly observed in the source bundle; the rendered page was never reached because submitting is a real purchase.",
+      "priority": "p0",
+      "route_id": "checkout-complete",
+      "state": "loaded",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "mobile"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "login.validation-empty.desktop",
+      "note": "Message strings are verbatim from the source bundle; nothing was submitted on the source.",
+      "priority": "p1",
+      "route_id": "login",
+      "state": "validation-empty",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "login.credentials-rejected.desktop",
+      "note": "Message strings are verbatim from the source bundle; nothing was submitted on the source.",
+      "priority": "p1",
+      "route_id": "login",
+      "state": "credentials-rejected",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "inferred",
+      "id": "password-forgot.submitted.desktop",
+      "note": "The rendered 'Check your email' state was never reached; no reset was requested.",
+      "priority": "p1",
+      "route_id": "password-forgot",
+      "state": "submitted",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.dashboard.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "dashboard",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.removal-profile.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "removal-profile",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.reports.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "reports",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.billing-history.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "billing-history",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.plan-change.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "plan-change",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.pause.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "pause",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.cancel.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "cancel",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    },
+    {
+      "acceptance_eligible": false,
+      "evidence_kind": "unavailable",
+      "id": "account-dashboard.reactivate.desktop",
+      "note": "Never observable: DeleteMe grants an account only after a purchase this run may not make.",
+      "priority": "p1",
+      "route_id": "account-dashboard",
+      "state": "reactivate",
+      "verification_kind": "clone-local-diagnostic",
+      "viewport": "desktop"
+    }
+  ],
+  "schema_version": "offline-clone.checkpoints.v1",
+  "scope_corrections": [
+    {
+      "correction": "Removed four plan-size checkpoints (plans.size-single/couple/family at desktop, plans.size-single at mobile).",
+      "date": "2026-08-20",
+      "evidence": "materials/deleteme/source-current/2026-08-20.deleteme-r1/plans/desktop/page.html",
+      "reason": "Frozen capture shows the size-filter container #fs-grid-filter-activation is shipped with display:none on both /privacy-protection-plans/ and /pricing/, so no visitor can operate a plan-size tab. All four cards render side by side within a term group instead. The states were planned from reconnaissance that read the controls out of the DOM without checking visibility; direct capture supersedes it."
+    },
+    {
+      "correction": "checkout.promo-open.desktop reclassified from acceptance-eligible to unavailable.",
+      "date": "2026-08-20",
+      "evidence": "materials/deleteme/scope/implement-notes.md",
+      "reason": "Not observable without allowing the third-party payment and bot-protection chain; the one probe DOM that got further carried a live Stripe publishable key and was deleted."
+    }
+  ],
+  "status": "frozen",
+  "viewports": {
+    "desktop": {
+      "height": 900,
+      "width": 1440
+    },
+    "mobile": {
+      "height": 844,
+      "width": 390
+    },
+    "tablet": {
+      "height": 768,
+      "width": 1024
+    }
+  }
+}

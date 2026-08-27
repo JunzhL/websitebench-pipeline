@@ -1,0 +1,102 @@
+{
+  "unit": "how-public-record",
+  "checkpoint": "how-public-record.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/how-public-record-information-works/",
+  "requested_url": "https://joindeleteme.com/how-public-record-information-works/",
+  "final_url": "https://joindeleteme.com/how-public-record-information-works/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:02:51Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "How Public Record Information Works - DeleteMe",
+  "h1": [
+    "Your Name, Address, and Home Phone Number are All Part of the Public Record."
+  ],
+  "body_text_len": 6724,
+  "frames": 3,
+  "frame_sha256": [
+    "9c537b683a3d29cda7dee1fd2d13069781659a1449c5c57dffe84db2b98de672",
+    "9c537b683a3d29cda7dee1fd2d13069781659a1449c5c57dffe84db2b98de672",
+    "9c537b683a3d29cda7dee1fd2d13069781659a1449c5c57dffe84db2b98de672"
+  ],
+  "frames_identical": true,
+  "reference_count": 67,
+  "resource_count": 110,
+  "observations": {
+    "title": "How Public Record Information Works - DeleteMe",
+    "h1": [
+      "Your Name, Address, and Home Phone Number are All Part of the Public Record."
+    ],
+    "body_text_len": 6724,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 58,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/how-public-record-information-works/"
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "13 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "how-public-record",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

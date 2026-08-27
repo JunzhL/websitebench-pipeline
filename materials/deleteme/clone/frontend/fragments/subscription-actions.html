@@ -1,0 +1,18 @@
+<!--
+  Pause, cancel and reactivate. Clone-local inference: eight frozen traces
+  describe these controls, and none of them was observable on the source, which
+  grants an account only after a purchase. Each is a real POST against local
+  state so the behaviour is coherent, and the page carries a notice saying the
+  behaviour is the clone's own.
+-->
+<div class="dm-account__actions">
+  <form method="post" action="/account/subscription/$subscription_id/pause">
+    <button type="submit" data-subscription-action="pause">Pause</button>
+  </form>
+  <form method="post" action="/account/subscription/$subscription_id/cancel">
+    <button type="submit" data-subscription-action="cancel">Cancel</button>
+  </form>
+  <form method="post" action="/account/subscription/$subscription_id/reactivate">
+    <button type="submit" data-subscription-action="reactivate">Reactivate</button>
+  </form>
+</div>

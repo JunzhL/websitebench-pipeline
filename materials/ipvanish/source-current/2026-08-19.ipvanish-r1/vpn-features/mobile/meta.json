@@ -1,0 +1,55 @@
+{
+  "checkpoint": "vpn-features",
+  "family": "marketing",
+  "priority": "P1",
+  "viewport": "mobile",
+  "requested_url": "https://www.ipvanish.com/vpn-features/",
+  "final_url": "https://www.ipvanish.com/vpn-features/",
+  "http_status": 200,
+  "title": "The Best VPN Features | IPVanish",
+  "body_text_len": 4915,
+  "frames": 3,
+  "frame_sha256": [
+    "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7",
+    "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7",
+    "d9bb697dfee86aa899fe73390001a77cf2c378fa40c28bed1107be098d1586b7"
+  ],
+  "frames_identical": true,
+  "link_count": 207,
+  "resource_count": 132,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 390,
+      "height": 54
+    },
+    "nav": {
+      "selector": "[role=navigation]",
+      "x": 78,
+      "y": 0,
+      "width": 235,
+      "height": 30
+    },
+    "main": {
+      "selector": "main",
+      "x": 20,
+      "y": 84,
+      "width": 350,
+      "height": 11581
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 11665,
+      "width": 390,
+      "height": 1123
+    },
+    "form": null,
+    "document_height": 12788
+  }
+}

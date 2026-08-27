@@ -1,0 +1,44 @@
+{
+  "checkpoint": "checkout-chooser-essential-monthly",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+  "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+  "http_status": null,
+  "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+  "body_text_len": 190,
+  "frames": 3,
+  "frame_sha256": [
+    "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+    "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+    "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": null,
+    "nav": {
+      "selector": "nav",
+      "x": 813,
+      "y": 23,
+      "width": 475,
+      "height": 28
+    },
+    "main": {
+      "selector": "main",
+      "x": 0,
+      "y": 75,
+      "width": 1440,
+      "height": 676
+    },
+    "footer": null,
+    "form": null,
+    "document_height": 900
+  },
+  "interaction": "loaded the checkout payment-method chooser for flow=essential-monthly; quote_resolved=False \u2014 under GET-only capture the non-GET quote request is aborted, so the summary shows the product name's first-period price while line items, discount, estimated tax and total read $0.00 (the resolved figures are recorded in scope/implement-notes.md from an interactive probe). No field filled, nothing submitted."
+}

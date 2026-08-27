@@ -1,0 +1,768 @@
+{
+  "schema_version": "ipvanish.state-capture-index.v1",
+  "capture_id": "2026-08-19.ipvanish-r1",
+  "captures": [
+    {
+      "checkpoint": "pricing-2year",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "http_status": null,
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "body_text_len": 4083,
+      "frames": 3,
+      "frame_sha256": [
+        "a93076f082604762d3d882da888994af247b5bf5f0f2fe2d9f9c3401ca3cdb9e",
+        "2db4c5b24228ef7eff7ff920a4e34a1d72d3f80f2a8237c4e4120eb1f00b98c2",
+        "5bd516e7cb7e60460f4577db0911310ac63c80c7c1d48a835d822240cdc32bb2"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 5428
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 5529,
+          "width": 1440,
+          "height": 723
+        },
+        "form": null,
+        "document_height": 6252
+      },
+      "interaction": "clicked billing-period tab '2-Year Plan' via p.has-text-align-center.biennial-link.plan-type-link.active.has-ast-global-color-0-color.has-text-color.has-link-color.wp-elements-142e0646c61d6f58b00f41973d241265.wp-block-paragraph.pricing_skusel_2yr; prices unchanged (default tab)"
+    },
+    {
+      "checkpoint": "pricing-yearly",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "http_status": null,
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "body_text_len": 4077,
+      "frames": 3,
+      "frame_sha256": [
+        "6340745ae05d9060de809b5d4ac13f4e26ecd35edfbcad56994b764cdb2c771e",
+        "544a12bfb75089af8906e7708a5a319bd1931bf507f27f8c709c21a334a2edaf",
+        "6340745ae05d9060de809b5d4ac13f4e26ecd35edfbcad56994b764cdb2c771e"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 5428
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 5529,
+          "width": 1440,
+          "height": 723
+        },
+        "form": null,
+        "document_height": 6252
+      },
+      "interaction": "clicked billing-period tab 'Yearly Plan' via p.has-text-align-center.annual-link.plan-type-link.has-ast-global-color-0-color.has-text-color.has-link-color.wp-elements-e794185ec04359b3739ad0365bd45cdd.wp-block-paragraph.pricing_skusel_1yr.active; prices changed"
+    },
+    {
+      "checkpoint": "pricing-monthly",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/pricing/",
+      "final_url": "https://www.ipvanish.com/pricing/",
+      "http_status": null,
+      "title": "Pricing Information - View All VPN Plans | IPVanish",
+      "body_text_len": 3944,
+      "frames": 3,
+      "frame_sha256": [
+        "a9ec3cfd809910dcadb3b2d0987af5f700e9fcd04df60f5455aee5539e96cc42",
+        "b70623199d3b999470a1866872c5c06a322e507030aab01cd4c37f01c714ec31",
+        "1449cbbcf93d6ee97c23cce50bd91401b059975ca9baf91481fea3f08245813c"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 5337
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 5438,
+          "width": 1440,
+          "height": 723
+        },
+        "form": null,
+        "document_height": 6161
+      },
+      "interaction": "clicked billing-period tab 'Monthly Plan' via p.has-text-align-center.ticss-bb7d0943.monthly-link.plan-type-link.has-ast-global-color-0-color.has-text-color.wp-block-paragraph.pricing_skusel_monthly.active; prices changed"
+    },
+    {
+      "checkpoint": "nav-product",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "http_status": null,
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "body_text_len": 11176,
+      "frames": 3,
+      "frame_sha256": [
+        "ff839889ffbe797b3427c483582dac0182ae94b402998a49beab25f52677ce11",
+        "915c02b52d54b78bf9d6675ed969606b14c99a5c90ee0a29959187bf041a256e",
+        "cc2ddc39571d636952881ad18bfa4cf279a008c197e6f11b3f6246962751ce22"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 17472
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 17572,
+          "width": 1440,
+          "height": 749
+        },
+        "form": null,
+        "document_height": 18322
+      },
+      "interaction": "opened the 'Product' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "nav-apps",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "http_status": null,
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "body_text_len": 11035,
+      "frames": 3,
+      "frame_sha256": [
+        "ce0262d0de1e0ee46e59271a150dedaf6ae919146a5a4a214dd4db8737657afa",
+        "938651aae9596a7e1d671765cd1ecb362604485f5abb2d000cc9ed747987e7e9",
+        "996bf54ad1d3dd6733c2c44dc19390b97ac6e28cb6f181ac94f39854a271d399"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 17472
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 17572,
+          "width": 1440,
+          "height": 749
+        },
+        "form": null,
+        "document_height": 18322
+      },
+      "interaction": "opened the 'Apps' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "nav-resources",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "http_status": null,
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "body_text_len": 11227,
+      "frames": 3,
+      "frame_sha256": [
+        "3a665ec8c7ca73d0720f4019e623cc5bfdb39358f5d82d68533460537badf0e5",
+        "33e5a8d0e3c86ec0c793be34881a668f11e667a8113607271272448e8869835b",
+        "95e8e876f7b1cc9820c050e98caa8515407d13478220daa49cd9b5854da22f09"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 17472
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 17572,
+          "width": 1440,
+          "height": 749
+        },
+        "form": null,
+        "document_height": 18322
+      },
+      "interaction": "opened the 'Resources' primary-nav dropdown on / (pointer-hover); the parent item is a link and is never clicked"
+    },
+    {
+      "checkpoint": "mobile-menu-open",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "mobile",
+      "requested_url": "https://www.ipvanish.com/",
+      "final_url": "https://www.ipvanish.com/",
+      "http_status": null,
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "body_text_len": 9880,
+      "frames": 3,
+      "frame_sha256": [
+        "d2e4c1a2c5892feddbb27d332bcc482b53a8d4b8539f22996986ce39506662db",
+        "1a1785c0f7cd10cf9e63cfe355bf667e1c4fec90d084ff725d1145d6a5a7fab8",
+        "1a1785c0f7cd10cf9e63cfe355bf667e1c4fec90d084ff725d1145d6a5a7fab8"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 390,
+          "height": 54
+        },
+        "nav": {
+          "selector": "[role=navigation]",
+          "x": 78,
+          "y": 0,
+          "width": 235,
+          "height": 30
+        },
+        "main": {
+          "selector": "main",
+          "x": 20,
+          "y": 84,
+          "width": 350,
+          "height": 17885
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 17968,
+          "width": 390,
+          "height": 1147
+        },
+        "form": null,
+        "document_height": 19116
+      },
+      "interaction": "opened the hamburger menu at 390x844 via button.menu-toggle.main-header-menu-toggle.ast-mobile-menu-trigger-minimal.toggled"
+    },
+    {
+      "checkpoint": "sso-signin",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://sso.ipvanish.com/",
+      "final_url": "https://sso.ipvanish.com/",
+      "http_status": null,
+      "title": "IPVanish - Sign in",
+      "body_text_len": 166,
+      "frames": 3,
+      "frame_sha256": [
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483",
+        "8c58ee413de1e2af02120177c84b487ad6400d671d753c1dd14aba61de9a0483"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": null,
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 681,
+          "y": 347,
+          "width": 400,
+          "height": 226
+        },
+        "document_height": 900
+      },
+      "interaction": "loaded the client-rendered sign-in app and waited for input[name=email] to exist; no field filled, nothing submitted"
+    },
+    {
+      "checkpoint": "sso-recovery",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://sso.ipvanish.com/reset-password/",
+      "final_url": "https://sso.ipvanish.com/reset-password/",
+      "http_status": null,
+      "title": "IPVanish - Reset password",
+      "body_text_len": 211,
+      "frames": 3,
+      "frame_sha256": [
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17",
+        "a442d522e8feedbf4a9e3862475318b1686e915570fcc1ed3ba490067083bc17"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": null,
+        "main": null,
+        "footer": null,
+        "form": {
+          "selector": "form",
+          "x": 681,
+          "y": 403,
+          "width": 400,
+          "height": 137
+        },
+        "document_height": 900
+      },
+      "interaction": "clicked 'Forgot password?'; recovery view reached at https://sso.ipvanish.com/reset-password/ (the route requires the trailing slash -- /reset-password without it 403s)"
+    },
+    {
+      "checkpoint": "support-home",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://support.ipvanish.com/hc/en-us",
+      "final_url": "https://support.ipvanish.com/hc/en-us",
+      "http_status": 200,
+      "title": "IPVanish",
+      "body_text_len": 1096,
+      "frames": 3,
+      "frame_sha256": [
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546",
+        "0ab054e4f4c416dc871b7c51ece0e4d9c12cead1fefe77673fc7db763002d546"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 140,
+          "y": 0,
+          "width": 1160,
+          "height": 71
+        },
+        "nav": {
+          "selector": "nav",
+          "x": 685,
+          "y": 10,
+          "width": 615,
+          "height": 51
+        },
+        "main": {
+          "selector": "main",
+          "x": 0,
+          "y": 71,
+          "width": 1440,
+          "height": 1182
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 1253,
+          "width": 1440,
+          "height": 133
+        },
+        "form": {
+          "selector": "form",
+          "x": 370,
+          "y": 229,
+          "width": 700,
+          "height": 40
+        },
+        "document_height": 1424
+      },
+      "interaction": "loaded the Zendesk help centre with the ordinary Chrome UA (the headless UA gets a Cloudflare 403 interstitial here)"
+    },
+    {
+      "checkpoint": "not-found",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://www.ipvanish.com/zzzz-no-match-websitebench",
+      "final_url": "https://www.ipvanish.com/",
+      "http_status": 404,
+      "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+      "body_text_len": 11227,
+      "frames": 3,
+      "frame_sha256": [
+        "e6cb3facad24d664b64cf59b2d0146e09fcbe0aa33dac2d19e13effddf60dbb4",
+        "d3815a62afdc18a1447f172190113207317fdf31d10fd3a6e1d1997bb87871c4",
+        "1d0ac5573639779f5ef5becf6e4b74ac78dcffc31efb1fe314155c70950c426b"
+      ],
+      "frames_identical": false,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": {
+          "selector": "header",
+          "x": 0,
+          "y": 30,
+          "width": 1440,
+          "height": 71
+        },
+        "nav": {
+          "selector": "#ast-desktop-header nav",
+          "x": 494,
+          "y": 30,
+          "width": 678,
+          "height": 70
+        },
+        "main": {
+          "selector": "main",
+          "x": 120,
+          "y": 101,
+          "width": 1200,
+          "height": 17472
+        },
+        "footer": {
+          "selector": "footer",
+          "x": 0,
+          "y": 17572,
+          "width": 1440,
+          "height": 749
+        },
+        "form": null,
+        "document_height": 18322
+      },
+      "interaction": "requested a deliberately unmatched path; HTTP status 404"
+    },
+    {
+      "checkpoint": "checkout-chooser-essential-annual",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "http_status": null,
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "body_text_len": 209,
+      "frames": 3,
+      "frame_sha256": [
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89",
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89",
+        "6dde9a3165524b5aa3a907ca6bfe2efd204d62f715c3548fa8882b9f986f4f89"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": {
+          "selector": "nav",
+          "x": 813,
+          "y": 23,
+          "width": 475,
+          "height": 28
+        },
+        "main": {
+          "selector": "main",
+          "x": 0,
+          "y": 75,
+          "width": 1440,
+          "height": 699
+        },
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "loaded the checkout payment-method chooser for flow=essential-annual; quote_resolved=False \u2014 under GET-only capture the non-GET quote request is aborted, so the summary shows the product name's first-period price while line items, discount, estimated tax and total read $0.00 (the resolved figures are recorded in scope/implement-notes.md from an interactive probe). No field filled, nothing submitted."
+    },
+    {
+      "checkpoint": "checkout-chooser-essential-monthly",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-monthly&currency=USD&lang=EN",
+      "http_status": null,
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "body_text_len": 190,
+      "frames": 3,
+      "frame_sha256": [
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0",
+        "59920b080bb97bb9f33f11e681293c35dc91c296114e1f82ddca5638eaa65ff0"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": {
+          "selector": "nav",
+          "x": 813,
+          "y": 23,
+          "width": 475,
+          "height": 28
+        },
+        "main": {
+          "selector": "main",
+          "x": 0,
+          "y": 75,
+          "width": 1440,
+          "height": 676
+        },
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "loaded the checkout payment-method chooser for flow=essential-monthly; quote_resolved=False \u2014 under GET-only capture the non-GET quote request is aborted, so the summary shows the product name's first-period price while line items, discount, estimated tax and total read $0.00 (the resolved figures are recorded in scope/implement-notes.md from an interactive probe). No field filled, nothing submitted."
+    },
+    {
+      "checkpoint": "checkout-chooser-advanced-annual",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=advanced-annual&currency=USD&lang=EN",
+      "http_status": null,
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "body_text_len": 208,
+      "frames": 3,
+      "frame_sha256": [
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878",
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878",
+        "ab69013e5cb069685ad19b26974e02f411b906bd7e3751033de0586c4514b878"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": {
+          "selector": "nav",
+          "x": 813,
+          "y": 23,
+          "width": 475,
+          "height": 28
+        },
+        "main": {
+          "selector": "main",
+          "x": 0,
+          "y": 75,
+          "width": 1440,
+          "height": 699
+        },
+        "footer": null,
+        "form": null,
+        "document_height": 900
+      },
+      "interaction": "loaded the checkout payment-method chooser for flow=advanced-annual; quote_resolved=False \u2014 under GET-only capture the non-GET quote request is aborted, so the summary shows the product name's first-period price while line items, discount, estimated tax and total read $0.00 (the resolved figures are recorded in scope/implement-notes.md from an interactive probe). No field filled, nothing submitted."
+    },
+    {
+      "checkpoint": "checkout-card-form-essential-annual",
+      "family": "interaction-state",
+      "priority": "P1",
+      "viewport": "desktop",
+      "requested_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "final_url": "https://checkout.ipvanish.com/checkout/address-payment-method?flow=essential-annual&currency=USD&lang=EN",
+      "http_status": null,
+      "title": "IPVanish VPN \u2013 Fast, Secure, and Private Browsing Anytime, Anywhere",
+      "body_text_len": 592,
+      "frames": 3,
+      "frame_sha256": [
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8",
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8",
+        "aab86182f88a46579c0165449958799a5055b99180483d04d991ccd397d282c8"
+      ],
+      "frames_identical": true,
+      "link_count": null,
+      "resource_count": null,
+      "engine": "local-playwright",
+      "nav_fallback": null,
+      "consent_action": null,
+      "regions": {
+        "header": null,
+        "nav": {
+          "selector": "nav",
+          "x": 813,
+          "y": 23,
+          "width": 475,
+          "height": 28
+        },
+        "main": {
+          "selector": "main",
+          "x": 0,
+          "y": 75,
+          "width": 1440,
+          "height": 1334
+        },
+        "footer": null,
+        "form": null,
+        "document_height": 1409
+      },
+      "interaction": "quote_resolved=False (GET-only capture cannot run the non-GET quote request, so line items may read $0.00); activated the Credit card row on flow=essential-annual via clicked LI.c-payment-method-type-select-card c-paym; the hosted-payment (Zuora) iframe fields exist. NOTHING was typed and no order-placing control was clicked. iframes and field names observed (names/ids only, no values; iframe URLs query-stripped because they carry signature tokens): [{\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"about:blank\"}, {\"fields\": [], \"iframe_url\": \"https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html\"}, {\"fields\": [], \"iframe_url\": \"https://pay.google.com/gp/p/ui/payframe\"}, {\"fields\": [{\"id\": \"input-creditCardNumber\", \"name\": \"field_creditCardNumber\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardHolderName\", \"name\": \"field_creditCardHolderName\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardExpirationMonth\", \"name\": \"field_creditCardExpirationMonth\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-creditCardExpirationYear\", \"name\": \"field_creditCardExpirationYear\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-cardSecurityCode\", \"name\": \"field_cardSecurityCode\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-creditCardCountry\", \"name\": \"field_creditCardCountry\", \"type\": \"select\", \"visible\": true}, {\"id\": \"input-creditCardPostalCode\", \"name\": \"field_creditCardPostalCode\", \"type\": \"text\", \"visible\": true}, {\"id\": \"input-email\", \"name\": \"field_email\", \"type\": \"text\", \"visible\": true}, {\"id\": \"_dateFormat\", \"name\": null, \"type\": \"hidden\", \"visible\": false}, {\"id\": \"method\", \"name\": \"method\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"id\", \"name\": \"id\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"tenantId\", \"name\": \"tenantId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"token\", \"name\": \"token\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"signature\", \"name\": \"signature\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGateway\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_authorizationAmount\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_screeningAmount\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_currency\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_key\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"locale\", \"name\": \"locale\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_style\", \"name\": \"field_style\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"jsVersion\", \"name\": \"jsVersion\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"submitEnabled\", \"name\": \"field_submitEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"callbackFunctionEnabled\", \"name\": \"field_callbackFunctionEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_signatureType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"host\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"encrypted_fields\", \"name\": \"encrypted_fields\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"encrypted_values\", \"name\": \"encrypted_values\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"customizeErrorRequired\", \"name\": \"customizeErrorRequired\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"fromHostedPage\", \"name\": \"fromHostedPage\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"isGScriptLoaded\", \"name\": \"isGScriptLoaded\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"is3DSEnabled\", \"name\": \"is3DSEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"checkDuplicated\", \"name\": \"checkDuplicated\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"captchaRequired\", \"name\": \"captchaRequired\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"captchaSiteKey\", \"name\": \"captchaSiteKey\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitConsentAgreementSrc\", \"name\": \"field_mitConsentAgreementSrc\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitConsentAgreementRef\", \"name\": \"field_mitConsentAgreementRef\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_mitCredentialProfileType\", \"name\": \"field_mitCredentialProfileType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"field_agreementSupportedBrands\", \"name\": \"field_agreementSupportedBrands\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGatewayType\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"paymentGatewayVersion\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"is3DS2Enabled\", \"name\": \"is3DS2Enabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"cardMandateEnabled\", \"name\": \"cardMandateEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"zThreeDs2TxId\", \"name\": \"zThreeDs2TxId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2token\", \"name\": \"threeDs2token\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2Sig\", \"name\": \"threeDs2Sig\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2Ts\", \"name\": \"threeDs2Ts\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2OnStep\", \"name\": \"threeDs2OnStep\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"threeDs2GwData\", \"name\": \"threeDs2GwData\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"doPayment\", \"name\": \"doPayment\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"storePaymentMethod\", \"name\": \"storePaymentMethod\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"documents\", \"name\": \"documents\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"xjd28s_6sk\", \"name\": \"xjd28s_6sk\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"pmId\", \"name\": \"pmId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"button_outside_force_redirect\", \"name\": \"button_outside_force_redirect\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"browserScreenHeight\", \"name\": \"browserScreenHeight\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"browserScreenWidth\", \"name\": \"browserScreenWidth\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"param_gwOptions_purchaseTotals_currency\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough1\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough2\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough3\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough4\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough5\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough6\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough7\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough8\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough9\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough10\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough11\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough12\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough13\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough14\", \"type\": \"hidden\", \"visible\": false}, {\"id\": null, \"name\": \"field_passthrough15\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"stripePublishableKey\", \"name\": \"stripePublishableKey\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"isRSIEnabled\", \"name\": \"isRSIEnabled\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"radarSessionId\", \"name\": \"radarSessionId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-accountId\", \"name\": \"field_accountId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-gatewayName\", \"name\": \"field_gatewayName\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-deviceSessionId\", \"name\": \"field_deviceSessionId\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-ipAddress\", \"name\": \"field_ipAddress\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-useDefaultRetryRule\", \"name\": \"field_useDefaultRetryRule\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-paymentRetryWindow\", \"name\": \"field_paymentRetryWindow\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-maxConsecutivePaymentFailures\", \"name\": \"field_maxConsecutivePaymentFailures\", \"type\": \"hidden\", \"visible\": false}, {\"id\": \"input-creditCardType\", \"name\": \"field_creditCardType\", \"type\": \"hidden\", \"visible\": false}], \"iframe_url\": \"https://zuora.com/apps/PublicHostedPageLite.do\"}]"
+    }
+  ]
+}

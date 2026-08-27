@@ -1,0 +1,55 @@
+{
+  "checkpoint": "home",
+  "family": "marketing",
+  "priority": "P0",
+  "viewport": "tablet",
+  "requested_url": "https://www.ipvanish.com/",
+  "final_url": "https://www.ipvanish.com/",
+  "http_status": 200,
+  "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+  "body_text_len": 10717,
+  "frames": 3,
+  "frame_sha256": [
+    "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056",
+    "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056",
+    "e0c7827e68711175104e6d29d4b834b910e2ebc2da5e06164882675fea279056"
+  ],
+  "frames_identical": true,
+  "link_count": 238,
+  "resource_count": 141,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1024,
+      "height": 57
+    },
+    "nav": {
+      "selector": "[role=navigation]",
+      "x": 789,
+      "y": 0,
+      "width": 235,
+      "height": 30
+    },
+    "main": {
+      "selector": "main",
+      "x": 20,
+      "y": 87,
+      "width": 984,
+      "height": 16585
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 16672,
+      "width": 1024,
+      "height": 1248
+    },
+    "form": null,
+    "document_height": 17920
+  }
+}

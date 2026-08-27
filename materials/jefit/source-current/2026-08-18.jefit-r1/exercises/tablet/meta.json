@@ -1,0 +1,48 @@
+{
+  "checkpoint": "exercises",
+  "family": "discovery",
+  "priority": "P0",
+  "viewport": "tablet",
+  "requested_url": "https://www.jefit.com/exercises",
+  "final_url": "https://www.jefit.com/exercises",
+  "http_status": 200,
+  "title": "Exercise Database - JEFIT",
+  "body_text_len": 23749,
+  "frames": 3,
+  "frame_sha256": [
+    "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+    "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da",
+    "9da4131fb2512a74983eb994ad66a356e1123ef8ef6989c5002ed1d4813f58da"
+  ],
+  "frames_identical": true,
+  "link_count": 58,
+  "resource_count": 136,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 7807,
+      "width": 1024,
+      "height": 729
+    },
+    "form": {
+      "selector": "form",
+      "x": 8,
+      "y": 798,
+      "width": 384,
+      "height": 44
+    },
+    "document_height": 8536
+  }
+}

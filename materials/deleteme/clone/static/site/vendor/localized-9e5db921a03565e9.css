@@ -1,0 +1,43 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * neue-haas-grotesk-display:
+ *   - http://typekit.com/eulas/00000000000000007735bb55
+ *   - http://typekit.com/eulas/00000000000000007735bb48
+ *   - http://typekit.com/eulas/00000000000000007735bb5a
+ *   - http://typekit.com/eulas/00000000000000007735bb62
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-09-13 19:49:28 UTC"}*/
+
+@import url("/static/site/vendor/localized-a09f738c7a380e2f.css");
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/144886/00000000000000007735bb55/30/l.qa14e65744e.woff2") format("woff2"),url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/144886/00000000000000007735bb55/30/d.qa14e65744e.woff") format("woff"),url("/static/site/vendor/localized-88f5688afbcb6038.css") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/2807c7/00000000000000007735bb48/30/l.qea2d5cd2b9.woff2") format("woff2"),url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/2807c7/00000000000000007735bb48/30/d.qea2d5cd2b9.woff") format("woff"),url("/static/site/vendor/localized-cd73b98f655628fe.css") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/l.q7a043d72a2.woff2") format("woff2"),url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/1ba16c/00000000000000007735bb5a/30/d.q7a043d72a2.woff") format("woff"),url("/static/site/vendor/localized-c53ad90d51e8404b.css") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/153042/00000000000000007735bb62/30/l.q863f56a180.woff2") format("woff2"),url("/static/assets/2026-08-20.deleteme-r1/use.typekit.net/af/153042/00000000000000007735bb62/30/d.q863f56a180.woff") format("woff"),url("/static/site/vendor/localized-9d008dd7d9ede628.css") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+.tk-neue-haas-grotesk-display { font-family: "neue-haas-grotesk-display",sans-serif; }

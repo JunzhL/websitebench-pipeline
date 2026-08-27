@@ -1,0 +1,88 @@
+{
+  "unit": "checkout",
+  "checkpoint": "checkout.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1",
+  "requested_url": "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1",
+  "final_url": "https://app.joindeleteme.com/checkout?plan=prod_UJ03ZGKxM0BiGF&term=1&qty=1",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:02:23Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Checkout | DeleteMe",
+  "h1": [],
+  "body_text_len": 218,
+  "frames": 3,
+  "frame_sha256": [
+    "1b54d1c00e37ceb0868af87b5d113e578af6cd98dfc2c28de1803b169464d48f",
+    "1b54d1c00e37ceb0868af87b5d113e578af6cd98dfc2c28de1803b169464d48f",
+    "1b54d1c00e37ceb0868af87b5d113e578af6cd98dfc2c28de1803b169464d48f"
+  ],
+  "frames_identical": true,
+  "reference_count": 5,
+  "resource_count": 97,
+  "observations": {
+    "title": "Checkout | DeleteMe",
+    "h1": [],
+    "body_text_len": 218,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 0,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 2,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [
+      "https://js.stripe.com"
+    ],
+    "meta_robots": null,
+    "canonical": null
+  },
+  "non_get_aborted": {
+    "count": 2,
+    "by_method": {
+      "POST": 2
+    },
+    "urls": [
+      "https://app.joindeleteme.com/api/checkout/checkout/session",
+      "https://m.stripe.com/6"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "readiness selector never appeared: input",
+    "7 console error(s) during load; first: Failed to load resource: the server responded with a status of 401 ()",
+    "GET-only guard aborted 2 non-GET request(s) ({'POST': 2}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "checkout",
+  "state": "loaded",
+  "priority": "p0",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 401 ()",
+    "API request failed: {error: Authentication required, status: 401}",
+    "Failed to load resource: net::ERR_FAILED",
+    "API request failed: TypeError: Failed to fetch\n    at X.request (https://app.joindeleteme.com/assets/api-mPAAUYUG.js:1:7233)\n    at d (https://app.joindeleteme.",
+    "Failed to load resource: the server responded with a status of 401 ()",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

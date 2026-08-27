@@ -1,0 +1,98 @@
+{
+  "unit": "blog",
+  "checkpoint": "blog.desktop",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/blog/",
+  "requested_url": "https://joindeleteme.com/blog/",
+  "final_url": "https://joindeleteme.com/blog/",
+  "http_status": 200,
+  "viewport": "desktop",
+  "viewport_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:01:30Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Blog - DeleteMe",
+  "h1": [
+    "Blog"
+  ],
+  "body_text_len": 6100,
+  "frames": 3,
+  "frame_sha256": [
+    "1514cf74ea4ba49bc32c2f4c2e386be422513b9e015f81900d76f4f9f3d53da3",
+    "1514cf74ea4ba49bc32c2f4c2e386be422513b9e015f81900d76f4f9f3d53da3",
+    "1514cf74ea4ba49bc32c2f4c2e386be422513b9e015f81900d76f4f9f3d53da3"
+  ],
+  "frames_identical": true,
+  "reference_count": 91,
+  "resource_count": 123,
+  "observations": {
+    "title": "Blog - DeleteMe",
+    "h1": [
+      "Blog"
+    ],
+    "body_text_len": 6100,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 109,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 1,
+    "control_count": 1,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/blog/"
+  },
+  "non_get_aborted": {
+    "count": 10,
+    "by_method": {
+      "POST": 10
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "11 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 10 non-GET request(s) ({'POST': 10}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "blog",
+  "state": "loaded",
+  "priority": "p2",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

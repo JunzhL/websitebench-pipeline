@@ -1,0 +1,31 @@
+{
+  "checkpoint": "login-validation-empty",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/my-jefit",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 363,
+  "frames": 3,
+  "frame_sha256": [
+    "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+    "9a2f8910b09eda1688ae19644134607540c998d2e978294eece3c9543a6034c6",
+    "3b2b8db63d3187f966d76b04255dd2099cc13db2271c3b08c50bf0b48fd2c645"
+  ],
+  "frames_identical": false,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": null,
+    "main": null,
+    "footer": null,
+    "form": null,
+    "document_height": 900
+  },
+  "interaction": "clicked Log In with both fields empty (non-GET requests aborted); records client-side validation"
+}

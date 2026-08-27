@@ -1,0 +1,112 @@
+{
+  "unit": "not-found.not-found",
+  "checkpoint": "not-found.not-found.mobile",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/zzzz-no-match-websitebench",
+  "requested_url": "https://joindeleteme.com/zzzz-no-match-websitebench",
+  "final_url": "https://joindeleteme.com/zzzz-no-match-websitebench/",
+  "http_status": 404,
+  "viewport": "mobile",
+  "viewport_size": {
+    "width": 390,
+    "height": 844
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:02:21Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Page Not Found - DeleteMe",
+  "h1": [
+    "Oops!",
+    "That page can\u2019t be found.",
+    "Oops!",
+    "That page can\u2019t be found."
+  ],
+  "body_text_len": 704,
+  "frames": 3,
+  "frame_sha256": [
+    "8e4bd96478c78d0f753ad9e137c26c4f542500ede9ba3e267b1aa5ecac6b7c46",
+    "8e4bd96478c78d0f753ad9e137c26c4f542500ede9ba3e267b1aa5ecac6b7c46",
+    "8e4bd96478c78d0f753ad9e137c26c4f542500ede9ba3e267b1aa5ecac6b7c46"
+  ],
+  "frames_identical": true,
+  "reference_count": 60,
+  "resource_count": 102,
+  "observations": {
+    "title": "Page Not Found - DeleteMe",
+    "h1": [
+      "Oops!",
+      "That page can\u2019t be found.",
+      "Oops!",
+      "That page can\u2019t be found."
+    ],
+    "body_text_len": 704,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 40,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, noindex",
+    "canonical": null
+  },
+  "non_get_aborted": {
+    "count": 12,
+    "by_method": {
+      "POST": 12
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "redirect chain before the captured document: https://joindeleteme.com/zzzz-no-match-websitebench",
+    "14 console error(s) during load; first: Failed to load resource: the server responded with a status of 404 ()",
+    "requested https://joindeleteme.com/zzzz-no-match-websitebench but settled on https://joindeleteme.com/zzzz-no-match-websitebench/ (redirect followed)",
+    "GET-only guard aborted 12 non-GET request(s) ({'POST': 12}); anything the source renders from its own POST is therefore absent from this capture",
+    "source answered HTTP 404"
+  ],
+  "route_id": "not-found",
+  "state": "not-found",
+  "priority": "p1",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

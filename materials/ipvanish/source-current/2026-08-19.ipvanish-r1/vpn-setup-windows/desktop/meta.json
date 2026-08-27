@@ -1,0 +1,55 @@
+{
+  "checkpoint": "vpn-setup-windows",
+  "family": "apps",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/vpn-setup/windows/",
+  "final_url": "https://www.ipvanish.com/vpn-setup/windows/",
+  "http_status": 200,
+  "title": "Best VPN for PC | IPVanish Windows VPN",
+  "body_text_len": 9702,
+  "frames": 3,
+  "frame_sha256": [
+    "3fb677604d359e48ce1a1f4f5e67d4b983d2e08a71f2402bbcd4a3e401b9c442",
+    "27a7bfef13089b7fbf6d8999bc91c43c0b285a7611db58af7276453c04534c72",
+    "7de72aeb9f8a117140f361cad91d8001f4c3df2413d62d3589e179ddfe28a029"
+  ],
+  "frames_identical": false,
+  "link_count": 205,
+  "resource_count": 142,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 128,
+      "width": 1200,
+      "height": 8938
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 9066,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 9790
+  }
+}

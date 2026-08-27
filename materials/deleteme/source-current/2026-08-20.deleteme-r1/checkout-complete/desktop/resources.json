@@ -1,0 +1,342 @@
+[
+  {
+    "url": "https://app.joindeleteme.com/assets/manifest-bb113e85.js",
+    "initiator": "other",
+    "transfer_size": 23999
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/entry.client-BmfkeIhv.js",
+    "initiator": "other",
+    "transfer_size": 58892
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/chunk-EPOLDU6W-D9NFo32W.js",
+    "initiator": "other",
+    "transfer_size": 42954
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/index-Mx_SNJgI.js",
+    "initiator": "other",
+    "transfer_size": 1741
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/root-CB0ZeFJj.js",
+    "initiator": "other",
+    "transfer_size": 9291
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/api-mPAAUYUG.js",
+    "initiator": "other",
+    "transfer_size": 3679
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useQuery-CR_lVkGg.js",
+    "initiator": "other",
+    "transfer_size": 5359
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useMutation-BdGZKh3u.js",
+    "initiator": "other",
+    "transfer_size": 2058
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/infiniteQueryBehavior-DrPy3nT_.js",
+    "initiator": "other",
+    "transfer_size": 1054
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Select-C7hSCH5T.js",
+    "initiator": "other",
+    "transfer_size": 18423
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Box-WHo2hyGM.js",
+    "initiator": "other",
+    "transfer_size": 933
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/LinearProgress-BgbT3Y9E.js",
+    "initiator": "other",
+    "transfer_size": 2250
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Warning-BKR7_mEU.js",
+    "initiator": "other",
+    "transfer_size": 486
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/supportSessions.generated-DV-q3vhD.js",
+    "initiator": "other",
+    "transfer_size": 1238
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/layout-BqUQS3T8.js",
+    "initiator": "other",
+    "transfer_size": 334
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/SupportSessionContext-CPFsK_04.js",
+    "initiator": "other",
+    "transfer_size": 897
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useCurrentEntity-CNlzPta6.js",
+    "initiator": "other",
+    "transfer_size": 861
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Info-COKsnTff.js",
+    "initiator": "other",
+    "transfer_size": 536
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/DialogTitle-B8O3bmU_.js",
+    "initiator": "other",
+    "transfer_size": 2759
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Typography-DxQwhAp5.js",
+    "initiator": "other",
+    "transfer_size": 3133
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Button-5tqN1bZ-.js",
+    "initiator": "other",
+    "transfer_size": 3043
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Paper-DtPQnoox.js",
+    "initiator": "other",
+    "transfer_size": 1200
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Chip-BVL7jZk4.js",
+    "initiator": "other",
+    "transfer_size": 3268
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/index-0WbC7UMc.js",
+    "initiator": "other",
+    "transfer_size": 1177
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/MenuItem-hljUMzUQ.js",
+    "initiator": "other",
+    "transfer_size": 1752
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/orvalMutator-1HHdOb1B.js",
+    "initiator": "other",
+    "transfer_size": 758
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/orvalMutationOptions-DFtFqV9V.js",
+    "initiator": "other",
+    "transfer_size": 1343
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useCurrentUser-Cg86etjM.js",
+    "initiator": "other",
+    "transfer_size": 894
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useSnackbar-tzuDzXvR.js",
+    "initiator": "other",
+    "transfer_size": 852
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/ThemeProvider-DcQpCgR4.js",
+    "initiator": "other",
+    "transfer_size": 6910
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/WebSocketProvider-C1tzvSad.js",
+    "initiator": "other",
+    "transfer_size": 1514
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/createTheme-C9KzLpXs.js",
+    "initiator": "other",
+    "transfer_size": 25351
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/CircularProgress-DXZAaqlu.js",
+    "initiator": "other",
+    "transfer_size": 1621
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/isMuiElement-CjgNV-ri.js",
+    "initiator": "other",
+    "transfer_size": 474
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/index-B2VcC8gZ.js",
+    "initiator": "other",
+    "transfer_size": 503
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useSlot-D8g1QPg8.js",
+    "initiator": "other",
+    "transfer_size": 1064
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/DefaultPropsProvider-DEuuLOeZ.js",
+    "initiator": "other",
+    "transfer_size": 2865
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/ButtonBase-C8czqWZf.js",
+    "initiator": "other",
+    "transfer_size": 5270
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useEnhancedEffect-BtisdOqO.js",
+    "initiator": "other",
+    "transfer_size": 421
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Portal-BQAHrQVw.js",
+    "initiator": "other",
+    "transfer_size": 970
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Grow-Dgv5S-mB.js",
+    "initiator": "other",
+    "transfer_size": 1342
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/utils-7TmvOD_d.js",
+    "initiator": "other",
+    "transfer_size": 1911
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/isHostComponent-DVu5iVWx.js",
+    "initiator": "other",
+    "transfer_size": 356
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useId-BJ8oRW8U.js",
+    "initiator": "other",
+    "transfer_size": 578
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/createSvgIcon-CXhxUobu.js",
+    "initiator": "other",
+    "transfer_size": 1446
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useContextQuery-CfsNScb8.js",
+    "initiator": "other",
+    "transfer_size": 1302
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/context.generated-DgUZO_y6.js",
+    "initiator": "other",
+    "transfer_size": 1023
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/getThemeProps-CSoQ_8mG.js",
+    "initiator": "other",
+    "transfer_size": 526
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/listItemIconClasses-DbL8KQfK.js",
+    "initiator": "other",
+    "transfer_size": 475
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/listItemTextClasses-o1HGjGhu.js",
+    "initiator": "other",
+    "transfer_size": 503
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/dividerClasses-BwrSPJnc.js",
+    "initiator": "other",
+    "transfer_size": 617
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/allauth.generated-BpfGDUet.js",
+    "initiator": "other",
+    "transfer_size": 1432
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Snackbar-CyrOeLNz.js",
+    "initiator": "other",
+    "transfer_size": 3025
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Alert-B8UXDq0S.js",
+    "initiator": "other",
+    "transfer_size": 3390
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap",
+    "initiator": "link",
+    "transfer_size": 2278
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/root-CrZmcBw-.css",
+    "initiator": "link",
+    "transfer_size": 1149
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/CheckoutLayout-DLe2RNPV.js",
+    "initiator": "script",
+    "transfer_size": 959
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/CheckoutComplete-DTtjEvVI.js",
+    "initiator": "script",
+    "transfer_size": 1561
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/CheckCircle-BO8f4nwi.js",
+    "initiator": "script",
+    "transfer_size": 555
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/deleteme-logo-blue-D1NHMJcu.js",
+    "initiator": "script",
+    "transfer_size": 366
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/checkout.generated-DHNz2v-o.js",
+    "initiator": "script",
+    "transfer_size": 840
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/deleteme-logo-white-DSHjOVWg.js",
+    "initiator": "script",
+    "transfer_size": 367
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Stack-BD-QWSrN.js",
+    "initiator": "script",
+    "transfer_size": 1321
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Container-D2eCSrPA.js",
+    "initiator": "script",
+    "transfer_size": 1191
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/Avatar-CEgowRCd.js",
+    "initiator": "script",
+    "transfer_size": 1746
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/useThemeProps-CC9efr-0.js",
+    "initiator": "script",
+    "transfer_size": 589
+  },
+  {
+    "url": "https://app.joindeleteme.com/api/context/",
+    "initiator": "fetch",
+    "transfer_size": 336
+  },
+  {
+    "url": "https://app.joindeleteme.com/assets/deleteme-logo-blue-D8tsrtW6.png",
+    "initiator": "img",
+    "transfer_size": 8162
+  }
+]

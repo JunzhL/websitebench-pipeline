@@ -1,0 +1,37 @@
+{
+  "checkpoint": "signup-step-17",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/signup/results",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 1093,
+  "frames": 3,
+  "frame_sha256": [
+    "b428ea5a7b571146bf77b9a4497ddd0acbab958273a487b2221d3dc914d1b576",
+    "eb126b0709383b77cde8fc472a8496b8b772f4136e37b70a6db528d80bc93243",
+    "d96c1153c3b42fde147d1f5554b8b0ae31362836223449ba1bd8134c2829458f"
+  ],
+  "frames_identical": false,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": null,
+    "document_height": 900
+  },
+  "interaction": "advanced questionnaire by choosing 'Sensitive back'"
+}

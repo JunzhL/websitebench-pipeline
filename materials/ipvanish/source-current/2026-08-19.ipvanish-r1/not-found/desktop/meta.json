@@ -1,0 +1,56 @@
+{
+  "checkpoint": "not-found",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/zzzz-no-match-websitebench",
+  "final_url": "https://www.ipvanish.com/",
+  "http_status": 404,
+  "title": "Best VPN - IP Address Changer for Online Privacy | IPVanish",
+  "body_text_len": 11227,
+  "frames": 3,
+  "frame_sha256": [
+    "e6cb3facad24d664b64cf59b2d0146e09fcbe0aa33dac2d19e13effddf60dbb4",
+    "d3815a62afdc18a1447f172190113207317fdf31d10fd3a6e1d1997bb87871c4",
+    "1d0ac5573639779f5ef5becf6e4b74ac78dcffc31efb1fe314155c70950c426b"
+  ],
+  "frames_identical": false,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 30,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 101,
+      "width": 1200,
+      "height": 17472
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 17572,
+      "width": 1440,
+      "height": 749
+    },
+    "form": null,
+    "document_height": 18322
+  },
+  "interaction": "requested a deliberately unmatched path; HTTP status 404"
+}

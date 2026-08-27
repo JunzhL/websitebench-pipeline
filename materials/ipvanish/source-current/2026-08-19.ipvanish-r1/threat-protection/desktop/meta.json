@@ -1,0 +1,55 @@
+{
+  "checkpoint": "threat-protection",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/vpn-features/threat-protection/",
+  "final_url": "https://www.ipvanish.com/vpn-features/threat-protection/",
+  "http_status": 200,
+  "title": "Threat Protection Pro | Real-Time Malware & Phishing Security - IPVanish",
+  "body_text_len": 7977,
+  "frames": 3,
+  "frame_sha256": [
+    "47e618490acd95695b772ead11dcc92391ea485f918b27fb8c8ba7bb67a4e4aa",
+    "9cd7e2776c9c6f5c3161831b0166a0d71b56fc8691fbfd5a2f3a1ae9e7654580",
+    "9cd7e2776c9c6f5c3161831b0166a0d71b56fc8691fbfd5a2f3a1ae9e7654580"
+  ],
+  "frames_identical": false,
+  "link_count": 174,
+  "resource_count": 121,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 494,
+      "y": 0,
+      "width": 678,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 71,
+      "width": 1200,
+      "height": 8641
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 8712,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 9435
+  }
+}

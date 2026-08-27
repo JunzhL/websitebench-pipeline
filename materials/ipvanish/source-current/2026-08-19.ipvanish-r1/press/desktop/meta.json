@@ -1,0 +1,55 @@
+{
+  "checkpoint": "press",
+  "family": "legal",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.ipvanish.com/press/",
+  "final_url": "https://www.ipvanish.com/press/",
+  "http_status": 200,
+  "title": "Press & Media Kit | IPVanish",
+  "body_text_len": 2031,
+  "frames": 3,
+  "frame_sha256": [
+    "271e6f2006635304dd5e23290c01615ada884fb18628e7117fd297887f1d3825",
+    "d7a5bbbc9561cb329cbde50314b485ade75aaee93d64d70d88d731771c658ea9",
+    "a3d45b050ce050955e34a8428ad6ee5e3bfd516d2af4bb67b7ad835952126cf7"
+  ],
+  "frames_identical": false,
+  "link_count": 180,
+  "resource_count": 134,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 71
+    },
+    "nav": {
+      "selector": "#ast-desktop-header nav",
+      "x": 485,
+      "y": 0,
+      "width": 687,
+      "height": 70
+    },
+    "main": {
+      "selector": "main",
+      "x": 120,
+      "y": 300,
+      "width": 1200,
+      "height": 1023
+    },
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1323,
+      "width": 1440,
+      "height": 723
+    },
+    "form": null,
+    "document_height": 2046
+  }
+}

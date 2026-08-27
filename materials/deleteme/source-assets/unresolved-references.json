@@ -1,0 +1,51 @@
+{
+  "schema_version": "offline-clone.unresolved-references.v1",
+  "snapshot_id": "2026-08-20.deleteme-r1",
+  "created_at": "2026-08-20T22:28:33Z",
+  "note": "URLs referenced by the frozen markup, by a mirrored stylesheet, or by the recorded per-unit network evidence that this pass could not download as an asset (GET request and in-page fetch both failed, or the response was not an asset content type). Logged query-stripped.",
+  "unresolved": [
+    {
+      "url": "https://fonts.googleapis.com",
+      "referenced_by": [
+        "capture:app-not-found.not-found:desktop",
+        "capture:checkout-complete:desktop",
+        "capture:checkout-complete:mobile",
+        "capture:checkout:desktop",
+        "capture:checkout:mobile",
+        "capture:checkout:tablet",
+        "capture:login:desktop",
+        "capture:login:mobile",
+        "capture:login:tablet",
+        "capture:password-forgot:desktop"
+      ],
+      "failure": "http-status: 404",
+      "in_page_fetch_status": 404
+    },
+    {
+      "url": "https://joindeleteme.com/how-we-work/%3Cpath-to-image%3E",
+      "referenced_by": [
+        "capture:how-we-work:desktop",
+        "capture:how-we-work:mobile",
+        "capture:how-we-work:tablet"
+      ],
+      "failure": "http-status: 404",
+      "in_page_fetch_status": 404
+    },
+    {
+      "url": "https://privacy.joindeleteme.com/-",
+      "referenced_by": [
+        "capture:policies:desktop"
+      ],
+      "failure": "not an asset content type: 'text/html'",
+      "in_page_fetch_status": null
+    },
+    {
+      "url": "https://use.typekit.net/e,location.href",
+      "referenced_by": [
+        "css:https://use.typekit.net"
+      ],
+      "failure": "http-status: 404",
+      "in_page_fetch_status": 404
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "unit": "sites-we-remove-from",
+  "checkpoint": "sites-we-remove-from.mobile",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://joindeleteme.com/sites-we-remove-from/",
+  "requested_url": "https://joindeleteme.com/sites-we-remove-from/",
+  "final_url": "https://joindeleteme.com/sites-we-remove-from/",
+  "http_status": 200,
+  "viewport": "mobile",
+  "viewport_size": {
+    "width": 390,
+    "height": 844
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:00:27Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "Sites We Remove From - DeleteMe",
+  "h1": [
+    "We Remove Private Information from 986 Data Brokers"
+  ],
+  "body_text_len": 20064,
+  "frames": 3,
+  "frame_sha256": [
+    "7b1ae490b87bff4d8276b598194d56bc06cfe5ddff407a08ef4d961f1ad84874",
+    "7b1ae490b87bff4d8276b598194d56bc06cfe5ddff407a08ef4d961f1ad84874",
+    "7b1ae490b87bff4d8276b598194d56bc06cfe5ddff407a08ef4d961f1ad84874"
+  ],
+  "frames_identical": true,
+  "reference_count": 61,
+  "resource_count": 104,
+  "observations": {
+    "title": "Sites We Remove From - DeleteMe",
+    "h1": [
+      "We Remove Private Information from 986 Data Brokers"
+    ],
+    "body_text_len": 20064,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 38,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 4,
+    "form_count": 0,
+    "control_count": 0,
+    "iframe_origins": [
+      "https://joindeleteme.com"
+    ],
+    "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://joindeleteme.com/sites-we-remove-from/"
+  },
+  "non_get_aborted": {
+    "count": 13,
+    "by_method": {
+      "POST": 13
+    },
+    "urls": [
+      "https://ad.doubleclick.net/ccm/s/collect",
+      "https://px.ads.linkedin.com/wa/",
+      "https://telemetry.transcend.io/collect",
+      "https://www.google.com/ccm/collect",
+      "https://www.google.com/rmkt/collect/372693497/",
+      "https://www.google.com/rmkt/collect/860776849/",
+      "https://www.mczbf.com/253585498398/pageInfo",
+      "https://www.mczbf.com/253585498398/report"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "14 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 13 non-GET request(s) ({'POST': 13}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "sites-we-remove-from",
+  "state": "loaded",
+  "priority": "p1",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Refused to display 'https://tagging.joindeleteme.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

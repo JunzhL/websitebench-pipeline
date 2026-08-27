@@ -1,0 +1,192 @@
+{
+ "schema_version": "deleteme.frontend-gate-samples.v1",
+ "app_file": "clone/app.py",
+ "app_attr": "app",
+ "module_name": "deleteme_clone_app",
+ "note": "Samples come from the candidate walk recorded in interaction-ledger.json. Seed credentials and checkout identities use reserved example.invalid addresses. Account states are clone-local inference and visibly disclose that source authentication was unavailable. Each check has at most two body assertions because a Harbor contract step supports at most two.",
+ "session_setup": {
+  "url": "/login",
+  "method": "post",
+  "data": {
+   "email": "avery.quill@example.invalid",
+   "password": "OfflineClone!2026"
+  }
+ },
+ "checks": [
+  {
+   "id": "healthz",
+   "url": "/healthz",
+   "expect_status": 200,
+   "expect_contains": ["\"site_id\":\"deleteme\""],
+   "session": false
+  },
+  {
+   "id": "home",
+   "url": "/?index=1",
+   "expect_status": 200,
+   "expect_contains": ["Delete Your Personal Data"],
+   "expect_not_contains": ["Page not found"],
+   "session": false
+  },
+  {
+   "id": "plans",
+   "url": "/privacy-protection-plans/",
+   "expect_status": 200,
+   "expect_contains": ["1 Person"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "pricing",
+   "url": "/pricing/",
+   "expect_status": 200,
+   "expect_contains": ["Family"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "checkout",
+   "url": "/checkout",
+   "expect_status": 200,
+   "expect_contains": ["Purchase &amp; Start Deleting"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "checkout.validation",
+   "url": "/checkout",
+   "method": "post",
+   "data": {"term": "1", "qty": "1"},
+   "expect_status": 422,
+   "expect_contains": ["Please enter your first name"],
+   "expect_not_contains": ["Payment Successful!"],
+   "session": false
+  },
+  {
+   "id": "checkout.declined",
+   "url": "/checkout",
+   "method": "post",
+   "data": {
+    "firstName": "Robin", "lastName": "Vale",
+    "email": "harbor-declined@example.invalid",
+    "address": "9 Placeholder Court, Springfield, EX 00003",
+    "term": "1", "qty": "1", "scenario": "sandbox-declined",
+    "agree_billing": "yes", "agree_terms": "yes", "attempt": "harbor-declined"
+   },
+   "expect_status": 402,
+   "expect_contains": ["Your bank declined this card"],
+   "expect_not_contains": ["Payment Successful!"],
+   "session": false
+  },
+  {
+   "id": "checkout.approved",
+   "url": "/checkout",
+   "method": "post",
+   "data": {
+    "firstName": "Robin", "lastName": "Vale",
+    "email": "harbor-buyer@example.invalid",
+    "address": "9 Placeholder Court, Springfield, EX 00003",
+    "term": "2", "qty": "1", "scenario": "sandbox-approved",
+    "agree_billing": "yes", "agree_terms": "yes", "attempt": "harbor-approved"
+   },
+   "expect_status": 303,
+   "expect_contains": ["Payment Successful!"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "checkout.complete",
+   "url": "/checkout/complete",
+   "expect_status": 200,
+   "expect_contains": ["Payment Successful!"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "subscription-management.dashboard",
+   "url": "/account",
+   "expect_status": 200,
+   "expect_contains": ["Removal activity"],
+   "expect_not_contains": ["Page not found"],
+   "session": true
+  },
+  {
+   "id": "subscription-management.profile",
+   "url": "/account/profile",
+   "expect_status": 200,
+   "expect_contains": ["Save removal profile"],
+   "expect_not_contains": ["Card number"],
+   "session": true
+  },
+  {
+   "id": "subscription-management.profile-save",
+   "url": "/account/profile",
+   "method": "post",
+   "data": {
+    "birth_year": "1988", "phone": "202-555-0142",
+    "previous_names": "Avery Example", "aliases": "A. Quill",
+    "relatives": "Rowan Example", "other_addresses": "10 Placeholder Road"
+   },
+   "expect_status": 303,
+   "expect_contains": ["value=\"Avery Example\""],
+   "expect_not_contains": ["Page not found"],
+   "session": true
+  },
+  {
+   "id": "subscription-management.plan",
+   "url": "/account/plan",
+   "expect_status": 200,
+   "expect_contains": ["Change plan"],
+   "expect_not_contains": ["No subscription."],
+   "session": true
+  },
+  {
+   "id": "subscription-management.plan-change",
+   "url": "/account/plan",
+   "method": "post",
+   "data": {"subscription_id": "sub-primary-0001", "selection": "2-1"},
+   "expect_status": 303,
+   "expect_contains": ["$209.00"],
+   "expect_not_contains": ["unknown-selection"],
+   "session": true
+  },
+  {
+   "id": "login",
+   "url": "/login",
+   "expect_status": 200,
+   "expect_contains": ["Continue with Google"],
+   "expect_not_contains": ["Remember me"],
+   "session": false
+  },
+  {
+   "id": "password-forgot",
+   "url": "/password/forgot",
+   "expect_status": 200,
+   "expect_contains": ["Back to sign in"],
+   "session": false
+  },
+  {
+   "id": "search",
+   "url": "/?s=zzzz-no-match-websitebench",
+   "expect_status": 200,
+   "expect_contains": ["Search results for ‘zzzz-no-match-websitebench’"],
+   "expect_not_contains": ["No results"],
+   "session": false
+  },
+  {
+   "id": "not-found",
+   "url": "/zzzz-no-match-websitebench/",
+   "expect_status": 404,
+   "expect_contains": ["Oops! You're not on the right page"],
+   "expect_not_contains": ["Card number"],
+   "session": false
+  },
+  {
+   "id": "help",
+   "url": "/help",
+   "expect_status": 200,
+   "expect_contains": ["Frequently Asked Questions"],
+   "session": false
+  }
+ ]
+}

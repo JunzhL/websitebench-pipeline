@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jefit, Inc.</title>
+<style>
+/* Clone-local checkout continuation. The source checkout is Stripe-hosted;
+   this page reproduces its captured layout structure with the payment input
+   replaced by the local sandbox scenario selector (payment mandate). */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif; color: #1a1f36; background: #fff; }
+.co-wrap { display: flex; min-height: 100vh; flex-direction: column; }
+@media (min-width: 900px) { .co-wrap { flex-direction: row; } }
+.co-summary { background: #f6f8fa; padding: 40px 32px; flex: 1; }
+@media (min-width: 900px) { .co-summary { padding: 64px 48px 64px max(48px, calc(50vw - 460px)); } }
+.co-pay { background: #ffffff; box-shadow: 0 -1px 8px rgba(0,0,0,.06); padding: 40px 32px; flex: 1; }
+@media (min-width: 900px) { .co-pay { padding: 64px max(48px, calc(50vw - 460px)) 64px 48px; } }
+.co-back { display: inline-flex; align-items: center; gap: 8px; color: #1a1f36; text-decoration: none; font-size: 14px; font-weight: 500; }
+.co-back .arrow { font-size: 16px; }
+.co-merchant { font-weight: 600; }
+.co-h2 { margin: 28px 0 4px; font-size: 16px; font-weight: 500; color: #4f566b; }
+.co-price { font-size: 36px; font-weight: 600; margin: 0 0 4px; }
+.co-then { color: #697386; font-size: 14px; margin: 0 0 24px; }
+.co-lines { border-top: 1px solid #e3e8ee; margin-top: 24px; padding-top: 16px; font-size: 14px; }
+.co-line { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.co-line .muted { color: #697386; }
+.co-line.total { border-top: 1px solid #e3e8ee; padding-top: 12px; font-weight: 600; }
+.co-coupon { display: inline-block; background: #e3e8ee; border-radius: 4px; padding: 1px 6px; font-size: 12px; color: #4f566b; }
+.co-pay h2 { font-size: 18px; margin: 0 0 16px; }
+.co-field-label { font-size: 13px; color: #4f566b; margin: 16px 0 6px; }
+.co-email { border: 1px solid #e3e8ee; border-radius: 6px; padding: 10px 12px; font-size: 14px; background: #f6f8fa; }
+.co-sandbox { border: 1px solid #e3e8ee; border-radius: 6px; padding: 12px; margin-top: 6px; }
+.co-sandbox-note { font-size: 12px; color: #4f566b; margin: 0 0 10px; }
+.co-scenario { display: flex; align-items: center; gap: 8px; padding: 8px 4px; font-size: 14px; }
+.co-error { display: none; background: #fff0f0; border: 1px solid #ffd6d6; color: #b3261e; border-radius: 6px; padding: 10px 12px; font-size: 13px; margin-top: 12px; }
+.co-error.visible { display: block; }
+.co-submit { width: 100%; margin-top: 20px; background: #1c5fc9; color: #fff; font-size: 16px; font-weight: 600; border: 0; border-radius: 6px; padding: 12px; cursor: pointer; }
+.co-submit:disabled { opacity: .6; }
+.co-legal { font-size: 12px; color: #697386; margin-top: 16px; line-height: 1.5; }
+.co-footer { margin-top: 32px; font-size: 12px; color: #697386; }
+</style>
+</head>
+<body>
+<div class="co-wrap">
+  <div class="co-summary">
+    <a class="co-back" href="/my-jefit/settings"><span class="arrow">&larr;</span> <span>Back</span>&nbsp;<span class="co-merchant">Jefit, Inc.</span></a>
+    <h2 class="co-h2">Subscribe to JEFIT Elite Subscription</h2>
+    <p class="co-price">{{ price_today }}</p>
+    <p class="co-then">{{ then_line }}</p>
+    <div class="co-lines">
+      <div class="co-line"><span>JEFIT Elite Subscription<br><span class="muted">{{ billed_label }}</span></span><span>{{ list_price }}</span></div>
+      <div class="co-line"><span class="muted">Subtotal</span><span>{{ list_price }}</span></div>
+      {% if coupon %}
+      <div class="co-line"><span><span class="co-coupon">{{ coupon }}</span><br><span class="muted">25% off for a year</span></span><span>-{{ coupon_amount }}</span></div>
+      {% endif %}
+      <div class="co-line total"><span>Total due today</span><span>{{ price_today }}</span></div>
+    </div>
+    <p class="co-footer">Offline clone checkout &middot; local sandbox only &middot; no external payment provider is contacted.</p>
+  </div>
+  <div class="co-pay">
+    <h2>Contact information</h2>
+    <div class="co-field-label">Email</div>
+    <div class="co-email">{{ email }}</div>
+    <h2 style="margin-top:28px">Payment method</h2>
+    <form method="post" action="/elite/checkout">
+      <input type="hidden" name="sub" value="{{ plan }}">
+      <div class="co-sandbox">
+        <p class="co-sandbox-note">Sandbox payment method &mdash; this offline clone never accepts card
+        numbers or other payment credentials. Choose a simulated outcome.</p>
+        <label class="co-scenario"><input type="radio" name="scenario_id" value="sandbox-approved" checked> Simulated approval</label>
+        <label class="co-scenario"><input type="radio" name="scenario_id" value="sandbox-declined"> Simulated decline</label>
+        <label class="co-scenario"><input type="radio" name="scenario_id" value="sandbox-retry"> Simulated retry</label>
+      </div>
+      <div class="co-error{% if error %} visible{% endif %}" data-checkout-error>{{ error }}</div>
+      <button class="co-submit" type="submit">Subscribe</button>
+      <p class="co-legal">By confirming your subscription, you allow Jefit, Inc. to charge you for
+      future payments in accordance with their terms. You can always cancel your subscription.
+      In this offline clone the charge is a local simulation recorded only in the clone database.</p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

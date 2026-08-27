@@ -1,0 +1,82 @@
+{
+  "unit": "help",
+  "checkpoint": "help.tablet",
+  "capture_id": "2026-08-20.deleteme-r1",
+  "url": "https://help.joindeleteme.com/hc/en-us",
+  "requested_url": "https://help.joindeleteme.com/hc/en-us",
+  "final_url": "https://help.joindeleteme.com/hc/en-us",
+  "http_status": 200,
+  "viewport": "tablet",
+  "viewport_size": {
+    "width": 1024,
+    "height": 768
+  },
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "locale": "en-US",
+  "timezone": "Etc/UTC",
+  "captured_at": "2026-08-20T22:01:38Z",
+  "engine": "local-headless-playwright-chromium",
+  "title": "DeleteMe",
+  "h1": [
+    "DeleteMe"
+  ],
+  "body_text_len": 805,
+  "frames": 3,
+  "frame_sha256": [
+    "859b5509ef0b58ad792cb1e91d070a1f17552b42d477494e37bebbac31e79bd4",
+    "859b5509ef0b58ad792cb1e91d070a1f17552b42d477494e37bebbac31e79bd4",
+    "859b5509ef0b58ad792cb1e91d070a1f17552b42d477494e37bebbac31e79bd4"
+  ],
+  "frames_identical": true,
+  "reference_count": 7,
+  "resource_count": 9,
+  "observations": {
+    "title": "DeleteMe",
+    "h1": [
+      "DeleteMe"
+    ],
+    "body_text_len": 805,
+    "consent_layer": null,
+    "lazy_image_refs": 0,
+    "eager_image_refs": 1,
+    "empty_price_nodes": 0,
+    "inline_visibility_hidden": 0,
+    "form_count": 1,
+    "control_count": 2,
+    "iframe_origins": [],
+    "meta_robots": null,
+    "canonical": "https://help.joindeleteme.com/hc/en-us"
+  },
+  "non_get_aborted": {
+    "count": 1,
+    "by_method": {
+      "POST": 1
+    },
+    "urls": [
+      "https://help.joindeleteme.com/hc/activity"
+    ]
+  },
+  "safety": {
+    "methods_allowed": [
+      "GET",
+      "HEAD"
+    ],
+    "fields_filled": 0,
+    "forms_submitted": 0,
+    "consent_clicked": false,
+    "credentials_persisted": false
+  },
+  "quirks": [
+    "1 console error(s) during load; first: Failed to load resource: net::ERR_FAILED",
+    "GET-only guard aborted 1 non-GET request(s) ({'POST': 1}); anything the source renders from its own POST is therefore absent from this capture"
+  ],
+  "route_id": "help",
+  "state": "loaded",
+  "priority": "p1",
+  "acceptance_eligible": true,
+  "evidence_kind": "current-direct",
+  "capture_pass": "navigable",
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "checkpoint": "forgot-password",
+  "family": "auth",
+  "priority": "P1",
+  "viewport": "mobile",
+  "requested_url": "https://www.jefit.com/login/forgot-password",
+  "final_url": "https://www.jefit.com/login/forgot-password",
+  "http_status": 200,
+  "title": "Reset Your Password - JEFIT",
+  "body_text_len": 538,
+  "frames": 3,
+  "frame_sha256": [
+    "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+    "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288",
+    "fe23fcb73ae9ae3c263c25d0f18dfd2ae765caa92cc7fe09f5e06a9a2fbc3288"
+  ],
+  "frames_identical": true,
+  "link_count": 3,
+  "resource_count": 76,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": {
+      "selector": "form",
+      "x": 35,
+      "y": 264,
+      "width": 320,
+      "height": 140
+    },
+    "document_height": 844
+  }
+}
