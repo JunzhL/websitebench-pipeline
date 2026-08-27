@@ -1,0 +1,42 @@
+{
+  "checkpoint": "exercise-detail",
+  "family": "discovery",
+  "priority": "P0",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+  "final_url": "https://www.jefit.com/exercises/2/barbell-bench-press",
+  "http_status": 200,
+  "title": "Barbell Bench Press - JEFIT",
+  "body_text_len": 3415,
+  "frames": 3,
+  "frame_sha256": [
+    "3583e151697f1aededcf034b70cdcd52bf8264ffa070a289a07c8f5445de5d4a",
+    "7f065d6b52df86a67871b39adc37fe7e3b5d2593d229ef88135f942f53daf780",
+    "46d3e76e0cbe6f6fa551f73ce9e6b6f47cb6bcca59ef9b7d248c5b57836dcf28"
+  ],
+  "frames_identical": false,
+  "link_count": 96,
+  "resource_count": 131,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 1787,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 2308
+  }
+}

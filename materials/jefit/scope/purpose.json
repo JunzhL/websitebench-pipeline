@@ -1,0 +1,23 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "draft",
+  "purpose_id": "jefit-workout-planning",
+  "statement": "Help strength-training users plan and log gym workouts and obtain tracked progress, routines, and an optional Elite membership, reproduced offline: public discovery (exercises, routines, pricing), account access, the member dashboard (routine building, workout logging, progress, settings), and the Elite annual upgrade with a clone-local sandbox payment.",
+  "primary_actor_ids": ["visitor", "member"],
+  "mainline_journey_ids": [
+    "register-upgrade-elite-annual",
+    "sign-in-dashboard",
+    "browse-exercises-filter",
+    "browse-routines-detail",
+    "create-routine-edit-sets",
+    "log-workout-session"
+  ],
+  "out_of_scope": [
+    "individual blog posts (~900+; blog index only)",
+    "native mobile apps, watch app, and in-app purchases (App Store / Google Play surfaces)",
+    "real third-party services at runtime: Stripe, Google/Apple/Facebook identity providers, Strava (rendered per source UI; runtime behavior is clone-local)",
+    "publishing community posts/comments visible to third parties (create-post UI is in scope; clone-local posting against seeded data)",
+    "legacy /community deep pages beyond the landing page",
+    "Coach client-management product behavior (marketing page only)"
+  ]
+}

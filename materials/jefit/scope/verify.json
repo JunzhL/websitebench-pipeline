@@ -1,0 +1,443 @@
+{
+  "boot": {
+    "argv": [
+      "{python}",
+      "-m",
+      "uvicorn",
+      "app:app",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "{port}",
+      "--log-level",
+      "warning"
+    ],
+    "cwd": "clone",
+    "env": {
+      "DATA_DIR": "{data_dir}"
+    }
+  },
+  "deferred": {},
+  "note": "Driver data for the generic diagnostics. Session credentials below are the clone's deterministic synthetic seed fixtures, not real credentials. The two source-unavailable post-payment states (elite-checkout.success, my-jefit-settings.elite-active) are implemented clone-locally and reached through the sandbox-approved checkout recipe.",
+  "prepare": [
+    {
+      "click": "div[aria-label='Cookie consent'] button:has-text('Accept')",
+      "optional": true,
+      "timeout_ms": 2000
+    }
+  ],
+  "routes": {
+    "about-us": "/about-us",
+    "adaptive-plan": "/ai-workout-tracker/adaptive-plan",
+    "ai-workout-tracker": "/ai-workout-tracker",
+    "blog": "/blog",
+    "build-routine": "/build-routine",
+    "coach": "/coach",
+    "community": "/community/",
+    "elite": "/elite",
+    "elite-checkout": "/elite/checkout?isMyJefit=true&sub=yearly",
+    "exercise-detail": "/exercises/2/barbell-bench-press",
+    "exercises": "/exercises",
+    "forgot-password": "/login/forgot-password",
+    "home": "/",
+    "ip-notice-process": "/ip-notice-process",
+    "login": "/login",
+    "my-jefit": "/my-jefit",
+    "my-jefit-body-stats": "/my-jefit/progress/body-stats",
+    "my-jefit-exercises": "/my-jefit/exercises",
+    "my-jefit-popular": "/my-jefit/popular",
+    "my-jefit-progress": "/my-jefit/progress/history",
+    "my-jefit-progress-insights": "/my-jefit/progress/insights",
+    "my-jefit-progress-photos": "/my-jefit/progress/photos",
+    "my-jefit-qa": "/my-jefit/qa",
+    "my-jefit-settings": "/my-jefit/settings",
+    "my-jefit-workouts": "/my-jefit/workouts",
+    "my-jefit-workouts-edit": "/my-jefit/workouts/edit?id=102",
+    "not-found": "/zzzz-no-match-websitebench",
+    "our-story": "/our-story",
+    "press-media": "/press-media",
+    "privacy-policy": "/privacy-policy",
+    "routine-detail": "/routines/19113/6-weeks-to-six-pack-abs",
+    "routines": "/routines",
+    "routines-category": "/routines/beginner",
+    "signup": "/signup",
+    "support": "/support",
+    "support-faq": "/support/faq",
+    "terms-of-use": "/terms-of-use",
+    "use-case": "/use-case",
+    "watch": "/watch"
+  },
+  "schema_version": "offline-clone.verify-driver.v1",
+  "session": {
+    "accounts": {
+      "isolation": {
+        "form": {
+          "password": "Iso-Pass-2026!",
+          "username": "isotest"
+        },
+        "routes": []
+      },
+      "primary": {
+        "form": {
+          "password": "Demo-Pass-2026!",
+          "username": "jefitdemo"
+        },
+        "routes": [
+          "my-jefit",
+          "my-jefit-qa",
+          "my-jefit-popular",
+          "my-jefit-progress",
+          "my-jefit-progress-photos",
+          "my-jefit-progress-insights",
+          "my-jefit-body-stats",
+          "my-jefit-workouts",
+          "my-jefit-workouts-edit",
+          "my-jefit-exercises",
+          "my-jefit-settings",
+          "elite-checkout"
+        ]
+      }
+    },
+    "post": "/login"
+  },
+  "site_id": "jefit",
+  "states": {
+    "build-routine.validation-error": [
+      {
+        "click": "button:text-is('X')",
+        "optional": true
+      },
+      {
+        "click": "button:text-is('Save')"
+      },
+      {
+        "expect": "text=This day is empty"
+      }
+    ],
+    "elite-checkout.declined": [
+      {
+        "click": "input[value='sandbox-declined']"
+      },
+      {
+        "click": "form[action='/elite/checkout'] button[type='submit']"
+      },
+      {
+        "expect": "[data-checkout-error]"
+      }
+    ],
+    "elite-checkout.monthly": [
+      {
+        "goto": "/elite/checkout?isMyJefit=true&sub=monthly"
+      }
+    ],
+    "elite-checkout.retry": [
+      {
+        "click": "input[value='sandbox-retry']"
+      },
+      {
+        "click": "form[action='/elite/checkout'] button[type='submit']"
+      },
+      {
+        "expect": "[data-checkout-error]"
+      }
+    ],
+    "elite-checkout.success": [
+      {
+        "click": "input[value='sandbox-approved']"
+      },
+      {
+        "click": "form[action='/elite/checkout'] button[type='submit']"
+      },
+      {
+        "expect": "text=Account Type"
+      }
+    ],
+    "elite-checkout.yearly": [],
+    "exercises.filtered": [
+      {
+        "click": "button:has-text('Abs')"
+      }
+    ],
+    "exercises.no-results": [
+      {
+        "fill": "input[placeholder*='Search']",
+        "value": "zzzz-no-match-websitebench"
+      },
+      {
+        "expect": "text=0"
+      }
+    ],
+    "exercises.page-2": [
+      {
+        "goto": "/exercises?page=2"
+      }
+    ],
+    "forgot-password.validation-error": [
+      {
+        "click": "button:has-text('Send reset link')"
+      }
+    ],
+    "home.dark-mode": [
+      {
+        "eval": "document.documentElement.classList.remove('light');document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark'"
+      }
+    ],
+    "home.mobile-menu": [
+      {
+        "click": "button:has-text('Open main menu')"
+      }
+    ],
+    "home.nav-more": [
+      {
+        "click": "header button:has-text('More')"
+      }
+    ],
+    "home.nav-products": [
+      {
+        "click": "header button:has-text('Products')"
+      }
+    ],
+    "home.nav-workouts": [
+      {
+        "click": "header button:has-text('Workouts')"
+      }
+    ],
+    "login.validation-error": [
+      {
+        "click": "form[action='/login'] button:has-text('Log In')"
+      }
+    ],
+    "my-jefit-body-stats.empty": {
+      "session": "isolation",
+      "steps": []
+    },
+    "my-jefit-body-stats.populated": [
+      {
+        "expect": "text=185"
+      }
+    ],
+    "my-jefit-exercises.custom-empty": [],
+    "my-jefit-exercises.database": [
+      {
+        "goto": "/my-jefit/exercises/find"
+      }
+    ],
+    "my-jefit-exercises.detail": [
+      {
+        "goto": "/my-jefit/exercises/2/barbell-bench-press"
+      }
+    ],
+    "my-jefit-exercises.filters-panel": [
+      {
+        "goto": "/my-jefit/exercises/find"
+      },
+      {
+        "click": "button:has-text('FILTERS')"
+      }
+    ],
+    "my-jefit-progress-insights.empty": {
+      "session": "isolation",
+      "steps": []
+    },
+    "my-jefit-progress-insights.populated": [
+      {
+        "expect": "text=logged"
+      }
+    ],
+    "my-jefit-progress-photos.empty": [],
+    "my-jefit-progress.empty": [
+      {
+        "goto": "/my-jefit/progress/history?date=2026-08-01"
+      }
+    ],
+    "my-jefit-progress.log-modal": [
+      {
+        "click": "button:has-text('+ Add session')"
+      }
+    ],
+    "my-jefit-progress.populated": [],
+    "my-jefit-settings.account": [],
+    "my-jefit-settings.data-controls": [
+      {
+        "click": "nav button:has-text('Data Controls')"
+      }
+    ],
+    "my-jefit-settings.elite-active": [
+      {
+        "goto": "/elite/checkout?isMyJefit=true&sub=yearly"
+      },
+      {
+        "click": "form[action='/elite/checkout'] button[type='submit']"
+      },
+      {
+        "expect": "text=Elite"
+      }
+    ],
+    "my-jefit-settings.integrations": [
+      {
+        "click": "nav button:has-text('Integrations')"
+      }
+    ],
+    "my-jefit-settings.privacy": [
+      {
+        "click": "nav button:has-text('Privacy')"
+      }
+    ],
+    "my-jefit-settings.profile": [
+      {
+        "click": "nav button:has-text('Profile')"
+      }
+    ],
+    "my-jefit-workouts-edit.editor": [],
+    "my-jefit-workouts.initial": {
+      "session": "isolation",
+      "steps": []
+    },
+    "my-jefit-workouts.plan-menu": [
+      {
+        "click": "button[id^='plan-menu-']"
+      }
+    ],
+    "my-jefit-workouts.populated": [
+      {
+        "expect": "text=Strength Base 3-Day"
+      }
+    ],
+    "my-jefit.account-menu": [
+      {
+        "click": "button:has(span[data-slot='avatar'])"
+      }
+    ],
+    "my-jefit.create-post-dialog": [
+      {
+        "click": "button:has-text('Create Post')"
+      }
+    ],
+    "my-jefit.discover-empty": [],
+    "my-jefit.getapp-menu": [
+      {
+        "click": "button:has-text('Get App')"
+      }
+    ],
+    "my-jefit.plan-upgrade-modal": [
+      {
+        "click": "text=Upgrade to Elite"
+      }
+    ],
+    "my-jefit.sync-info-modal": [
+      {
+        "click": "button:has-text('Sync Info')"
+      }
+    ],
+    "routines.sort-latest": [
+      {
+        "goto": "/routines?sort=last_updated"
+      }
+    ],
+    "routines.sort-views": [
+      {
+        "goto": "/routines?sort=views"
+      }
+    ],
+    "signup.account-create": [
+      {
+        "goto": "/signup/register"
+      }
+    ],
+    "signup.questionnaire-step-01": [],
+    "signup.questionnaire-step-02": [
+      {
+        "goto": "/signup?step=2"
+      }
+    ],
+    "signup.questionnaire-step-03": [
+      {
+        "goto": "/signup?step=3"
+      }
+    ],
+    "signup.questionnaire-step-04": [
+      {
+        "goto": "/signup?step=4"
+      }
+    ],
+    "signup.questionnaire-step-05": [
+      {
+        "goto": "/signup?step=5"
+      }
+    ],
+    "signup.questionnaire-step-06": [
+      {
+        "goto": "/signup?step=6"
+      }
+    ],
+    "signup.questionnaire-step-07": [
+      {
+        "goto": "/signup?step=7"
+      }
+    ],
+    "signup.questionnaire-step-08": [
+      {
+        "goto": "/signup?step=8"
+      }
+    ],
+    "signup.questionnaire-step-09": [
+      {
+        "goto": "/signup?step=9"
+      }
+    ],
+    "signup.questionnaire-step-10": [
+      {
+        "goto": "/signup?step=10"
+      }
+    ],
+    "signup.questionnaire-step-11": [
+      {
+        "goto": "/signup?step=11"
+      }
+    ],
+    "signup.questionnaire-step-12": [
+      {
+        "goto": "/signup?step=12"
+      }
+    ],
+    "signup.questionnaire-step-13": [
+      {
+        "goto": "/signup?step=13"
+      }
+    ],
+    "signup.questionnaire-step-14": [
+      {
+        "goto": "/signup?step=14"
+      }
+    ],
+    "signup.questionnaire-step-15": [
+      {
+        "goto": "/signup?step=15"
+      }
+    ],
+    "signup.questionnaire-step-16": [
+      {
+        "goto": "/signup?step=16"
+      }
+    ],
+    "signup.questionnaire-step-17": [
+      {
+        "goto": "/signup?step=17"
+      }
+    ],
+    "signup.results": [
+      {
+        "goto": "/signup/results"
+      }
+    ]
+  },
+  "states_out_of_scope": {
+    "first-run-modal": "The routine builder's first-run modal was never captured (the walk had dismissed it); no recipe is claimed for it.",
+    "redirect-authenticated": "Authenticated /login redirects to /my-jefit; covered by clone/tests/test_auth.py (a redirect has no stable frame to compare).",
+    "sent": "The forgot-password 'sent' confirmation is implemented (POST /login/forgot-password) but has no frozen source frame; it is exercised by clone/tests/test_auth.py instead.",
+    "validation-error.signup": "The signup questionnaire showed no captured validation-error state; steps advance exactly as observed."
+  },
+  "status": {
+    "not-found": 404
+  }
+}

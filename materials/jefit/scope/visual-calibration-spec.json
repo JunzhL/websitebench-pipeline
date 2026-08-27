@@ -1,0 +1,1366 @@
+{
+  "schema_version": "offline-clone.visual-stability-calibration-spec.v1",
+  "site_id": "jefit",
+  "rows": [
+    {
+      "id": "home.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "home.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/home/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "elite.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "elite.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "elite.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/elite/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises.mobile.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercise-detail.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercise-detail.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercise-detail/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routines.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routines.tablet.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/tablet/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/tablet/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/tablet/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routines.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routine-detail.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routine-detail.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routine-detail/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "build-routine.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "build-routine.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "login.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "login.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "login.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "login.mobile.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/login/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password.mobile.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support-faq.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "support-faq.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/support-faq/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "routines-beginner.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines-beginner/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines-beginner/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/routines-beginner/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-page2.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-page2.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-page2/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "about-us.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/about-us/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/about-us/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/about-us/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "ai-workout-tracker.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ai-workout-tracker/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ai-workout-tracker/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ai-workout-tracker/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "adaptive-plan.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/adaptive-plan/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/adaptive-plan/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/adaptive-plan/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "use-case.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "use-case.desktop.main",
+      "region": "main",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/use-case/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "watch.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/watch/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/watch/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/watch/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "coach.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/coach/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/coach/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/coach/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "our-story.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/our-story/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/our-story/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/our-story/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "community.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/community/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/community/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/community/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "blog.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "blog.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/blog/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "ip-notice-process.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ip-notice-process/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ip-notice-process/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/ip-notice-process/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "press-media.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/press-media/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/press-media/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/press-media/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-filter-abs.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-filter-abs.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-filter-abs/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-no-results.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "exercises-no-results.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/exercises-no-results/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-products-dropdown.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-products-dropdown/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-products-dropdown/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-products-dropdown/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-workouts-dropdown.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-workouts-dropdown/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-workouts-dropdown/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-workouts-dropdown/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "nav-more-dropdown.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-more-dropdown/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-more-dropdown/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/nav-more-dropdown/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "mobile-menu-open.mobile.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/mobile-menu-open/mobile/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/mobile-menu-open/mobile/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/mobile-menu-open/mobile/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "build-routine-validation-empty.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine-validation-empty/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine-validation-empty/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/build-routine-validation-empty/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-01.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-01/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-01/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-01/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-02.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-02/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-02/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-02/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-03.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-03/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-03/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-03/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-04.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-04/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-04/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-04/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-05.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-05/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-05/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-05/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-06.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-06/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-06/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-06/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-07.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-07.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-07/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-08.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-08.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-08/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-09.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-09.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-09/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-10.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-10.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-10/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-11.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-11/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-11/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-11/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-12.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-12/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-12/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-12/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-13.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-13/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-13/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-13/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-14.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-14/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-14/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-14/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-15.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-15/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-15/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-15/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-16.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-16/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-16/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-16/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-step-17.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-17/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-17/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-step-17/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-results.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-results/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-results/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-results/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-account-create.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "signup-account-create.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/signup-account-create/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password-validation-empty.desktop.header",
+      "region": "header",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    },
+    {
+      "id": "forgot-password-validation-empty.desktop.action",
+      "region": "action",
+      "source_samples": [
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-1.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-2.png"
+        },
+        {
+          "path": "materials/jefit/source-current/2026-08-18.jefit-r1/forgot-password-validation-empty/desktop/frame-3.png"
+        }
+      ],
+      "ignore_regions": []
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "checkpoint": "watch",
+  "family": "marketing",
+  "priority": "P2",
+  "viewport": "desktop",
+  "requested_url": "https://www.jefit.com/watch",
+  "final_url": "https://www.jefit.com/watch",
+  "http_status": 200,
+  "title": "Watch Fitness App: Track Workouts & Sync - JEFIT",
+  "body_text_len": 2882,
+  "frames": 3,
+  "frame_sha256": [
+    "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+    "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f",
+    "b9c0937676ece1d9b3bf86dc9dde48cfc976d3c48bb5212e4510d96e6894686f"
+  ],
+  "frames_identical": true,
+  "link_count": 29,
+  "resource_count": 94,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": {
+      "selector": "footer",
+      "x": 0,
+      "y": 3448,
+      "width": 1440,
+      "height": 521
+    },
+    "form": null,
+    "document_height": 3969
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "jefit.source-capture-plan.v1",
+  "capture_id": "2026-08-18.jefit-r1",
+  "source_origin": "https://www.jefit.com",
+  "note": "Anonymous GET-only capture plan for the JEFIT offline clone, executed by tools/capture_source.py over a local Playwright chromium (browser-provider preflight 2026-08-18: jefit.com serves local Playwright directly; Browserbase credentials not available). One browser context spans the whole matrix so consent and experiment state stay constant. No login, registration, form submission, or any source mutation occurs in this plan; interaction-dependent states (filters, no-results, nav dropdowns, mobile menu, signup questionnaire steps before account creation, dark-mode toggle) belong to capture_states.py, and authenticated member states are captured separately inside the user-provided session per the entry prompt's logged-in-session authorization. Known source properties to expect: cookie consent banner on new-template routes; /community uses a legacy template with horizontal overflow; unknown paths return an unbranded server 404; entry behavior at / has shown both a direct marketing render and a client redirect to /signup on different loads (record final_url and freeze from what this capture observes).",
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900, "frames": 3 },
+    { "name": "tablet", "width": 1024, "height": 768, "frames": 3 },
+    { "name": "mobile", "width": 390, "height": 844, "frames": 3 }
+  ],
+  "checkpoints": [
+    { "id": "home", "url": "https://www.jefit.com/", "family": "marketing", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "elite", "url": "https://www.jefit.com/elite", "family": "membership", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "exercises", "url": "https://www.jefit.com/exercises", "family": "discovery", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "exercise-detail", "url": "https://www.jefit.com/exercises/2/barbell-bench-press", "family": "discovery", "priority": "p0", "viewports": ["desktop", "mobile"] },
+    { "id": "routines", "url": "https://www.jefit.com/routines", "family": "discovery", "priority": "p0", "viewports": ["desktop", "tablet", "mobile"] },
+    { "id": "routine-detail", "url": "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs", "family": "discovery", "priority": "p0", "viewports": ["desktop", "mobile"] },
+    { "id": "build-routine", "url": "https://www.jefit.com/build-routine", "family": "creation", "priority": "p0", "viewports": ["desktop", "mobile"] },
+    { "id": "login", "url": "https://www.jefit.com/login", "family": "auth", "priority": "p0", "viewports": ["desktop", "mobile"] },
+    { "id": "signup", "url": "https://www.jefit.com/signup", "family": "auth", "priority": "p0", "viewports": ["desktop", "mobile"] },
+    { "id": "forgot-password", "url": "https://www.jefit.com/login/forgot-password", "family": "auth", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "support", "url": "https://www.jefit.com/support", "family": "support", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "support-faq", "url": "https://www.jefit.com/support/faq", "family": "support", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "routines-beginner", "url": "https://www.jefit.com/routines/beginner", "family": "discovery", "priority": "p1", "viewports": ["desktop"] },
+    { "id": "exercises-page2", "url": "https://www.jefit.com/exercises?page=2", "family": "discovery", "priority": "p1", "viewports": ["desktop"] },
+    { "id": "not-found", "url": "https://www.jefit.com/zzzz-no-match-websitebench", "family": "error", "priority": "p1", "viewports": ["desktop", "mobile"] },
+    { "id": "about-us", "url": "https://www.jefit.com/about-us", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "ai-workout-tracker", "url": "https://www.jefit.com/ai-workout-tracker", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "adaptive-plan", "url": "https://www.jefit.com/ai-workout-tracker/adaptive-plan", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "use-case", "url": "https://www.jefit.com/use-case", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "watch", "url": "https://www.jefit.com/watch", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "coach", "url": "https://www.jefit.com/coach", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "our-story", "url": "https://www.jefit.com/our-story", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "community", "url": "https://www.jefit.com/community", "family": "community-legacy", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "blog", "url": "https://www.jefit.com/blog", "family": "marketing", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "terms-of-use", "url": "https://www.jefit.com/terms-of-use", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "privacy-policy", "url": "https://www.jefit.com/privacy-policy", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "ip-notice-process", "url": "https://www.jefit.com/ip-notice-process", "family": "legal", "priority": "p2", "viewports": ["desktop"] },
+    { "id": "press-media", "url": "https://www.jefit.com/press-media", "family": "legal", "priority": "p2", "viewports": ["desktop"] }
+  ]
+}

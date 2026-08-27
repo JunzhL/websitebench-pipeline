@@ -1,0 +1,190 @@
+{
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "draft",
+  "invariants": [
+    {
+      "id": "network-closure",
+      "statement": "Every clone page renders with zero runtime requests to non-local origins; all assets are vendored under clone/static/.",
+      "positive_test_refs": [
+        "clone/tests/test_no_remote_refs.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_no_remote_refs.py::test_detector_flags_injected_remote_ref"
+      ],
+      "coverage_dimension_ids": [
+        "p0-network-invariants"
+      ],
+      "journey_ids": [
+        "entry-nav-primary"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "auth-boundary",
+      "statement": "Protected /my-jefit routes redirect anonymous browsers to /login?redirect=<path>; authenticated visits to /login redirect to /my-jefit; sessions are __Host- cookies via the site backend.",
+      "positive_test_refs": [
+        "clone/tests/test_auth.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_auth.py"
+      ],
+      "coverage_dimension_ids": [
+        "member-direct-states"
+      ],
+      "journey_ids": [
+        "sign-in-dashboard"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "membership-order-transactional",
+      "statement": "The Elite upgrade consumes a local-sandbox payment approval and writes the subscription order and membership state in one SQLite transaction; declined creates nothing; retryable succeeds only on retry; duplicate submission is idempotent.",
+      "positive_test_refs": [
+        "clone/tests/test_membership_payment.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_membership_payment.py"
+      ],
+      "coverage_dimension_ids": [
+        "deterministic-database-state"
+      ],
+      "journey_ids": [
+        "register-upgrade-elite-annual"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "payment-input-boundary",
+      "statement": "The clone-local checkout accepts only opaque sandbox scenario IDs; no card number, CVC, expiry, or bank field value is ever accepted, stored, or logged by the backend.",
+      "positive_test_refs": [
+        "clone/tests/test_membership_payment.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_membership_payment.py"
+      ],
+      "coverage_dimension_ids": [
+        "deterministic-database-state"
+      ],
+      "journey_ids": [
+        "register-upgrade-elite-annual"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "cross-actor-isolation",
+      "statement": "A member's routines, workout logs, body stats, and membership state are invisible to and unmodifiable by any other member or anonymous visitor.",
+      "positive_test_refs": [
+        "clone/tests/test_backend_lifecycle.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_backend_lifecycle.py"
+      ],
+      "coverage_dimension_ids": [
+        "deterministic-database-state"
+      ],
+      "journey_ids": [
+        "create-routine-edit-sets",
+        "log-workout-session"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "deterministic-reset",
+      "statement": "Resetting and reseeding the database yields byte-stable business state: same catalog, same seeded accounts, same seeded routine/log fixtures.",
+      "positive_test_refs": [
+        "clone/tests/test_backend_lifecycle.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_backend_lifecycle.py::test_reset_detects_divergent_state"
+      ],
+      "coverage_dimension_ids": [
+        "deterministic-database-state"
+      ],
+      "journey_ids": [
+        "register-upgrade-elite-annual"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "routine-builder-semantics",
+      "statement": "Create Plan creates a plan server-side immediately and opens the autosaving editor; added exercises default to 3 sets of 10 lbs x 8 with 60s rest; set edits persist; an emptied routine name is silently ignored exactly as on source.",
+      "positive_test_refs": [
+        "clone/tests/test_routines_api.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_routines_api.py"
+      ],
+      "coverage_dimension_ids": [
+        "member-direct-states"
+      ],
+      "journey_ids": [
+        "create-routine-edit-sets"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "workout-log-semantics",
+      "statement": "'+ Add session' creates a session for the selected day; adding an exercise logs a default set; the persisted Training Summary shows timers, completion count, volume, and per-set rows; days without sessions show the 'No logs' empty state.",
+      "positive_test_refs": [
+        "clone/tests/test_workout_log_api.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_workout_log_api.py"
+      ],
+      "coverage_dimension_ids": [
+        "member-direct-states"
+      ],
+      "journey_ids": [
+        "log-workout-session"
+      ],
+      "priority": "p0"
+    },
+    {
+      "id": "not-found-fidelity",
+      "statement": "Unknown paths return an unbranded server-style 404 (title '404 Not Found', 'Not Found / The requested URL was not found on this server.') without site chrome, matching source behavior.",
+      "positive_test_refs": [
+        "clone/tests/test_app_surface.py"
+      ],
+      "negative_test_refs": [],
+      "coverage_dimension_ids": [
+        "source-direct-states"
+      ],
+      "journey_ids": [
+        "no-results-and-recovery"
+      ],
+      "priority": "p1"
+    },
+    {
+      "id": "mail-local-only",
+      "statement": "Registration-verification and password-reset mail exist only through the site-backend seam purposes (local outbox in offline profiles); OTP/reset secrets are never stored in plaintext or logged.",
+      "positive_test_refs": [
+        "clone/tests/test_auth.py"
+      ],
+      "negative_test_refs": [
+        "clone/tests/test_auth.py"
+      ],
+      "coverage_dimension_ids": [
+        "deterministic-database-state"
+      ],
+      "journey_ids": [
+        "password-recovery-view"
+      ],
+      "priority": "p1"
+    },
+    {
+      "id": "free-tier-limits",
+      "statement": "Free accounts see 'Account Type: Free' with upgrade cards and the 'Create custom exercise (0/3)' limit; Elite-gated affordances render exactly as observed for the free role.",
+      "positive_test_refs": [
+        "clone/tests/test_membership_payment.py"
+      ],
+      "negative_test_refs": [],
+      "coverage_dimension_ids": [
+        "member-direct-states"
+      ],
+      "journey_ids": [
+        "elite-plan-review"
+      ],
+      "priority": "p1"
+    }
+  ]
+}

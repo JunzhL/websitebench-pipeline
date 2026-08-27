@@ -1,0 +1,273 @@
+{
+  "schema_version": "jefit.frontend-gate-samples.v1",
+  "app_file": "clone/app.py",
+  "app_attr": "app",
+  "module_name": "jefit_clone_app",
+  "session_setup": {
+    "url": "/login",
+    "method": "post",
+    "data": {
+      "username": "jefitdemo",
+      "password": "Demo-Pass-2026!"
+    }
+  },
+  "checks": [
+    {
+      "id": "healthz",
+      "url": "/healthz",
+      "expect_status": 200,
+      "expect_contains": [
+        "\"site_id\":\"jefit\""
+      ],
+      "session": false
+    },
+    {
+      "id": "home",
+      "url": "/home",
+      "expect_status": 200,
+      "expect_contains": [
+        "Your Ultimate Workout"
+      ],
+      "expect_not_contains": [
+        "NotImplementedError"
+      ],
+      "session": false
+    },
+    {
+      "id": "elite",
+      "url": "/elite",
+      "expect_status": 200,
+      "expect_contains": [
+        "Elite",
+        "12.99"
+      ],
+      "session": false
+    },
+    {
+      "id": "exercises",
+      "url": "/exercises",
+      "expect_status": 200,
+      "expect_contains": [
+        "EXERCISES FOUND",
+        "CLEAR FILTERS"
+      ],
+      "session": false
+    },
+    {
+      "id": "exercises.page2",
+      "url": "/exercises?page=2",
+      "expect_status": 200,
+      "expect_contains": [
+        "EXERCISES FOUND"
+      ],
+      "session": false
+    },
+    {
+      "id": "exercise-detail",
+      "url": "/exercises/2/barbell-bench-press",
+      "expect_status": 200,
+      "expect_contains": [
+        "Barbell Bench Press",
+        "Instructions"
+      ],
+      "session": false
+    },
+    {
+      "id": "routines",
+      "url": "/routines",
+      "expect_status": 200,
+      "expect_contains": [
+        "Sort by",
+        "Most Downloaded"
+      ],
+      "session": false
+    },
+    {
+      "id": "routine-detail",
+      "url": "/routines/19113/6-weeks-to-six-pack-abs",
+      "expect_status": 200,
+      "expect_contains": [
+        "Plan Details",
+        "Routine detail"
+      ],
+      "session": false
+    },
+    {
+      "id": "support",
+      "url": "/support",
+      "expect_status": 200,
+      "expect_contains": [
+        "Contact us",
+        "Subscription support"
+      ],
+      "session": false
+    },
+    {
+      "id": "support.faq",
+      "url": "/support/faq",
+      "expect_status": 200,
+      "expect_contains": [
+        "Basic Features"
+      ],
+      "session": false
+    },
+    {
+      "id": "login",
+      "url": "/login",
+      "expect_status": 200,
+      "expect_contains": [
+        "Log In"
+      ],
+      "session": false
+    },
+    {
+      "id": "login.recovery-link",
+      "url": "/login",
+      "expect_status": 200,
+      "expect_contains": [
+        "Forgot Password?"
+      ],
+      "session": false
+    },
+    {
+      "id": "login.submit",
+      "url": "/login",
+      "method": "post",
+      "data": {
+        "username": "jefitdemo",
+        "password": "Demo-Pass-2026!"
+      },
+      "expect_status": 302,
+      "session": false,
+      "expect_contains": [
+        "My Circle"
+      ]
+    },
+    {
+      "id": "forgot-password",
+      "url": "/login/forgot-password",
+      "expect_status": 200,
+      "expect_contains": [
+        "Reset Password",
+        "Send reset link"
+      ],
+      "session": false
+    },
+    {
+      "id": "signup",
+      "url": "/signup",
+      "expect_status": 200,
+      "expect_contains": [
+        "Select your gender"
+      ],
+      "session": false
+    },
+    {
+      "id": "signup.register",
+      "url": "/signup/register",
+      "expect_status": 200,
+      "expect_contains": [
+        "Continue"
+      ],
+      "session": false
+    },
+    {
+      "id": "not-found",
+      "url": "/zzzz-no-match-websitebench",
+      "expect_status": 404,
+      "expect_contains": [
+        "Not Found"
+      ],
+      "session": false
+    },
+    {
+      "id": "external-boundary",
+      "url": "/external/apps.apple.com",
+      "expect_status": 200,
+      "expect_contains": [
+        "No remote request was made"
+      ],
+      "session": false
+    },
+    {
+      "id": "my-jefit",
+      "url": "/my-jefit",
+      "expect_status": 200,
+      "expect_contains": [
+        "My Circle",
+        "Create Post"
+      ],
+      "session": true
+    },
+    {
+      "id": "my-jefit.workouts",
+      "url": "/my-jefit/workouts",
+      "expect_status": 200,
+      "expect_contains": [
+        "Create Plan",
+        "Current Plan"
+      ],
+      "session": true
+    },
+    {
+      "id": "my-jefit.history",
+      "url": "/my-jefit/progress/history",
+      "expect_status": 200,
+      "expect_contains": [
+        "+ Add session"
+      ],
+      "session": true
+    },
+    {
+      "id": "my-jefit.settings",
+      "url": "/my-jefit/settings",
+      "expect_status": 200,
+      "expect_contains": [
+        "Account Type",
+        "Upgrade your account"
+      ],
+      "session": true
+    },
+    {
+      "id": "my-jefit.exercises-find",
+      "url": "/my-jefit/exercises/find",
+      "expect_status": 200,
+      "expect_contains": [
+        "EXERCISES FOUND"
+      ],
+      "session": true
+    },
+    {
+      "id": "checkout",
+      "url": "/elite/checkout",
+      "expect_status": 200,
+      "expect_contains": [
+        "Simulated approval"
+      ],
+      "session": true
+    },
+    {
+      "id": "checkout.review",
+      "url": "/elite/checkout",
+      "expect_status": 200,
+      "expect_contains": [
+        "Subscribe"
+      ],
+      "session": true
+    },
+    {
+      "id": "checkout.submit",
+      "url": "/elite/checkout",
+      "method": "post",
+      "data": {
+        "sub": "yearly",
+        "scenario_id": "sandbox-approved"
+      },
+      "expect_status": 303,
+      "session": true,
+      "expect_contains": [
+        "Account Type"
+      ]
+    }
+  ]
+}

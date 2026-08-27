@@ -1,0 +1,689 @@
+{
+  "_totals": {
+    "files": 36,
+    "mapped": 441,
+    "missing": 132
+  },
+  "fonts.googleapis.com/css.q65f96306ea.css": {
+    "mapped": 20,
+    "missing_payloads": []
+  },
+  "stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/1786427309/style.css": {
+    "mapped": 139,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/1786427309/resources/helloie6.png",
+        "reference": "resources/helloie6.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/navlib.png",
+        "reference": "../resources/navlib.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/sbarlib.png",
+        "reference": "../resources/sbarlib.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/sticky.png",
+        "reference": "../resources/sticky.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/loading.gif",
+        "reference": "../resources/loading.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/blockquote.png",
+        "reference": "../resources/blockquote.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/code.png",
+        "reference": "../resources/code.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/dlbutton.png",
+        "reference": "../resources/dlbutton.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/dlbutton.png",
+        "reference": "../resources/dlbutton.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/topwidgets.png",
+        "reference": "../resources/topwidgets.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/comments.png",
+        "reference": "../resources/comments.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/gavatar2.png",
+        "reference": "../resources/gavatar2.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/bubbles.png",
+        "reference": "../resources/bubbles.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/horizontal.png",
+        "reference": "../resources/horizontal.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/vertical.png",
+        "reference": "../resources/vertical.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/input_bg.png",
+        "reference": "../resources/input_bg.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/submit.png",
+        "reference": "../resources/submit.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/eding.gif",
+        "reference": "../resources/eding.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/404button.png",
+        "reference": "../resources/404button.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/loading.gif",
+        "reference": "../resources/loading.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/form_bg.jpg",
+        "reference": "../images/form_bg.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/arrow_000_medium.png",
+        "reference": "../images/arrow_000_medium.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/bodyparts_600_630_background.jpg",
+        "reference": "../images/bodyparts_600_630_background.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/bodyparts1_blue_790_750.jpg",
+        "reference": "../images/bodyparts1_blue_790_750.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/featurestablewhite_930_350.png",
+        "reference": "../images/featurestablewhite_930_350.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/featurestablewhite_930_350.png",
+        "reference": "../images/featurestablewhite_930_350.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/accordion_background_repeat.png",
+        "reference": "../images/accordion_background_repeat.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/404_Error_Image.png",
+        "reference": "../images/404_Error_Image.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/Downloads_table.png",
+        "reference": "../images/Downloads_table.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/1786427309/toggle_block_btm.gif",
+        "reference": "toggle_block_btm.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/1786427309/toggle_block_btm.gif",
+        "reference": "toggle_block_btm.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/1786427309/modal-gloss.png",
+        "reference": "modal-gloss.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/img/basic/x.png",
+        "reference": "../img/basic/x.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/img/headers/topbanner2.png",
+        "reference": "https://cdn.jefit.com/assets/img/headers/topbanner2.png"
+      }
+    ]
+  },
+  "www.jefit.com/_next/static/chunks/03p9j-v622itm.css": {
+    "mapped": 19,
+    "missing_payloads": []
+  },
+  "www.jefit.com/_next/static/chunks/1676b-jwht493.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/_next/static/chunks/1j_vldtdm5ldl.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/_next/static/chunks/25bmyc5k5ft9e.css": {
+    "mapped": 19,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/app.css": {
+    "mapped": 29,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/amazon.png",
+        "reference": "../img/icons/social/amazon.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/behance.png",
+        "reference": "../img/icons/social/behance.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/blogger.png",
+        "reference": "../img/icons/social/blogger.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/deviantart.png",
+        "reference": "../img/icons/social/deviantart.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/dribbble.png",
+        "reference": "../img/icons/social/dribbble.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/dropbox.png",
+        "reference": "../img/icons/social/dropbox.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/evernote.png",
+        "reference": "../img/icons/social/evernote.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/facebook.png",
+        "reference": "../img/icons/social/facebook.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/forrst.png",
+        "reference": "../img/icons/social/forrst.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/github.png",
+        "reference": "../img/icons/social/github.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/googleplus.png",
+        "reference": "../img/icons/social/googleplus.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/jolicloud.png",
+        "reference": "../img/icons/social/jolicloud.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/last-fm.png",
+        "reference": "../img/icons/social/last-fm.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/linkedin.png",
+        "reference": "../img/icons/social/linkedin.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/picasa.png",
+        "reference": "../img/icons/social/picasa.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/pintrest.png",
+        "reference": "../img/icons/social/pintrest.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/rss.png",
+        "reference": "../img/icons/social/rss.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/skype.png",
+        "reference": "../img/icons/social/skype.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/spotify.png",
+        "reference": "../img/icons/social/spotify.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/stumbleupon.png",
+        "reference": "../img/icons/social/stumbleupon.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/tumblr.png",
+        "reference": "../img/icons/social/tumblr.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/twitter.png",
+        "reference": "../img/icons/social/twitter.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/vimeo.png",
+        "reference": "../img/icons/social/vimeo.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/wordpress.png",
+        "reference": "../img/icons/social/wordpress.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/xing.png",
+        "reference": "../img/icons/social/xing.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/yahoo.png",
+        "reference": "../img/icons/social/yahoo.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/youtube.png",
+        "reference": "../img/icons/social/youtube.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/vk.png",
+        "reference": "../img/icons/social/vk.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/icons/social/instagram.png",
+        "reference": "../img/icons/social/instagram.png"
+      }
+    ]
+  },
+  "www.jefit.com/assets/css/astra/astra-inline.css": {
+    "mapped": 3,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/astra/astra.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/blocks.css": {
+    "mapped": 7,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/11.jpg",
+        "reference": "../img/bg/11.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/15.jpg",
+        "reference": "../img/bg/15.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/contents/faces.jpg",
+        "reference": "../img/contents/faces.jpg"
+      }
+    ]
+  },
+  "www.jefit.com/assets/css/bootstrap.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-default.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v1.css": {
+    "mapped": 1,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v2.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v3.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v4.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v5.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v6.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/footers/footer-v7.css": {
+    "mapped": 2,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/17.jpg",
+        "reference": "../../img/bg/17.jpg"
+      }
+    ]
+  },
+  "www.jefit.com/assets/css/headers/header-default.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/headers/header-v1.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/headers/header-v2.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/headers/header-v3.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/headers/header-v4.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/headers/header-wp.css": {
+    "mapped": 12,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/eicons/fonts/eicons.q73811c005b.eot",
+        "reference": "https://cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/eicons/fonts/eicons.q73811c005b.eot",
+        "reference": "https://cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.q1793f04d41.eot",
+        "reference": "https://cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot",
+        "reference": "https://cdn.jefit.com/assets/wp-legacy/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0"
+      }
+    ]
+  },
+  "www.jefit.com/assets/css/ie8.css": {
+    "mapped": 2,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/plugins.css": {
+    "mapped": 5,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/bg2.jpg",
+        "reference": "../img/bg/bg2.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/bg1.jpg",
+        "reference": "../img/bg/bg1.jpg"
+      }
+    ]
+  },
+  "www.jefit.com/assets/css/plugins/animate.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/plugins/box-shadows.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/plugins/style-switcher.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/assets/css/style.css": {
+    "mapped": 34,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/blur/img1.jpg",
+        "reference": "../img/blur/img1.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/9.jpg",
+        "reference": "../img/bg/9.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/11.jpg",
+        "reference": "../img/bg/11.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/img/bg/16.jpg",
+        "reference": "../img/bg/16.jpg"
+      }
+    ]
+  },
+  "www.jefit.com/assets/plugins/font-awesome/css/font-awesome.css": {
+    "mapped": 5,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot",
+        "reference": "../fonts/fontawesome-webfont.eot?v=4.2.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot",
+        "reference": "../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff",
+        "reference": "../fonts/fontawesome-webfont.woff?v=4.2.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf",
+        "reference": "../fonts/fontawesome-webfont.ttf?v=4.2.0"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg",
+        "reference": "../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular"
+      }
+    ]
+  },
+  "www.jefit.com/assets/plugins/line-icons/line-icons.css": {
+    "mapped": 5,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/line-icons/fonts/Simple-Line-Icons.eot",
+        "reference": "fonts/Simple-Line-Icons.eot"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/plugins/line-icons/fonts/Simple-Line-Icons.eot",
+        "reference": "fonts/Simple-Line-Icons.eot?#iefix"
+      }
+    ]
+  },
+  "www.jefit.com/community/styles.css": {
+    "mapped": 0,
+    "missing_payloads": []
+  },
+  "www.jefit.com/css/style.css": {
+    "mapped": 139,
+    "missing_payloads": [
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/css/resources/helloie6.png",
+        "reference": "resources/helloie6.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/navlib.png",
+        "reference": "../resources/navlib.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/sbarlib.png",
+        "reference": "../resources/sbarlib.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/sticky.png",
+        "reference": "../resources/sticky.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/loading.gif",
+        "reference": "../resources/loading.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/blockquote.png",
+        "reference": "../resources/blockquote.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/code.png",
+        "reference": "../resources/code.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/dlbutton.png",
+        "reference": "../resources/dlbutton.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/dlbutton.png",
+        "reference": "../resources/dlbutton.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/topwidgets.png",
+        "reference": "../resources/topwidgets.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/comments.png",
+        "reference": "../resources/comments.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/gavatar2.png",
+        "reference": "../resources/gavatar2.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/bubbles.png",
+        "reference": "../resources/bubbles.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/horizontal.png",
+        "reference": "../resources/horizontal.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/vertical.png",
+        "reference": "../resources/vertical.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/input_bg.png",
+        "reference": "../resources/input_bg.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/submit.png",
+        "reference": "../resources/submit.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/eding.gif",
+        "reference": "../resources/eding.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/404button.png",
+        "reference": "../resources/404button.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/resources/loading.gif",
+        "reference": "../resources/loading.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/form_bg.jpg",
+        "reference": "../images/form_bg.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/arrow_000_medium.png",
+        "reference": "../images/arrow_000_medium.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/bodyparts_600_630_background.jpg",
+        "reference": "../images/bodyparts_600_630_background.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/bodyparts1_blue_790_750.jpg",
+        "reference": "../images/bodyparts1_blue_790_750.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/featurestablewhite_930_350.png",
+        "reference": "../images/featurestablewhite_930_350.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/featurestablewhite_930_350.png",
+        "reference": "../images/featurestablewhite_930_350.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/accordion_background_repeat.png",
+        "reference": "../images/accordion_background_repeat.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/404_Error_Image.png",
+        "reference": "../images/404_Error_Image.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/Downloads_table.png",
+        "reference": "../images/Downloads_table.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/css/toggle_block_btm.gif",
+        "reference": "toggle_block_btm.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/css/toggle_block_btm.gif",
+        "reference": "toggle_block_btm.gif"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/images/summary_background_5.jpg",
+        "reference": "../images/summary_background_5.jpg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/css/modal-gloss.png",
+        "reference": "modal-gloss.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/assets/vendor/themify-icons/SVG/green_check_vector.svg",
+        "reference": "../assets/vendor/themify-icons/SVG/green_check_vector.svg"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/www.jefit.com/img/basic/x.png",
+        "reference": "../img/basic/x.png"
+      },
+      {
+        "local": "/static/assets/2026-08-18.jefit-r1/cdn.jefit.com/assets/img/headers/topbanner2.png",
+        "reference": "https://cdn.jefit.com/assets/img/headers/topbanner2.png"
+      }
+    ]
+  }
+}

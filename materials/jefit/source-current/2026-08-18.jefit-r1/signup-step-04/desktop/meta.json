@@ -1,0 +1,37 @@
+{
+  "checkpoint": "signup-step-04",
+  "family": "interaction-state",
+  "priority": "P1",
+  "viewport": "desktop",
+  "requested_url": null,
+  "final_url": "https://www.jefit.com/signup",
+  "http_status": null,
+  "title": "Your Ultimate Workout Planner & Tracking App for Progress - JEFIT",
+  "body_text_len": 424,
+  "frames": 3,
+  "frame_sha256": [
+    "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+    "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f",
+    "1b276727c5f48a7c1bf7fb2d19d98496b052c060b86f68ef866ab0acec97012f"
+  ],
+  "frames_identical": true,
+  "link_count": null,
+  "resource_count": null,
+  "engine": "local-playwright",
+  "nav_fallback": null,
+  "consent_action": null,
+  "regions": {
+    "header": {
+      "selector": "header",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 56
+    },
+    "main": null,
+    "footer": null,
+    "form": null,
+    "document_height": 900
+  },
+  "interaction": "advanced questionnaire by choosing 'Skinny'"
+}

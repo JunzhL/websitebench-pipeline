@@ -1,0 +1,446 @@
+{
+  "schema_version": "prompt.websitebench-clone-task-brief.v1",
+  "observed_at": "2026-08-18T13:30:23Z",
+  "source": {
+    "input_url": "https://jefit.com/",
+    "canonical_url": "https://www.jefit.com/",
+    "canonical_origin": "https://www.jefit.com",
+    "approved_discovery_origins": [
+      "https://jefit.com",
+      "https://www.jefit.com"
+    ],
+    "proposed_additional_origins": [
+      {
+        "origin": "https://apps.apple.com",
+        "reason": "official iOS app listing linked from footer; brand confirmation only, never product-behavior evidence"
+      },
+      {
+        "origin": "https://play.google.com",
+        "reason": "official Android app listing linked from footer; brand confirmation only"
+      },
+      {
+        "origin": "stripe.com (billing portal / checkout hosts observed at capture time)",
+        "reason": "web-subscription billing is Stripe-backed per /support; exact hosts to be recorded from network evidence during authenticated capture; checkout UI observed but never submitted"
+      }
+    ]
+  },
+  "site": {
+    "site_id": "jefit",
+    "display_name": "JEFIT",
+    "existing_site": false,
+    "site_dir": "materials/jefit",
+    "target_origin": "https://jefit.website-bench.com",
+    "worker_name": "websitebench-jefit-demo",
+    "purpose": "Help strength-training users plan and log gym workouts and obtain tracked progress, routines, and an optional Elite membership."
+  },
+  "baseline": {
+    "locale": "en-US",
+    "timezone": "Etc/UTC",
+    "timezone_policy": "temporary deterministic default; re-freeze from capture evidence",
+    "viewports": [
+      { "id": "desktop", "width": 1440, "height": 900 },
+      { "id": "mobile", "width": 390, "height": 844 }
+    ]
+  },
+  "scope": {
+    "roles": [
+      {
+        "id": "anonymous",
+        "display_name": "Anonymous visitor",
+        "auth_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.jefit.com/", "https://www.jefit.com/exercises", "https://www.jefit.com/routines", "https://www.jefit.com/elite", "https://www.jefit.com/support"],
+        "notes": "Anonymous browsers at / are client-redirected to /signup which first renders a Log In panel; marketing pages (elite, exercises, routines, support, about) remain publicly reachable. /my-jefit shows 'Failed to load data' unauthenticated.",
+        "live_view_required": false,
+        "existing_entitlement_required": false
+      },
+      {
+        "id": "free-member",
+        "display_name": "Free (Basic) member",
+        "auth_required": true,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/elite", "https://www.jefit.com/signup"],
+        "notes": "Basic tier on /elite: free/custom routines, exercise database, logging & history, community. Authenticated dashboard at /my-jefit (Discover, Progress, Workouts, Exercises, Settings). Requires human registration/login handoff to observe directly.",
+        "live_view_required": true,
+        "existing_entitlement_required": false
+      },
+      {
+        "id": "elite-member",
+        "display_name": "Elite member",
+        "auth_required": true,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/elite", "https://www.jefit.com/support"],
+        "notes": "Paid tier ($12.99 monthly / $52.49 first year then $69.99 annual). Changes entitlements (pro plans, analytics, ad-free). Task 539 requires the upgrade flow up to sandbox-equivalent payment; the real payment is never submitted on the source site, so post-payment Elite state is expected to remain unavailable unless the user already owns it.",
+        "live_view_required": true,
+        "existing_entitlement_required": true
+      }
+    ],
+    "core_journeys": [
+      {
+        "id": "j-539-register-upgrade-elite-annual",
+        "priority": "P0",
+        "role": "anonymous -> free-member -> elite-member",
+        "purpose": "Register a free account, upgrade to Elite annual on the web app, complete payment, confirm membership state in its destination view",
+        "preconditions": "no session; deterministic seed provides sandbox payment scenarios",
+        "starting_url": "https://www.jefit.com/",
+        "steps": "entry -> /signup onboarding questionnaire -> account creation -> /elite or in-app upgrade CTA -> Elite Annual 'Buy plan' -> checkout -> confirmation -> membership visible in account/settings view",
+        "expected_result": "Elite annual membership active and visible in destination view",
+        "failure_variant": "declined payment (sandbox 'declined' scenario) surfaces error and allows retry",
+        "recovery_variant": "retryable scenario completes on second attempt",
+        "source_mutation_required": true,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/elite", "https://www.jefit.com/signup", "https://www.jefit.com/support"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-signin",
+        "priority": "P0",
+        "role": "free-member",
+        "purpose": "Sign in and land on the personalized dashboard",
+        "preconditions": "seeded account exists",
+        "starting_url": "https://www.jefit.com/login",
+        "steps": "login form (Username or email, Password) -> submit -> /my-jefit dashboard",
+        "expected_result": "dashboard with personalized content",
+        "failure_variant": "wrong password inline error",
+        "recovery_variant": "Forgot Password? recovery view (UI only, no reset message sent)",
+        "source_mutation_required": false,
+        "evidence": "directly-observed (pre-submit UI); post-login structural-only",
+        "evidence_urls": ["https://www.jefit.com/login"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-browse-exercises",
+        "priority": "P0",
+        "role": "anonymous",
+        "purpose": "Browse/filter the exercise database by muscle group/equipment and open a detail page",
+        "preconditions": "none",
+        "starting_url": "https://www.jefit.com/exercises",
+        "steps": "list -> FILTERS (muscle group, equipment) -> paginate -> detail /exercises/<id>/<slug>",
+        "expected_result": "filtered list and detail with instructions",
+        "failure_variant": "impossible filter combination yields no-results view",
+        "recovery_variant": "CLEAR FILTERS returns to full list",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.jefit.com/exercises"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-browse-routines",
+        "priority": "P0",
+        "role": "anonymous",
+        "purpose": "Browse workout routines by category/goal/level and inspect a routine detail",
+        "preconditions": "none",
+        "starting_url": "https://www.jefit.com/routines",
+        "steps": "list -> quick categories/sort -> detail /routines/<id>/<slug> (exercises, sets/reps, ratings)",
+        "expected_result": "routine detail with day breakdown",
+        "failure_variant": "no-results filter state",
+        "recovery_variant": "clear filters / browse all plans",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.jefit.com/routines"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-build-routine",
+        "priority": "P0",
+        "role": "free-member",
+        "purpose": "Create a custom routine, add multiple exercises, edit sets/reps/rest/order, save",
+        "preconditions": "signed in",
+        "starting_url": "https://www.jefit.com/build-routine",
+        "steps": "routine name/focus/level -> Add Day -> Add exercises from the library -> per-exercise sets/reps/rest -> Save",
+        "expected_result": "saved routine appears in member's workouts",
+        "failure_variant": "required-field validation on empty name / empty day",
+        "recovery_variant": "correct inline and re-save",
+        "source_mutation_required": true,
+        "evidence": "directly-observed (builder form public); save semantics structural-only",
+        "evidence_urls": ["https://www.jefit.com/build-routine"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-log-workout",
+        "priority": "P0",
+        "role": "free-member",
+        "purpose": "Start a workout session and record completed exercise values (sets/reps/weight)",
+        "preconditions": "signed in with a routine",
+        "starting_url": "https://www.jefit.com/my-jefit",
+        "steps": "Workouts -> start session -> log values -> finish",
+        "expected_result": "session recorded in logs/history",
+        "failure_variant": "unsaved/empty log handling",
+        "recovery_variant": "resume or discard session",
+        "source_mutation_required": true,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/my-jefit"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-progress-history",
+        "priority": "P1",
+        "role": "free-member",
+        "purpose": "Open progress/history and inspect workout logs, records, body metrics",
+        "preconditions": "seeded populated logs",
+        "starting_url": "https://www.jefit.com/my-jefit",
+        "steps": "Progress -> logs/records/metrics views",
+        "expected_result": "populated history with newest item exposing status/detail/edit",
+        "failure_variant": "empty state for new account",
+        "recovery_variant": "route back to workouts",
+        "source_mutation_required": false,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/my-jefit"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-settings-profile",
+        "priority": "P1",
+        "role": "free-member",
+        "purpose": "Manage profile, units, privacy, notifications/reminders, goals, security settings",
+        "preconditions": "signed in",
+        "starting_url": "https://www.jefit.com/my-jefit",
+        "steps": "Settings -> edit profile/units/goal/notification preferences -> save",
+        "expected_result": "saved values persist and display",
+        "failure_variant": "validation on invalid values",
+        "recovery_variant": "inline correction",
+        "source_mutation_required": true,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/my-jefit"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-community",
+        "priority": "P2",
+        "role": "free-member",
+        "purpose": "Use community/feed/routine-sharing features",
+        "preconditions": "signed in",
+        "starting_url": "https://www.jefit.com/community",
+        "steps": "community views (My Circle, Q&A, Popular)",
+        "expected_result": "community content visible; sharing controls per source behavior",
+        "failure_variant": "permission prompt when signed out",
+        "recovery_variant": "route to sign-in",
+        "source_mutation_required": false,
+        "evidence": "directly-observed (public shell)",
+        "evidence_urls": ["https://www.jefit.com/community"],
+        "confidence": "medium"
+      },
+      {
+        "id": "j-support-help",
+        "priority": "P1",
+        "role": "anonymous",
+        "purpose": "Reach help/support/FAQ guidance including subscription support",
+        "preconditions": "none",
+        "starting_url": "https://www.jefit.com/support",
+        "steps": "support -> FAQ categories -> subscription support",
+        "expected_result": "guidance reachable without private data",
+        "failure_variant": "n/a",
+        "recovery_variant": "n/a",
+        "source_mutation_required": false,
+        "evidence": "directly-observed",
+        "evidence_urls": ["https://www.jefit.com/support", "https://www.jefit.com/support/faq"],
+        "confidence": "high"
+      },
+      {
+        "id": "j-error-recovery",
+        "priority": "P1",
+        "role": "anonymous",
+        "purpose": "No-results search state, non-existent deep link not-found view, signed-out permission prompts",
+        "preconditions": "none",
+        "starting_url": "https://www.jefit.com/exercises",
+        "steps": "impossible filter -> no-results + clear; bogus deep link -> branded not-found preserving navigation; protected action signed out -> prompt",
+        "expected_result": "graceful recovery routes",
+        "failure_variant": "n/a (this is the failure family)",
+        "recovery_variant": "route back to collections",
+        "source_mutation_required": false,
+        "evidence": "structural-only",
+        "evidence_urls": ["https://www.jefit.com/exercises"],
+        "confidence": "medium"
+      }
+    ],
+    "page_families": [
+      { "id": "marketing-public", "routes": ["/", "/elite", "/coach", "/about-us", "/ai-workout-tracker", "/community", "/press-media", "/terms-of-use", "/privacy-policy", "/ip-notice-process"], "note": "initial scope; source capture must correct; anonymous / client-redirects to /signup" },
+      { "id": "discovery", "routes": ["/exercises", "/exercises/<id>/<slug>", "/routines", "/routines/<id>/<slug>"], "note": "list + filter + pagination + detail" },
+      { "id": "creation-edit", "routes": ["/build-routine"], "note": "routine builder; authenticated save" },
+      { "id": "auth", "routes": ["/login", "/signup", "password recovery view"], "note": "signup is a multi-step onboarding questionnaire ending in account creation; login panel directly observed" },
+      { "id": "member-app", "routes": ["/my-jefit (Discover, Progress, Workouts, Exercises, Settings)"], "note": "authenticated dashboard; exact routes frozen from authenticated capture" },
+      { "id": "membership-checkout", "routes": ["/elite", "upgrade/checkout flow (host TBD from capture)"], "note": "Elite monthly/annual purchase; Stripe-backed on web" },
+      { "id": "support", "routes": ["/support", "/support/faq"], "note": "email-only contact; subscription support links" },
+      { "id": "error-recovery", "routes": ["branded not-found", "no-results states", "signed-out permission prompts"], "note": "" }
+    ],
+    "deterministic_seed_plan": {
+      "test_roles": ["anonymous", "free-member (seeded account)", "elite-member (seeded upgraded account)", "isolation-actor (second seeded account)"],
+      "core_entities": {
+        "exercises": "representative catalog subset preserving muscle-group/equipment filter coverage and pagination (density preserved, count reduced)",
+        "routines": "public routine catalog subset + one member-owned custom routine",
+        "workout_sessions": "populated logs for seeded member incl. newest item with status/detail/edit",
+        "body_metrics_goals": "seeded metrics and one active goal",
+        "membership_orders": "one Elite annual sandbox order (approved) + declined + retryable scenarios",
+        "notifications": "default reminder preferences"
+      },
+      "states": ["empty (fresh account)", "populated", "validation-failure", "permission-failure (signed out)", "payment declined/retry", "success/confirmation"],
+      "isolation_actor": "second seeded account proving cross-account isolation",
+      "density": "enough entities for realistic list density and at least one pagination boundary",
+      "note": "synthetic data only; no real users or source-account content"
+    },
+    "external_services": [
+      { "service": "Stripe (web subscription billing/checkout)", "evidence": "structural-only (billing-portal link on /support; checkout host TBD)", "local_adapter_needed": true, "external_side_effect": true, "user_authorization_required": true, "runtime_zero_remote": true },
+      { "service": "Google / Apple identity providers (Sign in with Google / Apple)", "evidence": "directly-observed on login panel", "local_adapter_needed": true, "external_side_effect": true, "user_authorization_required": true, "runtime_zero_remote": true },
+      { "service": "Consent manager + opt-in analytics (vendor unverified)", "evidence": "directly-observed banner", "local_adapter_needed": false, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true },
+      { "service": "Apple App Store / Google Play (app links, IAP management)", "evidence": "directly-observed links", "local_adapter_needed": false, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true },
+      { "service": "WordPress blog (/blog)", "evidence": "structural-only (robots.txt wp-admin)", "local_adapter_needed": false, "external_side_effect": false, "user_authorization_required": false, "runtime_zero_remote": true }
+    ]
+  },
+  "authority": {
+    "authentication_access": "user-performs-login-in-local-chrome; agent explores the authenticated session autonomously per entry-prompt logged-in-session authorization",
+    "credentials_persisted": false,
+    "authorized_source_mutations": [
+      "user-performed registration/login and in-account entity creation/edit/delete for state construction (per entry-prompt logged-in-session authorization); agent-side in-account business-entity construction within that session"
+    ],
+    "requested_source_mutations": [],
+    "real_email_authorized": false,
+    "stripe_test_authorized": false,
+    "live_payment_authorized": false,
+    "push_authorized": false,
+    "pr_authorized": false,
+    "public_deployment_authorized": false,
+    "rights_or_redistribution_status": "unknown",
+    "notes": "User confirmed 2026-08-18: user registers/logs in personally; deployment dry-run only; Meetup lines in the original paste are out of scope. Real Elite checkout is never submitted on the source site."
+  },
+  "trace_acquisition": {
+    "mode": "adaptive",
+    "agent_must_initiate": true,
+    "text_ownership": "human-only",
+    "human_trace_texts": [
+      { "human_trace_text_id": "ht-01", "text": "Open JEFIT's public entry page and use its primary navigation to reach the section for health records and actions; verify the destination heading and canonical path are visible.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 13", "status": "confirmed" },
+      { "human_trace_text_id": "ht-02", "text": "On Jefit, register a free account, then upgrade to the Elite annual membership plan on the web app and complete the payment flow Confirm the created or saved item appears in its destination view with the requested values.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 14", "status": "confirmed" },
+      { "human_trace_text_id": "ht-03", "text": "Create/sign in to a jefit fitness account and complete basic profile.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 15", "status": "confirmed" },
+      { "human_trace_text_id": "ht-04", "text": "Search/browse jefit exercises or workout routines by muscle group/equipment/goal.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 16", "status": "confirmed" },
+      { "human_trace_text_id": "ht-05", "text": "Open a jefit workout/routine and inspect exercises, sets/reps, instructions, and community ratings.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 17", "status": "confirmed" },
+      { "human_trace_text_id": "ht-06", "text": "Create a custom workout/routine on jefit and add multiple exercises.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 18", "status": "confirmed" },
+      { "human_trace_text_id": "ht-07", "text": "Set or edit sets, reps, weight/time, rest, notes, and exercise order in a jefit routine.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 19", "status": "confirmed" },
+      { "human_trace_text_id": "ht-08", "text": "Start/log a workout in jefit and record completed exercise values.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 20", "status": "confirmed" },
+      { "human_trace_text_id": "ht-09", "text": "Open jefit progress/history and inspect workout logs, personal records, or body metrics.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 21", "status": "confirmed" },
+      { "human_trace_text_id": "ht-10", "text": "Set or update a fitness goal or training preference in jefit.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 22", "status": "confirmed" },
+      { "human_trace_text_id": "ht-11", "text": "Use available jefit community/friend/feed or routine-sharing features.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 23", "status": "confirmed" },
+      { "human_trace_text_id": "ht-12", "text": "Configure jefit workout reminders or notification preferences.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 24", "status": "confirmed" },
+      { "human_trace_text_id": "ht-13", "text": "Open jefit premium/Elite plan flow and review upgrade/payment/cancel options.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 25", "status": "confirmed" },
+      { "human_trace_text_id": "ht-14", "text": "Manage jefit profile, units, privacy, data, and security settings.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 26", "status": "confirmed" },
+      { "human_trace_text_id": "ht-15", "text": "Search JEFIT for `zzzz-no-match-websitebench`, or apply an impossible public filter when discovery is browse-only, and verify a no-results message plus a route back to available health records and actions.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 27", "status": "confirmed" },
+      { "human_trace_text_id": "ht-16", "text": "Open JEFIT's sign-in entry, verify the username or email field and the available password or identity-provider choices, then return without submitting credentials.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 28", "status": "confirmed" },
+      { "human_trace_text_id": "ht-17", "text": "Open JEFIT's account-registration entry and verify the visible identity fields, terms links, and verification guidance without creating an account.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 29", "status": "confirmed" },
+      { "human_trace_text_id": "ht-18", "text": "From JEFIT's sign-in surface, open password recovery and verify the reset-address field, validation guidance, and return-to-sign-in link without sending a reset message.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 30", "status": "confirmed" },
+      { "human_trace_text_id": "ht-19", "text": "With seeded offline data present, open JEFIT's account history for health records and actions; verify the newest item exposes its status, detail, edit or cancellation options, and a route back to the relevant collection.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 31", "status": "confirmed" },
+      { "human_trace_text_id": "ht-20", "text": "Open a JEFIT action for health records and actions with required fields empty or while signed out and verify inline validation or a permission prompt identifies what must be corrected before continuation.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 32", "status": "confirmed" },
+      { "human_trace_text_id": "ht-21", "text": "Open JEFIT's public help, support, or contact entry and verify a user can reach guidance for health records and actions, account access, and failed actions without exposing private account data.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 33", "status": "confirmed" },
+      { "human_trace_text_id": "ht-22", "text": "Open a non-existent JEFIT deep link and verify a branded not-found or recovery view preserves primary navigation and provides a safe route back to health records and actions.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 34", "status": "confirmed" },
+      { "human_trace_text_id": "ht-23", "text": "Starting at JEFIT's public entry, complete task 539: On Jefit, register a free account, then upgrade to the Elite annual membership plan on the web app and complete the payment flow Confirm the created or saved item appears in its destination view with the requested values.", "provided_at": "2026-08-18T13:30:23Z", "source": "initial-user-input", "source_ref": "note.md line 35; task 539", "status": "confirmed" }
+    ],
+    "trace_candidates": [
+      {
+        "candidate_id": "tc-auth-populated",
+        "agent_suggested_scope": "User registers a throwaway free account in local Chrome (synthetic identity), completes onboarding, then hands the session to the agent for autonomous authenticated capture: dashboard, routine creation/edit, workout logging, progress, settings, notifications, community.",
+        "role": "free-member",
+        "why_needed": "/my-jefit and all member flows are unobservable anonymously ('Failed to load data'); registration is a source mutation reserved to the human",
+        "uncertainty_resolved": ["signup final account-creation fields and verification guidance", "dashboard structure and member routes", "routine save semantics", "workout logging flow", "settings/notifications surfaces"],
+        "expected_coverage": ["ht-02", "ht-03", "ht-06", "ht-07", "ht-08", "ht-09", "ht-10", "ht-11", "ht-12", "ht-14", "ht-17", "ht-19", "ht-20", "ht-23"],
+        "requires_authentication": true,
+        "requires_source_mutation": true,
+        "evidence_priority": "P0",
+        "human_trace_text_id": "ht-02",
+        "text_status": "confirmed"
+      },
+      {
+        "candidate_id": "tc-elite-checkout-ui",
+        "agent_suggested_scope": "Within the authenticated session, open the Elite annual upgrade flow and capture checkout UI states up to but never through payment submission; no card data entered.",
+        "role": "free-member",
+        "why_needed": "Task-539 payment flow UI (fields, copy, provider host, cancel/back behavior) is only visible authenticated; real payment prohibited",
+        "uncertainty_resolved": ["checkout host and page structure", "plan-selection state", "cancel/return routes"],
+        "expected_coverage": ["ht-13", "ht-02", "ht-23"],
+        "requires_authentication": true,
+        "requires_source_mutation": false,
+        "evidence_priority": "P0",
+        "human_trace_text_id": "ht-13",
+        "text_status": "confirmed"
+      }
+    ],
+    "requested_traces": [
+      {
+        "request_id": "rq-1",
+        "requested_at": "2026-08-18",
+        "content": "single combined handoff: user registers throwaway free account + logs in in local Chrome; optional task-539 demo to payment page; optional existing-Elite question",
+        "outcome": "user replied 'logged in' same day; registration and login performed by user in the agent-visible local Chrome window"
+      }
+    ],
+    "completed_traces": [
+      {
+        "trace_id": "tr-auth-login-r1",
+        "candidate_id": "tc-auth-populated",
+        "human_trace_text_id": "ht-02",
+        "side": "source",
+        "environment": "human-local",
+        "session_status": "complete",
+        "establishes": ["registered free account exists (role free-member verified: /my-jefit dashboard, sidebar Discover/Progress/Workouts/Exercises/Settings, account menu, 'Upgrade to Elite' card)", "member route set /my-jefit{,/progress,/workouts,/exercises,/settings,/qa,/popular}"],
+        "does_not_establish": ["pixels at frozen viewports (refrozen by capture passes)", "signup questionnaire full step order (user completed it unobserved)"],
+        "credential_segment": "not-recorded",
+        "note": "login/registration performed personally by the user; credentials never seen or stored by the agent"
+      },
+      {
+        "trace_id": "tr-elite-checkout-r1",
+        "candidate_id": "tc-elite-checkout-ui",
+        "human_trace_text_id": "ht-13",
+        "side": "source",
+        "environment": "capture",
+        "session_status": "complete",
+        "establishes": ["in-app plan modal (Basic Included / Elite $12.99 Buy plan / Elite Annual $69.99->$52.49 Buy plan; links /elite/checkout?isMyJefit=true&sub={monthly,yearly})", "checkout is Stripe-hosted (checkout.stripe.com, live session, merchant 'Jefit, Inc.')", "yearly checkout: 'Subscribe to JEFIT Elite Subscription', coupon 25%OffFirstYear (25% off for a year), currency toggle CAD/USD with exchange-rate note, Apple Pay, email prefilled, card/name/country/postal fields, Subscribe button, ToS/authorization copy", "cancel/back returns to https://www.jefit.com/my-jefit/settings", "settings Account tab = membership destination view: tabs Account/Profile/Privacy/Data Controls/Integrations; Username/Email(+Unverified/Resend Verification Link)/Password rows; 'Account Type: Free'; 'Upgrade your account' Monthly $12.99 / Yearly $69.99 ('Everything in Elite with a 55% discount')"],
+        "does_not_establish": ["post-payment Elite-active settings state (payment never submitted)", "webhook/entitlement semantics"],
+        "credential_segment": "not-recorded",
+        "note": "no card data entered; Subscribe never clicked; artifacts under git-ignored source-auth-scratch/2026-08-18.jefit-auth-r1/"
+      },
+      {
+        "trace_id": "tr-member-walk-r1",
+        "candidate_id": "tc-auth-populated",
+        "human_trace_text_id": "ht-02",
+        "side": "source",
+        "environment": "capture",
+        "session_status": "complete",
+        "establishes": ["29 authenticated states (screenshots + DOM) under source-auth-scratch/2026-08-18.jefit-auth-r1/", "settings tabs incl. Profile (units/level/goal), Privacy (visibility + Email Preferences switches = notification prefs), Data Controls, Integrations (Strava)", "progress family: /progress/history calendar + day panel + '+ Add session' Workout Log modal (web logging exists), /photos, /insights, /body-stats", "workouts: signup auto-creates 'New Routine'; Create Plan is instant server-side create -> /workouts/edit?id=<id> autosaving Routine Builder; plan card menu Edit/Set current/Printable/Delete; no web Start Workout", "member exercises: Custom tab (0/3 free limit) + database /exercises/find + detail with gif", "community: Q&A/'Ask a Question +', Popular, Create Post dialog (not posted)", "chrome: Sync Info modal, Get App menu, account menu (Settings/Sign out/Light mode)"],
+        "does_not_establish": ["pixels at frozen viewports (member visual frames captured separately)", "post-payment states"],
+        "credential_segment": "not-recorded",
+        "note": "mutations (authorized in-account state construction): routine 'Strength Base 3-Day' (bench/squat/deadlift; one set edited 45x5/90s) + one logged session Aug 18 (bench 25 lbs x 8). Source quirks recorded: React controlled inputs append on fill; saved list renders auto-created plan twice; empty routine name silently ignored."
+      }
+    ],
+    "remaining_material_uncertainties": [
+      "post-payment Elite confirmation view and Elite-active settings state (real payment never performed; user has no existing Elite account reported)",
+      "signup account-creation step fields after the onboarding questionnaire (anonymous questionnaire walk pending; stops before identity entry)"
+    ]
+  },
+  "trajectory_recording": {
+    "channel": "human-local-chrome",
+    "note": "formal websitebench-browser-trajectory recorder could not attach: the session Chrome exposes pipe-based CDP only (no TCP debug port). Structural trajectory evidence comes from agent-driven capture walks; recorded honestly as a coverage limitation.",
+    "recordings": [],
+    "clone_side_recordings": [],
+    "two_sided_findings": []
+  },
+  "field_evidence": [
+    { "field": "canonical_url", "value": "https://www.jefit.com/", "evidence_urls": ["https://jefit.com/", "https://www.jefit.com/robots.txt"], "observation": "robots.txt and sitemap use www host; jefit.com serves same content; exact redirect chain to be pinned in capture", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "site_id", "value": "jefit", "evidence_urls": ["https://www.jefit.com/"], "observation": "brand component of registrable domain; matches [a-z0-9][a-z0-9-]*; no repo collision", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "display_name", "value": "JEFIT", "evidence_urls": ["https://www.jefit.com/"], "observation": "header logo wordmark 'JEFIT' directly observed in browser; og:site_name absent (null)", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "purpose", "value": "workout planning/tracking with Elite membership", "evidence_urls": ["https://www.jefit.com/", "https://www.jefit.com/elite"], "observation": "home title 'Your Ultimate Workout Planner & Tracking App for Progress'; hero 'Track & Plan Workouts'; Elite tiers on /elite", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "locale", "value": "en-US", "evidence_urls": ["https://www.jefit.com/"], "observation": "html lang='en' directly observed via script; USD pricing; US app storefront", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "timezone", "value": "Etc/UTC", "evidence_urls": [], "observation": "no explicit source timezone policy observed", "kind": "inferred", "confidence": "low", "refreeze_in_capture": true },
+    { "field": "viewports", "value": "1440x900 desktop, 390x844 mobile", "evidence_urls": [], "observation": "initial anchors per workflow default; real breakpoints frozen during capture", "kind": "structural-only", "confidence": "medium", "refreeze_in_capture": true },
+    { "field": "entry-behavior", "value": "conflicting observations: / rendered marketing homepage in 3 later loads (incl. fresh incognito) but client-redirected to /signup (login panel) in 2 earlier first-visit loads", "evidence_urls": ["https://www.jefit.com/"], "observation": "13:28 UTC: both local Chrome and Playwright first visits redirected / -> /signup; ~14:00 UTC recon: / serves marketing homepage signed-in, signed-out incognito, and with ?noredirect. Frozen from the formal capture run; both observations retained", "kind": "directly-observed", "confidence": "medium", "refreeze_in_capture": true },
+    { "field": "not-found-behavior", "value": "unbranded server 404 (title '404 Not Found', 'Not Found / The requested URL was not found on this server.', no site chrome)", "evidence_urls": ["https://www.jefit.com/zzzz-no-match-websitebench"], "observation": "unknown paths do not fall through to the SPA; /index.html behaves identically", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "ratings-absence", "value": "no ratings sections on exercise or routine detail pages; no download counts on routine detail", "evidence_urls": ["https://www.jefit.com/exercises/2/barbell-bench-press", "https://www.jefit.com/routines/19113/6-weeks-to-six-pack-abs"], "observation": "trace ht-05 mentions 'community ratings'; the live source has none — clone reproduces source, gap disclosed against the trace text", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "elite-pricing", "value": "Basic free; Elite $12.99 monthly; Elite Annual $52.49 first year then $69.99/yr", "evidence_urls": ["https://www.jefit.com/elite"], "observation": "three-tier pricing table with 'Buy plan' CTAs; '60% discount when paid annually' copy reproduced verbatim despite arithmetic inconsistency", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "login-panel", "value": "Username or email + Password, Forgot Password?, Log In, 'New to JEFIT? Sign up', Or continue with Google/Apple", "evidence_urls": ["https://www.jefit.com/signup"], "observation": "directly observed rendered panel + cookie banner ('We value your privacy', Customize Settings, Accept)", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "signup-onboarding", "value": "multi-step questionnaire (e.g. goal weight spinbutton with KG unit and Continue; 'What is a perfect length of a workout for you?' options 15 min / Up to 30 mins / 1 hour / I'll do whatever it takes) with progress bar and back control", "evidence_urls": ["https://www.jefit.com/signup"], "observation": "directly observed two steps; full step sequence and final account-creation fields not yet frozen", "kind": "directly-observed", "confidence": "medium", "refreeze_in_capture": true },
+    { "field": "payments-provider", "value": "Stripe hosted checkout (checkout.stripe.com), merchant 'Jefit, Inc.'", "evidence_urls": ["https://www.jefit.com/elite/checkout?isMyJefit=true&sub=yearly", "https://www.jefit.com/support"], "observation": "authenticated capture 2026-08-18: /elite/checkout redirects to Stripe-hosted checkout; coupon 25%OffFirstYear; CAD/USD toggle (currency geo-localized); cancel returns to /my-jefit/settings", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": false },
+    { "field": "membership-destination-view", "value": "/my-jefit/settings Account tab: 'Account Type' row + 'Upgrade your account' cards", "evidence_urls": ["https://www.jefit.com/my-jefit/settings"], "observation": "directly observed as Stripe cancel-return target; shows Free account type, Monthly $12.99 and Yearly $69.99 ('55% discount') upgrade cards, email verification state", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true },
+    { "field": "member-routes", "value": "/my-jefit, /my-jefit/progress, /my-jefit/workouts, /my-jefit/exercises, /my-jefit/settings, /my-jefit/qa, /my-jefit/popular", "evidence_urls": ["https://www.jefit.com/my-jefit"], "observation": "sidebar + tab hrefs directly observed in authenticated session", "kind": "directly-observed", "confidence": "high", "refreeze_in_capture": true }
+  ],
+  "unresolved": [
+    "clone currency baseline: source geo-localizes checkout currency (CAD shown in Canada with USD toggle); clone freezes en-US/USD baseline matching /elite public pricing — decision recorded, verify against capture evidence",
+    "whether anonymous real browsers can reach the marketing homepage at / under any condition (currently redirected to /signup); clone entry behavior will follow directly observed browser evidence",
+    "consent-manager and analytics vendor identities",
+    "full signup questionnaire step order and final account-creation fields",
+    "Elite checkout embedded vs hosted shape and cancel/return semantics",
+    "post-payment confirmation view (payment never submitted on source)"
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {
+      "id": "home",
+      "route_pattern": "/",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Marketing landing page (client-rendered SPA). Entry behavior varied across observations: direct marketing render (dominant, 3 loads incl. incognito) vs one-time client redirect to /signup; frozen from formal capture."
+    },
+    {
+      "id": "elite",
+      "route_pattern": "/elite",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Pricing: Basic Free (Included) / Elite $12.99 monthly / Elite Annual $69.99 struck to $52.49 first year; 'Buy plan' CTAs; testimonials band."
+    },
+    {
+      "id": "elite-checkout",
+      "route_pattern": "/elite/checkout",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "yearly",
+        "monthly",
+        "success",
+        "declined",
+        "retry"
+      ],
+      "note": "Query isMyJefit,sub={monthly,yearly}. Source redirects to Stripe-hosted checkout (checkout.stripe.com, coupon 25%OffFirstYear, cancel returns to /my-jefit/settings). Clone serves a clone-local checkout continuation with local-sandbox scenarios; success/declined/retry states are clone-local business behavior."
+    },
+    {
+      "id": "exercises",
+      "route_pattern": "/exercises",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded",
+        "filtered",
+        "no-results",
+        "page-2"
+      ],
+      "note": "1295 exercises; muscle (11) + equipment (12) filters are client-side state (no query param); pagination /exercises?page=N (72 pages); search box 'Search exercises'; 0 EXERCISES FOUND empty grid on impossible filter combo. Pagination emits both ?page=0 and ?page=1; last page 72 holds 17 cards (EA2)."
+    },
+    {
+      "id": "exercise-detail",
+      "route_pattern": "/exercises/<id>/<slug>",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Sections: alternative-exercises rail, H1 + 'Try it out', TARGET MUSCLE GROUPS / EQUIPMENT / DIFFICULTY / EXERCISE TYPE / LOG TYPE pills, Instructions, explore-by grids. No ratings section exists on source."
+    },
+    {
+      "id": "routines",
+      "route_pattern": "/routines",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded",
+        "sort-views",
+        "sort-latest"
+      ],
+      "note": "Quick category cards (beginner/home/gym/men/women/muscle-building/fat-burning/leg), Sort by Most Downloaded/Most Viewed/Latest, card meta '{N} days \u00b7 {Focus} \u00b7 {Level}'. Sort clicks set real query params: Most Viewed -> ?sort=views, Latest -> ?sort=last_updated (EA2). Category pages render 10 cards each."
+    },
+    {
+      "id": "routines-category",
+      "route_pattern": "/routines/<category>",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Category browse pages linked from quick cards."
+    },
+    {
+      "id": "routine-detail",
+      "route_pattern": "/routines/<id>/<slug>",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Tag pills, Share + Download buttons, Plan Details with VIEW ALL, Routine detail with Edit Routine and day cards (Est. min, N exercises, Sets x Reps rows), Featured plans carousel. No visible ratings/download counts on source."
+    },
+    {
+      "id": "build-routine",
+      "route_pattern": "/build-routine",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "validation-error"
+      ],
+      "note": "Public anonymous routine builder (name, Focus/Level/Day tag radios, description, Add Day, exercise library rail with muscle/equipment dropdowns, empty-day copy 'This day is empty'). Logged-in visits redirect to /my-jefit/workouts/edit?id=..."
+    },
+    {
+      "id": "login",
+      "route_pattern": "/login",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "validation-error",
+        "redirect-authenticated"
+      ],
+      "note": "H1 Log In; username-or-email + password; Forgot Password? link; 'New to JEFIT? Sign up'; 'Or continue with' Google/Apple/Facebook. Authenticated visits client-redirect to /my-jefit. Protected routes redirect here as /login?redirect=<path>."
+    },
+    {
+      "id": "forgot-password",
+      "route_pattern": "/login/forgot-password",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "validation-error",
+        "sent"
+      ],
+      "note": "H1 Reset Password; email field; 'Send reset link' button; 'Log in' return link. Reset mail is modeled via seam purposes; never sent for real."
+    },
+    {
+      "id": "signup",
+      "route_pattern": "/signup",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded",
+        "questionnaire-step",
+        "account-create",
+        "validation-error"
+      ],
+      "note": "Multi-step onboarding questionnaire (progress bar, back control; observed steps incl. goal-weight spinbutton KG + Continue; workout-length options) ending in account creation. Full step order pending anonymous interaction capture; account-create fields pending (user registered unobserved)."
+    },
+    {
+      "id": "support",
+      "route_pattern": "/support",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Contact us (support@jefit.com), Subscription support (iOS/Android/Web management links), Technical support & Bug reports."
+    },
+    {
+      "id": "support-faq",
+      "route_pattern": "/support/faq",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Non-collapsed numbered Q&A under category headings (Basic Features, Elite, Iron Points, Contest, Social, Instant Workout, BodyMap, Progressive Overload (New!), Load Progression Engine, Year in Review 2025)."
+    },
+    {
+      "id": "my-jefit",
+      "route_pattern": "/my-jefit",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "discover-empty",
+        "create-post-dialog",
+        "sync-info-modal",
+        "getapp-menu",
+        "account-menu",
+        "plan-upgrade-modal"
+      ],
+      "note": "Member dashboard (My Circle tab); sidebar Discover/Progress/Workouts/Exercises/Settings + Get App menu (iOS/Android), Sync Info modal ('tap the Sync button in the app's Progress tab'), Upgrade to Elite card -> plan modal, account menu (Settings / Sign out / Light mode). Signed out: client redirect to /login?redirect=%2Fmy-jefit%3F."
+    },
+    {
+      "id": "my-jefit-qa",
+      "route_pattern": "/my-jefit/qa",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Q&A feed; 'Ask a Question +' button; search; post cards with Likes/Comments/Share; 'Show More' pager."
+    },
+    {
+      "id": "my-jefit-popular",
+      "route_pattern": "/my-jefit/popular",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Popular feed; 'Create Post +'; posts include shared Training Summary cards and Featured Badges."
+    },
+    {
+      "id": "my-jefit-progress",
+      "route_pattern": "/my-jefit/progress/history",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "empty",
+        "log-modal",
+        "populated"
+      ],
+      "note": "/my-jefit/progress redirects here. Calendar + day panel (tabs Logs/Progress Photos/Body Stats/Notes), '+ Add session' opens the Workout Log modal (Start/End time, exercise library) \u2014 this IS web workout logging; persisted session shows Training Summary (timers, Complete, Volume, records, per-set rows)."
+    },
+    {
+      "id": "my-jefit-progress-photos",
+      "route_pattern": "/my-jefit/progress/photos",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "empty"
+      ],
+      "note": "'Progress Media', Upload Media button, 'No progress media found.'"
+    },
+    {
+      "id": "my-jefit-progress-insights",
+      "route_pattern": "/my-jefit/progress/insights",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "empty",
+        "populated"
+      ],
+      "note": "Period buttons 7/14 Days, 1/3/6 Months, All Time, Custom; tabs Overview/Exercises; empty copy 'No workouts found in this period. Start logging to see your insights!'"
+    },
+    {
+      "id": "my-jefit-body-stats",
+      "route_pattern": "/my-jefit/progress/body-stats",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "empty",
+        "populated"
+      ],
+      "note": "Current/Goal/Progress table for Weight, Body Fat, and 10 measurements; per-stat pages /my-jefit/progress/body-stats/<stat>; 'Edit stat' button. Covers goals (ht-10)."
+    },
+    {
+      "id": "my-jefit-workouts",
+      "route_pattern": "/my-jefit/workouts",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "initial",
+        "populated",
+        "plan-menu"
+      ],
+      "note": "'My Plans' tab: signup auto-creates a 'New Routine' Current Plan; 'Create Plan' instantly creates a plan server-side and opens the editor; card '...' menu: Edit Plan / Set as current plan / Printable Version / Delete. No web Start Workout \u2014 logging lives on progress/history. Sub-nav My Plans / Find Plan."
+    },
+    {
+      "id": "my-jefit-workouts-edit",
+      "route_pattern": "/my-jefit/workouts/edit",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "editor",
+        "first-run-modal"
+      ],
+      "note": "Query id=<plan-id>. Routine Builder: name textbox, collapsed More settings (Focus/Level/Day tag/description), Add Day, per-exercise Set/Weight(lbs)/Reps/Rest columns (defaults 3x 10lbs x8, 60s), exercise library rail with 'Add <name>' buttons. AUTOSAVES; 'Save' is an anchor back to the plans list; empty name silently keeps prior name (no validation error on source)."
+    },
+    {
+      "id": "my-jefit-exercises",
+      "route_pattern": "/my-jefit/exercises",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "custom-empty",
+        "database",
+        "filters-panel",
+        "detail"
+      ],
+      "note": "Default tab Custom Exercises ('Create custom exercise (0/3)' free-tier limit, empty state); Exercise Database tab at /my-jefit/exercises/find (1295 found, ?page=N, Filters slide-over: Muscle/Difficulty/Equipment/Exercise Type); detail /my-jefit/exercises/<id>/<slug> with exercise gif + stills."
+    },
+    {
+      "id": "my-jefit-settings",
+      "route_pattern": "/my-jefit/settings",
+      "priority": "p0",
+      "purpose_edge": "primary",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "member"
+      ],
+      "states": [
+        "account",
+        "profile",
+        "privacy",
+        "data-controls",
+        "integrations",
+        "elite-active"
+      ],
+      "note": "Tabs are client-side buttons (URL unchanged): Account (Username/Change, Email + Unverified/Resend Verification Link, Password/Change, Account Type, 'Upgrade your account' Monthly/Yearly cards -> /elite/checkout) \u2014 the task-539 membership destination view; Profile (photo, birthday, gender, unit system Imperial/Metric, workout level, top goal Maintaining/Bulking/Cutting/Strength); Privacy (visibility selects Everyone/Members/Friends/Myself Only + 'Email Preferences' switches Training Reports/Promotional Emails/Product Tips = the notification preferences); Data Controls (Export .csv, Delete Data, Delete Account); Integrations (Strava Manage). elite-active is clone-local post-payment behavior (source post-payment state unavailable: payment never performed)."
+    },
+    {
+      "id": "about-us",
+      "route_pattern": "/about-us",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "ai-workout-tracker",
+      "route_pattern": "/ai-workout-tracker",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "adaptive-plan",
+      "route_pattern": "/ai-workout-tracker/adaptive-plan",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "use-case",
+      "route_pattern": "/use-case",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "watch",
+      "route_pattern": "/watch",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "coach",
+      "route_pattern": "/coach",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "our-story",
+      "route_pattern": "/our-story",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "community",
+      "route_pattern": "/community",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Legacy site template with its own nav/footer/cookie UI and horizontal overflow (source property, reproduced as observed)."
+    },
+    {
+      "id": "blog",
+      "route_pattern": "/blog",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Blog index only; individual posts (900+) are out of frozen scope (omit class, recorded in coverage)."
+    },
+    {
+      "id": "terms-of-use",
+      "route_pattern": "/terms-of-use",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "privacy-policy",
+      "route_pattern": "/privacy-policy",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "ip-notice-process",
+      "route_pattern": "/ip-notice-process",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "press-media",
+      "route_pattern": "/press-media",
+      "priority": "p2",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "not-found",
+      "route_pattern": "/__any-unmatched-path",
+      "priority": "p1",
+      "purpose_edge": "supporting",
+      "evidence_kind": "directly-observed",
+      "local_destination": true,
+      "roles": [
+        "visitor",
+        "member"
+      ],
+      "states": [
+        "loaded"
+      ],
+      "note": "Source serves an UNBRANDED server-level 404 ('Not Found / The requested URL was not found on this server.', title '404 Not Found', no site chrome). Clone reproduces this faithfully; unknown paths do not fall through to the SPA."
+    }
+  ]
+}
