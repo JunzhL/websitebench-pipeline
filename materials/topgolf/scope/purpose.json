@@ -1,0 +1,13 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "frozen",
+  "purpose_id": "bay-reservation",
+  "statement": "Let public visitors discover Topgolf venues and let local guests or phone-verified customers review, confirm, and manage simulated bay reservations without external effects.",
+  "primary_actor_ids": ["public-visitor", "guest-customer", "verified-customer"],
+  "mainline_journey_ids": ["experience.discover", "booking.task-886"],
+  "boundary_journey_ids": ["auth.phone", "reservation.history", "favorite.persistence"],
+  "actors": [{"id":"public-visitor","state":"anonymous"},{"id":"guest-customer","state":"anonymous site-local session"},{"id":"verified-customer","state":"locally phone-verified account"}],
+  "simulations": ["Phone verification stays local and sends no SMS.","All payment outcomes use local-sandbox and accept no payment credentials.","All reservations affect only the site-bound local SQLite database."],
+  "release_authority": {"diagnostic_only":true,"maintainer_judgment_required":true},
+  "out_of_scope": ["Source slot holds, bookings, changes, or cancellations","Real SMS, email, payments, messages, reviews, push, PR, or deployment","Email/password registration, password recovery, ratings, reviews, and generalized sorting","Claims of source checkout or confirmation visual fidelity"]
+}

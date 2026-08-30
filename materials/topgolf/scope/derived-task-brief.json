@@ -1,0 +1,17 @@
+{
+  "schema_version":"websitebench.task-brief.v1",
+  "site_id":"topgolf",
+  "source_url":"https://topgolf.com/us/",
+  "status":"confirmed-for-local-implementation",
+  "purpose":"Help guests find venues, inspect the golf and hospitality experience, and reserve hitting bays.",
+  "primary_roles":["public visitor","guest checkout customer","phone-verified customer","reservation owner"],
+  "page_families":["public home and experience","location discovery and venue detail","booking selection and checkout","phone verification and reservation history","FAQ, contact, and branded recovery"],
+  "core_objects":["venue","bay","availability slot","session duration","player profile","favorite","reservation","payment attempt"],
+  "recommended_scope":{"p0":["public navigation to Experience","nearest-location proof","Cleveland detail and booking","task 886 review and confirmation","validation and payment failures"],"p1":["local phone verification","guest checkout and player lookup","favorites","reservation management","no-results, help, 404, ownership, and service failures"],"p2":["source-unverified reviews, past reservations, wallet rendering, and mobile visual variants"]},
+  "login_or_manual_states":["phone verification and history require local verified identity","checkout and management use a local contract because source completion was prohibited"],
+  "real_world_side_effects":["source holds and bookings","SMS","payments","email and push","provider contact and reviews","PR and deployment"],
+  "authorized_read_post_paths":["/topgolf.protobuf.booking.BootstrapService/getInitialData","/topgolf.protobuf.venues.VenueService/getVenueInfo","/argos/api/getSpecialHours","/topgolf.protobuf.booking.AvailabilityService/getCalendar","/topgolf.protobuf.booking.AvailabilityService/getAvailability"],
+  "evidence_gaps":["final source tax and membership fee","source checkout total and confirmation","verified player","favorite persistence","location no-results wording","past reservations and reviews","mobile and tablet visuals","Expanded Task Inventory workbook unavailable locally"],
+  "agent_suggested_scope":"Evidence-led P0 and P1 only. Do not invent email/password registration, password recovery, ratings, reviews, general sorting, or production effects.",
+  "human_traces":[{"id":"ht-001","task_id":886,"status":"confirmed","text":"Starting at Topgolf's public entry, complete task 886: On Topgolf, book a bay for 4 players at the Topgolf nearest to downtown Toronto, the upcoming Saturday afternoon between 2–4 PM, select the longest available session Confirm the final review or confirmation view visibly reflects the requested choices and totals."}]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version":"websitebench.offline-clone.interaction-ledger.v1",
+  "site_id":"topgolf",
+  "entries":[
+    {"route":"/us/","selector":"nav.nav a[href='/us/experience/']","visible_text":"PLAY","raw_markup":"href=\"/us/experience/\"","form_action":null},
+    {"route":"/us/locations/","selector":"[data-location-search] button[type=submit]","visible_text":"Search locations","raw_markup":"data-location-search","form_action":"client GET /api/venues?q={query}"},
+    {"route":"/us/cleveland/","selector":"aside a[href='/us/cleveland/plan-a-visit/']","visible_text":"Book a Bay","raw_markup":"href=\"/us/cleveland/plan-a-visit/\"","form_action":null},
+    {"route":"/us/cleveland/plan-a-visit/","selector":"[data-slot='cle-20260905-1400-120']","visible_text":"120 minutes","raw_markup":"data-slot=\"cle-20260905-1400-120\"","form_action":"client session selection only"},
+    {"route":"/booking/review","selector":"[data-booking-form] button[type=submit]","visible_text":"Book Now in Local Sandbox","raw_markup":"data-booking-form","form_action":"POST /api/reservations"},
+    {"route":"/account/login","selector":"[data-phone-start] button[type=submit]","visible_text":"Send Code","raw_markup":"data-phone-start","form_action":"POST /api/auth/phone/start"},
+    {"route":"/reservations/{id}","selector":"[data-cancel]","visible_text":"Cancel and refund local reservation","raw_markup":"data-cancel","form_action":"POST /api/reservations/{id}/actions"}
+  ]
+}

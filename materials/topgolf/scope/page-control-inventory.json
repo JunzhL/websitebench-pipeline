@@ -1,0 +1,14 @@
+{
+  "schema_version":"websitebench.page-control-inventory.v1",
+  "site_id":"topgolf",
+  "pages":[
+    {"family":"public entry","routes":["/us/"],"controls":["PLAY navigation","location","date","time","players","search"]},
+    {"family":"experience","routes":["/us/experience/"],"controls":["find a location","book a bay","experience links"]},
+    {"family":"locations","routes":["/us/locations/"],"controls":["location query","venue cards","no-results recovery"]},
+    {"family":"venue detail","routes":["/us/cleveland/","/us/cleveland/plan-a-visit/"],"controls":["favorite","pricing","hours","policies","amenities","gallery","directions","book a bay"]},
+    {"family":"booking","routes":["local /booking/review","local /booking/confirmation/{id}"],"controls":["date","time","players","duration","guest details","accessibility request","terms","payment scenario","book now"]},
+    {"family":"identity and history","routes":["/account/login","/reservations","/reservations/{id}"],"controls":["country","mobile number","send code","verification code","sign out","detail","reschedule","cancel"]},
+    {"family":"support and recovery","routes":["/us/faq/","/us/company/contact-us/","branded 404"],"controls":["FAQ links","booking guidance","account guidance","return to locations"]}
+  ],
+  "external_services":["book.topgolf.com booking application","source analytics and Sentry blocked from clone runtime","source payment wallets unavailable in local clone"]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {"id":"home","route_pattern":"/us/","priority":"p0","purpose_edge":"entry","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded","validation"]},
+    {"id":"experience","route_pattern":"/us/experience/","priority":"p0","purpose_edge":"mainline","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"locations","route_pattern":"/us/locations/","priority":"p0","purpose_edge":"mainline","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["distance-ranked","no-results"]},
+    {"id":"venue","route_pattern":"/us/cleveland/","priority":"p0","purpose_edge":"mainline","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor","guest-customer"],"states":["loaded","favorite"]},
+    {"id":"plan-visit","route_pattern":"/us/cleveland/plan-a-visit/","priority":"p0","purpose_edge":"mainline","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["availability","unavailable-duration"]},
+    {"id":"booking-review","route_pattern":"/booking/review","priority":"p0","purpose_edge":"mainline","evidence_kind":"manual-local-contract","local_destination":true,"roles":["guest-customer"],"states":["required-fields","ready","declined","retryable","expired"]},
+    {"id":"booking-confirmation","route_pattern":"/booking/confirmation/{reservation_id}","priority":"p0","purpose_edge":"mainline","evidence_kind":"manual-local-contract","local_destination":true,"roles":["guest-customer","verified-customer"],"states":["confirmed","persisted"]},
+    {"id":"phone-login","route_pattern":"/account/login","priority":"p1","purpose_edge":"boundary","evidence_kind":"direct-and-local-simulation","local_destination":true,"roles":["public-visitor"],"states":["loaded","challenge","validation","locked"]},
+    {"id":"history","route_pattern":"/reservations","priority":"p1","purpose_edge":"boundary","evidence_kind":"structural-and-local-contract","local_destination":true,"roles":["public-visitor","verified-customer"],"states":["upcoming","empty","signed-out"]},
+    {"id":"reservation-detail","route_pattern":"/reservations/{reservation_id}","priority":"p1","purpose_edge":"boundary","evidence_kind":"structural-and-local-contract","local_destination":true,"roles":["verified-customer"],"states":["detail","reschedule","cancelled","forbidden"]},
+    {"id":"faq","route_pattern":"/us/faq/","priority":"p1","purpose_edge":"support","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"contact","route_pattern":"/us/company/contact-us/","priority":"p1","purpose_edge":"support","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"not-found","route_pattern":"/*","priority":"p1","purpose_edge":"recovery","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["http-404"]}
+  ]
+}

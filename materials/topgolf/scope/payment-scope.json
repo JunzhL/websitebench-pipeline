@@ -1,0 +1,47 @@
+{
+  "schema_version":"websitebench.payment-scope.v2",
+  "proposal_id":"topgolf-payment-scope-1",
+  "site_id":"topgolf",
+  "display_name":"Topgolf bay-reservation offline clone",
+  "current_inputs":[
+    {"path":"materials/topgolf/clone.yaml","sha256":"282025cd544bcad01a1afb06ac5ba40d966e3c96e309935ca2fac6953f9df2dd"},
+    {"path":"materials/topgolf/scope/purpose.json","sha256":"398d33a6c23180b1cc07908be9118cd1ef64a91d778f19a39101f86ecefe2810"},
+    {"path":"materials/topgolf/scope/invariants.json","sha256":"38a4a080a138e4a1bc334e9bc25cccf7b24205b5c5f4b8e405d3940c6ad7ed66"},
+    {"path":"materials/topgolf/scope/backend-semantic.json","sha256":"ad1020c1b0875cf6cb2a83350d0a7d7199f354bd41501814d61dc1d19b6747ea"},
+    {"path":"materials/topgolf/backend/runtime.json","sha256":"8f8bd5153eceff7939bd6d8fa34b80cdaad97a6d074e482aec2cd1157d0a82c7"},
+    {"path":"materials/topgolf/backend/model.json","sha256":"f3b6e81c91b3c750916e5b2135ab73b977cb6c83cb618c66818f9085fa3c8995"},
+    {"path":"websitebench/capability-packs/payment/pack.json","sha256":"2ef2f60b52cf4088709efb4053c5d545b79cf2ffd165c0f5db4e4fdfcf72b986"}
+  ],
+  "profile_change":{"audit_mode":"manifest-native-audit","overlay_pack_id":"payment","candidate_blocker_id":null,"retained_blocker_ids":[]},
+  "frozen_journeys":[
+    {"id":"booking.task-886","description":"One local guest selects Cleveland, September 5, 2026 at 2:00 PM for four players, one bay, and 120 minutes, reviews the server-owned $88.00 USD sandbox total, and sees confirmation persist after refresh."},
+    {"id":"booking.payment.retry","description":"A declined or retryable sandbox attempt creates no reservation. A later approved scenario can create exactly one owner-bound local reservation."}
+  ],
+  "frozen_entities":["browser-session","phone-identity","venue","availability-slot","reservation","payment-flow","payment-attempt"],
+  "payment_contract":{
+    "default_adapter":"local-sandbox",
+    "optional_adapter":null,
+    "live_payments_allowed":false,
+    "accepted_client_payment_input":"opaque-scenario-id-only",
+    "credential_fields_allowed":false,
+    "currency":"USD",
+    "amount_source":"Server-side integer minor units from the persisted bay-session price. Party size remains one to six players in one bay and does not multiply the per-bay price. The client cannot submit amount, tax, fee, currency, owner, or fingerprint.",
+    "owner":"Site-local account subject or anonymous browser session digest resolved from the opaque host-only session cookie.",
+    "fingerprint":"SHA-256 over canonical JSON containing slot id, party size, one bay, and the server-resolved owner key.",
+    "final_commit":"consume_approval(), final availability recheck, bay increment, and reservation insertion run on one SiteBackend SQLite connection and transaction. Failure leaves no reservation and does not reserve a bay."
+  },
+  "mail_brand":{"shared_bare_sender_domain_allowed":true,"sender_display_name":"Topgolf","purposes":[],"must_differ_from":[{"site_id":"aspca-pet-insurance","fields":["sender_display_name"]}]},
+  "site_isolation":{"database_scope":"site-exclusive","site_binding_required":true,"session_cookie_name":"__Host-websitebench-topgolf-session","redis_namespace":"site/topgolf","webhook_secret_scope":"site-exclusive","cross_site_account_sharing":false},
+  "proof_obligations":[
+    "Only opaque configured sandbox scenario ids are accepted. Payment credentials and client-supplied payment facts are rejected.",
+    "Amount is 8800 integer USD minor units derived from the persisted selected session.",
+    "Duplicate approved submissions converge to one reservation and one consumed approval.",
+    "Declined and retryable attempts create no reservation.",
+    "A stale slot fingerprint or foreign owner cannot consume approval or read a reservation.",
+    "Approval consumption, availability recheck, bay increment, and reservation insertion roll back together after final-state failure.",
+    "Reset clears local payment and reservation rows while restart retains site binding.",
+    "The only adapter is local-sandbox. Stripe test, live payment, SMS, email, and production requests remain unavailable.",
+    "Cross-site databases, identities, sessions, payment flows, attempts, and reservations cannot be shared or replayed."
+  ],
+  "scope_subject_sha256":"0ad7df9cd6b5db7709e81c00f1f24f9d0b2f0b36c487e46ba9f523ea5a4ad6e4"
+}

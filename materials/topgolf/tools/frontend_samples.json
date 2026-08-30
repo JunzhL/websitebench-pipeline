@@ -1,0 +1,17 @@
+{
+  "schema_version":"topgolf.frontend-samples.v1",
+  "app_file":"clone/app.py",
+  "app_attr":"app",
+  "module_name":"topgolf_clone_app",
+  "evidence":"scope/browser-task-886.json and artifacts/offline-clone/browser-task-886-report.json",
+  "checks":[
+    {"id":"booking.home","url":"/us/","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.experience","url":"/us/experience/","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.locations","url":"/us/locations/","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.venue","url":"/us/cleveland/","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.plan-visit","url":"/us/cleveland/plan-a-visit/","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.review","url":"/booking/review","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.login","url":"/account/login","method":"get","expect_status":200,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.not-found","url":"/zzzz-no-such-topgolf-page","method":"get","expect_status":404,"expect_contains":["Topgolf | Play, Eat, Drink, Have Fun"],"expect_not_contains":["NotImplementedError"],"session":false}
+  ]
+}

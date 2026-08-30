@@ -1,0 +1,10 @@
+{
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "frozen",
+  "invariants": [
+    {"id":"booking.task-886-selection","statement":"Task 886 selects Cleveland, September 5, 2026 at 2:00 PM, four players, one bay, and the available 120-minute session.","priority":"p0","journey_ids":["booking.task-886"],"coverage_dimension_ids":["task-886"],"acceptance_obligations":["Review and confirmation display every selected option."]},
+    {"id":"booking.server-total","statement":"Server-owned review and confirmation use the observed $88 gameplay amount as an $88.00 USD local-sandbox total while disclosing unavailable source tax and membership fees.","priority":"p0","journey_ids":["booking.task-886"],"coverage_dimension_ids":["task-886"],"acceptance_obligations":["Client-supplied amount, currency, owner, and fingerprint are rejected."]},
+    {"id":"effects.production-zero","statement":"Source slot holds, bookings, SMS, email, real payment, messages, reviews, push, PR, deployment, and production network effects remain zero.","priority":"p0","journey_ids":["booking.task-886","auth.phone"],"coverage_dimension_ids":["network-invariants"],"acceptance_obligations":["Runtime CSP permits same-origin requests only.","Booking accepts opaque local-sandbox scenario IDs and rejects payment credentials."],"zero_effect_contract":{"expected_remote_request_count":0,"expected_remote_effect_count":0,"expected_failed_booking_delta":0,"applies_to_every_bound_journey":true}},
+    {"id":"ownership.site-bound","statement":"Favorites and reservations are visible and mutable only to their owning local session or verified account.","priority":"p1","journey_ids":["reservation.history","favorite.persistence"],"coverage_dimension_ids":["account-lifecycle"],"acceptance_obligations":["Foreign owners receive no object data or mutation authority."]}
+  ]
+}

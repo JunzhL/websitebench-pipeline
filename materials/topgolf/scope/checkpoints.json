@@ -1,0 +1,20 @@
+{
+  "schema_version": "offline-clone.checkpoints.v1",
+  "status": "draft",
+  "site_id": "topgolf",
+  "capture_id": "2026-08-30.topgolf-r1",
+  "viewports": {"desktop":{"width":1440,"height":900},"mobile":{"width":390,"height":844}},
+  "checkpoints": [
+    {"id":"home.desktop","route_id":"home","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"experience.desktop","route_id":"experience","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"locations.desktop","route_id":"locations","state":"distance-ranked","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"venue.desktop","route_id":"venue","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"plan-visit.desktop","route_id":"plan-visit","state":"availability","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"plan-visit.mobile","route_id":"plan-visit","state":"availability","role":"public-visitor","viewport":"mobile","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"phone-login.desktop","route_id":"phone-login","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"history-signed-out.desktop","route_id":"history","state":"signed-out","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"local-contract"},
+    {"id":"contact.desktop","route_id":"contact","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"not-found.desktop","route_id":"not-found","state":"http-404","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"}
+  ],
+  "evidence_gap": "No retained source raster exists for final checkout, confirmation, verified player, reviews, past reservations, or mobile states. Those states receive functional evidence only."
+}
