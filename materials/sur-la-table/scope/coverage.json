@@ -1,0 +1,9 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {"id":"public-discovery","label":"Public class discovery states","unit":"state","category":"functional","required_evidence_kinds":["browser"],"required_items":["home","results","filtered","no-results","detail","sold-out","http-410"],"satisfied_items":[]},
+    {"id":"account-boundaries","label":"Local account access boundaries","unit":"state","category":"functional","required_evidence_kinds":["browser"],"required_items":["login-validation","registration-guidance","recovery-guidance","signed-out-booking"],"satisfied_items":[]},
+    {"id":"booking-lifecycle","label":"Booking lifecycle and isolation","unit":"transition","category":"semantic","required_evidence_kinds":["browser","migration"],"required_items":["review","confirm","idempotent-replay","decline","retry","history","reschedule","cancel","foreign-owner"],"satisfied_items":[]}
+  ]
+}

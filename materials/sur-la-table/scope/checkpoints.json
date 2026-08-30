@@ -1,0 +1,23 @@
+{
+  "schema_version": "offline-clone.checkpoints.v1",
+  "status": "draft",
+  "site_id": "sur-la-table",
+  "capture_id": "2026-08-30.sur-la-table-r1",
+  "viewports": {"desktop":{"width":1440,"height":900},"mobile":{"width":390,"height":844}},
+  "checkpoints": [
+    {"id":"home.desktop","route_id":"home","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"classes-landing.desktop","route_id":"classes-landing","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"class-results.desktop","route_id":"class-results","state":"results","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"class-results.mobile","route_id":"class-results","state":"results","role":"public-visitor","viewport":"mobile","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"class-results-no-match.desktop","route_id":"class-results","state":"no-results","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-local-recovery"},
+    {"id":"class-detail.desktop","route_id":"class-detail","state":"available","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"locations.desktop","route_id":"locations","state":"distance-ranked","role":"public-visitor","viewport":"desktop","priority":"p0","evidence_kind":"direct-no-source-raster"},
+    {"id":"login.desktop","route_id":"login","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"registration.desktop","route_id":"registration","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"recovery.desktop","route_id":"recovery","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"history-signed-out.desktop","route_id":"history","state":"signed-out","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"local-contract"},
+    {"id":"contact.desktop","route_id":"contact","state":"loaded","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"},
+    {"id":"not-found.desktop","route_id":"not-found","state":"http-410","role":"public-visitor","viewport":"desktop","priority":"p1","evidence_kind":"direct-no-source-raster"}
+  ],
+  "evidence_gap": "No source screenshots were retained for this site, so checkpoints are functional browser evidence only and status remains draft."
+}

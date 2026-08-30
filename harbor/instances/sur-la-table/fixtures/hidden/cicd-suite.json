@@ -1,0 +1,6 @@
+{
+  "checks": [],
+  "schema_version": "websitebench.harbor.cicd-suite.v1",
+  "site_id": "sur-la-table",
+  "suite_id": "sur-la-table-cicd"
+}

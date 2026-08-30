@@ -1,0 +1,47 @@
+{
+  "schema_version":"websitebench.payment-scope.v2",
+  "proposal_id":"sur-la-table-payment-scope-1",
+  "site_id":"sur-la-table",
+  "display_name":"Sur La Table cooking-class offline clone",
+  "current_inputs":[
+    {"path":"materials/sur-la-table/clone.yaml","sha256":"681a996df8bd006f2b0ec2221ea6115290f619cbbea8ff7d76de428e29e47767"},
+    {"path":"materials/sur-la-table/scope/purpose.json","sha256":"2f9aee99363f9dd60e3543bd5edc169833f528209504f77410d74aca145e9238"},
+    {"path":"materials/sur-la-table/scope/invariants.json","sha256":"cc5fc8b5f0074c0a77e1036d2ac6666b8efe9b0f17fbb89b1ae8dac13e31d676"},
+    {"path":"materials/sur-la-table/scope/backend-semantic.json","sha256":"aa9abad482127d0885467684b501354467b4178633e8acbfaf65749424e5e488"},
+    {"path":"materials/sur-la-table/backend/runtime.json","sha256":"99aec336d1bc17582cec4cd4eab5c0303d1236ea17cb7f58413cedbe6c5176ae"},
+    {"path":"materials/sur-la-table/backend/model.json","sha256":"4b875ba3f53ab5ce2dc5cd1722488a1a5ea7445988e64f0dc4b0e6dcec0055df"},
+    {"path":"websitebench/capability-packs/payment/pack.json","sha256":"2ef2f60b52cf4088709efb4053c5d545b79cf2ffd165c0f5db4e4fdfcf72b986"}
+  ],
+  "profile_change":{"audit_mode":"manifest-native-audit","overlay_pack_id":"payment","candidate_blocker_id":null,"retained_blocker_ids":[]},
+  "frozen_journeys":[
+    {"id":"booking.task-883","description":"One authenticated local account reviews a server-priced cooking class for one guest, selects only an opaque sandbox outcome, confirms the booking, and sees the $99.00 USD total persist after refresh."},
+    {"id":"booking.payment.retry","description":"A declined or retryable sandbox attempt creates no booking. A later approved scenario against the same server-owned class snapshot can create exactly one account-owned booking."}
+  ],
+  "frozen_entities":["local-account","store","class-definition","class-session","booking","payment-flow","payment-attempt"],
+  "payment_contract":{
+    "default_adapter":"local-sandbox",
+    "optional_adapter":null,
+    "live_payments_allowed":false,
+    "accepted_client_payment_input":"opaque-scenario-id-only",
+    "credential_fields_allowed":false,
+    "currency":"USD",
+    "amount_source":"Server-side integer minor units equal to persisted class-session price multiplied by validated party size. The client cannot submit an amount, tax, fee, deposit, discount, or gratuity.",
+    "owner":"Authenticated site-local account subject resolved from the opaque session cookie.",
+    "fingerprint":"SHA-256 over canonical JSON containing class session id, party size, and authenticated account subject.",
+    "final_commit":"consume_approval(), capacity reservation, and booking insertion run on one SiteBackend SQLite connection and transaction. Failure leaves no booking and does not reserve capacity."
+  },
+  "mail_brand":{"shared_bare_sender_domain_allowed":true,"sender_display_name":"Sur La Table","purposes":["registration","password-reset"],"must_differ_from":[{"site_id":"aspca-pet-insurance","fields":["sender_display_name","subject","lead","body","footer"]}]},
+  "site_isolation":{"database_scope":"site-exclusive","site_binding_required":true,"session_cookie_name":"__Host-websitebench-sur-la-table-session","redis_namespace":"site/sur-la-table","webhook_secret_scope":"site-exclusive","cross_site_account_sharing":false},
+  "proof_obligations":[
+    "Only opaque configured sandbox scenario ids are accepted. Payment credentials and client-supplied amounts are rejected.",
+    "Amounts use integer USD minor units derived from class price and party size on the server.",
+    "Duplicate approved submissions converge to one booking and one consumed approval.",
+    "Declined and retryable attempts create no booking, while a later approval can create the single valid booking.",
+    "A stale class fingerprint or foreign owner cannot consume an approval or read a booking.",
+    "Approval consumption, capacity reservation, and booking insertion roll back together after final-state failure.",
+    "Reset clears site-local payment and booking rows, while restart retains them with site binding.",
+    "The only adapter is local-sandbox. Stripe test, live payment, SMTP, and production mail requests remain unavailable.",
+    "Cross-site databases, accounts, sessions, payment flows, attempts, and bookings cannot be shared or replayed."
+  ],
+  "scope_subject_sha256":"60d16d3b0a39f6932c760b92857a1fae1c8f6970753d33751c790dfd12013a8b"
+}

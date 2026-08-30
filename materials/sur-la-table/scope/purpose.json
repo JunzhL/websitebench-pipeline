@@ -1,0 +1,13 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "frozen",
+  "purpose_id": "class-booking",
+  "statement": "Let public visitors discover in-store cooking classes and let local registered customers review, confirm, and manage simulated account-owned bookings without external effects.",
+  "primary_actor_ids": ["public-visitor", "local-customer"],
+  "mainline_journey_ids": ["classes.discover", "booking.task-883"],
+  "boundary_journey_ids": ["auth.entry", "booking.manage", "recovery.public"],
+  "actors": [{"id":"public-visitor","state":"anonymous"},{"id":"local-customer","state":"authenticated local fixture or registered account"}],
+  "simulations": ["All email stays in the local outbox.", "All booking payment outcomes use local-sandbox and accept no payment credentials."],
+  "release_authority": {"diagnostic_only": true, "maintainer_judgment_required": true},
+  "out_of_scope": ["Retail product catalog and checkout", "Live payments", "Real email or messages", "Class favorites", "Provider reviews", "Private events and deposits", "Public deployment"]
+}

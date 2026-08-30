@@ -1,0 +1,181 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/sur-la-table/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 1.969277,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": true,
+    "contract_version": "1.8.6",
+    "doctor_green": true,
+    "extension_connected": true,
+    "notes": [],
+    "version": "1.8.6",
+    "version_matches": true
+  },
+  "profile_id": "booking",
+  "profile_label": "sur-la-table booking (derived draft)",
+  "profile_tier": "p0",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "sur-la-table",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "cooking-classes/",
+      "duration_seconds": 0.441837,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "sur-la-table_booking_classes",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Sur La Table Cooking Classes",
+          "key": "visible",
+          "observed": "Sur La Table Cooking Classes",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "booking-classes",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "cooking-classes/in-store-cooking-classes/?q=pasta&availability=available&sort=distance",
+      "duration_seconds": 0.25294,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "sur-la-table_booking_results",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Sur La Table Cooking Classes",
+          "key": "list_contains",
+          "observed": "Sur La Table Cooking Classes",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "booking-results",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "cooking-class/fresh-pasta-workshop-kitchenaid/CFA-10544591?session=pasta-pa-20260926-1300",
+      "duration_seconds": 0.240123,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "sur-la-table_booking_detail",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Sur La Table Cooking Classes",
+          "key": "visible",
+          "observed": "Sur La Table Cooking Classes",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "booking-detail",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "booking/review?session=pasta-pa-20260926-1300&party=1",
+      "duration_seconds": 0.235982,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "sur-la-table_booking_review-signed-out",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Sur La Table Cooking Classes",
+          "key": "visible",
+          "observed": "Sur La Table Cooking Classes",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "booking-review-signed-out",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "zzzz-no-such-sur-la-table-page",
+      "duration_seconds": 0.234073,
+      "error": null,
+      "http_status": 410,
+      "observation_id": "sur-la-table_booking_not-found",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Sur La Table Cooking Classes",
+          "key": "visible",
+          "observed": "Sur La Table Cooking Classes",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "booking-not-found",
+      "tier": "p0"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 5,
+    "steps_total": 5,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:8767",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

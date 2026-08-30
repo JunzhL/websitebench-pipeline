@@ -1,0 +1,85 @@
+{
+  "generated_from": "materials/sur-la-table/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "booking": {
+      "failure_paths": [],
+      "label": "sur-la-table booking (derived draft)",
+      "local_semantics": [
+        "Server total always equals session price in cents multiplied by party size, with no tax, fee, deposit, discount, or gratuity.",
+        "Bookings belong to one authenticated site-local account and cannot oversell a session or be read by another account.",
+        "Source mutation, real email, Stripe test, live payment, messages, push, PR, deployment, and production network effects remain zero."
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [
+        "booking.recovery"
+      ],
+      "steps": [
+        {
+          "command": "state",
+          "id": "booking-classes",
+          "intent": "Exercise clone check booking.classes (GET /cooking-classes/).",
+          "observation_id": "sur-la-table_booking_classes",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Sur La Table Cooking Classes"
+          },
+          "route": "cooking-classes/"
+        },
+        {
+          "command": "state",
+          "id": "booking-results",
+          "intent": "Exercise clone check booking.results (GET /cooking-classes/in-store-cooking-classes/?q=pasta&availability=available&sort=distance).",
+          "observation_id": "sur-la-table_booking_results",
+          "required_state": {
+            "list_contains": "Sur La Table Cooking Classes",
+            "text_absent": "NotImplementedError"
+          },
+          "route": "cooking-classes/in-store-cooking-classes/?q=pasta&availability=available&sort=distance"
+        },
+        {
+          "command": "state",
+          "id": "booking-detail",
+          "intent": "Exercise clone check booking.detail (GET /cooking-class/fresh-pasta-workshop-kitchenaid/CFA-10544591?session=pasta-pa-20260926-1300).",
+          "observation_id": "sur-la-table_booking_detail",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Sur La Table Cooking Classes"
+          },
+          "route": "cooking-class/fresh-pasta-workshop-kitchenaid/CFA-10544591?session=pasta-pa-20260926-1300"
+        },
+        {
+          "command": "state",
+          "id": "booking-review-signed-out",
+          "intent": "Exercise clone check booking.review-signed-out (GET /booking/review?session=pasta-pa-20260926-1300&party=1).",
+          "observation_id": "sur-la-table_booking_review-signed-out",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Sur La Table Cooking Classes"
+          },
+          "route": "booking/review?session=pasta-pa-20260926-1300&party=1"
+        },
+        {
+          "command": "state",
+          "id": "booking-not-found",
+          "intent": "Exercise clone check booking.not-found (GET /zzzz-no-such-sur-la-table-page).",
+          "observation_id": "sur-la-table_booking_not-found",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Sur La Table Cooking Classes"
+          },
+          "route": "zzzz-no-such-sur-la-table-page"
+        }
+      ],
+      "tier": "p0"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "sur-la-table"
+}
