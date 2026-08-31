@@ -1,0 +1,123 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/topgolf/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [
+    "opencli-unavailable: binary not found on PATH",
+    "backend degraded to 'adapter'"
+  ],
+  "duration_seconds": 0.012765,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": false,
+    "connectivity_ok": false,
+    "contract_version": "1.8.6",
+    "doctor_green": false,
+    "extension_connected": false,
+    "notes": [
+      "opencli-unavailable: binary not found on PATH"
+    ],
+    "version": null,
+    "version_matches": false
+  },
+  "profile_id": "booking",
+  "profile_label": "topgolf booking (derived draft)",
+  "profile_tier": "p0",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "topgolf",
+  "status": "failed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "us/",
+      "duration_seconds": 0.001756,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_home",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-home",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "us/experience/",
+      "duration_seconds": 0.001765,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_experience",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-experience",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "us/locations/",
+      "duration_seconds": 0.001576,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_locations",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-locations",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "us/cleveland/",
+      "duration_seconds": 0.001832,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_venue",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-venue",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "us/cleveland/plan-a-visit/",
+      "duration_seconds": 0.001661,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_plan-visit",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-plan-visit",
+      "tier": "p0"
+    },
+    {
+      "command": "state",
+      "declared_route": "booking/review",
+      "duration_seconds": 0.001555,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "topgolf_booking_review",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "booking-review",
+      "tier": "p0"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 0,
+    "steps_total": 6,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:8768",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "offline-clone.journeys.v1",
+  "journeys": [
+    {"id":"experience.discover","actor":"public-visitor","kind":"success","priority":"p0","status":"frozen","evidence_kind":"directly-observed","steps":["Start at /us/.","Use PLAY to open /us/experience/.","Open locations and inspect Cleveland."]},
+    {"id":"booking.task-886","actor":"guest-customer","kind":"success","priority":"p0","status":"frozen","evidence_kind":"mixed-direct-then-local-contract","human_trace_text_id":"ht-001","steps":["Start at /us/ and navigate to Experience.","Confirm Cleveland is the closest observed Topgolf to downtown Toronto.","Choose Saturday, September 5, 2026 at 2:00 PM for four players and one bay.","Compare durations, confirm 60 minutes is unavailable, and select the longest available 120-minute session.","Enter guest details, acknowledge terms and cancellation policy, and review an $88.00 USD local-sandbox total.","Submit the sandbox-approved scenario and verify confirmation persists after refresh."]},
+    {"id":"auth.phone","actor":"public-visitor","kind":"boundary","priority":"p1","status":"frozen","evidence_kind":"direct-and-local-simulation","steps":["Open phone sign-in.","Inspect empty and invalid validation.","Complete local-only verification without SMS.","Sign out."]},
+    {"id":"reservation.history","actor":"verified-customer","kind":"management","priority":"p1","status":"frozen","evidence_kind":"structural-and-local-contract","steps":["Open upcoming reservations.","Inspect newest reservation and ownership boundary.","Reschedule or cancel and verify persistence."]},
+    {"id":"favorite.persistence","actor":"guest-customer","kind":"management","priority":"p1","status":"frozen","evidence_kind":"local-contract","steps":["Favorite Cleveland.","Refresh and verify persistence.","Remove the favorite."]},
+    {"id":"booking.payment-failure","actor":"guest-customer","kind":"failure","priority":"p0","status":"frozen","evidence_kind":"local-contract","steps":["Submit the declined or retryable sandbox outcome.","Remain on review with an actionable error.","Verify no reservation was created."]},
+    {"id":"booking.retry","actor":"guest-customer","kind":"retry","priority":"p0","status":"frozen","evidence_kind":"local-contract","steps":["Return to the server-owned review after a failed outcome.","Select the approved sandbox outcome.","Confirm exactly one reservation."]}
+  ]
+}

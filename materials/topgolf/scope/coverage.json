@@ -1,0 +1,11 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {"id":"public-discovery","label":"Public experience, location, venue, help, and recovery states","unit":"state","category":"functional","required_evidence_kinds":["browser"],"required_items":["home","experience","locations","no-results","venue","faq","contact","404"],"satisfied_items":[]},
+    {"id":"task-886","label":"Task 886 selection and local booking lifecycle","unit":"transition","category":"semantic","required_evidence_kinds":["browser","migration"],"required_items":["review","confirm","refresh","idempotent-replay","decline","retry","unavailable-duration","slot-conflict","expired-session"],"satisfied_items":[]},
+    {"id":"account-lifecycle","label":"Phone identity, favorites, history, and ownership","unit":"transition","category":"semantic","required_evidence_kinds":["browser","migration"],"required_items":["phone-validation","phone-verify","favorite","history","reschedule","cancel","foreign-owner"],"satisfied_items":[]},
+    {"id":"network-invariants","label":"Zero non-same-origin runtime requests and production effects","unit":"journey","category":"network","required_evidence_kinds":["network"],"required_items":["experience.discover","booking.task-886","auth.phone"],"satisfied_items":[]},
+    {"id":"source-gaps","label":"Unavailable source completion and authenticated states","unit":"state","category":"source","required_evidence_kinds":["full-suite"],"required_items":["source-tax","source-member-fee","source-checkout-total","source-confirmation","verified-player","favorite-persistence","reviews","past-reservations","mobile-visuals"],"satisfied_items":[],"rationale":"These remain evidence gaps and receive no source fidelity claim."}
+  ]
+}

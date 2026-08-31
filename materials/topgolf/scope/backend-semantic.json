@@ -1,0 +1,12 @@
+{
+  "schema_version":"websitebench.offline-clone.backend-semantic-suite.v1",
+  "suite_id":"topgolf-booking-ownership",
+  "allowed_origin":"http://127.0.0.1:8768",
+  "timeout_seconds":10,
+  "follow_redirects":false,
+  "invariants":[{"id":"reservation-owner-total","applicability":"applicable","required_polarities":["positive","negative"]}],
+  "cases":[
+    {"id":"public-task-886-quote","invariant_id":"reservation-owner-total","polarity":"positive","actor":"public-browser","steps":[{"id":"session","request":{"method":"GET","path":"/api/session"},"expect":{"status":200,"json_equal":{"/authenticated":false}}},{"id":"quote","request":{"method":"POST","path":"/api/booking/quote","json":{"slot_id":"cle-20260905-1400-120","party_size":4}},"expect":{"status":200,"json_equal":{"/quote/venue_name":"Topgolf Cleveland","/quote/starts_at":"2026-09-05T14:00:00-04:00","/quote/duration_minutes":120,"/quote/party_size":4,"/quote/bay_count":1,"/quote/total_cents":8800,"/quote/currency":"USD","/creates_hold":false}}}]},
+    {"id":"payment-credentials-rejected","invariant_id":"reservation-owner-total","polarity":"negative","actor":"credential-probe","steps":[{"id":"session","request":{"method":"GET","path":"/api/session"},"expect":{"status":200}},{"id":"credential","request":{"method":"POST","path":"/api/reservations","json":{"slot_id":"cle-20260905-1400-120","party_size":4,"first_name":"Probe","last_name":"Player","phone":"416-555-0188","email":"probe@example.test","terms_accepted":true,"scenario_id":"sandbox-approved","idempotency_key":"semantic-card-probe","card_number":"${ENV:WEBSITEBENCH_PAYMENT_PROBE}"}},"expect":{"status":422,"json_equal":{"/error":"Payment facts and credentials are not accepted by this local sandbox."}}}]}
+  ]
+}

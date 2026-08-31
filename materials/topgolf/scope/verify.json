@@ -1,0 +1,21 @@
+{
+  "schema_version":"offline-clone.verify-driver.v1",
+  "site_id":"topgolf",
+  "note":"Anonymous functional walk. Task 886 checkout and phone-verified reservation management also have actor-isolated tests.",
+  "boot":{"argv":["{python}","-m","uvicorn","app:app","--host","127.0.0.1","--port","{port}","--log-level","warning"],"cwd":"clone","env":{}},
+  "prepare":[],
+  "routes":{"home":"/us/","not-found":"/zzzz-no-such-topgolf-page"},
+  "status":{"not-found":404},
+  "states":{
+    "home.loaded":[{"expect":"h1"}],
+    "experience.loaded":[{"goto":"/us/experience/"},{"expect":"h1"},{"expect":".canonical"}],
+    "locations.distance-ranked":[{"goto":"/us/locations/"},{"expect":"[data-location-results]"}],
+    "venue.loaded":[{"goto":"/us/cleveland/"},{"expect":"h1"},{"expect":"[data-favorite]"}],
+    "plan-visit.availability":[{"goto":"/us/cleveland/plan-a-visit/"},{"expect":"[data-slots]"}],
+    "phone-login.loaded":[{"goto":"/account/login"},{"expect":"input[type=tel]"},{"expect":"button[type=submit]"}],
+    "history.signed-out":[{"goto":"/reservations"},{"expect":"a[href='/account/login']"}],
+    "faq.loaded":[{"goto":"/us/faq/"},{"expect":".help-list"}],
+    "contact.loaded":[{"goto":"/us/company/contact-us/"},{"expect":".cards"}],
+    "not-found.http-404":[{"expect":".empty"}]
+  }
+}

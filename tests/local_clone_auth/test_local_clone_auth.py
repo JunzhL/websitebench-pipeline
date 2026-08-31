@@ -216,6 +216,55 @@ def test_external_registration_creates_verified_account_in_site_transaction(
     )
 
 
+def test_externally_verified_identity_creates_resumes_and_rotates_session(
+    store: LocalAuthStore, database: Path
+) -> None:
+    first_session = store.create_anonymous_session()
+    created = store.complete_externally_verified_identity(
+        first_session,
+        provider="phone",
+        external_subject="+14165550188",
+        display_name="Player 0188",
+        subject_factory=lambda _connection, _registration: "player-0188",
+    )
+    assert created["created"] is True
+    assert store.resolve_session(first_session) is None
+    first_account = store.resolve_session(created["session_token"])
+    assert first_account is not None
+    assert first_account["authenticated"] is True
+    assert first_account["account"]["subject_id"] == "player-0188"
+    assert first_account["account"]["email_verified"] == 0
+
+    second_session = store.create_anonymous_session()
+    resumed = store.complete_externally_verified_identity(
+        second_session,
+        provider="phone",
+        external_subject="+14165550188",
+        display_name="Player 0188",
+    )
+    assert resumed["created"] is False
+    assert resumed["account"]["subject_id"] == "player-0188"
+    assert store.resolve_session(second_session) is None
+    assert store.resolve_session(resumed["session_token"])["authenticated"] is True
+    assert store.counts()["local_auth_external_identities"] == 1
+    assert b"+14165550188" not in database.read_bytes()
+
+
+def test_externally_verified_identity_rejects_invalid_provider_without_mutation(
+    store: LocalAuthStore,
+) -> None:
+    session = store.create_anonymous_session()
+    with pytest.raises(AuthValidationError, match="provider"):
+        store.complete_externally_verified_identity(
+            session,
+            provider="Phone Provider",
+            external_subject="+14165550188",
+            display_name="Player 0188",
+        )
+    assert store.counts()["local_auth_accounts"] == 0
+    assert store.counts()["local_auth_external_identities"] == 0
+
+
 def test_invalid_codes_consume_persistent_attempt_budget(store: LocalAuthStore) -> None:
     session = store.create_anonymous_session()
     store.start_registration(

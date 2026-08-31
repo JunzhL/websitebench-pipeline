@@ -1,0 +1,22 @@
+name: diagnostics (topgolf)
+on:
+  pull_request:
+    paths:
+      - materials/topgolf/**
+      - .github/workflows/tests-topgolf.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/topgolf/**
+      - .github/workflows/tests-topgolf.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-topgolf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: topgolf
