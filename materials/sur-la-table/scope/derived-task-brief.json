@@ -1,0 +1,48 @@
+{
+  "schema_version": "websitebench.derived-task-brief.v1",
+  "status": "human-confirmed",
+  "confirmed_at": "2026-08-30",
+  "source_url": "https://www.surlatable.com/",
+  "site_id": "sur-la-table",
+  "target_origin": "https://sur-la-table.website-bench.com",
+  "purpose": "Sur La Table sells kitchen goods and provides bookable cooking classes. This clone covers public class discovery and local account-owned class bookings.",
+  "primary_user_roles": ["anonymous class browser", "local registered cooking-class customer"],
+  "direct_observations": [
+    "Primary navigation exposes Cooking Classes and leads to /cooking-classes/.",
+    "Store discovery ranks locations by distance and supports a cooking-class service filter.",
+    "In-store class results expose date, cuisine, class type, pagination, calendar view, price, seat limits, and sold-out states.",
+    "The observed class detail showed title, description, price, availability, policies, and a (2) Reviews label.",
+    "Sign-in exposes email and password. Registration exposes first name, last name, email, password guidance, an optional marketing choice, Terms, and Privacy links.",
+    "Anonymous access to /order-history redirects to sign-in.",
+    "The cooking-class FAQ states that changes made at least 48 hours before class start can receive a refund, gift card, or exchange. Changes inside 48 hours receive no refund, exchange, or store credit.",
+    "Unknown paths render a branded HTTP 410 recovery view with site navigation."
+  ],
+  "structural_evidence": ["First-party page families include public entry, cooking-class landing, in-store discovery, class detail, locations, account access, order history, help, and recovery.", "Core objects are store, class definition, dated class session, local account, and booking."],
+  "inferences": ["A confirmed booking should belong to one authenticated account and reserve capacity in one dated class session.", "Checkout totals use session price multiplied by party size because no observed evidence supported added tax, fees, deposits, discounts, or gratuity.", "Local rescheduling and cancellation use the public 48-hour policy because source account-management views were inaccessible."],
+  "inaccessible_content": ["Source checkout review, payment, confirmation, authenticated history, reschedule, and cancellation views were inaccessible without making prohibited source mutations.", "Review body text was inaccessible. Only the visible (2) Reviews label is preserved.", "No Expanded Task Inventory workbook or connected Excel session was available."],
+  "agent_suggested_scope": {
+    "p0": ["public class navigation", "location and class discovery", "filters, sorting, availability, and class detail", "one-person local-sandbox booking review and confirmation"],
+    "p1": ["sign-in, registration, and password-recovery entry", "seeded booking history", "reschedule and cancel", "validation, help, no-results recovery, signed-out permission prompts, and branded 410"],
+    "p2_excluded": ["class favorites", "provider messaging and reviews", "broad product checkout", "private events, deposits, and special requests"]
+  },
+  "task_883_fixture": {"closest_store_overall":{"name":"Berkeley","distance_miles":9.2,"qualifying_pasta_session":false},"nearest_matching_store":{"name":"Palo Alto","distance_miles":27.3},"class":"Fresh Pasta Two Ways","starts_at":"2026-09-26T13:00:00-07:00","party_size":1,"unit_price_cents":9900,"subtotal_cents":9900,"total_cents":9900,"currency":"USD"},
+  "human_confirmed_trace_candidates": [
+    {"id":"C01","source":"initial-user-input","text":"Open Sur La Table's public entry page and use its primary navigation to reach the section for hobby-class records and actions; verify the destination heading and canonical path are visible."},
+    {"id":"C03","source":"initial-user-input","text":"Search sur-la-table for an available class/retreat registration by location, date, service/type, or other relevant criteria."},
+    {"id":"C04","source":"initial-user-input","text":"Filter and sort sur-la-table results by rating, price, distance, availability, or service attributes."},
+    {"id":"C05","source":"initial-user-input","text":"Open a class/event page on sur-la-table and inspect description, pricing, reviews, policies, and availability."},
+    {"id":"C06","source":"initial-user-input","text":"Change the date/time or party/service options on sur-la-table and compare available slots."},
+    {"id":"C13","source":"initial-user-input","text":"Reschedule, edit, or cancel an existing sur-la-table booking."},
+    {"id":"C15","source":"initial-user-input","text":"Search Sur La Table for `zzzz-no-match-websitebench`, or apply an impossible public filter when discovery is browse-only, and verify a no-results message plus a route back to available hobby-class records and actions."},
+    {"id":"C16","source":"initial-user-input","text":"Open Sur La Table's sign-in entry, verify the username or email field and the available password or identity-provider choices, then return without submitting credentials."},
+    {"id":"C17","source":"initial-user-input","text":"Open Sur La Table's account-registration entry and verify the visible identity fields, terms links, and verification guidance without creating an account."},
+    {"id":"C18","source":"initial-user-input","text":"From Sur La Table's sign-in surface, open password recovery and verify the reset-address field, validation guidance, and return-to-sign-in link without sending a reset message."},
+    {"id":"C19","source":"initial-user-input","text":"With seeded offline data present, open Sur La Table's account history for hobby-class records and actions; verify the newest item exposes its status, detail, edit or cancellation options, and a route back to the relevant collection."},
+    {"id":"C20","source":"initial-user-input","text":"Open a Sur La Table action for hobby-class records and actions with required fields empty or while signed out and verify inline validation or a permission prompt identifies what must be corrected before continuation."},
+    {"id":"C21","source":"initial-user-input","text":"Open Sur La Table's public help, support, or contact entry and verify a user can reach guidance for hobby-class records and actions, account access, and failed actions without exposing private account data."},
+    {"id":"C22","source":"initial-user-input","text":"Open a non-existent Sur La Table deep link and verify a branded not-found or recovery view preserves primary navigation and provides a safe route back to hobby-class records and actions."},
+    {"id":"C23","source":"initial-user-input","text":"Starting at Sur La Table's public entry, complete task 883: On Sur La Table, register and book an upcoming weekend afternoon in-store cooking class (pasta making) at the closest location to downtown San Francisco for 1 person Confirm the final review or confirmation view visibly reflects the requested choices and totals."}
+  ],
+  "side_effect_boundaries": {"AUTHORIZED_SOURCE_MUTATIONS":[],"REAL_EMAIL_AUTHORIZED":false,"STRIPE_TEST_AUTHORIZED":false,"LIVE_PAYMENT_AUTHORIZED":false,"PUSH_AUTHORIZED":false,"PR_AUTHORIZED":false,"PUBLIC_DEPLOYMENT_AUTHORIZED":false,"RIGHTS_OR_REDISTRIBUTION_STATUS":"unknown"},
+  "remaining_evidence_gaps": ["Human comparison against inaccessible source checkout and account-management states", "Human review of visual fidelity because source screenshots were not captured into this site scope", "Human rights and redistribution decision", "Expanded Task Inventory workbook coverage review"]
+}

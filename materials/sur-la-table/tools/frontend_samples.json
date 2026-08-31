@@ -1,0 +1,14 @@
+{
+  "schema_version":"sur-la-table.frontend-samples.v1",
+  "app_file":"clone/app.py",
+  "app_attr":"app",
+  "module_name":"sur_la_table_clone_app",
+  "evidence":"scope/browser-task-883.json and artifacts/offline-clone/browser-task-883-report.json",
+  "checks":[
+    {"id":"booking.classes","url":"/cooking-classes/","method":"get","expect_status":200,"expect_contains":["Sur La Table Cooking Classes"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.results","url":"/cooking-classes/in-store-cooking-classes/?q=pasta&availability=available&sort=distance","method":"get","expect_status":200,"expect_contains":["Sur La Table Cooking Classes"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.detail","url":"/cooking-class/fresh-pasta-workshop-kitchenaid/CFA-10544591?session=pasta-pa-20260926-1300","method":"get","expect_status":200,"expect_contains":["Sur La Table Cooking Classes"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.review-signed-out","url":"/booking/review?session=pasta-pa-20260926-1300&party=1","method":"get","expect_status":200,"expect_contains":["Sur La Table Cooking Classes"],"expect_not_contains":["NotImplementedError"],"session":false},
+    {"id":"booking.not-found","url":"/zzzz-no-such-sur-la-table-page","method":"get","expect_status":410,"expect_contains":["Sur La Table Cooking Classes"],"expect_not_contains":["NotImplementedError"],"session":false}
+  ]
+}

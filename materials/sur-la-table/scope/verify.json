@@ -1,0 +1,23 @@
+{
+  "schema_version": "offline-clone.verify-driver.v1",
+  "site_id": "sur-la-table",
+  "note": "Anonymous functional walk. Authenticated booking semantics are covered by actor-isolated site tests because the secure local session is not provisioned through the diagnostic session endpoint.",
+  "boot": {"argv":["{python}","-m","uvicorn","app:app","--host","127.0.0.1","--port","{port}","--log-level","warning"],"cwd":"clone","env":{}},
+  "prepare": [],
+  "routes": {"home":"/","not-found":"/zzzz-no-such-sur-la-table-page"},
+  "status": {"not-found":410},
+  "states": {
+    "home.loaded":[{"expect":"h1"}],
+    "classes-landing.loaded":[{"expect":"h1"}],
+    "class-results.results":[{"expect":".cards .card"}],
+    "class-results.no-results":[{"goto":"/cooking-classes/in-store-cooking-classes/?q=zzzz-no-match-websitebench"},{"expect":".empty"}],
+    "class-detail.available":[{"expect":"[data-book]"}],
+    "locations.distance-ranked":[{"expect":".store-grid"}],
+    "login.loaded":[{"expect":"input[type=email]"},{"expect":"input[type=password]"}],
+    "registration.loaded":[{"expect":"input[name=first_name]"},{"expect":"input[name=last_name]"}],
+    "recovery.loaded":[{"expect":"input[type=email]"}],
+    "history.signed-out":[{"expect":"a[href^='/account/login']"}],
+    "contact.loaded":[{"expect":".help-list"}],
+    "not-found.http-410":[{"expect":".not-found"}]
+  }
+}

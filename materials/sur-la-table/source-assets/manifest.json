@@ -1,0 +1,9 @@
+{
+  "schema_version": "offline-clone.assets.v1",
+  "snapshot_id": "sur-la-table-pending",
+  "created_at": "2026-08-30T15:38:43.117891Z",
+  "remote_runtime_policy": "forbidden",
+  "closure_status": "no-assets",
+  "no_assets_reason": "The scoped clone uses code-native layout, gradients, system fonts, and text. It makes no runtime asset or network requests beyond its own CSS and JavaScript.",
+  "assets": []
+}

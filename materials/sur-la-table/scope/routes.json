@@ -1,0 +1,19 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {"id":"home","route_pattern":"/","priority":"p0","purpose_edge":"primary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"classes-landing","route_pattern":"/cooking-classes/","priority":"p0","purpose_edge":"primary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"class-results","route_pattern":"/cooking-classes/in-store-cooking-classes/","priority":"p0","purpose_edge":"primary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["results","filtered","no-results"]},
+    {"id":"class-detail","route_pattern":"/cooking-class/fresh-pasta-workshop-kitchenaid/CFA-10544591","priority":"p0","purpose_edge":"primary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["available","limited","sold-out"]},
+    {"id":"locations","route_pattern":"/locations","priority":"p0","purpose_edge":"supporting","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["distance-ranked"]},
+    {"id":"booking-review","route_pattern":"/booking/review","priority":"p0","purpose_edge":"primary","evidence_kind":"inferred-from-public-class-action","local_destination":true,"roles":["public-visitor","local-customer"],"states":["signed-out","review","validation","declined","retryable"]},
+    {"id":"booking-confirmation","route_pattern":"/booking/confirmation/{booking_id}","priority":"p0","purpose_edge":"primary","evidence_kind":"source-unavailable-local-contract","local_destination":true,"roles":["local-customer"],"states":["confirmed"]},
+    {"id":"login","route_pattern":"/account/login","priority":"p1","purpose_edge":"boundary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded","validation","invalid"]},
+    {"id":"registration","route_pattern":"/account/registration","priority":"p1","purpose_edge":"boundary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded","validation","local-verification"]},
+    {"id":"recovery","route_pattern":"/account/forgot-password","priority":"p1","purpose_edge":"boundary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded","validation","local-only"]},
+    {"id":"history","route_pattern":"/order-history","priority":"p1","purpose_edge":"supporting","evidence_kind":"source-authenticated-unavailable-local-contract","local_destination":true,"roles":["public-visitor","local-customer"],"states":["signed-out","empty","populated","cancelled","rescheduled"]},
+    {"id":"faq","route_pattern":"/cooking-class-faq.html","priority":"p1","purpose_edge":"supporting","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"contact","route_pattern":"/contactus","priority":"p1","purpose_edge":"supporting","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["loaded"]},
+    {"id":"not-found","route_pattern":"/__any-unmatched-path","priority":"p1","purpose_edge":"boundary","evidence_kind":"directly-observed","local_destination":true,"roles":["public-visitor"],"states":["http-410"]}
+  ]
+}

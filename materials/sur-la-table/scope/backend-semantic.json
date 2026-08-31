@@ -1,0 +1,31 @@
+{
+  "schema_version": "websitebench.offline-clone.backend-semantic-suite.v1",
+  "suite_id": "sur-la-table-booking-ownership",
+  "allowed_origin": "http://127.0.0.1:8767",
+  "timeout_seconds": 10,
+  "follow_redirects": false,
+  "invariants": [
+    {"id":"booking-owner-total","applicability":"applicable","required_polarities":["positive","negative"]}
+  ],
+  "cases": [
+    {
+      "id":"public-session-total-fixture",
+      "invariant_id":"booking-owner-total",
+      "polarity":"positive",
+      "actor":"public-browser",
+      "steps":[
+        {"id":"class-detail","request":{"method":"GET","path":"/api/classes/pasta-pa-20260926-1300"},"expect":{"status":200,"json_equal":{"/class/title":"Fresh Pasta Two Ways","/class/store_name":"Palo Alto","/class/price_cents":9900,"/class/distance_miles":27.3,"/class/starts_at":"2026-09-26T13:00:00-07:00"}}},
+        {"id":"signed-out-booking-rejected","request":{"method":"POST","path":"/api/bookings","json":{"session_id":"pasta-pa-20260926-1300","party_size":1,"attendee_name":"Public Guest","attendee_email":"public@example.test","scenario_id":"sandbox-approved","idempotency_key":"semantic-signed-out"}},"expect":{"status":401,"json_equal":{"/error":"Sign in to continue with this booking."}}}
+      ]
+    },
+    {
+      "id":"payment-credentials-rejected-before-effect",
+      "invariant_id":"booking-owner-total",
+      "polarity":"negative",
+      "actor":"credential-probe",
+      "steps":[
+        {"id":"credential-field","request":{"method":"POST","path":"/api/bookings","json":{"session_id":"pasta-pa-20260926-1300","party_size":1,"attendee_name":"Probe Guest","attendee_email":"probe@example.test","scenario_id":"sandbox-approved","idempotency_key":"semantic-card-probe","card_number":"${ENV:WEBSITEBENCH_PAYMENT_PROBE}"}},"expect":{"status":422,"json_equal":{"/error":"Payment credentials are not accepted by this local sandbox."}}}
+      ]
+    }
+  ]
+}

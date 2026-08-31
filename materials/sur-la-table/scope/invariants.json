@@ -1,0 +1,10 @@
+{
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "frozen",
+  "invariants": [
+    {"id":"booking.server-total","statement":"Server total always equals session price in cents multiplied by party size, with no tax, fee, deposit, discount, or gratuity.","priority":"p0","journey_ids":["booking.task-883"],"positive_test_refs":["clone/tests/test_app.py::test_task_883_booking_and_idempotency"],"negative_test_refs":["clone/tests/test_app.py::test_booking_rejects_payment_credentials"]},
+    {"id":"booking.owner-capacity","statement":"Bookings belong to one authenticated site-local account and cannot oversell a session or be read by another account.","priority":"p0","journey_ids":["booking.task-883","booking.manage"],"positive_test_refs":["clone/tests/test_app.py::test_task_883_booking_and_idempotency"],"negative_test_refs":["clone/tests/test_app.py::test_signed_out_booking_is_rejected"]},
+    {"id":"effects.production-zero","statement":"Source mutation, real email, Stripe test, live payment, messages, push, PR, deployment, and production network effects remain zero.","priority":"p0","journey_ids":["booking.task-883","auth.entry"],"acceptance_obligations":["Runtime CSP permits same-origin requests only.","Booking accepts opaque local-sandbox scenario IDs and rejects payment credential fields."],"zero_effect_contract":{"expected_remote_request_count":0,"expected_remote_effect_count":0,"expected_failed_booking_delta":0,"applies_to_every_bound_journey":true}},
+    {"id":"booking.change-window","statement":"Confirmed or rescheduled bookings can change only at least 48 hours before class start; cancelled bookings cannot change.","priority":"p1","journey_ids":["booking.manage"],"positive_test_refs":["clone/tests/test_domain.py::test_reschedule_and_cancel"],"negative_test_refs":["clone/tests/test_domain.py::test_cancelled_booking_cannot_change"]}
+  ]
+}
