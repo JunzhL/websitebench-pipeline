@@ -1,0 +1,22 @@
+name: diagnostics (sur-la-table)
+on:
+  pull_request:
+    paths:
+      - materials/sur-la-table/**
+      - .github/workflows/tests-sur-la-table.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/sur-la-table/**
+      - .github/workflows/tests-sur-la-table.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-sur-la-table-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: sur-la-table
