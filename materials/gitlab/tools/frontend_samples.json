@@ -1,0 +1,107 @@
+{
+  "schema_version": "gitlab.frontend-gate-samples.v1",
+  "app_file": "clone/app.py",
+  "app_attr": "app",
+  "module_name": "gitlab_clone_app",
+  "checks": [
+    {
+      "id": "recovery-and-errors.explore",
+      "url": "/explore/projects",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["gitlab-org / gitlab-runner"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.project",
+      "url": "/gitlab-org/gitlab-runner",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Project information"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.repository",
+      "url": "/gitlab-org/gitlab-runner/-/tree/main",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Files"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.commits",
+      "url": "/gitlab-org/gitlab-runner/-/commits/main",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Commits"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.branches",
+      "url": "/gitlab-org/gitlab-runner/-/branches",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Branches"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.releases",
+      "url": "/gitlab-org/gitlab-runner/-/releases",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["GitLab Runner 19.3.1"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.no-results",
+      "url": "/explore/projects?name=zzzz-no-match-websitebench",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["View all projects"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.sign-in",
+      "url": "/users/sign_in",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Sign in to GitLab"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.sign-up",
+      "url": "/users/sign_up",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Create your GitLab account"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.password-reset",
+      "url": "/users/password/new",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["Reset your password"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.help",
+      "url": "/help",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": ["GitLab help"],
+      "expect_not_contains": ["NotImplementedError"],
+      "session": false
+    }
+  ]
+}

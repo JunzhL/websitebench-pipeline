@@ -1,0 +1,15 @@
+{
+  "schema_version": "offline-clone.contribution-backend-scope.v1",
+  "site_id": "gitlab",
+  "backend_profile": "full",
+  "runtime_required": true,
+  "capabilities": [
+    {"id": "accounts", "applicability": "in-scope", "rationale": "Local verified registration, password sign-in, profile editing, session rotation, and sign-out are required by the supplied tasks."},
+    {"id": "password-recovery", "applicability": "in-scope", "rationale": "Local password recovery uses indistinguishable public responses and the generated WebsiteBench auth runtime."},
+    {"id": "transactional-mail", "applicability": "in-scope", "rationale": "Registration and password-reset verification use the site-branded local-only outbox. Real email is not authorized and no provider is called."},
+    {"id": "orders", "applicability": "not-applicable", "rationale": "GitLab project collaboration tasks create no order analogue."},
+    {"id": "checkout", "applicability": "not-applicable", "rationale": "Pricing is informational. No subscription checkout is implemented."},
+    {"id": "payments", "applicability": "not-applicable", "rationale": "No payment task is in scope. The runtime keeps local-sandbox as its inert default, and the app exposes no payment surface."},
+    {"id": "database", "applicability": "in-scope", "rationale": "Accounts, sessions, projects, repositories, branches, commits, issues, merge requests, pipelines, memberships, settings, and activity require one site-bound SQLite database."}
+  ]
+}

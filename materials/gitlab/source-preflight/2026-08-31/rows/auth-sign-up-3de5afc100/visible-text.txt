@@ -1,0 +1,24 @@
+Already have an account? Sign in
+
+Get Started with GitLab
+First name
+Last name
+Username
+Company email
+
+We recommend a work email address.
+
+Password
+I agree that GitLab can contact me by email about its product, services, or events.
+Continue
+
+By clicking Continue or registering through a third party you accept the GitLab Terms of Use and acknowledge the Privacy Statement and Cookie Policy.
+
+or
+ Continue with Google
+ Continue with GitHub
+
+Want to host GitLab on your servers? Start a Self-Managed trial
+
+English
+Ship software faster

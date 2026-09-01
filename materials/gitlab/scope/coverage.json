@@ -1,0 +1,39 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {
+      "id": "public-surfaces",
+      "label": "Public marketing and project route states",
+      "unit": "route-state",
+      "category": "reachability",
+      "source_evidence_kind": "direct",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["browser", "network", "visual"],
+      "required_items": ["home.loaded.desktop", "explore.loaded.desktop", "explore.no-results.desktop", "project.public.desktop", "repository.files.desktop", "commits.loaded.desktop", "branches.list.desktop", "releases.loaded.desktop", "help.loaded.desktop", "not-found.not-found.desktop"],
+      "satisfied_items": []
+    },
+    {
+      "id": "auth-states",
+      "label": "Local account and recovery states",
+      "unit": "route-state",
+      "category": "authentication",
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["browser", "full-suite"],
+      "required_items": ["sign-in.form.desktop", "sign-up.form.desktop", "password-reset.form.desktop", "dashboard.authenticated.desktop"],
+      "satisfied_items": []
+    },
+    {
+      "id": "local-mutations",
+      "label": "Stateful developer collaboration transitions",
+      "unit": "journey",
+      "category": "semantics",
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["browser", "migration", "full-suite"],
+      "required_items": ["repository-change", "issue-to-merge-request", "pipeline-inspection", "project-administration"],
+      "satisfied_items": []
+    }
+  ]
+}

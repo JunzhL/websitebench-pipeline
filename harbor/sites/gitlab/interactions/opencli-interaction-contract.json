@@ -1,0 +1,151 @@
+{
+  "generated_from": "materials/gitlab/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "recovery-and-errors": {
+      "failure_paths": [],
+      "label": "gitlab recovery and errors (derived draft)",
+      "local_semantics": [
+        "Every runtime page, asset, form, and data mutation stays on the loopback clone and makes zero source-site requests.",
+        "Accounts, sessions, verification challenges, and password resets use the generated site-bound WebsiteBench backend runtime.",
+        "Repeated registration and password-reset submissions reuse an active flow instead of issuing another mail request; a real cooldown response includes…"
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [
+        "recovery-and-errors"
+      ],
+      "steps": [
+        {
+          "command": "state",
+          "id": "recovery-and-errors-explore",
+          "intent": "Exercise clone check recovery-and-errors.explore (GET /explore/projects).",
+          "observation_id": "gitlab_recovery-and-errors_explore",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "gitlab-org / gitlab-runner"
+          },
+          "route": "explore/projects"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-project",
+          "intent": "Exercise clone check recovery-and-errors.project (GET /gitlab-org/gitlab-runner).",
+          "observation_id": "gitlab_recovery-and-errors_project",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Project information"
+          },
+          "route": "gitlab-org/gitlab-runner"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-repository",
+          "intent": "Exercise clone check recovery-and-errors.repository (GET /gitlab-org/gitlab-runner/-/tree/main).",
+          "observation_id": "gitlab_recovery-and-errors_repository",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Files"
+          },
+          "route": "gitlab-org/gitlab-runner/-/tree/main"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-commits",
+          "intent": "Exercise clone check recovery-and-errors.commits (GET /gitlab-org/gitlab-runner/-/commits/main).",
+          "observation_id": "gitlab_recovery-and-errors_commits",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Commits"
+          },
+          "route": "gitlab-org/gitlab-runner/-/commits/main"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-branches",
+          "intent": "Exercise clone check recovery-and-errors.branches (GET /gitlab-org/gitlab-runner/-/branches).",
+          "observation_id": "gitlab_recovery-and-errors_branches",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Branches"
+          },
+          "route": "gitlab-org/gitlab-runner/-/branches"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-releases",
+          "intent": "Exercise clone check recovery-and-errors.releases (GET /gitlab-org/gitlab-runner/-/releases).",
+          "observation_id": "gitlab_recovery-and-errors_releases",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "GitLab Runner 19.3.1"
+          },
+          "route": "gitlab-org/gitlab-runner/-/releases"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-no-results",
+          "intent": "Exercise clone check recovery-and-errors.no-results (GET /explore/projects?name=zzzz-no-match-websitebench).",
+          "observation_id": "gitlab_recovery-and-errors_no-results",
+          "required_state": {
+            "list_contains": "View all projects",
+            "text_absent": "NotImplementedError"
+          },
+          "route": "explore/projects?name=zzzz-no-match-websitebench"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-sign-in",
+          "intent": "Exercise clone check recovery-and-errors.sign-in (GET /users/sign_in).",
+          "observation_id": "gitlab_recovery-and-errors_sign-in",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Sign in to GitLab"
+          },
+          "route": "users/sign_in"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-sign-up",
+          "intent": "Exercise clone check recovery-and-errors.sign-up (GET /users/sign_up).",
+          "observation_id": "gitlab_recovery-and-errors_sign-up",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Create your GitLab account"
+          },
+          "route": "users/sign_up"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-password-reset",
+          "intent": "Exercise clone check recovery-and-errors.password-reset (GET /users/password/new).",
+          "observation_id": "gitlab_recovery-and-errors_password-reset",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Reset your password"
+          },
+          "route": "users/password/new"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-help",
+          "intent": "Exercise clone check recovery-and-errors.help (GET /help).",
+          "observation_id": "gitlab_recovery-and-errors_help",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "GitLab help"
+          },
+          "route": "help"
+        }
+      ],
+      "tier": "p1"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "gitlab"
+}

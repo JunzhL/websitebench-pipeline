@@ -1,0 +1,550 @@
+<!DOCTYPE html><html class="gl-system ui-neutral with-top-bar with-header page-theme-background page-with-panels with-gl-container-queries  user-logged-out aura-tinted-themes" lang="en" style="--scrollbar-width: 0px; --broadcast-message-height: 0px; --panel-content-inner-height: 798px;"><head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>Releases · GitLab.org / gitlab-runner · GitLab</title>
+<link crossorigin="" href="https://snowplowprd.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+
+<script nonce="">
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.com/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=100;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.user_color_mode="gl-system";gon.user_color_scheme="white";gon.markdown_surround_selection=null;gon.markdown_automatic_lists=null;gon.markdown_maintain_indentation=null;gon.math_rendering_limits_enabled=true;gon.iframe_rendering_enabled=true;gon.iframe_rendering_allowlist=["embed.figma.com","www.figma.com","www.youtube.com"];gon.sentry_dsn="https://f5573e26de8f4293b285e556c35dfd6e@new-sentry.gitlab.net/4";gon.sentry_environment="gprd";gon.sentry_clientside_traces_sample_rate=0.05;gon.recaptcha_api_server_url="https://www.recaptcha.net/recaptcha/api.js";gon.recaptcha_sitekey="6LfAERQTAAAAAL4GYSiAMGLbcLyUIBSfPrDNJgeC";gon.gitlab_url="https://gitlab.com";gon.promo_url="https://about.gitlab.com";gon.forum_url="https://forum.gitlab.com";gon.docs_url="https://docs.gitlab.com";gon.revision="cbcb0758509";gon.feature_category="release_orchestration";gon.gitlab_logo="/assets/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png";gon.secure=true;gon.sprite_icons="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg";gon.sprite_file_icons="/assets/file_icons/file_icons-90de312d3dbe794a19dee8aee171f184ff69ca9c9cf9fe37e8b254e84c3a1543.svg";gon.illustrations_path="/assets/illustrations-ae6d9d10410e9e8b59dd365dcf0480219354eb6eed057c8fecd9d17cf9b18ec4.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-9f4e433199c18178b03727c749cbd0c22e569f69ffb05ec235a49dc29b318bb3.css";gon.emoji_backend_version=4;gon.test_env=false;gon.disable_animations=null;gon.suggested_label_colors={"#cc338b":"Magenta-pink","#dc143c":"Crimson","#c21e56":"Rose red","#cd5b45":"Dark coral","#ed9121":"Carrot orange","#eee600":"Titanium yellow","#009966":"Green-cyan","#8fbc8f":"Dark sea green","#6699cc":"Blue-gray","#e6e6fa":"Lavender","#9400d3":"Dark violet","#330066":"Deep violet","#36454f":"Charcoal grey","#808080":"Gray"};gon.first_day_of_week=0;gon.time_display_relative=true;gon.time_display_format=0;gon.ee=true;gon.jh=false;gon.dot_com=true;gon.uf_error_prefix="UF";gon.pat_prefix="glpat-";gon.fluid_layout=false;gon.keyboard_shortcuts_enabled=true;gon.emoji_autocomplete_enabled=true;gon.broadcast_message_dismissal_path=null;gon.diagramsnet_url="https://embed.diagrams.net";gon.features={"uiForOrganizations":false,"pageBreadcrumbsInTopBar":false,"orgSwitcher":false,"findAndReplace":false,"removeMonitorMetrics":true,"workItemsClientSideBoards":false,"editorStickyTableHeaders":false,"hideUnpinnedSidebarItems":false,"markdownSortableTableColumns":false,"workItemFeaturesField":false,"securityManagerRoleEnabled":true,"advancedContextResolver":true,"duoUiNext":false,"duoChatBinaryFeedback":true,"duoWorkplanAsyncFlow":false,"agenticManualRetryForDuoChatResponses":false,"duoChatClarificationQuestionTool":false,"agenticChatFlowRegistryMigration":false,"noDuoClassicForDuoCoreUsers":true,"duoPanelHistoryStackPersistence":true,"duoPanelSessionInbox":false,"dapWebSearch":false,"orbitUserPreference":true,"knowledgeGraph":true,"orbitFoundationalAgent":true,"allowIframesInMarkdown":false};gon.roadmap_epics_limit=1000;gon.subscriptions_url="https://customers.gitlab.com";gon.subscriptions_legacy_sign_in_url="https://customers.gitlab.com/customers/sign_in?legacy=true";gon.billing_accounts_url="https://customers.gitlab.com/billing_accounts";gon.is_gitlab_team_member=false;
+//]]>
+</script>
+
+<script nonce="">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-36f63010dd96e2736c9fdfee052c47bbced0b528fb244e3985df18b936b21e21.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/assets/application_dark-dde1205c51dae5e95e145a57b46e5d971a06af42af5f9db1b35eed86409b985a.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="/assets/page_bundles/releases-dba028079ca6f9aecf4530b0c4a55f4ec03638ec0537e6fe8e68675a380d5934.css"><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css"><link rel="stylesheet" href="/assets/page_bundles/work_items-0df6b25b6da350589c5ad91c0b960fbb5f74093b35b48d56c3c747554de04c85.css"><link rel="stylesheet" href="/assets/page_bundles/notes_shared-009bfb6fa90b583372e5d3f444ccd9b89aa6278564b128d1f21b404747a3981b.css">
+<link rel="stylesheet" href="/assets/tailwind-2a592455ade1c64012fec155349543cc0b84099ff65ce9886433118d22a51d2a.css">
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css">
+<link rel="stylesheet" href="/assets/highlight/themes/white-c3211f67c1e8d8cfb47de179b2da35275ab7865cdf299ab44b4a8cc52d5cafd3.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="/assets/highlight/themes/dark-8cae80594d7953b52bc449bf1b4f2de402c87cc39fffc7aa0187b5f881c0cfd7.css" media="(prefers-color-scheme: dark)">
+
+<script src="/assets/webpack/runtime.91cea1ed.bundle.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/main.1b28f49f.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/tracker.eea7cc16.chunk.js" defer="defer" nonce=""></script>
+<script nonce="">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplowprd.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"production","source":"gitlab-rails","correlation_id":"a33dd94f0c6276ed-YYZ","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":9970,"ultimate_parent_namespace_id":9970,"project_id":250833,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2026-08-31T17:45:25.748Z","organization_id":1}};
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace9970/project250833/-/releases";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","perform_completion_worker","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","approve_tool_duo_chat","cleanup_stuck_agent_platform_session","click_ai_catalog_button_duo_rail","click_dap_trial_or_paid_empty_state_agent","click_dap_trial_or_paid_empty_state_explore_agents_link","click_dap_trial_or_paid_empty_state_prompt","click_delete_ai_catalog_item_button","click_disable_ai_catalog_item_button","click_duo_agentic_not_available_empty_state_learn_more","click_duo_agentic_not_available_empty_state_start_trial","click_duo_agentic_subscription_expired_learn_more","click_duo_agentic_subscription_expired_upgrade","click_duo_agentic_trial_expired_learn_more","click_duo_agentic_trial_expired_upgrade","click_duo_quick_action","click_duplicate_ai_catalog_item_button","click_enable_ai_catalog_item_button","click_purchase_seats_button_group_duo_pro_home_page","click_through_flow_widget","click_through_session_pill","close_vulnerability_resolution_merge_request","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","create_vulnerability_resolution_merge_request","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","deny_tool_duo_chat","detected_high_comment_temperature","detected_repeated_high_comment_temperature","dismiss_sast_vulnerability_false_positive_analysis","dismiss_secret_detection_vulnerability_false_positive_analysis","duo_workflow_workload_completed","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","explain_vulnerability","filter_ai_fp","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","fix_pipeline_suggestion_applied","fix_pipeline_suggestion_posted","forced_high_temperature_commenting","generate_merge_commit_message","generate_resolve_dependency_bump_pipeline","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","ingest_ai_audit_events_batch","maximize_duo_chat_panel","mention_gitlabduo_in_mr_comment","merge_vulnerability_resolution_merge_request","minimize_duo_chat_panel","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","publish_duo_code_review_comments","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","recommend_tool_duo_chat","reported_sast_vulnerability_false_positive_analysis","reported_secret_detection_vulnerability_false_positive_analysis","request_ask_help","request_duo_chat_response","request_duo_vulnerability_resolution","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","requested_comment_temperature","resize_duo_chat_panel","resolve_feature_discovery_search","restore_ai_catalog_item","retry_duo_workflow_execution","start_duo_workflow_execution","start_mcp_tool_call","submit_dap_trial_or_paid_empty_state_message","submit_gitlab_duo_question","summarize_new_merge_request","summarize_review","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","tool_failed_duo_chat","tool_succeeded_duo_chat","trigger_ai_catalog_item","trigger_resolve_dependency_bump_workflow","trigger_sast_vulnerability_fp_detection_workflow","trigger_sast_vulnerability_resolution_workflow","trigger_secret_detection_vulnerability_fp_detection_workflow","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index","view_ai_catalog_project_catalog","view_ai_catalog_project_managed","view_dap_trial_or_paid_empty_state","view_duo_agentic_identity_verification_empty_state","view_duo_agentic_not_available_empty_state","view_duo_agentic_subscription_expired_empty_state","view_duo_agentic_trial_expired_empty_state"];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+
+
+<script src="/assets/webpack/sentry.9170b563.chunk.js" defer="defer" nonce=""></script>
+
+<script src="/assets/webpack/commons-pages.groups.iteration_cadences-pages.groups.iteration_cadences.vue3-pages.groups.merge_requ-23bbf345.b0b5e555.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.dashboard.home-pages.organizations.artifact_registry_repositories.index-pages.registra-0c331abf.b36de251.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.admin.deploy_keys.index-pages.admin.groups.index-pages.admin.projects.index-pages.admi-81888dbb.add74c0c.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.dashboard.home-pages.projects.snippets.show-pages.projects.snippets.show.vue3-pages.sn-e6e20819.29d0ceb2.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/0dcf7166.fee24f6c.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/super_sidebar.d800d72d.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.groups-pages.groups.achievements-pages.groups.activity-pages.groups.analytics.ci_cd_an-7f91a94a.e9657720.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/32327915.590a06d1.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.projects.releases.edit-pages.projects.releases.index-pages.projects.releases.new-pages-ee9f51e7.8e4ea6c4.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/commons-pages.projects.releases.index-pages.projects.releases.show.c256ca05.chunk.js" defer="defer" nonce=""></script>
+<script src="/assets/webpack/pages.projects.releases.index.6d9d6871.chunk.js" defer="defer" nonce=""></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Releases · GitLab.org / gitlab-runner · GitLab" property="og:title">
+<meta content="GitLab Runner is the open source project that is used to run your CI/CD jobs and send the results back to GitLab" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/250833/runner.png?v=1788196301" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/gitlab-org/gitlab-runner/-/releases" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Releases · GitLab.org / gitlab-runner · GitLab" property="twitter:title">
+<meta content="GitLab Runner is the open source project that is used to run your CI/CD jobs and send the results back to GitLab" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/250833/runner.png?v=1788196301" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="jTRQL5TP7bUsvQiNh3tX304fA3xRcdkXtk6UqFu5pJNfwxQRCE5-zUEyjtx5FmX6T3fkVdryyE0FnNtuCdH1NA">
+<meta name="csp-nonce" content="jBM/SKLincXgfyNgBgBmKA==">
+<meta name="action-cable-url" content="/-/cable">
+<link crossorigin="use-credentials" href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png">
+<link crossorigin="use-credentials" href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="gitlab-runner releases" href="/gitlab-org/gitlab-runner/-/releases.atom">
+
+
+
+
+<meta content="GitLab Runner is the open source project that is used to run your CI/CD jobs and send the results back to GitLab" name="description">
+<meta content="#F1F0F6" media="(prefers-color-scheme: light)" name="theme-color">
+<meta content="#232128" media="(prefers-color-scheme: dark)" name="theme-color">
+<style>
+svg[data-v-50da6792] {
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+}
+svg polygon[data-v-50da6792],
+svg rect[data-v-50da6792] {
+  pointer-events: auto;
+}
+</style><script charset="utf-8" src="/assets/webpack/vendors-global_search_modal.3ad64d2f.chunk.js"></script><script charset="utf-8" src="/assets/webpack/a4cf5171.03ff34de.chunk.js"></script><script charset="utf-8" src="/assets/webpack/global_search_modal.d12946b5.chunk.js"></script><script charset="utf-8" src="/assets/webpack/shortcutsBundle.273c2d49.chunk.js"></script><style>
+/*
+ * We need to override margins on popover body elements to ensure
+ * that `gl-gap-3` works without any added spacing
+ */
+.gl-popover .popover-body .board-card-info {
+  margin-right: 0;
+}
+
+/*
+ * Adds spacing between calender icon and text
+ */
+.gl-popover .popover-body .board-card-info time {
+  margin-left: 0.25rem;
+}
+
+/*
+ * These styles target GlPopover internals (popover-body, arrow pseudo-elements)
+ * which cannot be controlled via props or utility classes.
+ */
+.work-item-popover .popover-body {
+  padding: 0;
+}
+.work-item-popover.bs-popover-bottom .arrow::before,
+.work-item-popover[data-popper-placement^='bottom'] .arrow::before,
+.work-item-popover.bs-popover-bottom .arrow::after,
+.work-item-popover[data-popper-placement^='bottom'] .arrow::after {
+  border-bottom-color: var(--gl-background-color-strong);
+}
+</style><style>
+.input-box-wrapper[data-v-2a92a04b] {
+  position: relative;
+}
+</style><script charset="utf-8" src="/assets/webpack/hello.33bd2a78.chunk.js"></script><style>
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image:
+    linear-gradient(var(--gl-background-color-overlap)),
+    linear-gradient(to bottom, #ff31e0, #c80043);
+}
+</style><script charset="utf-8" src="/assets/webpack/initInviteMembersTrigger.b63b4ae5.chunk.js"></script><style>
+.fake-input[data-v-26a01bbc] {
+  position: absolute;
+  top: 14px;
+  left: 39px;
+}
+</style><style>
+.input-box-wrapper[data-v-f093f100] {
+  position: relative;
+}
+.fake-input-wrapper[data-v-f093f100] {
+  position: absolute;
+}
+</style></head>
+
+<body class="tab-width-8 gl-browser-chrome gl-platform-mac page-initialised" data-group="gitlab-org" data-group-full-path="gitlab-org" data-namespace-id="9970" data-page="projects:releases:index" data-project="gitlab-runner" data-project-full-path="gitlab-org/gitlab-runner" data-project-id="250833" data-right-sidebar-initialized="true">
+<div id="js-tooltips-container"></div>
+
+<script nonce="">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isChrome":true,"isMac":true};
+
+
+//]]>
+</script>
+
+
+<header tabindex="0" autofocus="autofocus" class="super-topbar js-super-topbar gl-grid gl-grid-cols-[1fr_1fr] gl-items-center gl-gap-x-5 gl-outline-none sm:gl-grid-cols-[1fr_auto_1fr] forced-colors:gl-outline-0"><a href="#content-body" data-testid="super-topbar-skip-to" class="gl-t-0 gl-sr-only !gl-fixed gl-left-0 gl-z-9999 !gl-m-3 !gl-px-4 focus:gl-not-sr-only focus-visible:gl-not-sr-only btn gl-button btn-confirm btn-md"><!----> <!---->  <span class="gl-button-text">
+    Skip to main content
+   <!----></span></a> <div class="gl-flex gl-items-center gl-gap-3"><a href="/" data-track-action="click_link" data-track-label="gitlab_logo_link" data-track-property="nav_core_menu" class="brand-logo gl-inline-block gl-rounded-base gl-border-none gl-bg-transparent gl-p-2 focus-visible:gl-focus active:gl-focus !gl-p-0"><span class="gl-sr-only">Homepage</span> <span aria-hidden="true" data-testid="brand-header-default-logo"><svg aria-hidden="true" role="img" class="tanuki-logo" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="tanuki-shape tanuki" d="m24.507 9.5-.034-.09L21.082.562a.896.896 0 0 0-1.694.091l-2.29 7.01H7.825L5.535.653a.898.898 0 0 0-1.694-.09L.451 9.411.416 9.5a6.297 6.297 0 0 0 2.09 7.278l.012.01.03.022 5.16 3.867 2.56 1.935 1.554 1.176a1.051 1.051 0 0 0 1.268 0l1.555-1.176 2.56-1.935 5.197-3.89.014-.01A6.297 6.297 0 0 0 24.507 9.5Z" fill="#E24329"></path>
+  <path class="tanuki-shape right-cheek" d="m24.507 9.5-.034-.09a11.44 11.44 0 0 0-4.56 2.051l-7.447 5.632 4.742 3.584 5.197-3.89.014-.01A6.297 6.297 0 0 0 24.507 9.5Z" fill="#FC6D26"></path>
+  <path class="tanuki-shape chin" d="m7.707 20.677 2.56 1.935 1.555 1.176a1.051 1.051 0 0 0 1.268 0l1.555-1.176 2.56-1.935-4.743-3.584-4.755 3.584Z" fill="#FCA326"></path>
+  <path class="tanuki-shape left-cheek" d="M5.01 11.461a11.43 11.43 0 0 0-4.56-2.05L.416 9.5a6.297 6.297 0 0 0 2.09 7.278l.012.01.03.022 5.16 3.867 4.745-3.584-7.444-5.632Z" fill="#FC6D26"></path>
+</svg>
+</span></a> <button aria-controls="super-sidebar" aria-expanded="false" aria-label="Open navigation menu" data-testid="super-sidebar-toggle-button" type="button" class="xl:gl-hidden btn gl-button btn-default btn-md btn-default-tertiary btn-icon"><!----> <svg data-testid="hamburger-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#hamburger"></use></svg>  <!----></button> <div class="gl-flex gl-gap-3 gl-hidden lg:gl-flex"><div class="gl-border-r gl-mx-2 gl-my-3 gl-block gl-h-5 gl-w-1 gl-border-r-strong sm:gl-hidden"></div> <div class="gl-disclosure-dropdown gl-block lg:gl-hidden gl-new-dropdown"><button id="dropdown-toggle-btn-17" data-testid="base-dropdown-toggle" aria-controls="base-dropdown-19" aria-expanded="false" type="button" class="btn gl-button btn-default btn-md btn-default-tertiary !gl-rounded-full !gl-border !gl-border-strong gl-new-dropdown-toggle gl-new-dropdown-icon-only btn-icon gl-new-dropdown-toggle-no-caret"><!----> <svg data-testid="user-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#user"></use></svg>  <span class="gl-button-text"><span data-testid="base-dropdown-span" class="gl-new-dropdown-button-text gl-sr-only">
+        Menu
+      </span> <!----> <!----></span></button> <div class="gl-new-dropdown-container"><div id="base-dropdown-19" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel !gl-w-31"><div class="gl-new-dropdown-arrow"></div> <div class="gl-new-dropdown-inner">  <ul id="disclosure-18" aria-labelledby="dropdown-toggle-btn-17" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"><li><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><div class="gl-flex gl-flex-col gl-gap-3 gl-px-4 gl-py-3"><a href="/users/sign_up" data-testid="topbar-signup-button" class="topbar-signup-button gl-basis-1/2 btn gl-button btn-confirm btn-md"><!----> <!---->  <span class="gl-button-text">
+          Get free trial
+         <!----></span></a> <a href="/users/sign_in?redirect_to_referer=yes" data-testid="topbar-signin-button" class="gl-basis-1/2 btn gl-button btn-default btn-md"><!----> <!---->  <span class="gl-button-text">
+          Sign in
+         <!----></span></a></div></ul></li> <li class="gl-border-t gl-border-t-dropdown-divider gl-pt-2 gl-mt-2"><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/why-gitlab" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Why GitLab
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/pricing" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Pricing
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/sales" tabindex="-1" datamenuonly="true" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Contact Sales
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="/explore" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Explore
+        </span></a></li></ul></li></ul> </div></div></div></div> <ul data-testid="menu" class="gl-m-0 gl-hidden gl-list-none gl-gap-2 gl-p-0 lg:gl-flex"><li><a href="https://about.gitlab.com/why-gitlab" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Why GitLab
+       <!----></span></a></li><li><a href="https://about.gitlab.com/pricing" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Pricing
+       <!----></span></a></li><li><a href="/explore" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Explore
+       <!----></span></a></li></ul></div> <!----> <!----></div> <button id="super-sidebar-search" data-testid="super-topbar-search-button" type="button" class="topbar-search-button !gl-hidden !gl-rounded-[.75rem] !gl-bg-default !gl-pl-3 hover:!gl-border-alpha-dark-40 sm:!gl-flex md:!gl-pr-2 dark:!gl-bg-alpha-light-8 dark:hover:!gl-border-alpha-light-36 btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text gl-flex gl-items-center"><svg data-testid="search-icon" role="img" aria-hidden="true" class="gl-shrink-0 gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#search"></use></svg> <span class="topbar-search-button-placeholder !gl-min-w-[20vw] gl-truncate gl-text-left">Search or go to…</span> <kbd class="gl-mr-1 gl-hidden gl-shrink-0 gl-rounded-base gl-shadow-none md:gl-block">/</kbd> <!----></span></button> <div class="gl-flex gl-justify-end gl-gap-3"><button aria-label="Search or go to…" data-testid="super-topbar-search-button-xs" type="button" class="gl-self-center sm:!gl-hidden btn gl-button btn-default btn-sm btn-icon"><!----> <svg data-testid="search-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#search"></use></svg>  <!----></button> <a href="/-/trial_registrations/new" data-testid="topbar-signup-button" class="topbar-signup-button gl-hidden lg:gl-flex btn gl-button btn-confirm btn-md"><!----> <!---->  <span class="gl-button-text">
+        Get free trial
+       <!----></span></a> <a href="/users/sign_in?redirect_to_referer=yes" data-testid="topbar-signin-button" class="gl-hidden lg:gl-flex btn gl-button btn-default btn-md"><!----> <!---->  <span class="gl-button-text">
+        Sign in
+       <!----></span></a> <div class="gl-flex gl-gap-3 gl-flex lg:gl-hidden"><div class="gl-border-r gl-mx-2 gl-my-3 gl-block gl-h-5 gl-w-1 gl-border-r-strong sm:gl-hidden"></div> <div class="gl-disclosure-dropdown gl-block lg:gl-hidden gl-new-dropdown"><button id="dropdown-toggle-btn-22" data-testid="base-dropdown-toggle" aria-controls="base-dropdown-24" aria-expanded="false" type="button" class="btn gl-button btn-default btn-md btn-default-tertiary !gl-rounded-full !gl-border !gl-border-strong gl-new-dropdown-toggle gl-new-dropdown-icon-only btn-icon gl-new-dropdown-toggle-no-caret"><!----> <svg data-testid="user-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#user"></use></svg>  <span class="gl-button-text"><span data-testid="base-dropdown-span" class="gl-new-dropdown-button-text gl-sr-only">
+        Menu
+      </span> <!----> <!----></span></button> <div class="gl-new-dropdown-container"><div id="base-dropdown-24" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel !gl-w-31"><div class="gl-new-dropdown-arrow"></div> <div class="gl-new-dropdown-inner">  <ul id="disclosure-23" aria-labelledby="dropdown-toggle-btn-22" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"><li><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><div class="gl-flex gl-flex-col gl-gap-3 gl-px-4 gl-py-3"><a href="/-/trial_registrations/new" data-testid="topbar-signup-button" class="topbar-signup-button gl-basis-1/2 btn gl-button btn-confirm btn-md"><!----> <!---->  <span class="gl-button-text">
+          Get free trial
+         <!----></span></a> <a href="/users/sign_in?redirect_to_referer=yes" data-testid="topbar-signin-button" class="gl-basis-1/2 btn gl-button btn-default btn-md"><!----> <!---->  <span class="gl-button-text">
+          Sign in
+         <!----></span></a></div></ul></li> <li class="gl-border-t gl-border-t-dropdown-divider gl-pt-2 gl-mt-2"><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/why-gitlab" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Why GitLab
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/pricing" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Pricing
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/sales" tabindex="-1" datamenuonly="true" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Contact Sales
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="/explore" tabindex="-1" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Explore
+        </span></a></li></ul></li></ul> </div></div></div></div> <ul data-testid="menu" class="gl-m-0 gl-hidden gl-list-none gl-gap-2 gl-p-0 lg:gl-flex"><li><a href="https://about.gitlab.com/why-gitlab" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Why GitLab
+       <!----></span></a></li><li><a href="https://about.gitlab.com/pricing" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Pricing
+       <!----></span></a></li><li><a href="/explore" class="btn gl-button btn-default btn-md btn-default-tertiary"><!----> <!---->  <span class="gl-button-text">
+        Explore
+       <!----></span></a></li></ul></div></div> <!----></header>
+<div class="layout-page js-page-layout page-with-super-sidebar">
+<script nonce="">
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><div class="super-sidebar-wrapper"><div class="super-sidebar-overlay"></div> <nav id="super-sidebar" aria-labelledby="super-sidebar-heading" data-testid="super-sidebar" class="super-sidebar super-sidebar-animatable"><h2 id="super-sidebar-heading" class="gl-sr-only">
+      Primary navigation
+    </h2> <div class="contextual-nav gl-flex gl-grow gl-flex-col gl-overflow-hidden gl-pt-2"><div id="super-sidebar-context-header" class="super-sidebar-context-header gl-m-0 gl-px-5 gl-py-3 gl-font-bold gl-leading-reset">
+        Project
+      </div> <div tabindex="-1" class="gl-scroll-scrim gl-overflow-y-auto gl-overflow-x-hidden gl-outline-none gl-grow" data-testid="nav-container"><div class="top-scrim-wrapper"><div class="top-scrim"></div></div> <div></div> <div class="gl-relative gl-px-3 gl-py-2"><ul data-testid="static-items-section" class="gl-m-0 gl-list-none gl-p-0 gl-mb-3"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative gl-font-bold"><a href="/gitlab-org/gitlab-runner" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-project" data-testid="nav-item-link" aria-label="gitlab-runner" data-track-action="click_menu_item" data-track-label="project_overview" data-track-property="nav_panel_project" data-qa-submenu-item="project-overview"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center gl-self-start gl-rounded-base gl-bg-default"><img src="/uploads/-/system/project/avatar/250833/runner.png?v=1788196301" alt="gitlab-runner" class="gl-avatar gl-avatar-s24"></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      gitlab-runner
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul> <div id="super-sidebar-pinned-section"><!----> <button aria-expanded="true" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-pinned" data-testid="menu-section-button" data-qa-section-name="Pinned" aria-label="Pinned" aria-controls="pinned" data-qa-menu-item="Pinned"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#thumbtack"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Pinned
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-on gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse show" id="pinned" data-testid="menu-section" data-qa-section-name="Pinned"><ul aria-label="Pinned" data-testid="pinned-nav-items" class="gl-m-0 gl-list-none gl-p-0 gl-leading-normal"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative js-draggable-item"><a href="/gitlab-org/gitlab-runner/-/project_members" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Members" data-track-action="click_menu_item" data-track-label="members" data-track-property="nav_panel_project" data-qa-submenu-item="Members"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Members
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative js-draggable-item"><a href="/gitlab-org/gitlab-runner/-/work_items" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot gl-px-2 shortcuts-issues has-sub-items" data-testid="nav-item-link" aria-label="Work items" data-track-action="click_menu_item" data-track-label="project_issue_list" data-track-property="nav_panel_project" data-qa-submenu-item="Work items"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Work items
+      <!----> <!----></span> </span> <span data-testid="nav-item-end" class="gl-nav-item-slot"><span data-testid="pill-badge" class="nav-item-link-badge gl-mr-3 gl-text-sm">
+        -
+      </span></span></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative js-draggable-item"><a href="/gitlab-org/gitlab-runner/-/branches" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Branches" data-track-action="click_menu_item" data-track-label="branches" data-track-property="nav_panel_project" data-qa-submenu-item="Branches"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Branches
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative js-draggable-item"><a href="/gitlab-org/gitlab-runner/-/merge_requests" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot gl-px-2 shortcuts-merge_requests" data-testid="nav-item-link" aria-label="Merge requests" data-track-action="click_menu_item" data-track-label="project_merge_request_list" data-track-property="nav_panel_project" data-qa-submenu-item="Merge requests"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Merge requests
+      <!----> <!----></span> </span> <span data-testid="nav-item-end" class="gl-nav-item-slot"><span data-testid="pill-badge" class="nav-item-link-badge gl-mr-3 gl-text-sm">
+        -
+      </span></span></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative js-draggable-item"><a href="/gitlab-org/gitlab-runner/-/pipelines" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-pipelines" data-testid="nav-item-link" aria-label="Pipelines" data-track-action="click_menu_item" data-track-label="pipelines" data-track-property="nav_panel_project" data-qa-submenu-item="Pipelines"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Pipelines
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></div> <button class="gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot" aria-label="More features" data-testid="feature-library-trigger"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="applications-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#applications"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label">
+    More features
+  </span> <!----></button> <!----> <!----> <hr aria-hidden="true" data-testid="main-menu-separator" class="gl-mx-3 gl-my-4"> <ul id="super-sidebar-non-static-section" aria-labelledby="super-sidebar-context-header" data-testid="non-static-items-section" class="gl-mb-0 gl-list-none gl-p-0"><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-manage" data-testid="menu-section-button" data-qa-section-name="Manage" aria-label="Manage" aria-controls="manage" data-qa-menu-item="Manage"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="users-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#users"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Manage
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="manage" data-testid="menu-section" data-qa-section-name="Manage" style="display: none;"><ul aria-label="Manage" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/activity" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-project-activity" data-testid="nav-item-link" aria-label="Activity" data-track-action="click_menu_item" data-track-label="activity" data-track-property="nav_panel_project" data-qa-submenu-item="Activity"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Activity
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/project_members" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Members" data-track-action="click_menu_item" data-track-label="members" data-track-property="nav_panel_project" data-qa-submenu-item="Members"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Members
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/labels" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Labels" data-track-action="click_menu_item" data-track-label="labels" data-track-property="nav_panel_project" data-qa-submenu-item="Labels"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Labels
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-plan" data-testid="menu-section-button" data-qa-section-name="Plan" aria-label="Plan" aria-controls="plan" data-qa-menu-item="Plan"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="planning-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#planning"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Plan
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="plan" data-testid="menu-section" data-qa-section-name="Plan" style="display: none;"><ul aria-label="Plan" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/work_items" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot gl-px-2 shortcuts-issues has-sub-items" data-testid="nav-item-link" aria-label="Work items" data-track-action="click_menu_item" data-track-label="project_issue_list" data-track-property="nav_panel_project" data-qa-submenu-item="Work items"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Work items
+      <!----> <!----></span> </span> <span data-testid="nav-item-end" class="gl-nav-item-slot"><span data-testid="pill-badge" class="nav-item-link-badge gl-mr-3 gl-text-sm">
+        -
+      </span></span></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/boards" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-issue-boards" data-testid="nav-item-link" aria-label="Issue boards" data-track-action="click_menu_item" data-track-label="boards" data-track-property="nav_panel_project" data-qa-submenu-item="Issue boards"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Issue boards
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/milestones" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Milestones" data-track-action="click_menu_item" data-track-label="milestones" data-track-property="nav_panel_project" data-qa-submenu-item="Milestones"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Milestones
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/cadences" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Iterations" data-track-action="click_menu_item" data-track-label="iterations" data-track-property="nav_panel_project" data-qa-submenu-item="Iterations"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Iterations
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/wikis" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-wiki" data-testid="nav-item-link" aria-label="Wiki" data-track-action="click_menu_item" data-track-label="project_wiki" data-track-property="nav_panel_project" data-qa-submenu-item="Wiki"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Wiki
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/requirements_management/requirements" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Requirements" data-track-action="click_menu_item" data-track-label="requirements" data-track-property="nav_panel_project" data-qa-submenu-item="Requirements"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Requirements
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-code" data-testid="menu-section-button" data-qa-section-name="Code" aria-label="Code" aria-controls="code" data-qa-menu-item="Code"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="code-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#code"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Code
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="code" data-testid="menu-section" data-qa-section-name="Code" style="display: none;"><ul aria-label="Code" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/merge_requests" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot gl-px-2 shortcuts-merge_requests" data-testid="nav-item-link" aria-label="Merge requests" data-track-action="click_menu_item" data-track-label="project_merge_request_list" data-track-property="nav_panel_project" data-qa-submenu-item="Merge requests"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Merge requests
+      <!----> <!----></span> </span> <span data-testid="nav-item-end" class="gl-nav-item-slot"><span data-testid="pill-badge" class="nav-item-link-badge gl-mr-3 gl-text-sm">
+        -
+      </span></span></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/tree/main" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-tree" data-testid="nav-item-link" aria-label="Repository" data-track-action="click_menu_item" data-track-label="files" data-track-property="nav_panel_project" data-qa-submenu-item="Repository"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Repository
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/branches" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Branches" data-track-action="click_menu_item" data-track-label="branches" data-track-property="nav_panel_project" data-qa-submenu-item="Branches"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Branches
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/commits/main?ref_type=heads" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-commits" data-testid="nav-item-link" aria-label="Commits" data-track-action="click_menu_item" data-track-label="commits" data-track-property="nav_panel_project" data-qa-submenu-item="Commits"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Commits
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/tags" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Tags" data-track-action="click_menu_item" data-track-label="tags" data-track-property="nav_panel_project" data-qa-submenu-item="Tags"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Tags
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/network/main?ref_type=heads" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-network" data-testid="nav-item-link" aria-label="Repository graph" data-track-action="click_menu_item" data-track-label="graphs" data-track-property="nav_panel_project" data-qa-submenu-item="Repository graph"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Repository graph
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/compare?from=main&amp;to=main" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Compare revisions" data-track-action="click_menu_item" data-track-label="compare" data-track-property="nav_panel_project" data-qa-submenu-item="Compare revisions"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Compare revisions
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/path_locks" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Locked files" data-track-action="click_menu_item" data-track-label="file_locks" data-track-property="nav_panel_project" data-qa-submenu-item="Locked files"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Locked files
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-build" data-testid="menu-section-button" data-qa-section-name="Build" aria-label="Build" aria-controls="build" data-qa-menu-item="Build"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="rocket-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#rocket"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Build
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="build" data-testid="menu-section" data-qa-section-name="Build" style="display: none;"><ul aria-label="Build" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/pipelines" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-pipelines" data-testid="nav-item-link" aria-label="Pipelines" data-track-action="click_menu_item" data-track-label="pipelines" data-track-property="nav_panel_project" data-qa-submenu-item="Pipelines"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Pipelines
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/jobs" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-builds" data-testid="nav-item-link" aria-label="Jobs" data-track-action="click_menu_item" data-track-label="jobs" data-track-property="nav_panel_project" data-qa-submenu-item="Jobs"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Jobs
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/pipeline_schedules" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-builds" data-testid="nav-item-link" aria-label="Pipeline schedules" data-track-action="click_menu_item" data-track-label="pipeline_schedules" data-track-property="nav_panel_project" data-qa-submenu-item="Pipeline schedules"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Pipeline schedules
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/quality/test_cases" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-test-cases" data-testid="nav-item-link" aria-label="Test cases" data-track-action="click_menu_item" data-track-label="test_cases" data-track-property="nav_panel_project" data-qa-submenu-item="Test cases"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Test cases
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/artifacts" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-builds" data-testid="nav-item-link" aria-label="Artifacts" data-track-action="click_menu_item" data-track-label="artifacts" data-track-property="nav_panel_project" data-qa-submenu-item="Artifacts"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Artifacts
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="true" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-deploy" data-testid="menu-section-button" data-qa-section-name="Deploy" aria-label="Deploy" aria-controls="deploy" data-qa-menu-item="Deploy"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="deployments-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#deployments"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Deploy
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-on gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse show" id="deploy" data-testid="menu-section" data-qa-section-name="Deploy"><ul aria-label="Deploy" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/releases" aria-current="page" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot selected gl-px-2 shortcuts-deployments-releases" data-testid="nav-item-link" aria-label="Releases" data-track-action="click_menu_item" data-track-label="releases" data-track-property="nav_panel_project" data-qa-submenu-item="Releases"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Releases
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/container_registry" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Container registry" data-track-action="click_menu_item" data-track-label="container_registry" data-track-property="nav_panel_project" data-qa-submenu-item="Container registry"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Container registry
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/ml/models" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Model registry" data-track-action="click_menu_item" data-track-label="model_registry" data-track-property="nav_panel_project" data-qa-submenu-item="Model registry"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Model registry
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-operate" data-testid="menu-section-button" data-qa-section-name="Operate" aria-label="Operate" aria-controls="operate" data-qa-menu-item="Operate"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="cloud-pod-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#cloud-pod"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Operate
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="operate" data-testid="menu-section" data-qa-section-name="Operate" style="display: none;"><ul aria-label="Operate" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/environments" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-environments" data-testid="nav-item-link" aria-label="Environments" data-track-action="click_menu_item" data-track-label="environments" data-track-property="nav_panel_project" data-qa-submenu-item="Environments"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Environments
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-monitor" data-testid="menu-section-button" data-qa-section-name="Monitor" aria-label="Monitor" aria-controls="monitor" data-qa-menu-item="Monitor"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="monitor-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#monitor"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Monitor
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="monitor" data-testid="menu-section" data-qa-section-name="Monitor" style="display: none;"><ul aria-label="Monitor" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/incidents" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Incidents" data-track-action="click_menu_item" data-track-label="incidents" data-track-property="nav_panel_project" data-qa-submenu-item="Incidents"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Incidents
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li><li><!----> <button aria-expanded="false" class="gl-relative gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-nav-item-has-end-slot" id="menu-section-button-analyze" data-testid="menu-section-button" data-qa-section-name="Analyze" aria-label="Analyze" aria-controls="analyze" data-qa-menu-item="Analyze"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="chart-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#chart"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label"><span class="gl-truncate-end menu-section-button-label">
+      Analyze
+    </span></span> <span data-testid="nav-item-chevron" class="gl-nav-item-slot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="gl-nav-item-chevron gl-animated-icon gl-animated-icon-off gl-animated-icon-current"><path d="M6.75 4.75L10 8L6.75 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="gl-animated-chevron-right-down-arrow"></path></svg></span></button> <!----> <div class="gl-m-0 gl-list-none gl-p-0 gl-transition-[height] gl-duration-medium gl-ease-ease collapse" id="analyze" data-testid="menu-section" data-qa-section-name="Analyze" style="display: none;"><ul aria-label="Analyze" class="gl-m-0 gl-list-none gl-p-0"><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/value_stream_analytics" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-project-cycle-analytics" data-testid="nav-item-link" aria-label="Value stream analytics" data-track-action="click_menu_item" data-track-label="cycle_analytics" data-track-property="nav_panel_project" data-qa-submenu-item="Value stream analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Value stream analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/graphs/main?ref_type=heads" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Contributor analytics" data-track-action="click_menu_item" data-track-label="contributors" data-track-property="nav_panel_project" data-qa-submenu-item="Contributor analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Contributor analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/pipelines/charts" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="CI/CD analytics" data-track-action="click_menu_item" data-track-label="ci_cd_analytics" data-track-property="nav_panel_project" data-qa-submenu-item="CI/CD analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      CI/CD analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/graphs/main/charts" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-repository-charts" data-testid="nav-item-link" aria-label="Repository analytics" data-track-action="click_menu_item" data-track-label="repository_analytics" data-track-property="nav_panel_project" data-qa-submenu-item="Repository analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Repository analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/analytics/code_reviews" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Code review analytics" data-track-action="click_menu_item" data-track-label="code_review" data-track-property="nav_panel_project" data-qa-submenu-item="Code review analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Code review analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/analytics/issues_analytics" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Issue analytics" data-track-action="click_menu_item" data-track-label="issues" data-track-property="nav_panel_project" data-qa-submenu-item="Issue analytics"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Issue analytics
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/insights/" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2 shortcuts-project-insights" data-testid="nav-item-link" aria-label="Insights" data-track-action="click_menu_item" data-track-label="insights" data-track-property="nav_panel_project" data-qa-submenu-item="Insights"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Insights
+      <!----> <!----></span> </span> <!----></a> <!----></li><li data-testid="nav-item" class="show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context gl-relative"><a href="/gitlab-org/gitlab-runner/-/ml/experiments" class="super-sidebar-nav-item show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-mb-1 gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot gl-px-2" data-testid="nav-item-link" aria-label="Model experiments" data-track-action="click_menu_item" data-track-label="model_experiments" data-track-property="nav_panel_project" data-qa-submenu-item="Model experiments"><span data-testid="nav-item-start" class="gl-nav-item-slot"><span class="gl-relative gl-flex gl-h-6 gl-w-6 gl-items-center gl-justify-center"><!----></span></span> <span data-testid="nav-item-label" class="gl-nav-item-label"> <span data-testid="nav-item-link-label" class="gl-inline-block gl-grow gl-py-2 gl-leading-16 gl-break-anywhere nav-item-link-label">
+      Model experiments
+      <!----> <!----></span> </span> <!----></a> <!----></li></ul></div></li></ul></div> <div id="sidebar-portal-mount"></div> <div></div> <div class="bottom-scrim-wrapper"><div class="bottom-scrim"></div></div></div> <!----> <!----> <!----> <div class="gl-flex gl-flex-col gl-gap-2 gl-p-3"><!----> <div class="gl-disclosure-dropdown super-sidebar-help-center-dropdown gl-new-dropdown !gl-block"><div data-testid="base-dropdown-toggle" class="gl-new-dropdown-custom-toggle"><button class="gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot" aria-label="Help" data-testid="sidebar-help-button" aria-controls="base-dropdown-3" id="dropdown-toggle-btn-1"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="question-o-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#question-o"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label">
+        Help
+      </span> <!----></button></div> <div class="gl-new-dropdown-container"><div id="base-dropdown-3" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel !gl-w-31"><div class="gl-new-dropdown-arrow"></div> <div class="gl-new-dropdown-inner">  <div id="disclosure-2" aria-labelledby="dropdown-toggle-btn-1" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"> <!----> <li><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="/help" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="help" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Help
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://support.gitlab.com" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="support" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Support
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="/help/docs" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="gitlab_documentation" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          GitLab documentation
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://university.gitlab.com" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="gitlab_university" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          GitLab University
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/pricing" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="compare_gitlab_plans" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Compare GitLab plans
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://forum.gitlab.com" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="community_forum" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          GitLab community forum
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://contributors.gitlab.com" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="contribute_to_gitlab" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Contribute to GitLab
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/submit-feedback" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="submit_feedback" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Provide feedback
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a href="https://about.gitlab.com/privacy" tabindex="-1" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="privacy" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><!---->
+          Privacy statement
+        </span></a></li></ul></li> <li class="gl-border-t gl-border-t-dropdown-divider gl-pt-2 gl-mt-2"><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><button tabindex="-1" data-track-action="click_button" data-track-label="keyboard_shortcuts_help" data-track-property="nav_help_menu" type="button" class="gl-new-dropdown-item-content js-shortcuts-modal-trigger"><span class="gl-new-dropdown-item-text-wrapper"><span class="-gl-my-1 gl-flex gl-items-center gl-justify-between">
+          Keyboard shortcuts
+          <kbd aria-hidden="true" class="flat">?</kbd></span></span></button></li></ul></li> <li><!----> <ul class="gl-new-dropdown-item-group gl-mb-0 gl-list-none gl-pl-0"><li tabindex="0" data-testid="whats-new-for-you-help-menu-item" class="gl-new-dropdown-item"><button tabindex="-1" data-track-action="click_whats_new_for_you_menu_item" data-track-property="help_menu" data-track-experiment="whats_new_placement" type="button" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-flex gl-w-full gl-items-center gl-gap-3"><!----> <span>What's new for you</span> <span class="gl-ml-auto gl-badge badge badge-pill badge-info" aria-hidden="true" data-testid="whats-new-info-badge"><!----> <span class="gl-badge-content">5</span></span></span></span></button></li></ul></li></div> </div></div></div></div></div> <div class="-gl-mt-2 gl-hidden gl-px-3 gl-pb-3 xl:gl-block"><button class="gl-nav-item gl-nav-item-indicator-left gl-nav-item-has-start-slot" aria-label="Collapse sidebar" data-testid="super-sidebar-collapse-button"><span data-testid="nav-item-start" class="gl-nav-item-slot"><svg data-testid="collapse-left-icon" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#collapse-left"></use></svg></span> <span data-testid="nav-item-label" class="gl-nav-item-label">
+  Collapse sidebar
+</span> <!----></button></div></div></nav> <a href="/explore/snippets" class="gl-hidden dashboard-shortcuts-snippets">
+    Snippets
+  </a><a href="/explore/groups" class="gl-hidden dashboard-shortcuts-groups">
+    Groups
+  </a><a href="/explore/projects" class="gl-hidden dashboard-shortcuts-projects">
+    Projects
+  </a></div>
+
+<div class="broadcast-wrapper gl-rounded-lg gl-overflow-hidden">
+
+
+
+</div>
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-0 gl-relative js-content-panels gl-@container/content-panels">
+<div class="paneled-view static-panel js-static-panel js-paneled-view content-wrapper">
+<div class="panel-header">
+<div class="panel-header-inner js-panel-header-inner">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GitLab.org","item":"https://gitlab.com/gitlab-org"},{"@type":"ListItem","position":2,"name":"gitlab-runner","item":"https://gitlab.com/gitlab-org/gitlab-runner"},{"@type":"ListItem","position":3,"name":"Releases","item":"https://gitlab.com/gitlab-org/gitlab-runner/-/releases"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<nav aria-label="Breadcrumb" class="gl-breadcrumbs" style="--gl-breadcrumb-truncated-item-max-width: 1109px;"><ol class="gl-breadcrumb-list breadcrumb"><!----> <li class="gl-breadcrumb-item gl-breadcrumb-item-sm"><a href="/gitlab-org" class=""><img src="/uploads/-/system/group/avatar/9970/project_avatar.png?v=1750616408" alt="avatar" class="gl-breadcrumb-avatar-tile gl-border gl-mr-2 gl-avatar gl-avatar-s16" aria-hidden="true" data-testid="avatar"><span class="gl-align-middle">GitLab.org</span></a></li><li class="gl-breadcrumb-item gl-breadcrumb-item-sm"><a href="/gitlab-org/gitlab-runner" class=""><img src="/uploads/-/system/project/avatar/250833/runner.png?v=1788196301" alt="avatar" class="gl-breadcrumb-avatar-tile gl-border gl-mr-2 gl-avatar gl-avatar-s16" aria-hidden="true" data-testid="avatar"><span class="gl-align-middle">gitlab-runner</span></a></li><li class="gl-breadcrumb-item gl-breadcrumb-item-sm"><a href="/gitlab-org/gitlab-runner/-/releases" aria-current="page" class=""><!----><span class="gl-align-middle">Releases</span></a></li> <!----></ol></nav>
+<div id="js-injected-page-breadcrumbs"></div>
+</div>
+<div id="js-page-breadcrumbs-extra"></div>
+
+
+
+<div class="panel-header-inner-actions">
+
+
+<div class="panel-header-inner-actions-portal-target js-panel-actions-portal-target"></div>
+</div>
+</div>
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content gl-@container/panel" id="content-body" itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container"><div role="alert" aria-live="polite" tabindex="-1" class="gl-alert gl-alert-danger" data-testid="alert-danger"><div class="gl-alert-icon-container"><svg data-testid="error-icon" role="img" aria-hidden="true" class="gl-alert-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#error"></use></svg></div> <div class="gl-alert-content"><!----> <div class="gl-alert-body">There was a problem fetching the CI/CD Catalog setting.</div> <!----></div> <button aria-label="Dismiss" type="button" class="gl-dismiss-btn btn gl-button btn-default btn-sm btn-default-tertiary btn-icon"><!----> <svg data-testid="close-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#close"></use></svg>  <!----></button></div></div>
+
+
+
+
+
+
+
+
+<div class="gl-mt-3 gl-flex gl-flex-col"><!----> <div class="gl-flex gl-flex-col gl-justify-between gl-gap-3 @sm:gl-flex-row"><h1 class="gl-heading-1 gl-my-0">Releases</h1> <div class="@ gl-flex gl-w-full gl-gap-3 gl-self-end sm:gl-w-auto"><div role="group" class="gl-sorting gl-flex gl-flex gl-grow gl-button-group btn-group" data-testid="releases-sort"><div class="gl-w-full gl-new-dropdown !gl-block gl-w-full"><button data-testid="base-dropdown-toggle" role="combobox" aria-controls="base-dropdown-35" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="sorting-listbox-31" type="button" class="btn gl-button btn-default btn-md btn-block gl-new-dropdown-toggle"><!----> <!---->  <span class="gl-button-text gl-w-full"><span id="dropdown-toggle-btn-34" data-testid="base-dropdown-span" class="gl-new-dropdown-button-text">
+        Released date
+      </span> <svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-button-icon gl-new-dropdown-chevron gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#chevron-down"></use></svg> <!----></span></button> <div class="gl-new-dropdown-container"><div id="base-dropdown-35" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel !gl-w-31"><div class="gl-new-dropdown-arrow"></div> <div class="gl-new-dropdown-inner"><!----> <!----> <ul id="listbox-32" aria-labelledby="dropdown-toggle-btn-34" role="listbox" tabindex="0" class="gl-new-dropdown-contents gl-new-dropdown-contents-with-scrim-overlay top-scrim-visible bottom-scrim-visible gl-new-dropdown-contents"><li aria-hidden="true" data-testid="top-scrim" class="top-scrim-wrapper"><div class="top-scrim top-scrim-light"></div></li> <li aria-hidden="true"></li> <li role="option" tabindex="-1" aria-selected="true" class="gl-new-dropdown-item" id="listbox-item-36" data-testid="listbox-item-released_at"><span class="gl-new-dropdown-item-content"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current gl-new-dropdown-item-check-icon gl-mt-3 gl-self-start"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#check"></use></svg> <span class="gl-new-dropdown-item-text-wrapper">
+              Released date
+            </span></span></li><li role="option" tabindex="-1" class="gl-new-dropdown-item" id="listbox-item-37" data-testid="listbox-item-created_at"><span class="gl-new-dropdown-item-content"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-fill-current gl-new-dropdown-item-check-icon gl-invisible gl-mt-3 gl-self-start"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#check"></use></svg> <span class="gl-new-dropdown-item-text-wrapper">
+              Created date
+            </span></span></li> <!----> <!----> <li aria-hidden="true"></li> <li aria-hidden="true" data-testid="bottom-scrim" class="bottom-scrim-wrapper"><div class="bottom-scrim"></div></li></ul> <!----> <!----> </div></div></div></div> <span id="sorting-listbox-31" class="gl-sr-only">Sort by:</span> <button title="Sort direction: Descending" aria-label="Sort direction: Descending" type="button" class="btn gl-button btn-default btn-md btn-icon sorting-direction-button"><!----> <svg data-testid="sort-highest-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#sort-highest"></use></svg>  <!----></button></div> <a href="/gitlab-org/gitlab-runner/-/releases.atom" title="Subscribe to releases RSS feed" data-testid="atom-feed-btn" aria-label="Subscribe to releases RSS feed" class="gl-ml-2 btn gl-button btn-default btn-md btn-icon"><!----> <svg data-testid="rss-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16 gl-fill-current"><use href="/assets/icons-744c96d42bcc6345fdb1c870432a980c5f983ed177df344a4a5f94b625ac4ce8.svg#rss"></use></svg>  <!----></a> <!----></div></div>  <!----> <!----></div>
+
+
+</main>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+<div class="paneled-view-portal gl-@container/panel !gl-absolute gl-rounded-l-xl gl-shadow-lg gl-bg-default @xl/content-panels:gl-w-1/2 @xl/content-panels:gl-rounded-l-none @xl/content-panels:gl-shadow-none @xl/content-panels:!gl-relative @xl/content-panels:gl-bg-transparent gl-right-0" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+
+</div>
+
+
+<script nonce="">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    // Keep this logic in sync with appendWidthToAvatarUrl in
+    // app/assets/javascripts/vue_shared/components/user_avatar/utils.js
+    if (imgUrl.indexOf('/avatar/') > -1 && !imgUrl.includes('width=')) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += imgUrl.includes('?') ? `&width=${targetWidth}` : `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+
+
+
+<div></div><div></div></body></html>

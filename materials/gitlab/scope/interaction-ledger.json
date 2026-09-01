@@ -1,0 +1,16 @@
+{
+  "schema_version": "offline-clone.interaction-ledger.v1",
+  "site_id": "gitlab",
+  "entries": [
+    {"id": "explore-project", "clone_url": "/explore/projects", "selector": "a[href='/gitlab-org/gitlab-runner']", "visible_text": "gitlab-org / gitlab-runner", "raw_markup": "data-project-card", "form_action": null},
+    {"id": "no-results", "clone_url": "/explore/projects?name=zzzz-no-match-websitebench", "selector": "a[href='/explore/projects']", "visible_text": "View all projects", "raw_markup": "No projects match", "form_action": null},
+    {"id": "sign-in", "clone_url": "/users/sign_in", "selector": "button[type='submit']", "visible_text": "Sign in", "raw_markup": "id=\"identifier\"", "form_action": "/users/sign_in"},
+    {"id": "sign-up", "clone_url": "/users/sign_up", "selector": "button[type='submit']", "visible_text": "Register", "raw_markup": "id=\"username\"", "form_action": "/users/sign_up"},
+    {"id": "password-reset", "clone_url": "/users/password/new", "selector": "button[type='submit']", "visible_text": "Send reset instructions", "raw_markup": "data-single-submit", "form_action": "/users/password/new"},
+    {"id": "project-repository", "clone_url": "/gitlab-org/gitlab-runner", "selector": "a[href='/gitlab-org/gitlab-runner/-/tree/main']", "visible_text": "Repository", "raw_markup": "Project information", "form_action": null},
+    {"id": "project-branches", "clone_url": "/gitlab-org/gitlab-runner/-/branches", "selector": "a[href='/gitlab-org/gitlab-runner/-/tree/main']", "visible_text": "main", "raw_markup": "protected", "form_action": null},
+    {"id": "project-commits", "clone_url": "/gitlab-org/gitlab-runner/-/commits/main", "selector": "table tbody tr:first-child", "visible_text": "Commits", "raw_markup": "GitLab Contributor", "form_action": null},
+    {"id": "project-releases", "clone_url": "/gitlab-org/gitlab-runner/-/releases", "selector": "article.card:first-of-type", "visible_text": "GitLab Runner 19.3.1", "raw_markup": "Source code (zip)", "form_action": null},
+    {"id": "not-found-recovery", "clone_url": "/websitebench-nonexistent-path-zzzz", "selector": "a[href='/explore/projects']", "visible_text": "Explore projects", "raw_markup": "Page not found", "form_action": null}
+  ]
+}

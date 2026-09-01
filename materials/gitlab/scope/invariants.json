@@ -1,0 +1,60 @@
+{
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "frozen",
+  "invariants": [
+    {
+      "id": "runtime-local-only",
+      "statement": "Every runtime page, asset, form, and data mutation stays on the loopback clone and makes zero source-site requests.",
+      "priority": "p0",
+      "journey_ids": ["public-project-discovery", "local-account-lifecycle", "repository-change", "issue-to-merge-request", "pipeline-inspection"],
+      "positive_test_refs": ["clone/tests/test_smoke.py::test_public_routes_and_health", "clone/tests/test_smoke.py::test_runtime_has_no_remote_source_references"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_search_empty_state_and_not_found"],
+      "coverage_dimension_ids": ["public-surfaces", "local-mutations"]
+    },
+    {
+      "id": "auth-site-isolated",
+      "statement": "Accounts, sessions, verification challenges, and password resets use the generated site-bound WebsiteBench backend runtime.",
+      "priority": "p0",
+      "journey_ids": ["local-account-lifecycle", "recovery-and-errors"],
+      "positive_test_refs": ["clone/tests/test_auth.py::test_sign_in_dashboard_and_sign_out", "clone/tests/test_auth.py::test_registration_duplicate_submit_reuses_active_flow"],
+      "negative_test_refs": ["clone/tests/test_auth.py::test_password_reset_repeat_does_not_issue_another_request"],
+      "coverage_dimension_ids": ["auth-states"]
+    },
+    {
+      "id": "request-burst-prevention",
+      "statement": "Repeated registration and password-reset submissions reuse an active flow instead of issuing another mail request; a real cooldown response includes Retry-After and disables resubmission.",
+      "priority": "p0",
+      "journey_ids": ["local-account-lifecycle", "recovery-and-errors"],
+      "positive_test_refs": ["clone/tests/test_auth.py::test_registration_duplicate_submit_reuses_active_flow", "clone/tests/test_auth.py::test_password_reset_repeat_does_not_issue_another_request"],
+      "negative_test_refs": ["clone/tests/test_auth.py::test_registration_cooldown_returns_retryable_page_not_http_429"],
+      "coverage_dimension_ids": ["auth-states"]
+    },
+    {
+      "id": "project-owner-authority",
+      "statement": "Only authenticated project developers, maintainers, or owners can mutate repository and collaboration data; membership and settings require an owner or maintainer.",
+      "priority": "p0",
+      "journey_ids": ["repository-change", "issue-to-merge-request", "project-administration"],
+      "positive_test_refs": ["clone/tests/test_projects.py::test_project_repository_branch_and_settings", "clone/tests/test_projects.py::test_issue_merge_request_pipeline_and_fork"],
+      "negative_test_refs": ["clone/tests/test_auth.py::test_sign_in_dashboard_and_sign_out"],
+      "coverage_dimension_ids": ["local-mutations"]
+    },
+    {
+      "id": "durable-project-transitions",
+      "statement": "Project, file, branch, issue, merge-request, pipeline, membership, and settings transitions commit through the site-specific SQLite transaction boundary.",
+      "priority": "p0",
+      "journey_ids": ["repository-change", "issue-to-merge-request", "pipeline-inspection", "project-administration"],
+      "positive_test_refs": ["clone/tests/test_projects.py::test_project_repository_branch_and_settings", "clone/tests/test_projects.py::test_issue_merge_request_pipeline_and_fork"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_admin_reset_is_guarded"],
+      "coverage_dimension_ids": ["local-mutations"]
+    },
+    {
+      "id": "honest-source-limitations",
+      "statement": "Cloudflare-gated and authenticated source states remain marked unavailable; local functional simulations make no direct-source fidelity claim.",
+      "priority": "p1",
+      "journey_ids": ["local-account-lifecycle", "recovery-and-errors"],
+      "positive_test_refs": ["clone/tests/test_smoke.py::test_search_empty_state_and_not_found"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_runtime_has_no_remote_source_references"],
+      "coverage_dimension_ids": ["auth-states"]
+    }
+  ]
+}

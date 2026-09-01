@@ -1,0 +1,120 @@
+Skip to main content
+Homepage
+Why GitLab
+Pricing
+Explore
+Search or go to…
+/
+Get free trial
+Sign in
+Primary navigation
+Project
+gitlab-runner
+Pinned
+Members
+Work items
+-
+Branches
+Merge requests
+-
+Pipelines
+More features
+Manage
+Plan
+Code
+Merge requests
+-
+Repository
+Branches
+Commits
+Tags
+Repository graph
+Compare revisions
+Locked files
+Build
+Deploy
+Operate
+Monitor
+Analyze
+Help
+Collapse sidebar
+GitLab.org
+gitlab-runner
+Branches
+Branches
+Overview
+Active
+Stale
+All
+Active branches
+fix/issue-39575-adaptive-concurrency-false-warning
+7f7755a8 · fix: scope advisory note to bottlenecked runners with adaptive flag off · 1 hour ago
+37
+6
+!6911
+Download
+More actions
+main
+default
+protected
+54698541 · Merge branch 'docs-i18n/-GITTECHA-869-ko-KR-2' into 'main' · 1 hour ago
+Download
+log-field-schema-migration
+1f8b4fab · Improve the wording in the docs · 9 hours ago
+33
+14
+!6995
+Download
+More actions
+machine-heartbeat-labels
+882528bc · Trim ticker comments · 10 hours ago
+16
+8
+!7264
+Download
+More actions
+39695-classify-get-sources-transport-failures
+b88c2a1e · Restore the timestamp prefix a prior trim dropped from fixtures · 10 hours ago
+59
+11
+!7229
+Download
+More actions
+Show more active branches
+Stale branches
+0-6-stable
+protected
+3227f0aa · Fix 0.6.2 release · Oct 22, 2015
+999+
+6
+Download
+More actions
+0-7-stable
+protected
+998cf5d5 · Fix compilation error · Nov 25, 2015
+999+
+0
+Download
+More actions
+1-0-stable
+protected
+907cfa5e · Fix error level checking for Windows Batch and PowerShell · Mar 23, 2016
+999+
+6
+Download
+More actions
+feature/add-project-name-variables
+protected
+61551d50 · Add PROJECT_NAMESPACE and PROJECT_NAME variables · May 10, 2016
+999+
+1
+Download
+More actions
+1-1-stable
+protected
+67d3a962 · Add CI_BUILD_TOKEN · May 22, 2016
+999+
+27
+Download
+More actions
+Show more stale branches

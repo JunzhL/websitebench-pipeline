@@ -102,8 +102,8 @@ class MailboxStore:
 
     def deliver(self, raw: bytes, envelope_from: str, recipients: list[str]) -> bool:
         message = email.message_from_bytes(raw, policy=default)
-        namespace = str(message.get("X-WebsiteBench-Namespace", "default"))
-        capability = str(message.get("X-WebsiteBench-Capability", ""))
+        namespace = str(message.get("X-WebsiteBench-Namespace", "default")).strip()
+        capability = str(message.get("X-WebsiteBench-Capability", "")).strip()
         if not _NAMESPACE.fullmatch(namespace) or not self.authorized(
             namespace, capability
         ):
