@@ -1,0 +1,22 @@
+name: diagnostics (gitlab)
+on:
+  pull_request:
+    paths:
+      - materials/gitlab/**
+      - .github/workflows/tests-gitlab.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/gitlab/**
+      - .github/workflows/tests-gitlab.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-gitlab-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: gitlab
