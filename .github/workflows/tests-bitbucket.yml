@@ -1,0 +1,26 @@
+name: diagnostics (bitbucket)
+on:
+  pull_request:
+    paths:
+      - materials/bitbucket/**
+      - harbor/sites/bitbucket/**
+      - harbor/instances/bitbucket/**
+      - .github/workflows/tests-bitbucket.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/bitbucket/**
+      - harbor/sites/bitbucket/**
+      - harbor/instances/bitbucket/**
+      - .github/workflows/tests-bitbucket.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-bitbucket-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: bitbucket

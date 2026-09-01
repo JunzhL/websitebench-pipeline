@@ -1,0 +1,23 @@
+{
+  "schema_version":"offline-clone.verify-driver.v1",
+  "site_id":"bitbucket",
+  "note":"Anonymous diagnostics cover captured public surfaces. Authenticated mutations are covered by isolated local tests because source mutations are unauthorized.",
+  "routes":{
+    "home":"/","search":"/repo/all","repository":"/atlassianlabs/atlascode","source":"/atlassianlabs/atlascode/src/main/","commits":"/atlassianlabs/atlascode/commits/main","branches":"/atlassianlabs/atlascode/branches","pull-requests":"/atlassianlabs/atlascode/pull-requests","pipelines":"/atlassianlabs/atlascode/pipelines","sign-in":"/account/signin/","sign-up":"/account/signup/","password-reset":"/account/password/reset/","support":"/support","not-found":"/websitebench-nonexistent-path-zzzz"
+  },
+  "deferred":{
+    "dashboard.authenticated":"Source-authenticated evidence was unavailable. Clone-local behavior is tested separately.",
+    "issues.detail":"Source mutations were unauthorized. Clone-local behavior is tested separately.",
+    "pull-requests.detail":"Source mutations were unauthorized. Clone-local behavior is tested separately."
+  },
+  "visual_excluded":{
+    "repository.public":"Bitbucket application content was source-limited by blocked cross-origin resources.",
+    "sign-in.form":"AWS WAF blocked the source authentication form."
+  },
+  "status":{"not-found":404},
+  "prepare":[],
+  "states":{
+    "home.loaded":[],"search.loaded":[],"search.no-results":[{"goto":"/repo/all?name=zzzz-no-match-websitebench"},{"expect":"text=No repositories found"}],"repository.public":[],"source.files":[],"commits.loaded":[],"branches.list":[],"pull-requests.list":[],"pipelines.list":[],"sign-in.form":[],"sign-up.form":[],"password-reset.form":[],"support.loaded":[],"not-found.not-found":[]
+  },
+  "boot":{"argv":["{python}","-m","uvicorn","app:app","--host","127.0.0.1","--port","{port}","--log-level","warning"],"cwd":"clone","env":{}}
+}

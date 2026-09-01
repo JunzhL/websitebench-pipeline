@@ -1,0 +1,9 @@
+{
+  "schema_version":"offline-clone.assets.v1",
+  "snapshot_id":"bitbucket-public-2026-09-01",
+  "created_at":"2026-09-01T16:24:19Z",
+  "remote_runtime_policy":"forbidden",
+  "closure_status":"no-assets",
+  "no_assets_reason":"Clone UI uses local CSS and inline geometric icons; no captured media is required at runtime.",
+  "assets":[]
+}

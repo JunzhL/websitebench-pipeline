@@ -1,0 +1,82 @@
+{
+  "schema_version": "websitebench.offline-clone.backend-semantic-suite.v1",
+  "suite_id": "bitbucket-local-reset-boundary",
+  "allowed_origin": "http://127.0.0.1:8765",
+  "timeout_seconds": 10,
+  "follow_redirects": false,
+  "invariants": [
+    {
+      "id": "local-reset-authority",
+      "applicability": "applicable",
+      "required_polarities": [
+        "positive",
+        "negative"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "authorized-reset-restores-bitbucket-fixtures",
+      "invariant_id": "local-reset-authority",
+      "polarity": "positive",
+      "actor": "local-maintainer",
+      "steps": [
+        {
+          "id": "reset",
+          "request": {
+            "method": "POST",
+            "path": "/__admin/reset",
+            "headers_env": {
+              "X-WebsiteBench-Admin-Token": "WEBSITEBENCH_BITBUCKET_ADMIN_TOKEN"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "json_equal": {
+              "/reset": true,
+              "/site_id": "bitbucket"
+            }
+          }
+        },
+        {
+          "id": "health",
+          "request": {
+            "method": "GET",
+            "path": "/healthz"
+          },
+          "expect": {
+            "status": 200,
+            "json_equal": {
+              "/ok": true,
+              "/site_id": "bitbucket"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "unauthorized-reset-is-rejected",
+      "invariant_id": "local-reset-authority",
+      "polarity": "negative",
+      "actor": "anonymous",
+      "steps": [
+        {
+          "id": "reset-without-token",
+          "request": {
+            "method": "POST",
+            "path": "/__admin/reset"
+          },
+          "expect": {
+            "status": 403,
+            "json_equal": {
+              "/error": "forbidden"
+            },
+            "json_absent": [
+              "/reset"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

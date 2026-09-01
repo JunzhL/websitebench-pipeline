@@ -1,0 +1,99 @@
+{
+  "schema_version": "bitbucket.frontend-gate-samples.v1",
+  "app_file": "clone/app.py",
+  "app_attr": "app",
+  "module_name": "bitbucket_clone_app",
+  "checks": [
+    {
+      "id": "recovery-and-errors.repositories",
+      "url": "/repo/all",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "Repositories"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.no-results",
+      "url": "/repo/all?name=zzzz-no-match-websitebench",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "No repositories found"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.sign-in",
+      "url": "/account/signin/",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "Username or primary email"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.sign-up",
+      "url": "/account/signup/",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "Terms of Use"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.password-reset",
+      "url": "/account/password/reset/",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "Return to sign in"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.support",
+      "url": "/support/",
+      "method": "get",
+      "expect_status": 200,
+      "expect_contains": [
+        "Developer Tools records and actions"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    },
+    {
+      "id": "recovery-and-errors.not-found",
+      "url": "/websitebench-nonexistent-path-zzzz",
+      "method": "get",
+      "expect_status": 404,
+      "expect_contains": [
+        "Return to Developer Tools records and actions"
+      ],
+      "expect_not_contains": [
+        "Too Many Requests"
+      ],
+      "session": false
+    }
+  ]
+}

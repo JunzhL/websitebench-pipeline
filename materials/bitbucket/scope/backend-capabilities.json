@@ -1,0 +1,12 @@
+{
+  "schema_version":"websitebench.backend-capabilities.v1",
+  "site_id":"bitbucket",
+  "persistent_accounts":true,
+  "registration":true,
+  "login":true,
+  "password_recovery":true,
+  "transactional_email":true,
+  "business_database":true,
+  "payments":false,
+  "notes":"Seeded local accounts, sessions, repositories, history, and collaboration data require the shared backend. Registration and recovery use the local outbox only. No external mail or payment flow is enabled."
+}

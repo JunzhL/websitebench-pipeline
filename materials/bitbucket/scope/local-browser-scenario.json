@@ -1,0 +1,257 @@
+{
+  "schema_version": "websitebench.offline-clone.browser-scenario.v1",
+  "scenario_id": "bitbucket-local-acceptance",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "timeout_ms": 10000,
+  "source_mutations_authorized": false,
+  "allowed_origins": {
+    "clone": [
+      "http://127.0.0.1:8765"
+    ]
+  },
+  "steps": [
+    {
+      "id": "open-repositories",
+      "action": "goto",
+      "path": "/repo/all",
+      "observations": [
+        {
+          "id": "repository-heading",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "Repositories"
+          }
+        }
+      ]
+    },
+    {
+      "id": "enter-no-match-query",
+      "action": "fill",
+      "selector": "form[action='/repo/all'] input[name='name']",
+      "value": "zzzz-no-match-websitebench"
+    },
+    {
+      "id": "submit-no-match-query",
+      "action": "press",
+      "selector": "form[action='/repo/all'] input[name='name']",
+      "key": "Enter",
+      "observations": [
+        {
+          "id": "no-results-message",
+          "kind": "text",
+          "selector": ".empty-state h2",
+          "expect": {
+            "contains": "No repositories found"
+          }
+        },
+        {
+          "id": "return-route",
+          "kind": "attribute",
+          "selector": ".empty-state a",
+          "attribute": "href",
+          "expect": {
+            "equals": "/repo/all"
+          }
+        }
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "return-to-repositories",
+      "action": "click",
+      "selector": ".empty-state a[href='/repo/all']"
+    },
+    {
+      "id": "open-public-repository",
+      "action": "click",
+      "selector": "a[href='/atlassianlabs/atlascode']",
+      "observations": [
+        {
+          "id": "repository-name",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "atlascode"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-source-tree",
+      "action": "click",
+      "selector": "aside.sidebar a[href='/atlassianlabs/atlascode/src/main']",
+      "observations": [
+        {
+          "id": "source-heading",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "Files"
+          }
+        },
+        {
+          "id": "source-files",
+          "kind": "count",
+          "selector": "table.file-tree tbody tr",
+          "expect": {
+            "equals": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-sign-in",
+      "action": "goto",
+      "path": "/account/signin/"
+    },
+    {
+      "id": "enter-identifier",
+      "action": "fill",
+      "selector": "form[action='/account/signin/'] input[name='identifier']",
+      "value": "developer@bitbucket.local"
+    },
+    {
+      "id": "enter-password",
+      "action": "fill",
+      "selector": "form[action='/account/signin/'] input[name='password']",
+      "value_env": "WEBSITEBENCH_BITBUCKET_TEST_PASSWORD"
+    },
+    {
+      "id": "submit-sign-in",
+      "action": "click",
+      "selector": "form[action='/account/signin/'] button[type='submit']",
+      "observations": [
+        {
+          "id": "dashboard-route",
+          "kind": "url_path",
+          "expect": {
+            "equals": "/dashboard/overview"
+          }
+        },
+        {
+          "id": "dashboard-heading",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "Your work"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-pipeline",
+      "action": "goto",
+      "path": "/atlassianlabs/atlascode/pipelines/4453",
+      "observations": [
+        {
+          "id": "pipeline-heading",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "Pipeline #4453"
+          }
+        },
+        {
+          "id": "pipeline-log",
+          "kind": "text",
+          "selector": ".stack article:first-child pre",
+          "expect": {
+            "contains": "Job succeeded"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-owned-pipelines",
+      "action": "goto",
+      "path": "/developer/platform-demo/pipelines",
+      "observations": [
+        {
+          "id": "owned-pipelines-heading",
+          "kind": "text",
+          "selector": "main h1",
+          "expect": {
+            "equals": "Pipelines"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trigger-pipeline",
+      "action": "click",
+      "selector": "form[action='/developer/platform-demo/pipelines'] button[type='submit']",
+      "observations": [
+        {
+          "id": "triggered-pipeline-route",
+          "kind": "url_path",
+          "expect": {
+            "equals": "/developer/platform-demo/pipelines/1"
+          }
+        },
+        {
+          "id": "triggered-pipeline-log",
+          "kind": "text",
+          "selector": ".stack article:first-child pre",
+          "expect": {
+            "contains": "Job succeeded"
+          }
+        }
+      ]
+    },
+    {
+      "id": "retry-pipeline",
+      "action": "click",
+      "selector": "form[action='/developer/platform-demo/pipelines/1/retry'] button[type='submit']",
+      "observations": [
+        {
+          "id": "retry-status",
+          "kind": "text",
+          "selector": "[role='status']",
+          "expect": {
+            "contains": "Pipeline retried"
+          }
+        },
+        {
+          "id": "retry-log",
+          "kind": "text",
+          "selector": ".stack article:first-child pre",
+          "expect": {
+            "contains": "Retry requested locally"
+          }
+        }
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "return-to-dashboard",
+      "action": "goto",
+      "path": "/dashboard/overview"
+    },
+    {
+      "id": "sign-out",
+      "action": "click",
+      "selector": "form[action='/account/signout/'] button[type='submit']",
+      "observations": [
+        {
+          "id": "signed-out-route",
+          "kind": "url_path",
+          "expect": {
+            "equals": "/"
+          }
+        },
+        {
+          "id": "sign-in-visible",
+          "kind": "visible",
+          "selector": "a[href='/account/signin/']",
+          "expect": {
+            "equals": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "offline-clone.journeys.v1",
+  "journeys": [
+    {"id":"public-repository-discovery","kind":"success","priority":"p0","status":"frozen","actor":"visitor","steps":["Open Bitbucket.","Browse or search public repositories.","Open a repository and inspect source, commits, branches, downloads, and project metadata.","Apply an impossible search and return to repositories."]},
+    {"id":"local-account-lifecycle","kind":"success","priority":"p0","status":"frozen","actor":"developer","steps":["Open sign in.","Sign in with a seeded local developer account.","Open dashboard, profile, and account history.","Sign out."]},
+    {"id":"repository-creation","kind":"success","priority":"p0","status":"frozen","actor":"developer","steps":["Create a repository with description, visibility, README, ignore template, and license.","Refresh and verify persistence."]},
+    {"id":"repository-change","kind":"success","priority":"p0","status":"frozen","actor":"developer","steps":["Create or edit a file and commit it.","Create a branch and switch to it.","Compare the branch with main.","Verify the commit and branch persist."]},
+    {"id":"issue-and-pull-request","kind":"success","priority":"p0","status":"frozen","actor":"developer","steps":["Create an issue with labels, assignee, and milestone.","Comment and close it.","Open a pull request between branches.","Inspect the diff, add a reviewer and comment, then update status."]},
+    {"id":"pipeline-inspection","kind":"success","priority":"p1","status":"frozen","actor":"developer","steps":["Open pipelines.","Inspect a run, job status, and logs.","Retry the deterministic local run without contacting a runner."]},
+    {"id":"repository-administration","kind":"success","priority":"p1","status":"frozen","actor":"administrator","steps":["Add an existing local member and select a role.","Change topics, default branch, notifications, visibility, or archive state.","Verify a user without permission receives access denied."]},
+    {"id":"fork-and-download","kind":"success","priority":"p1","status":"frozen","actor":"developer","steps":["Inspect HTTPS, Sourcetree, VS Code, and download options.","Fork a public repository into the local workspace.","Verify repository history remains local."]},
+    {"id":"recovery-and-errors","kind":"recovery","priority":"p1","status":"frozen","actor":"visitor","steps":["Inspect registration and password-recovery entry surfaces without sending email.","Submit an empty action and inspect validation.","Open a missing deep link and return to repository discovery.","Open support guidance without exposing private data."]}
+  ]
+}

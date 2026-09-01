@@ -1,0 +1,5 @@
+{"id":"purpose.git-hosting","classification":"directly-observed","statement":"Bitbucket hosts Git repositories and exposes source, commit, branch, pull request, and pipeline surfaces.","evidence":"source-preflight and read-only exploration"}
+{"id":"repository.public","classification":"directly-observed","statement":"The atlassianlabs/atlascode repository exposes source files, commits, branches, metadata, and clone controls.","evidence":"https://bitbucket.org/atlassianlabs/atlascode/"}
+{"id":"pipeline.public","classification":"directly-observed","statement":"Pipeline 4453 exposes status, job output, configuration, and a rerun affordance.","evidence":"https://bitbucket.org/atlassianlabs/atlascode/pipelines/results/4453"}
+{"id":"auth.forms","classification":"unavailable","statement":"Successful Atlassian authentication fields were blocked during anonymous exploration.","evidence":"AWS WAF response"}
+{"id":"account.admin","classification":"unavailable","statement":"Dashboard, profile, history, repository settings, and permissions require authenticated evidence.","evidence":"anonymous access limitation"}
