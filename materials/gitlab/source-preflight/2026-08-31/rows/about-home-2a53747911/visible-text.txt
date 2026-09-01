@@ -1,0 +1,216 @@
+GitLab - Speed with control for agentic software engineering
+Platform
+Product
+Pricing
+Resources
+Company
+Contact us
+Request a demo
+Get free trial
+Sign in
+Ship at agent speed. Prove every step. Transcend returns on October 6.
+Register now
+
+Ship faster with agents under your control
+
+Agentic software engineering for your entire team
+
+Try for free
+Learn more
+
+19.3
+
+What's new in GitLab
+
+60+ improvements across AI, Security and much more
+
+GitLab Duo Agent Platform
+
+AI-powered DevSecOps across the entire software lifecycle.
+
+Security built in
+
+SAST, DAST, and compliance in every pipeline.
+
+Built for how you work
+
+Join the 50+ million people already using GitLab.
+
+Why GitLab?
+Define how teams and AI agents work together
+
+Customize workflows for development, testing, security, and deployment. Teams orchestrate from above the lifecycle while agents execute within it, automating repetitive tasks based on the rules and guardrails you set. Agents turn issues into merge requests, remediate vulnerabilities, and review code while your team stays in control.
+
+Meet GitLab Duo Agent Platform
+Your end-to-end delivery process in one place
+
+From planning to source control to CI/CD, everything you need to build and ship software faster in one platform. Projects, releases, and code share one data plane so your team and agents work from a single source of truth.
+
+Explore our platform
+Be proactive with security built in, not bolted on
+
+Build secure products with fewer security products. Consolidate scanners like SAST, SCA, Secret Detection, and DAST into one platform. Security findings appear directly in merge requests and IDEs. Apply controls for compliance and collect audit-ready evidence automatically in every pipeline.
+
+Learn more about security
+Commit once, adjust anytime with flexible pricing
+
+Organizations that need pricing flexibility can make one annual commitment and steer their spend across seat-based licenses and usage-based credits without re-procurement.
+
+Read about GitLab Flex
+Built to meet your industry’s demands
+
+Every industry faces unique security, compliance, and delivery requirements. GitLab adapts to your regulatory environment while maintaining the velocity your teams need.
+
+Financial Services
+
+Meet strict regulatory requirements without sacrificing delivery speed. Maintain audit trails, access controls, and comprehensive security testing.
+
+Public Sector
+
+Build software that meets federal security standards. Deploy in air-gapped environments, maintain government compliance, and secure software by design.
+
+Telecommunications
+
+Scale network infrastructure with confidence. Support complex deployment pipelines, strict uptime requirements, and distributed edge environments.
+
+Automotive
+
+Accelerate the automotive software lifecycle. Automate compliance workflows for safety standards, speed embedded development, and coordinate global teams.
+
+Education
+
+Empower students and researchers while protecting institutional data. Choose from flexible deployment options and enable research collaboration.
+
+Aerospace
+
+Accelerate development from flight-critical firmware to customer applications. Maintain safety standards, track SBOMs, and deploy in airgap environments.
+
+Use left and right arrow keys to navigate quotes. Swipe on touch devices. Autoplay pauses on hover or focus.
+
+Quote 1 of 5
+
+“The faster deployment capabilities GitLab enables directly contribute to our business growth. Communications service providers choose us because we can deliver innovation at the speed their markets demand.”
+
+Daniel Costa Soares
+
+Head of Software Automation and Support
+
+One platform for teams of every size
+
+Use left and right arrow keys to navigate cards. Swipe on touch devices.
+
+4 hours
+saved per engineer per week
+82%
+decrease in cycle time
+50%
+faster vulnerability detection
+13x
+faster security scanning
+20x
+decrease in pipeline execution time with GitLab
+100
+fewer hours of developer downtime per month
+6x
+faster time to market
+17%
+boost in developer happiness scores
+97%
+reduction in time to fix bugs
+80x
+faster CI pipeline builds
+30%
+of vulnerabilities found earlier in SDLC
+4 hours
+saved per engineer per week
+82%
+decrease in cycle time
+50%
+faster vulnerability detection
+13x
+faster security scanning
+20x
+decrease in pipeline execution time with GitLab
+100
+fewer hours of developer downtime per month
+
+Start building faster today
+
+See what your team can do with the intelligent orchestration platform for DevSecOps.
+
+Get your free trial
+Contact sales
+®
+Footer links
+Pricing
+View plans
+Why Premium?
+Why Ultimate?
+Contact Us
+Contact sales
+Support portal
+Customer portal
+Status
+Terms of use
+Privacy statement
+Cookie preferences
+Product
+DevSecOps platform
+AI-Assisted Development
+Topics
+CICD
+GitOps
+DevOps
+Version Control
+DevSecOps
+Cloud Native
+AI for Coding
+Agentic AI
+Solutions
+Application Security Testing
+Automated software delivery
+Agile development
+SCM
+CICD
+Value stream management
+GitOps
+Enterprise
+Small business
+Public sector
+Education
+Financial services
+Resources
+Install
+Quick start guides
+Learn
+Product documentation
+Blog
+What's new
+Customer success stories
+Remote
+GitLab Services
+Contribute
+Community
+Forum
+Events
+Partners
+Company
+About
+Jobs
+Leadership
+Handbook
+Investor relations
+Sustainability
+Diversity, inclusion and belonging (DIB)
+Trust Center
+Newsletter
+Press
+Modern Slavery Transparency Statement
+
+Git is a trademark of Software Freedom Conservancy and our use of 'GitLab' is under license
+
+View page source
+Edit this page
+Please contribute
+
+© 2026 GitLab Inc.

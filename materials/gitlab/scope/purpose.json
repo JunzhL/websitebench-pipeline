@@ -1,0 +1,27 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "frozen",
+  "purpose_id": "software-collaboration",
+  "statement": "Let visitors discover public software projects and let local developers manage repositories, issues, merge requests, pipelines, members, and project settings without contacting GitLab or causing production effects.",
+  "primary_actor_ids": ["visitor", "developer"],
+  "secondary_actor_ids": ["maintainer"],
+  "mainline_journey_ids": ["public-project-discovery", "local-account-lifecycle", "repository-change", "issue-to-merge-request", "pipeline-inspection"],
+  "boundary_journey_ids": ["recovery-and-errors"],
+  "secondary_journey_ids": ["project-administration"],
+  "actors": [
+    {"id": "visitor", "description": "Anonymous visitor browsing public marketing and project pages."},
+    {"id": "developer", "description": "Authenticated local account that creates and changes owned projects."},
+    {"id": "maintainer", "description": "Project member allowed to review changes and manage access."}
+  ],
+  "simulations": [
+    "Registration and password recovery use the local-only WebsiteBench mail outbox.",
+    "Pipeline execution and retry are deterministic local simulations with visible logs."
+  ],
+  "out_of_scope": [
+    "Real email delivery, external invitations, webhooks, OAuth, SSO, and identity-provider calls",
+    "Live Git transport, package registries, runners, deployments, and production CI execution",
+    "Billing, subscriptions, checkout, payment credentials, and payments",
+    "Source-authenticated visual fidelity for pages blocked by Cloudflare verification",
+    "Any runtime request to about.gitlab.com, gitlab.com, docs.gitlab.com, or third-party services"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "offline-clone.verify-driver.v1",
+  "site_id": "gitlab",
+  "note": "Anonymous diagnostics cover current direct or structural source surfaces. Authenticated mutations are covered by isolated site tests because no source-authenticated session was supplied.",
+  "routes": {
+    "home": "/",
+    "explore": "/explore/projects",
+    "project": "/gitlab-org/gitlab-runner",
+    "repository": "/gitlab-org/gitlab-runner/-/tree/main",
+    "commits": "/gitlab-org/gitlab-runner/-/commits/main",
+    "branches": "/gitlab-org/gitlab-runner/-/branches",
+    "releases": "/gitlab-org/gitlab-runner/-/releases",
+    "sign-in": "/users/sign_in",
+    "sign-up": "/users/sign_up",
+    "password-reset": "/users/password/new",
+    "help": "/help",
+    "not-found": "/websitebench-nonexistent-path-zzzz"
+  },
+  "deferred": {
+    "dashboard.authenticated": "Source-authenticated evidence was unavailable. Clone-local behavior is tested separately.",
+    "issues.detail": "Source mutations were not authorized. Clone-local behavior is tested separately.",
+    "merge-requests.detail": "Source mutations were not authorized. Clone-local behavior is tested separately.",
+    "pipelines.detail": "Source mutations were not authorized. Clone-local behavior is tested separately."
+  },
+  "visual_excluded": {
+    "explore.loaded": "Source JavaScript displayed an error after blocked GraphQL POST requests; candidate local data is intentionally functional.",
+    "sign-in.form": "Cloudflare verification blocked the source form.",
+    "not-found.not-found": "Cloudflare verification replaced the source missing-page response."
+  },
+  "status": {"not-found": 404},
+  "prepare": [],
+  "states": {
+    "home.loaded": [],
+    "explore.loaded": [],
+    "explore.no-results": [{"goto": "/explore/projects?name=zzzz-no-match-websitebench"}, {"expect": "text=No projects match"}],
+    "project.public": [],
+    "repository.files": [],
+    "commits.loaded": [],
+    "branches.list": [],
+    "releases.loaded": [],
+    "sign-in.form": [],
+    "sign-up.form": [],
+    "password-reset.form": [],
+    "help.loaded": [],
+    "not-found.not-found": []
+  },
+  "boot": {
+    "argv": ["{python}", "-m", "uvicorn", "app:app", "--host", "127.0.0.1", "--port", "{port}", "--log-level", "warning"],
+    "cwd": "clone",
+    "env": {}
+  }
+}

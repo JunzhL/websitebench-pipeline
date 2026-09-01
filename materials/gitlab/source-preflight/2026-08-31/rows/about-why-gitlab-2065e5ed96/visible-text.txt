@@ -1,0 +1,177 @@
+Why GitLab?
+Platform
+Product
+Pricing
+Resources
+Company
+Contact us
+Request a demo
+Get free trial
+Sign in
+Ship at agent speed. Prove every step. Transcend returns on October 6.
+Register now
+
+3 reasons why
+
+Enterprises choose GitLab for speed with control
+
+Try GitLab for free
+Contact sales
+01
+
+One platform
+for all your workflows
+
+Workflows
+Continuous flow instead of context switching
+
+Give teams everything they need to deliver software and manage AI agents in one place — so they can stay in continuous flow and avoid context switching and manual handoffs.
+
+Agentic AI
+Built-in CI/CD
+Agile planning
+
+With GitLab, we went from a completely isolated situation to a collaborative environment that enables better communication and coordination among diverse teams
+
+Jordan Dubié
+
+Chief Product Owner, Thales
+
+02
+
+Complete context
+across the SDLC
+
+Unified data model
+
+GitLab unifies context across the entire software development lifecycle in one semantic data layer, so your team members and AI agents have a single source of truth.
+
+Context graph for AI agents
+
+GitLab Duo Agent Platform enhances our development workflow with AI that truly understands our codebase and our organization.
+
+Bal Kang
+
+Engineering Platform Lead, NatWest Group
+
+03
+
+Flexible guardrails, consistent security
+
+Deployment options
+Deploy within your organization’s guardrails
+
+Modern enterprises need deployment flexibility — especially organizations with complex security, compliance, and regulatory requirements. Choose from on-premises, multi-tenant SaaS, or GitLab Dedicated, our fully managed single-tenant SaaS solution.
+
+Built-in security
+Privacy-first AI
+Compliance
+
+NatWest Group is adopting GitLab Dedicated to enable our engineers to use a common cloud engineering platform; delivering new customer outcomes rapidly, frequently and securely with high quality, automated testing, on demand infrastructure and straight-through deployment.
+
+Adam Leggett
+
+Platform Lead - Engineering Platforms, NatWest Group
+
+Are you just managing tools or shipping innovation?
+
+We've created a maturity framework based on our experience working with industry-leading customers. It offers prescriptive guidance on how to rapidly progress through three maturity stages.
+
+Get your DevOps maturity score
+
+Quiz takes 5 minutes or less
+
+Other things enterprises love about GitLab
+
+Open core
+
+With GitLab's open core, you can build a solution that truly meets your needs, while shaping the future of our roadmap and DevSecOps.
+
+Cloud agnostic
+
+Since GitLab isn't commercially tied to any specific cloud provider, you can de-risk your multi-cloud strategy and avoid being locked into a single vendor.
+
+AI provider agnostic
+
+GitLab isn’t locked to a single AI model provider, so you can pick the right model for each job and keep self-hosted options when you need them.
+
+Start building faster today
+
+See what your team can do with the intelligent orchestration platform for DevSecOps.
+
+Get your free trial
+Contact sales
+®
+Footer links
+Pricing
+View plans
+Why Premium?
+Why Ultimate?
+Contact Us
+Contact sales
+Support portal
+Customer portal
+Status
+Terms of use
+Privacy statement
+Cookie preferences
+Product
+DevSecOps platform
+AI-Assisted Development
+Topics
+CICD
+GitOps
+DevOps
+Version Control
+DevSecOps
+Cloud Native
+AI for Coding
+Agentic AI
+Solutions
+Application Security Testing
+Automated software delivery
+Agile development
+SCM
+CICD
+Value stream management
+GitOps
+Enterprise
+Small business
+Public sector
+Education
+Financial services
+Resources
+Install
+Quick start guides
+Learn
+Product documentation
+Blog
+What's new
+Customer success stories
+Remote
+GitLab Services
+Contribute
+Community
+Forum
+Events
+Partners
+Company
+About
+Jobs
+Leadership
+Handbook
+Investor relations
+Sustainability
+Diversity, inclusion and belonging (DIB)
+Trust Center
+Newsletter
+Press
+Modern Slavery Transparency Statement
+
+Git is a trademark of Software Freedom Conservancy and our use of 'GitLab' is under license
+
+View page source
+Edit this page
+Please contribute
+
+© 2026 GitLab Inc.

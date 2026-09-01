@@ -1,0 +1,356 @@
+Pricing
+Platform
+Product
+Pricing
+Resources
+Company
+Contact us
+Request a demo
+Get free trial
+Sign in
+Ship at agent speed. Prove every step. Transcend returns on October 6.
+Register now
+Get started with GitLab
+
+The intelligent orchestration platform for DevSecOps.
+
+GitLab.com
+Self Managed
+Dedicated
+GitLab.com is cloud-hosted by us. Instant setup, getting you to value quicker.
+Free
+
+For individuals working on personal projects and open source contributions
+
+$
+0
+per user/month,
+No credit card required
+Get started
+
+AI features can be accessed via the purchase of GitLab Credits add-on.
+
+Features include:
+5 users per top-level group
+400 compute minutes per month
+Source Code Management & CI/CD
+10 GiB adjustable storage
+Static Application Security Testing
+Add-ons:
+GitLab Credits
+
+Access to a set of Duo Agent Platform features, shared across your team.
+
+Compute Minutes
+Storage
+Premium
+Most popular
+
+For scaling organizations seeking enhanced productivity and collaboration
+
+$
+29
+per user/month,
+billed annually
+Buy Premium
+Try for free
+
+$12 included GitLab Credits per user/month to access AI features. *
+
+Everything from Free, plus:
+Unlimited licensed users
+10,000 compute minutes per month
+Advanced CI/CD
+Team Project Management
+SLA Management
+Priority Support
+Featured add-on:
+GitLab Credits
+
+Enhance your plan with features like AI code review, secure secrets storage, and more.
+
+Need pricing flexibility?
+Learn about Flex ↓
+Learn more about Premium
+Ultimate
+
+For enterprises requiring advanced security and compliance capabilities
+
+Contact us for custom pricing
+Try for free
+
+$24 included GitLab Credits per user/month to access AI features. *
+
+Everything from Premium plus:
+Unlimited guest users
+50,000 compute minutes per month
+Application Security Testing
+Software Supply Chain Security
+Vulnerability Management
+Strategic Portfolio Management
+Value Stream Management
+Compliance and Governance
+Featured add-on:
+GitLab Credits
+
+Enhance your plan with features like AI code review, secure secrets storage, and more.
+
+Need pricing flexibility?
+Learn about Flex ↓
+Learn more about Ultimate
+Included GitLab credits are a promotional offer available for a limited time. See details and promo terms.
+Compare all features
+Trusted by
+New
+GitLab Flex Commitment
+
+Organizations that need pricing flexibility can make one annual commitment and adapt their spend across GitLab plans and usage as they grow.
+
+Available with any paid plan
+
+One annual commitment for seats and GitLab Credits
+Re-allocate spend as needs change
+Track spend against your annual balance
+Get pricing
+Learn more
+Do more with GitLab
+GitLab Credits
+
+GitLab Credits are the currency that powers a growing set of usage-based features, from AI-powered pipeline fixes to secure secret storage, helping you ship faster and keep your workflow secure.
+
+Purchased credits are shared across your team
+
+Volume discounts are available with annual commitment
+
+$
+1
+per GitLab Credit
+Billing varies by plan*
+Buy GitLab Credits
+Try for free
+
+*Billing depends on your plan and commitment. Learn more about credits and usage billing.
+
+What credits unlock
+GitLab Duo Agent Platform
+
+Reviews code, fixes pipelines, and runs full development flows. Learn more about GitLab Duo.
+
+Key features:
+Agentic chat
+AI Catalog
+Specialized Agents
+Automated workflows
+Available with any plan
+New
+Secrets Manager
+
+Secure, centralized service for storing, controlling access to, and rotating sensitive credentials. Learn more about Secrets Manager.
+
+Available for Premium
+Available for Ultimate
+
+GitLab.com only — Self-Managed and Dedicated coming soon.
+
+Other add-ons
+
+Compute Minutes
+$
+10
+per 1,000 minutes, one time payment
+
+For teams whose CI/CD pipelines regularly run out of included minutes and need more runtime to ship without slowdowns.
+
+Available on all plans
+Learn more
+Storage
+$
+5
+per month for 10GiB of storage, billed annually
+
+More space for large repos, LFS files, and build artifacts when your group namespace hits its limit.
+
+Available for Premium
+Available for Ultimate
+Learn more
+Enterprise Agile Planning
+$
+15
+per user/month
+
+Gives PMs and non-technical stakeholders a seat at the table inside GitLab, without needing a full developer license.
+
+Available for Ultimate
+Learn more
+Find GitLab on Partner Marketplace
+Purchase GitLab through Cloud Marketplaces seamlessly.
+Learn more
+Selecting a section scrolls to that section within the FAQ block.
+License and Subscription
+Payments and Pricing
+Features and Benefits
+GitLab.com
+Self-Managed
+Dedicated
+User Limits
+Compute minutes
+Storage Limits
+Usage Pricing
+
+Frequently
+
+asked questions
+
+License and Subscription
+Show all
+I already have an account, how do I upgrade?
+Can I add more users to my subscription?
+How will I be charged for add-on users?
+What happens when my subscription is about to expire or has expired?
+What happens if I decide not to renew my subscription?
+Can I acquire a mix of licenses?
+How does the license key work?
+What is an Activation Code?
+What features and permissions are available to Enterprise Agile Planning users?
+How can I find GitLab's preferred license resellers?
+What documentation applies to use of my subscription?
+Payments and Pricing
+Show all
+What is a user?
+Is the listed pricing all inclusive?
+Can I import my projects from another provider?
+Do you have special pricing for open source projects, educational institutions, or startups?
+How does GitLab determine what future features fall into given tiers?
+Features and Benefits
+Show all
+What are the differences between Free, Premium, and Ultimate plans?
+What are the differences between SAST, Secret Detection, and Container Scanning across tiers?
+What is the difference between GitLab and other DevSecOps solutions?
+What does support entail?
+Do you have a success offering?
+GitLab.com
+Show all
+Where is GitLab.com hosted?
+Self-Managed
+Show all
+What is GitLab Self-Managed?
+How do I install GitLab Self-Managed?
+Is there a minimum supported version to use specific capabilities?
+Dedicated
+Show all
+Where is GitLab Dedicated hosted?
+User Limits
+Show all
+What is the 5-user limit on the GitLab.com Free tier?
+Compute minutes
+Show all
+What are compute minutes?
+What happens if I use all of my compute minutes?
+Do the compute minutes apply to all runners?
+Do the compute minutes increase depending on the number of users in the group, or the number of users in the subscription?
+Why do I need to enter credit/debit card details for free compute minutes?
+Can I bring my own GitLab CI/CD runners?
+Storage Limits
+Show all
+What are the current GitLab.com storage limits?
+What does the purchased storage cover?
+What are the per-project storage limits on GitLab.com?
+Usage pricing
+Show all
+How can I purchase GitLab Credits?
+Which Free namespaces can purchase a monthly commitment of GitLab Credits?
+Can I share credits across my organization?
+Am I charged a different rate based on what model I use?
+GitLab Flex
+Show all
+Can I purchase GitLab Flex with a credit card?
+Can I switch from traditional licensing to GitLab Flex mid-term?
+What happens if I run out of GitLab Flex balance mid-year?
+Can I allocate my GitLab Flex commitment across multiple organizations or instances?
+Do volume discounts apply to overage?
+Can I change my deployment model after signing a Flex contract?
+How do I enable new capabilities under my Flex contract?
+Do unused reserved credits carry over to the next month?
+Can I convert my Flex balance back to cash if I don't use it all?
+What's the difference between "reserved" and "per-use" credit allocation?
+
+Start building faster today
+
+See what your team can do with the intelligent orchestration platform for DevSecOps.
+
+Get your free trial
+Contact sales
+®
+Footer links
+Pricing
+View plans
+Why Premium?
+Why Ultimate?
+Contact Us
+Contact sales
+Support portal
+Customer portal
+Status
+Terms of use
+Privacy statement
+Cookie preferences
+Product
+DevSecOps platform
+AI-Assisted Development
+Topics
+CICD
+GitOps
+DevOps
+Version Control
+DevSecOps
+Cloud Native
+AI for Coding
+Agentic AI
+Solutions
+Application Security Testing
+Automated software delivery
+Agile development
+SCM
+CICD
+Value stream management
+GitOps
+Enterprise
+Small business
+Public sector
+Education
+Financial services
+Resources
+Install
+Quick start guides
+Learn
+Product documentation
+Blog
+What's new
+Customer success stories
+Remote
+GitLab Services
+Contribute
+Community
+Forum
+Events
+Partners
+Company
+About
+Jobs
+Leadership
+Handbook
+Investor relations
+Sustainability
+Diversity, inclusion and belonging (DIB)
+Trust Center
+Newsletter
+Press
+Modern Slavery Transparency Statement
+
+Git is a trademark of Software Freedom Conservancy and our use of 'GitLab' is under license
+
+View page source
+Edit this page
+Please contribute
+
+© 2026 GitLab Inc.

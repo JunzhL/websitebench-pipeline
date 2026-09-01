@@ -1,0 +1,343 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/gitlab/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 2.539357,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": true,
+    "contract_version": "1.8.6",
+    "doctor_green": true,
+    "extension_connected": true,
+    "notes": [],
+    "version": "1.8.6",
+    "version_matches": true
+  },
+  "profile_id": "recovery-and-errors",
+  "profile_label": "gitlab recovery and errors (derived draft)",
+  "profile_tier": "p1",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "gitlab",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "explore/projects",
+      "duration_seconds": 0.292207,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_explore",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "gitlab-org / gitlab-runner",
+          "key": "visible",
+          "observed": "gitlab-org / gitlab-runner",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-explore",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "gitlab-org/gitlab-runner",
+      "duration_seconds": 0.16398,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_project",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Project information",
+          "key": "visible",
+          "observed": "Project information",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-project",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "gitlab-org/gitlab-runner/-/tree/main",
+      "duration_seconds": 0.179443,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_repository",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Files",
+          "key": "visible",
+          "observed": "Files",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-repository",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "gitlab-org/gitlab-runner/-/commits/main",
+      "duration_seconds": 0.156793,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_commits",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Commits",
+          "key": "visible",
+          "observed": "Commits",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-commits",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "gitlab-org/gitlab-runner/-/branches",
+      "duration_seconds": 0.155226,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_branches",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Branches",
+          "key": "visible",
+          "observed": "Branches",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-branches",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "gitlab-org/gitlab-runner/-/releases",
+      "duration_seconds": 0.156289,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_releases",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "GitLab Runner 19.3.1",
+          "key": "visible",
+          "observed": "GitLab Runner 19.3.1",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-releases",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "explore/projects?name=zzzz-no-match-websitebench",
+      "duration_seconds": 0.153884,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_no-results",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "View all projects",
+          "key": "list_contains",
+          "observed": "View all projects",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-no-results",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "users/sign_in",
+      "duration_seconds": 0.153267,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_sign-in",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Sign in to GitLab",
+          "key": "visible",
+          "observed": "Sign in to GitLab",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-sign-in",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "users/sign_up",
+      "duration_seconds": 0.150931,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_sign-up",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Create your GitLab account",
+          "key": "visible",
+          "observed": "Create your GitLab account",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-sign-up",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "users/password/new",
+      "duration_seconds": 0.151958,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_password-reset",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Reset your password",
+          "key": "visible",
+          "observed": "Reset your password",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-password-reset",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "help",
+      "duration_seconds": 0.175412,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "gitlab_recovery-and-errors_help",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "NotImplementedError",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "GitLab help",
+          "key": "visible",
+          "observed": "GitLab help",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-help",
+      "tier": "p1"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 11,
+    "steps_total": 11,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:8765",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

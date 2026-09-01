@@ -1,0 +1,26 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {"id": "home", "route_pattern": "/", "priority": "p0", "purpose_edge": "entry", "local_destination": true, "states": ["loaded"]},
+    {"id": "explore", "route_pattern": "/explore/projects", "priority": "p0", "purpose_edge": "discovery", "local_destination": true, "states": ["loaded", "no-results"]},
+    {"id": "project", "route_pattern": "/{namespace}/{project}", "priority": "p0", "purpose_edge": "object-detail", "local_destination": true, "states": ["public", "private", "forbidden"]},
+    {"id": "repository", "route_pattern": "/{namespace}/{project}/-/tree/{branch}", "priority": "p0", "purpose_edge": "repository", "local_destination": true, "states": ["files", "empty"]},
+    {"id": "file", "route_pattern": "/{namespace}/{project}/-/blob/{branch}/{path}", "priority": "p0", "purpose_edge": "repository", "local_destination": true, "states": ["view", "edit", "validation"]},
+    {"id": "commits", "route_pattern": "/{namespace}/{project}/-/commits/{branch}", "priority": "p0", "purpose_edge": "history", "local_destination": true, "states": ["loaded"]},
+    {"id": "branches", "route_pattern": "/{namespace}/{project}/-/branches", "priority": "p0", "purpose_edge": "repository", "local_destination": true, "states": ["list", "created", "duplicate"]},
+    {"id": "compare", "route_pattern": "/{namespace}/{project}/-/compare/{revisions}", "priority": "p1", "purpose_edge": "review", "local_destination": true, "states": ["same", "different"]},
+    {"id": "releases", "route_pattern": "/{namespace}/{project}/-/releases", "priority": "p1", "purpose_edge": "history", "local_destination": true, "states": ["loaded", "empty"]},
+    {"id": "issues", "route_pattern": "/{namespace}/{project}/-/issues", "priority": "p0", "purpose_edge": "planning", "local_destination": true, "states": ["list", "new", "detail", "closed"]},
+    {"id": "merge-requests", "route_pattern": "/{namespace}/{project}/-/merge_requests", "priority": "p0", "purpose_edge": "review", "local_destination": true, "states": ["list", "new", "detail", "merged", "closed"]},
+    {"id": "pipelines", "route_pattern": "/{namespace}/{project}/-/pipelines", "priority": "p0", "purpose_edge": "delivery", "local_destination": true, "states": ["list", "detail", "success", "failed", "retried"]},
+    {"id": "members", "route_pattern": "/{namespace}/{project}/-/project_members", "priority": "p1", "purpose_edge": "administration", "local_destination": true, "states": ["list", "invited", "forbidden"]},
+    {"id": "settings", "route_pattern": "/{namespace}/{project}/-/edit", "priority": "p1", "purpose_edge": "administration", "local_destination": true, "states": ["loaded", "saved", "archived", "forbidden"]},
+    {"id": "dashboard", "route_pattern": "/dashboard", "priority": "p0", "purpose_edge": "account", "local_destination": true, "states": ["authenticated", "signed-out"]},
+    {"id": "activity", "route_pattern": "/activity", "priority": "p1", "purpose_edge": "history", "local_destination": true, "states": ["loaded", "empty"]},
+    {"id": "sign-in", "route_pattern": "/users/sign_in", "priority": "p0", "purpose_edge": "account", "local_destination": true, "states": ["form", "invalid", "authenticated"]},
+    {"id": "sign-up", "route_pattern": "/users/sign_up", "priority": "p1", "purpose_edge": "account", "local_destination": true, "states": ["form", "verification", "duplicate", "cooldown"]},
+    {"id": "password-reset", "route_pattern": "/users/password/new", "priority": "p1", "purpose_edge": "recovery", "local_destination": true, "states": ["form", "verification", "updated", "cooldown"]},
+    {"id": "help", "route_pattern": "/help", "priority": "p2", "purpose_edge": "support", "local_destination": true, "states": ["loaded"]},
+    {"id": "not-found", "route_pattern": "/{missing}", "priority": "p1", "purpose_edge": "recovery", "local_destination": true, "states": ["not-found"]}
+  ]
+}
