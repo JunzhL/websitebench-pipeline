@@ -1,0 +1,159 @@
+{
+  "schema_version": "bitbucket.interaction-ledger.v1",
+  "site_id": "bitbucket",
+  "authority": "diagnostic-only",
+  "clone_base_url": "http://127.0.0.1:8765",
+  "generated_by": "tools/build_interaction_ledger.py",
+  "sources": {
+    "browser_scenario": "scope/local-browser-scenario.json",
+    "note": "Selectors and step IDs come from the current loopback browser walk. Proof strings and form actions are checked against served clone DOM."
+  },
+  "secret_handling": "Password, session cookie, and admin token were consumed in memory from environment variables and were not retained.",
+  "controls": [
+    {
+      "step_id": "enter-no-match-query",
+      "clone_url": "/repo/all",
+      "selector": "form[action='/repo/all'] input[name='name']",
+      "visible_text_proof": "Repositories",
+      "raw_markup_proof": "<input style='flex:1' aria-label='Filter or search projects' name='name' value='' placeholder='Filter or search (3 character minimum)'>",
+      "form_action": {
+        "method": "GET",
+        "action": "/repo/all"
+      },
+      "journey_id": "public-repository-discovery",
+      "role": "visitor",
+      "state": "search-loaded"
+    },
+    {
+      "step_id": "submit-no-match-query",
+      "clone_url": "/repo/all",
+      "selector": "form[action='/repo/all'] input[name='name']",
+      "visible_text_proof": "Repositories",
+      "raw_markup_proof": "<input style='flex:1' aria-label='Filter or search projects' name='name' value='' placeholder='Filter or search (3 character minimum)'>",
+      "form_action": {
+        "method": "GET",
+        "action": "/repo/all"
+      },
+      "journey_id": "recovery-and-errors",
+      "role": "visitor",
+      "state": "search-no-results"
+    },
+    {
+      "step_id": "return-to-repositories",
+      "clone_url": "/repo/all?name=zzzz-no-match-websitebench",
+      "selector": ".empty-state a[href='/repo/all']",
+      "visible_text_proof": "View all repositories",
+      "raw_markup_proof": "<a href='/repo/all'>",
+      "form_action": null,
+      "journey_id": "recovery-and-errors",
+      "role": "visitor",
+      "state": "search-no-results"
+    },
+    {
+      "step_id": "open-public-repository",
+      "clone_url": "/repo/all",
+      "selector": "a[href='/atlassianlabs/atlascode']",
+      "visible_text_proof": "atlassianlabs / atlascode",
+      "raw_markup_proof": "<a href='/atlassianlabs/atlascode'>",
+      "form_action": null,
+      "journey_id": "public-repository-discovery",
+      "role": "visitor",
+      "state": "repository-list"
+    },
+    {
+      "step_id": "open-source-tree",
+      "clone_url": "/atlassianlabs/atlascode",
+      "selector": "aside.sidebar a[href='/atlassianlabs/atlascode/src/main']",
+      "visible_text_proof": "Source",
+      "raw_markup_proof": "<a class='' href='/atlassianlabs/atlascode/src/main'>",
+      "form_action": null,
+      "journey_id": "public-repository-discovery",
+      "role": "visitor",
+      "state": "repository-public"
+    },
+    {
+      "step_id": "enter-identifier",
+      "clone_url": "/account/signin/",
+      "selector": "form[action='/account/signin/'] input[name='identifier']",
+      "visible_text_proof": "Username or primary email",
+      "raw_markup_proof": "<input id=\"identifier\" name=\"identifier\" autocomplete=\"username\" required>",
+      "form_action": {
+        "method": "POST",
+        "action": "/account/signin/"
+      },
+      "journey_id": "local-account-lifecycle",
+      "role": "visitor",
+      "state": "sign-in-form"
+    },
+    {
+      "step_id": "enter-password",
+      "clone_url": "/account/signin/",
+      "selector": "form[action='/account/signin/'] input[name='password']",
+      "visible_text_proof": "Password",
+      "raw_markup_proof": "<input id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required>",
+      "form_action": {
+        "method": "POST",
+        "action": "/account/signin/"
+      },
+      "journey_id": "local-account-lifecycle",
+      "role": "visitor",
+      "state": "sign-in-form"
+    },
+    {
+      "step_id": "submit-sign-in",
+      "clone_url": "/account/signin/",
+      "selector": "form[action='/account/signin/'] button[type='submit']",
+      "visible_text_proof": "Sign in",
+      "raw_markup_proof": "<button class='primary' type='submit'>",
+      "form_action": {
+        "method": "POST",
+        "action": "/account/signin/"
+      },
+      "journey_id": "local-account-lifecycle",
+      "role": "visitor",
+      "state": "sign-in-form"
+    },
+    {
+      "step_id": "trigger-pipeline",
+      "clone_url": "/developer/platform-demo/pipelines",
+      "selector": "form[action='/developer/platform-demo/pipelines'] button[type='submit']",
+      "visible_text_proof": "Run pipeline",
+      "raw_markup_proof": "<form action='/developer/platform-demo/pipelines' method='post' data-single-submit>",
+      "form_action": {
+        "method": "POST",
+        "action": "/developer/platform-demo/pipelines"
+      },
+      "journey_id": "pipeline-inspection",
+      "role": "developer",
+      "state": "pipelines-list"
+    },
+    {
+      "step_id": "retry-pipeline",
+      "clone_url": "/developer/platform-demo/pipelines/1",
+      "selector": "form[action='/developer/platform-demo/pipelines/1/retry'] button[type='submit']",
+      "visible_text_proof": "Retry pipeline",
+      "raw_markup_proof": "<form action='/developer/platform-demo/pipelines/1/retry' method='post' data-single-submit>",
+      "form_action": {
+        "method": "POST",
+        "action": "/developer/platform-demo/pipelines/1/retry"
+      },
+      "journey_id": "pipeline-inspection",
+      "role": "developer",
+      "state": "pipeline-detail"
+    },
+    {
+      "step_id": "sign-out",
+      "clone_url": "/dashboard/overview",
+      "selector": "form[action='/account/signout/'] button[type='submit']",
+      "visible_text_proof": "Sign out",
+      "raw_markup_proof": "<form action='/account/signout/' method='post'>",
+      "form_action": {
+        "method": "POST",
+        "action": "/account/signout/"
+      },
+      "journey_id": "local-account-lifecycle",
+      "role": "developer",
+      "state": "dashboard-authenticated"
+    }
+  ]
+}

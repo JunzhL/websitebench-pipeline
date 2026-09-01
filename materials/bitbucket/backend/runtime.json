@@ -1,0 +1,103 @@
+{
+  "database": {
+    "data_dir": "data",
+    "engine": "sqlite",
+    "filename": "bitbucket.sqlite3",
+    "legacy_unbound_migration": false,
+    "migration_hook": "backend.domain:migrate",
+    "seed_hook": "backend.domain:seed"
+  },
+  "deployment": {
+    "profiles": {
+      "cloudflare-review": {
+        "mail_adapter": "redis-resend",
+        "payment_adapter": "local-sandbox",
+        "persistence": "ephemeral-reset"
+      },
+      "docker-volume": {
+        "mail_adapter": "effects-gateway",
+        "payment_adapter": "local-sandbox",
+        "persistence": "persistent-volume"
+      },
+      "offline-harbor": {
+        "mail_adapter": "local-outbox",
+        "payment_adapter": "local-sandbox",
+        "persistence": "persistent"
+      }
+    }
+  },
+  "mail": {
+    "purposes": {
+      "password-reset": {
+        "body": "Your password reset code is ${code}.",
+        "expiry": "This code expires in ${minutes} minutes.",
+        "footer": "Ignore this message if you did not contact Bitbucket.",
+        "lead": "A password reset was requested for Bitbucket.",
+        "required_variables": [
+          "code",
+          "minutes"
+        ],
+        "secret_variables": [
+          "code"
+        ],
+        "subject": "Reset your Bitbucket password",
+        "template_id": "bitbucket.password-reset.v1"
+      },
+      "registration": {
+        "body": "Your verification code is ${code}.",
+        "expiry": "This code expires in ${minutes} minutes.",
+        "footer": "This code is only for Bitbucket.",
+        "lead": "Finish creating your Bitbucket account.",
+        "required_variables": [
+          "code",
+          "minutes"
+        ],
+        "secret_variables": [
+          "code"
+        ],
+        "subject": "Verify your Bitbucket account",
+        "template_id": "bitbucket.registration.v1"
+      }
+    },
+    "sender": {
+      "address_env": "RESEND_FROM_EMAIL",
+      "display_name": "Bitbucket"
+    }
+  },
+  "payments": {
+    "currency": "USD",
+    "default_adapter": "local-sandbox",
+    "local_sandbox": {
+      "scenarios": [
+        {
+          "display_label": "Simulated approval",
+          "id": "sandbox-approved",
+          "outcome": "approved"
+        },
+        {
+          "display_label": "Simulated decline",
+          "id": "sandbox-declined",
+          "outcome": "declined"
+        },
+        {
+          "display_label": "Simulated retry",
+          "id": "sandbox-retry",
+          "outcome": "retryable"
+        }
+      ]
+    },
+    "stripe_test": null
+  },
+  "schema_version": "websitebench.site-backend-runtime.v1",
+  "session": {
+    "host_only": true,
+    "http_only": true,
+    "same_site": "Lax",
+    "secure": true
+  },
+  "site": {
+    "id": "bitbucket",
+    "label": "Bitbucket",
+    "public_origin": "https://bitbucket.offline.invalid"
+  }
+}

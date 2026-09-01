@@ -1,0 +1,50 @@
+{
+  "schema_version": "websitebench.agent-suggested-scope.v1",
+  "site_id": "bitbucket",
+  "source_url": "https://bitbucket.org/",
+  "purpose": "Host Git repositories, review code changes, and inspect CI/CD activity.",
+  "roles": ["visitor", "developer", "reviewer", "workspace-member", "administrator"],
+  "priorities": {
+    "p0": [
+      "public-repository-discovery",
+      "repository-browsing",
+      "local-authentication-lifecycle",
+      "repository-creation",
+      "file-commit-and-branch-comparison",
+      "issue-lifecycle",
+      "pull-request-lifecycle"
+    ],
+    "p1": [
+      "fork-and-download",
+      "pipeline-inspection-and-retry",
+      "members-and-permissions",
+      "repository-settings",
+      "account-history",
+      "validation-and-permission-recovery",
+      "help-and-not-found-recovery"
+    ],
+    "p2": ["registration-entry", "password-recovery-entry"]
+  },
+  "authority": {
+    "authenticated_source_read": true,
+    "source_mutations": [],
+    "real_email": false,
+    "payments": false,
+    "push": false,
+    "pull_request_submission": false,
+    "public_deployment": false
+  },
+  "human_trace_text": {
+    "confirmed": ["HT-02", "HT-04", "HT-05", "HT-06", "HT-07", "HT-08", "HT-09", "HT-10", "HT-11", "HT-12", "HT-13", "HT-14", "HT-15", "HT-16", "HT-17", "HT-18", "HT-19", "HT-20", "HT-21"],
+    "excluded": ["HT-01", "HT-03"]
+  },
+  "inaccessible": [
+    "successful Atlassian authentication during anonymous exploration",
+    "authenticated dashboard and profile",
+    "account history",
+    "repository settings and permissions",
+    "public issue detail",
+    "anonymous pull request detail",
+    "working fork flow"
+  ]
+}

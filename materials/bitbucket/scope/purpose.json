@@ -1,0 +1,28 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "frozen",
+  "purpose_id": "software-collaboration",
+  "statement": "Let visitors discover public Bitbucket repositories and let local developers manage source, issues, pull requests, pipelines, members, and repository settings without contacting Bitbucket or causing production effects.",
+  "primary_actor_ids": ["visitor", "developer"],
+  "secondary_actor_ids": ["reviewer", "administrator"],
+  "mainline_journey_ids": ["public-repository-discovery", "local-account-lifecycle", "repository-change", "issue-and-pull-request", "pipeline-inspection"],
+  "boundary_journey_ids": ["recovery-and-errors"],
+  "secondary_journey_ids": ["repository-administration", "fork-and-download"],
+  "actors": [
+    {"id": "visitor", "description": "Anonymous visitor browsing public Bitbucket pages and repositories."},
+    {"id": "developer", "description": "Authenticated local account that creates and changes owned repositories."},
+    {"id": "reviewer", "description": "Repository member who reviews pull requests."},
+    {"id": "administrator", "description": "Workspace or repository owner who manages access and settings."}
+  ],
+  "simulations": [
+    "Account recovery stays local and sends no real email.",
+    "Pipeline execution and retry are deterministic local simulations with visible logs.",
+    "Collaborator invitations select seeded local accounts and send no message."
+  ],
+  "out_of_scope": [
+    "Real account creation, email delivery, invitations, source pushes, webhooks, OAuth, and identity-provider calls",
+    "Live Git transport, package registries, runners, deployments, and production CI execution",
+    "Billing, subscriptions, payment credentials, and payments",
+    "Any runtime request to Bitbucket, Atlassian, Sourcetree, VS Code, or third-party services"
+  ]
+}

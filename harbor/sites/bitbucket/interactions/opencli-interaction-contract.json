@@ -1,0 +1,107 @@
+{
+  "generated_from": "materials/bitbucket/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "recovery-and-errors": {
+      "failure_paths": [],
+      "label": "bitbucket recovery and errors (derived draft)",
+      "local_semantics": [
+        "Every runtime page, asset, form, and data mutation stays on loopback and makes zero source-site requests.",
+        "Accounts and sessions use the generated site-bound WebsiteBench backend runtime.",
+        "Local forms validate immediately and repeated idempotent actions reuse existing state; normal acceptance journeys never return HTTP 429."
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [
+        "recovery-and-errors"
+      ],
+      "steps": [
+        {
+          "command": "state",
+          "id": "recovery-and-errors-repositories",
+          "intent": "Exercise clone check recovery-and-errors.repositories (GET /repo/all).",
+          "observation_id": "bitbucket_recovery-and-errors_repositories",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Repositories"
+          },
+          "route": "repo/all"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-no-results",
+          "intent": "Exercise clone check recovery-and-errors.no-results (GET /repo/all?name=zzzz-no-match-websitebench).",
+          "observation_id": "bitbucket_recovery-and-errors_no-results",
+          "required_state": {
+            "list_contains": "No repositories found",
+            "text_absent": "Too Many Requests"
+          },
+          "route": "repo/all?name=zzzz-no-match-websitebench"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-sign-in",
+          "intent": "Exercise clone check recovery-and-errors.sign-in (GET /account/signin/).",
+          "observation_id": "bitbucket_recovery-and-errors_sign-in",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Username or primary email"
+          },
+          "route": "account/signin/"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-sign-up",
+          "intent": "Exercise clone check recovery-and-errors.sign-up (GET /account/signup/).",
+          "observation_id": "bitbucket_recovery-and-errors_sign-up",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Terms of Use"
+          },
+          "route": "account/signup/"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-password-reset",
+          "intent": "Exercise clone check recovery-and-errors.password-reset (GET /account/password/reset/).",
+          "observation_id": "bitbucket_recovery-and-errors_password-reset",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Return to sign in"
+          },
+          "route": "account/password/reset/"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-support",
+          "intent": "Exercise clone check recovery-and-errors.support (GET /support/).",
+          "observation_id": "bitbucket_recovery-and-errors_support",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Developer Tools records and actions"
+          },
+          "route": "support/"
+        },
+        {
+          "command": "state",
+          "id": "recovery-and-errors-not-found",
+          "intent": "Exercise clone check recovery-and-errors.not-found (GET /websitebench-nonexistent-path-zzzz).",
+          "observation_id": "bitbucket_recovery-and-errors_not-found",
+          "required_state": {
+            "text_absent": "Too Many Requests",
+            "visible": "Return to Developer Tools records and actions"
+          },
+          "route": "websitebench-nonexistent-path-zzzz"
+        }
+      ],
+      "tier": "p1"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "bitbucket"
+}

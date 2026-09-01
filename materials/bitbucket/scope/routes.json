@@ -1,0 +1,26 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {"id":"home","route_pattern":"/","priority":"p0","purpose_edge":"entry","local_destination":true,"states":["loaded"]},
+    {"id":"search","route_pattern":"/repo/all","priority":"p0","purpose_edge":"discovery","local_destination":true,"states":["loaded","no-results"]},
+    {"id":"repository","route_pattern":"/{workspace}/{repository}","priority":"p0","purpose_edge":"object-detail","local_destination":true,"states":["public","private","forbidden"]},
+    {"id":"source","route_pattern":"/{workspace}/{repository}/src/{branch}","priority":"p0","purpose_edge":"repository","local_destination":true,"states":["files","file","edit","validation"]},
+    {"id":"commits","route_pattern":"/{workspace}/{repository}/commits/{branch}","priority":"p0","purpose_edge":"history","local_destination":true,"states":["loaded"]},
+    {"id":"branches","route_pattern":"/{workspace}/{repository}/branches","priority":"p0","purpose_edge":"repository","local_destination":true,"states":["list","created","duplicate"]},
+    {"id":"compare","route_pattern":"/{workspace}/{repository}/branches/compare/{revisions}","priority":"p0","purpose_edge":"review","local_destination":true,"states":["same","different"]},
+    {"id":"downloads","route_pattern":"/{workspace}/{repository}/downloads","priority":"p1","purpose_edge":"history","local_destination":true,"states":["loaded"]},
+    {"id":"issues","route_pattern":"/{workspace}/{repository}/issues","priority":"p0","purpose_edge":"planning","local_destination":true,"states":["list","new","detail","closed"]},
+    {"id":"pull-requests","route_pattern":"/{workspace}/{repository}/pull-requests","priority":"p0","purpose_edge":"review","local_destination":true,"states":["list","new","detail","merged","closed"]},
+    {"id":"pipelines","route_pattern":"/{workspace}/{repository}/pipelines","priority":"p1","purpose_edge":"delivery","local_destination":true,"states":["list","detail","success","failed","retried"]},
+    {"id":"members","route_pattern":"/{workspace}/{repository}/admin/access","priority":"p1","purpose_edge":"administration","local_destination":true,"states":["list","added","forbidden"]},
+    {"id":"settings","route_pattern":"/{workspace}/{repository}/admin","priority":"p1","purpose_edge":"administration","local_destination":true,"states":["loaded","saved","archived","forbidden"]},
+    {"id":"dashboard","route_pattern":"/dashboard/overview","priority":"p0","purpose_edge":"account","local_destination":true,"states":["authenticated","signed-out"]},
+    {"id":"profile","route_pattern":"/account/settings/","priority":"p1","purpose_edge":"account","local_destination":true,"states":["loaded"]},
+    {"id":"history","route_pattern":"/account/history/","priority":"p1","purpose_edge":"history","local_destination":true,"states":["loaded","empty"]},
+    {"id":"sign-in","route_pattern":"/account/signin/","priority":"p0","purpose_edge":"account","local_destination":true,"states":["form","invalid","authenticated"]},
+    {"id":"sign-up","route_pattern":"/account/signup/","priority":"p2","purpose_edge":"account","local_destination":true,"states":["form"]},
+    {"id":"password-reset","route_pattern":"/account/password/reset/","priority":"p2","purpose_edge":"recovery","local_destination":true,"states":["form","validation"]},
+    {"id":"support","route_pattern":"/support","priority":"p1","purpose_edge":"support","local_destination":true,"states":["loaded"]},
+    {"id":"not-found","route_pattern":"/{missing}","priority":"p1","purpose_edge":"recovery","local_destination":true,"states":["not-found"]}
+  ]
+}

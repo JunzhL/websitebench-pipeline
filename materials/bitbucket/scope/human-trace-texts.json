@@ -1,0 +1,29 @@
+{
+  "schema_version": "websitebench.human-trace-text-selection.v1",
+  "site_id": "bitbucket",
+  "texts": [
+    {"id": "HT-02", "status": "confirmed", "text": "Search Bitbucket for a repository/project and browse files, commits, branches, releases, and project metadata."},
+    {"id": "HT-04", "status": "confirmed", "text": "Sign in to Bitbucket, open the dashboard, and sign out."},
+    {"id": "HT-05", "status": "confirmed", "text": "Create a new repository/project on Bitbucket with description, visibility, README, and ignore/license settings."},
+    {"id": "HT-06", "status": "confirmed", "text": "Create or edit a file in a Bitbucket repository and commit the change with a message."},
+    {"id": "HT-07", "status": "confirmed", "text": "Create a new branch on Bitbucket, switch branches, and inspect the branch comparison."},
+    {"id": "HT-08", "status": "confirmed", "text": "Create an issue/ticket on Bitbucket, add labels/assignee/milestone, comment, and change its state."},
+    {"id": "HT-09", "status": "confirmed", "text": "Open a pull/merge request on Bitbucket, review the diff, add a comment/reviewer, and update its status."},
+    {"id": "HT-10", "status": "confirmed", "text": "Fork a public project on Bitbucket and inspect clone/download options."},
+    {"id": "HT-11", "status": "confirmed", "text": "Open a Bitbucket CI/workflow/pipeline run, inspect job logs/status, and retry or trigger a run where supported."},
+    {"id": "HT-12", "status": "confirmed", "text": "Invite a collaborator/member to a Bitbucket project and configure role/access permissions."},
+    {"id": "HT-13", "status": "confirmed", "text": "Change repository/project settings on Bitbucket, such as topics, default branch, notifications, archive, or visibility where permitted."},
+    {"id": "HT-14", "status": "confirmed", "text": "Search Bitbucket for `zzzz-no-match-websitebench`, or apply an impossible public filter when discovery is browse-only, and verify a no-results message plus a route back to available Developer Tools records and actions."},
+    {"id": "HT-15", "status": "confirmed", "text": "Open Bitbucket's sign-in entry, verify the username or email field and the available password or identity-provider choices, then return without submitting credentials."},
+    {"id": "HT-16", "status": "confirmed", "text": "Open Bitbucket's account-registration entry and verify the visible identity fields, terms links, and verification guidance without creating an account."},
+    {"id": "HT-17", "status": "confirmed", "text": "From Bitbucket's sign-in surface, open password recovery and verify the reset-address field, validation guidance, and return-to-sign-in link without sending a reset message."},
+    {"id": "HT-18", "status": "confirmed", "text": "With seeded offline data present, open Bitbucket's account history for Developer Tools records and actions; verify the newest item exposes its status, detail, edit or cancellation options, and a route back to the relevant collection."},
+    {"id": "HT-19", "status": "confirmed", "text": "Open a Bitbucket action for Developer Tools records and actions with required fields empty or while signed out and verify inline validation or a permission prompt identifies what must be corrected before continuation."},
+    {"id": "HT-20", "status": "confirmed", "text": "Open Bitbucket's public help, support, or contact entry and verify a user can reach guidance for Developer Tools records and actions, account access, and failed actions without exposing private account data."},
+    {"id": "HT-21", "status": "confirmed", "text": "Open a non-existent Bitbucket deep link and verify a branded not-found or recovery view preserves primary navigation and provides a safe route back to Developer Tools records and actions."}
+  ],
+  "excluded": [
+    {"id": "HT-01", "reason": "Rejected by the annotator."},
+    {"id": "HT-03", "reason": "Account creation conflicts with REAL_EMAIL_AUTHORIZED=false and an account already exists."}
+  ]
+}

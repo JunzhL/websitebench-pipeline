@@ -1,0 +1,90 @@
+{
+  "schema_version": "offline-clone.source-acquisition-spec.v2",
+  "site_id": "bitbucket",
+  "capture_id": "bitbucket.public.2026-09-01",
+  "allowed_origins": [
+    "https://bitbucket.org",
+    "https://id.atlassian.com",
+    "https://support.atlassian.com"
+  ],
+  "pages": [
+    {
+      "row_id": "public.home.desktop",
+      "priority": "p0",
+      "url": "https://bitbucket.org/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.overview.desktop",
+      "priority": "p0",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.source.desktop",
+      "priority": "p0",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/src/main/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.commits.desktop",
+      "priority": "p0",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/commits/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.branches.desktop",
+      "priority": "p0",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/branches/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.pullrequests.desktop",
+      "priority": "p1",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/pull-requests/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "repository.pipeline.desktop",
+      "priority": "p1",
+      "url": "https://bitbucket.org/atlassianlabs/atlascode/pipelines/results/4453",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "support.home.desktop",
+      "priority": "p2",
+      "url": "https://support.atlassian.com/bitbucket-cloud/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "recovery.notfound.desktop",
+      "priority": "p1",
+      "url": "https://bitbucket.org/websitebench-nonexistent-path-zzzz/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    }
+  ],
+  "limits": {
+    "navigation_timeout_ms": 45000,
+    "settle_ms": 5000,
+    "max_resource_bytes": 10485760,
+    "max_total_resource_bytes": 268435456
+  }
+}

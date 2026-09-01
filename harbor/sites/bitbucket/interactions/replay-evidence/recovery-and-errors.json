@@ -1,0 +1,235 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/bitbucket/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 2.245976,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": true,
+    "connectivity_ok": true,
+    "contract_version": "1.8.6",
+    "doctor_green": true,
+    "extension_connected": true,
+    "notes": [],
+    "version": "1.8.6",
+    "version_matches": true
+  },
+  "profile_id": "recovery-and-errors",
+  "profile_label": "bitbucket recovery and errors (derived draft)",
+  "profile_tier": "p1",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "bitbucket",
+  "status": "passed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "repo/all",
+      "duration_seconds": 0.293109,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_repositories",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Repositories",
+          "key": "visible",
+          "observed": "Repositories",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-repositories",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "repo/all?name=zzzz-no-match-websitebench",
+      "duration_seconds": 0.236323,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_no-results",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "No repositories found",
+          "key": "list_contains",
+          "observed": "No repositories found",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-no-results",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/signin/",
+      "duration_seconds": 0.231363,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_sign-in",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Username or primary email",
+          "key": "visible",
+          "observed": "Username or primary email",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-sign-in",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/signup/",
+      "duration_seconds": 0.232545,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_sign-up",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Terms of Use",
+          "key": "visible",
+          "observed": "Terms of Use",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-sign-up",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "account/password/reset/",
+      "duration_seconds": 0.24501,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_password-reset",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Return to sign in",
+          "key": "visible",
+          "observed": "Return to sign in",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-password-reset",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "support/",
+      "duration_seconds": 0.236151,
+      "error": null,
+      "http_status": 200,
+      "observation_id": "bitbucket_recovery-and-errors_support",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Developer Tools records and actions",
+          "key": "visible",
+          "observed": "Developer Tools records and actions",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-support",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "websitebench-nonexistent-path-zzzz",
+      "duration_seconds": 0.230011,
+      "error": null,
+      "http_status": 404,
+      "observation_id": "bitbucket_recovery-and-errors_not-found",
+      "observations": [
+        {
+          "asserted": true,
+          "expected": "Too Many Requests",
+          "key": "text_absent",
+          "observed": "",
+          "passed": true
+        },
+        {
+          "asserted": true,
+          "expected": "Return to Developer Tools records and actions",
+          "key": "visible",
+          "observed": "Return to Developer Tools records and actions",
+          "passed": true
+        }
+      ],
+      "outcome": "passed",
+      "step_id": "recovery-and-errors-not-found",
+      "tier": "p1"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 7,
+    "steps_total": 7,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:8765",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}
