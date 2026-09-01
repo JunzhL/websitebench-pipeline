@@ -1,0 +1,96 @@
+{
+  "generated_from": "materials/hackerrank/clone.yaml",
+  "opencli_version": "1.8.6",
+  "profiles": {
+    "validation-and-recovery": {
+      "failure_paths": [],
+      "label": "hackerrank validation and recovery (derived draft)",
+      "local_semantics": [
+        "Every runtime page, asset, form, and data mutation stays on the loopback clone and makes zero source-site requests.",
+        "Accounts, sessions, verification challenges, and password resets use the generated site-bound WebsiteBench backend runtime.",
+        "Only an authenticated learner can save challenges, run or submit drafts, inspect private submission history, and update profile settings."
+      ],
+      "network": {
+        "allowlist": [
+          "127.0.0.1",
+          "localhost"
+        ],
+        "notes": "Only local verifier/candidate hostnames are expected."
+      },
+      "recovery_paths": [
+        "validation-and-recovery"
+      ],
+      "steps": [
+        {
+          "command": "state",
+          "id": "validation-and-recovery-domains",
+          "intent": "Exercise clone check validation-and-recovery.domains (GET /domains).",
+          "observation_id": "hackerrank_validation-and-recovery_domains",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Solve Me First"
+          },
+          "route": "domains"
+        },
+        {
+          "command": "state",
+          "id": "validation-and-recovery-challenge",
+          "intent": "Exercise clone check validation-and-recovery.challenge (GET /challenges/solve-me-first/problem).",
+          "observation_id": "hackerrank_validation-and-recovery_challenge",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Submit code"
+          },
+          "route": "challenges/solve-me-first/problem"
+        },
+        {
+          "command": "state",
+          "id": "validation-and-recovery-discussion",
+          "intent": "Exercise clone check validation-and-recovery.discussion (GET /challenges/solve-me-first/forum).",
+          "observation_id": "hackerrank_validation-and-recovery_discussion",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Discussions and solutions"
+          },
+          "route": "challenges/solve-me-first/forum"
+        },
+        {
+          "command": "state",
+          "id": "validation-and-recovery-no-results",
+          "intent": "Exercise clone check validation-and-recovery.no-results (GET /domains?search=zzzz-no-match-websitebench).",
+          "observation_id": "hackerrank_validation-and-recovery_no-results",
+          "required_state": {
+            "list_contains": "Browse all challenges",
+            "text_absent": "NotImplementedError"
+          },
+          "route": "domains?search=zzzz-no-match-websitebench"
+        },
+        {
+          "command": "state",
+          "id": "validation-and-recovery-sign-in",
+          "intent": "Exercise clone check validation-and-recovery.sign-in (GET /auth/login).",
+          "observation_id": "hackerrank_validation-and-recovery_sign-in",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Log in to HackerRank"
+          },
+          "route": "auth/login"
+        },
+        {
+          "command": "state",
+          "id": "validation-and-recovery-sign-up",
+          "intent": "Exercise clone check validation-and-recovery.sign-up (GET /auth/signup).",
+          "observation_id": "hackerrank_validation-and-recovery_sign-up",
+          "required_state": {
+            "text_absent": "NotImplementedError",
+            "visible": "Create your learner account"
+          },
+          "route": "auth/signup"
+        }
+      ],
+      "tier": "p1"
+    }
+  },
+  "schema_version": "websitebench.harbor.opencli-interaction-contract.v1",
+  "site_id": "hackerrank"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "offline-clone.source-acquisition-spec.v2",
+  "site_id": "hackerrank",
+  "capture_id": "hackerrank-preflight-2026-09-01",
+  "allowed_origins": [
+    "https://www.hackerrank.com"
+  ],
+  "pages": [
+    {
+      "row_id": "home-desktop",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "home-mobile",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/",
+      "viewport": {"name": "mobile", "width": 390, "height": 844},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "practice-domains",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/domains",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "practice-tutorial",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/domains/tutorials/10-days-of-javascript",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "practice-no-match",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/domains?search=zzzz-no-match-websitebench",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "challenge-problem",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/challenges/solve-me-first/problem",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "challenge-problem-mobile",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/challenges/solve-me-first/problem",
+      "viewport": {"name": "mobile", "width": 390, "height": 844},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "challenge-discussion",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/challenges/solve-me-first/forum",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "contests",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/contests",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "auth-login",
+      "priority": "p0",
+      "url": "https://www.hackerrank.com/auth/login",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "auth-signup",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/auth/signup",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "auth-forgot-password",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/auth/forgot_password",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "dashboard-signed-out",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/dashboard",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    },
+    {
+      "row_id": "not-found",
+      "priority": "p1",
+      "url": "https://www.hackerrank.com/websitebench-nonexistent-path-zzzz",
+      "viewport": {"name": "desktop", "width": 1440, "height": 900},
+      "wait_until": "domcontentloaded",
+      "full_page": true
+    }
+  ],
+  "limits": {
+    "navigation_timeout_ms": 60000,
+    "settle_ms": 3000,
+    "max_resource_bytes": 10485760,
+    "max_total_resource_bytes": 268435456
+  }
+}

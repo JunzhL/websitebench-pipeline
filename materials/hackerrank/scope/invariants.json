@@ -1,0 +1,60 @@
+{
+  "schema_version": "offline-clone.invariants.v1",
+  "status": "frozen",
+  "invariants": [
+    {
+      "id": "runtime-local-only",
+      "statement": "Every runtime page, asset, form, and data mutation stays on the loopback clone and makes zero source-site requests.",
+      "priority": "p0",
+      "journey_ids": ["public-challenge-discovery", "local-account-lifecycle", "solve-and-submit", "submission-history"],
+      "positive_test_refs": ["clone/tests/test_smoke.py::test_public_routes_and_health"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_runtime_has_no_remote_source_references"],
+      "coverage_dimension_ids": ["runtime-network-invariants"]
+    },
+    {
+      "id": "auth-site-isolated",
+      "statement": "Accounts, sessions, verification challenges, and password resets use the generated site-bound WebsiteBench backend runtime.",
+      "priority": "p0",
+      "journey_ids": ["local-account-lifecycle", "password-recovery"],
+      "positive_test_refs": ["clone/tests/test_auth.py::test_sign_in_dashboard_and_sign_out", "clone/tests/test_auth.py::test_local_registration"],
+      "negative_test_refs": ["clone/tests/test_auth.py::test_invalid_sign_in_and_guarded_dashboard"],
+      "coverage_dimension_ids": ["local-learning-contracts"]
+    },
+    {
+      "id": "learner-owner-authority",
+      "statement": "Only an authenticated learner can save challenges, run or submit drafts, inspect private submission history, and update profile settings.",
+      "priority": "p0",
+      "journey_ids": ["solve-and-submit", "submission-history", "learning-progress", "contests-and-settings"],
+      "positive_test_refs": ["clone/tests/test_learning.py::test_run_submit_history_and_resubmit", "clone/tests/test_learning.py::test_save_profile_and_settings"],
+      "negative_test_refs": ["clone/tests/test_learning.py::test_signed_out_actions_fail_closed"],
+      "coverage_dimension_ids": ["local-learning-contracts"]
+    },
+    {
+      "id": "deterministic-local-judge",
+      "statement": "Run and submit outcomes come from fixed local fixtures. Submitted source is never executed and never leaves the clone.",
+      "priority": "p0",
+      "journey_ids": ["solve-and-submit", "submission-history"],
+      "positive_test_refs": ["clone/tests/test_learning.py::test_run_submit_history_and_resubmit"],
+      "negative_test_refs": ["clone/tests/test_learning.py::test_failed_submission_feedback"],
+      "coverage_dimension_ids": ["local-learning-contracts", "runtime-network-invariants"]
+    },
+    {
+      "id": "durable-learning-transitions",
+      "statement": "Profiles, saved challenges, editor drafts, runs, submissions, progress, badges, and settings commit through the site-specific SQLite transaction boundary.",
+      "priority": "p0",
+      "journey_ids": ["solve-and-submit", "submission-history", "learning-progress", "contests-and-settings"],
+      "positive_test_refs": ["clone/tests/test_learning.py::test_run_submit_history_and_resubmit", "clone/tests/test_learning.py::test_save_profile_and_settings"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_admin_reset_is_guarded"],
+      "coverage_dimension_ids": ["local-learning-contracts"]
+    },
+    {
+      "id": "honest-source-limitations",
+      "statement": "All HackerRank source states remain marked unavailable because formal acquisition returned HTTP 403. Local simulations make no direct-source fidelity claim.",
+      "priority": "p1",
+      "journey_ids": ["public-challenge-discovery", "local-account-lifecycle", "solve-and-submit", "validation-and-recovery"],
+      "positive_test_refs": ["clone/tests/test_smoke.py::test_search_empty_state_and_not_found"],
+      "negative_test_refs": ["clone/tests/test_smoke.py::test_runtime_has_no_remote_source_references"],
+      "coverage_dimension_ids": ["source-unavailable-states"]
+    }
+  ]
+}

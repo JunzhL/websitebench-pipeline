@@ -1,0 +1,26 @@
+{
+  "schema_version": "offline-clone.checkpoints.v1",
+  "status": "draft",
+  "viewports": {
+    "desktop": {"width": 1440, "height": 900},
+    "mobile": {"width": 390, "height": 844}
+  },
+  "checkpoints": [
+    {"id": "home.loaded.desktop", "route_id": "home", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "note": "HTTP 403 blocked the source page. This is a clone-local contract."},
+    {"id": "home.loaded.mobile", "route_id": "home", "state": "loaded", "role": "visitor", "viewport": "mobile", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "note": "HTTP 403 blocked the source page. This is a clone-local contract."},
+    {"id": "domains.loaded.desktop", "route_id": "domains", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "domains.no-results.desktop", "route_id": "domains", "state": "no-results", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "tutorial.loaded.desktop", "route_id": "tutorial", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "challenge.loaded.desktop", "route_id": "challenge", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "challenge.loaded.mobile", "route_id": "challenge", "state": "loaded", "role": "visitor", "viewport": "mobile", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "discussion.loaded.desktop", "route_id": "discussion", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "contests.loaded.desktop", "route_id": "contests", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "sign-in.form.desktop", "route_id": "sign-in", "state": "form", "role": "visitor", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "sign-up.form.desktop", "route_id": "sign-up", "state": "form", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "password-reset.form.desktop", "route_id": "password-reset", "state": "form", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "dashboard.authenticated.desktop", "route_id": "dashboard", "state": "authenticated", "role": "learner", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "submissions.loaded.desktop", "route_id": "submissions", "clone_path": "/challenges/solve-me-first/submissions", "state": "loaded", "role": "learner", "viewport": "desktop", "priority": "p0", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "support.loaded.desktop", "route_id": "support", "state": "loaded", "role": "visitor", "viewport": "desktop", "priority": "p2", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true},
+    {"id": "not-found.not-found.desktop", "route_id": "not-found", "state": "not-found", "role": "visitor", "viewport": "desktop", "priority": "p1", "evidence_kind": "unavailable", "acceptance_eligible": false, "clone_local_contract": true}
+  ]
+}

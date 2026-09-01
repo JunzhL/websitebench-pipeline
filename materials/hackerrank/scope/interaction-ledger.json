@@ -1,0 +1,21 @@
+{
+  "schema_version": "offline-clone.interaction-ledger.v1",
+  "site_id": "hackerrank",
+  "entries": [
+    {"id": "home-practice", "clone_url": "/", "selector": "a[href='/domains']", "visible_text": "Start practicing", "raw_markup": "Build coding skills with hands-on challenges", "form_action": null},
+    {"id": "filter-challenges", "clone_url": "/domains", "selector": "button[type='submit']", "visible_text": "Apply filters", "raw_markup": "data-challenge-card", "form_action": "/domains"},
+    {"id": "no-results-recovery", "clone_url": "/domains?search=zzzz-no-match-websitebench", "selector": "a[href='/domains']", "visible_text": "Browse all challenges", "raw_markup": "data-no-results", "form_action": null},
+    {"id": "open-challenge", "clone_url": "/domains", "selector": "a[href='/challenges/solve-me-first/problem']", "visible_text": "Solve Me First", "raw_markup": "98% success rate", "form_action": null},
+    {"id": "save-challenge", "clone_url": "/challenges/solve-me-first/problem", "selector": "form[action='/challenges/solve-me-first/save'] button", "visible_text": "Save challenge", "raw_markup": "name='source'", "form_action": "/challenges/solve-me-first/save"},
+    {"id": "run-code", "clone_url": "/challenges/solve-me-first/problem", "selector": "form[action='/challenges/solve-me-first/run'] button[type='submit']:not([formaction])", "visible_text": "Run code", "raw_markup": "class='code-editor'", "form_action": "/challenges/solve-me-first/run"},
+    {"id": "submit-code", "clone_url": "/challenges/solve-me-first/problem", "selector": "button[formaction='/challenges/solve-me-first/submit']", "visible_text": "Submit code", "raw_markup": "name='custom_input'", "form_action": "/challenges/solve-me-first/submit"},
+    {"id": "submission-history", "clone_url": "/challenges/solve-me-first/submissions", "selector": "tbody tr:first-child a", "visible_text": "Your submissions", "raw_markup": "Memory", "form_action": null},
+    {"id": "resubmit", "clone_url": "/challenges/solve-me-first/submissions/1", "selector": "a[href='/challenges/solve-me-first/problem?load=1']", "visible_text": "Edit and resubmit", "raw_markup": "Submitted source", "form_action": null},
+    {"id": "sign-in", "clone_url": "/auth/login", "selector": "button[type='submit']", "visible_text": "Log in", "raw_markup": "id='identifier'", "form_action": "/auth/login"},
+    {"id": "sign-up", "clone_url": "/auth/signup", "selector": "button[type='submit']", "visible_text": "Create account", "raw_markup": "id='full_name'", "form_action": "/auth/signup"},
+    {"id": "password-reset", "clone_url": "/auth/forgot_password", "selector": "button[type='submit']", "visible_text": "Send reset instructions", "raw_markup": "id='email'", "form_action": "/auth/forgot_password"},
+    {"id": "profile-save", "clone_url": "/profile", "selector": "button[type='submit']", "visible_text": "Save profile", "raw_markup": "id='bio'", "form_action": "/profile"},
+    {"id": "settings-save", "clone_url": "/settings", "selector": "button[type='submit']", "visible_text": "Save settings", "raw_markup": "id='preferred_language'", "form_action": "/settings"},
+    {"id": "not-found-recovery", "clone_url": "/websitebench-nonexistent-path-zzzz", "selector": "a[href='/domains']", "visible_text": "Browse practice challenges", "raw_markup": "We could not find that page", "form_action": null}
+  ]
+}

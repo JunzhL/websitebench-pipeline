@@ -1,0 +1,15 @@
+{
+  "schema_version": "offline-clone.contribution-backend-scope.v1",
+  "site_id": "hackerrank",
+  "backend_profile": "full",
+  "runtime_required": true,
+  "capabilities": [
+    {"id": "accounts", "applicability": "in-scope", "rationale": "Local registration, verification, password sign-in, profile editing, session rotation, and sign-out are required by the supplied tasks."},
+    {"id": "password-recovery", "applicability": "in-scope", "rationale": "Local password recovery uses indistinguishable public responses and the generated WebsiteBench auth runtime."},
+    {"id": "transactional-mail", "applicability": "in-scope", "rationale": "Registration and password-reset verification use the HackerRank-branded local-only outbox. No provider is called."},
+    {"id": "orders", "applicability": "not-applicable", "rationale": "Coding practice creates no order analogue."},
+    {"id": "checkout", "applicability": "not-applicable", "rationale": "No subscription or purchase flow is in scope."},
+    {"id": "payments", "applicability": "not-applicable", "rationale": "The app exposes no payment surface. The runtime keeps local-sandbox as an inert default."},
+    {"id": "database", "applicability": "in-scope", "rationale": "Accounts, sessions, profiles, saved challenges, editor drafts, runs, submissions, progress, badges, and settings require one site-bound SQLite database."}
+  ]
+}

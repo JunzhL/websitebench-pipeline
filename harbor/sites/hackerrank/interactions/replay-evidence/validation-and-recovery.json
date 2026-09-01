@@ -1,0 +1,120 @@
+{
+  "authority": "diagnostic-only",
+  "backend": "adapter",
+  "contract": {
+    "path": "harbor/sites/hackerrank/interactions/opencli-interaction-contract.json"
+  },
+  "degradation": [],
+  "duration_seconds": 0.01669,
+  "instance_id": null,
+  "opencli": {
+    "binary_present": false,
+    "connectivity_ok": false,
+    "contract_version": "1.8.6",
+    "doctor_green": false,
+    "extension_connected": false,
+    "notes": [
+      "opencli-unavailable: binary not found on PATH"
+    ],
+    "version": null,
+    "version_matches": false
+  },
+  "profile_id": "validation-and-recovery",
+  "profile_label": "hackerrank validation and recovery (derived draft)",
+  "profile_tier": "p1",
+  "schema_version": "websitebench.harbor.opencli.replay-result.v1",
+  "site_id": "hackerrank",
+  "status": "failed",
+  "steps": [
+    {
+      "command": "state",
+      "declared_route": "domains",
+      "duration_seconds": 0.002897,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_domains",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-domains",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "challenges/solve-me-first/problem",
+      "duration_seconds": 0.001755,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_challenge",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-challenge",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "challenges/solve-me-first/forum",
+      "duration_seconds": 0.001671,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_discussion",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-discussion",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "domains?search=zzzz-no-match-websitebench",
+      "duration_seconds": 0.001642,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_no-results",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-no-results",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "auth/login",
+      "duration_seconds": 0.001714,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_sign-in",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-sign-in",
+      "tier": "p1"
+    },
+    {
+      "command": "state",
+      "declared_route": "auth/signup",
+      "duration_seconds": 0.001652,
+      "error": "[Errno 2] No such file or directory: 'opencli'",
+      "http_status": null,
+      "observation_id": "hackerrank_validation-and-recovery_sign-up",
+      "observations": [],
+      "outcome": "error",
+      "step_id": "validation-and-recovery-sign-up",
+      "tier": "p1"
+    }
+  ],
+  "summary": {
+    "assertion_failures": 0,
+    "steps_passed": 0,
+    "steps_total": 6,
+    "unasserted_observations": 0,
+    "unsupported_commands": 0
+  },
+  "target": "candidate",
+  "target_binding": {
+    "allowlist": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "base_origin": "http://127.0.0.1:4312",
+    "reset_status": null,
+    "session_fields": [],
+    "session_status": null
+  }
+}

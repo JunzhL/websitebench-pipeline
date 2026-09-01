@@ -1,0 +1,9 @@
+{
+  "schema_version": "offline-clone.assets.v1",
+  "snapshot_id": "hackerrank-20260901-local-ui",
+  "created_at": "2026-09-01T00:00:00Z",
+  "remote_runtime_policy": "forbidden",
+  "closure_status": "no-assets",
+  "no_assets_reason": "HTTP 403 prevented source asset capture. Candidate branding, icons, layout, and interaction styling are code-native HTML and CSS with no external assets.",
+  "assets": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "offline-clone.coverage.v1",
+  "status": "frozen",
+  "dimensions": [
+    {
+      "id": "source-unavailable-states",
+      "label": "Anonymous HackerRank states blocked by HTTP 403",
+      "unit": "route-state",
+      "category": "source",
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["browser", "network"],
+      "required_items": ["home.loaded.desktop", "home.loaded.mobile", "domains.loaded.desktop", "domains.no-results.desktop", "tutorial.loaded.desktop", "challenge.loaded.desktop", "challenge.loaded.mobile", "discussion.loaded.desktop", "contests.loaded.desktop", "sign-in.form.desktop", "sign-up.form.desktop", "password-reset.form.desktop", "support.loaded.desktop", "not-found.not-found.desktop"],
+      "satisfied_items": [],
+      "rationale": "Formal Playwright acquisition returned HTTP 403 for every configured source row. Candidate behavior is not acceptance eligible as source evidence."
+    },
+    {
+      "id": "local-learning-contracts",
+      "label": "Stateful local learner workflows",
+      "unit": "journey",
+      "category": "candidate",
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["browser", "migration", "full-suite"],
+      "required_items": ["local-account-lifecycle", "solve-and-submit", "submission-history", "learning-progress", "contests-and-settings", "password-recovery"],
+      "satisfied_items": []
+    },
+    {
+      "id": "runtime-network-invariants",
+      "label": "Zero non-same-origin runtime requests",
+      "unit": "journey",
+      "category": "candidate",
+      "source_evidence_kind": "unavailable",
+      "local_contract_evidence_kind": "direct",
+      "required_evidence_kinds": ["network"],
+      "required_items": ["public-challenge-discovery", "solve-and-submit", "submission-history", "learning-progress", "validation-and-recovery"],
+      "satisfied_items": []
+    }
+  ]
+}

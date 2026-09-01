@@ -1,0 +1,59 @@
+{
+  "schema_version": "offline-clone.verify-driver.v1",
+  "site_id": "hackerrank",
+  "note": "Anonymous diagnostics cover clone-local contracts. Formal source acquisition returned HTTP 403 for every row, and authenticated source evidence was unavailable.",
+  "routes": {
+    "home": "/",
+    "domains": "/domains",
+    "tutorial": "/domains/tutorials/10-days-of-javascript",
+    "challenge": "/challenges/solve-me-first/problem",
+    "discussion": "/challenges/solve-me-first/forum",
+    "contests": "/contests",
+    "sign-in": "/auth/login",
+    "sign-up": "/auth/signup",
+    "password-reset": "/auth/forgot_password",
+    "support": "/support",
+    "not-found": "/websitebench-nonexistent-path-zzzz"
+  },
+  "deferred": {
+    "dashboard.authenticated": "No source-authenticated session was supplied. Clone-local behavior is covered by isolated site tests.",
+    "submissions.loaded": "Source mutations were not authorized. Clone-local run, submit, history, and resubmit behavior is covered by isolated site tests.",
+    "profile.saved": "Authenticated source profile mutation was unavailable. Clone-local persistence is covered by isolated site tests.",
+    "settings.saved": "Authenticated source settings mutation was unavailable. Clone-local persistence is covered by isolated site tests."
+  },
+  "visual_excluded": {
+    "home.loaded": "HTTP 403 replaced the source page.",
+    "domains.loaded": "HTTP 403 replaced the source page.",
+    "domains.no-results": "HTTP 403 replaced the source page.",
+    "tutorial.loaded": "HTTP 403 replaced the source page.",
+    "challenge.loaded": "HTTP 403 replaced the source page.",
+    "discussion.loaded": "HTTP 403 replaced the source page.",
+    "contests.loaded": "HTTP 403 replaced the source page.",
+    "sign-in.form": "HTTP 403 replaced the source form.",
+    "sign-up.form": "HTTP 403 replaced the source form.",
+    "password-reset.form": "HTTP 403 replaced the source form.",
+    "support.loaded": "HTTP 403 replaced the source page.",
+    "not-found.not-found": "HTTP 403 replaced the source missing-page response."
+  },
+  "status": {"not-found": 404},
+  "prepare": [],
+  "states": {
+    "home.loaded": [],
+    "domains.loaded": [],
+    "domains.no-results": [{"goto": "/domains?search=zzzz-no-match-websitebench"}, {"expect": "text=No challenges found"}],
+    "tutorial.loaded": [],
+    "challenge.loaded": [],
+    "discussion.loaded": [],
+    "contests.loaded": [],
+    "sign-in.form": [],
+    "sign-up.form": [],
+    "password-reset.form": [],
+    "support.loaded": [],
+    "not-found.not-found": []
+  },
+  "boot": {
+    "argv": ["{python}", "-m", "uvicorn", "app:app", "--host", "127.0.0.1", "--port", "{port}", "--log-level", "warning"],
+    "cwd": "clone",
+    "env": {}
+  }
+}

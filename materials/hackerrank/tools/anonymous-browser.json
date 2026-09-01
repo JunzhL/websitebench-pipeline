@@ -1,0 +1,68 @@
+{
+  "schema_version": "websitebench.offline-clone.browser-scenario.v1",
+  "scenario_id": "hackerrank-anonymous-mainline",
+  "viewport": {"width": 1440, "height": 900},
+  "timeout_ms": 15000,
+  "source_mutations_authorized": false,
+  "allowed_origins": {
+    "source": ["https://www.hackerrank.com"],
+    "clone": ["http://127.0.0.1:4312"]
+  },
+  "steps": [
+    {
+      "id": "open-practice",
+      "action": "goto",
+      "path": "/domains",
+      "observations": [
+        {"id": "practice-route", "kind": "url_path", "expect": {"equals": "/domains"}},
+        {"id": "challenge-count", "kind": "count", "selector": {"source": "[data-challenge-card]", "clone": "[data-challenge-card]"}, "expect": {"equals": 7}},
+        {"id": "practice-visible", "kind": "visible", "selector": {"source": "main", "clone": "main"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "empty-search",
+      "action": "goto",
+      "path": "/domains?search=zzzz-no-match-websitebench",
+      "observations": [
+        {"id": "empty-state", "kind": "text", "selector": {"source": "[data-no-results]", "clone": "[data-no-results]"}, "expect": {"contains": "No challenges found"}},
+        {"id": "recovery-link", "kind": "visible", "selector": {"source": "[data-no-results] a[href='/domains']", "clone": "[data-no-results] a[href='/domains']"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "open-challenge",
+      "action": "goto",
+      "path": "/challenges/solve-me-first/problem",
+      "observations": [
+        {"id": "challenge-route", "kind": "url_path", "expect": {"equals": "/challenges/solve-me-first/problem"}},
+        {"id": "problem-visible", "kind": "text", "selector": {"source": ".problem-panel", "clone": ".problem-panel"}, "expect": {"contains": "compute the sum of two integers"}},
+        {"id": "editor-visible", "kind": "visible", "selector": {"source": ".code-editor", "clone": ".code-editor"}, "expect": {"equals": true}},
+        {"id": "signed-out-note", "kind": "text", "selector": {"source": ".inline-note", "clone": ".inline-note"}, "expect": {"contains": "Sign in to run"}}
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "open-login",
+      "action": "goto",
+      "path": "/auth/login",
+      "observations": [
+        {"id": "login-email", "kind": "visible", "selector": {"source": "#identifier", "clone": "#identifier"}, "expect": {"equals": true}},
+        {"id": "login-password", "kind": "visible", "selector": {"source": "#password", "clone": "#password"}, "expect": {"equals": true}},
+        {"id": "provider-choices", "kind": "count", "selector": {"source": ".identity-options button", "clone": ".identity-options button"}, "expect": {"equals": 2}}
+      ],
+      "screenshot": true
+    },
+    {
+      "id": "open-missing",
+      "action": "goto",
+      "path": "/websitebench-nonexistent-path-zzzz",
+      "observations": [
+        {"id": "missing-route", "kind": "url_path", "expect": {"equals": "/websitebench-nonexistent-path-zzzz"}},
+        {"id": "recovery-visible", "kind": "text", "selector": {"source": "main", "clone": "main"}, "expect": {"contains": "Browse practice challenges"}}
+      ],
+      "screenshot": true,
+      "full_page": true
+    }
+  ]
+}

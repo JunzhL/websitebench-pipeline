@@ -1,0 +1,16 @@
+{
+  "schema_version": "hackerrank.frontend-gate-samples.v1",
+  "app_file": "clone/app.py",
+  "app_attr": "app",
+  "module_name": "hackerrank_clone_app",
+  "checks": [
+    {"id": "validation-and-recovery.domains", "url": "/domains", "method": "get", "expect_status": 200, "expect_contains": ["Solve Me First"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.challenge", "url": "/challenges/solve-me-first/problem", "method": "get", "expect_status": 200, "expect_contains": ["Submit code"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.discussion", "url": "/challenges/solve-me-first/forum", "method": "get", "expect_status": 200, "expect_contains": ["Discussions and solutions"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.no-results", "url": "/domains?search=zzzz-no-match-websitebench", "method": "get", "expect_status": 200, "expect_contains": ["Browse all challenges"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.sign-in", "url": "/auth/login", "method": "get", "expect_status": 200, "expect_contains": ["Log in to HackerRank"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.sign-up", "url": "/auth/signup", "method": "get", "expect_status": 200, "expect_contains": ["Create your learner account"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.password-reset", "url": "/auth/forgot_password", "method": "get", "expect_status": 200, "expect_contains": ["Reset your password"], "expect_not_contains": ["NotImplementedError"], "session": false},
+    {"id": "validation-and-recovery.support", "url": "/support", "method": "get", "expect_status": 200, "expect_contains": ["How can we help?"], "expect_not_contains": ["NotImplementedError"], "session": false}
+  ]
+}

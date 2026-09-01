@@ -1,0 +1,20 @@
+{
+  "schema_version": "offline-clone.routes.v1",
+  "routes": [
+    {"id": "home", "route_pattern": "/", "priority": "p0", "purpose_edge": "entry", "local_destination": true, "states": ["loaded"]},
+    {"id": "domains", "route_pattern": "/domains", "priority": "p0", "purpose_edge": "discovery", "local_destination": true, "states": ["loaded", "filtered", "no-results"]},
+    {"id": "tutorial", "route_pattern": "/domains/tutorials/{track}", "priority": "p1", "purpose_edge": "learning-plan", "local_destination": true, "states": ["loaded"]},
+    {"id": "challenge", "route_pattern": "/challenges/{slug}/problem", "priority": "p0", "purpose_edge": "object-detail", "local_destination": true, "states": ["loaded", "signed-out", "validation"]},
+    {"id": "discussion", "route_pattern": "/challenges/{slug}/forum", "priority": "p1", "purpose_edge": "guidance", "local_destination": true, "states": ["loaded"]},
+    {"id": "submissions", "route_pattern": "/challenges/{slug}/submissions", "priority": "p0", "purpose_edge": "history", "local_destination": true, "states": ["loaded", "empty", "detail"]},
+    {"id": "contests", "route_pattern": "/contests", "priority": "p1", "purpose_edge": "assessment", "local_destination": true, "states": ["loaded"]},
+    {"id": "dashboard", "route_pattern": "/dashboard", "priority": "p0", "purpose_edge": "account", "local_destination": true, "states": ["authenticated", "signed-out"]},
+    {"id": "profile", "route_pattern": "/profile", "priority": "p1", "purpose_edge": "account", "local_destination": true, "states": ["loaded", "saved"]},
+    {"id": "settings", "route_pattern": "/settings", "priority": "p1", "purpose_edge": "account", "local_destination": true, "states": ["loaded", "saved"]},
+    {"id": "sign-in", "route_pattern": "/auth/login", "priority": "p0", "purpose_edge": "account", "local_destination": true, "states": ["form", "invalid", "authenticated"]},
+    {"id": "sign-up", "route_pattern": "/auth/signup", "priority": "p1", "purpose_edge": "account", "local_destination": true, "states": ["form", "verification", "duplicate", "cooldown"]},
+    {"id": "password-reset", "route_pattern": "/auth/forgot_password", "priority": "p1", "purpose_edge": "recovery", "local_destination": true, "states": ["form", "verification", "updated", "cooldown"]},
+    {"id": "support", "route_pattern": "/support", "priority": "p2", "purpose_edge": "support", "local_destination": true, "states": ["loaded"]},
+    {"id": "not-found", "route_pattern": "/{missing}", "priority": "p1", "purpose_edge": "recovery", "local_destination": true, "states": ["not-found"]}
+  ]
+}

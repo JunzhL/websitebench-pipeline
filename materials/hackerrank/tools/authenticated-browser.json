@@ -1,0 +1,52 @@
+{
+  "schema_version": "websitebench.offline-clone.browser-scenario.v1",
+  "scenario_id": "hackerrank-learner-mainline",
+  "viewport": {"width": 1440, "height": 900},
+  "timeout_ms": 15000,
+  "source_mutations_authorized": false,
+  "allowed_origins": {
+    "source": ["https://www.hackerrank.com"],
+    "clone": ["http://127.0.0.1:4312"]
+  },
+  "steps": [
+    {"id": "open-login", "action": "goto", "path": "/auth/login"},
+    {"id": "enter-identity", "action": "fill", "selector": {"source": "#identifier", "clone": "#identifier"}, "value": "learner@hackerrank.local"},
+    {"id": "enter-password", "action": "fill", "selector": {"source": "#password", "clone": "#password"}, "value_env": "WEBSITEBENCH_HACKERRANK_TEST_PASSWORD"},
+    {"id": "submit-login", "action": "click", "selector": {"source": "form[action='/auth/login'] button[type='submit']", "clone": "form[action='/auth/login'] button[type='submit']"}},
+    {
+      "id": "dashboard",
+      "action": "snapshot",
+      "observations": [
+        {"id": "dashboard-route", "kind": "url_path", "expect": {"equals": "/dashboard"}},
+        {"id": "dashboard-learner", "kind": "text", "selector": {"source": ".dashboard-hero", "clone": ".dashboard-hero"}, "expect": {"contains": "Demo Learner"}},
+        {"id": "activity-visible", "kind": "visible", "selector": {"source": ".activity-item", "clone": ".activity-item"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true
+    },
+    {"id": "open-editor", "action": "goto", "path": "/challenges/solve-me-first/problem"},
+    {"id": "enter-solution", "action": "fill", "selector": {"source": ".code-editor", "clone": ".code-editor"}, "value": "def solveMeFirst(a, b):\n    return a + b\n"},
+    {"id": "enter-custom-input", "action": "fill", "selector": {"source": "#custom_input", "clone": "#custom_input"}, "value": "8\n9"},
+    {"id": "run-solution", "action": "click", "selector": {"source": "form[action='/challenges/solve-me-first/run'] button[type='submit']:not([formaction])", "clone": "form[action='/challenges/solve-me-first/run'] button[type='submit']:not([formaction])"}},
+    {
+      "id": "run-result",
+      "action": "snapshot",
+      "observations": [
+        {"id": "run-status", "kind": "text", "selector": {"source": ".result-card", "clone": ".result-card"}, "expect": {"contains": "3 of 3 tests passed"}},
+        {"id": "run-stdout", "kind": "text", "selector": {"source": ".result-card", "clone": ".result-card"}, "expect": {"contains": "17"}}
+      ],
+      "screenshot": true
+    },
+    {"id": "return-editor", "action": "goto", "path": "/challenges/solve-me-first/problem"},
+    {"id": "enter-submission", "action": "fill", "selector": {"source": ".code-editor", "clone": ".code-editor"}, "value": "def solveMeFirst(a, b):\n    return a + b\n"},
+    {"id": "submit-solution", "action": "click", "selector": {"source": "button[formaction='/challenges/solve-me-first/submit']", "clone": "button[formaction='/challenges/solve-me-first/submit']"}},
+    {
+      "id": "submission-detail",
+      "action": "snapshot",
+      "observations": [
+        {"id": "submission-status", "kind": "text", "selector": {"source": "main", "clone": "main"}, "expect": {"contains": "All 3 local fixture tests passed"}},
+        {"id": "submission-edit", "kind": "visible", "selector": {"source": "a.button.primary", "clone": "a.button.primary"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true
+    }
+  ]
+}

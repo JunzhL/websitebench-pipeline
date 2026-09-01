@@ -1,0 +1,28 @@
+{
+  "schema_version": "offline-clone.purpose.v1",
+  "status": "frozen",
+  "purpose_id": "developer-practice",
+  "statement": "Let visitors discover coding challenges and let local learners edit, run, submit, review, save, and track solutions without contacting HackerRank or causing production effects.",
+  "primary_actor_ids": ["visitor", "learner"],
+  "secondary_actor_ids": [],
+  "mainline_journey_ids": ["public-challenge-discovery", "local-account-lifecycle", "solve-and-submit", "submission-history"],
+  "boundary_journey_ids": ["validation-and-recovery"],
+  "secondary_journey_ids": ["learning-progress", "contests-and-settings"],
+  "actors": [
+    {"id": "visitor", "description": "Anonymous visitor browsing public practice, challenge, contest, and support pages."},
+    {"id": "learner", "description": "Authenticated local account that edits solutions and tracks challenge progress."}
+  ],
+  "simulations": [
+    "Code runs use deterministic local fixtures and never execute untrusted source-site jobs.",
+    "Registration and password recovery use the local-only WebsiteBench mail outbox.",
+    "Submissions, scores, runtime, memory, badges, streaks, and contest status are deterministic local records."
+  ],
+  "out_of_scope": [
+    "Real email delivery, external identity providers, SSO, and source-account access",
+    "Live code execution, remote judging, hidden HackerRank test data, proctoring, and employer assessments",
+    "Messaging other users, publishing discussions, and changing production data",
+    "Billing, subscriptions, checkout, payment credentials, and payments",
+    "Direct source fidelity claims for pages blocked by HTTP 403",
+    "Any runtime request to hackerrank.com or another external service"
+  ]
+}

@@ -1,0 +1,26 @@
+name: diagnostics (hackerrank)
+on:
+  pull_request:
+    paths:
+      - materials/hackerrank/**
+      - harbor/sites/hackerrank/**
+      - harbor/instances/hackerrank/**
+      - .github/workflows/tests-hackerrank.yml
+      - .github/workflows/clone-diagnostics.yml
+  push:
+    paths:
+      - materials/hackerrank/**
+      - harbor/sites/hackerrank/**
+      - harbor/instances/hackerrank/**
+      - .github/workflows/tests-hackerrank.yml
+      - .github/workflows/clone-diagnostics.yml
+permissions:
+  contents: read
+concurrency:
+  group: diagnostics-hackerrank-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  diagnostics:
+    uses: ./.github/workflows/clone-diagnostics.yml
+    with:
+      site: hackerrank

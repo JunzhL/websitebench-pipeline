@@ -1,0 +1,35 @@
+{
+  "schema_version": "websitebench.offline-clone.browser-scenario.v1",
+  "scenario_id": "hackerrank-mobile-mainline",
+  "viewport": {"width": 390, "height": 844},
+  "timeout_ms": 15000,
+  "source_mutations_authorized": false,
+  "allowed_origins": {
+    "source": ["https://www.hackerrank.com"],
+    "clone": ["http://127.0.0.1:4312"]
+  },
+  "steps": [
+    {
+      "id": "mobile-home",
+      "action": "goto",
+      "path": "/",
+      "observations": [
+        {"id": "mobile-home-visible", "kind": "text", "selector": {"source": "main", "clone": "main"}, "expect": {"contains": "Build coding skills"}},
+        {"id": "mobile-practice-link", "kind": "visible", "selector": {"source": ".hero a[href='/domains']", "clone": ".hero a[href='/domains']"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true,
+      "full_page": true
+    },
+    {
+      "id": "mobile-challenge",
+      "action": "goto",
+      "path": "/challenges/solve-me-first/problem",
+      "observations": [
+        {"id": "mobile-problem-visible", "kind": "visible", "selector": {"source": ".problem-panel", "clone": ".problem-panel"}, "expect": {"equals": true}},
+        {"id": "mobile-editor-visible", "kind": "visible", "selector": {"source": ".editor-panel", "clone": ".editor-panel"}, "expect": {"equals": true}}
+      ],
+      "screenshot": true,
+      "full_page": true
+    }
+  ]
+}
